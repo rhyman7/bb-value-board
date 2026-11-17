@@ -50,6 +50,10 @@ jobs:
             python -m cbbmodel.backtest
           fi
           python -m cbbmodel.pipeline
+      - name: Opening-line test (Mondays)
+        if: ${{ inputs.backtest || github.event_name == 'schedule' }}
+        run: |
+          if [ "${{ inputs.backtest }}" = "true" ] || [ "$(date -u +%u)" = "1" ]; then python -m nbamodel.openers; fi
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"

@@ -35,3 +35,20 @@ def test_market_ratings_recover_spreads():
     R, hca, mu, T = market.solve(g, g.date.max() + pd.Timedelta(days=1), 2027)
     assert R["A"] > R["B"] > R["C"]
     assert abs(mu - 140.0) < 1e-6
+
+
+def test_openers_grades_line_movement(tmp_path, monkeypatch):
+    from nbamodel import lines, openers
+    log = tmp_path / "nba_lines.csv"
+    rows = []
+    for i in range(10):
+        # model says home by 6, opener home by 2, close moves to home by 4; home wins by 8
+        rows.append({"game_id": str(i), "fetched_at": "2026-11-17T10:00:00+00:00", "close_spread": 2.0, "close_total": 220.0, "model_margin": 6.0, "model_total": 225.0})
+        rows.append({"game_id": str(i), "fetched_at": "2026-11-17T22:00:00+00:00", "close_spread": 4.0, "close_total": 222.0, "model_margin": 6.0, "model_total": 225.0})
+    pd.DataFrame(rows).to_csv(log, index=False)
+    monkeypatch.setitem(lines.LOG, "nba", log)
+    monkeypatch.setattr(openers, "_results", lambda league, season: pd.DataFrame({"game_id": [str(i) for i in range(10)], "margin": 8.0, "total": 230.0}))
+    out = openers.grade("nba", 2027)
+    g = out["side"]["by_gap"]["3+"]
+    assert g["record_at_open"]["w"] == 10 and g["line_moved_toward_model_pct"] == 100.0
+    assert out["total"]["by_gap"]["5+"]["record_at_open"]["w"] == 10

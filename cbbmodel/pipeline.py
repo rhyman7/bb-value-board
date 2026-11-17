@@ -1,5 +1,6 @@
 """Tonight's college projections: rate every Division I team as of today and project the next
-three days' games between two Division I teams. Writes docs/feed/cbb.json.
+three days' games between two Division I teams. Writes docs/feed/cbb.json, and logs ESPN's line
+with the model's number for each game (docs/lines/cbb_lines.csv, see nbamodel/lines.py).
 
     python -m cbbmodel.pipeline
 
@@ -16,6 +17,7 @@ from zoneinfo import ZoneInfo
 import numpy as np
 import pandas as pd
 
+from nbamodel import lines as line_log
 from nbamodel.ratings import rating_projection
 
 from . import backtest, data, ratings, roster
@@ -49,6 +51,7 @@ def run():
         for t in (x.home_id, x.away_id):
             last_played[t] = max(last_played.get(t, x.date), x.date)
 
+    lines = line_log.espn_lines("cbb", sorted(set(s.day)))
     games = []
     for x in s.sort_values("et").itertuples():
         hid, aid = int(x.home_id), int(x.away_id)
@@ -62,11 +65,12 @@ def run():
         }])
         row = backtest.predict(backtest.add_features(rating_projection(row)), coef).iloc[0]
         m = float(row.m_margin)
+        sp, tot = lines.get(str(x.game_id), (None, None))
         games.append({
             "id": str(x.game_id), "date": x.day.isoformat(), "away": x.away_abbreviation, "home": x.home_abbreviation,
             "neutral": bool(x.neutral_site), "margin": round(m, 1), "total": round(float(row.r_total), 1),
             "pace": round(float(row.r_pace), 1), "win_prob": round(float(1 / (1 + np.exp(-m / 6.5))), 3),
-            "projection": round(m, 1),
+            "projection": round(m, 1), "mkt_spread": sp, "mkt_total": tot,
         })
     feed = {
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -76,7 +80,8 @@ def run():
     }
     FEED.parent.mkdir(parents=True, exist_ok=True)
     FEED.write_text(json.dumps(feed, indent=1))
-    print(f"{len(games)} college games projected for {today} to {today + timedelta(days=DAYS_AHEAD - 1)}")
+    n_lines = line_log.log("cbb", games)
+    print(f"{len(games)} college games projected for {today} to {today + timedelta(days=DAYS_AHEAD - 1)}; {n_lines} with an ESPN line")
     return feed
 
 
