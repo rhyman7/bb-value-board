@@ -35,12 +35,12 @@ SPOT_TEXT = {"letdown": "{t} off an emotional win (letdown spot)", "lookahead": 
 
 def upcoming_spots(g_done, rated, sched, d1, final, today, lines):
     """Situational spots for every game left on the schedule, as short labels per game id. They are
-    shown for context only: the backtest finds the line already prices them (see backtest.json)."""
+    shown for context; only the long road trip (far_road) is in the model, as a small adjustment."""
     s = sched[(~sched.status_type_completed.astype(bool)) & sched.home_id.astype(int).isin(d1) & sched.away_id.astype(int).isin(d1)].copy()
     s["date"] = pd.to_datetime(pd.to_datetime(s.date, utc=True).dt.tz_convert(ET).dt.date)
     s = s[s.date >= pd.Timestamp(today)]
     if s.empty:
-        return {}
+        return {}, {}
     fut = pd.DataFrame({"game_id": s.game_id.astype(str), "season": s.season.astype(int), "date": s.date,
                         "home_id": s.home_id.astype(int), "away_id": s.away_id.astype(int),
                         "home": s.home_abbreviation, "away": s.away_abbreviation,
@@ -59,8 +59,9 @@ def upcoming_spots(g_done, rated, sched, d1, final, today, lines):
     both = pd.concat([past[cols], fut[cols]], ignore_index=True)
     sp = spots.spots(pd.concat([g_done[g_done.season >= season - 11], fut], ignore_index=True), both)
     sp = sp[sp.game_id.isin(set(fut.game_id))].merge(fut[["game_id", "home", "away"]], on="game_id")
-    out = {}
+    out, far = {}, {}
     for x in sp.itertuples():
+        far[x.game_id] = float(x.far_road_diff)
         tags = []
         for side, team in (("h", x.home), ("a", x.away)):
             for k in ["letdown", "lookahead", "road_b2b_tz", "road_b2b", "far_road"]:
@@ -71,7 +72,7 @@ def upcoming_spots(g_done, rated, sched, d1, final, today, lines):
         elif x.rival:
             tags.append("Rivalry game")
         out[x.game_id] = tags
-    return out
+    return out, far
 
 
 def run():
@@ -83,6 +84,8 @@ def run():
     seasons = list(range(backtest.FIRST_RATED, season + 1))
     rated, final = ratings.walk_forward(g_done, backtest.SETTINGS, seasons=seasons, shifts=shifts, return_final=True)
     rated = backtest.add_features(rating_projection(rated))
+    rated = rated.merge(spots.spots(g_done, rated), on="game_id", how="left")
+    rated["far_road_diff"] = rated.far_road_diff.fillna(0.0)
     coef = backtest.fit(rated[rated.season < season])
 
     sched = data.schedule(season, refresh=False)
@@ -98,7 +101,7 @@ def run():
             last_played[t] = max(last_played.get(t, x.date), x.date)
 
     lines = line_log.espn_lines("cbb", sorted(set(s.day)))
-    tags = upcoming_spots(g_done, rated, sched, d1, final, today, lines)
+    tags, far = upcoming_spots(g_done, rated, sched, d1, final, today, lines)
     games = []
     for x in s.sort_values("et").itertuples():
         hid, aid = int(x.home_id), int(x.away_id)
@@ -109,6 +112,7 @@ def run():
             "off_h": rh[0], "def_h": rh[1], "pace_h": rh[2], "off_a": ra[0], "def_a": ra[1], "pace_a": ra[2],
             "lg_eff": final["_mean"], "lg_hca": backtest.SETTINGS.hca, "lg_pace": final["_pace"],
             "neutral": bool(x.neutral_site), "rest_h": rest(hid), "rest_a": rest(aid), "g7_h": 0, "g7_a": 0, "n_this": n_this,
+            "far_road_diff": far.get(str(x.game_id), 0.0),
         }])
         row = backtest.predict(backtest.add_features(rating_projection(row)), coef).iloc[0]
         m = float(row.m_margin)

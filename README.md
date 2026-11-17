@@ -145,6 +145,9 @@ time zones from home, and home underdogs in rivalry games (same state, met in 8+
 backtest tests each against ESPN's line on 2016-18 and 2019-23 and writes the result to
 `docs/cbb/backtest.json` under `spots`. None held up in both periods by more than its standard
 error, and adding them to the game model changed the holdout miss by under 0.01 points
-(`python -m experiments.cbb_spots`), so they are not in the model. The college board lists them on
+(`python -m experiments.cbb_spots`). Only the long road trip (2+ time zones from home) is in the
+model, as a small adjustment Ryan asked for on 2026-11-17: it pointed the same way in both periods,
+though within one standard error. With it the 2019-23 holdout miss is 8.97 (was 8.98) against
+the line's 8.77, and ATS every game 49.7% (was 49.6%). The college board lists them on
 each game card for context. Tempo and opponent-adjusted efficiency are already the base of the
 ratings.
