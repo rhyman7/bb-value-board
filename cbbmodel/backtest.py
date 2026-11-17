@@ -26,7 +26,10 @@ from nbamodel.ratings import rating_projection
 from . import data, ratings, roster, spots
 
 SETTINGS = ratings.Settings(half_life=240.0, ridge_eff=3.0, carry=0.85, roster_k=0.3)
-FEATURES = ["r_margin", "r_early", "rest_diff", "b2b_h", "b2b_a"]
+FEATURES = ["r_margin", "r_early", "rest_diff", "b2b_h", "b2b_a", "far_road_diff"]
+# far_road_diff: road team 2+ time zones from home (spots.py). Added at Ryan's request on 2026-11-17
+# as a small adjustment to watch: it pointed the same way on 2016-18 and 2019-23 (about half a point)
+# but within one standard error, so it did not pass the keep rule on its own.
 EARLY_GAMES = 3000      # Division I games played league-wide by about mid-December
 FIRST_RATED = 2016
 GRADE = [2019, 2020, 2021, 2022, 2023]
@@ -81,9 +84,10 @@ def run(last_season, verbose=True):
     seasons = list(range(FIRST_RATED, last_season + 1))
     rated = rating_projection(ratings.walk_forward(g, SETTINGS, seasons=seasons, shifts=shifts))
     rated = add_features(rated)
-    # situational spots, tested against the line on their own (they are not in the model: none has
-    # held up on both the tuning and holdout seasons, see README)
-    sp = rated.merge(spots.spots(g, rated), on="game_id", how="left")
+    # situational spots: each tested against the line on its own; only far_road_diff is in the model
+    rated = rated.merge(spots.spots(g, rated), on="game_id", how="left")
+    rated["far_road_diff"] = rated.far_road_diff.fillna(0.0)
+    sp = rated
     spot_tests = {c: {"label": lab, "tune": spots.test(sp[sp.season.isin(TUNE)], c), "holdout": spots.test(sp[sp.season.isin(GRADE)], c),
                       "this_season": spots.test(sp[sp.season == last_season], c)} for c, (lab, _) in spots.TESTS.items()}
     out, coefs = [], {}
