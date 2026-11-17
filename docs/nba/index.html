@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NBA Value Board</title>
+<meta name="description" content="Every NBA game tonight and the next two days, with the model's spread, total and win probability next to the market's, and a graded record of how the model has done.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Big+Shoulders+Display:wght@500..900&display=swap">
+<link rel="stylesheet" href="../board.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="bar">
+    <a class="brand" href="../../"><i aria-hidden="true"></i>NBA Value Board</a>
+    <nav class="sections" aria-label="Sections"><ul>
+      <li><a href="#games">Games</a></li>
+      <li><a href="#ratings">Team ratings</a></li>
+      <li><a href="#model">Model record</a></li>
+      <li><a href="#openers">Opening-line test</a></li>
+      <li><a href="../cbb/">College board</a></li>
+    </ul></nav>
+  </div>
+
+  <header class="top">
+    <h1>NBA<br>Value Board</h1>
+    <p class="lede">Every NBA game tonight and the next two days, with <strong>the model's spread, total and win probability next to the market's</strong>. The model's number already accounts for rest, back-to-backs and players listed Out on the injury report.</p>
+    <p class="stamp" id="stamp"></p>
+  </header>
+
+  <main>
+  <aside class="caveat" aria-labelledby="cv-h">
+    <h2 id="cv-h">The model does not beat the market yet</h2>
+    <p>Over 2021 to 2026, graded at the consensus closing line, the model missed the final margin by <b id="cv-model">–</b> points a game and the line missed by <b id="cv-close">–</b>. Taking the model's side every game won <b id="cv-ats">–</b> against the spread, and it takes 52.4% to break even. So there is no bet list here: when the two numbers disagree, the market's is the better estimate. The model's number is shown for context, and the <a href="#openers">opening-line test</a> is checking whether it sees anything before the line moves.</p>
+  </aside>
+
+  <section id="games">
+    <div class="section-head">
+      <h2>Games</h2>
+      <p class="counts" id="games-counts"></p>
+    </div>
+    <div class="filters">
+      <div class="field-label">Day<div class="seg" id="day-seg"></div></div>
+      <div class="field-label">Order<div class="seg" id="sort-seg"><button type="button" data-sort="time">Tip-off</button><button type="button" data-sort="gap">Biggest disagreement</button></div></div>
+      
+    </div>
+    <div id="games-body"><p class="empty">Loading…</p></div>
+    <p class="note">Spreads name the favorite. Win probabilities are the model's. "Model vs market" says which way and how far the model's number sits from the line; it is not a pick.</p>
+  </section>
+
+  <section id="ratings">
+    <div class="section-head"><h2>Team ratings</h2><p class="note">Where every team stands today, adjusted for who they have played. These are the ratings the projections start from.</p></div>
+    <div id="ratings-body"></div>
+  </section>
+  <section id="model">
+    <div class="section-head"><h2>Model record</h2><p class="note" id="model-lede"></p></div>
+    <div id="model-body"></div>
+  </section>
+
+  <section id="openers">
+    <div class="section-head"><h2>Opening-line test</h2><p class="note">The closing line is the hardest number to beat. This test grades the model against the first line posted instead, and tracks whether the line moves toward the model before tip-off.</p></div>
+    <div id="openers-body"></div>
+  </section>
+  </main>
+
+  <footer class="site">
+    <p>Lines: ESPN. Box scores and past closing lines: hoopR (sportsdataverse). Full stats on the <a href="https://rhyman7.github.io/nba/">NBA dashboard</a>. <a href="https://rhyman7.github.io/basketball/">Basketball hub</a></p>
+    <p>For research and entertainment. Past results do not predict future results, and nothing here is betting advice.</p>
+  </footer>
+</div>
+<script>window.LEAGUE = "nba";</script>
+<script src="../board.js"></script>
+</body>
+</html>

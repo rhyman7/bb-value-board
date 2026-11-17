@@ -126,3 +126,12 @@ python -m pytest -q
 The **Update NBA and college boards** Action runs the projections twice a day in season (college
 November to April) and the full backtests on Mondays. `docs/feed/nba.json` and `docs/feed/cbb.json` are the feeds the dashboards (rhyman7/nba,
 rhyman7/cbb) will read.
+
+## The value board
+
+GitHub Pages serves this repo from its root: `index.html` is the hub (rhyman7.github.io/bb-value-board/),
+and `docs/nba/` and `docs/cbb/` are the boards, drawn in the browser by `docs/board.js` from
+`docs/feed/*.json`, `docs/*/backtest.json` and `docs/openers.json`. The workflow only has to update
+those JSON files. The boards open with a warning that the models don't beat the market, and the
+warning's numbers come from the latest backtest. There is no bet list until the opening-line test
+or a model change passes the keep rule.
