@@ -25,7 +25,7 @@ SCOREBOARD = {
     "nba": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates={d}",
     "cbb": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?dates={d}&groups=50&limit=400",
 }
-COLUMNS = ["game_id", "fetched_at", "close_spread", "close_total", "model_margin", "model_total"]
+COLUMNS = ["game_id", "fetched_at", "close_spread", "close_total", "model_margin", "model_total", "home_ml", "away_ml", "model_win_prob"]
 
 
 def _json(url):
@@ -49,9 +49,23 @@ def home_spread(details, home, away):
     return pts if ab == home else -pts if ab == away else None
 
 
+def _ml(side_odds, odds, side):
+    """American moneyline for one side: ESPN has used both homeTeamOdds.moneyLine and
+    moneyline.home.close.odds ("-150" as text)."""
+    v = (side_odds or {}).get("moneyLine")
+    if v is None:
+        m = ((odds.get("moneyline") or {}).get(side) or {})
+        v = ((m.get("close") or {}).get("odds")) or ((m.get("open") or {}).get("odds"))
+    try:
+        v = float(str(v).replace("+", "")) if v not in (None, "", "OFF") else None
+    except ValueError:
+        v = None
+    return v if v is None or abs(v) >= 100 else None
+
+
 def espn_lines(league, days):
-    """{game_id: (spread, total)} for games that haven't started, from ESPN's scoreboard.
-    Empty when ESPN can't be reached."""
+    """{game_id: (spread, total, home_ml, away_ml)} for games that haven't started, from ESPN's
+    scoreboard. Empty when ESPN can't be reached; a missing piece is None."""
     out = {}
     for d in days:
         try:
@@ -67,7 +81,8 @@ def espn_lines(league, days):
             teams = {c.get("homeAway"): (c.get("team") or {}).get("abbreviation", "") for c in comp.get("competitors", [])}
             sp = home_spread(odds.get("details"), teams.get("home"), teams.get("away"))
             tot = odds.get("overUnder")
-            out[str(ev.get("id"))] = (sp, float(tot) if tot is not None else None)
+            out[str(ev.get("id"))] = (sp, float(tot) if tot is not None else None,
+                                      _ml(odds.get("homeTeamOdds"), odds, "home"), _ml(odds.get("awayTeamOdds"), odds, "away"))
     return out
 
 
@@ -75,12 +90,17 @@ def log(league, games):
     """Append rows for games with a line: dicts with id, mkt_spread, mkt_total, margin, total."""
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
     rows = [{"game_id": str(x["id"]), "fetched_at": now, "close_spread": x.get("mkt_spread"),
-             "close_total": x.get("mkt_total"), "model_margin": x.get("margin"), "model_total": x.get("total")}
-            for x in games if x.get("mkt_spread") is not None]
+             "close_total": x.get("mkt_total"), "model_margin": x.get("margin"), "model_total": x.get("total"),
+             "home_ml": x.get("mkt_ml_home"), "away_ml": x.get("mkt_ml_away"), "model_win_prob": x.get("win_prob")}
+            for x in games if x.get("mkt_spread") is not None or x.get("mkt_ml_home") is not None]
     if not rows:
         return 0
     path = LOG[league]
     path.parent.mkdir(parents=True, exist_ok=True)
+    if path.exists():
+        old = pd.read_csv(path, nrows=0)
+        if list(old.columns) != COLUMNS:          # an older log without the moneyline columns
+            pd.read_csv(path).reindex(columns=COLUMNS).to_csv(path, index=False)
     pd.DataFrame(rows, columns=COLUMNS).to_csv(path, mode="a", header=not path.exists(), index=False)
     return len(rows)
 

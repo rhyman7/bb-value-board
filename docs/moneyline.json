@@ -1,0 +1,283 @@
+{
+ "note": "Market win probability from the closing spread (hoopR has no moneylines); 4.5% hold.",
+ "nba": {
+  "seasons": "2022-2026",
+  "games": 6151,
+  "accuracy": {
+   "p_model": {
+    "brier": 0.2084,
+    "log_loss": 0.6036
+   },
+   "p_mkt": {
+    "brier": 0.2033,
+    "log_loss": 0.5918
+   }
+  },
+  "by_edge": {
+   "0%+": {
+    "with_hold": {
+     "bets": 6151,
+     "won": 2792,
+     "win_pct": 45.4,
+     "avg_price_american": 128,
+     "roi_pct": -7.6,
+     "roi_se": 1.5
+    },
+    "no_vig": {
+     "bets": 6151,
+     "won": 2792,
+     "win_pct": 45.4,
+     "avg_price_american": 140,
+     "roi_pct": -2.1,
+     "roi_se": 1.7
+    }
+   },
+   "2%+": {
+    "with_hold": {
+     "bets": 4418,
+     "won": 1915,
+     "win_pct": 43.3,
+     "avg_price_american": 137,
+     "roi_pct": -7.9,
+     "roi_se": 1.8
+    },
+    "no_vig": {
+     "bets": 4418,
+     "won": 1915,
+     "win_pct": 43.3,
+     "avg_price_american": 151,
+     "roi_pct": -2.2,
+     "roi_se": 2.0
+    }
+   },
+   "4%+": {
+    "with_hold": {
+     "bets": 3002,
+     "won": 1255,
+     "win_pct": 41.8,
+     "avg_price_american": 143,
+     "roi_pct": -7.3,
+     "roi_se": 2.3
+    },
+    "no_vig": {
+     "bets": 3002,
+     "won": 1255,
+     "win_pct": 41.8,
+     "avg_price_american": 157,
+     "roi_pct": -1.5,
+     "roi_se": 2.5
+    }
+   },
+   "6%+": {
+    "with_hold": {
+     "bets": 1984,
+     "won": 788,
+     "win_pct": 39.7,
+     "avg_price_american": 149,
+     "roi_pct": -8.1,
+     "roi_se": 2.8
+    },
+    "no_vig": {
+     "bets": 1984,
+     "won": 788,
+     "win_pct": 39.7,
+     "avg_price_american": 164,
+     "roi_pct": -2.2,
+     "roi_se": 3.1
+    }
+   },
+   "8%+": {
+    "with_hold": {
+     "bets": 1233,
+     "won": 456,
+     "win_pct": 37.0,
+     "avg_price_american": 153,
+     "roi_pct": -9.8,
+     "roi_se": 3.7
+    },
+    "no_vig": {
+     "bets": 1233,
+     "won": 456,
+     "win_pct": 37.0,
+     "avg_price_american": 168,
+     "roi_pct": -3.9,
+     "roi_se": 4.0
+    }
+   }
+  },
+  "by_price": {
+   "Long underdog (under 25%)": {
+    "bets": 479,
+    "won": 83,
+    "win_pct": 17.3,
+    "avg_price_american": 349,
+    "roi_pct": -21.0,
+    "roi_se": 8.1
+   },
+   "Underdog (25-50%)": {
+    "bets": 1727,
+    "won": 641,
+    "win_pct": 37.1,
+    "avg_price_american": 153,
+    "roi_pct": -5.1,
+    "roi_se": 3.0
+   },
+   "Favorite (50-75%)": {
+    "bets": 624,
+    "won": 392,
+    "win_pct": 62.8,
+    "avg_price_american": -192,
+    "roi_pct": -4.6,
+    "roi_se": 3.0
+   },
+   "Heavy favorite (over 75%)": {
+    "bets": 172,
+    "won": 139,
+    "win_pct": 80.8,
+    "avg_price_american": -442,
+    "roi_pct": -1.5,
+    "roi_se": 3.7
+   }
+  }
+ },
+ "cbb": {
+  "seasons": "2019-2023",
+  "games": 21708,
+  "accuracy": {
+   "p_model": {
+    "brier": 0.1778,
+    "log_loss": 0.5277
+   },
+   "p_mkt": {
+    "brier": 0.1742,
+    "log_loss": 0.5178
+   }
+  },
+  "by_edge": {
+   "0%+": {
+    "with_hold": {
+     "bets": 21708,
+     "won": 9111,
+     "win_pct": 42.0,
+     "avg_price_american": 150,
+     "roi_pct": -10.1,
+     "roi_se": 1.0
+    },
+    "no_vig": {
+     "bets": 21708,
+     "won": 9111,
+     "win_pct": 42.0,
+     "avg_price_american": 165,
+     "roi_pct": -1.1,
+     "roi_se": 1.5
+    }
+   },
+   "2%+": {
+    "with_hold": {
+     "bets": 14616,
+     "won": 6026,
+     "win_pct": 41.2,
+     "avg_price_american": 160,
+     "roi_pct": -6.4,
+     "roi_se": 1.2
+    },
+    "no_vig": {
+     "bets": 14616,
+     "won": 6026,
+     "win_pct": 41.2,
+     "avg_price_american": 177,
+     "roi_pct": 2.1,
+     "roi_se": 1.6
+    }
+   },
+   "4%+": {
+    "with_hold": {
+     "bets": 9647,
+     "won": 3933,
+     "win_pct": 40.8,
+     "avg_price_american": 150,
+     "roi_pct": -5.1,
+     "roi_se": 1.5
+    },
+    "no_vig": {
+     "bets": 9647,
+     "won": 3933,
+     "win_pct": 40.8,
+     "avg_price_american": 165,
+     "roi_pct": 2.8,
+     "roi_se": 1.8
+    }
+   },
+   "6%+": {
+    "with_hold": {
+     "bets": 6256,
+     "won": 2575,
+     "win_pct": 41.2,
+     "avg_price_american": 150,
+     "roi_pct": -2.7,
+     "roi_se": 1.8
+    },
+    "no_vig": {
+     "bets": 6256,
+     "won": 2575,
+     "win_pct": 41.2,
+     "avg_price_american": 165,
+     "roi_pct": 5.1,
+     "roi_se": 2.2
+    }
+   },
+   "8%+": {
+    "with_hold": {
+     "bets": 4035,
+     "won": 1649,
+     "win_pct": 40.9,
+     "avg_price_american": 150,
+     "roi_pct": -1.5,
+     "roi_se": 2.3
+    },
+    "no_vig": {
+     "bets": 4035,
+     "won": 1649,
+     "win_pct": 40.9,
+     "avg_price_american": 165,
+     "roi_pct": 6.6,
+     "roi_se": 2.8
+    }
+   }
+  },
+  "by_price": {
+   "Long underdog (under 25%)": {
+    "bets": 2455,
+    "won": 375,
+    "win_pct": 15.3,
+    "avg_price_american": 435,
+    "roi_pct": -16.2,
+    "roi_se": 4.4
+   },
+   "Underdog (25-50%)": {
+    "bets": 4516,
+    "won": 1782,
+    "win_pct": 39.5,
+    "avg_price_american": 161,
+    "roi_pct": 2.0,
+    "roi_se": 1.9
+   },
+   "Favorite (50-75%)": {
+    "bets": 1895,
+    "won": 1135,
+    "win_pct": 59.9,
+    "avg_price_american": -195,
+    "roi_pct": -8.6,
+    "roi_se": 1.7
+   },
+   "Heavy favorite (over 75%)": {
+    "bets": 781,
+    "won": 641,
+    "win_pct": 82.1,
+    "avg_price_american": -505,
+    "roi_pct": -2.6,
+    "roi_se": 1.6
+   }
+  }
+ }
+}

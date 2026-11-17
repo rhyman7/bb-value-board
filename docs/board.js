@@ -45,6 +45,22 @@
     return parts.length ? "Model vs market: " + parts.join(", ") : "No market line yet";
   }
 
+  const american = (p) => (p >= 0.5 ? Math.round((-100 * p) / (1 - p)) : Math.round((100 * (1 - p)) / p));
+  const amText = (v) => (v > 0 ? "+" + v : minus(String(v)));
+  // the favorite's price: the market's moneyline, and the model's fair price for the same team
+  function favHome(g) {
+    if (g.mkt_ml_home != null && g.mkt_ml_away != null) return g.mkt_ml_home <= g.mkt_ml_away;
+    return g.win_prob >= 0.5;
+  }
+  function mlText(g) {
+    if (g.mkt_ml_home == null || g.mkt_ml_away == null) return "–";
+    return favHome(g) ? `${esc(g.home)} ${amText(g.mkt_ml_home)}` : `${esc(g.away)} ${amText(g.mkt_ml_away)}`;
+  }
+  function fairText(g) {
+    const h = favHome(g), p = Math.min(0.995, Math.max(0.005, h ? g.win_prob : 1 - g.win_prob));
+    return `${esc(h ? g.home : g.away)} ${amText(american(p))}`;
+  }
+
   function gapSize(g) {
     return g.mkt_spread == null ? -1 : Math.abs(g.margin - g.mkt_spread);
   }
@@ -76,6 +92,7 @@
         <span class="h"></span><span class="h r">Market</span><span class="h r">Model</span>
         <span>Spread</span><span class="r b">${spreadText(g.mkt_spread, g)}</span><span class="r">${spreadText(g.margin, g)}</span>
         <span>Total</span><span class="r b">${g.mkt_total == null ? "–" : f1(g.mkt_total)}</span><span class="r">${f1(g.total)}</span>
+        <span>Moneyline</span><span class="r b">${mlText(g)}</span><span class="r">${fairText(g)}</span>
       </div>
       <div class="bug-foot">${foot.join("")}</div>
     </article>`;
@@ -169,6 +186,22 @@
       <p class="note">Points each spot was worth against ESPN's spread in the direction the idea says (positive means it worked, for example the team in a letdown spot fell short of the line), with the standard error. To be worth adding, a spot has to move the result the same way in both periods by more than its standard error. Most flip sign between the two periods. Long road trips (2+ time zones) point the same way both times, by about half a point, but that is within about one standard error, and taking that side won 52.4%, exactly break-even. So the line mostly prices these spots. Long road trips are in the model as a small adjustment (about 1.3 points against the traveling team) and are being watched; the rest are listed on the game cards for context only. Tempo and opponent-adjusted efficiency are already the base of the ratings.</p></div>`;
   }
 
+  // moneylines: the backtest against the closing spread's win probability, plus real prices once logged
+  function mlSection(ml) {
+    const x = ml && ml[L];
+    if (!x) return "";
+    const a = x.accuracy;
+    const edges = Object.entries(x.by_edge).map(([k, v]) => `<tr><td>${k === "0%+" ? "Every game" : esc(k.replace("+", "")) + "+ better"}</td><td>${v.with_hold.bets.toLocaleString()}</td><td>${v.with_hold.win_pct.toFixed(1)}%</td><td><span class="${v.with_hold.roi_pct > 0 ? "above" : "below"}">${v.with_hold.roi_pct > 0 ? "+" : ""}${minus(v.with_hold.roi_pct.toFixed(1))}%</span> <span class="muted">±${v.with_hold.roi_se.toFixed(1)}</span></td></tr>`).join("");
+    const prices = Object.entries(x.by_price).map(([k, v]) => `<tr><td>${esc(k)}</td><td>${v.bets.toLocaleString()}</td><td>${v.win_pct.toFixed(1)}%</td><td>${amText(v.avg_price_american)}</td><td><span class="${v.roi_pct > 0 ? "above" : "below"}">${v.roi_pct > 0 ? "+" : ""}${minus(v.roi_pct.toFixed(1))}%</span> <span class="muted">±${v.roi_se.toFixed(1)}</span></td></tr>`).join("");
+    return `<div class="sub"><h3>Moneylines</h3>
+      <p class="note">${esc(x.seasons)}, ${x.games.toLocaleString()} games. The market's win probability is more accurate than the model's (Brier score ${a.p_mkt.brier.toFixed(3)} vs ${a.p_model.brier.toFixed(3)}; lower is better), and betting the model's side whenever it rates a team higher than the price does not make money once the book's hold is paid.</p>
+      <div class="two">
+        <div><div class="tbl-wrap"><table><thead><tr><th>Model's win % above the price by</th><th>Bets</th><th>Won</th><th>Return</th></tr></thead><tbody>${edges}</tbody></table></div></div>
+        <div><div class="tbl-wrap"><table><thead><tr><th>Price, 4%+ edge</th><th>Bets</th><th>Won</th><th>Typical price</th><th>Return</th></tr></thead><tbody>${prices}</tbody></table></div></div>
+      </div>
+      <p class="note">hoopR keeps closing spreads but no moneylines, so the market price here is the win probability the closing spread implies, with a standard 4.5% hold. Real moneylines are logged from now on and graded in the opening-line test below.</p></div>`;
+  }
+
   function drawRecordCBB(bt) {
     const box = $("#model-body");
     if (!bt) { box.innerHTML = '<p class="empty">The backtest summary could not be loaded.</p>'; return; }
@@ -220,8 +253,13 @@
         <tbody>${rows}</tbody></table></div>
         <p class="note">Average miss: model ${f1(s.mae.model_at_open)}, opener ${f1(s.mae.open)}, close ${f1(s.mae.close)}.</p></div>`;
     };
+    const m = x.moneyline;
+    const mlLive = m && m.games && m.by_edge ? `<div><h3>Moneylines at the last logged price</h3><div class="tbl-wrap"><table>
+        <thead><tr><th>Model's win % above the no-vig price by</th><th>Bets</th><th>Won</th><th>Return</th></tr></thead>
+        <tbody>${Object.entries(m.by_edge).map(([k, v]) => `<tr><td>${k === "0%+" ? "Any" : esc(k)}</td><td>${v.bets}</td><td>${v.won}</td><td>${v.roi_pct == null ? "–" : minus(v.roi_pct.toFixed(1)) + "%"} <span class="muted">${v.roi_se == null ? "" : "±" + v.roi_se.toFixed(1)}</span></td></tr>`).join("")}</tbody></table></div></div>` : "";
     box.innerHTML = `${x.note ? `<p class="note"><strong>${esc(x.note)}.</strong></p>` : ""}
       <div class="two">${part("Spreads", x.side, "pts")}${part("Totals", x.total, "pts")}</div>
+      ${mlLive}
       <p class="note">If the line keeps moving toward the model more than half the time, the model is seeing something before the market does. That is the first sign of an edge, and it shows up long before a win-loss record means anything.</p>`;
   }
 
@@ -235,10 +273,12 @@
   }
 
   async function boot() {
-    const [feed, bt, op] = await Promise.all([get(`../feed/${L}.json`), get(`../${L}/backtest.json`), get("../openers.json")]);
+    const [feed, bt, op, ml] = await Promise.all([get(`../feed/${L}.json`), get(`../${L}/backtest.json`), get("../openers.json"), get("../moneyline.json")]);
     drawCaveat(bt);
     drawGames(feed);
     if (L === "nba") { drawRecordNBA(bt); drawRatings(feed); } else drawRecordCBB(bt);
+    const mlHtml = mlSection(ml);
+    if (mlHtml) $("#model-body").insertAdjacentHTML("beforeend", mlHtml);
     drawOpeners(op);
   }
   boot();

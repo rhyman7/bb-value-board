@@ -151,3 +151,13 @@ though within one standard error. With it the 2019-23 holdout miss is 8.97 (was 
 the line's 8.77, and ATS every game 49.7% (was 49.6%). The college board lists them on
 each game card for context. Tempo and opponent-adjusted efficiency are already the base of the
 ratings.
+
+## Moneylines
+
+`python -m experiments.moneyline` backtests the models' win probabilities against moneylines and
+writes `docs/moneyline.json`, which the boards show under Model record. hoopR has no moneylines, so
+the market's win probability comes from the closing spread (a logistic fit on earlier seasons) with a
+standard 4.5% hold. Neither league makes money: the market's win probability is more accurate (Brier
+NBA 0.203 vs model 0.208, college 0.174 vs 0.178) and every edge threshold loses after the hold.
+ESPN's moneylines are logged with the spreads from 2026-11-17 (`home_ml`, `away_ml`,
+`model_win_prob` in `docs/lines/*.csv`), and `openers.py` grades the model at those real prices.

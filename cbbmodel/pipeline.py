@@ -116,12 +116,12 @@ def run():
         }])
         row = backtest.predict(backtest.add_features(rating_projection(row)), coef).iloc[0]
         m = float(row.m_margin)
-        sp, tot = lines.get(str(x.game_id), (None, None))
+        sp, tot, ml_h, ml_a = lines.get(str(x.game_id), (None, None, None, None))
         games.append({
             "id": str(x.game_id), "date": x.day.isoformat(), "away": x.away_abbreviation, "home": x.home_abbreviation,
             "neutral": bool(x.neutral_site), "margin": round(m, 1), "total": round(float(row.r_total), 1),
             "pace": round(float(row.r_pace), 1), "win_prob": round(float(1 / (1 + np.exp(-m / 6.5))), 3),
-            "projection": round(m, 1), "mkt_spread": sp, "mkt_total": tot,
+            "projection": round(m, 1), "mkt_spread": sp, "mkt_total": tot, "mkt_ml_home": ml_h, "mkt_ml_away": ml_a,
             "spots": tags.get(str(x.game_id), []),
         })
     feed = {
