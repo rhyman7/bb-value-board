@@ -1,0 +1,244 @@
+"""Tonight's projections: rate every team as of today, project the next few days' games, and write
+the feed the NBA dashboard reads (docs/feed/nba.json) plus a readable board (docs/nba/index.html).
+
+    python -m nbamodel.pipeline [--backtest]
+
+Missing players come from ESPN's injury report (players listed Out), valued the same way as in the
+backtest. When the report can't be read the projections assume full rosters and say so.
+The market blend uses the weight the backtest has earned on the closing line (currently none, so the
+projection shown is the model's own number next to the market's).
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import urllib.request
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+from zoneinfo import ZoneInfo
+
+import numpy as np
+import pandas as pd
+
+from . import availability, backtest, data, model, ratings
+
+ET = ZoneInfo("America/New_York")
+ROOT = Path(__file__).resolve().parent.parent
+FEED = ROOT / "docs" / "feed" / "nba.json"
+DAYS_AHEAD = 3
+ESPN_INJURIES = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/injuries"
+ESPN_SCOREBOARD = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates={d}"
+
+
+def _json(url):
+    req = urllib.request.Request(url, headers={"User-Agent": "bb-value-board"})
+    with urllib.request.urlopen(req, timeout=15) as r:
+        return json.load(r)
+
+
+def injuries():
+    """{athlete_id: status} for players ESPN lists Out (or Doubtful). None when unreachable."""
+    try:
+        js = _json(ESPN_INJURIES)
+    except Exception:
+        return None
+    out = {}
+    for team in js.get("injuries", []):
+        for it in team.get("injuries", []):
+            st = (it.get("status") or "").lower()
+            ath = it.get("athlete") or {}
+            aid = ath.get("id") or (ath.get("links") and None)
+            if aid and st in ("out", "doubtful"):
+                out[int(aid)] = st
+    return out
+
+
+def market_lines(days):
+    """{game_id: (home spread + = home favored, total)} from ESPN's scoreboard. Empty when unreachable."""
+    out = {}
+    for d in days:
+        try:
+            js = _json(ESPN_SCOREBOARD.format(d=d.strftime("%Y%m%d")))
+        except Exception:
+            continue
+        for ev in js.get("events", []):
+            comp = (ev.get("competitions") or [{}])[0]
+            odds = (comp.get("odds") or [None])[0]
+            if not odds:
+                continue
+            teams = {c.get("homeAway"): (c.get("team") or {}).get("abbreviation", "") for c in comp.get("competitors", [])}
+            det = (odds.get("details") or "").strip()
+            sp = None
+            if det.lower().startswith(("even", "pk")):
+                sp = 0.0
+            elif " " in det:
+                ab, pts = det.rsplit(" ", 1)
+                try:
+                    pts = abs(float(pts))
+                    sp = pts if ab == teams.get("home") else -pts if ab == teams.get("away") else None
+                except ValueError:
+                    pass
+            tot = odds.get("overUnder")
+            out[str(ev.get("id"))] = (sp, float(tot) if tot is not None else None)
+    return out
+
+
+def upcoming(season, today):
+    s = data.schedule(season, refresh=True)
+    s = s[(s.season_type == 2) & (~s.status_type_completed.astype(bool))].copy()
+    s["et"] = pd.to_datetime(s.date, utc=True).dt.tz_convert(ET)
+    s["day"] = s.et.dt.date
+    s = s[(s.day >= today) & (s.day < today + timedelta(days=DAYS_AHEAD)) & (s.home_abbreviation != "TBD")]
+    return s
+
+
+def current_missing(g, season, inj):
+    """Missing value per team id for today, from the injury report, valued like the backtest."""
+    if inj is None:
+        return {}, {}
+    pb = availability.player_box(season, refresh=True)
+    played = pb[pb.minutes > 0].sort_values("date")
+    try:
+        prev = availability.player_box(season - 1)
+        prev_tot = prev[prev.minutes > 0].groupby("athlete_id")[["gmsc", "minutes"]].sum()
+    except Exception:
+        prev_tot = pd.DataFrame(columns=["gmsc", "minutes"])
+    tot = played.groupby("athlete_id")[["gmsc", "minutes"]].sum()
+    last_team = played.groupby("athlete_id").team_id.last()
+    miss, names = {}, {}
+    for tid, tp in played.groupby("team_id"):
+        recent_games = tp.game_id.drop_duplicates().tail(availability.WINDOW)
+        r = tp[tp.game_id.isin(recent_games)]
+        n_games = len(recent_games)
+        for aid, pr in r.groupby("athlete_id"):
+            if aid not in inj or last_team.get(aid) != tid:
+                continue
+            share = len(pr) / max(n_games, 1)
+            role = pr.minutes.mean()
+            if share < 0.3 or role < 10:
+                continue
+            g_, m_ = tot.loc[aid] if aid in tot.index else (0.0, 0.0)
+            pg, pm = prev_tot.loc[aid] if aid in prev_tot.index else (0.0, 0.0)
+            rate = (g_ + 0.5 * pg + availability.REPLACEMENT * availability.PRIOR_MIN) / (m_ + 0.5 * pm + availability.PRIOR_MIN)
+            v = max(0.0, rate - availability.REPLACEMENT) * role
+            miss[tid] = miss.get(tid, 0.0) + v
+            if v > 1:
+                names.setdefault(tid, []).append(pr.athlete_display_name.iloc[-1])
+    return miss, names
+
+
+def run(do_backtest: bool = False):
+    now = datetime.now(ET)
+    today = now.date()
+    season = today.year + 1 if today.month >= 8 else today.year
+    g = data.all_games(season)
+    s = ratings.Settings()
+
+    # coefficients: fitted on every finished season (the backtest refits season by season)
+    hist_seasons = [x for x in sorted(g.season.unique()) if x > g.season.min() and x < season]
+    rated = ratings.rating_projection(ratings.walk_forward(g, s, seasons=hist_seasons))
+    rated = rated.merge(availability.missing_value(g, hist_seasons), on="game_id", how="left")
+    coef = model.fit(model.features(rated))
+
+    bt_summary = None
+    bt_path = ROOT / "docs" / "nba" / "backtest.json"
+    if do_backtest:
+        bt_summary = backtest.run(season, s, verbose=False)["summary"]
+        bt_path.parent.mkdir(parents=True, exist_ok=True)
+        bt_path.write_text(json.dumps(bt_summary, indent=1))
+    elif bt_path.exists():
+        bt_summary = json.loads(bt_path.read_text())
+    w_side = max(0.0, (bt_summary or {}).get("market_weight", {}).get("side", 0.0) or 0.0)
+    w_total = max(0.0, min(0.3, (bt_summary or {}).get("market_weight", {}).get("total", 0.0) or 0.0))
+
+    # today's ratings
+    day = pd.Timestamp(today)
+    pool = g[g.season.isin([season - 1, season]) & (g.date < day)]
+    R, mean, hca, pmean = ratings.rate_day(pool, day, season, s)
+
+    sched = upcoming(season, today)
+    inj = injuries()
+    miss, miss_names = current_missing(g, season, inj)
+    lines = market_lines(sorted(set(sched.day)))
+    this = g[g.season == season]
+    last_played = {}
+    for x in this.itertuples():
+        last_played[x.home_id] = max(last_played.get(x.home_id, x.date), x.date)
+        last_played[x.away_id] = max(last_played.get(x.away_id, x.date), x.date)
+
+    games = []
+    for x in sched.sort_values("et").itertuples():
+        hid, aid = int(x.home_id), int(x.away_id)
+        gday = pd.Timestamp(x.day)
+        # rest: days off since each team's last game (scheduled games in between count)
+        def rest(tid):
+            prev = [d for d in [last_played.get(tid)] if d is not None]
+            earlier = sched[((sched.home_id.astype(int) == tid) | (sched.away_id.astype(int) == tid)) & (sched.day < x.day)]
+            prev += [pd.Timestamp(d) for d in earlier.day]
+            if not prev:
+                return 4
+            return int(min(4, max(0, (gday - max(prev)).days - 1)))
+        def g7(tid):
+            ds = [d for d in this[(this.home_id == tid) | (this.away_id == tid)].date if 0 < (gday - d).days <= 6]
+            return len(ds)
+        rh, ra = R.get(hid, (0, 0, 0)), R.get(aid, (0, 0, 0))
+        row = pd.DataFrame([{
+            "off_h": rh[0], "def_h": rh[1], "pace_h": rh[2], "off_a": ra[0], "def_a": ra[1], "pace_a": ra[2],
+            "lg_eff": mean, "lg_hca": hca, "lg_pace": pmean, "neutral": bool(x.neutral_site),
+            "rest_h": rest(hid), "rest_a": rest(aid), "g7_h": g7(hid), "g7_a": g7(aid),
+            "miss_h": miss.get(hid, 0.0), "miss_a": miss.get(aid, 0.0), "n_this": len(this),
+        }])
+        row = model.predict(model.features(ratings.rating_projection(row)), coef).iloc[0]
+        gid = str(x.game_id)
+        mk = lines.get(gid, (None, None))
+        mkt_spread, mkt_total = mk
+        proj = float(row.m_margin) if mkt_spread is None else mkt_spread + w_side * (float(row.m_margin) - mkt_spread)
+        projt = float(row.m_total) if mkt_total is None else mkt_total + w_total * (float(row.m_total) - mkt_total)
+        games.append({
+            "id": gid, "date": x.day.isoformat(), "away": x.away_abbreviation, "home": x.home_abbreviation,
+            "margin": round(float(row.m_margin), 1), "total": round(float(row.m_total), 1),
+            "ratings_margin": round(float(row.r_margin), 1), "pace": round(float(row.r_pace), 1),
+            "mkt_spread": mkt_spread, "mkt_total": mkt_total,
+            "projection": round(proj, 1), "projection_total": round(projt, 1),
+            "win_prob": round(float(1 / (1 + np.exp(-float(row.m_margin) / 7.0))), 3),
+            "rest": {"away": int(row.rest_a), "home": int(row.rest_h)},
+            "missing": {"away": round(float(row.miss_a), 1), "home": round(float(row.miss_h), 1),
+                        "away_names": miss_names.get(aid, []), "home_names": miss_names.get(hid, [])},
+        })
+
+    teams = {}
+    abbr = {}
+    for x in this.itertuples():
+        abbr[x.home_id] = x.home
+        abbr[x.away_id] = x.away
+    for tid, (o, d, p) in R.items():
+        if tid in abbr:
+            teams[abbr[tid]] = {"off": round(mean + o, 1), "def": round(mean - d, 1), "net": round(o + d, 1), "pace": round(pmean + p, 1)}
+
+    feed = {
+        "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "season": season,
+        "injuryReport": inj is not None,
+        "marketWeight": {"side": round(w_side, 3), "total": round(w_total, 3)},
+        "homeCourt": round(hca * pmean / 100, 2),
+        "coefficients": {k: {a: round(b, 3) for a, b in v.items()} for k, v in coef.items()},
+        "games": games,
+        "teams": teams,
+    }
+    FEED.parent.mkdir(parents=True, exist_ok=True)
+    FEED.write_text(json.dumps(feed, indent=1))
+    print(f"{len(games)} games projected for {today} to {today + timedelta(days=DAYS_AHEAD - 1)}; "
+          f"injury report {'read' if inj is not None else 'NOT read (full rosters assumed)'}; "
+          f"{sum(1 for x in games if x['mkt_spread'] is not None)} with a market line")
+    return feed
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--backtest", action="store_true", help="rerun the full backtest first")
+    args = ap.parse_args()
+    run(args.backtest)
+
+
+if __name__ == "__main__":
+    main()
