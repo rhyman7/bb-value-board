@@ -17,7 +17,7 @@ from zoneinfo import ZoneInfo
 import numpy as np
 import pandas as pd
 
-from nbamodel import lines as line_log
+from nbamodel import gamepage, lines as line_log
 from nbamodel.ratings import rating_projection
 
 from . import backtest, data, ratings, roster, spots
@@ -116,6 +116,11 @@ def run():
         }])
         row = backtest.predict(backtest.add_features(rating_projection(row)), coef).iloc[0]
         m = float(row.m_margin)
+        fade = float(np.clip(1 - n_this / backtest.EARLY_GAMES, 0, 1))
+        cm = {k: v for k, v in coef.items() if k != "r_early"}
+        cm["r_margin"] = coef["r_margin"] + coef.get("r_early", 0.0) * fade
+        build = gamepage.build(row, {"margin": cm, "total": {"const": 0.0, "r_total": 1.0}},
+                               x.home_abbreviation, x.away_abbreviation, {}, False)
         sp, tot, ml_h, ml_a = lines.get(str(x.game_id), (None, None, None, None))
         games.append({
             "id": str(x.game_id), "date": x.day.isoformat(), "away": x.away_abbreviation, "home": x.home_abbreviation,
@@ -123,15 +128,36 @@ def run():
             "pace": round(float(row.r_pace), 1), "win_prob": round(float(1 / (1 + np.exp(-m / 6.5))), 3),
             "projection": round(m, 1), "mkt_spread": sp, "mkt_total": tot, "mkt_ml_home": ml_h, "mkt_ml_away": ml_a,
             "spots": tags.get(str(x.game_id), []),
+            "build": build,
         })
+    # game pages: four factors with ranks (among all of Division I) and last ten games, for the teams on the board
+    playing = {x["home"] for x in games} | {x["away"] for x in games}
+    abbr_of = {}
+    for side in ("home", "away"):
+        for tid, ab in zip(sched[f"{side}_id"].astype(int), sched[f"{side}_abbreviation"]):
+            if tid in d1:
+                abbr_of[tid] = ab
+    try:
+        tb = data.team_box(season)
+        tb = tb[tb.team_id.astype(int).isin(d1) & tb.opponent_team_id.astype(int).isin(d1)]
+        tstats = gamepage.team_stats(tb, abbr_of, data.possessions, only=playing)
+    except Exception:
+        tstats = {}
+    this = g_done[g_done.season == season]
+    form = gamepage.last_ten(this, this[["game_id"]].assign(espn_spread=this.close_spread).dropna())
+    teams = {ab: {"net": round(float(final[t][0] + final[t][1]), 1) if t in final else None,
+                  "stats": tstats.get(ab), "last10": form.get(ab, [])} for t, ab in abbr_of.items() if ab in playing}
+
     feed = {
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "season": season, "gamesRated": n_this, "marketWeight": 0.0,
         "coefficients": {k: round(v, 3) for k, v in coef.items()},
         "games": games,
+        "teams": teams,
+        "nTeams": len(d1),
     }
     FEED.parent.mkdir(parents=True, exist_ok=True)
-    FEED.write_text(json.dumps(feed, indent=1))
+    FEED.write_text(json.dumps(feed, indent=1, allow_nan=False))
     n_lines = line_log.log("cbb", games)
     print(f"{len(games)} college games projected for {today} to {today + timedelta(days=DAYS_AHEAD - 1)}; {n_lines} with an ESPN line")
     return feed

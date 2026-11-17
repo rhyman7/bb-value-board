@@ -114,3 +114,17 @@ def add_rest(g: pd.DataFrame) -> pd.DataFrame:
     piv = long.pivot_table(index="game_id", columns="side", values=["rest", "g7"])
     piv.columns = [f"{a}_{b}" for a, b in piv.columns]
     return g.merge(piv.reset_index(), on="game_id", how="left")
+
+
+def espn_spreads(season: int, refresh: bool = False) -> pd.DataFrame:
+    """ESPN's spread per game (+ = home favored) from hoopR's play-by-play file, which carries it
+    for the current season too (hoopR's consensus closes only arrive after a season ends)."""
+    small = CACHE / f"nba_espn_spreads_{season}.parquet"
+    if not small.exists() or refresh:
+        big = _get(f"pbp/parquet/play_by_play_{season}.parquet", CACHE / f"nba_pbp_{season}.parquet", True)
+        d = pd.read_parquet(big, columns=["game_id", "game_spread_available", "home_team_spread"])
+        d.drop_duplicates("game_id").to_parquet(small)
+        big.unlink(missing_ok=True)
+    d = pd.read_parquet(small)
+    d = d[d.game_spread_available.fillna(False).astype(bool)]
+    return pd.DataFrame({"game_id": d.game_id.astype(str), "espn_spread": d.home_team_spread.astype(float)})

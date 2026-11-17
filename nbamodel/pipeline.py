@@ -20,7 +20,7 @@ from zoneinfo import ZoneInfo
 import numpy as np
 import pandas as pd
 
-from . import availability, backtest, data, lines as line_log, market, model, ratings
+from . import availability, backtest, data, gamepage, lines as line_log, market, model, ratings
 
 ET = ZoneInfo("America/New_York")
 ROOT = Path(__file__).resolve().parent.parent
@@ -84,7 +84,7 @@ def upcoming(season, today):
 def current_missing(g, season, inj):
     """Missing value per team id for today, from the injury report, valued like the backtest."""
     if inj is None:
-        return {}, {}
+        return {}, {}, {}
     pb = availability.player_box(season, refresh=True)
     played = pb[pb.minutes > 0].sort_values("date")
     try:
@@ -94,7 +94,7 @@ def current_missing(g, season, inj):
         prev_tot = pd.DataFrame(columns=["gmsc", "minutes"])
     tot = played.groupby("athlete_id")[["gmsc", "minutes"]].sum()
     last_team = played.groupby("athlete_id").team_id.last()
-    miss, names = {}, {}
+    miss, names, detail = {}, {}, {}
     for tid, tp in played.groupby("team_id"):
         recent_games = tp.game_id.drop_duplicates().tail(availability.WINDOW)
         r = tp[tp.game_id.isin(recent_games)]
@@ -113,7 +113,9 @@ def current_missing(g, season, inj):
             miss[tid] = miss.get(tid, 0.0) + v
             if v > 1:
                 names.setdefault(tid, []).append(pr.athlete_display_name.iloc[-1])
-    return miss, names
+            if v > 0.3:
+                detail.setdefault(tid, []).append((pr.athlete_display_name.iloc[-1], float(v)))
+    return miss, names, detail
 
 
 def run(do_backtest: bool = False):
@@ -149,7 +151,7 @@ def run(do_backtest: bool = False):
 
     sched = upcoming(season, today)
     inj = injuries()
-    miss, miss_names = current_missing(g, season, inj)
+    miss, miss_names, miss_detail = current_missing(g, season, inj)
     lines = line_log.espn_lines("nba", sorted(set(sched.day)))
     mk = live_market(g, season, day)
     this = g[g.season == season]
@@ -184,6 +186,8 @@ def run(do_backtest: bool = False):
         }])
         row = model.predict(model.features(ratings.rating_projection(row)), coef).iloc[0]
         gid = str(x.game_id)
+        build = gamepage.build(row, coef, x.home_abbreviation, x.away_abbreviation,
+                               {"h": miss_detail.get(hid, []), "a": miss_detail.get(aid, [])}, bool(row.has_mk))
         mkt_spread, mkt_total, ml_h, ml_a = lines.get(gid, (None, None, None, None))
         proj = float(row.m_margin) if mkt_spread is None else mkt_spread + w_side * (float(row.m_margin) - mkt_spread)
         projt = float(row.m_total) if mkt_total is None else mkt_total + w_total * (float(row.m_total) - mkt_total)
@@ -196,6 +200,7 @@ def run(do_backtest: bool = False):
             "projection": round(proj, 1), "projection_total": round(projt, 1),
             "win_prob": round(float(1 / (1 + np.exp(-float(row.m_margin) / 7.0))), 3),
             "rest": {"away": int(row.rest_a), "home": int(row.rest_h)},
+            "build": build,
             "missing": {"away": round(float(row.miss_a), 1), "home": round(float(row.miss_h), 1),
                         "away_names": miss_names.get(aid, []), "home_names": miss_names.get(hid, [])},
         })
@@ -209,6 +214,20 @@ def run(do_backtest: bool = False):
         if tid in abbr:
             teams[abbr[tid]] = {"off": round(mean + o, 1), "def": round(mean - d, 1), "net": round(o + d, 1), "pace": round(pmean + p, 1)}
 
+    # game pages: four factors with ranks and each team's last ten games
+    try:
+        tstats = gamepage.team_stats(data.team_box(season), {int(k): v for k, v in abbr.items()}, data.possessions)
+    except Exception:
+        tstats = {}
+    try:
+        esp = data.espn_spreads(season, refresh=True)
+    except Exception:
+        esp = None
+    form = gamepage.last_ten(this, esp)
+    for ab, t in teams.items():
+        t["stats"] = tstats.get(ab)
+        t["last10"] = form.get(ab, [])
+
     feed = {
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "season": season,
@@ -221,7 +240,7 @@ def run(do_backtest: bool = False):
         "teams": teams,
     }
     FEED.parent.mkdir(parents=True, exist_ok=True)
-    FEED.write_text(json.dumps(feed, indent=1))
+    FEED.write_text(json.dumps(feed, indent=1, allow_nan=False))
     line_log.log("nba", games)
     print(f"{len(games)} games projected for {today} to {today + timedelta(days=DAYS_AHEAD - 1)}; "
           f"injury report {'read' if inj is not None else 'NOT read (full rosters assumed)'}; "
