@@ -52,3 +52,26 @@ def test_openers_grades_line_movement(tmp_path, monkeypatch):
     g = out["side"]["by_gap"]["3+"]
     assert g["record_at_open"]["w"] == 10 and g["line_moved_toward_model_pct"] == 100.0
     assert out["total"]["by_gap"]["5+"]["record_at_open"]["w"] == 10
+
+
+def test_moneyline_parse_and_grade(tmp_path, monkeypatch):
+    from nbamodel import lines, openers
+    assert lines._ml({"moneyLine": -150}, {}, "home") == -150
+    assert lines._ml(None, {"moneyline": {"away": {"close": {"odds": "+130"}}}}, "away") == 130
+    assert lines._ml(None, {}, "home") is None
+    log = tmp_path / "nba_lines.csv"
+    # an old log without moneyline columns gets them added on the next write
+    pd.DataFrame([{"game_id": "x", "fetched_at": "2026-11-16T10:00:00+00:00", "close_spread": 1.0, "close_total": 220.0,
+                   "model_margin": 2.0, "model_total": 221.0}]).to_csv(log, index=False)
+    monkeypatch.setitem(lines.LOG, "nba", log)
+    games = [{"id": str(i), "mkt_spread": -3.0, "mkt_total": 220.0, "margin": 1.0, "total": 221.0,
+              "mkt_ml_home": 140, "mkt_ml_away": -160, "win_prob": 0.55} for i in range(10)]
+    assert lines.log("nba", games) == 10
+    assert list(pd.read_csv(log).columns) == lines.COLUMNS
+    # home dog at +140 (no-vig ~40%), model says 55%: bet home every game; home wins 6 of 10
+    monkeypatch.setattr(openers, "_results", lambda league, season: pd.DataFrame(
+        {"game_id": [str(i) for i in range(10)], "margin": [5.0] * 6 + [-5.0] * 4, "total": 220.0}))
+    ml = openers.grade("nba", 2027)["moneyline"]
+    e = ml["by_edge"]["4%+"]
+    assert ml["games"] == 10 and e["bets"] == 10 and e["won"] == 6
+    assert abs(e["roi_pct"] - 100 * (6 * 1.4 - 4) / 10) < 0.1

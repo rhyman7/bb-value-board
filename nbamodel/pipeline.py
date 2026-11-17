@@ -184,7 +184,7 @@ def run(do_backtest: bool = False):
         }])
         row = model.predict(model.features(ratings.rating_projection(row)), coef).iloc[0]
         gid = str(x.game_id)
-        mkt_spread, mkt_total = lines.get(gid, (None, None))
+        mkt_spread, mkt_total, ml_h, ml_a = lines.get(gid, (None, None, None, None))
         proj = float(row.m_margin) if mkt_spread is None else mkt_spread + w_side * (float(row.m_margin) - mkt_spread)
         projt = float(row.m_total) if mkt_total is None else mkt_total + w_total * (float(row.m_total) - mkt_total)
         games.append({
@@ -192,7 +192,7 @@ def run(do_backtest: bool = False):
             "margin": round(float(row.m_margin), 1), "total": round(float(row.m_total), 1),
             "ratings_margin": round(float(row.r_margin), 1), "pace": round(float(row.r_pace), 1),
             "market_ratings_margin": round(float(row.mk_margin), 1) if row.has_mk else None,
-            "mkt_spread": mkt_spread, "mkt_total": mkt_total,
+            "mkt_spread": mkt_spread, "mkt_total": mkt_total, "mkt_ml_home": ml_h, "mkt_ml_away": ml_a,
             "projection": round(proj, 1), "projection_total": round(projt, 1),
             "win_prob": round(float(1 / (1 + np.exp(-float(row.m_margin) / 7.0))), 3),
             "rest": {"away": int(row.rest_a), "home": int(row.rest_h)},
