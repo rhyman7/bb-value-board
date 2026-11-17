@@ -66,6 +66,7 @@
       if (g.missing.home_names && g.missing.home_names.length) out.push(`${esc(g.home)}: ${g.missing.home_names.map(esc).join(", ")}`);
       if (out.length) foot.push(`<span class="out">Out: ${out.join("; ")}</span>`);
     }
+    if (g.spots && g.spots.length) foot.push(`<ul class="spots" aria-label="Situational spots">${g.spots.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>`);
     return `
     <article class="bug">
       <div class="bug-top"><span>${dayLabel(g.date)}</span><span>${tags.join(" ")}</span></div>
@@ -156,6 +157,18 @@
       <p class="note">The market weight is how much of the gap between the model and the close is worth taking: ${minus(bt.market_weight.side.toFixed(2))} on spreads (±${bt.market_weight.side_se.toFixed(2)}) and ${minus(bt.market_weight.total.toFixed(2))} on totals (±${bt.market_weight.total_se.toFixed(2)}). Zero or below means the best guess is the market's number on its own.</p>`;
   }
 
+  // Ryan's situational spots, each tested against the line on its own
+  function spotTable(sp) {
+    if (!sp) return "";
+    const cell = (t) => (t && t.pts != null ? `${t.pts > 0 ? "+" : ""}${minus(t.pts.toFixed(2))} <span class="muted">±${t.se.toFixed(2)}</span>` : "–");
+    const ats = (t) => (t && t.ats ? pctCell(t.ats) + ` <span class="muted">(${t.games.toLocaleString()})</span>` : "–");
+    const rows = Object.values(sp).map((v) => `<tr><td>${esc(v.label)}</td><td>${cell(v.tune)}</td><td>${cell(v.holdout)}</td><td>${ats(v.holdout)}</td><td>${cell(v.this_season)}</td></tr>`).join("");
+    return `<div><h3>Situational spots against the line</h3><div class="tbl-wrap"><table>
+      <thead><tr><th>Spot</th><th>Pts vs line, 2016-18</th><th>Pts vs line, 2019-23</th><th>Taking the spot's side, 2019-23</th><th>This season</th></tr></thead>
+      <tbody>${rows}</tbody></table></div>
+      <p class="note">Points each spot was worth against ESPN's spread in the direction the idea says (positive means it worked, for example the team in a letdown spot fell short of the line), with the standard error. To be worth adding, a spot has to move the result the same way in both periods by more than its standard error. Most flip sign between the two periods. Long road trips (2+ time zones) point the same way both times, by about half a point, but that is within about one standard error, and taking that side won 52.4%, exactly break-even. So the line already prices these spots. They are listed on the game cards for context, and are not in the model. Tempo and opponent-adjusted efficiency are already the base of the ratings.</p></div>`;
+  }
+
   function drawRecordCBB(bt) {
     const box = $("#model-body");
     if (!bt) { box.innerHTML = '<p class="empty">The backtest summary could not be loaded.</p>'; return; }
@@ -176,6 +189,7 @@
           <thead><tr><th>Season</th><th>Games</th><th>Model miss</th><th>Line miss</th><th>ATS W-L-P</th><th>Win %</th></tr></thead>
           <tbody>${bs}${tsRow}</tbody></table></div></div>
       </div>
+      ${spotTable(bt.spots)}
       <p class="note">${g6 ? `The biggest disagreements (6+ points) went ${rec(g6)}, ${g6.pct.toFixed(1)}%. That is above ${BREAK_EVEN}% by less than one standard error (±${g6.se.toFixed(1)}), so it reads as noise, and the other buckets sit at or below break-even. ` : ""}Neutral-site games are left out: ESPN's lines for them are sometimes listed for the wrong side, which makes any record against them look far better than it is.</p>`;
   }
 

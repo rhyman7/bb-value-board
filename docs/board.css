@@ -130,3 +130,5 @@ td.team { font-weight: 700; }
 
 footer.site { margin-top: 64px; padding-top: 18px; border-top: 1px solid var(--rule); display: grid; gap: 6px; font-size: 13px; color: var(--ink-3); }
 #model-body, #openers-body, #ratings-body { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; }
+.spots { list-style: none; margin: 2px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px; }
+.spots li { font-size: 11.5px; font-weight: 600; color: var(--ink-2); background: var(--raised); border-radius: 3px; padding: 1px 7px; }
