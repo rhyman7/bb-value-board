@@ -15,7 +15,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from . import availability, data, model, ratings
+from . import availability, data, market, model, ratings
 
 FIRST_FIT = 2017          # the game model needs at least one earlier season of rated games
 GRADE_FROM = 2021         # first season with closing lines for the whole season
@@ -44,8 +44,10 @@ def run(last_season: int, settings: ratings.Settings | None = None, verbose: boo
     if use_availability:
         miss = availability.missing_value(g, seasons)
         rated = rated.merge(miss, on="game_id", how="left")
-    rated = model.features(rated)
     rated = rated.merge(data.closing_lines(), on="game_id", how="left")
+    if use_availability:
+        rated = rated.merge(market.market_ratings(rated, [s for s in seasons if s >= GRADE_FROM]), on="game_id", how="left")
+    rated = model.features(rated)
 
     out = []
     coefs = {}
@@ -77,6 +79,7 @@ def run(last_season: int, settings: ratings.Settings | None = None, verbose: boo
         "seasons": f"{int(graded.season.min())}-{int(graded.season.max())}",
         "games": int(len(graded)),
         "margin_mae": {"model": mae(graded.margin, graded.m_margin), "ratings_only": mae(graded.margin, graded.r_margin),
+                       "market_ratings_only": mae(graded.margin, graded.mk_margin),
                        "close": mae(graded.margin, graded.close_spread)},
         "total_mae": {"model": mae(graded.total, graded.m_total), "close": mae(graded.total, graded.close_total)},
         "after_150_games": {"games": int(len(late)), "model": mae(late.margin, late.m_margin), "close": mae(late.margin, late.close_spread)},

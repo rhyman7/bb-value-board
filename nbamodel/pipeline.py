@@ -20,11 +20,12 @@ from zoneinfo import ZoneInfo
 import numpy as np
 import pandas as pd
 
-from . import availability, backtest, data, model, ratings
+from . import availability, backtest, data, market, model, ratings
 
 ET = ZoneInfo("America/New_York")
 ROOT = Path(__file__).resolve().parent.parent
 FEED = ROOT / "docs" / "feed" / "nba.json"
+LINE_LOG = ROOT / "docs" / "lines" / "nba_lines.csv"   # every ESPN line the pipeline sees, kept for market ratings
 DAYS_AHEAD = 3
 ESPN_INJURIES = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/injuries"
 ESPN_SCOREBOARD = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates={d}"
@@ -83,6 +84,52 @@ def market_lines(days):
     return out
 
 
+def log_lines(sched, lines):
+    """Append the lines just read to the line log. The last one logged before tip-off stands in
+    for the close in this season's market ratings (hoopR's closing lines arrive after the season)."""
+    if not lines:
+        return
+    now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    rows = []
+    for x in sched.itertuples():
+        sp, tot = lines.get(str(x.game_id), (None, None))
+        if sp is None or tot is None:
+            continue
+        rows.append({"game_id": str(x.game_id), "fetched_at": now, "close_spread": sp, "close_total": tot})
+    if not rows:
+        return
+    LINE_LOG.parent.mkdir(parents=True, exist_ok=True)
+    new = pd.DataFrame(rows)
+    new.to_csv(LINE_LOG, mode="a", header=not LINE_LOG.exists(), index=False)
+
+
+def logged_closes():
+    if not LINE_LOG.exists():
+        return pd.DataFrame(columns=["game_id", "close_spread", "close_total"])
+    x = pd.read_csv(LINE_LOG, dtype={"game_id": str}).sort_values("fetched_at")
+    return x.drop_duplicates("game_id", keep="last")[["game_id", "close_spread", "close_total"]]
+
+
+def live_market(g, season, day):
+    """Market ratings for today from the closes of earlier games: hoopR's closing lines where it
+    has them, else the last ESPN line the pipeline logged. Returns solve()'s output or None."""
+    hist = g[g.season.isin([season - 1, season]) & (g.date < day)]
+    closes = data.closing_lines()
+    known = hist.merge(closes[["game_id", "close_spread", "close_total"]], on="game_id", how="left")
+    logged = logged_closes().rename(columns={"close_spread": "ls", "close_total": "lt"})
+    known = known.merge(logged, on="game_id", how="left")
+    known["close_spread"] = known.close_spread.fillna(known.ls)
+    known["close_total"] = known.close_total.fillna(known.lt)
+    try:
+        known = known.merge(availability.missing_value(g, [season - 1, season])[["game_id", "miss_h", "miss_a"]], on="game_id", how="left")
+    except Exception:
+        known["miss_h"] = known["miss_a"] = 0.0
+    known = known.dropna(subset=["close_spread", "close_total"])
+    if (known.season == season).sum() < market.MIN_THIS_SEASON:
+        return None
+    return market.solve(known, day, season)
+
+
 def upcoming(season, today):
     s = data.schedule(season, refresh=True)
     s = s[(s.season_type == 2) & (~s.status_type_completed.astype(bool))].copy()
@@ -138,6 +185,8 @@ def run(do_backtest: bool = False):
     hist_seasons = [x for x in sorted(g.season.unique()) if x > g.season.min() and x < season]
     rated = ratings.rating_projection(ratings.walk_forward(g, s, seasons=hist_seasons))
     rated = rated.merge(availability.missing_value(g, hist_seasons), on="game_id", how="left")
+    rated = rated.merge(data.closing_lines(), on="game_id", how="left")
+    rated = rated.merge(market.market_ratings(rated, [x for x in hist_seasons if x >= backtest.GRADE_FROM]), on="game_id", how="left")
     coef = model.fit(model.features(rated))
 
     bt_summary = None
@@ -160,6 +209,8 @@ def run(do_backtest: bool = False):
     inj = injuries()
     miss, miss_names = current_missing(g, season, inj)
     lines = market_lines(sorted(set(sched.day)))
+    log_lines(sched, lines)
+    mk = live_market(g, season, day)
     this = g[g.season == season]
     last_played = {}
     for x in this.itertuples():
@@ -187,17 +238,19 @@ def run(do_backtest: bool = False):
             "lg_eff": mean, "lg_hca": hca, "lg_pace": pmean, "neutral": bool(x.neutral_site),
             "rest_h": rest(hid), "rest_a": rest(aid), "g7_h": g7(hid), "g7_a": g7(aid),
             "miss_h": miss.get(hid, 0.0), "miss_a": miss.get(aid, 0.0), "n_this": len(this),
+            "mk_margin": (mk[0][hid] - mk[0][aid] + (0.0 if x.neutral_site else mk[1])) if mk and hid in mk[0] and aid in mk[0] else np.nan,
+            "mk_total": (mk[2] + mk[3][hid] + mk[3][aid]) if mk and hid in mk[3] and aid in mk[3] else np.nan,
         }])
         row = model.predict(model.features(ratings.rating_projection(row)), coef).iloc[0]
         gid = str(x.game_id)
-        mk = lines.get(gid, (None, None))
-        mkt_spread, mkt_total = mk
+        mkt_spread, mkt_total = lines.get(gid, (None, None))
         proj = float(row.m_margin) if mkt_spread is None else mkt_spread + w_side * (float(row.m_margin) - mkt_spread)
         projt = float(row.m_total) if mkt_total is None else mkt_total + w_total * (float(row.m_total) - mkt_total)
         games.append({
             "id": gid, "date": x.day.isoformat(), "away": x.away_abbreviation, "home": x.home_abbreviation,
             "margin": round(float(row.m_margin), 1), "total": round(float(row.m_total), 1),
             "ratings_margin": round(float(row.r_margin), 1), "pace": round(float(row.r_pace), 1),
+            "market_ratings_margin": round(float(row.mk_margin), 1) if row.has_mk else None,
             "mkt_spread": mkt_spread, "mkt_total": mkt_total,
             "projection": round(proj, 1), "projection_total": round(projt, 1),
             "win_prob": round(float(1 / (1 + np.exp(-float(row.m_margin) / 7.0))), 3),
@@ -219,6 +272,7 @@ def run(do_backtest: bool = False):
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "season": season,
         "injuryReport": inj is not None,
+        "marketRatings": mk is not None,
         "marketWeight": {"side": round(w_side, 3), "total": round(w_total, 3)},
         "homeCourt": round(hca * pmean / 100, 2),
         "coefficients": {k: {a: round(b, 3) for a, b in v.items()} for k, v in coef.items()},
