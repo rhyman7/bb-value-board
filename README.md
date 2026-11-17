@@ -135,3 +135,16 @@ and `docs/nba/` and `docs/cbb/` are the boards, drawn in the browser by `docs/bo
 those JSON files. The boards open with a warning that the models don't beat the market, and the
 warning's numbers come from the latest backtest. There is no bet list until the opening-line test
 or a model change passes the keep rule.
+
+## Situational spots (college)
+
+`cbbmodel/spots.py` flags letdown spots (last game within 7 days was a win as a 5+ point underdog
+or over a rival), lookahead spots (favored by 5+ with a top-25 or rival opponent next within 5
+days), second straight road games within 4 days (and ones that change time zone), road games 2+
+time zones from home, and home underdogs in rivalry games (same state, met in 8+ seasons). The
+backtest tests each against ESPN's line on 2016-18 and 2019-23 and writes the result to
+`docs/cbb/backtest.json` under `spots`. None held up in both periods by more than its standard
+error, and adding them to the game model changed the holdout miss by under 0.01 points
+(`python -m experiments.cbb_spots`), so they are not in the model. The college board lists them on
+each game card for context. Tempo and opponent-adjusted efficiency are already the base of the
+ratings.

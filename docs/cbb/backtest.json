@@ -475,6 +475,233 @@
    }
   }
  },
+ "spots": {
+  "letdown_diff": {
+   "label": "Letdown after an emotional win",
+   "tune": {
+    "games": 1738,
+    "pts": 0.3,
+    "se": 0.26,
+    "ats": {
+     "w": 864,
+     "l": 841,
+     "p": 33,
+     "pct": 50.7,
+     "se": 1.2
+    }
+   },
+   "holdout": {
+    "games": 3687,
+    "pts": -0.19,
+    "se": 0.18,
+    "ats": {
+     "w": 1761,
+     "l": 1850,
+     "p": 76,
+     "pct": 48.8,
+     "se": 0.8
+    }
+   },
+   "this_season": {
+    "games": 53,
+    "pts": 0.32,
+    "se": 1.61,
+    "ats": {
+     "w": 24,
+     "l": 29,
+     "p": 0,
+     "pct": 45.3,
+     "se": 6.9
+    }
+   }
+  },
+  "lookahead_diff": {
+   "label": "Lookahead to a key game",
+   "tune": {
+    "games": 797,
+    "pts": -0.38,
+    "se": 0.39,
+    "ats": {
+     "w": 390,
+     "l": 387,
+     "p": 20,
+     "pct": 50.2,
+     "se": 1.8
+    }
+   },
+   "holdout": {
+    "games": 1686,
+    "pts": 0.39,
+    "se": 0.28,
+    "ats": {
+     "w": 857,
+     "l": 805,
+     "p": 24,
+     "pct": 51.6,
+     "se": 1.2
+    }
+   },
+   "this_season": {
+    "games": 39,
+    "pts": -0.91,
+    "se": 1.93,
+    "ats": {
+     "w": 19,
+     "l": 20,
+     "p": 0,
+     "pct": 48.7,
+     "se": 8.0
+    }
+   }
+  },
+  "road_b2b_diff": {
+   "label": "Second straight road game in 4 days",
+   "tune": {
+    "games": 3001,
+    "pts": 0.37,
+    "se": 0.24,
+    "ats": {
+     "w": 1524,
+     "l": 1417,
+     "p": 60,
+     "pct": 51.8,
+     "se": 0.9
+    }
+   },
+   "holdout": {
+    "games": 6937,
+    "pts": -0.11,
+    "se": 0.16,
+    "ats": {
+     "w": 3401,
+     "l": 3421,
+     "p": 115,
+     "pct": 49.9,
+     "se": 0.6
+    }
+   },
+   "this_season": {
+    "games": 189,
+    "pts": 0.95,
+    "se": 1.03,
+    "ats": {
+     "w": 100,
+     "l": 89,
+     "p": 0,
+     "pct": 52.9,
+     "se": 3.6
+    }
+   }
+  },
+  "road_b2b_tz_diff": {
+   "label": "Second straight road game, new time zone",
+   "tune": {
+    "games": 771,
+    "pts": 0.19,
+    "se": 0.41,
+    "ats": {
+     "w": 381,
+     "l": 370,
+     "p": 20,
+     "pct": 50.7,
+     "se": 1.8
+    }
+   },
+   "holdout": {
+    "games": 1506,
+    "pts": 0.33,
+    "se": 0.3,
+    "ats": {
+     "w": 756,
+     "l": 715,
+     "p": 35,
+     "pct": 51.4,
+     "se": 1.3
+    }
+   },
+   "this_season": {
+    "games": 64,
+    "pts": -1.9,
+    "se": 1.55,
+    "ats": {
+     "w": 32,
+     "l": 32,
+     "p": 0,
+     "pct": 50.0,
+     "se": 6.2
+    }
+   }
+  },
+  "far_road_diff": {
+   "label": "Road game 2+ time zones from home",
+   "tune": {
+    "games": 404,
+    "pts": 0.43,
+    "se": 0.56,
+    "ats": {
+     "w": 209,
+     "l": 188,
+     "p": 7,
+     "pct": 52.6,
+     "se": 2.5
+    }
+   },
+   "holdout": {
+    "games": 712,
+    "pts": 0.45,
+    "se": 0.43,
+    "ats": {
+     "w": 368,
+     "l": 334,
+     "p": 10,
+     "pct": 52.4,
+     "se": 1.9
+    }
+   },
+   "this_season": {
+    "games": 68,
+    "pts": 0.66,
+    "se": 1.51,
+    "ats": {
+     "w": 34,
+     "l": 34,
+     "p": 0,
+     "pct": 50.0,
+     "se": 6.1
+    }
+   }
+  },
+  "rival_home_dog": {
+   "label": "Home underdog in a rivalry game",
+   "tune": {
+    "games": 388,
+    "pts": -0.2,
+    "se": 0.57,
+    "ats": {
+     "w": 185,
+     "l": 198,
+     "p": 5,
+     "pct": 48.3,
+     "se": 2.6
+    }
+   },
+   "holdout": {
+    "games": 891,
+    "pts": 0.26,
+    "se": 0.38,
+    "ats": {
+     "w": 429,
+     "l": 443,
+     "p": 19,
+     "pct": 49.2,
+     "se": 1.7
+    }
+   },
+   "this_season": {
+    "games": 12
+   }
+  }
+ },
  "coefficients": {
   "2018": {
    "r_margin": 0.921,

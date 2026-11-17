@@ -23,13 +23,14 @@ import pandas as pd
 from nbamodel import model as nba_model
 from nbamodel.ratings import rating_projection
 
-from . import data, ratings, roster
+from . import data, ratings, roster, spots
 
 SETTINGS = ratings.Settings(half_life=240.0, ridge_eff=3.0, carry=0.85, roster_k=0.3)
 FEATURES = ["r_margin", "r_early", "rest_diff", "b2b_h", "b2b_a"]
 EARLY_GAMES = 3000      # Division I games played league-wide by about mid-December
 FIRST_RATED = 2016
 GRADE = [2019, 2020, 2021, 2022, 2023]
+TUNE = [2016, 2017, 2018]
 OUT = Path(__file__).resolve().parent.parent / "docs" / "cbb"
 
 
@@ -80,6 +81,11 @@ def run(last_season, verbose=True):
     seasons = list(range(FIRST_RATED, last_season + 1))
     rated = rating_projection(ratings.walk_forward(g, SETTINGS, seasons=seasons, shifts=shifts))
     rated = add_features(rated)
+    # situational spots, tested against the line on their own (they are not in the model: none has
+    # held up on both the tuning and holdout seasons, see README)
+    sp = rated.merge(spots.spots(g, rated), on="game_id", how="left")
+    spot_tests = {c: {"label": lab, "tune": spots.test(sp[sp.season.isin(TUNE)], c), "holdout": spots.test(sp[sp.season.isin(GRADE)], c),
+                      "this_season": spots.test(sp[sp.season == last_season], c)} for c, (lab, _) in spots.TESTS.items()}
     out, coefs = [], {}
     for s in [x for x in seasons if x >= FIRST_RATED + 2]:
         coef = fit(rated[(rated.season < s) & (rated.season < last_season)])
@@ -95,6 +101,7 @@ def run(last_season, verbose=True):
         "neutral_games_line_unreliable": grade(held[held.neutral]),
         "by_season": {int(s): grade(x[~x.neutral]) for s, x in held.groupby("season")},
         "this_season_so_far": grade(cur[~cur.neutral]) if cur.close_spread.notna().sum() >= 200 else None,
+        "spots": spot_tests,
         "coefficients": {str(k): {a: round(b, 3) for a, b in v.items()} for k, v in coefs.items()},
     }
     if verbose:
