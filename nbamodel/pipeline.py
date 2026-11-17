@@ -20,15 +20,13 @@ from zoneinfo import ZoneInfo
 import numpy as np
 import pandas as pd
 
-from . import availability, backtest, data, market, model, ratings
+from . import availability, backtest, data, lines as line_log, market, model, ratings
 
 ET = ZoneInfo("America/New_York")
 ROOT = Path(__file__).resolve().parent.parent
 FEED = ROOT / "docs" / "feed" / "nba.json"
-LINE_LOG = ROOT / "docs" / "lines" / "nba_lines.csv"   # every ESPN line the pipeline sees, kept for market ratings
 DAYS_AHEAD = 3
 ESPN_INJURIES = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/injuries"
-ESPN_SCOREBOARD = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates={d}"
 
 
 def _json(url):
@@ -54,69 +52,13 @@ def injuries():
     return out
 
 
-def market_lines(days):
-    """{game_id: (home spread + = home favored, total)} from ESPN's scoreboard. Empty when unreachable."""
-    out = {}
-    for d in days:
-        try:
-            js = _json(ESPN_SCOREBOARD.format(d=d.strftime("%Y%m%d")))
-        except Exception:
-            continue
-        for ev in js.get("events", []):
-            comp = (ev.get("competitions") or [{}])[0]
-            odds = (comp.get("odds") or [None])[0]
-            if not odds:
-                continue
-            teams = {c.get("homeAway"): (c.get("team") or {}).get("abbreviation", "") for c in comp.get("competitors", [])}
-            det = (odds.get("details") or "").strip()
-            sp = None
-            if det.lower().startswith(("even", "pk")):
-                sp = 0.0
-            elif " " in det:
-                ab, pts = det.rsplit(" ", 1)
-                try:
-                    pts = abs(float(pts))
-                    sp = pts if ab == teams.get("home") else -pts if ab == teams.get("away") else None
-                except ValueError:
-                    pass
-            tot = odds.get("overUnder")
-            out[str(ev.get("id"))] = (sp, float(tot) if tot is not None else None)
-    return out
-
-
-def log_lines(sched, lines):
-    """Append the lines just read to the line log. The last one logged before tip-off stands in
-    for the close in this season's market ratings (hoopR's closing lines arrive after the season)."""
-    if not lines:
-        return
-    now = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    rows = []
-    for x in sched.itertuples():
-        sp, tot = lines.get(str(x.game_id), (None, None))
-        if sp is None or tot is None:
-            continue
-        rows.append({"game_id": str(x.game_id), "fetched_at": now, "close_spread": sp, "close_total": tot})
-    if not rows:
-        return
-    LINE_LOG.parent.mkdir(parents=True, exist_ok=True)
-    new = pd.DataFrame(rows)
-    new.to_csv(LINE_LOG, mode="a", header=not LINE_LOG.exists(), index=False)
-
-
-def logged_closes():
-    if not LINE_LOG.exists():
-        return pd.DataFrame(columns=["game_id", "close_spread", "close_total"])
-    x = pd.read_csv(LINE_LOG, dtype={"game_id": str}).sort_values("fetched_at")
-    return x.drop_duplicates("game_id", keep="last")[["game_id", "close_spread", "close_total"]]
-
-
 def live_market(g, season, day):
     """Market ratings for today from the closes of earlier games: hoopR's closing lines where it
     has them, else the last ESPN line the pipeline logged. Returns solve()'s output or None."""
     hist = g[g.season.isin([season - 1, season]) & (g.date < day)]
     closes = data.closing_lines()
     known = hist.merge(closes[["game_id", "close_spread", "close_total"]], on="game_id", how="left")
-    logged = logged_closes().rename(columns={"close_spread": "ls", "close_total": "lt"})
+    logged = line_log.last_lines("nba").rename(columns={"close_spread": "ls", "close_total": "lt"})
     known = known.merge(logged, on="game_id", how="left")
     known["close_spread"] = known.close_spread.fillna(known.ls)
     known["close_total"] = known.close_total.fillna(known.lt)
@@ -208,8 +150,7 @@ def run(do_backtest: bool = False):
     sched = upcoming(season, today)
     inj = injuries()
     miss, miss_names = current_missing(g, season, inj)
-    lines = market_lines(sorted(set(sched.day)))
-    log_lines(sched, lines)
+    lines = line_log.espn_lines("nba", sorted(set(sched.day)))
     mk = live_market(g, season, day)
     this = g[g.season == season]
     last_played = {}
@@ -281,6 +222,7 @@ def run(do_backtest: bool = False):
     }
     FEED.parent.mkdir(parents=True, exist_ok=True)
     FEED.write_text(json.dumps(feed, indent=1))
+    line_log.log("nba", games)
     print(f"{len(games)} games projected for {today} to {today + timedelta(days=DAYS_AHEAD - 1)}; "
           f"injury report {'read' if inj is not None else 'NOT read (full rosters assumed)'}; "
           f"{sum(1 for x in games if x['mkt_spread'] is not None)} with a market line")

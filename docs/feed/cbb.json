@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-17T23:02:33+00:00",
+ "generatedAt": "2026-11-17T23:13:19+00:00",
  "season": 2027,
  "gamesRated": 660,
  "marketWeight": 0.0,
@@ -21,7 +21,9 @@
    "total": 148.2,
    "pace": 71.9,
    "win_prob": 0.808,
-   "projection": 9.3
+   "projection": 9.3,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920511",
@@ -33,7 +35,9 @@
    "total": 145.9,
    "pace": 68.5,
    "win_prob": 0.941,
-   "projection": 18.0
+   "projection": 18.0,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401906773",
@@ -45,7 +49,9 @@
    "total": 153.9,
    "pace": 70.8,
    "win_prob": 0.858,
-   "projection": 11.7
+   "projection": 11.7,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401912230",
@@ -57,7 +63,9 @@
    "total": 135.7,
    "pace": 65.9,
    "win_prob": 0.52,
-   "projection": 0.5
+   "projection": 0.5,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920953",
@@ -69,7 +77,9 @@
    "total": 151.3,
    "pace": 67.8,
    "win_prob": 0.61,
-   "projection": 2.9
+   "projection": 2.9,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401923325",
@@ -81,7 +91,9 @@
    "total": 126.1,
    "pace": 66.7,
    "win_prob": 0.839,
-   "projection": 10.7
+   "projection": 10.7,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920706",
@@ -93,7 +105,9 @@
    "total": 150.0,
    "pace": 68.9,
    "win_prob": 0.945,
-   "projection": 18.5
+   "projection": 18.5,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401909566",
@@ -105,7 +119,9 @@
    "total": 162.9,
    "pace": 75.7,
    "win_prob": 0.691,
-   "projection": 5.2
+   "projection": 5.2,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401921722",
@@ -117,7 +133,9 @@
    "total": 144.5,
    "pace": 72.1,
    "win_prob": 0.997,
-   "projection": 38.3
+   "projection": 38.3,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401925775",
@@ -129,7 +147,9 @@
    "total": 133.3,
    "pace": 63.6,
    "win_prob": 0.745,
-   "projection": 7.0
+   "projection": 7.0,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401924941",
@@ -141,7 +161,9 @@
    "total": 146.9,
    "pace": 69.8,
    "win_prob": 0.092,
-   "projection": -14.9
+   "projection": -14.9,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401922251",
@@ -153,7 +175,9 @@
    "total": 149.5,
    "pace": 67.6,
    "win_prob": 0.455,
-   "projection": -1.2
+   "projection": -1.2,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401921756",
@@ -165,7 +189,9 @@
    "total": 161.7,
    "pace": 72.5,
    "win_prob": 0.403,
-   "projection": -2.6
+   "projection": -2.6,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920921",
@@ -177,7 +203,9 @@
    "total": 131.5,
    "pace": 69.2,
    "win_prob": 0.673,
-   "projection": 4.7
+   "projection": 4.7,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920308",
@@ -189,7 +217,9 @@
    "total": 150.3,
    "pace": 71.6,
    "win_prob": 0.974,
-   "projection": 23.4
+   "projection": 23.4,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920297",
@@ -201,7 +231,9 @@
    "total": 154.0,
    "pace": 74.0,
    "win_prob": 0.563,
-   "projection": 1.6
+   "projection": 1.6,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920857",
@@ -213,7 +245,9 @@
    "total": 144.1,
    "pace": 69.5,
    "win_prob": 0.563,
-   "projection": 1.6
+   "projection": 1.6,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401918994",
@@ -225,7 +259,9 @@
    "total": 169.1,
    "pace": 77.0,
    "win_prob": 0.893,
-   "projection": 13.8
+   "projection": 13.8,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401911198",
@@ -237,7 +273,9 @@
    "total": 145.5,
    "pace": 68.9,
    "win_prob": 0.148,
-   "projection": -11.4
+   "projection": -11.4,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401902279",
@@ -249,7 +287,9 @@
    "total": 160.5,
    "pace": 73.3,
    "win_prob": 0.866,
-   "projection": 12.2
+   "projection": 12.2,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401911019",
@@ -261,7 +301,9 @@
    "total": 154.1,
    "pace": 70.0,
    "win_prob": 0.667,
-   "projection": 4.5
+   "projection": 4.5,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401911018",
@@ -273,7 +315,9 @@
    "total": 178.5,
    "pace": 76.3,
    "win_prob": 0.624,
-   "projection": 3.3
+   "projection": 3.3,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401909729",
@@ -285,7 +329,9 @@
    "total": 142.0,
    "pace": 69.9,
    "win_prob": 0.888,
-   "projection": 13.5
+   "projection": 13.5,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401909708",
@@ -297,7 +343,9 @@
    "total": 144.4,
    "pace": 69.4,
    "win_prob": 0.575,
-   "projection": 2.0
+   "projection": 2.0,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401909697",
@@ -309,7 +357,9 @@
    "total": 144.8,
    "pace": 70.4,
    "win_prob": 0.982,
-   "projection": 26.0
+   "projection": 26.0,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401909544",
@@ -321,7 +371,9 @@
    "total": 160.7,
    "pace": 75.3,
    "win_prob": 0.997,
-   "projection": 37.3
+   "projection": 37.3,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401909535",
@@ -333,7 +385,9 @@
    "total": 158.7,
    "pace": 74.5,
    "win_prob": 0.983,
-   "projection": 26.5
+   "projection": 26.5,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920194",
@@ -345,7 +399,9 @@
    "total": 137.9,
    "pace": 71.8,
    "win_prob": 0.925,
-   "projection": 16.4
+   "projection": 16.4,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401906761",
@@ -357,7 +413,9 @@
    "total": 174.0,
    "pace": 80.3,
    "win_prob": 0.978,
-   "projection": 24.6
+   "projection": 24.6,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401916289",
@@ -369,7 +427,9 @@
    "total": 159.8,
    "pace": 71.7,
    "win_prob": 0.617,
-   "projection": 3.1
+   "projection": 3.1,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401911020",
@@ -381,7 +441,9 @@
    "total": 134.1,
    "pace": 70.2,
    "win_prob": 0.882,
-   "projection": 13.1
+   "projection": 13.1,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401919018",
@@ -393,7 +455,9 @@
    "total": 161.2,
    "pace": 75.4,
    "win_prob": 0.558,
-   "projection": 1.5
+   "projection": 1.5,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401926781",
@@ -405,7 +469,9 @@
    "total": 139.2,
    "pace": 68.7,
    "win_prob": 0.63,
-   "projection": 3.5
+   "projection": 3.5,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401921826",
@@ -417,7 +483,9 @@
    "total": 149.3,
    "pace": 69.7,
    "win_prob": 0.998,
-   "projection": 40.6
+   "projection": 40.6,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401929358",
@@ -429,7 +497,9 @@
    "total": 150.6,
    "pace": 75.2,
    "win_prob": 0.462,
-   "projection": -1.0
+   "projection": -1.0,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401926143",
@@ -441,7 +511,9 @@
    "total": 150.3,
    "pace": 68.9,
    "win_prob": 0.553,
-   "projection": 1.4
+   "projection": 1.4,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401927388",
@@ -453,7 +525,9 @@
    "total": 152.2,
    "pace": 71.6,
    "win_prob": 0.931,
-   "projection": 16.9
+   "projection": 16.9,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401925012",
@@ -465,7 +539,9 @@
    "total": 142.8,
    "pace": 69.4,
    "win_prob": 0.516,
-   "projection": 0.4
+   "projection": 0.4,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401919783",
@@ -477,7 +553,9 @@
    "total": 150.9,
    "pace": 72.3,
    "win_prob": 0.709,
-   "projection": 5.8
+   "projection": 5.8,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401921097",
@@ -489,7 +567,9 @@
    "total": 140.7,
    "pace": 69.5,
    "win_prob": 0.577,
-   "projection": 2.0
+   "projection": 2.0,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401921106",
@@ -501,7 +581,9 @@
    "total": 149.4,
    "pace": 66.4,
    "win_prob": 0.931,
-   "projection": 16.9
+   "projection": 16.9,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401909504",
@@ -513,7 +595,9 @@
    "total": 124.5,
    "pace": 65.1,
    "win_prob": 0.976,
-   "projection": 24.1
+   "projection": 24.1,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401918970",
@@ -525,7 +609,9 @@
    "total": 159.8,
    "pace": 74.0,
    "win_prob": 0.979,
-   "projection": 25.1
+   "projection": 25.1,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401921027",
@@ -537,7 +623,9 @@
    "total": 155.8,
    "pace": 73.4,
    "win_prob": 0.519,
-   "projection": 0.5
+   "projection": 0.5,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920720",
@@ -549,7 +637,9 @@
    "total": 150.1,
    "pace": 68.6,
    "win_prob": 0.84,
-   "projection": 10.8
+   "projection": 10.8,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401924922",
@@ -561,7 +651,9 @@
    "total": 153.8,
    "pace": 70.2,
    "win_prob": 0.843,
-   "projection": 10.9
+   "projection": 10.9,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401925064",
@@ -573,7 +665,9 @@
    "total": 142.7,
    "pace": 71.7,
    "win_prob": 0.985,
-   "projection": 27.0
+   "projection": 27.0,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401911521",
@@ -585,7 +679,9 @@
    "total": 148.3,
    "pace": 73.5,
    "win_prob": 0.831,
-   "projection": 10.3
+   "projection": 10.3,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920426",
@@ -597,7 +693,9 @@
    "total": 147.4,
    "pace": 69.3,
    "win_prob": 0.964,
-   "projection": 21.3
+   "projection": 21.3,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401906851",
@@ -609,7 +707,9 @@
    "total": 144.3,
    "pace": 71.0,
    "win_prob": 0.285,
-   "projection": -6.0
+   "projection": -6.0,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401909787",
@@ -621,7 +721,9 @@
    "total": 155.5,
    "pace": 75.1,
    "win_prob": 0.971,
-   "projection": 22.9
+   "projection": 22.9,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401917533",
@@ -633,7 +735,9 @@
    "total": 134.5,
    "pace": 66.4,
    "win_prob": 0.292,
-   "projection": -5.8
+   "projection": -5.8,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401921729",
@@ -645,7 +749,9 @@
    "total": 143.5,
    "pace": 71.8,
    "win_prob": 0.777,
-   "projection": 8.1
+   "projection": 8.1,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401925879",
@@ -657,7 +763,9 @@
    "total": 151.8,
    "pace": 69.1,
    "win_prob": 0.949,
-   "projection": 19.0
+   "projection": 19.0,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920512",
@@ -669,7 +777,9 @@
    "total": 140.5,
    "pace": 68.2,
    "win_prob": 0.453,
-   "projection": -1.2
+   "projection": -1.2,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401909753",
@@ -681,7 +791,9 @@
    "total": 154.5,
    "pace": 75.3,
    "win_prob": 0.99,
-   "projection": 29.6
+   "projection": 29.6,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401917181",
@@ -693,7 +805,9 @@
    "total": 166.6,
    "pace": 73.9,
    "win_prob": 0.971,
-   "projection": 22.7
+   "projection": 22.7,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920947",
@@ -705,7 +819,9 @@
    "total": 140.7,
    "pace": 69.3,
    "win_prob": 0.914,
-   "projection": 15.4
+   "projection": 15.4,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920974",
@@ -717,7 +833,9 @@
    "total": 168.0,
    "pace": 73.9,
    "win_prob": 0.376,
-   "projection": -3.3
+   "projection": -3.3,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401922283",
@@ -729,7 +847,9 @@
    "total": 152.2,
    "pace": 71.6,
    "win_prob": 0.399,
-   "projection": -2.7
+   "projection": -2.7,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401922292",
@@ -741,7 +861,9 @@
    "total": 163.7,
    "pace": 73.4,
    "win_prob": 0.61,
-   "projection": 2.9
+   "projection": 2.9,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401909516",
@@ -753,7 +875,9 @@
    "total": 143.2,
    "pace": 66.0,
    "win_prob": 0.944,
-   "projection": 18.3
+   "projection": 18.3,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401919808",
@@ -765,7 +889,9 @@
    "total": 144.0,
    "pace": 71.1,
    "win_prob": 0.215,
-   "projection": -8.4
+   "projection": -8.4,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401911277",
@@ -777,7 +903,9 @@
    "total": 138.1,
    "pace": 67.4,
    "win_prob": 0.664,
-   "projection": 4.4
+   "projection": 4.4,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401911309",
@@ -789,7 +917,9 @@
    "total": 140.5,
    "pace": 70.4,
    "win_prob": 0.398,
-   "projection": -2.7
+   "projection": -2.7,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401911377",
@@ -801,7 +931,9 @@
    "total": 169.0,
    "pace": 76.3,
    "win_prob": 0.757,
-   "projection": 7.4
+   "projection": 7.4,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401919735",
@@ -813,7 +945,9 @@
    "total": 141.8,
    "pace": 66.7,
    "win_prob": 0.955,
-   "projection": 19.9
+   "projection": 19.9,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401919760",
@@ -825,7 +959,9 @@
    "total": 135.5,
    "pace": 66.2,
    "win_prob": 0.717,
-   "projection": 6.0
+   "projection": 6.0,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920075",
@@ -837,7 +973,9 @@
    "total": 130.8,
    "pace": 65.0,
    "win_prob": 0.945,
-   "projection": 18.5
+   "projection": 18.5,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920963",
@@ -849,7 +987,9 @@
    "total": 152.0,
    "pace": 68.0,
    "win_prob": 0.947,
-   "projection": 18.7
+   "projection": 18.7,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920694",
@@ -861,7 +1001,9 @@
    "total": 140.9,
    "pace": 62.1,
    "win_prob": 0.693,
-   "projection": 5.3
+   "projection": 5.3,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920682",
@@ -873,7 +1015,9 @@
    "total": 158.3,
    "pace": 76.0,
    "win_prob": 0.984,
-   "projection": 26.7
+   "projection": 26.7,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401926838",
@@ -885,7 +1029,9 @@
    "total": 137.5,
    "pace": 66.7,
    "win_prob": 0.793,
-   "projection": 8.7
+   "projection": 8.7,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401925782",
@@ -897,7 +1043,9 @@
    "total": 142.1,
    "pace": 69.9,
    "win_prob": 0.532,
-   "projection": 0.8
+   "projection": 0.8,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401925632",
@@ -909,7 +1057,9 @@
    "total": 138.3,
    "pace": 69.1,
    "win_prob": 0.789,
-   "projection": 8.6
+   "projection": 8.6,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401928347",
@@ -921,7 +1071,9 @@
    "total": 161.4,
    "pace": 70.6,
    "win_prob": 0.464,
-   "projection": -0.9
+   "projection": -0.9,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401922212",
@@ -933,7 +1085,9 @@
    "total": 160.5,
    "pace": 72.4,
    "win_prob": 0.704,
-   "projection": 5.6
+   "projection": 5.6,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401922055",
@@ -945,7 +1099,9 @@
    "total": 148.1,
    "pace": 72.5,
    "win_prob": 0.323,
-   "projection": -4.8
+   "projection": -4.8,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401922047",
@@ -957,7 +1113,9 @@
    "total": 150.6,
    "pace": 73.9,
    "win_prob": 0.796,
-   "projection": 8.8
+   "projection": 8.8,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401921156",
@@ -969,7 +1127,9 @@
    "total": 149.5,
    "pace": 75.1,
    "win_prob": 0.78,
-   "projection": 8.2
+   "projection": 8.2,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401921141",
@@ -981,7 +1141,9 @@
    "total": 138.9,
    "pace": 65.9,
    "win_prob": 0.878,
-   "projection": 12.8
+   "projection": 12.8,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401923401",
@@ -993,7 +1155,9 @@
    "total": 138.4,
    "pace": 63.5,
    "win_prob": 0.58,
-   "projection": 2.1
+   "projection": 2.1,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401909526",
@@ -1005,7 +1169,9 @@
    "total": 142.5,
    "pace": 68.9,
    "win_prob": 0.987,
-   "projection": 27.9
+   "projection": 27.9,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920751",
@@ -1017,7 +1183,9 @@
    "total": 144.0,
    "pace": 72.2,
    "win_prob": 0.975,
-   "projection": 23.8
+   "projection": 23.8,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401921134",
@@ -1029,7 +1197,9 @@
    "total": 146.3,
    "pace": 73.4,
    "win_prob": 0.994,
-   "projection": 32.9
+   "projection": 32.9,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401928398",
@@ -1041,7 +1211,9 @@
    "total": 158.3,
    "pace": 78.3,
    "win_prob": 0.988,
-   "projection": 28.6
+   "projection": 28.6,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401917982",
@@ -1053,7 +1225,9 @@
    "total": 159.7,
    "pace": 75.6,
    "win_prob": 0.997,
-   "projection": 37.0
+   "projection": 37.0,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401929420",
@@ -1065,7 +1239,9 @@
    "total": 152.0,
    "pace": 72.9,
    "win_prob": 0.93,
-   "projection": 16.8
+   "projection": 16.8,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401929201",
@@ -1077,7 +1253,9 @@
    "total": 140.5,
    "pace": 68.0,
    "win_prob": 0.97,
-   "projection": 22.7
+   "projection": 22.7,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401927357",
@@ -1089,7 +1267,9 @@
    "total": 139.5,
    "pace": 68.7,
    "win_prob": 0.777,
-   "projection": 8.1
+   "projection": 8.1,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401906805",
@@ -1101,7 +1281,9 @@
    "total": 151.0,
    "pace": 66.8,
    "win_prob": 0.866,
-   "projection": 12.1
+   "projection": 12.1,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401919848",
@@ -1113,7 +1295,9 @@
    "total": 127.3,
    "pace": 70.1,
    "win_prob": 0.397,
-   "projection": -2.7
+   "projection": -2.7,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401911393",
@@ -1125,7 +1309,9 @@
    "total": 151.3,
    "pace": 70.3,
    "win_prob": 0.352,
-   "projection": -4.0
+   "projection": -4.0,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401911232",
@@ -1137,7 +1323,9 @@
    "total": 144.6,
    "pace": 71.6,
    "win_prob": 0.335,
-   "projection": -4.4
+   "projection": -4.4,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401909555",
@@ -1149,7 +1337,9 @@
    "total": 128.8,
    "pace": 62.2,
    "win_prob": 0.201,
-   "projection": -9.0
+   "projection": -9.0,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401924721",
@@ -1161,7 +1351,9 @@
    "total": 164.4,
    "pace": 74.3,
    "win_prob": 0.979,
-   "projection": 25.0
+   "projection": 25.0,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401926064",
@@ -1173,7 +1365,9 @@
    "total": 162.5,
    "pace": 74.2,
    "win_prob": 0.998,
-   "projection": 40.9
+   "projection": 40.9,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401909742",
@@ -1185,7 +1379,9 @@
    "total": 147.4,
    "pace": 70.4,
    "win_prob": 0.494,
-   "projection": -0.2
+   "projection": -0.2,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401921742",
@@ -1197,7 +1393,9 @@
    "total": 163.0,
    "pace": 72.9,
    "win_prob": 0.989,
-   "projection": 29.1
+   "projection": 29.1,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401925949",
@@ -1209,7 +1407,9 @@
    "total": 175.5,
    "pace": 76.1,
    "win_prob": 0.995,
-   "projection": 34.3
+   "projection": 34.3,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401929176",
@@ -1221,7 +1421,9 @@
    "total": 152.6,
    "pace": 69.3,
    "win_prob": 0.901,
-   "projection": 14.4
+   "projection": 14.4,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401921734",
@@ -1233,7 +1435,9 @@
    "total": 159.3,
    "pace": 67.9,
    "win_prob": 0.967,
-   "projection": 22.0
+   "projection": 22.0,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401911473",
@@ -1245,7 +1449,9 @@
    "total": 163.8,
    "pace": 70.5,
    "win_prob": 0.647,
-   "projection": 3.9
+   "projection": 3.9,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401909762",
@@ -1257,7 +1463,9 @@
    "total": 156.4,
    "pace": 74.8,
    "win_prob": 0.917,
-   "projection": 15.6
+   "projection": 15.6,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401909494",
@@ -1269,7 +1477,9 @@
    "total": 153.1,
    "pace": 72.0,
    "win_prob": 0.933,
-   "projection": 17.1
+   "projection": 17.1,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401921816",
@@ -1281,7 +1491,9 @@
    "total": 156.9,
    "pace": 70.6,
    "win_prob": 0.998,
-   "projection": 41.0
+   "projection": 41.0,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401917535",
@@ -1293,7 +1505,9 @@
    "total": 158.1,
    "pace": 73.5,
    "win_prob": 0.738,
-   "projection": 6.7
+   "projection": 6.7,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401911456",
@@ -1305,7 +1519,9 @@
    "total": 147.2,
    "pace": 71.0,
    "win_prob": 0.937,
-   "projection": 17.5
+   "projection": 17.5,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401921064",
@@ -1317,7 +1533,9 @@
    "total": 133.6,
    "pace": 65.5,
    "win_prob": 0.821,
-   "projection": 9.9
+   "projection": 9.9,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401929004",
@@ -1329,7 +1547,9 @@
    "total": 148.7,
    "pace": 68.6,
    "win_prob": 0.497,
-   "projection": -0.1
+   "projection": -0.1,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401929146",
@@ -1341,7 +1561,9 @@
    "total": 161.0,
    "pace": 76.1,
    "win_prob": 0.976,
-   "projection": 24.0
+   "projection": 24.0,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920158",
@@ -1353,7 +1575,9 @@
    "total": 166.3,
    "pace": 76.8,
    "win_prob": 0.995,
-   "projection": 35.0
+   "projection": 35.0,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401918959",
@@ -1365,7 +1589,9 @@
    "total": 162.6,
    "pace": 74.6,
    "win_prob": 0.258,
-   "projection": -6.9
+   "projection": -6.9,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401928826",
@@ -1377,7 +1603,9 @@
    "total": 139.9,
    "pace": 68.2,
    "win_prob": 0.877,
-   "projection": 12.8
+   "projection": 12.8,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401923304",
@@ -1389,7 +1617,9 @@
    "total": 136.7,
    "pace": 68.6,
    "win_prob": 0.776,
-   "projection": 8.1
+   "projection": 8.1,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920878",
@@ -1401,7 +1631,9 @@
    "total": 149.9,
    "pace": 66.9,
    "win_prob": 0.619,
-   "projection": 3.1
+   "projection": 3.1,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401928388",
@@ -1413,7 +1645,9 @@
    "total": 151.8,
    "pace": 74.4,
    "win_prob": 0.558,
-   "projection": 1.5
+   "projection": 1.5,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401916318",
@@ -1425,7 +1659,9 @@
    "total": 154.9,
    "pace": 71.8,
    "win_prob": 0.974,
-   "projection": 23.7
+   "projection": 23.7,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401911021",
@@ -1437,7 +1673,9 @@
    "total": 147.6,
    "pace": 68.6,
    "win_prob": 0.907,
-   "projection": 14.8
+   "projection": 14.8,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401902280",
@@ -1449,7 +1687,9 @@
    "total": 169.9,
    "pace": 76.3,
    "win_prob": 0.917,
-   "projection": 15.6
+   "projection": 15.6,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920413",
@@ -1461,7 +1701,9 @@
    "total": 138.0,
    "pace": 68.3,
    "win_prob": 0.819,
-   "projection": 9.8
+   "projection": 9.8,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401919005",
@@ -1473,7 +1715,9 @@
    "total": 149.1,
    "pace": 70.6,
    "win_prob": 0.528,
-   "projection": 0.7
+   "projection": 0.7,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401926814",
@@ -1485,7 +1729,9 @@
    "total": 154.6,
    "pace": 70.0,
    "win_prob": 0.298,
-   "projection": -5.6
+   "projection": -5.6,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401918950",
@@ -1497,7 +1743,9 @@
    "total": 156.4,
    "pace": 69.6,
    "win_prob": 0.99,
-   "projection": 30.0
+   "projection": 30.0,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401906867",
@@ -1509,7 +1757,9 @@
    "total": 157.8,
    "pace": 71.5,
    "win_prob": 0.996,
-   "projection": 35.5
+   "projection": 35.5,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920845",
@@ -1521,7 +1771,9 @@
    "total": 158.5,
    "pace": 71.1,
    "win_prob": 0.71,
-   "projection": 5.8
+   "projection": 5.8,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401919050",
@@ -1533,7 +1785,9 @@
    "total": 165.2,
    "pace": 78.9,
    "win_prob": 0.443,
-   "projection": -1.5
+   "projection": -1.5,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401921028",
@@ -1545,7 +1799,9 @@
    "total": 151.8,
    "pace": 73.2,
    "win_prob": 0.613,
-   "projection": 3.0
+   "projection": 3.0,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920888",
@@ -1557,7 +1813,9 @@
    "total": 139.0,
    "pace": 70.2,
    "win_prob": 0.553,
-   "projection": 1.4
+   "projection": 1.4,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401911534",
@@ -1569,7 +1827,9 @@
    "total": 134.7,
    "pace": 65.1,
    "win_prob": 0.58,
-   "projection": 2.1
+   "projection": 2.1,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401925941",
@@ -1581,7 +1841,9 @@
    "total": 161.1,
    "pace": 71.6,
    "win_prob": 0.9,
-   "projection": 14.3
+   "projection": 14.3,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401928354",
@@ -1593,7 +1855,9 @@
    "total": 151.0,
    "pace": 68.3,
    "win_prob": 0.24,
-   "projection": -7.5
+   "projection": -7.5,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401930884",
@@ -1605,7 +1869,9 @@
    "total": 164.4,
    "pace": 71.2,
    "win_prob": 0.6,
-   "projection": 2.6
+   "projection": 2.6,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401918056",
@@ -1617,7 +1883,9 @@
    "total": 151.8,
    "pace": 71.3,
    "win_prob": 0.913,
-   "projection": 15.3
+   "projection": 15.3,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401920349",
@@ -1629,7 +1897,9 @@
    "total": 145.7,
    "pace": 74.4,
    "win_prob": 0.943,
-   "projection": 18.3
+   "projection": 18.3,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401917536",
@@ -1641,7 +1911,9 @@
    "total": 166.4,
    "pace": 75.1,
    "win_prob": 0.624,
-   "projection": 3.3
+   "projection": 3.3,
+   "mkt_spread": null,
+   "mkt_total": null
   },
   {
    "id": "401926773",
@@ -1653,7 +1925,9 @@
    "total": 162.4,
    "pace": 77.3,
    "win_prob": 0.99,
-   "projection": 30.0
+   "projection": 30.0,
+   "mkt_spread": null,
+   "mkt_total": null
   }
  ]
 }

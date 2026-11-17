@@ -98,8 +98,11 @@ So for now both boards show the model's number next to the market's for context,
 
 ## What to try next
 
-- **Opening lines**: the line log starts now; after a few weeks it can test the model against the
-  first line it saw instead of the close.
+- **Opening lines** (running): both pipelines log every ESPN line they read with the model's number
+  at that moment (`docs/lines/`, see `nbamodel/lines.py`). `python -m nbamodel.openers` grades the
+  model against the first line logged for each game, and whether the line then moved toward the
+  model (closing line value), in `docs/openers.json` every Monday. It needs a few weeks of games
+  before the numbers mean anything.
 - **College preseason**: recruiting rankings and transfer ratings; this season's two-week deficit
   says the roster prior is the weakest link.
 - **NBA totals**: why the model's disagreements run the wrong way.
