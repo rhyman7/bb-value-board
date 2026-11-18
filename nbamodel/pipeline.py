@@ -20,7 +20,7 @@ from zoneinfo import ZoneInfo
 import numpy as np
 import pandas as pd
 
-from . import availability, backtest, data, gamepage, lines as line_log, market, model, players, ratings
+from . import archive, availability, backtest, data, gamepage, lines as line_log, market, model, players, ratings
 
 ET = ZoneInfo("America/New_York")
 ROOT = Path(__file__).resolve().parent.parent
@@ -192,7 +192,7 @@ def run(do_backtest: bool = False):
         proj = float(row.m_margin) if mkt_spread is None else mkt_spread + w_side * (float(row.m_margin) - mkt_spread)
         projt = float(row.m_total) if mkt_total is None else mkt_total + w_total * (float(row.m_total) - mkt_total)
         games.append({
-            "id": gid, "date": x.day.isoformat(), "away": x.away_abbreviation, "home": x.home_abbreviation,
+            "id": gid, "date": x.day.isoformat(), "tip": x.et.isoformat(), "away": x.away_abbreviation, "home": x.home_abbreviation,
             "margin": round(float(row.m_margin), 1), "total": round(float(row.m_total), 1),
             "ratings_margin": round(float(row.r_margin), 1), "pace": round(float(row.r_pace), 1),
             "market_ratings_margin": round(float(row.mk_margin), 1) if row.has_mk else None,
@@ -260,6 +260,9 @@ def run(do_backtest: bool = False):
     FEED.parent.mkdir(parents=True, exist_ok=True)
     FEED.write_text(json.dumps(feed, indent=1, allow_nan=False))
     line_log.log("nba", games)
+    # past nights: freeze today's games before tip-off, grade the ones that have finished
+    archive.freeze("nba", games, now)
+    archive.grade("nba", g[g.season == season], f"{season - 1}-10-01")
     print(f"{len(games)} games projected for {today} to {today + timedelta(days=DAYS_AHEAD - 1)}; "
           f"injury report {'read' if inj is not None else 'NOT read (full rosters assumed)'}; "
           f"{sum(1 for x in games if x['mkt_spread'] is not None)} with a market line; {n_players} player projections logged")
