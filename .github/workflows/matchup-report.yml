@@ -1,0 +1,46 @@
+name: Matchup report PDFs
+
+# Builds tonight's NBA and college matchup report PDFs after each board update, so they use the
+# latest projections, injuries and (on the late-afternoon run) prop lines.
+on:
+  workflow_run:
+    workflows: ["Update NBA and college boards"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Slate date (YYYY-MM-DD), default today in New York"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: matchup-report
+  cancel-in-progress: false
+
+jobs:
+  report:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install "reportlab>=4"
+      - name: Build PDFs
+        run: |
+          d="${{ inputs.date }}"
+          python -m reports.matchup_pdf ${d:+--date "$d"}   # a league with no games that day is skipped
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/reports
+          if git diff --staged --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "Matchup reports ($(TZ=America/New_York date +%Y-%m-%d))"
+          git pull --rebase origin main
+          git push
