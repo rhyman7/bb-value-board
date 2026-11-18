@@ -380,7 +380,9 @@ def run(lg=NBA):
 # ---- tonight's projections, the nightly log and its grades -------------------------------------
 
 LOG_COLS = ["date", "game_id", "athlete_id", "name", "team", "opp", "out_on_team"] + \
-           [f"p_{s}" for s in ["minutes"] + STATS] + [f"avg_{s}" for s in ["minutes"] + STATS]
+           [f"p_{s}" for s in ["minutes"] + STATS] + [f"avg_{s}" for s in ["minutes"] + STATS] + \
+           [f"{c}_{s}" for s in STATS for c in ("line", "over", "under")]
+PROP_GAPS = {"points": [0, 1.5, 3], "rebounds": [0, 1, 2], "assists": [0, 1, 2], "threes": [0, 0.5, 1]}
 
 
 def state_today(season, refresh=True, lg=NBA):
@@ -434,7 +436,8 @@ def log(day, proj, lg=NBA):
                 rows.append({"date": day.isoformat(), "game_id": str(gid), "athlete_id": r["id"], "name": r["name"],
                              "team": r["team"], "opp": r["opp"], "out_on_team": "; ".join(e["out"].get(side, [])),
                              **{f"p_{k}": r[k] for k in ["minutes"] + STATS},
-                             **{f"avg_{k}": r["avg"][k] for k in ["minutes"] + STATS}})
+                             **{f"avg_{k}": r["avg"][k] for k in ["minutes"] + STATS},
+                             **{f"{c}_{k}": (r.get("props") or {}).get(k, {}).get(c) for k in STATS for c in ("line", "over", "under")}})
     new = pd.DataFrame(rows, columns=LOG_COLS)
     if lg.log_file.exists():
         old = pd.read_csv(lg.log_file, dtype={"game_id": str})
@@ -468,11 +471,38 @@ def grade_log(season, lg=NBA):
                                                              < (y[f"a_{k}"] - y[f"avg_{k}"]).abs()).mean()), 1)}
         return out
 
+    def props(x):
+        """Taking the model's side of each consensus prop line at its price. A projection on the line
+        is no pick; a result on the line is a push."""
+        out = {}
+        for k in STATS:
+            if f"line_{k}" not in x:
+                continue
+            y = x.dropna(subset=[f"line_{k}", f"over_{k}", f"under_{k}"])
+            if y.empty:
+                continue
+            lean = y[f"p_{k}"] - y[f"line_{k}"]
+            res = np.sign(y[f"a_{k}"] - y[f"line_{k}"]) * np.sign(lean)
+            price = np.where(lean > 0, y[f"over_{k}"], y[f"under_{k}"])
+            win = np.where(price > 0, price / 100, 100 / np.abs(price))
+            prof = np.where(res > 0, win, np.where(res < 0, -1.0, 0.0))
+            tiers = {}
+            for gmin in PROP_GAPS[k]:
+                sel = (lean.abs() > gmin) if gmin == 0 else (lean.abs() >= gmin)
+                sel = sel.to_numpy() & (res != 0).to_numpy()
+                n = int(sel.sum())
+                w = int((res.to_numpy()[sel] > 0).sum())
+                tiers[f"{gmin}+"] = {"picks": n, "w": w, "l": n - w, "pct": round(100 * w / n, 1) if n else None,
+                                     "roi": round(100 * float(prof[sel].mean()), 1) if n else None}
+            out[k] = tiers
+        return out
+
     night = m[m.date == last]
     top = night.assign(err=(night.a_points - night.p_points).abs()).sort_values("p_points", ascending=False).head(12)
     res = {
         "nights": int(m.date.nunique()), "lastNight": last.date().isoformat(),
         "last_night": summ(night), "last_7_days": summ(m[m.date > last - pd.Timedelta(days=7)]), "season": summ(m),
+        "props": props(m), "props_last_night": props(night),
         "last_night_top": [{"name": r.name, "team": r.team, "opp": r.opp, "p_points": r.p_points, "a_points": r.a_points,
                             "p_rebounds": r.p_rebounds, "a_rebounds": r.a_rebounds, "p_assists": r.p_assists, "a_assists": r.a_assists,
                             "p_threes": r.p_threes, "a_threes": r.a_threes} for r in top.itertuples()],

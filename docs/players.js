@@ -1,5 +1,6 @@
 // NBA player projections page: tonight's projections from the feed, the nightly grades, and the
-// backtest. Projections are not picks: there are no prop lines here.
+// backtest. On the NBA page each projection shows the consensus prop line next to it once the
+// late-afternoon update has read the books, and the graded section keeps the record against those lines.
 (function () {
   const L = window.LEAGUE || "nba";
   const $ = (s) => document.querySelector(s);
@@ -13,6 +14,23 @@
   function dayLabel(iso) {
     const [y, m, d] = iso.split("-").map(Number);
     return new Date(y, m - 1, d).toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
+  }
+
+  // the consensus line, and which side the projection is on
+  function propCell(r, s) {
+    const p = r.props && r.props[s];
+    if (!p || p.line == null || r[s] == null) return "";
+    const side = r[s] > p.line ? "O" : r[s] < p.line ? "U" : "–";
+    return `<small class="prop" title="Consensus line from ${p.books} book${p.books === 1 ? "" : "s"}, over ${p.over > 0 ? "+" : ""}${p.over} / under ${p.under > 0 ? "+" : ""}${p.under}">${side} ${f1(p.line)}</small>`;
+  }
+
+  function propTable(title, pr) {
+    if (!pr || !Object.keys(pr).length) return "";
+    const lab = Object.fromEntries(STATS);
+    const rows = Object.entries(pr).flatMap(([k, tiers]) => Object.entries(tiers).map(([g, x], i) =>
+      `<tr><td>${i ? "" : lab[k]}</td><td>${g === "0+" ? "Every line" : "Off by " + esc(g.replace("+", "")) + "+"}</td><td>${x.picks ? x.w + "-" + x.l : "–"}</td><td>${x.pct == null ? "–" : f1(x.pct) + "%"}</td><td>${x.roi == null ? "–" : (x.roi > 0 ? "+" : "") + f1(x.roi) + "%"}</td></tr>`)).join("");
+    return `<div><h3>${esc(title)}</h3><div class="tbl-wrap"><table>
+      <thead><tr><th>Stat</th><th>Projection vs line</th><th>Record</th><th>Won</th><th>Return</th></tr></thead><tbody>${rows}</tbody></table></div></div>`;
   }
 
   function drawTonight(feed) {
@@ -42,7 +60,7 @@
       const more = !st.all && list.length > 50 ? list.length - 50 : 0;
       if (more) list = list.slice(0, 50);
       const body = list.map((r) => `<tr><td class="l">${esc(r.name)}</td><td class="l"><a href="game.html?id=${encodeURIComponent(r.gid)}">${esc(r.team)} ${r.site} ${esc(r.opp)}</a></td>` +
-        STATS.map(([s]) => `<td>${f1(r[s])}${r.avg && r.avg[s] != null ? `<small>${f1(r.avg[s])}</small>` : ""}</td>`).join("") + "</tr>").join("");
+        STATS.map(([s]) => `<td>${f1(r[s])}${r.avg && r.avg[s] != null ? `<small>${f1(r.avg[s])}</small>` : ""}${propCell(r, s)}</td>`).join("") + "</tr>").join("");
       box.innerHTML = list.length ? `<div class="tbl-wrap"><table class="pl">${head}<tbody>${body}</tbody></table></div>${more ? `<p><button type="button" class="more" id="show-all">Show ${more} more players</button></p>` : ""}` : '<p class="empty">No players match.</p>';
       box.querySelectorAll("th").forEach((th) => { const b = th.querySelector("button"); if (b && b.dataset.k === st.key) th.setAttribute("aria-sort", st.asc ? "ascending" : "descending"); });
     }
@@ -73,7 +91,9 @@
       <td>${f1(r.p_assists)}</td><td class="w">${f1(r.a_assists)}</td><td>${f1(r.p_threes)}</td><td class="w">${f1(r.a_threes)}</td></tr>`).join("");
     box.innerHTML = `<div class="grades">${gradeTable("Last night (" + dayLabel(gr.lastNight) + ")", gr.last_night)}${gradeTable("Last 7 days", gr.last_7_days)}${gradeTable(`Season (${gr.nights} night${gr.nights === 1 ? "" : "s"})`, gr.season)}</div>
       ${top ? `<h3 style="margin-top:20px">Last night's top projected scorers: projection, then result</h3><div class="tbl-wrap"><table>
-      <thead><tr><th class="l">Player</th><th class="l">Game</th><th colspan="2">Pts (proj · actual)</th><th colspan="2">Reb</th><th colspan="2">Ast</th><th colspan="2">3PM</th></tr></thead><tbody>${top}</tbody></table></div>` : ""}`;
+      <thead><tr><th class="l">Player</th><th class="l">Game</th><th colspan="2">Pts (proj · actual)</th><th colspan="2">Reb</th><th colspan="2">Ast</th><th colspan="2">3PM</th></tr></thead><tbody>${top}</tbody></table></div>` : ""}
+      ${gr.props && Object.keys(gr.props).length ? `<h3 style="margin-top:20px">Against the prop lines</h3><p class="note">Taking the projection's side of each consensus line (median of US books, read on the late-afternoon update) at its median price. Pushes are left out. Return is per 1-unit bet. Lines move after we read them, so this is not a closing-line test.</p>
+      <div class="grades">${propTable("Last night", gr.props_last_night)}${propTable("Season", gr.props)}</div>` : ""}`;
   }
 
   function drawBacktest(bt) {
