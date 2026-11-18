@@ -1,0 +1,20 @@
+{
+ "fitted_on": "2021-2026",
+ "games": 7233,
+ "holdout_margin_mae": {
+  "scaled_model": 8.8,
+  "half_of_full": 8.82
+ },
+ "margin": [
+  -0.2962683591469001,
+  0.595653067902255
+ ],
+ "holdout_total_mae": {
+  "scaled_model": 9.67,
+  "half_of_full": 9.67
+ },
+ "total": [
+  14.379306552631407,
+  0.4377586639988228
+ ]
+}

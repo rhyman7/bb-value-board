@@ -263,6 +263,31 @@
       <p class="note">If the line keeps moving toward the model more than half the time, the model is seeing something before the market does. That is the first sign of an edge, and it shows up long before a win-loss record means anything.</p>`;
   }
 
+  // NBA only: tests on past lines (Odds API) and the live first-half record
+  function drawSoft(past, tt, sm) {
+    const box = $("#soft-body");
+    if (!box) return;
+    const r = (x) => x ? `${rec(x)}` : "–";
+    const p = (x) => x && x.pct != null ? x.pct.toFixed(1) + "%" : "–";
+    const fair = past && past.nba_without_injury_hindsight, t = tt && tt.nba_without_injury_hindsight;
+    const pastRows = [
+      fair ? `<tr><td>Spread at the morning line (2024-26)</td><td>${r(fair.side.vs_opener["0+"])}</td><td>${p(fair.side.vs_opener["0+"])}</td></tr>` : "",
+      fair ? `<tr><td>Total at the morning line (2024-26)</td><td>${r(fair.total.vs_opener["0+"])}</td><td>${p(fair.total.vs_opener["0+"])}</td></tr>` : "",
+      t ? `<tr><td>Team totals implied by the closing spread and total (2021-26)</td><td>${r(t.by_gap["0+"])}</td><td>${p(t.by_gap["0+"])}</td></tr>` : ""].join("");
+    const live = (title, s, unit) => {
+      if (!s || !s.games) return "";
+      const rows = Object.entries(s.by_gap).map(([k, x]) => `<tr><td>${k === "0+" ? "Every game" : esc(k.replace("+", "")) + "+ " + unit}</td><td>${rec(x)}</td><td>${pctCell(x)}</td><td>${x.roi == null ? "–" : minus(x.roi.toFixed(1)) + "%"}</td></tr>`).join("");
+      return `<div><h3>${title}</h3><div class="tbl-wrap"><table><thead><tr><th>Model off the line by</th><th>W-L-P</th><th>Win %</th><th>Return</th></tr></thead><tbody>${rows}</tbody></table></div>
+        <p class="note">Average miss: model ${f1(s.mae.model)}, line ${f1(s.mae.line)}.</p></div>`;
+    };
+    const liveHtml = sm && sm.games ? `<div class="two">${live("First-half spreads", sm.h1_spread, "pts")}${live("First-half totals", sm.h1_total, "pts")}</div>
+      <p class="note">${sm.games} games through ${esc(sm.last_night)}. Taking the model's side of the consensus first-half line at its median price, read on the late-afternoon update. Too early to read before a few hundred games.</p>`
+      : `<p class="empty">First-half lines are read on the late-afternoon update from November 18, 2026 and graded the next morning. The record shows here once games finish.</p>`;
+    box.innerHTML = `${pastRows ? `<h3>Tested on past lines: no edge</h3><div class="tbl-wrap"><table><thead><tr><th>Taking the model's side</th><th>W-L-P</th><th>Win %</th></tr></thead><tbody>${pastRows}</tbody></table></div>
+      <p class="note">The model here leaves out who sat, which it can't know at the morning line. The morning line is a noon ET consensus, about 9 hours before tip. 52.4% breaks even at −110.</p>` : ""}
+      <h3 style="margin-top:20px">First half, live</h3>${liveHtml}`;
+  }
+
   // fill the warning's numbers from the latest backtest so it never goes stale
   function drawCaveat(bt) {
     const set = (id, v) => { const el = document.getElementById(id); if (el && v != null) el.textContent = v; };
@@ -280,6 +305,10 @@
     const mlHtml = mlSection(ml);
     if (mlHtml) $("#model-body").insertAdjacentHTML("beforeend", mlHtml);
     drawOpeners(op);
+    if (L === "nba") {
+      const [past, tt, sm] = await Promise.all([get("../opening_lines_test.json"), get("../team_totals_test.json"), get("soft_markets.json")]);
+      drawSoft(past, tt, sm);
+    }
   }
   boot();
 })();

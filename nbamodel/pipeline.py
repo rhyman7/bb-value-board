@@ -21,7 +21,7 @@ from zoneinfo import ZoneInfo
 import numpy as np
 import pandas as pd
 
-from . import archive, availability, backtest, data, gamepage, lines as line_log, market, model, players, ratings
+from . import archive, availability, backtest, data, gamepage, lines as line_log, market, model, players, ratings, soft
 
 ET = ZoneInfo("America/New_York")
 ROOT = Path(__file__).resolve().parent.parent
@@ -138,7 +138,12 @@ def run(do_backtest: bool = False):
     bt_summary = None
     bt_path = ROOT / "docs" / "nba" / "backtest.json"
     if do_backtest:
-        bt_summary = backtest.run(season, s, verbose=False)["summary"]
+        bt_res = backtest.run(season, s, verbose=False)
+        bt_summary = bt_res["summary"]
+        try:   # refit the first-half scaling on the same walk-forward games
+            soft.fit(bt_res["games"][bt_res["games"].season >= 2021])
+        except Exception as e:
+            print("first-half fit failed:", repr(e))
         bt_path.parent.mkdir(parents=True, exist_ok=True)
         bt_path.write_text(json.dumps(bt_summary, indent=1))
     elif bt_path.exists():
@@ -274,6 +279,15 @@ def run(do_backtest: bool = False):
     FEED.parent.mkdir(parents=True, exist_ok=True)
     FEED.write_text(json.dumps(feed, indent=1, allow_nan=False))
     line_log.log("nba", games)
+    # first-half lines read with the props, and the morning grade of the ones that have finished
+    try:
+        from oddsapi import props as oprops
+        if oprops.GAME_LINES:
+            print(f"first-half lines logged for {soft.log(today, games, oprops.GAME_LINES)} games")
+        if soft.LOG.exists():
+            soft.grade(season)
+    except Exception as e:
+        print("first-half log failed:", repr(e))
     # past nights: freeze today's games before tip-off, grade the ones that have finished
     archive.freeze("nba", games, now)
     archive.grade("nba", g[g.season == season], f"{season - 1}-10-01")
