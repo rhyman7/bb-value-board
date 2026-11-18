@@ -1,0 +1,43 @@
+name: Odds API history pull
+
+# One-off pull of past spreads and totals (about 12,300 credits), approved by Ryan on 2026-11-18.
+# Runs on demand only; resumes where it stopped and commits the CSVs to the branch it ran on.
+on:
+  workflow_dispatch:
+    inputs:
+      max_credits:
+        description: "Stop before using more than this many credits"
+        default: "13000"
+  push:
+    branches: [odds-api]
+    paths: ["data/odds/plan.json", ".github/workflows/odds-history.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: odds-history
+  cancel-in-progress: false
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m oddsapi.history
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          MAX_CREDITS: ${{ inputs.max_credits || '13000' }}
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/odds
+          if git diff --staged --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "Past spreads and totals from the Odds API"
+          git push

@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -26,6 +27,7 @@ ET = ZoneInfo("America/New_York")
 ROOT = Path(__file__).resolve().parent.parent
 FEED = ROOT / "docs" / "feed" / "nba.json"
 DAYS_AHEAD = 3
+TEAM_NAME = {"LA Clippers": "Los Angeles Clippers"}   # ESPN name -> the Odds API's, where they differ
 ESPN_INJURIES = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/injuries"
 
 
@@ -237,9 +239,21 @@ def run(do_backtest: bool = False):
         pid = {int(k): v for k, v in abbr.items()}
         proj = players.tonight(pst, [(x["id"], int(r.home_id), int(r.away_id)) for x, r in
                                      zip(games, sched.sort_values("et").itertuples())], set(inj or {}), pid)
+        todays = {k: v for k, v in proj.items() if any(x["id"] == k and x["date"] == today.isoformat() for x in games)}
+        # prop lines for today's games, once a day on the late-afternoon run (about 4 credits a game)
+        if os.environ.get("ODDS_API_KEY") and now.hour >= 16 and todays:
+            try:
+                from oddsapi import props as oprops
+                full = {}
+                for r in sched.itertuples():
+                    if str(r.game_id) in todays:
+                        full[str(r.game_id)] = (TEAM_NAME.get(r.home_display_name, r.home_display_name), TEAM_NAME.get(r.away_display_name, r.away_display_name))
+                n_props = oprops.attach(todays, oprops.today_props(full, today.isoformat()))
+                print(f"prop lines attached for {n_props} players")
+            except Exception as e:
+                print("props failed:", repr(e))
         for x in games:
             x["players"] = proj.get(x["id"])
-        todays = {k: v for k, v in proj.items() if any(x["id"] == k and x["date"] == today.isoformat() for x in games)}
         n_players = players.log(today, todays)
         pgrade = players.grade_log(season)
     except Exception as e:  # the board still goes out without them
