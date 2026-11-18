@@ -84,6 +84,9 @@
       <span class="win">${Math.round(100 * p)}%</span></div>`;
     const labels = { efg: "Effective FG%", tov: "Turnover %", orb: "Off. rebound %", ftr: "FT rate (FTM per FGA)", tpr: "3-point rate", ortg: "Points per 100", pace: "Pace" };
     const b = g.build || { margin: [], total: [] };
+    if (!g.players && L === "cbb") {   // college player projections live in their own file
+      try { const r = await fetch("../feed/cbb_players.json", { cache: "no-cache" }); const pf = r.ok ? await r.json() : null; g.players = pf && pf.games && pf.games[g.id]; } catch (e) { g.players = null; }
+    }
     $("#page").innerHTML = `
       <p class="crumbs"><a href="./">&larr; All games</a><span>${dayLabel(g.date)}${g.neutral ? " · neutral site" : ""}</span></p>
       <div class="gh">${team(g.away, pa, g.rest && g.rest.away, pa > ph)}${team(g.home, ph, g.rest && g.rest.home, ph >= pa)}</div>
@@ -104,7 +107,7 @@
         <p class="note">Lines are ESPN's, from the team's side (negative = favored).</p></div>
         <div class="two">${formTable(g.away, T[g.away] && T[g.away].last10)}${formTable(g.home, T[g.home] && T[g.home].last10)}</div></section>` : ""}
       ${g.players && (g.players.home.length || g.players.away.length) ? `<section><div class="section-head"><h2>Player projections</h2>
-        <p class="note">The model's projection, with the player's season average under it. Minutes come from his recent minutes and who is out${feed.injuryReport ? "" : " (the injury report could not be read for this update, so full rosters are assumed)"}; production per minute is adjusted for the opponent. <a href="players.html">All players tonight and how the projections have done</a>.</p></div>
+        <p class="note">The model's projection, with the player's season average under it. Minutes come from his recent minutes and who is out${L === "cbb" ? " (there is no college injury report, so full rosters are assumed)" : feed.injuryReport ? "" : " (the injury report could not be read for this update, so full rosters are assumed)"}; production per minute is adjusted for the opponent. <a href="players.html">All players tonight and how the projections have done</a>.</p></div>
         <div class="two">${playerTable(g.away, g.players.away, g.players.out && g.players.out.away)}${playerTable(g.home, g.players.home, g.players.out && g.players.out.home)}</div></section>` : ""}`;
   }
   boot();

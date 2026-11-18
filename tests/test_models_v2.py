@@ -100,7 +100,7 @@ def test_player_projection_shape():
     params = {"minutes": {"const": 0.0, "ewm15": 0.0, "ewm30": 1.0, "role": 0.0, "season_avg": 0.0, "last_game": 0.0, "teammates_out": 1.0},
               "beta": {s: 1.0 for s in P.STATS}, "u": {s: 0.5 for s in P.STATS}}
     p = P.project(pd.DataFrame(r), params)
-    assert (p.p_minutes <= P.MAX_MIN).all() and (p[[f"p_{s}" for s in P.STATS]] >= 0).all().all()
+    assert (p.p_minutes <= P.NBA.max_min).all() and (p[[f"p_{s}" for s in P.STATS]] >= 0).all().all()
     assert p.p_minutes.iloc[0] > 33   # picks up some of the missing starter's minutes
 
 
