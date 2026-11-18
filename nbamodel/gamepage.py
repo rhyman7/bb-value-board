@@ -50,6 +50,11 @@ def build(row, coef: dict, home: str, away: str, miss_detail: dict, has_mk: bool
         ih, ia = getattr(row, "imp_h", None), getattr(row, "imp_a", None)
         lab = "Lineup strength from player impact ratings" + (f" ({home} {float(ih):+.1f}, {away} {float(ia):+.1f} per 48)" if ih is not None and ia is not None else "")
         m.append(_piece(lab, ci * float(row.imp_diff), "players"))
+    cl = cm.get("lineup_diff", 0.0)
+    if cl and abs(float(getattr(row, "lineup_diff", 0.0))) > 0:
+        lh, la = getattr(row, "lineup_h", None), getattr(row, "lineup_a", None)
+        lab = "Expected lineup, from players' box scores" + (f" ({home} {float(lh):.1f}, {away} {float(la):.1f}, Game Score per 40 across five players)" if lh is not None and la is not None else "")
+        m.append(_piece(lab, cl * float(row.lineup_diff), "players"))
     t = [_piece("League baseline", ct.get("const", 0.0), "base"),
          _piece(f"Ratings: {pace:.1f} possessions at each side's efficiency", ct.get("r_total", 0.0) * float(row.r_total), "team")]
     if has_mk and "mk_total" in ct:

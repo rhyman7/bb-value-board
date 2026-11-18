@@ -1,0 +1,68 @@
+{
+ "travel_km": {
+  "tune": {
+   "change": -0.0001,
+   "se": 0.0011
+  },
+  "holdout": {
+   "change": -0.0006,
+   "se": 0.0012
+  },
+  "passes": false
+ },
+ "time_zones": {
+  "tune": {
+   "change": 0.0003,
+   "se": 0.0015
+  },
+  "holdout": {
+   "change": -0.0002,
+   "se": 0.0009
+  },
+  "passes": false
+ },
+ "altitude": {
+  "tune": {
+   "change": -0.0034,
+   "se": 0.005
+  },
+  "holdout": {
+   "change": 0.0003,
+   "se": 0.0042
+  },
+  "passes": false
+ },
+ "three_in_four": {
+  "tune": {
+   "change": -0.0031,
+   "se": 0.0052
+  },
+  "holdout": {
+   "change": 0.0,
+   "se": 0.0025
+  },
+  "passes": false
+ },
+ "total_travel": {
+  "tune": {
+   "change": 0.0107,
+   "se": 0.0053
+  },
+  "holdout": {
+   "change": 0.0014,
+   "se": 0.0009
+  },
+  "passes": false
+ },
+ "total_three_in_four": {
+  "tune": {
+   "change": -0.0008,
+   "se": 0.0098
+  },
+  "holdout": {
+   "change": 0.0052,
+   "se": 0.0044
+  },
+  "passes": false
+ }
+}

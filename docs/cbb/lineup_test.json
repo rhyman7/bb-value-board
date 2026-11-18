@@ -1,0 +1,15 @@
+{
+ "tune": {
+  "games": 4868,
+  "base_mae": 8.9573,
+  "change": -0.0071,
+  "se": 0.0056
+ },
+ "holdout": {
+  "games": 23009,
+  "base_mae": 8.9686,
+  "change": -0.0083,
+  "se": 0.0025
+ },
+ "passes": true
+}

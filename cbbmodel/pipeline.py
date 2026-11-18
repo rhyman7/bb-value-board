@@ -20,7 +20,7 @@ import pandas as pd
 from nbamodel import archive, gamepage, lines as line_log, players
 from nbamodel.ratings import rating_projection
 
-from . import availability, backtest, data, players as cbb_players, ratings, roster, spots
+from . import availability, backtest, data, lineup, players as cbb_players, ratings, roster, spots
 
 ET = ZoneInfo("America/New_York")
 ROOT = Path(__file__).resolve().parent.parent
@@ -85,6 +85,7 @@ def run():
     seasons = list(range(backtest.FIRST_RATED, season + 1))
     rated, final = ratings.walk_forward(g_done, backtest.SETTINGS, seasons=seasons, shifts=shifts, return_final=True)
     rated = rated.merge(availability.missing_value(g_done, seasons)[["game_id", "miss_h", "miss_a"]], on="game_id", how="left")
+    rated = rated.merge(lineup.history(g_done, seasons, current=season)[["game_id", "lineup_diff"]], on="game_id", how="left")
     rated = backtest.add_features(rating_projection(rated))
     rated = rated.merge(spots.spots(g_done, rated), on="game_id", how="left")
     rated["far_road_diff"] = rated.far_road_diff.fillna(0.0)
@@ -112,6 +113,11 @@ def run():
         print("missing players failed:", repr(e))
         miss, miss_detail, out_ids = {}, {}, set()
     print(espn_note, f"; {len(out_ids)} regulars counted out")
+    try:   # expected lineup strength tonight (players counted out left off)
+        lin = lineup.today(season, out_ids | {int(a) for a in espn_out if str(a).isdigit()})
+    except Exception as e:
+        print("lineup strength failed:", repr(e))
+        lin = {}
     tags, far = upcoming_spots(g_done, rated, sched, d1, final, today, lines)
     games = []
     for x in s.sort_values("et").itertuples():
@@ -125,6 +131,8 @@ def run():
             "neutral": bool(x.neutral_site), "rest_h": rest(hid), "rest_a": rest(aid), "g7_h": 0, "g7_a": 0, "n_this": n_this,
             "far_road_diff": far.get(str(x.game_id), 0.0),
             "miss_h": miss.get(hid, 0.0), "miss_a": miss.get(aid, 0.0),
+            "lineup_h": lin.get(hid), "lineup_a": lin.get(aid),
+            "lineup_diff": lin[hid] - lin[aid] if hid in lin and aid in lin else np.nan,
         }])
         row = backtest.predict(backtest.add_features(rating_projection(row)), coef).iloc[0]
         m = float(row.m_margin)
