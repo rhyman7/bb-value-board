@@ -1,0 +1,156 @@
+{
+ "note": "imp_diff = home lineup strength minus away, from walk-forward impact ratings",
+ "with_missing_players_lam0.3_add": {
+  "tune": {
+   "games": 4747,
+   "base_mae": 9.9678,
+   "new_mae": 9.9058,
+   "change": -0.0621,
+   "se": 0.0217
+  },
+  "holdout": {
+   "games": 7233,
+   "base_mae": 10.7369,
+   "new_mae": 10.6659,
+   "change": -0.071,
+   "se": 0.0175
+  },
+  "passes": true
+ },
+ "with_missing_players_lam0.3_replace_missing": {
+  "tune": {
+   "games": 4747,
+   "base_mae": 9.9678,
+   "new_mae": 9.9476,
+   "change": -0.0202,
+   "se": 0.0331
+  },
+  "holdout": {
+   "games": 7233,
+   "base_mae": 10.7369,
+   "new_mae": 10.785,
+   "change": 0.0481,
+   "se": 0.0315
+  },
+  "passes": false
+ },
+ "with_missing_players_lam1_add": {
+  "tune": {
+   "games": 4747,
+   "base_mae": 9.9678,
+   "new_mae": 9.9158,
+   "change": -0.052,
+   "se": 0.021
+  },
+  "holdout": {
+   "games": 7233,
+   "base_mae": 10.7369,
+   "new_mae": 10.6663,
+   "change": -0.0706,
+   "se": 0.0172
+  },
+  "passes": true
+ },
+ "with_missing_players_lam1_replace_missing": {
+  "tune": {
+   "games": 4747,
+   "base_mae": 9.9678,
+   "new_mae": 9.9604,
+   "change": -0.0075,
+   "se": 0.0327
+  },
+  "holdout": {
+   "games": 7233,
+   "base_mae": 10.7369,
+   "new_mae": 10.7874,
+   "change": 0.0505,
+   "se": 0.0314
+  },
+  "passes": false
+ },
+ "with_missing_players_lam3_add": {
+  "tune": {
+   "games": 4747,
+   "base_mae": 9.9678,
+   "new_mae": 9.9282,
+   "change": -0.0396,
+   "se": 0.019
+  },
+  "holdout": {
+   "games": 7233,
+   "base_mae": 10.7369,
+   "new_mae": 10.6864,
+   "change": -0.0505,
+   "se": 0.015
+  },
+  "passes": true
+ },
+ "with_missing_players_lam3_replace_missing": {
+  "tune": {
+   "games": 4747,
+   "base_mae": 9.9678,
+   "new_mae": 9.9822,
+   "change": 0.0143,
+   "se": 0.0318
+  },
+  "holdout": {
+   "games": 7233,
+   "base_mae": 10.7369,
+   "new_mae": 10.8275,
+   "change": 0.0906,
+   "se": 0.0307
+  },
+  "passes": false
+ },
+ "without_injury_hindsight_lam0.3_add": {
+  "tune": {
+   "games": 4747,
+   "base_mae": 10.0257,
+   "new_mae": 9.9476,
+   "change": -0.0781,
+   "se": 0.0252
+  },
+  "holdout": {
+   "games": 7233,
+   "base_mae": 10.9602,
+   "new_mae": 10.8199,
+   "change": -0.1404,
+   "se": 0.0213
+  },
+  "passes": true
+ },
+ "without_injury_hindsight_lam1_add": {
+  "tune": {
+   "games": 4747,
+   "base_mae": 10.0257,
+   "new_mae": 9.9604,
+   "change": -0.0653,
+   "se": 0.024
+  },
+  "holdout": {
+   "games": 7233,
+   "base_mae": 10.9602,
+   "new_mae": 10.815,
+   "change": -0.1453,
+   "se": 0.0204
+  },
+  "passes": true
+ },
+ "without_injury_hindsight_lam3_add": {
+  "tune": {
+   "games": 4747,
+   "base_mae": 10.0257,
+   "new_mae": 9.9822,
+   "change": -0.0435,
+   "se": 0.021
+  },
+  "holdout": {
+   "games": 7233,
+   "base_mae": 10.9602,
+   "new_mae": 10.8463,
+   "change": -0.1139,
+   "se": 0.0174
+  },
+  "passes": true
+ }
+}

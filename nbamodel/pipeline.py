@@ -21,7 +21,7 @@ from zoneinfo import ZoneInfo
 import numpy as np
 import pandas as pd
 
-from . import archive, availability, backtest, data, gamepage, lines as line_log, market, model, players, ratings, soft
+from . import archive, availability, backtest, data, gamepage, impact, lines as line_log, market, model, players, ratings, soft
 
 ET = ZoneInfo("America/New_York")
 ROOT = Path(__file__).resolve().parent.parent
@@ -131,6 +131,7 @@ def run(do_backtest: bool = False):
     hist_seasons = [x for x in sorted(g.season.unique()) if x > g.season.min() and x < season]
     rated = ratings.rating_projection(ratings.walk_forward(g, s, seasons=hist_seasons))
     rated = rated.merge(availability.missing_value(g, hist_seasons), on="game_id", how="left")
+    rated = rated.merge(impact.history(hist_seasons)[["game_id", "imp_diff"]], on="game_id", how="left")
     rated = rated.merge(data.closing_lines(), on="game_id", how="left")
     rated = rated.merge(market.market_ratings(rated, [x for x in hist_seasons if x >= backtest.GRADE_FROM]), on="game_id", how="left")
     coef = model.fit(model.features(rated))
@@ -159,6 +160,11 @@ def run(do_backtest: bool = False):
     sched = upcoming(season, today)
     inj = injuries()
     miss, miss_names, miss_detail = current_missing(g, season, inj)
+    try:   # impact ratings as of today and each team's lineup strength tonight (players listed out left off)
+        imp_str, imp_rating, imp_names = impact.today(season, set(inj or {}))
+    except Exception as e:
+        print("impact ratings failed:", repr(e))
+        imp_str, imp_rating, imp_names = {}, {}, {}
     lines = line_log.espn_lines("nba", sorted(set(sched.day)))
     mk = live_market(g, season, day)
     this = g[g.season == season]
@@ -188,6 +194,8 @@ def run(do_backtest: bool = False):
             "lg_eff": mean, "lg_hca": hca, "lg_pace": pmean, "neutral": bool(x.neutral_site),
             "rest_h": rest(hid), "rest_a": rest(aid), "g7_h": g7(hid), "g7_a": g7(aid),
             "miss_h": miss.get(hid, 0.0), "miss_a": miss.get(aid, 0.0), "n_this": len(this),
+            "imp_h": imp_str.get(hid), "imp_a": imp_str.get(aid),
+            "imp_diff": imp_str[hid] - imp_str[aid] if hid in imp_str and aid in imp_str else np.nan,
             "mk_margin": (mk[0][hid] - mk[0][aid] + (0.0 if x.neutral_site else mk[1])) if mk and hid in mk[0] and aid in mk[0] else np.nan,
             "mk_total": (mk[2] + mk[3][hid] + mk[3][aid]) if mk and hid in mk[3] and aid in mk[3] else np.nan,
         }])

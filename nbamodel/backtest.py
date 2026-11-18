@@ -15,7 +15,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from . import availability, data, market, model, ratings
+from . import availability, data, impact, market, model, ratings
 
 FIRST_FIT = 2017          # the game model needs at least one earlier season of rated games
 GRADE_FROM = 2021         # first season with closing lines for the whole season
@@ -37,16 +37,38 @@ def record(df: pd.DataFrame, pick_home: np.ndarray, actual, line):
             "se": round(100 * math.sqrt(0.25 / n), 1) if n else None}
 
 
-def run(last_season: int, settings: ratings.Settings | None = None, verbose: bool = True, use_availability: bool = True) -> dict:
+def impact_for(seasons):
+    """imp_diff for every game in `seasons`. Finished seasons come from the cache; a season in
+    progress (today's) is walked from fresh box scores."""
+    from datetime import date
+    d = date.today()
+    now = d.year + 1 if d.month >= 8 else d.year
+    done = [s for s in seasons if s < now]
+    parts = [impact.history(done)] if done else []
+    if now in seasons:
+        f, ix = impact.walk([now], current=now)
+        parts.append(impact.game_strength([now], f, ix, current=now))
+    return pd.concat(parts, ignore_index=True)
+
+
+def run(last_season: int, settings: ratings.Settings | None = None, verbose: bool = True, use_availability: bool = True,
+        extra: pd.DataFrame | None = None) -> dict:
+    """extra: optional per-game feature columns (with game_id) merged in before the model, for experiments."""
     g = data.all_games(last_season)
     seasons = [s for s in sorted(g.season.unique()) if s > g.season.min()]
     rated = ratings.rating_projection(ratings.walk_forward(g, settings, seasons=seasons))
     if use_availability:
         miss = availability.missing_value(g, seasons)
         rated = rated.merge(miss, on="game_id", how="left")
+        # lineup strength from impact ratings: like missing players, it knows who played
+        rated = rated.merge(impact_for(seasons)[["game_id", "imp_diff"]], on="game_id", how="left")
     rated = rated.merge(data.closing_lines(), on="game_id", how="left")
     if use_availability:
         rated = rated.merge(market.market_ratings(rated, [s for s in seasons if s >= GRADE_FROM]), on="game_id", how="left")
+    if extra is not None:
+        rated = rated.merge(extra, on="game_id", how="left")
+        cols = [c for c in extra.columns if c != "game_id"]
+        rated[cols] = rated[cols].fillna(0.0)      # a game the experiment has no value for counts as neutral
     rated = model.features(rated)
 
     out = []
