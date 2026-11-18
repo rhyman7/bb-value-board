@@ -166,6 +166,8 @@ def run(do_backtest: bool = False):
         print("impact ratings failed:", repr(e))
         imp_str, imp_rating, imp_names = {}, {}, {}
     lines = line_log.espn_lines("nba", sorted(set(sched.day)))
+    fresh = {k for k, v in lines.items() if v[0] is not None or v[2] is not None}   # lines ESPN still posts
+    lines = line_log.with_logged("nba", lines)    # games already under way keep their last line
     mk = live_market(g, season, day)
     this = g[g.season == season]
     last_played = {}
@@ -288,7 +290,7 @@ def run(do_backtest: bool = False):
     }
     FEED.parent.mkdir(parents=True, exist_ok=True)
     FEED.write_text(json.dumps(feed, indent=1, allow_nan=False))
-    line_log.log("nba", games)
+    line_log.log("nba", [x for x in games if x["id"] in fresh])
     # first-half lines read with the props, and the morning grade of the ones that have finished
     try:
         from oddsapi import props as oprops

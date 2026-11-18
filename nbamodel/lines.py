@@ -115,3 +115,19 @@ def read(league):
 def last_lines(league):
     """The last logged line per game (stands in for the close)."""
     return read(league).drop_duplicates("game_id", keep="last")[["game_id", "close_spread", "close_total"]]
+
+
+def with_logged(league, lines):
+    """ESPN drops a game's line once it tips off, so the late update would show those games with
+    no market line. Fill them from the last line logged before tip (spread and total only)."""
+    try:
+        last = read(league).dropna(subset=["close_spread"]).drop_duplicates("game_id", keep="last")
+    except Exception:
+        return lines
+    out = dict(lines)
+    for r in last.itertuples():
+        cur = out.get(r.game_id)
+        if cur is None or cur[0] is None:
+            ml_h, ml_a = (cur[2], cur[3]) if cur else (None, None)
+            out[r.game_id] = (float(r.close_spread), None if pd.isna(r.close_total) else float(r.close_total), ml_h, ml_a)
+    return out
