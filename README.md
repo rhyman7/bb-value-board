@@ -161,3 +161,12 @@ standard 4.5% hold. Neither league makes money: the market's win probability is 
 NBA 0.203 vs model 0.208, college 0.174 vs 0.178) and every edge threshold loses after the hold.
 ESPN's moneylines are logged with the spreads from 2026-11-17 (`home_ml`, `away_ml`,
 `model_win_prob` in `docs/lines/*.csv`), and `openers.py` grades the model at those real prices.
+
+## Matchup report PDFs
+
+`python -m reports.matchup_pdf` builds a nightly NBA and college matchup report, in the style of the football
+weekly reports: the slate with projected spreads and totals, best overall matchups, top projected scorers, and
+a section per game with good and tough spots (defense vs the player's position and his projection against his
+season average), team stats and, for the NBA, a projected box score. It reads `docs/feed/` and the dashboards'
+`data/data.json`, and writes `docs/reports/<league>/<date>.pdf` plus `latest.pdf`. The **Matchup report PDFs**
+workflow runs it after every board update. These are projections, not picks.
