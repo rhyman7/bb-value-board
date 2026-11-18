@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-17T23:12:56+00:00",
+ "generatedAt": "2026-11-17T23:51:55+00:00",
  "season": 2027,
  "injuryReport": false,
  "marketRatings": false,
@@ -57,12 +57,45 @@
    "market_ratings_margin": null,
    "mkt_spread": null,
    "mkt_total": null,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": -2.0,
    "projection_total": 222.6,
    "win_prob": 0.429,
    "rest": {
     "away": 1,
     "home": 1
+   },
+   "build": {
+    "margin": [
+     {
+      "label": "TOR team rating (+1.1 per 100)",
+      "pts": 1.15,
+      "kind": "team"
+     },
+     {
+      "label": "NY team rating (+4.8 per 100)",
+      "pts": -5.15,
+      "kind": "team"
+     },
+     {
+      "label": "Home court",
+      "pts": 2.01,
+      "kind": "site"
+     }
+    ],
+    "total": [
+     {
+      "label": "League baseline",
+      "pts": 2.55,
+      "kind": "base"
+     },
+     {
+      "label": "Ratings: 99.4 possessions at each side's efficiency",
+      "pts": 220.06,
+      "kind": "team"
+     }
+    ]
    },
    "missing": {
     "away": 0.0,
@@ -83,12 +116,70 @@
    "market_ratings_margin": null,
    "mkt_spread": null,
    "mkt_total": null,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": 4.1,
    "projection_total": 230.7,
    "win_prob": 0.643,
    "rest": {
     "away": 0,
     "home": 0
+   },
+   "build": {
+    "margin": [
+     {
+      "label": "MIN team rating (+4.7 per 100)",
+      "pts": 5.34,
+      "kind": "team"
+     },
+     {
+      "label": "POR team rating (+2.5 per 100)",
+      "pts": -2.86,
+      "kind": "team"
+     },
+     {
+      "label": "Home court",
+      "pts": 2.1,
+      "kind": "site"
+     },
+     {
+      "label": "MIN on a back-to-back",
+      "pts": -2.0,
+      "kind": "schedule"
+     },
+     {
+      "label": "POR on a back-to-back",
+      "pts": 1.53,
+      "kind": "schedule"
+     }
+    ],
+    "total": [
+     {
+      "label": "League baseline",
+      "pts": 2.55,
+      "kind": "base"
+     },
+     {
+      "label": "Ratings: 104.3 possessions at each side's efficiency",
+      "pts": 228.74,
+      "kind": "team"
+     },
+     {
+      "label": "MIN on a back-to-back",
+      "pts": -0.05,
+      "kind": "schedule"
+     },
+     {
+      "label": "POR on a back-to-back",
+      "pts": 0.06,
+      "kind": "schedule"
+     },
+     {
+      "label": "Both on a back-to-back",
+      "pts": -0.58,
+      "kind": "schedule"
+     }
+    ]
    },
    "missing": {
     "away": 0.0,
@@ -109,12 +200,55 @@
    "market_ratings_margin": null,
    "mkt_spread": null,
    "mkt_total": null,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": 5.0,
    "projection_total": 229.0,
    "win_prob": 0.67,
    "rest": {
     "away": 2,
     "home": 1
+   },
+   "build": {
+    "margin": [
+     {
+      "label": "SA team rating (+7.8 per 100)",
+      "pts": 8.65,
+      "kind": "team"
+     },
+     {
+      "label": "DET team rating (+4.9 per 100)",
+      "pts": -5.5,
+      "kind": "team"
+     },
+     {
+      "label": "Home court",
+      "pts": 2.07,
+      "kind": "site"
+     },
+     {
+      "label": "Rest days",
+      "pts": 0.13,
+      "kind": "schedule"
+     },
+     {
+      "label": "Games in the last 7 days",
+      "pts": -0.38,
+      "kind": "schedule"
+     }
+    ],
+    "total": [
+     {
+      "label": "League baseline",
+      "pts": 2.55,
+      "kind": "base"
+     },
+     {
+      "label": "Ratings: 102.6 possessions at each side's efficiency",
+      "pts": 226.47,
+      "kind": "team"
+     }
+    ]
    },
    "missing": {
     "away": 0.0,
@@ -135,12 +269,50 @@
    "market_ratings_margin": null,
    "mkt_spread": null,
    "mkt_total": null,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": 9.4,
    "projection_total": 235.1,
    "win_prob": 0.793,
    "rest": {
     "away": 1,
     "home": 1
+   },
+   "build": {
+    "margin": [
+     {
+      "label": "LAC team rating (-0.4 per 100)",
+      "pts": -0.4,
+      "kind": "team"
+     },
+     {
+      "label": "UTAH team rating (-6.6 per 100)",
+      "pts": 7.33,
+      "kind": "team"
+     },
+     {
+      "label": "Home court",
+      "pts": 2.07,
+      "kind": "site"
+     },
+     {
+      "label": "Games in the last 7 days",
+      "pts": 0.38,
+      "kind": "schedule"
+     }
+    ],
+    "total": [
+     {
+      "label": "League baseline",
+      "pts": 2.55,
+      "kind": "base"
+     },
+     {
+      "label": "Ratings: 102.7 possessions at each side's efficiency",
+      "pts": 232.51,
+      "kind": "team"
+     }
+    ]
    },
    "missing": {
     "away": 0.0,
@@ -161,12 +333,45 @@
    "market_ratings_margin": null,
    "mkt_spread": null,
    "mkt_total": null,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": 7.2,
    "projection_total": 226.7,
    "win_prob": 0.737,
    "rest": {
     "away": 1,
     "home": 1
+   },
+   "build": {
+    "margin": [
+     {
+      "label": "LAL team rating (+3.4 per 100)",
+      "pts": 3.62,
+      "kind": "team"
+     },
+     {
+      "label": "CHA team rating (-1.5 per 100)",
+      "pts": 1.61,
+      "kind": "team"
+     },
+     {
+      "label": "Home court",
+      "pts": 2.0,
+      "kind": "site"
+     }
+    ],
+    "total": [
+     {
+      "label": "League baseline",
+      "pts": 2.55,
+      "kind": "base"
+     },
+     {
+      "label": "Ratings: 99.1 possessions at each side's efficiency",
+      "pts": 224.15,
+      "kind": "team"
+     }
+    ]
    },
    "missing": {
     "away": 0.0,
@@ -187,12 +392,50 @@
    "market_ratings_margin": null,
    "mkt_spread": null,
    "mkt_total": null,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": 1.3,
    "projection_total": 231.0,
    "win_prob": 0.546,
    "rest": {
     "away": 1,
     "home": 1
+   },
+   "build": {
+    "margin": [
+     {
+      "label": "ORL team rating (-0.5 per 100)",
+      "pts": -0.51,
+      "kind": "team"
+     },
+     {
+      "label": "PHI team rating (+0.6 per 100)",
+      "pts": -0.67,
+      "kind": "team"
+     },
+     {
+      "label": "Home court",
+      "pts": 2.08,
+      "kind": "site"
+     },
+     {
+      "label": "Games in the last 7 days",
+      "pts": 0.38,
+      "kind": "schedule"
+     }
+    ],
+    "total": [
+     {
+      "label": "League baseline",
+      "pts": 2.55,
+      "kind": "base"
+     },
+     {
+      "label": "Ratings: 102.9 possessions at each side's efficiency",
+      "pts": 228.44,
+      "kind": "team"
+     }
+    ]
    },
    "missing": {
     "away": 0.0,
@@ -213,12 +456,55 @@
    "market_ratings_margin": null,
    "mkt_spread": null,
    "mkt_total": null,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": 11.8,
    "projection_total": 237.8,
    "win_prob": 0.843,
    "rest": {
     "away": 2,
     "home": 1
+   },
+   "build": {
+    "margin": [
+     {
+      "label": "MIA team rating (+1.5 per 100)",
+      "pts": 1.69,
+      "kind": "team"
+     },
+     {
+      "label": "MIL team rating (-7.3 per 100)",
+      "pts": 8.22,
+      "kind": "team"
+     },
+     {
+      "label": "Home court",
+      "pts": 2.1,
+      "kind": "site"
+     },
+     {
+      "label": "Rest days",
+      "pts": 0.13,
+      "kind": "schedule"
+     },
+     {
+      "label": "Games in the last 7 days",
+      "pts": -0.38,
+      "kind": "schedule"
+     }
+    ],
+    "total": [
+     {
+      "label": "League baseline",
+      "pts": 2.55,
+      "kind": "base"
+     },
+     {
+      "label": "Ratings: 103.9 possessions at each side's efficiency",
+      "pts": 235.27,
+      "kind": "team"
+     }
+    ]
    },
    "missing": {
     "away": 0.0,
@@ -239,12 +525,55 @@
    "market_ratings_margin": null,
    "mkt_spread": null,
    "mkt_total": null,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": -9.0,
    "projection_total": 228.9,
    "win_prob": 0.217,
    "rest": {
     "away": 1,
     "home": 2
+   },
+   "build": {
+    "margin": [
+     {
+      "label": "IND team rating (-5.1 per 100)",
+      "pts": -5.57,
+      "kind": "team"
+     },
+     {
+      "label": "HOU team rating (+5.2 per 100)",
+      "pts": -5.7,
+      "kind": "team"
+     },
+     {
+      "label": "Home court",
+      "pts": 2.03,
+      "kind": "site"
+     },
+     {
+      "label": "Rest days",
+      "pts": -0.13,
+      "kind": "schedule"
+     },
+     {
+      "label": "Games in the last 7 days",
+      "pts": 0.38,
+      "kind": "schedule"
+     }
+    ],
+    "total": [
+     {
+      "label": "League baseline",
+      "pts": 2.55,
+      "kind": "base"
+     },
+     {
+      "label": "Ratings: 100.7 possessions at each side's efficiency",
+      "pts": 226.31,
+      "kind": "team"
+     }
+    ]
    },
    "missing": {
     "away": 0.0,
@@ -265,12 +594,45 @@
    "market_ratings_margin": null,
    "mkt_spread": null,
    "mkt_total": null,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": 5.3,
    "projection_total": 240.9,
    "win_prob": 0.68,
    "rest": {
     "away": 1,
     "home": 1
+   },
+   "build": {
+    "margin": [
+     {
+      "label": "CLE team rating (+2.3 per 100)",
+      "pts": 2.62,
+      "kind": "team"
+     },
+     {
+      "label": "MEM team rating (-0.5 per 100)",
+      "pts": 0.57,
+      "kind": "team"
+     },
+     {
+      "label": "Home court",
+      "pts": 2.1,
+      "kind": "site"
+     }
+    ],
+    "total": [
+     {
+      "label": "League baseline",
+      "pts": 2.55,
+      "kind": "base"
+     },
+     {
+      "label": "Ratings: 103.8 possessions at each side's efficiency",
+      "pts": 238.38,
+      "kind": "team"
+     }
+    ]
    },
    "missing": {
     "away": 0.0,
@@ -291,12 +653,65 @@
    "market_ratings_margin": null,
    "mkt_spread": null,
    "mkt_total": null,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": 10.9,
    "projection_total": 234.7,
    "win_prob": 0.825,
    "rest": {
     "away": 1,
     "home": 0
+   },
+   "build": {
+    "margin": [
+     {
+      "label": "TOR team rating (+1.1 per 100)",
+      "pts": 1.19,
+      "kind": "team"
+     },
+     {
+      "label": "WSH team rating (-8.1 per 100)",
+      "pts": 9.08,
+      "kind": "team"
+     },
+     {
+      "label": "Home court",
+      "pts": 2.09,
+      "kind": "site"
+     },
+     {
+      "label": "Rest days",
+      "pts": 0.13,
+      "kind": "schedule"
+     },
+     {
+      "label": "TOR on a back-to-back",
+      "pts": -2.0,
+      "kind": "schedule"
+     },
+     {
+      "label": "Games in the last 7 days",
+      "pts": 0.38,
+      "kind": "schedule"
+     }
+    ],
+    "total": [
+     {
+      "label": "League baseline",
+      "pts": 2.55,
+      "kind": "base"
+     },
+     {
+      "label": "Ratings: 103.3 possessions at each side's efficiency",
+      "pts": 232.16,
+      "kind": "team"
+     },
+     {
+      "label": "TOR on a back-to-back",
+      "pts": -0.05,
+      "kind": "schedule"
+     }
+    ]
    },
    "missing": {
     "away": 0.0,
@@ -317,12 +732,50 @@
    "market_ratings_margin": null,
    "mkt_spread": null,
    "mkt_total": null,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": 0.2,
    "projection_total": 237.4,
    "win_prob": 0.509,
    "rest": {
     "away": 1,
     "home": 1
+   },
+   "build": {
+    "margin": [
+     {
+      "label": "BKN team rating (-6.8 per 100)",
+      "pts": -7.7,
+      "kind": "team"
+     },
+     {
+      "label": "CHI team rating (-4.8 per 100)",
+      "pts": 5.44,
+      "kind": "team"
+     },
+     {
+      "label": "Home court",
+      "pts": 2.11,
+      "kind": "site"
+     },
+     {
+      "label": "Games in the last 7 days",
+      "pts": 0.38,
+      "kind": "schedule"
+     }
+    ],
+    "total": [
+     {
+      "label": "League baseline",
+      "pts": 2.55,
+      "kind": "base"
+     },
+     {
+      "label": "Ratings: 104.7 possessions at each side's efficiency",
+      "pts": 234.82,
+      "kind": "team"
+     }
+    ]
    },
    "missing": {
     "away": 0.0,
@@ -343,12 +796,45 @@
    "market_ratings_margin": null,
    "mkt_spread": null,
    "mkt_total": null,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": 9.2,
    "projection_total": 230.6,
    "win_prob": 0.789,
    "rest": {
     "away": 2,
     "home": 2
+   },
+   "build": {
+    "margin": [
+     {
+      "label": "OKC team rating (+7.0 per 100)",
+      "pts": 7.98,
+      "kind": "team"
+     },
+     {
+      "label": "ATL team rating (+0.8 per 100)",
+      "pts": -0.87,
+      "kind": "team"
+     },
+     {
+      "label": "Home court",
+      "pts": 2.12,
+      "kind": "site"
+     }
+    ],
+    "total": [
+     {
+      "label": "League baseline",
+      "pts": 2.55,
+      "kind": "base"
+     },
+     {
+      "label": "Ratings: 105.0 possessions at each side's efficiency",
+      "pts": 228.07,
+      "kind": "team"
+     }
+    ]
    },
    "missing": {
     "away": 0.0,
@@ -369,12 +855,65 @@
    "market_ratings_margin": null,
    "mkt_spread": null,
    "mkt_total": null,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": -8.5,
    "projection_total": 235.9,
    "win_prob": 0.229,
    "rest": {
     "away": 0,
     "home": 1
+   },
+   "build": {
+    "margin": [
+     {
+      "label": "NO team rating (-5.3 per 100)",
+      "pts": -6.03,
+      "kind": "team"
+     },
+     {
+      "label": "DET team rating (+4.9 per 100)",
+      "pts": -5.61,
+      "kind": "team"
+     },
+     {
+      "label": "Home court",
+      "pts": 2.11,
+      "kind": "site"
+     },
+     {
+      "label": "Rest days",
+      "pts": -0.13,
+      "kind": "schedule"
+     },
+     {
+      "label": "DET on a back-to-back",
+      "pts": 1.53,
+      "kind": "schedule"
+     },
+     {
+      "label": "Games in the last 7 days",
+      "pts": -0.38,
+      "kind": "schedule"
+     }
+    ],
+    "total": [
+     {
+      "label": "League baseline",
+      "pts": 2.55,
+      "kind": "base"
+     },
+     {
+      "label": "Ratings: 104.6 possessions at each side's efficiency",
+      "pts": 233.25,
+      "kind": "team"
+     },
+     {
+      "label": "DET on a back-to-back",
+      "pts": 0.06,
+      "kind": "schedule"
+     }
+    ]
    },
    "missing": {
     "away": 0.0,
@@ -395,12 +934,55 @@
    "market_ratings_margin": null,
    "mkt_spread": null,
    "mkt_total": null,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": -3.1,
    "projection_total": 232.0,
    "win_prob": 0.393,
    "rest": {
     "away": 1,
     "home": 2
+   },
+   "build": {
+    "margin": [
+     {
+      "label": "DAL team rating (-3.1 per 100)",
+      "pts": -3.43,
+      "kind": "team"
+     },
+     {
+      "label": "GS team rating (+1.1 per 100)",
+      "pts": -1.2,
+      "kind": "team"
+     },
+     {
+      "label": "Home court",
+      "pts": 2.09,
+      "kind": "site"
+     },
+     {
+      "label": "Rest days",
+      "pts": -0.13,
+      "kind": "schedule"
+     },
+     {
+      "label": "Games in the last 7 days",
+      "pts": -0.38,
+      "kind": "schedule"
+     }
+    ],
+    "total": [
+     {
+      "label": "League baseline",
+      "pts": 2.55,
+      "kind": "base"
+     },
+     {
+      "label": "Ratings: 103.5 possessions at each side's efficiency",
+      "pts": 229.46,
+      "kind": "team"
+     }
+    ]
    },
    "missing": {
     "away": 0.0,
@@ -421,12 +1003,45 @@
    "market_ratings_margin": null,
    "mkt_spread": null,
    "mkt_total": null,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": -2.7,
    "projection_total": 227.2,
    "win_prob": 0.404,
    "rest": {
     "away": 1,
     "home": 1
+   },
+   "build": {
+    "margin": [
+     {
+      "label": "DEN team rating (+2.7 per 100)",
+      "pts": 2.88,
+      "kind": "team"
+     },
+     {
+      "label": "BOS team rating (+7.1 per 100)",
+      "pts": -7.57,
+      "kind": "team"
+     },
+     {
+      "label": "Home court",
+      "pts": 1.97,
+      "kind": "site"
+     }
+    ],
+    "total": [
+     {
+      "label": "League baseline",
+      "pts": 2.55,
+      "kind": "base"
+     },
+     {
+      "label": "Ratings: 97.7 possessions at each side's efficiency",
+      "pts": 224.68,
+      "kind": "team"
+     }
+    ]
    },
    "missing": {
     "away": 0.0,
@@ -447,12 +1062,55 @@
    "market_ratings_margin": null,
    "mkt_spread": null,
    "mkt_total": null,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": -7.3,
    "projection_total": 229.5,
    "win_prob": 0.26,
    "rest": {
     "away": 1,
     "home": 2
+   },
+   "build": {
+    "margin": [
+     {
+      "label": "SAC team rating (-8.2 per 100)",
+      "pts": -9.03,
+      "kind": "team"
+     },
+     {
+      "label": "PHX team rating (+0.5 per 100)",
+      "pts": -0.58,
+      "kind": "team"
+     },
+     {
+      "label": "Home court",
+      "pts": 2.04,
+      "kind": "site"
+     },
+     {
+      "label": "Rest days",
+      "pts": -0.13,
+      "kind": "schedule"
+     },
+     {
+      "label": "Games in the last 7 days",
+      "pts": 0.38,
+      "kind": "schedule"
+     }
+    ],
+    "total": [
+     {
+      "label": "League baseline",
+      "pts": 2.55,
+      "kind": "base"
+     },
+     {
+      "label": "Ratings: 101.2 possessions at each side's efficiency",
+      "pts": 226.93,
+      "kind": "team"
+     }
+    ]
    },
    "missing": {
     "away": 0.0,
@@ -473,12 +1131,75 @@
    "market_ratings_margin": null,
    "mkt_spread": null,
    "mkt_total": null,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": 13.2,
    "projection_total": 239.4,
    "win_prob": 0.868,
    "rest": {
     "away": 0,
     "home": 0
+   },
+   "build": {
+    "margin": [
+     {
+      "label": "LAL team rating (+3.4 per 100)",
+      "pts": 3.77,
+      "kind": "team"
+     },
+     {
+      "label": "UTAH team rating (-6.6 per 100)",
+      "pts": 7.38,
+      "kind": "team"
+     },
+     {
+      "label": "Home court",
+      "pts": 2.09,
+      "kind": "site"
+     },
+     {
+      "label": "LAL on a back-to-back",
+      "pts": -2.0,
+      "kind": "schedule"
+     },
+     {
+      "label": "UTAH on a back-to-back",
+      "pts": 1.53,
+      "kind": "schedule"
+     },
+     {
+      "label": "Games in the last 7 days",
+      "pts": 0.38,
+      "kind": "schedule"
+     }
+    ],
+    "total": [
+     {
+      "label": "League baseline",
+      "pts": 2.55,
+      "kind": "base"
+     },
+     {
+      "label": "Ratings: 103.4 possessions at each side's efficiency",
+      "pts": 237.41,
+      "kind": "team"
+     },
+     {
+      "label": "LAL on a back-to-back",
+      "pts": -0.05,
+      "kind": "schedule"
+     },
+     {
+      "label": "UTAH on a back-to-back",
+      "pts": 0.06,
+      "kind": "schedule"
+     },
+     {
+      "label": "Both on a back-to-back",
+      "pts": -0.58,
+      "kind": "schedule"
+     }
+    ]
    },
    "missing": {
     "away": 0.0,
@@ -499,12 +1220,45 @@
    "market_ratings_margin": null,
    "mkt_spread": null,
    "mkt_total": null,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": 10.9,
    "projection_total": 229.2,
    "win_prob": 0.826,
    "rest": {
     "away": 1,
     "home": 1
+   },
+   "build": {
+    "margin": [
+     {
+      "label": "SA team rating (+7.8 per 100)",
+      "pts": 8.48,
+      "kind": "team"
+     },
+     {
+      "label": "LAC team rating (-0.4 per 100)",
+      "pts": 0.39,
+      "kind": "team"
+     },
+     {
+      "label": "Home court",
+      "pts": 2.03,
+      "kind": "site"
+     }
+    ],
+    "total": [
+     {
+      "label": "League baseline",
+      "pts": 2.55,
+      "kind": "base"
+     },
+     {
+      "label": "Ratings: 100.6 possessions at each side's efficiency",
+      "pts": 226.62,
+      "kind": "team"
+     }
+    ]
    },
    "missing": {
     "away": 0.0,
@@ -525,12 +1279,45 @@
    "market_ratings_margin": null,
    "mkt_spread": null,
    "mkt_total": null,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": 2.0,
    "projection_total": 223.6,
    "win_prob": 0.57,
    "rest": {
     "away": 1,
     "home": 1
+   },
+   "build": {
+    "margin": [
+     {
+      "label": "MIN team rating (+4.7 per 100)",
+      "pts": 5.15,
+      "kind": "team"
+     },
+     {
+      "label": "NY team rating (+4.8 per 100)",
+      "pts": -5.22,
+      "kind": "team"
+     },
+     {
+      "label": "Home court",
+      "pts": 2.03,
+      "kind": "site"
+     }
+    ],
+    "total": [
+     {
+      "label": "League baseline",
+      "pts": 2.55,
+      "kind": "base"
+     },
+     {
+      "label": "Ratings: 100.7 possessions at each side's efficiency",
+      "pts": 221.06,
+      "kind": "team"
+     }
+    ]
    },
    "missing": {
     "away": 0.0,
@@ -551,12 +1338,60 @@
    "market_ratings_margin": null,
    "mkt_spread": null,
    "mkt_total": null,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": -10.7,
    "projection_total": 229.9,
    "win_prob": 0.179,
    "rest": {
     "away": 1,
     "home": 0
+   },
+   "build": {
+    "margin": [
+     {
+      "label": "MIL team rating (-7.3 per 100)",
+      "pts": -8.07,
+      "kind": "team"
+     },
+     {
+      "label": "POR team rating (+2.5 per 100)",
+      "pts": -2.8,
+      "kind": "team"
+     },
+     {
+      "label": "Home court",
+      "pts": 2.06,
+      "kind": "site"
+     },
+     {
+      "label": "Rest days",
+      "pts": 0.13,
+      "kind": "schedule"
+     },
+     {
+      "label": "MIL on a back-to-back",
+      "pts": -2.0,
+      "kind": "schedule"
+     }
+    ],
+    "total": [
+     {
+      "label": "League baseline",
+      "pts": 2.55,
+      "kind": "base"
+     },
+     {
+      "label": "Ratings: 102.0 possessions at each side's efficiency",
+      "pts": 227.43,
+      "kind": "team"
+     },
+     {
+      "label": "MIL on a back-to-back",
+      "pts": -0.05,
+      "kind": "schedule"
+     }
+    ]
    },
    "missing": {
     "away": 0.0,
@@ -577,12 +1412,75 @@
    "market_ratings_margin": null,
    "mkt_spread": null,
    "mkt_total": null,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": -0.5,
    "projection_total": 234.4,
    "win_prob": 0.481,
    "rest": {
     "away": 0,
     "home": 0
+   },
+   "build": {
+    "margin": [
+     {
+      "label": "MEM team rating (-0.5 per 100)",
+      "pts": -0.57,
+      "kind": "team"
+     },
+     {
+      "label": "GS team rating (+1.1 per 100)",
+      "pts": -1.2,
+      "kind": "team"
+     },
+     {
+      "label": "Home court",
+      "pts": 2.08,
+      "kind": "site"
+     },
+     {
+      "label": "MEM on a back-to-back",
+      "pts": -2.0,
+      "kind": "schedule"
+     },
+     {
+      "label": "GS on a back-to-back",
+      "pts": 1.53,
+      "kind": "schedule"
+     },
+     {
+      "label": "Games in the last 7 days",
+      "pts": -0.38,
+      "kind": "schedule"
+     }
+    ],
+    "total": [
+     {
+      "label": "League baseline",
+      "pts": 2.55,
+      "kind": "base"
+     },
+     {
+      "label": "Ratings: 103.3 possessions at each side's efficiency",
+      "pts": 232.39,
+      "kind": "team"
+     },
+     {
+      "label": "MEM on a back-to-back",
+      "pts": -0.05,
+      "kind": "schedule"
+     },
+     {
+      "label": "GS on a back-to-back",
+      "pts": 0.06,
+      "kind": "schedule"
+     },
+     {
+      "label": "Both on a back-to-back",
+      "pts": -0.58,
+      "kind": "schedule"
+     }
+    ]
    },
    "missing": {
     "away": 0.0,
@@ -597,181 +1495,4051 @@
    "off": 111.5,
    "def": 110.7,
    "net": 0.8,
-   "pace": 105.1
+   "pace": 105.1,
+   "stats": {
+    "games": 14,
+    "off": {
+     "efg": 52.7,
+     "tov": 14.3,
+     "orb": 28.7,
+     "ftr": 16.8,
+     "tpr": 44.7,
+     "ortg": 109.8,
+     "pace": 107.3
+    },
+    "def": {
+     "efg": 55.1,
+     "tov": 17.9,
+     "orb": 27.2,
+     "ftr": 22.9,
+     "tpr": 42.3,
+     "ortg": 109.9,
+     "pace": 105.6
+    },
+    "ranks": {
+     "off_efg": 21,
+     "def_efg": 23,
+     "off_tov": 12,
+     "def_tov": 2,
+     "off_orb": 11,
+     "def_orb": 15,
+     "off_ftr": 30,
+     "def_ftr": 21,
+     "off_tpr": 12,
+     "def_tpr": 20,
+     "off_ortg": 20,
+     "def_ortg": 11,
+     "off_pace": 1,
+     "def_pace": 2
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-15",
+     "opp": "MIL",
+     "site": "at",
+     "score": "113-106",
+     "result": "W",
+     "line": -8.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-13",
+     "opp": "CHI",
+     "site": "at",
+     "score": "117-125",
+     "result": "L",
+     "line": -6.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-09",
+     "opp": "LAL",
+     "site": "vs",
+     "score": "114-124",
+     "result": "L",
+     "line": -2.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-07",
+     "opp": "BKN",
+     "site": "vs",
+     "score": "124-121",
+     "result": "W",
+     "line": -6.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-06",
+     "opp": "WSH",
+     "site": "vs",
+     "score": "139-132",
+     "result": "W",
+     "line": -8.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "WSH",
+     "site": "at",
+     "score": "120-105",
+     "result": "W",
+     "line": -1.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "IND",
+     "site": "at",
+     "score": "108-104",
+     "result": "W",
+     "line": -10.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-31",
+     "opp": "NO",
+     "site": "at",
+     "score": "99-121",
+     "result": "L",
+     "line": -5.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-29",
+     "opp": "CLE",
+     "site": "vs",
+     "score": "114-111",
+     "result": "W",
+     "line": -1.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-28",
+     "opp": "MIA",
+     "site": "vs",
+     "score": "117-129",
+     "result": "L",
+     "line": -2.5,
+     "ats": "L"
+    }
+   ]
   },
   "BOS": {
    "off": 115.8,
    "def": 108.6,
    "net": 7.1,
-   "pace": 98.8
+   "pace": 98.8,
+   "stats": {
+    "games": 14,
+    "off": {
+     "efg": 55.3,
+     "tov": 14.5,
+     "orb": 30.0,
+     "ftr": 20.0,
+     "tpr": 50.0,
+     "ortg": 115.8,
+     "pace": 99.1
+    },
+    "def": {
+     "efg": 50.8,
+     "tov": 16.8,
+     "orb": 28.1,
+     "ftr": 20.4,
+     "tpr": 50.1,
+     "ortg": 104.7,
+     "pace": 98.6
+    },
+    "ranks": {
+     "off_efg": 6,
+     "def_efg": 5,
+     "off_tov": 13,
+     "def_tov": 6,
+     "off_orb": 7,
+     "def_orb": 20,
+     "off_ftr": 26,
+     "def_ftr": 11,
+     "off_tpr": 3,
+     "def_tpr": 1,
+     "off_ortg": 5,
+     "def_ortg": 3,
+     "off_pace": 30,
+     "def_pace": 28
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-16",
+     "opp": "ORL",
+     "site": "vs",
+     "score": "105-115",
+     "result": "L",
+     "line": -8.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-15",
+     "opp": "DAL",
+     "site": "vs",
+     "score": "131-94",
+     "result": "W",
+     "line": -14.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-11",
+     "opp": "TOR",
+     "site": "at",
+     "score": "98-93",
+     "result": "W",
+     "line": -4.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-10",
+     "opp": "PHI",
+     "site": "at",
+     "score": "123-101",
+     "result": "W",
+     "line": -1.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-08",
+     "opp": "MIL",
+     "site": "at",
+     "score": "117-97",
+     "result": "W",
+     "line": -13.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-06",
+     "opp": "CHA",
+     "site": "at",
+     "score": "119-80",
+     "result": "W",
+     "line": -10.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "MIL",
+     "site": "vs",
+     "score": "109-102",
+     "result": "W",
+     "line": -12.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "HOU",
+     "site": "at",
+     "score": "93-109",
+     "result": "L",
+     "line": 4.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-01",
+     "opp": "ORL",
+     "site": "at",
+     "score": "108-97",
+     "result": "W",
+     "line": -6.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-30",
+     "opp": "CHI",
+     "site": "vs",
+     "score": "125-111",
+     "result": "W",
+     "line": -14.5,
+     "ats": "L"
+    }
+   ]
   },
   "NO": {
    "off": 110.4,
    "def": 115.7,
    "net": -5.3,
-   "pace": 104.1
+   "pace": 104.1,
+   "stats": {
+    "games": 15,
+    "off": {
+     "efg": 51.8,
+     "tov": 14.9,
+     "orb": 25.0,
+     "ftr": 29.6,
+     "tpr": 33.9,
+     "ortg": 109.9,
+     "pace": 105.4
+    },
+    "def": {
+     "efg": 55.9,
+     "tov": 14.9,
+     "orb": 27.2,
+     "ftr": 28.4,
+     "tpr": 44.3,
+     "ortg": 116.7,
+     "pace": 105.3
+    },
+    "ranks": {
+     "off_efg": 25,
+     "def_efg": 27,
+     "off_tov": 16,
+     "def_tov": 13,
+     "off_orb": 23,
+     "def_orb": 16,
+     "off_ftr": 1,
+     "def_ftr": 28,
+     "off_tpr": 30,
+     "def_tpr": 9,
+     "off_ortg": 17,
+     "def_ortg": 28,
+     "off_pace": 4,
+     "def_pace": 3
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-16",
+     "opp": "GS",
+     "site": "vs",
+     "score": "115-94",
+     "result": "W",
+     "line": 3.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-14",
+     "opp": "DEN",
+     "site": "vs",
+     "score": "108-116",
+     "result": "L",
+     "line": 12.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-13",
+     "opp": "MEM",
+     "site": "vs",
+     "score": "111-142",
+     "result": "L",
+     "line": 3.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-11",
+     "opp": "BKN",
+     "site": "vs",
+     "score": "111-145",
+     "result": "L",
+     "line": -2.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-09",
+     "opp": "GS",
+     "site": "at",
+     "score": "87-138",
+     "result": "L",
+     "line": 10.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-08",
+     "opp": "LAC",
+     "site": "at",
+     "score": "123-139",
+     "result": "L",
+     "line": -1.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-06",
+     "opp": "MIN",
+     "site": "vs",
+     "score": "109-115",
+     "result": "L",
+     "line": 3.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "UTAH",
+     "site": "vs",
+     "score": "120-113",
+     "result": "W",
+     "line": -5.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "MEM",
+     "site": "at",
+     "score": "135-134",
+     "result": "W",
+     "line": 5.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-31",
+     "opp": "ATL",
+     "site": "vs",
+     "score": "121-99",
+     "result": "W",
+     "line": 5.5,
+     "ats": "W"
+    }
+   ]
   },
   "CHI": {
    "off": 110.2,
    "def": 115.0,
    "net": -4.8,
-   "pace": 106.0
+   "pace": 106.0,
+   "stats": {
+    "games": 13,
+    "off": {
+     "efg": 51.8,
+     "tov": 16.2,
+     "orb": 27.0,
+     "ftr": 24.6,
+     "tpr": 45.7,
+     "ortg": 107.1,
+     "pace": 107.0
+    },
+    "def": {
+     "efg": 55.1,
+     "tov": 13.7,
+     "orb": 31.0,
+     "ftr": 22.4,
+     "tpr": 39.2,
+     "ortg": 116.5,
+     "pace": 108.0
+    },
+    "ranks": {
+     "off_efg": 24,
+     "def_efg": 22,
+     "off_tov": 22,
+     "def_tov": 23,
+     "off_orb": 17,
+     "def_orb": 26,
+     "off_ftr": 5,
+     "def_ftr": 20,
+     "off_tpr": 10,
+     "def_tpr": 29,
+     "off_ortg": 26,
+     "def_ortg": 27,
+     "off_pace": 2,
+     "def_pace": 1
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-16",
+     "opp": "CLE",
+     "site": "at",
+     "score": "115-126",
+     "result": "L",
+     "line": 8.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-14",
+     "opp": "MIN",
+     "site": "at",
+     "score": "117-106",
+     "result": "W",
+     "line": 16.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-13",
+     "opp": "ATL",
+     "site": "vs",
+     "score": "125-117",
+     "result": "W",
+     "line": 6.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-11",
+     "opp": "SA",
+     "site": "vs",
+     "score": "119-124",
+     "result": "L",
+     "line": 15.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-08",
+     "opp": "PHI",
+     "site": "vs",
+     "score": "121-127",
+     "result": "L",
+     "line": 9.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "NY",
+     "site": "at",
+     "score": "105-135",
+     "result": "L",
+     "line": 11.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "PHI",
+     "site": "at",
+     "score": "107-126",
+     "result": "L",
+     "line": 10.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-30",
+     "opp": "BOS",
+     "site": "at",
+     "score": "111-125",
+     "result": "L",
+     "line": 14.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-28",
+     "opp": "NY",
+     "site": "vs",
+     "score": "127-133",
+     "result": "L",
+     "line": 7.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-26",
+     "opp": "BOS",
+     "site": "at",
+     "score": "99-134",
+     "result": "L",
+     "line": 14.5,
+     "ats": "L"
+    }
+   ]
   },
   "CLE": {
    "off": 115.2,
    "def": 112.9,
    "net": 2.3,
-   "pace": 102.7
+   "pace": 102.7,
+   "stats": {
+    "games": 15,
+    "off": {
+     "efg": 55.9,
+     "tov": 13.6,
+     "orb": 25.6,
+     "ftr": 20.4,
+     "tpr": 46.0,
+     "ortg": 114.8,
+     "pace": 102.9
+    },
+    "def": {
+     "efg": 52.5,
+     "tov": 12.5,
+     "orb": 26.5,
+     "ftr": 20.4,
+     "tpr": 43.4,
+     "ortg": 112.3,
+     "pace": 103.1
+    },
+    "ranks": {
+     "off_efg": 3,
+     "def_efg": 9,
+     "off_tov": 5,
+     "def_tov": 30,
+     "off_orb": 21,
+     "def_orb": 14,
+     "off_ftr": 21,
+     "def_ftr": 10,
+     "off_tpr": 8,
+     "def_tpr": 13,
+     "off_ortg": 6,
+     "def_ortg": 18,
+     "off_pace": 10,
+     "def_pace": 11
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-16",
+     "opp": "CHI",
+     "site": "vs",
+     "score": "126-115",
+     "result": "W",
+     "line": -8.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-14",
+     "opp": "DAL",
+     "site": "vs",
+     "score": "127-117",
+     "result": "W",
+     "line": 8.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-13",
+     "opp": "MIA",
+     "site": "at",
+     "score": "121-133",
+     "result": "L",
+     "line": 2.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-11",
+     "opp": "NY",
+     "site": "at",
+     "score": "115-107",
+     "result": "W",
+     "line": 4.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-09",
+     "opp": "CHA",
+     "site": "at",
+     "score": "112-124",
+     "result": "L",
+     "line": -8.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-07",
+     "opp": "NY",
+     "site": "vs",
+     "score": "97-109",
+     "result": "L",
+     "line": 4.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-06",
+     "opp": "PHI",
+     "site": "vs",
+     "score": "119-95",
+     "result": "W",
+     "line": 2.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "OKC",
+     "site": "at",
+     "score": "116-124",
+     "result": "L",
+     "line": 3.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "OKC",
+     "site": "vs",
+     "score": "112-117",
+     "result": "L",
+     "line": -4.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-31",
+     "opp": "MIL",
+     "site": "at",
+     "score": "136-111",
+     "result": "W",
+     "line": -8.5,
+     "ats": "W"
+    }
+   ]
   },
   "DAL": {
    "off": 109.8,
    "def": 112.9,
    "net": -3.1,
-   "pace": 103.8
+   "pace": 103.8,
+   "stats": {
+    "games": 14,
+    "off": {
+     "efg": 53.2,
+     "tov": 15.7,
+     "orb": 28.6,
+     "ftr": 20.5,
+     "tpr": 42.7,
+     "ortg": 109.9,
+     "pace": 101.9
+    },
+    "def": {
+     "efg": 54.4,
+     "tov": 15.2,
+     "orb": 29.2,
+     "ftr": 19.6,
+     "tpr": 42.5,
+     "ortg": 111.9,
+     "pace": 102.3
+    },
+    "ranks": {
+     "off_efg": 18,
+     "def_efg": 20,
+     "off_tov": 20,
+     "def_tov": 12,
+     "off_orb": 12,
+     "def_orb": 24,
+     "off_ftr": 20,
+     "def_ftr": 5,
+     "off_tpr": 16,
+     "def_tpr": 18,
+     "off_ortg": 16,
+     "def_ortg": 17,
+     "off_pace": 20,
+     "def_pace": 18
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-15",
+     "opp": "BOS",
+     "site": "at",
+     "score": "94-131",
+     "result": "L",
+     "line": 14.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-14",
+     "opp": "CLE",
+     "site": "at",
+     "score": "117-127",
+     "result": "L",
+     "line": -8.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-12",
+     "opp": "MIN",
+     "site": "at",
+     "score": "94-133",
+     "result": "L",
+     "line": 5.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-09",
+     "opp": "IND",
+     "site": "vs",
+     "score": "125-122",
+     "result": "W",
+     "line": -4.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-08",
+     "opp": "BKN",
+     "site": "vs",
+     "score": "130-93",
+     "result": "W",
+     "line": -7.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-06",
+     "opp": "UTAH",
+     "site": "vs",
+     "score": "112-100",
+     "result": "W",
+     "line": -6.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "SA",
+     "site": "at",
+     "score": "111-112",
+     "result": "L",
+     "line": 12.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "SAC",
+     "site": "vs",
+     "score": "100-115",
+     "result": "L",
+     "line": -7.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-30",
+     "opp": "HOU",
+     "site": "vs",
+     "score": "116-111",
+     "result": "W",
+     "line": 5.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-28",
+     "opp": "OKC",
+     "site": "vs",
+     "score": "120-96",
+     "result": "W",
+     "line": 4.5,
+     "ats": "W"
+    }
+   ]
   },
   "DEN": {
    "off": 116.4,
    "def": 113.6,
    "net": 2.7,
-   "pace": 101.4
+   "pace": 101.4,
+   "stats": {
+    "games": 12,
+    "off": {
+     "efg": 54.9,
+     "tov": 13.7,
+     "orb": 24.4,
+     "ftr": 24.1,
+     "tpr": 36.4,
+     "ortg": 113.7,
+     "pace": 100.1
+    },
+    "def": {
+     "efg": 54.1,
+     "tov": 14.6,
+     "orb": 29.6,
+     "ftr": 17.5,
+     "tpr": 43.3,
+     "ortg": 112.9,
+     "pace": 100.2
+    },
+    "ranks": {
+     "off_efg": 8,
+     "def_efg": 17,
+     "off_tov": 6,
+     "def_tov": 17,
+     "off_orb": 24,
+     "def_orb": 25,
+     "off_ftr": 7,
+     "def_ftr": 2,
+     "off_tpr": 28,
+     "def_tpr": 15,
+     "off_ortg": 8,
+     "def_ortg": 20,
+     "off_pace": 26,
+     "def_pace": 26
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-16",
+     "opp": "PHX",
+     "site": "vs",
+     "score": "105-117",
+     "result": "L",
+     "line": -9.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-14",
+     "opp": "NO",
+     "site": "at",
+     "score": "116-108",
+     "result": "W",
+     "line": -12.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-11",
+     "opp": "MEM",
+     "site": "at",
+     "score": "123-118",
+     "result": "W",
+     "line": -3.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-09",
+     "opp": "HOU",
+     "site": "at",
+     "score": "100-110",
+     "result": "L",
+     "line": 4.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-07",
+     "opp": "IND",
+     "site": "at",
+     "score": "114-102",
+     "result": "W",
+     "line": -8.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "TOR",
+     "site": "vs",
+     "score": "128-109",
+     "result": "W",
+     "line": -4.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "POR",
+     "site": "vs",
+     "score": "110-118",
+     "result": "L",
+     "line": -4.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-30",
+     "opp": "PHX",
+     "site": "at",
+     "score": "127-120",
+     "result": "W",
+     "line": -4.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-28",
+     "opp": "NO",
+     "site": "at",
+     "score": "104-91",
+     "result": "W",
+     "line": -4.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-26",
+     "opp": "GS",
+     "site": "vs",
+     "score": "114-134",
+     "result": "L",
+     "line": -6.5,
+     "ats": "L"
+    }
+   ]
   },
   "DET": {
    "off": 113.1,
    "def": 108.2,
    "net": 4.9,
-   "pace": 103.0
+   "pace": 103.0,
+   "stats": {
+    "games": 12,
+    "off": {
+     "efg": 53.9,
+     "tov": 14.0,
+     "orb": 27.0,
+     "ftr": 23.0,
+     "tpr": 41.7,
+     "ortg": 113.6,
+     "pace": 101.8
+    },
+    "def": {
+     "efg": 51.1,
+     "tov": 17.0,
+     "orb": 28.7,
+     "ftr": 24.0,
+     "tpr": 41.8,
+     "ortg": 106.2,
+     "pace": 103.8
+    },
+    "ranks": {
+     "off_efg": 13,
+     "def_efg": 7,
+     "off_tov": 8,
+     "def_tov": 4,
+     "off_orb": 16,
+     "def_orb": 23,
+     "off_ftr": 12,
+     "def_ftr": 22,
+     "off_tpr": 21,
+     "def_tpr": 21,
+     "off_ortg": 10,
+     "def_ortg": 6,
+     "off_pace": 21,
+     "def_pace": 6
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-14",
+     "opp": "MIA",
+     "site": "at",
+     "score": "117-137",
+     "result": "L",
+     "line": -4.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-12",
+     "opp": "WSH",
+     "site": "at",
+     "score": "144-140",
+     "result": "W",
+     "line": -10.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-09",
+     "opp": "WSH",
+     "site": "vs",
+     "score": "122-111",
+     "result": "W",
+     "line": -9.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-08",
+     "opp": "LAL",
+     "site": "vs",
+     "score": "116-121",
+     "result": "L",
+     "line": -8.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "PHI",
+     "site": "vs",
+     "score": "106-112",
+     "result": "L",
+     "line": -2.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "CHA",
+     "site": "at",
+     "score": "124-91",
+     "result": "W",
+     "line": -5.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-30",
+     "opp": "BKN",
+     "site": "at",
+     "score": "110-94",
+     "result": "W",
+     "line": -8.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-28",
+     "opp": "CHA",
+     "site": "vs",
+     "score": "97-89",
+     "result": "W",
+     "line": -7.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-27",
+     "opp": "NY",
+     "site": "at",
+     "score": "97-111",
+     "result": "L",
+     "line": 4.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-25",
+     "opp": "PHI",
+     "site": "at",
+     "score": "106-93",
+     "result": "W",
+     "line": -1.5,
+     "ats": "W"
+    }
+   ]
   },
   "GS": {
    "off": 112.3,
    "def": 111.2,
    "net": 1.1,
-   "pace": 102.1
+   "pace": 102.1,
+   "stats": {
+    "games": 14,
+    "off": {
+     "efg": 54.3,
+     "tov": 15.7,
+     "orb": 28.8,
+     "ftr": 24.0,
+     "tpr": 48.3,
+     "ortg": 113.6,
+     "pace": 101.3
+    },
+    "def": {
+     "efg": 53.1,
+     "tov": 15.6,
+     "orb": 28.3,
+     "ftr": 20.6,
+     "tpr": 42.7,
+     "ortg": 110.0,
+     "pace": 102.4
+    },
+    "ranks": {
+     "off_efg": 12,
+     "def_efg": 13,
+     "off_tov": 21,
+     "def_tov": 10,
+     "off_orb": 10,
+     "def_orb": 21,
+     "off_ftr": 9,
+     "def_ftr": 13,
+     "off_tpr": 5,
+     "def_tpr": 17,
+     "off_ortg": 9,
+     "def_ortg": 12,
+     "off_pace": 23,
+     "def_pace": 17
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-16",
+     "opp": "NO",
+     "site": "at",
+     "score": "94-115",
+     "result": "L",
+     "line": -3.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-13",
+     "opp": "SA",
+     "site": "at",
+     "score": "85-123",
+     "result": "L",
+     "line": 12.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-11",
+     "opp": "HOU",
+     "site": "at",
+     "score": "108-115",
+     "result": "L",
+     "line": 6.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-09",
+     "opp": "NO",
+     "site": "vs",
+     "score": "138-87",
+     "result": "W",
+     "line": -10.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-07",
+     "opp": "ORL",
+     "site": "vs",
+     "score": "126-119",
+     "result": "W",
+     "line": -7.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-05",
+     "opp": "MIA",
+     "site": "vs",
+     "score": "120-100",
+     "result": "W",
+     "line": -3.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "PHX",
+     "site": "vs",
+     "score": "116-113",
+     "result": "W",
+     "line": -2.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-01",
+     "opp": "LAC",
+     "site": "vs",
+     "score": "124-112",
+     "result": "W",
+     "line": -1.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-30",
+     "opp": "LAL",
+     "site": "vs",
+     "score": "112-95",
+     "result": "W",
+     "line": 2.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-28",
+     "opp": "MIN",
+     "site": "at",
+     "score": "119-114",
+     "result": "W",
+     "line": 3.5,
+     "ats": "W"
+    }
+   ]
   },
   "HOU": {
    "off": 115.8,
    "def": 110.6,
    "net": 5.2,
-   "pace": 100.0
+   "pace": 100.0,
+   "stats": {
+    "games": 15,
+    "off": {
+     "efg": 55.3,
+     "tov": 14.5,
+     "orb": 33.3,
+     "ftr": 24.1,
+     "tpr": 39.3,
+     "ortg": 118.7,
+     "pace": 99.3
+    },
+    "def": {
+     "efg": 53.0,
+     "tov": 14.6,
+     "orb": 27.8,
+     "ftr": 18.8,
+     "tpr": 44.6,
+     "ortg": 109.4,
+     "pace": 100.1
+    },
+    "ranks": {
+     "off_efg": 5,
+     "def_efg": 11,
+     "off_tov": 14,
+     "def_tov": 16,
+     "off_orb": 1,
+     "def_orb": 19,
+     "off_ftr": 8,
+     "def_ftr": 4,
+     "off_tpr": 23,
+     "def_tpr": 8,
+     "off_ortg": 2,
+     "def_ortg": 9,
+     "off_pace": 29,
+     "def_pace": 27
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-16",
+     "opp": "MIA",
+     "site": "at",
+     "score": "110-128",
+     "result": "L",
+     "line": -1.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-15",
+     "opp": "WSH",
+     "site": "at",
+     "score": "147-119",
+     "result": "W",
+     "line": -8.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-13",
+     "opp": "UTAH",
+     "site": "vs",
+     "score": "125-118",
+     "result": "W",
+     "line": -15.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-11",
+     "opp": "GS",
+     "site": "vs",
+     "score": "115-108",
+     "result": "W",
+     "line": -6.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-09",
+     "opp": "DEN",
+     "site": "vs",
+     "score": "110-100",
+     "result": "W",
+     "line": -4.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-07",
+     "opp": "PHX",
+     "site": "at",
+     "score": "99-102",
+     "result": "L",
+     "line": -6.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "MIN",
+     "site": "vs",
+     "score": "107-117",
+     "result": "L",
+     "line": -7.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "BOS",
+     "site": "vs",
+     "score": "109-93",
+     "result": "W",
+     "line": -4.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-31",
+     "opp": "OKC",
+     "site": "vs",
+     "score": "119-98",
+     "result": "W",
+     "line": -2.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-30",
+     "opp": "DAL",
+     "site": "at",
+     "score": "111-116",
+     "result": "L",
+     "line": -5.5,
+     "ats": "L"
+    }
+   ]
   },
   "IND": {
    "off": 108.9,
    "def": 114.0,
    "net": -5.1,
-   "pace": 103.2
+   "pace": 103.2,
+   "stats": {
+    "games": 14,
+    "off": {
+     "efg": 53.8,
+     "tov": 14.1,
+     "orb": 21.5,
+     "ftr": 21.1,
+     "tpr": 41.5,
+     "ortg": 109.4,
+     "pace": 102.5
+    },
+    "def": {
+     "efg": 53.8,
+     "tov": 14.5,
+     "orb": 26.4,
+     "ftr": 20.7,
+     "tpr": 43.9,
+     "ortg": 111.0,
+     "pace": 103.1
+    },
+    "ranks": {
+     "off_efg": 14,
+     "def_efg": 15,
+     "off_tov": 9,
+     "def_tov": 19,
+     "off_orb": 30,
+     "def_orb": 13,
+     "off_ftr": 17,
+     "def_ftr": 14,
+     "off_tpr": 22,
+     "def_tpr": 10,
+     "off_ortg": 21,
+     "def_ortg": 15,
+     "off_pace": 14,
+     "def_pace": 10
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-15",
+     "opp": "PHI",
+     "site": "at",
+     "score": "124-131",
+     "result": "L",
+     "line": 7.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-13",
+     "opp": "NY",
+     "site": "vs",
+     "score": "106-104",
+     "result": "W",
+     "line": 7.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-11",
+     "opp": "WSH",
+     "site": "vs",
+     "score": "114-101",
+     "result": "W",
+     "line": -3.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-09",
+     "opp": "DAL",
+     "site": "at",
+     "score": "122-125",
+     "result": "L",
+     "line": 4.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-07",
+     "opp": "DEN",
+     "site": "vs",
+     "score": "102-114",
+     "result": "L",
+     "line": 8.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "MEM",
+     "site": "at",
+     "score": "107-103",
+     "result": "W",
+     "line": 5.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "ATL",
+     "site": "vs",
+     "score": "104-108",
+     "result": "L",
+     "line": 10.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-01",
+     "opp": "BKN",
+     "site": "vs",
+     "score": "90-98",
+     "result": "L",
+     "line": -3.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-30",
+     "opp": "MIA",
+     "site": "at",
+     "score": "125-145",
+     "result": "L",
+     "line": 8.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-28",
+     "opp": "PHI",
+     "site": "vs",
+     "score": "109-114",
+     "result": "L",
+     "line": 7.5,
+     "ats": "W"
+    }
+   ]
   },
   "LAC": {
    "off": 112.7,
    "def": 113.1,
    "net": -0.4,
-   "pace": 101.0
+   "pace": 101.0,
+   "stats": {
+    "games": 12,
+    "off": {
+     "efg": 55.1,
+     "tov": 17.3,
+     "orb": 24.2,
+     "ftr": 22.8,
+     "tpr": 43.6,
+     "ortg": 109.2,
+     "pace": 102.8
+    },
+    "def": {
+     "efg": 55.8,
+     "tov": 15.6,
+     "orb": 28.7,
+     "ftr": 20.7,
+     "tpr": 41.1,
+     "ortg": 113.3,
+     "pace": 102.9
+    },
+    "ranks": {
+     "off_efg": 7,
+     "def_efg": 26,
+     "off_tov": 29,
+     "def_tov": 9,
+     "off_orb": 27,
+     "def_orb": 22,
+     "off_ftr": 14,
+     "def_ftr": 15,
+     "off_tpr": 15,
+     "def_tpr": 24,
+     "off_ortg": 22,
+     "def_ortg": 21,
+     "off_pace": 11,
+     "def_pace": 13
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-15",
+     "opp": "CHA",
+     "site": "vs",
+     "score": "113-105",
+     "result": "W",
+     "line": -1.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-13",
+     "opp": "OKC",
+     "site": "vs",
+     "score": "113-112",
+     "result": "W",
+     "line": 6.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-10",
+     "opp": "PHX",
+     "site": "at",
+     "score": "110-133",
+     "result": "L",
+     "line": 3.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-08",
+     "opp": "NO",
+     "site": "vs",
+     "score": "139-123",
+     "result": "W",
+     "line": 1.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "MIA",
+     "site": "vs",
+     "score": "116-117",
+     "result": "L",
+     "line": 6.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "TOR",
+     "site": "vs",
+     "score": "118-125",
+     "result": "L",
+     "line": 6.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-01",
+     "opp": "GS",
+     "site": "at",
+     "score": "112-124",
+     "result": "L",
+     "line": 1.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-30",
+     "opp": "MIN",
+     "site": "at",
+     "score": "101-127",
+     "result": "L",
+     "line": 6.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-28",
+     "opp": "LAL",
+     "site": "vs",
+     "score": "87-103",
+     "result": "L",
+     "line": -1.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-25",
+     "opp": "OKC",
+     "site": "at",
+     "score": "101-108",
+     "result": "L",
+     "line": 16.5,
+     "ats": "W"
+    }
+   ]
   },
   "LAL": {
    "off": 116.2,
    "def": 112.8,
    "net": 3.4,
-   "pace": 101.7
+   "pace": 101.7,
+   "stats": {
+    "games": 14,
+    "off": {
+     "efg": 58.8,
+     "tov": 16.4,
+     "orb": 29.2,
+     "ftr": 29.0,
+     "tpr": 44.2,
+     "ortg": 119.8,
+     "pace": 102.5
+    },
+    "def": {
+     "efg": 54.2,
+     "tov": 17.8,
+     "orb": 31.6,
+     "ftr": 24.9,
+     "tpr": 47.5,
+     "ortg": 111.1,
+     "pace": 103.4
+    },
+    "ranks": {
+     "off_efg": 1,
+     "def_efg": 18,
+     "off_tov": 25,
+     "def_tov": 3,
+     "off_orb": 8,
+     "def_orb": 28,
+     "off_ftr": 2,
+     "def_ftr": 24,
+     "off_tpr": 13,
+     "def_tpr": 3,
+     "off_ortg": 1,
+     "def_ortg": 16,
+     "off_pace": 13,
+     "def_pace": 9
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-15",
+     "opp": "PHX",
+     "site": "at",
+     "score": "131-123",
+     "result": "W",
+     "line": -3.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-11",
+     "opp": "MIL",
+     "site": "at",
+     "score": "123-112",
+     "result": "W",
+     "line": -14.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-09",
+     "opp": "ATL",
+     "site": "at",
+     "score": "124-114",
+     "result": "W",
+     "line": 2.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-08",
+     "opp": "DET",
+     "site": "at",
+     "score": "121-116",
+     "result": "W",
+     "line": 8.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-06",
+     "opp": "POR",
+     "site": "vs",
+     "score": "124-118",
+     "result": "W",
+     "line": -3.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "SAC",
+     "site": "at",
+     "score": "116-103",
+     "result": "W",
+     "line": -12.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "MIA",
+     "site": "vs",
+     "score": "138-117",
+     "result": "W",
+     "line": -1.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-01",
+     "opp": "TOR",
+     "site": "vs",
+     "score": "131-125",
+     "result": "W",
+     "line": -3.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-30",
+     "opp": "GS",
+     "site": "at",
+     "score": "95-112",
+     "result": "L",
+     "line": -2.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-28",
+     "opp": "LAC",
+     "site": "at",
+     "score": "103-87",
+     "result": "W",
+     "line": 1.5,
+     "ats": "W"
+    }
+   ]
   },
   "MIA": {
    "off": 113.9,
    "def": 112.4,
    "net": 1.5,
-   "pace": 105.2
+   "pace": 105.2,
+   "stats": {
+    "games": 14,
+    "off": {
+     "efg": 54.9,
+     "tov": 13.3,
+     "orb": 24.2,
+     "ftr": 23.4,
+     "tpr": 44.9,
+     "ortg": 113.2,
+     "pace": 105.4
+    },
+    "def": {
+     "efg": 56.2,
+     "tov": 15.8,
+     "orb": 27.5,
+     "ftr": 20.4,
+     "tpr": 45.1,
+     "ortg": 114.0,
+     "pace": 104.5
+    },
+    "ranks": {
+     "off_efg": 9,
+     "def_efg": 28,
+     "off_tov": 4,
+     "def_tov": 8,
+     "off_orb": 26,
+     "def_orb": 17,
+     "off_ftr": 11,
+     "def_ftr": 9,
+     "off_tpr": 11,
+     "def_tpr": 7,
+     "off_ortg": 11,
+     "def_ortg": 24,
+     "off_pace": 3,
+     "def_pace": 4
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-16",
+     "opp": "HOU",
+     "site": "vs",
+     "score": "128-110",
+     "result": "W",
+     "line": 1.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-14",
+     "opp": "DET",
+     "site": "vs",
+     "score": "137-117",
+     "result": "W",
+     "line": 4.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-13",
+     "opp": "CLE",
+     "site": "vs",
+     "score": "133-121",
+     "result": "W",
+     "line": -2.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-10",
+     "opp": "UTAH",
+     "site": "at",
+     "score": "115-109",
+     "result": "W",
+     "line": -8.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-08",
+     "opp": "SAC",
+     "site": "at",
+     "score": "114-108",
+     "result": "W",
+     "line": -11.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-05",
+     "opp": "GS",
+     "site": "at",
+     "score": "100-120",
+     "result": "L",
+     "line": 3.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "LAC",
+     "site": "at",
+     "score": "117-116",
+     "result": "W",
+     "line": -6.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "LAL",
+     "site": "at",
+     "score": "117-138",
+     "result": "L",
+     "line": 1.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-30",
+     "opp": "IND",
+     "site": "vs",
+     "score": "145-125",
+     "result": "W",
+     "line": -8.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-28",
+     "opp": "ATL",
+     "site": "at",
+     "score": "129-117",
+     "result": "W",
+     "line": 2.5,
+     "ats": "W"
+    }
+   ]
   },
   "MIL": {
    "off": 108.6,
    "def": 115.9,
    "net": -7.3,
-   "pace": 101.2
+   "pace": 101.2,
+   "stats": {
+    "games": 14,
+    "off": {
+     "efg": 50.9,
+     "tov": 16.6,
+     "orb": 28.3,
+     "ftr": 17.7,
+     "tpr": 49.5,
+     "ortg": 104.6,
+     "pace": 101.4
+    },
+    "def": {
+     "efg": 54.0,
+     "tov": 13.0,
+     "orb": 31.4,
+     "ftr": 21.6,
+     "tpr": 45.4,
+     "ortg": 116.8,
+     "pace": 102.5
+    },
+    "ranks": {
+     "off_efg": 28,
+     "def_efg": 16,
+     "off_tov": 26,
+     "def_tov": 29,
+     "off_orb": 13,
+     "def_orb": 27,
+     "off_ftr": 29,
+     "def_ftr": 18,
+     "off_tpr": 4,
+     "def_tpr": 6,
+     "off_ortg": 27,
+     "def_ortg": 29,
+     "off_pace": 22,
+     "def_pace": 16
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-15",
+     "opp": "ATL",
+     "site": "vs",
+     "score": "106-113",
+     "result": "L",
+     "line": 8.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-13",
+     "opp": "ORL",
+     "site": "at",
+     "score": "99-107",
+     "result": "L",
+     "line": 9.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-11",
+     "opp": "LAL",
+     "site": "vs",
+     "score": "112-123",
+     "result": "L",
+     "line": 14.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-10",
+     "opp": "NY",
+     "site": "at",
+     "score": "85-117",
+     "result": "L",
+     "line": 14.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-08",
+     "opp": "BOS",
+     "site": "vs",
+     "score": "97-117",
+     "result": "L",
+     "line": 13.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-06",
+     "opp": "TOR",
+     "site": "vs",
+     "score": "107-121",
+     "result": "L",
+     "line": 3.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "BOS",
+     "site": "at",
+     "score": "102-109",
+     "result": "L",
+     "line": 12.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "MIN",
+     "site": "at",
+     "score": "100-112",
+     "result": "L",
+     "line": 11.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-31",
+     "opp": "CLE",
+     "site": "vs",
+     "score": "111-136",
+     "result": "L",
+     "line": 8.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-28",
+     "opp": "HOU",
+     "site": "vs",
+     "score": "100-132",
+     "result": "L",
+     "line": 8.5,
+     "ats": "L"
+    }
+   ]
   },
   "MIN": {
    "off": 112.8,
    "def": 108.1,
    "net": 4.7,
-   "pace": 103.4
+   "pace": 103.4,
+   "stats": {
+    "games": 14,
+    "off": {
+     "efg": 54.7,
+     "tov": 15.1,
+     "orb": 30.6,
+     "ftr": 20.2,
+     "tpr": 42.0,
+     "ortg": 112.7,
+     "pace": 104.2
+    },
+    "def": {
+     "efg": 49.5,
+     "tov": 16.0,
+     "orb": 26.0,
+     "ftr": 19.7,
+     "tpr": 39.9,
+     "ortg": 102.3,
+     "pace": 103.8
+    },
+    "ranks": {
+     "off_efg": 10,
+     "def_efg": 1,
+     "off_tov": 17,
+     "def_tov": 7,
+     "off_orb": 5,
+     "def_orb": 10,
+     "off_ftr": 22,
+     "def_ftr": 6,
+     "off_tpr": 19,
+     "def_tpr": 28,
+     "off_ortg": 12,
+     "def_ortg": 1,
+     "off_pace": 5,
+     "def_pace": 7
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-16",
+     "opp": "POR",
+     "site": "vs",
+     "score": "106-98",
+     "result": "W",
+     "line": -2.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-14",
+     "opp": "CHI",
+     "site": "vs",
+     "score": "106-117",
+     "result": "L",
+     "line": -16.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-12",
+     "opp": "DAL",
+     "site": "vs",
+     "score": "133-94",
+     "result": "W",
+     "line": -5.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-08",
+     "opp": "UTAH",
+     "site": "vs",
+     "score": "115-100",
+     "result": "W",
+     "line": -12.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-06",
+     "opp": "NO",
+     "site": "at",
+     "score": "115-109",
+     "result": "W",
+     "line": -3.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "HOU",
+     "site": "at",
+     "score": "117-107",
+     "result": "W",
+     "line": 7.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "MIL",
+     "site": "vs",
+     "score": "112-100",
+     "result": "W",
+     "line": -11.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-31",
+     "opp": "SA",
+     "site": "at",
+     "score": "111-121",
+     "result": "L",
+     "line": 12.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-30",
+     "opp": "LAC",
+     "site": "vs",
+     "score": "127-101",
+     "result": "W",
+     "line": -6.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-28",
+     "opp": "GS",
+     "site": "vs",
+     "score": "114-119",
+     "result": "L",
+     "line": -3.5,
+     "ats": "L"
+    }
+   ]
   },
   "BKN": {
    "off": 108.4,
    "def": 115.1,
    "net": -6.8,
-   "pace": 101.2
+   "pace": 101.2,
+   "stats": {
+    "games": 13,
+    "off": {
+     "efg": 53.2,
+     "tov": 16.7,
+     "orb": 27.4,
+     "ftr": 25.5,
+     "tpr": 47.4,
+     "ortg": 108.5,
+     "pace": 102.5
+    },
+    "def": {
+     "efg": 55.4,
+     "tov": 15.5,
+     "orb": 26.2,
+     "ftr": 28.0,
+     "tpr": 46.3,
+     "ortg": 114.4,
+     "pace": 103.0
+    },
+    "ranks": {
+     "off_efg": 16,
+     "def_efg": 25,
+     "off_tov": 27,
+     "def_tov": 11,
+     "off_orb": 15,
+     "def_orb": 12,
+     "off_ftr": 4,
+     "def_ftr": 27,
+     "off_tpr": 6,
+     "def_tpr": 4,
+     "off_ortg": 23,
+     "def_ortg": 25,
+     "off_pace": 15,
+     "def_pace": 12
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-16",
+     "opp": "PHI",
+     "site": "vs",
+     "score": "123-135",
+     "result": "L",
+     "line": 5.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-14",
+     "opp": "MEM",
+     "site": "at",
+     "score": "110-129",
+     "result": "L",
+     "line": 4.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-11",
+     "opp": "NO",
+     "site": "at",
+     "score": "145-111",
+     "result": "W",
+     "line": 2.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-08",
+     "opp": "DAL",
+     "site": "at",
+     "score": "93-130",
+     "result": "L",
+     "line": 7.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-07",
+     "opp": "ATL",
+     "site": "at",
+     "score": "121-124",
+     "result": "L",
+     "line": 6.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "CHA",
+     "site": "vs",
+     "score": "114-104",
+     "result": "W",
+     "line": 3.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "NY",
+     "site": "at",
+     "score": "90-103",
+     "result": "L",
+     "line": 14.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-01",
+     "opp": "IND",
+     "site": "at",
+     "score": "98-90",
+     "result": "W",
+     "line": 3.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-30",
+     "opp": "DET",
+     "site": "vs",
+     "score": "94-110",
+     "result": "L",
+     "line": 8.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-27",
+     "opp": "BOS",
+     "site": "at",
+     "score": "124-125",
+     "result": "L",
+     "line": 13.5,
+     "ats": "W"
+    }
+   ]
   },
   "NY": {
    "off": 113.9,
    "def": 109.2,
    "net": 4.8,
-   "pace": 99.7
+   "pace": 99.7,
+   "stats": {
+    "games": 13,
+    "off": {
+     "efg": 51.9,
+     "tov": 14.7,
+     "orb": 30.7,
+     "ftr": 20.1,
+     "tpr": 45.8,
+     "ortg": 110.3,
+     "pace": 99.7
+    },
+    "def": {
+     "efg": 51.0,
+     "tov": 13.6,
+     "orb": 24.2,
+     "ftr": 18.3,
+     "tpr": 45.6,
+     "ortg": 105.5,
+     "pace": 98.6
+    },
+    "ranks": {
+     "off_efg": 23,
+     "def_efg": 6,
+     "off_tov": 15,
+     "def_tov": 27,
+     "off_orb": 4,
+     "def_orb": 4,
+     "off_ftr": 24,
+     "def_ftr": 3,
+     "off_tpr": 9,
+     "def_tpr": 5,
+     "off_ortg": 15,
+     "def_ortg": 4,
+     "off_pace": 27,
+     "def_pace": 29
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-15",
+     "opp": "TOR",
+     "site": "at",
+     "score": "112-108",
+     "result": "W",
+     "line": -4.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-13",
+     "opp": "IND",
+     "site": "at",
+     "score": "104-106",
+     "result": "L",
+     "line": -7.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-11",
+     "opp": "CLE",
+     "site": "vs",
+     "score": "107-115",
+     "result": "L",
+     "line": -4.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-10",
+     "opp": "MIL",
+     "site": "vs",
+     "score": "117-85",
+     "result": "W",
+     "line": -14.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-07",
+     "opp": "CLE",
+     "site": "at",
+     "score": "109-97",
+     "result": "W",
+     "line": -4.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "CHI",
+     "site": "vs",
+     "score": "135-105",
+     "result": "W",
+     "line": -11.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "BKN",
+     "site": "vs",
+     "score": "103-90",
+     "result": "W",
+     "line": -14.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-30",
+     "opp": "PHI",
+     "site": "at",
+     "score": "93-98",
+     "result": "L",
+     "line": -3.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-28",
+     "opp": "CHI",
+     "site": "at",
+     "score": "133-127",
+     "result": "W",
+     "line": -7.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-27",
+     "opp": "DET",
+     "site": "vs",
+     "score": "111-97",
+     "result": "W",
+     "line": -4.5,
+     "ats": "W"
+    }
+   ]
   },
   "ORL": {
    "off": 110.8,
    "def": 111.3,
    "net": -0.5,
-   "pace": 102.7
+   "pace": 102.7,
+   "stats": {
+    "games": 13,
+    "off": {
+     "efg": 53.2,
+     "tov": 16.3,
+     "orb": 25.9,
+     "ftr": 20.9,
+     "tpr": 47.4,
+     "ortg": 107.6,
+     "pace": 101.2
+    },
+    "def": {
+     "efg": 54.4,
+     "tov": 14.7,
+     "orb": 24.0,
+     "ftr": 22.0,
+     "tpr": 43.5,
+     "ortg": 110.4,
+     "pace": 101.6
+    },
+    "ranks": {
+     "off_efg": 17,
+     "def_efg": 19,
+     "off_tov": 24,
+     "def_tov": 14,
+     "off_orb": 20,
+     "def_orb": 3,
+     "off_ftr": 18,
+     "def_ftr": 19,
+     "off_tpr": 7,
+     "def_tpr": 12,
+     "off_ortg": 25,
+     "def_ortg": 13,
+     "off_pace": 24,
+     "def_pace": 23
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-16",
+     "opp": "BOS",
+     "site": "at",
+     "score": "115-105",
+     "result": "W",
+     "line": 8.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-13",
+     "opp": "MIL",
+     "site": "vs",
+     "score": "107-99",
+     "result": "W",
+     "line": -9.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-11",
+     "opp": "UTAH",
+     "site": "at",
+     "score": "123-108",
+     "result": "W",
+     "line": -4.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-10",
+     "opp": "SAC",
+     "site": "at",
+     "score": "107-100",
+     "result": "W",
+     "line": -5.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-07",
+     "opp": "GS",
+     "site": "at",
+     "score": "119-126",
+     "result": "L",
+     "line": 7.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-05",
+     "opp": "PHX",
+     "site": "at",
+     "score": "104-117",
+     "result": "L",
+     "line": 1.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "WSH",
+     "site": "vs",
+     "score": "94-103",
+     "result": "L",
+     "line": -2.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-01",
+     "opp": "BOS",
+     "site": "vs",
+     "score": "97-108",
+     "result": "L",
+     "line": 6.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-30",
+     "opp": "TOR",
+     "site": "at",
+     "score": "121-114",
+     "result": "W",
+     "line": 5.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-28",
+     "opp": "TOR",
+     "site": "at",
+     "score": "99-129",
+     "result": "L",
+     "line": 5.5,
+     "ats": "L"
+    }
+   ]
   },
   "PHI": {
    "off": 112.4,
    "def": 111.8,
    "net": 0.6,
-   "pace": 102.7
+   "pace": 102.7,
+   "stats": {
+    "games": 15,
+    "off": {
+     "efg": 53.0,
+     "tov": 12.4,
+     "orb": 23.0,
+     "ftr": 23.9,
+     "tpr": 39.2,
+     "ortg": 111.8,
+     "pace": 102.0
+    },
+    "def": {
+     "efg": 53.0,
+     "tov": 14.3,
+     "orb": 25.1,
+     "ftr": 21.2,
+     "tpr": 41.2,
+     "ortg": 109.1,
+     "pace": 101.9
+    },
+    "ranks": {
+     "off_efg": 19,
+     "def_efg": 12,
+     "off_tov": 2,
+     "def_tov": 21,
+     "off_orb": 28,
+     "def_orb": 5,
+     "off_ftr": 10,
+     "def_ftr": 16,
+     "off_tpr": 24,
+     "def_tpr": 23,
+     "off_ortg": 14,
+     "def_ortg": 7,
+     "off_pace": 19,
+     "def_pace": 20
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-16",
+     "opp": "BKN",
+     "site": "at",
+     "score": "135-123",
+     "result": "W",
+     "line": -5.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-15",
+     "opp": "IND",
+     "site": "vs",
+     "score": "131-124",
+     "result": "W",
+     "line": -7.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-12",
+     "opp": "TOR",
+     "site": "vs",
+     "score": "123-112",
+     "result": "W",
+     "line": -7.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-10",
+     "opp": "BOS",
+     "site": "vs",
+     "score": "101-123",
+     "result": "L",
+     "line": 1.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-08",
+     "opp": "CHI",
+     "site": "at",
+     "score": "127-121",
+     "result": "W",
+     "line": -9.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-06",
+     "opp": "CLE",
+     "site": "at",
+     "score": "95-119",
+     "result": "L",
+     "line": -2.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "DET",
+     "site": "at",
+     "score": "112-106",
+     "result": "W",
+     "line": 2.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "CHI",
+     "site": "vs",
+     "score": "126-107",
+     "result": "W",
+     "line": -10.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-31",
+     "opp": "CHA",
+     "site": "at",
+     "score": "109-104",
+     "result": "W",
+     "line": -1.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-30",
+     "opp": "NY",
+     "site": "vs",
+     "score": "98-93",
+     "result": "W",
+     "line": 3.5,
+     "ats": "W"
+    }
+   ]
   },
   "PHX": {
    "off": 112.1,
    "def": 111.6,
    "net": 0.5,
-   "pace": 101.4
+   "pace": 101.4,
+   "stats": {
+    "games": 13,
+    "off": {
+     "efg": 54.6,
+     "tov": 14.3,
+     "orb": 26.5,
+     "ftr": 18.2,
+     "tpr": 42.4,
+     "ortg": 112.0,
+     "pace": 100.9
+    },
+    "def": {
+     "efg": 55.0,
+     "tov": 16.9,
+     "orb": 32.2,
+     "ftr": 24.6,
+     "tpr": 43.9,
+     "ortg": 114.0,
+     "pace": 102.1
+    },
+    "ranks": {
+     "off_efg": 11,
+     "def_efg": 21,
+     "off_tov": 10,
+     "def_tov": 5,
+     "off_orb": 19,
+     "def_orb": 30,
+     "off_ftr": 27,
+     "def_ftr": 23,
+     "off_tpr": 17,
+     "def_tpr": 11,
+     "off_ortg": 13,
+     "def_ortg": 23,
+     "off_pace": 25,
+     "def_pace": 19
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-16",
+     "opp": "DEN",
+     "site": "at",
+     "score": "117-105",
+     "result": "W",
+     "line": 9.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-15",
+     "opp": "LAL",
+     "site": "vs",
+     "score": "123-131",
+     "result": "L",
+     "line": 3.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-12",
+     "opp": "CHA",
+     "site": "vs",
+     "score": "101-96",
+     "result": "W",
+     "line": -6.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-10",
+     "opp": "LAC",
+     "site": "vs",
+     "score": "133-110",
+     "result": "W",
+     "line": -3.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-09",
+     "opp": "SA",
+     "site": "vs",
+     "score": "96-122",
+     "result": "L",
+     "line": 9.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-07",
+     "opp": "HOU",
+     "site": "vs",
+     "score": "102-99",
+     "result": "W",
+     "line": 6.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-05",
+     "opp": "ORL",
+     "site": "vs",
+     "score": "117-104",
+     "result": "W",
+     "line": -1.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "POR",
+     "site": "vs",
+     "score": "119-132",
+     "result": "L",
+     "line": 2.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "GS",
+     "site": "at",
+     "score": "113-116",
+     "result": "L",
+     "line": 2.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-30",
+     "opp": "DEN",
+     "site": "vs",
+     "score": "120-127",
+     "result": "L",
+     "line": 4.5,
+     "ats": "L"
+    }
+   ]
   },
   "POR": {
    "off": 112.8,
    "def": 110.2,
    "net": 2.5,
-   "pace": 103.3
+   "pace": 103.3,
+   "stats": {
+    "games": 13,
+    "off": {
+     "efg": 55.4,
+     "tov": 15.7,
+     "orb": 27.4,
+     "ftr": 27.2,
+     "tpr": 50.8,
+     "ortg": 114.4,
+     "pace": 103.0
+    },
+    "def": {
+     "efg": 50.5,
+     "tov": 13.7,
+     "orb": 26.1,
+     "ftr": 26.9,
+     "tpr": 40.5,
+     "ortg": 109.4,
+     "pace": 101.8
+    },
+    "ranks": {
+     "off_efg": 4,
+     "def_efg": 3,
+     "off_tov": 19,
+     "def_tov": 25,
+     "off_orb": 14,
+     "def_orb": 11,
+     "off_ftr": 3,
+     "def_ftr": 25,
+     "off_tpr": 2,
+     "def_tpr": 25,
+     "off_ortg": 7,
+     "def_ortg": 10,
+     "off_pace": 9,
+     "def_pace": 22
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-16",
+     "opp": "MIN",
+     "site": "at",
+     "score": "98-106",
+     "result": "L",
+     "line": 2.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-13",
+     "opp": "SAC",
+     "site": "at",
+     "score": "120-107",
+     "result": "W",
+     "line": -10.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-11",
+     "opp": "OKC",
+     "site": "vs",
+     "score": "118-108",
+     "result": "W",
+     "line": -2.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-10",
+     "opp": "OKC",
+     "site": "vs",
+     "score": "123-103",
+     "result": "W",
+     "line": 1.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-07",
+     "opp": "SA",
+     "site": "vs",
+     "score": "103-125",
+     "result": "L",
+     "line": 5.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-06",
+     "opp": "LAL",
+     "site": "at",
+     "score": "118-124",
+     "result": "L",
+     "line": 3.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "PHX",
+     "site": "at",
+     "score": "132-119",
+     "result": "W",
+     "line": -2.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "DEN",
+     "site": "at",
+     "score": "118-110",
+     "result": "W",
+     "line": 4.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-31",
+     "opp": "UTAH",
+     "site": "at",
+     "score": "112-90",
+     "result": "W",
+     "line": -6.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-29",
+     "opp": "MEM",
+     "site": "vs",
+     "score": "103-124",
+     "result": "L",
+     "line": -7.5,
+     "ats": "L"
+    }
+   ]
   },
   "SAC": {
    "off": 108.3,
    "def": 116.5,
    "net": -8.2,
-   "pace": 102.3
+   "pace": 102.3,
+   "stats": {
+    "games": 13,
+    "off": {
+     "efg": 52.7,
+     "tov": 16.9,
+     "orb": 22.8,
+     "ftr": 20.1,
+     "tpr": 42.0,
+     "ortg": 104.1,
+     "pace": 103.5
+    },
+    "def": {
+     "efg": 57.4,
+     "tov": 14.2,
+     "orb": 25.6,
+     "ftr": 27.0,
+     "tpr": 43.3,
+     "ortg": 118.2,
+     "pace": 102.6
+    },
+    "ranks": {
+     "off_efg": 20,
+     "def_efg": 30,
+     "off_tov": 28,
+     "def_tov": 22,
+     "off_orb": 29,
+     "def_orb": 7,
+     "off_ftr": 25,
+     "def_ftr": 26,
+     "off_tpr": 20,
+     "def_tpr": 14,
+     "off_ortg": 29,
+     "def_ortg": 30,
+     "off_pace": 8,
+     "def_pace": 15
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-15",
+     "opp": "OKC",
+     "site": "vs",
+     "score": "103-125",
+     "result": "L",
+     "line": 12.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-13",
+     "opp": "POR",
+     "site": "vs",
+     "score": "107-120",
+     "result": "L",
+     "line": 10.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-10",
+     "opp": "ORL",
+     "site": "vs",
+     "score": "100-107",
+     "result": "L",
+     "line": 5.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-08",
+     "opp": "MIA",
+     "site": "vs",
+     "score": "108-114",
+     "result": "L",
+     "line": 11.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-06",
+     "opp": "SA",
+     "site": "vs",
+     "score": "109-124",
+     "result": "L",
+     "line": 17.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "LAL",
+     "site": "vs",
+     "score": "103-116",
+     "result": "L",
+     "line": 12.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "DAL",
+     "site": "at",
+     "score": "115-100",
+     "result": "W",
+     "line": 7.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-31",
+     "opp": "MEM",
+     "site": "at",
+     "score": "105-136",
+     "result": "L",
+     "line": 7.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-29",
+     "opp": "NO",
+     "site": "at",
+     "score": "120-132",
+     "result": "L",
+     "line": 6.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-27",
+     "opp": "SA",
+     "site": "at",
+     "score": "103-130",
+     "result": "L",
+     "line": 19.5,
+     "ats": "L"
+    }
+   ]
   },
   "SA": {
    "off": 115.9,
    "def": 108.1,
    "net": 7.8,
-   "pace": 102.0
+   "pace": 102.0,
+   "stats": {
+    "games": 14,
+    "off": {
+     "efg": 53.5,
+     "tov": 12.0,
+     "orb": 29.0,
+     "ftr": 22.9,
+     "tpr": 39.0,
+     "ortg": 116.1,
+     "pace": 102.3
+    },
+    "def": {
+     "efg": 50.7,
+     "tov": 14.3,
+     "orb": 23.5,
+     "ftr": 17.3,
+     "tpr": 37.6,
+     "ortg": 104.7,
+     "pace": 101.2
+    },
+    "ranks": {
+     "off_efg": 15,
+     "def_efg": 4,
+     "off_tov": 1,
+     "def_tov": 20,
+     "off_orb": 9,
+     "def_orb": 2,
+     "off_ftr": 13,
+     "def_ftr": 1,
+     "off_tpr": 26,
+     "def_tpr": 30,
+     "off_ortg": 4,
+     "def_ortg": 2,
+     "off_pace": 17,
+     "def_pace": 25
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-15",
+     "opp": "UTAH",
+     "site": "at",
+     "score": "110-102",
+     "result": "W",
+     "line": -14.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-13",
+     "opp": "GS",
+     "site": "vs",
+     "score": "123-85",
+     "result": "W",
+     "line": -12.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-11",
+     "opp": "CHI",
+     "site": "at",
+     "score": "124-119",
+     "result": "W",
+     "line": -15.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-09",
+     "opp": "PHX",
+     "site": "at",
+     "score": "122-96",
+     "result": "W",
+     "line": -9.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-07",
+     "opp": "POR",
+     "site": "at",
+     "score": "125-103",
+     "result": "W",
+     "line": -5.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-06",
+     "opp": "SAC",
+     "site": "at",
+     "score": "124-109",
+     "result": "W",
+     "line": -17.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "DAL",
+     "site": "vs",
+     "score": "112-111",
+     "result": "W",
+     "line": -12.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "UTAH",
+     "site": "vs",
+     "score": "119-97",
+     "result": "W",
+     "line": -16.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-31",
+     "opp": "MIN",
+     "site": "vs",
+     "score": "121-111",
+     "result": "W",
+     "line": -12.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-28",
+     "opp": "UTAH",
+     "site": "at",
+     "score": "117-111",
+     "result": "W",
+     "line": -13.5,
+     "ats": "L"
+    }
+   ]
   },
   "OKC": {
    "off": 113.2,
    "def": 106.2,
    "net": 7.0,
-   "pace": 102.3
+   "pace": 102.3,
+   "stats": {
+    "games": 14,
+    "off": {
+     "efg": 51.9,
+     "tov": 13.1,
+     "orb": 26.9,
+     "ftr": 20.1,
+     "tpr": 35.4,
+     "ortg": 109.8,
+     "pace": 102.1
+    },
+    "def": {
+     "efg": 50.2,
+     "tov": 14.6,
+     "orb": 25.8,
+     "ftr": 19.9,
+     "tpr": 49.0,
+     "ortg": 105.6,
+     "pace": 101.4
+    },
+    "ranks": {
+     "off_efg": 22,
+     "def_efg": 2,
+     "off_tov": 3,
+     "def_tov": 15,
+     "off_orb": 18,
+     "def_orb": 9,
+     "off_ftr": 23,
+     "def_ftr": 7,
+     "off_tpr": 29,
+     "def_tpr": 2,
+     "off_ortg": 18,
+     "def_ortg": 5,
+     "off_pace": 18,
+     "def_pace": 24
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-15",
+     "opp": "SAC",
+     "site": "at",
+     "score": "125-103",
+     "result": "W",
+     "line": -12.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-13",
+     "opp": "LAC",
+     "site": "at",
+     "score": "112-113",
+     "result": "L",
+     "line": -6.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-11",
+     "opp": "POR",
+     "site": "at",
+     "score": "108-118",
+     "result": "L",
+     "line": 2.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-10",
+     "opp": "POR",
+     "site": "at",
+     "score": "103-123",
+     "result": "L",
+     "line": -1.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-07",
+     "opp": "WSH",
+     "site": "vs",
+     "score": "114-75",
+     "result": "W",
+     "line": -12.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-06",
+     "opp": "MEM",
+     "site": "at",
+     "score": "128-97",
+     "result": "W",
+     "line": -4.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "CLE",
+     "site": "vs",
+     "score": "124-116",
+     "result": "W",
+     "line": -3.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "CLE",
+     "site": "at",
+     "score": "117-112",
+     "result": "W",
+     "line": 4.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-31",
+     "opp": "HOU",
+     "site": "at",
+     "score": "98-119",
+     "result": "L",
+     "line": 2.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-28",
+     "opp": "DAL",
+     "site": "at",
+     "score": "96-120",
+     "result": "L",
+     "line": -4.5,
+     "ats": "L"
+    }
+   ]
   },
   "UTAH": {
    "off": 109.2,
    "def": 115.8,
    "net": -6.6,
-   "pace": 104.1
+   "pace": 104.1,
+   "stats": {
+    "games": 14,
+    "off": {
+     "efg": 50.8,
+     "tov": 16.2,
+     "orb": 25.5,
+     "ftr": 21.4,
+     "tpr": 42.3,
+     "ortg": 104.6,
+     "pace": 102.4
+    },
+    "def": {
+     "efg": 52.5,
+     "tov": 13.3,
+     "orb": 25.7,
+     "ftr": 29.7,
+     "tpr": 40.5,
+     "ortg": 113.4,
+     "pace": 104.0
+    },
+    "ranks": {
+     "off_efg": 29,
+     "def_efg": 10,
+     "off_tov": 23,
+     "def_tov": 28,
+     "off_orb": 22,
+     "def_orb": 8,
+     "off_ftr": 16,
+     "def_ftr": 30,
+     "off_tpr": 18,
+     "def_tpr": 26,
+     "off_ortg": 28,
+     "def_ortg": 22,
+     "off_pace": 16,
+     "def_pace": 5
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-15",
+     "opp": "SA",
+     "site": "vs",
+     "score": "102-110",
+     "result": "L",
+     "line": 14.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-13",
+     "opp": "HOU",
+     "site": "at",
+     "score": "118-125",
+     "result": "L",
+     "line": 15.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-11",
+     "opp": "ORL",
+     "site": "vs",
+     "score": "108-123",
+     "result": "L",
+     "line": 4.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-10",
+     "opp": "MIA",
+     "site": "vs",
+     "score": "109-115",
+     "result": "L",
+     "line": 8.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-08",
+     "opp": "MIN",
+     "site": "at",
+     "score": "100-115",
+     "result": "L",
+     "line": 12.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-06",
+     "opp": "DAL",
+     "site": "at",
+     "score": "100-112",
+     "result": "L",
+     "line": 6.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "NO",
+     "site": "at",
+     "score": "113-120",
+     "result": "L",
+     "line": 5.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "SA",
+     "site": "at",
+     "score": "97-119",
+     "result": "L",
+     "line": 16.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-31",
+     "opp": "POR",
+     "site": "vs",
+     "score": "90-112",
+     "result": "L",
+     "line": 6.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-28",
+     "opp": "SA",
+     "site": "vs",
+     "score": "111-117",
+     "result": "L",
+     "line": 13.5,
+     "ats": "W"
+    }
+   ]
   },
   "WSH": {
    "off": 109.2,
    "def": 117.3,
    "net": -8.1,
-   "pace": 103.6
+   "pace": 103.6,
+   "stats": {
+    "games": 15,
+    "off": {
+     "efg": 51.7,
+     "tov": 14.3,
+     "orb": 24.3,
+     "ftr": 24.3,
+     "tpr": 37.6,
+     "ortg": 108.4,
+     "pace": 102.6
+    },
+    "def": {
+     "efg": 53.4,
+     "tov": 13.7,
+     "orb": 31.7,
+     "ftr": 20.1,
+     "tpr": 40.5,
+     "ortg": 115.2,
+     "pace": 103.5
+    },
+    "ranks": {
+     "off_efg": 27,
+     "def_efg": 14,
+     "off_tov": 11,
+     "def_tov": 26,
+     "off_orb": 25,
+     "def_orb": 29,
+     "off_ftr": 6,
+     "def_ftr": 8,
+     "off_tpr": 27,
+     "def_tpr": 27,
+     "off_ortg": 24,
+     "def_ortg": 26,
+     "off_pace": 12,
+     "def_pace": 8
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-16",
+     "opp": "MEM",
+     "site": "vs",
+     "score": "120-136",
+     "result": "L",
+     "line": 3.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-15",
+     "opp": "HOU",
+     "site": "vs",
+     "score": "119-147",
+     "result": "L",
+     "line": 8.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-12",
+     "opp": "DET",
+     "site": "vs",
+     "score": "140-144",
+     "result": "L",
+     "line": 10.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-11",
+     "opp": "IND",
+     "site": "at",
+     "score": "101-114",
+     "result": "L",
+     "line": 3.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-09",
+     "opp": "DET",
+     "site": "at",
+     "score": "111-122",
+     "result": "L",
+     "line": 9.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-07",
+     "opp": "OKC",
+     "site": "at",
+     "score": "75-114",
+     "result": "L",
+     "line": 12.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-06",
+     "opp": "ATL",
+     "site": "at",
+     "score": "132-139",
+     "result": "L",
+     "line": 8.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "ATL",
+     "site": "vs",
+     "score": "105-120",
+     "result": "L",
+     "line": 1.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "ORL",
+     "site": "at",
+     "score": "103-94",
+     "result": "W",
+     "line": 2.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-30",
+     "opp": "CHA",
+     "site": "vs",
+     "score": "95-79",
+     "result": "W",
+     "line": 1.5,
+     "ats": "W"
+    }
+   ]
   },
   "TOR": {
    "off": 111.9,
    "def": 110.8,
    "net": 1.1,
-   "pace": 102.2
+   "pace": 102.2,
+   "stats": {
+    "games": 13,
+    "off": {
+     "efg": 51.7,
+     "tov": 14.0,
+     "orb": 30.8,
+     "ftr": 20.6,
+     "tpr": 39.2,
+     "ortg": 109.8,
+     "pace": 103.6
+    },
+    "def": {
+     "efg": 55.2,
+     "tov": 18.6,
+     "orb": 27.7,
+     "ftr": 28.8,
+     "tpr": 42.5,
+     "ortg": 110.7,
+     "pace": 101.9
+    },
+    "ranks": {
+     "off_efg": 26,
+     "def_efg": 24,
+     "off_tov": 7,
+     "def_tov": 1,
+     "off_orb": 3,
+     "def_orb": 18,
+     "off_ftr": 19,
+     "def_ftr": 29,
+     "off_tpr": 25,
+     "def_tpr": 19,
+     "off_ortg": 19,
+     "def_ortg": 14,
+     "off_pace": 7,
+     "def_pace": 21
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-15",
+     "opp": "NY",
+     "site": "vs",
+     "score": "108-112",
+     "result": "L",
+     "line": 4.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-12",
+     "opp": "PHI",
+     "site": "at",
+     "score": "112-123",
+     "result": "L",
+     "line": 7.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-11",
+     "opp": "BOS",
+     "site": "vs",
+     "score": "93-98",
+     "result": "L",
+     "line": 4.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-09",
+     "opp": "MEM",
+     "site": "vs",
+     "score": "102-118",
+     "result": "L",
+     "line": 1.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-06",
+     "opp": "MIL",
+     "site": "at",
+     "score": "121-107",
+     "result": "W",
+     "line": -3.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "DEN",
+     "site": "at",
+     "score": "109-128",
+     "result": "L",
+     "line": 4.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "LAC",
+     "site": "at",
+     "score": "125-118",
+     "result": "W",
+     "line": -6.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-01",
+     "opp": "LAL",
+     "site": "at",
+     "score": "125-131",
+     "result": "L",
+     "line": 3.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-30",
+     "opp": "ORL",
+     "site": "vs",
+     "score": "114-121",
+     "result": "L",
+     "line": -5.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-28",
+     "opp": "ORL",
+     "site": "vs",
+     "score": "129-99",
+     "result": "W",
+     "line": -5.5,
+     "ats": "W"
+    }
+   ]
   },
   "MEM": {
    "off": 112.7,
    "def": 113.2,
    "net": -0.5,
-   "pace": 103.6
+   "pace": 103.6,
+   "stats": {
+    "games": 14,
+    "off": {
+     "efg": 56.4,
+     "tov": 15.5,
+     "orb": 30.5,
+     "ftr": 22.8,
+     "tpr": 43.9,
+     "ortg": 117.3,
+     "pace": 103.8
+    },
+    "def": {
+     "efg": 52.0,
+     "tov": 13.7,
+     "orb": 25.6,
+     "ftr": 21.2,
+     "tpr": 41.4,
+     "ortg": 109.2,
+     "pace": 102.8
+    },
+    "ranks": {
+     "off_efg": 2,
+     "def_efg": 8,
+     "off_tov": 18,
+     "def_tov": 24,
+     "off_orb": 6,
+     "def_orb": 6,
+     "off_ftr": 15,
+     "def_ftr": 17,
+     "off_tpr": 14,
+     "def_tpr": 22,
+     "off_ortg": 3,
+     "def_ortg": 8,
+     "off_pace": 6,
+     "def_pace": 14
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-16",
+     "opp": "WSH",
+     "site": "at",
+     "score": "136-120",
+     "result": "W",
+     "line": -3.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-14",
+     "opp": "BKN",
+     "site": "vs",
+     "score": "129-110",
+     "result": "W",
+     "line": -4.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-13",
+     "opp": "NO",
+     "site": "at",
+     "score": "142-111",
+     "result": "W",
+     "line": -3.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-11",
+     "opp": "DEN",
+     "site": "vs",
+     "score": "118-123",
+     "result": "L",
+     "line": 3.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-09",
+     "opp": "TOR",
+     "site": "at",
+     "score": "118-102",
+     "result": "W",
+     "line": -1.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-06",
+     "opp": "OKC",
+     "site": "vs",
+     "score": "97-128",
+     "result": "L",
+     "line": 4.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "IND",
+     "site": "vs",
+     "score": "103-107",
+     "result": "L",
+     "line": -5.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "NO",
+     "site": "vs",
+     "score": "134-135",
+     "result": "L",
+     "line": -5.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-31",
+     "opp": "SAC",
+     "site": "vs",
+     "score": "136-105",
+     "result": "W",
+     "line": -7.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-10-29",
+     "opp": "POR",
+     "site": "at",
+     "score": "124-103",
+     "result": "W",
+     "line": 7.5,
+     "ats": "W"
+    }
+   ]
   },
   "CHA": {
    "off": 110.0,
    "def": 111.5,
    "net": -1.5,
-   "pace": 99.9
+   "pace": 99.9,
+   "stats": {
+    "games": 13,
+    "off": {
+     "efg": 48.0,
+     "tov": 19.5,
+     "orb": 33.1,
+     "ftr": 17.9,
+     "tpr": 51.5,
+     "ortg": 99.6,
+     "pace": 99.5
+    },
+    "def": {
+     "efg": 56.3,
+     "tov": 14.5,
+     "orb": 21.5,
+     "ftr": 20.5,
+     "tpr": 43.3,
+     "ortg": 112.5,
+     "pace": 97.7
+    },
+    "ranks": {
+     "off_efg": 30,
+     "def_efg": 29,
+     "off_tov": 30,
+     "def_tov": 18,
+     "off_orb": 2,
+     "def_orb": 1,
+     "off_ftr": 28,
+     "def_ftr": 12,
+     "off_tpr": 1,
+     "def_tpr": 16,
+     "off_ortg": 30,
+     "def_ortg": 19,
+     "off_pace": 28,
+     "def_pace": 30
+    }
+   },
+   "last10": [
+    {
+     "date": "2026-11-15",
+     "opp": "LAC",
+     "site": "at",
+     "score": "105-113",
+     "result": "L",
+     "line": 1.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-12",
+     "opp": "PHX",
+     "site": "at",
+     "score": "96-101",
+     "result": "L",
+     "line": 6.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-09",
+     "opp": "CLE",
+     "site": "vs",
+     "score": "124-112",
+     "result": "W",
+     "line": 8.5,
+     "ats": "W"
+    },
+    {
+     "date": "2026-11-06",
+     "opp": "BOS",
+     "site": "vs",
+     "score": "80-119",
+     "result": "L",
+     "line": 10.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-04",
+     "opp": "BKN",
+     "site": "at",
+     "score": "104-114",
+     "result": "L",
+     "line": -3.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-11-02",
+     "opp": "DET",
+     "site": "vs",
+     "score": "91-124",
+     "result": "L",
+     "line": 5.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-31",
+     "opp": "PHI",
+     "site": "vs",
+     "score": "104-109",
+     "result": "L",
+     "line": 1.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-30",
+     "opp": "WSH",
+     "site": "at",
+     "score": "79-95",
+     "result": "L",
+     "line": -1.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-28",
+     "opp": "DET",
+     "site": "at",
+     "score": "89-97",
+     "result": "L",
+     "line": 7.5,
+     "ats": "L"
+    },
+    {
+     "date": "2026-10-26",
+     "opp": "WSH",
+     "site": "vs",
+     "score": "110-103",
+     "result": "W",
+     "line": -2.5,
+     "ats": "W"
+    }
+   ]
   }
  }
 }

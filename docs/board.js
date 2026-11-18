@@ -84,7 +84,7 @@
     }
     if (g.spots && g.spots.length) foot.push(`<ul class="spots" aria-label="Situational spots">${g.spots.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>`);
     return `
-    <article class="bug">
+    <a class="bug" href="game.html?id=${encodeURIComponent(g.id)}">
       <div class="bug-top"><span>${dayLabel(g.date)}</span><span>${tags.join(" ")}</span></div>
       ${team(g.away, pa, g.rest && g.rest.away, pa > ph)}
       ${team(g.home, ph, g.rest && g.rest.home, ph >= pa)}
@@ -94,8 +94,8 @@
         <span>Total</span><span class="r b">${g.mkt_total == null ? "–" : f1(g.mkt_total)}</span><span class="r">${f1(g.total)}</span>
         <span>Moneyline</span><span class="r b">${mlText(g)}</span><span class="r">${fairText(g)}</span>
       </div>
-      <div class="bug-foot">${foot.join("")}</div>
-    </article>`;
+      <div class="bug-foot">${foot.join("")}<span class="go">Game page &rarr;</span></div>
+    </a>`;
   }
 
   function drawGames(feed) {
