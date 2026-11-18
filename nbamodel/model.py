@@ -16,7 +16,7 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 
-MARGIN_FEATURES = ["r_margin", "mk_margin", "rest_diff", "b2b_h", "b2b_a", "g7_diff", "miss_diff"]
+MARGIN_FEATURES = ["r_margin", "mk_margin", "rest_diff", "b2b_h", "b2b_a", "g7_diff", "miss_diff", "imp_diff"]
 TOTAL_FEATURES = ["r_total", "mk_total", "b2b_h", "b2b_a", "both_b2b", "miss_sum"]
 RIDGE = 1.0
 
@@ -38,6 +38,8 @@ def features(df: pd.DataFrame) -> pd.DataFrame:
     else:
         df["miss_diff"] = 0.0
         df["miss_sum"] = 0.0
+    # impact-rated lineup strength, home minus away (impact.py); neutral when unknown
+    df["imp_diff"] = df["imp_diff"].fillna(0.0) if "imp_diff" in df else 0.0
     return df
 
 

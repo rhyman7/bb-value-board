@@ -45,6 +45,11 @@ def build(row, coef: dict, home: str, away: str, miss_detail: dict, has_mk: bool
     for side, team, sign in (("h", home, 1), ("a", away, -1)):
         for name, val in miss_detail.get(side, []):
             m.append(_piece(f"{team} without {name}", sign * cmiss * val, "missing"))
+    ci = cm.get("imp_diff", 0.0)
+    if ci and abs(float(getattr(row, "imp_diff", 0.0))) > 0:
+        ih, ia = getattr(row, "imp_h", None), getattr(row, "imp_a", None)
+        lab = "Lineup strength from player impact ratings" + (f" ({home} {float(ih):+.1f}, {away} {float(ia):+.1f} per 48)" if ih is not None and ia is not None else "")
+        m.append(_piece(lab, ci * float(row.imp_diff), "players"))
     t = [_piece("League baseline", ct.get("const", 0.0), "base"),
          _piece(f"Ratings: {pace:.1f} possessions at each side's efficiency", ct.get("r_total", 0.0) * float(row.r_total), "team")]
     if has_mk and "mk_total" in ct:
