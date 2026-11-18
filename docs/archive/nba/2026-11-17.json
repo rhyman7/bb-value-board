@@ -1,0 +1,22 @@
+{
+ "date": "2026-11-17",
+ "games": {
+  "401910005": {
+   "id": "401910005",
+   "date": "2026-11-17",
+   "tip": "2026-11-17T23:00:00-05:00",
+   "away": "CHA",
+   "home": "LAL",
+   "neutral": null,
+   "margin": 9.8,
+   "total": 226.7,
+   "win_prob": 0.802,
+   "projection": 6.9,
+   "mkt_spread": 6.5,
+   "mkt_total": 221.5,
+   "mkt_ml_home": -289.0,
+   "mkt_ml_away": 236.0,
+   "frozenAt": "2026-11-17T22:40-05:00"
+  }
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "generated": "2026-11-18",
+ "games": 0,
+ "last_night": null,
+ "h1_spread": {
+  "games": 0,
+  "mae": {
+   "model": null,
+   "line": null
+  },
+  "by_gap": {
+   "0+": {
+    "w": 0,
+    "l": 0,
+    "p": 0,
+    "pct": null,
+    "roi": null,
+    "se": null
+   },
+   "1+": {
+    "w": 0,
+    "l": 0,
+    "p": 0,
+    "pct": null,
+    "roi": null,
+    "se": null
+   },
+   "2+": {
+    "w": 0,
+    "l": 0,
+    "p": 0,
+    "pct": null,
+    "roi": null,
+    "se": null
+   },
+   "3+": {
+    "w": 0,
+    "l": 0,
+    "p": 0,
+    "pct": null,
+    "roi": null,
+    "se": null
+   }
+  }
+ },
+ "h1_total": {
+  "games": 0,
+  "mae": {
+   "model": null,
+   "line": null
+  },
+  "by_gap": {
+   "0+": {
+    "w": 0,
+    "l": 0,
+    "p": 0,
+    "pct": null,
+    "roi": null,
+    "se": null
+   },
+   "1.5+": {
+    "w": 0,
+    "l": 0,
+    "p": 0,
+    "pct": null,
+    "roi": null,
+    "se": null
+   },
+   "3+": {
+    "w": 0,
+    "l": 0,
+    "p": 0,
+    "pct": null,
+    "roi": null,
+    "se": null
+   },
+   "4.5+": {
+    "w": 0,
+    "l": 0,
+    "p": 0,
+    "pct": null,
+    "roi": null,
+    "se": null
+   }
+  }
+ }
+}
