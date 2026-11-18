@@ -231,7 +231,7 @@ def run(do_backtest: bool = False):
     # player projections for every game on the board; today's are logged and graded the next morning
     n_players, pgrade = 0, None
     try:
-        if do_backtest or not players.PARAMS_FILE.exists():
+        if do_backtest or not players.NBA.params_file.exists():
             players.run()
         pst = players.state_today(season)
         pid = {int(k): v for k, v in abbr.items()}

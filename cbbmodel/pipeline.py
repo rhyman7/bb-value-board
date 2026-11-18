@@ -17,14 +17,15 @@ from zoneinfo import ZoneInfo
 import numpy as np
 import pandas as pd
 
-from nbamodel import archive, gamepage, lines as line_log
+from nbamodel import archive, gamepage, lines as line_log, players
 from nbamodel.ratings import rating_projection
 
-from . import backtest, data, ratings, roster, spots
+from . import backtest, data, players as cbb_players, ratings, roster, spots
 
 ET = ZoneInfo("America/New_York")
 ROOT = Path(__file__).resolve().parent.parent
 FEED = ROOT / "docs" / "feed" / "cbb.json"
+PFEED = ROOT / "docs" / "feed" / "cbb_players.json"
 DAYS_AHEAD = 3
 
 
@@ -158,10 +159,30 @@ def run():
     }
     FEED.parent.mkdir(parents=True, exist_ok=True)
     FEED.write_text(json.dumps(feed, indent=1, allow_nan=False))
+
+    # player projections: their own file (a college slate is too big to put in the main feed). No
+    # injury report for college, so full rosters are assumed.
+    n_players = 0
+    try:
+        L = cbb_players.CBB
+        if not L.params_file.exists():
+            players.run(L)
+        pst = players.state_today(season, lg=L)
+        sx = s.sort_values("et")
+        proj = players.tonight(pst, [(x["id"], int(r.home_id), int(r.away_id)) for x, r in zip(games, sx.itertuples())], set(), abbr_of, lg=L)
+        for x in games:
+            if x["id"] in proj:
+                proj[x["id"]]["date"] = x["date"]
+        todays = {k: v for k, v in proj.items() if v.get("date") == today.isoformat()}
+        n_players = players.log(today, todays, lg=L)
+        PFEED.write_text(json.dumps({"generatedAt": feed["generatedAt"], "injuryReport": False,
+                                     "games": proj, "playerGrades": players.grade_log(season, lg=L)}, allow_nan=False))
+    except Exception as e:
+        print("college player projections failed:", repr(e))
     n_lines = line_log.log("cbb", games)
     archive.freeze("cbb", games, datetime.now(ET))
     archive.grade("cbb", g[(g.season == season) & (g.date < pd.Timestamp(today))], f"{season - 1}-10-01")
-    print(f"{len(games)} college games projected for {today} to {today + timedelta(days=DAYS_AHEAD - 1)}; {n_lines} with an ESPN line")
+    print(f"{len(games)} college games projected for {today} to {today + timedelta(days=DAYS_AHEAD - 1)}; {n_lines} with an ESPN line; {n_players} player projections logged")
     return feed
 
 

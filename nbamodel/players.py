@@ -22,6 +22,8 @@ from __future__ import annotations
 
 import json
 from collections import defaultdict, deque
+from dataclasses import dataclass, field
+from typing import Callable
 from pathlib import Path
 
 import numpy as np
@@ -31,7 +33,6 @@ from .data import CACHE, _get
 
 STATS = ["points", "rebounds", "assists", "threes"]
 WINDOW = 15
-MAX_MIN = 42.0
 PRIOR_MIN = 100.0       # minutes of league-average production a player's rates start from
 PREV_W = 0.5            # weight on last season's minutes (capped at PREV_CAP)
 PREV_CAP = 1000.0
@@ -42,14 +43,15 @@ TUNE = [2021, 2022, 2023]
 GRADE = [2024, 2025, 2026]
 OUT = Path(__file__).resolve().parent.parent / "docs" / "nba"
 
-# fitted on TUNE by tune() and saved in the backtest file; the board reads them from there
-PARAMS_FILE = OUT / "players_backtest.json"
-PARAMS = None
 
 
 def box(season: int, refresh: bool = False) -> pd.DataFrame:
     p = pd.read_parquet(_get(f"player_box/parquet/player_box_{season}.parquet", CACHE / f"player_box_{season}.parquet", refresh))
-    p = p[p.season_type == 2].copy()
+    return clean_box(p[p.season_type == 2].copy())
+
+
+def clean_box(p: pd.DataFrame) -> pd.DataFrame:
+    """hoopR player box rows -> one row per player who played, with the stats used here."""
     for c in ["minutes", "points", "rebounds", "assists", "three_point_field_goals_made"]:
         p[c] = pd.to_numeric(p[c], errors="coerce").fillna(0.0)
     p = p.rename(columns={"three_point_field_goals_made": "threes"})
@@ -64,11 +66,40 @@ def box(season: int, refresh: bool = False) -> pd.DataFrame:
     return p[keep].sort_values(["date", "game_id"]).reset_index(drop=True)
 
 
+@dataclass
+class League:
+    """What differs between the NBA and college: where the box scores come from, game length,
+    the seasons used to fit and to grade, and where the files go."""
+    name: str
+    box: Callable
+    team_min: float = 240.0
+    max_min: float = 42.0
+    tune: list = field(default_factory=lambda: list(TUNE))
+    grade: list = field(default_factory=lambda: list(GRADE))
+    docs: Path = OUT
+
+    @property
+    def params_file(self):
+        return self.docs / "players_backtest.json"
+
+    @property
+    def log_file(self):
+        return self.docs.parent / "players" / f"{self.name}_log.csv"
+
+    @property
+    def grades_file(self):
+        return self.docs.parent / "players" / f"{self.name}_grades.json"
+
+
+NBA = League("nba", box)
+
+
 class State:
     """Running numbers for one season: players' minutes and production, teams' recent rosters, and
     what each team has allowed."""
 
-    def __init__(self, prev=None):
+    def __init__(self, prev=None, team_min=240.0):
+        self.team_min = team_min
         self.ewm = {a: {} for a in ALPHAS}                 # alpha -> athlete -> minutes average
         self.tot = defaultdict(lambda: defaultdict(float))  # athlete -> stat -> sum (and "minutes", "games")
         self.prev = prev or {}                              # athlete -> stat -> per-minute rate, plus "minutes"
@@ -86,9 +117,10 @@ class State:
         return (t[stat] + pr * pm + lg * PRIOR_MIN) / (t["minutes"] + pm + PRIOR_MIN)
 
     def league_rate(self, stat):
-        # per player-minute: team totals over 240 minutes a game
+        # per player-minute: team totals over the minutes of a game (240 NBA, 200 college)
         g = self.league["games"]
-        return (self.league[stat] / (240.0 * g)) if g else {"points": 0.47, "rebounds": 0.18, "assists": 0.105, "threes": 0.052}[stat]
+        lg = {"points": 0.47, "rebounds": 0.18, "assists": 0.105, "threes": 0.052}[stat] * 240.0 / self.team_min
+        return (self.league[stat] / (self.team_min * g)) if g else lg
 
     def opp_factor(self, tid, stat):
         g = self.league["games"]
@@ -197,8 +229,8 @@ def team_rows(st: State, tid, opp, out_ids):
     return rows
 
 
-def load_params():
-    return json.loads(PARAMS_FILE.read_text())["params"]
+def load_params(lg=NBA):
+    return json.loads(lg.params_file.read_text())["params"]
 
 
 def min_features(df):
@@ -216,12 +248,12 @@ def fit_minutes(df):
     return dict(zip(min_features(d.head(1)).columns, (float(v) for v in b)))
 
 
-def project(df: pd.DataFrame, params=None) -> pd.DataFrame:
+def project(df: pd.DataFrame, params=None, lg=NBA) -> pd.DataFrame:
     """Turn team_rows() inputs into numbers."""
-    params = params or load_params()
+    params = params or load_params(lg)
     df = df.copy()
     X = min_features(df)
-    df["p_minutes"] = np.clip(sum(X[k] * v for k, v in params["minutes"].items()), 0.0, MAX_MIN)
+    df["p_minutes"] = np.clip(sum(X[k] * v for k, v in params["minutes"].items()), 0.0, lg.max_min)
     for s in STATS:
         df[f"p_{s}"] = (df[f"rate_{s}"] * df.p_minutes * df[f"opp_{s}"] ** params["beta"][s]
                         * (1 + params["u"][s] * df[f"mshare_{s}"]))
@@ -229,21 +261,21 @@ def project(df: pd.DataFrame, params=None) -> pd.DataFrame:
     # season average (the rates above are shrunk toward the league, which pulls stars down)
     for s, (c0, c1, c2) in params.get("cal", {}).items():
         df[f"p_{s}"] = np.maximum(0.0, c0 + c1 * df[f"p_{s}"] + c2 * df[f"avg_{s}"].fillna(df[f"p_{s}"]))
-    df["p_minutes"] = df.p_minutes.clip(upper=MAX_MIN)
+    df["p_minutes"] = df.p_minutes.clip(upper=lg.max_min)
     return df
 
 
-def walk(seasons, first_prev=None):
+def walk(seasons, first_prev=None, lg=NBA):
     """Walk forward through the seasons: projection inputs for every pool player of every game, with
     what he actually did (NaN when he did not play). Players with no game this season have no row."""
     rows = []
     prev = first_prev
     for season in seasons:
         try:
-            b = box(season)
+            b = lg.box(season)
         except Exception:
             continue
-        st = State(prev)
+        st = State(prev, lg.team_min)
         for day, todays in b.groupby("date"):
             for gid, gp in todays.groupby("game_id"):
                 played = set(gp.athlete_id)
@@ -267,9 +299,9 @@ def mae(x, s, col):
     return float((x[f"a_{s}"] - x[col]).abs().mean())
 
 
-def grade(x, params):
+def grade(x, params, lg=NBA):
     """Players who played, projected for 15+ minutes. Model vs his season average so far."""
-    p = graded(project(x, params))
+    p = graded(project(x, params, lg))
     out = {"player_games": int(len(p))}
     for s in ["minutes"] + STATS:
         d = (p[f"a_{s}"] - p[f"p_{s}"]).abs() - (p[f"a_{s}"] - p[f"avg_{s}"]).abs()
@@ -283,11 +315,11 @@ def graded(p):
     return p[p.a_minutes.notna() & (p.role >= 15) & (p.base_games >= 3)]
 
 
-def tune(x):
+def tune(x, lg=NBA):
     """Fit the minutes model, then the opponent and usage weights per stat, on the tuning seasons."""
-    t = x[x.season.isin(TUNE)]
+    t = x[x.season.isin(lg.tune)]
     params = {"minutes": fit_minutes(t), "beta": {s: 0.0 for s in STATS}, "u": {s: 0.0 for s in STATS}}
-    p = graded(project(t, params))
+    p = graded(project(t, params, lg))
     for s in STATS:
         best = None
         for beta in (0.0, 0.5, 1.0, 1.5):
@@ -297,7 +329,7 @@ def tune(x):
                 if best is None or e < best[0]:
                     best = (e, beta, uu)
         params["beta"][s], params["u"][s] = best[1], best[2]
-    p = graded(project(t, params))
+    p = graded(project(t, params, lg))
     params["cal"] = {}
     for s in ["minutes"] + STATS:
         X = np.column_stack([np.ones(len(p)), p[f"p_{s}"], p[f"avg_{s}"]])
@@ -306,52 +338,51 @@ def tune(x):
     return params
 
 
-def run():
-    seasons = list(range(min(TUNE) - 1, max(GRADE) + 1))
-    x = walk(seasons)
-    params = tune(x)
+def run(lg=NBA):
+    seasons = list(range(min(lg.tune) - 1, max(lg.grade) + 1))
+    x = walk(seasons, lg=lg)
+    params = tune(x, lg)
+    T, G = lg.tune, lg.grade
     summary = {
         "params": params,
-        "tune_seasons": f"{TUNE[0]}-{TUNE[-1]}", "holdout_seasons": f"{GRADE[0]}-{GRADE[-1]}",
-        "tune": grade(x[x.season.isin(TUNE)], params),
-        "holdout": grade(x[x.season.isin(GRADE)], params),
-        "by_season": {int(s): grade(g, params) for s, g in x[x.season.isin(GRADE)].groupby("season")},
-        "teammates_out": grade(x[x.season.isin(GRADE) & (x.miss_ratio > 0.1)], params),
+        "tune_seasons": f"{T[0]}-{T[-1]}", "holdout_seasons": f"{G[0]}-{G[-1]}",
+        "tune": grade(x[x.season.isin(T)], params, lg),
+        "holdout": grade(x[x.season.isin(G)], params, lg),
+        "by_season": {int(s): grade(g, params, lg) for s, g in x[x.season.isin(G)].groupby("season")},
+        "teammates_out": grade(x[x.season.isin(G) & (x.miss_ratio > 0.1)], params, lg),
     }
     print(json.dumps({k: summary[k] for k in ["params", "tune", "holdout", "teammates_out"]}, indent=1))
-    OUT.mkdir(parents=True, exist_ok=True)
-    (OUT / "players_backtest.json").write_text(json.dumps(summary, indent=1))
+    lg.docs.mkdir(parents=True, exist_ok=True)
+    lg.params_file.write_text(json.dumps(summary, indent=1))
     return summary
 
 
 # ---- tonight's projections, the nightly log and its grades -------------------------------------
 
-LOG = Path(__file__).resolve().parent.parent / "docs" / "players" / "nba_log.csv"
-GRADES = LOG.parent / "nba_grades.json"
 LOG_COLS = ["date", "game_id", "athlete_id", "name", "team", "opp", "out_on_team"] + \
            [f"p_{s}" for s in ["minutes"] + STATS] + [f"avg_{s}" for s in ["minutes"] + STATS]
 
 
-def state_today(season, refresh=True):
+def state_today(season, refresh=True, lg=NBA):
     """Running numbers as of today: last season for the prior, then every game this season."""
     prev = None
     try:
-        st = State()
-        for _, gp in box(season - 1).groupby("game_id", sort=False):
+        st = State(None, lg.team_min)
+        for _, gp in lg.box(season - 1).groupby("game_id", sort=False):
             st.add_game(gp)
         prev = st.carry()
     except Exception:
         pass
-    st = State(prev)
-    for _, gp in box(season, refresh=refresh).groupby(["date", "game_id"]):
+    st = State(prev, lg.team_min)
+    for _, gp in lg.box(season, refresh=refresh).groupby(["date", "game_id"]):
         st.add_game(gp)
     return st
 
 
-def tonight(st, games, out_ids, abbr):
+def tonight(st, games, out_ids, abbr, lg=NBA):
     """games: [(game_id, home_id, away_id)]; out_ids: athletes listed Out (or Doubtful). Returns
     {game_id: {"home": [...], "away": [...], "out": {"home": [...], "away": [...]}}}."""
-    params = load_params()
+    params = load_params(lg)
     res = {}
     for gid, hid, aid in games:
         entry = {"out": {}}
@@ -361,7 +392,7 @@ def tonight(st, games, out_ids, abbr):
                 entry[side] = []
                 entry["out"][side] = []
                 continue
-            p = project(pd.DataFrame(rows), params).sort_values("p_minutes", ascending=False)
+            p = project(pd.DataFrame(rows), params, lg).sort_values("p_minutes", ascending=False)
             p = p[p.p_minutes >= 8]
             entry["out"][side] = rows[0]["out"]
             entry[side] = [{"id": int(r.athlete_id), "name": r.name, "team": abbr.get(tid, ""), "opp": abbr.get(opp, ""),
@@ -373,7 +404,7 @@ def tonight(st, games, out_ids, abbr):
     return res
 
 
-def log(day, proj):
+def log(day, proj, lg=NBA):
     """Save tonight's projections (today's games only). A later run the same day replaces them, so
     the log keeps the last projection before tip-off."""
     rows = []
@@ -385,23 +416,23 @@ def log(day, proj):
                              **{f"p_{k}": r[k] for k in ["minutes"] + STATS},
                              **{f"avg_{k}": r["avg"][k] for k in ["minutes"] + STATS}})
     new = pd.DataFrame(rows, columns=LOG_COLS)
-    if LOG.exists():
-        old = pd.read_csv(LOG, dtype={"game_id": str})
+    if lg.log_file.exists():
+        old = pd.read_csv(lg.log_file, dtype={"game_id": str})
         old = old[~old.game_id.isin(set(new.game_id))]
         new = pd.concat([old, new], ignore_index=True)
-    LOG.parent.mkdir(parents=True, exist_ok=True)
-    new.sort_values(["date", "game_id", "team", "p_minutes"], ascending=[True, True, True, False]).to_csv(LOG, index=False)
+    lg.log_file.parent.mkdir(parents=True, exist_ok=True)
+    new.sort_values(["date", "game_id", "team", "p_minutes"], ascending=[True, True, True, False]).to_csv(lg.log_file, index=False)
     return len(rows)
 
 
-def grade_log(season):
+def grade_log(season, lg=NBA):
     """Grade every logged projection whose game is in the box scores: the model against each player's
     season average going in. Players who did not play are left out (a prop on them would be void)."""
-    if not LOG.exists():
+    if not lg.log_file.exists():
         return None
-    lg = pd.read_csv(LOG, dtype={"game_id": str})
-    b = box(season, refresh=False)[["game_id", "athlete_id", "minutes"] + STATS]
-    m = lg.merge(b.rename(columns={k: f"a_{k}" for k in ["minutes"] + STATS}), on=["game_id", "athlete_id"], how="inner")
+    logdf = pd.read_csv(lg.log_file, dtype={"game_id": str})
+    b = lg.box(season, refresh=False)[["game_id", "athlete_id", "minutes"] + STATS]
+    m = logdf.merge(b.rename(columns={k: f"a_{k}" for k in ["minutes"] + STATS}), on=["game_id", "athlete_id"], how="inner")
     if m.empty:
         return {"nights": 0}
     m["date"] = pd.to_datetime(m.date)
@@ -426,7 +457,7 @@ def grade_log(season):
                             "p_rebounds": r.p_rebounds, "a_rebounds": r.a_rebounds, "p_assists": r.p_assists, "a_assists": r.a_assists,
                             "p_threes": r.p_threes, "a_threes": r.a_threes} for r in top.itertuples()],
     }
-    GRADES.write_text(json.dumps(res, indent=1, allow_nan=False))
+    lg.grades_file.write_text(json.dumps(res, indent=1, allow_nan=False))
     return res
 
 

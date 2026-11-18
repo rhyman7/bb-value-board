@@ -1,0 +1,322 @@
+{
+ "params": {
+  "minutes": {
+   "const": 1.1045,
+   "ewm15": -0.1337,
+   "ewm30": 0.5663,
+   "role": 0.235,
+   "season_avg": 0.1411,
+   "last_game": 0.1306,
+   "teammates_out": 0.5903
+  },
+  "beta": {
+   "points": 1.0,
+   "rebounds": 1.0,
+   "assists": 1.0,
+   "threes": 1.0
+  },
+  "u": {
+   "points": 0.0,
+   "rebounds": 0.0,
+   "assists": 0.0,
+   "threes": 0.0
+  },
+  "cal": {
+   "minutes": [
+    -0.2741,
+    0.9353,
+    0.0801
+   ],
+   "points": [
+    -0.4858,
+    0.816,
+    0.244
+   ],
+   "rebounds": [
+    -0.2267,
+    0.8267,
+    0.224
+   ],
+   "assists": [
+    -0.1144,
+    0.9032,
+    0.1747
+   ],
+   "threes": [
+    -0.0285,
+    0.8827,
+    0.1654
+   ]
+  }
+ },
+ "tune_seasons": "2017-2019",
+ "holdout_seasons": "2023-2026",
+ "tune": {
+  "player_games": 198314,
+  "minutes": {
+   "model_mae": 4.937,
+   "season_avg_mae": 5.277,
+   "gain": 0.341,
+   "gain_se": 0.005,
+   "model_bias": -0.001
+  },
+  "points": {
+   "model_mae": 4.396,
+   "season_avg_mae": 4.481,
+   "gain": 0.085,
+   "gain_se": 0.003,
+   "model_bias": -0.0
+  },
+  "rebounds": {
+   "model_mae": 1.876,
+   "season_avg_mae": 1.922,
+   "gain": 0.046,
+   "gain_se": 0.001,
+   "model_bias": 0.0
+  },
+  "assists": {
+   "model_mae": 1.126,
+   "season_avg_mae": 1.153,
+   "gain": 0.027,
+   "gain_se": 0.001,
+   "model_bias": 0.0
+  },
+  "threes": {
+   "model_mae": 0.8,
+   "season_avg_mae": 0.794,
+   "gain": -0.006,
+   "gain_se": 0.001,
+   "model_bias": -0.0
+  }
+ },
+ "holdout": {
+  "player_games": 277091,
+  "minutes": {
+   "model_mae": 4.842,
+   "season_avg_mae": 5.253,
+   "gain": 0.411,
+   "gain_se": 0.004,
+   "model_bias": 0.059
+  },
+  "points": {
+   "model_mae": 4.415,
+   "season_avg_mae": 4.49,
+   "gain": 0.075,
+   "gain_se": 0.002,
+   "model_bias": -0.056
+  },
+  "rebounds": {
+   "model_mae": 1.846,
+   "season_avg_mae": 1.891,
+   "gain": 0.045,
+   "gain_se": 0.001,
+   "model_bias": 0.016
+  },
+  "assists": {
+   "model_mae": 1.122,
+   "season_avg_mae": 1.149,
+   "gain": 0.027,
+   "gain_se": 0.001,
+   "model_bias": -0.02
+  },
+  "threes": {
+   "model_mae": 0.801,
+   "season_avg_mae": 0.798,
+   "gain": -0.003,
+   "gain_se": 0.0,
+   "model_bias": 0.001
+  }
+ },
+ "by_season": {
+  "2023": {
+   "player_games": 68401,
+   "minutes": {
+    "model_mae": 4.867,
+    "season_avg_mae": 5.259,
+    "gain": 0.392,
+    "gain_se": 0.008,
+    "model_bias": 0.103
+   },
+   "points": {
+    "model_mae": 4.344,
+    "season_avg_mae": 4.426,
+    "gain": 0.082,
+    "gain_se": 0.004,
+    "model_bias": -0.083
+   },
+   "rebounds": {
+    "model_mae": 1.843,
+    "season_avg_mae": 1.888,
+    "gain": 0.045,
+    "gain_se": 0.002,
+    "model_bias": 0.03
+   },
+   "assists": {
+    "model_mae": 1.113,
+    "season_avg_mae": 1.143,
+    "gain": 0.03,
+    "gain_se": 0.001,
+    "model_bias": -0.012
+   },
+   "threes": {
+    "model_mae": 0.784,
+    "season_avg_mae": 0.781,
+    "gain": -0.003,
+    "gain_se": 0.001,
+    "model_bias": 0.006
+   }
+  },
+  "2024": {
+   "player_games": 68950,
+   "minutes": {
+    "model_mae": 4.826,
+    "season_avg_mae": 5.233,
+    "gain": 0.407,
+    "gain_se": 0.008,
+    "model_bias": 0.101
+   },
+   "points": {
+    "model_mae": 4.411,
+    "season_avg_mae": 4.488,
+    "gain": 0.077,
+    "gain_se": 0.004,
+    "model_bias": -0.064
+   },
+   "rebounds": {
+    "model_mae": 1.855,
+    "season_avg_mae": 1.904,
+    "gain": 0.05,
+    "gain_se": 0.002,
+    "model_bias": 0.004
+   },
+   "assists": {
+    "model_mae": 1.111,
+    "season_avg_mae": 1.137,
+    "gain": 0.025,
+    "gain_se": 0.001,
+    "model_bias": -0.026
+   },
+   "threes": {
+    "model_mae": 0.789,
+    "season_avg_mae": 0.787,
+    "gain": -0.002,
+    "gain_se": 0.001,
+    "model_bias": -0.003
+   }
+  },
+  "2025": {
+   "player_games": 69684,
+   "minutes": {
+    "model_mae": 4.844,
+    "season_avg_mae": 5.269,
+    "gain": 0.425,
+    "gain_se": 0.008,
+    "model_bias": 0.034
+   },
+   "points": {
+    "model_mae": 4.424,
+    "season_avg_mae": 4.5,
+    "gain": 0.076,
+    "gain_se": 0.004,
+    "model_bias": -0.024
+   },
+   "rebounds": {
+    "model_mae": 1.845,
+    "season_avg_mae": 1.892,
+    "gain": 0.046,
+    "gain_se": 0.002,
+    "model_bias": 0.013
+   },
+   "assists": {
+    "model_mae": 1.123,
+    "season_avg_mae": 1.15,
+    "gain": 0.027,
+    "gain_se": 0.001,
+    "model_bias": -0.025
+   },
+   "threes": {
+    "model_mae": 0.813,
+    "season_avg_mae": 0.811,
+    "gain": -0.002,
+    "gain_se": 0.001,
+    "model_bias": -0.002
+   }
+  },
+  "2026": {
+   "player_games": 70056,
+   "minutes": {
+    "model_mae": 4.834,
+    "season_avg_mae": 5.253,
+    "gain": 0.419,
+    "gain_se": 0.008,
+    "model_bias": 0.0
+   },
+   "points": {
+    "model_mae": 4.479,
+    "season_avg_mae": 4.543,
+    "gain": 0.063,
+    "gain_se": 0.004,
+    "model_bias": -0.052
+   },
+   "rebounds": {
+    "model_mae": 1.841,
+    "season_avg_mae": 1.881,
+    "gain": 0.04,
+    "gain_se": 0.002,
+    "model_bias": 0.019
+   },
+   "assists": {
+    "model_mae": 1.14,
+    "season_avg_mae": 1.166,
+    "gain": 0.026,
+    "gain_se": 0.001,
+    "model_bias": -0.016
+   },
+   "threes": {
+    "model_mae": 0.818,
+    "season_avg_mae": 0.812,
+    "gain": -0.006,
+    "gain_se": 0.001,
+    "model_bias": 0.005
+   }
+  }
+ },
+ "teammates_out": {
+  "player_games": 41282,
+  "minutes": {
+   "model_mae": 5.116,
+   "season_avg_mae": 5.982,
+   "gain": 0.867,
+   "gain_se": 0.016,
+   "model_bias": -0.005
+  },
+  "points": {
+   "model_mae": 4.547,
+   "season_avg_mae": 4.653,
+   "gain": 0.106,
+   "gain_se": 0.007,
+   "model_bias": -0.375
+  },
+  "rebounds": {
+   "model_mae": 1.919,
+   "season_avg_mae": 1.96,
+   "gain": 0.041,
+   "gain_se": 0.003,
+   "model_bias": -0.031
+  },
+  "assists": {
+   "model_mae": 1.158,
+   "season_avg_mae": 1.176,
+   "gain": 0.017,
+   "gain_se": 0.002,
+   "model_bias": -0.056
+  },
+  "threes": {
+   "model_mae": 0.825,
+   "season_avg_mae": 0.811,
+   "gain": -0.014,
+   "gain_se": 0.001,
+   "model_bias": -0.023
+  }
+ }
+}

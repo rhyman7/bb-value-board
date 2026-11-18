@@ -1,6 +1,7 @@
 // NBA player projections page: tonight's projections from the feed, the nightly grades, and the
 // backtest. Projections are not picks: there are no prop lines here.
 (function () {
+  const L = window.LEAGUE || "nba";
   const $ = (s) => document.querySelector(s);
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const f1 = (x) => (x == null || isNaN(x) ? "–" : Number(x).toFixed(1));
@@ -27,7 +28,7 @@
     const days = [...new Set(rows.map((r) => r.date))].sort();
     const st = { day: days[0], q: "", key: "points", asc: false, all: false };
     $("#counts").textContent = `${rows.length} players over ${days.length} day${days.length === 1 ? "" : "s"} · ` +
-      (feed.injuryReport ? "injury report read" : "injury report not read, so full rosters are assumed");
+      (L === "cbb" ? "no college injury report, so full rosters are assumed" : feed.injuryReport ? "injury report read" : "injury report not read, so full rosters are assumed");
     const seg = $("#day-seg");
     seg.innerHTML = days.map((d) => `<button type="button" data-day="${d}">${dayLabel(d)}</button>`).join("");
     const head = `<thead><tr><th class="l"><button class="sort" data-k="name">Player</button></th><th class="l"><button class="sort" data-k="team">Game</button></th>` +
@@ -82,20 +83,24 @@
     $("#cv-model").textContent = f2(h.points.model_mae) + " points";
     $("#cv-avg").textContent = f2(h.points.season_avg_mae);
     $("#bt-note").textContent = `Every regular-season game ${bt.holdout_seasons}, using only what was known before tip-off; settings were fitted on ${bt.tune_seasons}. ` +
-      `Players who played and average 15+ minutes when they play (${h.player_games.toLocaleString()} player-games). In the backtest the model knows which regulars sat, the way it would from the injury report.`;
+      `Players who played and average 15+ minutes when they play (${h.player_games.toLocaleString()} player-games). ${L === "cbb" ? "In the backtest the model knows which regulars sat. On the live board it does not, because there is no college injury report, so live results should run a little worse." : "In the backtest the model knows which regulars sat, the way it would from the injury report."}`;
     const rows = STATS.map(([k, lab]) => { const x = h[k];
       return `<tr><td>${lab}</td><td class="w">${f2(x.model_mae)}</td><td>${f2(x.season_avg_mae)}</td><td>${x.gain != null ? f2(x.gain) + " ± " + (x.gain_se < 0.005 ? "<0.01" : f2(x.gain_se)) : "–"}</td><td>${f1((100 * (x.season_avg_mae - x.model_mae)) / x.season_avg_mae)}%</td></tr>`; }).join("");
     const t = bt.teammates_out;
     const rows2 = t ? STATS.map(([k, lab]) => `<tr><td>${lab}</td><td class="w">${f2(t[k].model_mae)}</td><td>${f2(t[k].season_avg_mae)}</td></tr>`).join("") : "";
     box.innerHTML = `<div class="two"><div><h3>All player-games, ${esc(bt.holdout_seasons)}</h3><div class="tbl-wrap"><table>
-      <thead><tr><th>Stat</th><th>Projection missed by</th><th>Season avg missed by</th><th>Gain</th><th>Better by</th></tr></thead><tbody>${rows}</tbody></table></div></div>
+      <thead><tr><th>Stat</th><th>Projection miss</th><th>Season avg miss</th><th>Gain</th><th>Better by</th></tr></thead><tbody>${rows}</tbody></table></div></div>
       ${t ? `<div><h3>With a regular teammate out (${t.player_games.toLocaleString()} player-games)</h3><div class="tbl-wrap"><table>
       <thead><tr><th>Stat</th><th>Projection missed by</th><th>Season avg missed by</th></tr></thead><tbody>${rows2}</tbody></table></div>
-      <p class="note">This is where the projections earn most of their keep: the season average does not know who is missing.</p></div>` : ""}</div>`;
+      <p class="note">This is where the projections earn most of their keep: the season average does not know who is missing.${L === "cbb" ? " On the college board this only helps once a player has already missed recent games." : ""}</p></div>` : ""}</div>`;
   }
 
   (async function boot() {
-    const [feed, bt] = await Promise.all([get("../feed/nba.json"), get("players_backtest.json")]);
+    const [feed, bt] = await Promise.all([get(L === "nba" ? "../feed/nba.json" : "../feed/cbb_players.json"), get("players_backtest.json")]);
+    // the college file keys games by id and has no game list: rebuild one from the players
+    if (feed && !Array.isArray(feed.games) && feed.games) {
+      feed.games = Object.entries(feed.games).map(([id, e]) => ({ id, players: e, date: e.date }));
+    }
     drawTonight(feed);
     drawGraded(feed && feed.playerGrades);
     drawBacktest(bt);
