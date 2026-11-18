@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NBA Past Nights</title>
+<meta name="description" content="Every night's NBA board as it stood before tip-off, graded against the finals: record against the spread, totals and winners, season to date.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Big+Shoulders+Display:wght@500..900&display=swap">
+<link rel="stylesheet" href="../board.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="bar">
+    <a class="brand" href="./"><i aria-hidden="true"></i>NBA Value Board</a>
+    <nav class="sections" aria-label="Sections"><ul>
+      <li><a href="./#games">Games</a></li>
+      <li><a href="#season">Season record</a></li>
+      <li><a href="#nights">Nights</a></li>
+      <li><a href="../cbb/">College board</a></li>
+    </ul></nav>
+  </div>
+
+  <header class="top">
+    <h1>Past<br>Nights</h1>
+    <p class="lede">Every night's board <strong>as it stood before tip-off</strong>, graded against the finals the next morning.</p>
+    <p class="stamp" id="stamp"></p>
+  </header>
+
+  <main>
+  <section id="season">
+    <div class="section-head"><h2>Season record</h2></div>
+    <div id="season-body"><p class="empty">Loading…</p></div>
+  </section>
+  <section id="nights">
+    <div class="section-head"><h2>Nights</h2><p class="note">Pick a night to see its games.</p></div>
+    <div id="nights-body"></div>
+  </section>
+  <section id="night">
+    <div id="night-body"></div>
+  </section>
+  </main>
+
+  <footer class="site">
+    <p>Lines: ESPN, as shown on the board before tip-off. Finals: hoopR (sportsdataverse). <a href="./">NBA value board</a></p>
+    <p>For research and entertainment. Past results do not predict future results, and nothing here is betting advice.</p>
+  </footer>
+</div>
+<script>window.LEAGUE = "nba";</script>
+<script src="../archive.js"></script>
+</body>
+</html>

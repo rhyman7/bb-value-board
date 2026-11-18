@@ -102,3 +102,22 @@ def test_player_projection_shape():
     p = P.project(pd.DataFrame(r), params)
     assert (p.p_minutes <= P.MAX_MIN).all() and (p[[f"p_{s}" for s in P.STATS]] >= 0).all().all()
     assert p.p_minutes.iloc[0] > 33   # picks up some of the missing starter's minutes
+
+
+def test_archive_freeze_and_grade(tmp_path):
+    """Frozen before tip, not overwritten after, and graded from the model's side of the line."""
+    from datetime import datetime, timezone
+    import pandas as pd
+    from nbamodel import archive
+    archive.ROOT = tmp_path
+    g = {"id": "1", "date": "2026-11-16", "tip": "2026-11-16T19:00:00-05:00", "away": "A", "home": "H", "neutral": False,
+         "margin": 6.0, "total": 220.0, "win_prob": 0.7, "projection": 6.0, "mkt_spread": 3.0, "mkt_total": 225.0,
+         "mkt_ml_home": None, "mkt_ml_away": None}
+    before = datetime(2026, 11, 16, 15, 0, tzinfo=timezone.utc)
+    from zoneinfo import ZoneInfo
+    after = datetime(2026, 11, 16, 20, 0, tzinfo=ZoneInfo("America/New_York"))   # after the 7 PM tip
+    assert archive.freeze("nba", [g], before) == 1
+    assert archive.freeze("nba", [{**g, "margin": -9.0}], after) == 0
+    idx = archive.grade("nba", pd.DataFrame([{"game_id": "1", "pts_h": 110, "pts_a": 100}]), "2026-10-01")
+    s = idx["season"]
+    assert s["ats"]["w"] == 1 and s["ou"]["w"] == 1 and s["su"]["w"] == 1   # won by 10: covered 3, under 225

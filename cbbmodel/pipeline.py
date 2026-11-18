@@ -17,7 +17,7 @@ from zoneinfo import ZoneInfo
 import numpy as np
 import pandas as pd
 
-from nbamodel import gamepage, lines as line_log
+from nbamodel import archive, gamepage, lines as line_log
 from nbamodel.ratings import rating_projection
 
 from . import backtest, data, ratings, roster, spots
@@ -123,7 +123,7 @@ def run():
                                x.home_abbreviation, x.away_abbreviation, {}, False)
         sp, tot, ml_h, ml_a = lines.get(str(x.game_id), (None, None, None, None))
         games.append({
-            "id": str(x.game_id), "date": x.day.isoformat(), "away": x.away_abbreviation, "home": x.home_abbreviation,
+            "id": str(x.game_id), "date": x.day.isoformat(), "tip": x.et.isoformat(), "away": x.away_abbreviation, "home": x.home_abbreviation,
             "neutral": bool(x.neutral_site), "margin": round(m, 1), "total": round(float(row.r_total), 1),
             "pace": round(float(row.r_pace), 1), "win_prob": round(float(1 / (1 + np.exp(-m / 6.5))), 3),
             "projection": round(m, 1), "mkt_spread": sp, "mkt_total": tot, "mkt_ml_home": ml_h, "mkt_ml_away": ml_a,
@@ -159,6 +159,8 @@ def run():
     FEED.parent.mkdir(parents=True, exist_ok=True)
     FEED.write_text(json.dumps(feed, indent=1, allow_nan=False))
     n_lines = line_log.log("cbb", games)
+    archive.freeze("cbb", games, datetime.now(ET))
+    archive.grade("cbb", g[(g.season == season) & (g.date < pd.Timestamp(today))], f"{season - 1}-10-01")
     print(f"{len(games)} college games projected for {today} to {today + timedelta(days=DAYS_AHEAD - 1)}; {n_lines} with an ESPN line")
     return feed
 

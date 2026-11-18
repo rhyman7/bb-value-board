@@ -175,3 +175,13 @@ th button.sort { all: unset; cursor: pointer; }
 th button.sort:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
 th[aria-sort] button.sort::after { content: " \25BE"; }
 th[aria-sort="ascending"] button.sort::after { content: " \25B4"; }
+
+/* ---- past nights ---- */
+.res { display: inline-block; min-width: 22px; padding: 1px 6px; border-radius: 3px; font-weight: 700; font-size: 12.5px; text-align: center; }
+.res.w { background: var(--good); color: var(--surface); }
+.res.l { background: var(--bad); color: var(--surface); }
+.res.p { background: var(--raised); color: var(--ink-2); }
+button.linkish { all: unset; cursor: pointer; color: var(--link); text-decoration: underline; font-weight: 600; }
+button.linkish:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+tr.on td { background: var(--raised); }
+#night { scroll-margin-top: 64px; }
