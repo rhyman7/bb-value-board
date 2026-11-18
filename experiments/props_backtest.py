@@ -28,8 +28,14 @@ OUT = Path(__file__).resolve().parent.parent / "docs" / "nba" / "props_backtest.
 GAPS = {"points": (0, 1, 2, 3), "rebounds": (0, 0.5, 1, 1.5), "assists": (0, 0.5, 1, 1.5), "threes": (0, 0.3, 0.6, 0.9)}
 
 
-def payout(price):
-    return np.where(price > 0, price / 100.0, 100.0 / np.abs(price))
+def payout(dec):
+    """Profit per unit staked at decimal odds."""
+    return dec - 1.0
+
+
+def decimal(american):
+    a = np.asarray(american, float)
+    return np.where(a > 0, 1 + a / 100.0, 1 + 100.0 / np.abs(a))
 
 
 def consensus():
@@ -37,6 +43,7 @@ def consensus():
     q["stat"] = q.market.map(MARKETS)
     q["date"] = pd.to_datetime(q.commence_time, utc=True).dt.tz_convert("America/New_York").dt.strftime("%Y-%m-%d")
     q["who"] = q.player.map(_norm)
+    q["over"], q["under"] = decimal(q.over), decimal(q.under)      # medians of American odds mixing signs are wrong
     out = []
     for (date, who, stat), g in q.groupby(["date", "who", "stat"]):
         line = g.line.median()
@@ -60,13 +67,13 @@ def summ(d):
 
 def bets(m, col):
     m = m.copy()
-    m["side_over"] = m[col] > m.line
-    m = m[(m[col] != m.line) & (m.actual != m.line)]
+    m["side_over"] = (m[col] > m.line) if col in m else (col == "OVER")
+    m = m[(m.actual != m.line) & ((m[col] != m.line) if col in m else True)]
     over_won = m.actual > m.line
     m["win"] = np.where(m.side_over, over_won, ~over_won)
     price = np.where(m.side_over, m.over, m.under)
     m["ret"] = np.where(m.win, payout(price), -1.0)
-    m["gap"] = (m[col] - m.line).abs()
+    m["gap"] = (m[col] - m.line).abs() if col in m else 0.0
     return m
 
 
@@ -94,7 +101,10 @@ def main():
     res["by_stat"] = {}
     for s in P.STATS:
         ms = mod[mod.stat == s]
+        mm = m[m.stat == s]
         res["by_stat"][s] = {"model": summ(ms), "season_avg": summ(avg[avg.stat == s]),
+                             "always_over": summ(bets(mm, "OVER")), "always_under": summ(bets(mm, "UNDER")),
+                             "avg_price_over": round(float(mm.over.median()), 3), "avg_price_under": round(float(mm.under.median()), 3),
                              "by_gap": {f"{g}+": summ(ms[ms.gap >= g]) for g in GAPS[s]},
                              "over": summ(ms[ms.side_over]), "under": summ(ms[~ms.side_over]),
                              "line_mae": round(float((m[m.stat == s].actual - m[m.stat == s].line).abs().mean()), 3),
