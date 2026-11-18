@@ -1,0 +1,52 @@
+name: Odds API past props pull
+
+# Pull of past NBA player props for the props backtest. Runs on demand only, with the markets and
+# credit cap Ryan approved (2026-11-18: all four stats, about 100 games, about 4,000 credits); resumes where it stopped and commits the CSV to the branch it ran on.
+on:
+  # a single push to the props-pull branch starts the approved pull (the bot's own commit back
+  # doesn't trigger another run); dispatch works once this file is on main
+  push:
+    branches: [props-pull]
+  workflow_dispatch:
+    inputs:
+      markets:
+        description: "Comma-separated Odds API prop markets"
+        default: "player_points"
+      max_credits:
+        description: "Stop before using more than this many credits"
+        default: "4050"
+      per_day:
+        description: "Games taken from each game day"
+        default: "3"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: odds-props-history
+  cancel-in-progress: false
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m oddsapi.prop_history
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          PROP_MARKETS: ${{ inputs.markets || 'player_points,player_rebounds,player_assists,player_threes' }}
+          MAX_CREDITS: ${{ inputs.max_credits || '4050' }}
+          MAX_PER_DAY: ${{ inputs.per_day || '3' }}
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/odds
+          if git diff --staged --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "Past NBA player props from the Odds API"
+          git push origin HEAD:${{ github.ref_name }}
