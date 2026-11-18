@@ -104,6 +104,8 @@ def run():
             last_played[t] = max(last_played.get(t, x.date), x.date)
 
     lines = line_log.espn_lines("cbb", sorted(set(s.day)))
+    fresh = {k for k, v in lines.items() if v[0] is not None or v[2] is not None}   # lines ESPN still posts
+    lines = line_log.with_logged("cbb", lines)    # games already under way keep their last line
     # who is out: no college injury report, so regulars who sat their last 2 games, plus anyone ESPN
     # lists Out or Doubtful for today's games (ESPN's college coverage is thin)
     espn_out, espn_note = availability.espn_injuries([str(x) for x in s[s.day == today].game_id])
@@ -200,7 +202,7 @@ def run():
                                      "games": proj, "playerGrades": players.grade_log(season, lg=L)}, allow_nan=False))
     except Exception as e:
         print("college player projections failed:", repr(e))
-    n_lines = line_log.log("cbb", games)
+    n_lines = line_log.log("cbb", [x for x in games if x["id"] in fresh])
     archive.freeze("cbb", games, datetime.now(ET))
     archive.grade("cbb", g[(g.season == season) & (g.date < pd.Timestamp(today))], f"{season - 1}-10-01")
     print(f"{len(games)} college games projected for {today} to {today + timedelta(days=DAYS_AHEAD - 1)}; {n_lines} with an ESPN line; {n_players} player projections logged")

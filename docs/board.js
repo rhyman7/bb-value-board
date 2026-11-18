@@ -106,7 +106,10 @@
     }
     const games = feed.games;
     const days = [...new Set(games.map((g) => g.date))].sort();
-    const state = { day: days[0] || null, sort: "time", q: "" };
+    // open on the first day with a game still to tip off (the late update runs after some games start)
+    const now = Date.now();
+    const upcomingDay = days.find((d) => games.some((g) => g.date === d && (!g.tip || Date.parse(g.tip) > now)));
+    const state = { day: upcomingDay || days[days.length - 1] || null, sort: "time", q: "" };
     const withLine = games.filter((g) => g.mkt_spread != null).length;
     const notes = [`${games.length} games over ${days.length} day${days.length === 1 ? "" : "s"}`, `${withLine} with a market line`];
     if (L === "nba") notes.push(feed.injuryReport ? "injury report read" : "injury report not read, so full rosters are assumed");
