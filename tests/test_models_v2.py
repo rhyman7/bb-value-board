@@ -121,3 +121,23 @@ def test_archive_freeze_and_grade(tmp_path):
     idx = archive.grade("nba", pd.DataFrame([{"game_id": "1", "pts_h": 110, "pts_a": 100}]), "2026-10-01")
     s = idx["season"]
     assert s["ats"]["w"] == 1 and s["ou"]["w"] == 1 and s["su"]["w"] == 1   # won by 10: covered 3, under 225
+
+
+def test_inferred_out_streak():
+    """A regular who sat the team's last 2 games is flagged; one who sat only the last game is not."""
+    import pandas as pd
+    from nbamodel import players as P
+    st = P.State(None, 200.0)
+    for g in range(8):
+        rows = []
+        for tid, opp in ((1, 2), (2, 1)):
+            for a in range(7):
+                aid = tid * 100 + a
+                if tid == 1 and ((a == 0 and g >= 6) or (a == 1 and g == 7)):
+                    continue          # 100 sits games 7-8, 101 sits game 8
+                rows.append({"game_id": f"g{g}", "team_id": tid, "opponent_team_id": opp, "athlete_id": aid,
+                             "athlete_display_name": f"P{aid}", "minutes": 30 - 2 * a, "points": 10, "rebounds": 4,
+                             "assists": 2, "threes": 1})
+        st.add_game(pd.DataFrame(rows))
+    assert st.streak(1)[100] == 2 and st.streak(1)[101] == 1
+    assert P.inferred_out(st, 1, 2) == {100}

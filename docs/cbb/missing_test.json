@@ -1,0 +1,125 @@
+{
+ "base": {
+  "coef_last": null,
+  "tune": {
+   "games": 3306,
+   "mae": 8.902,
+   "vs_base": 0.0,
+   "vs_base_se": 0.0,
+   "line_mae": 8.695,
+   "ats": {
+    "w": 1594,
+    "l": 1643,
+    "p": 69,
+    "pct": 49.2,
+    "roi": -5.9,
+    "se": 0.9
+   }
+  },
+  "holdout": {
+   "games": 21708,
+   "mae": 8.974,
+   "vs_base": 0.0,
+   "vs_base_se": 0.0,
+   "line_mae": 8.769,
+   "ats": {
+    "w": 10600,
+    "l": 10726,
+    "p": 382,
+    "pct": 49.7,
+    "roi": -5.0,
+    "se": 0.3
+   }
+  }
+ },
+ "inferred": {
+  "coef_last": -0.654,
+  "tune": {
+   "games": 3306,
+   "mae": 8.89,
+   "vs_base": -0.0121,
+   "vs_base_se": 0.0083,
+   "line_mae": 8.695,
+   "ats": {
+    "w": 1600,
+    "l": 1637,
+    "p": 69,
+    "pct": 49.4,
+    "roi": -5.5,
+    "se": 0.9
+   },
+   "missing_games": {
+    "games": 522,
+    "mae": 8.91,
+    "base_mae": 8.992,
+    "line_mae": 8.714
+   }
+  },
+  "holdout": {
+   "games": 21708,
+   "mae": 8.969,
+   "vs_base": -0.0052,
+   "vs_base_se": 0.0024,
+   "line_mae": 8.769,
+   "ats": {
+    "w": 10617,
+    "l": 10709,
+    "p": 382,
+    "pct": 49.8,
+    "roi": -4.9,
+    "se": 0.3
+   },
+   "missing_games": {
+    "games": 3100,
+    "mae": 8.776,
+    "base_mae": 8.816,
+    "line_mae": 8.636
+   }
+  }
+ },
+ "truth": {
+  "coef_last": -0.923,
+  "tune": {
+   "games": 3306,
+   "mae": 8.884,
+   "vs_base": -0.0178,
+   "vs_base_se": 0.012,
+   "line_mae": 8.695,
+   "ats": {
+    "w": 1611,
+    "l": 1626,
+    "p": 69,
+    "pct": 49.8,
+    "roi": -4.9,
+    "se": 0.9
+   },
+   "missing_games": {
+    "games": 825,
+    "mae": 8.842,
+    "base_mae": 8.918,
+    "line_mae": 8.64
+   }
+  },
+  "holdout": {
+   "games": 21708,
+   "mae": 8.956,
+   "vs_base": -0.0182,
+   "vs_base_se": 0.0041,
+   "line_mae": 8.769,
+   "ats": {
+    "w": 10725,
+    "l": 10601,
+    "p": 382,
+    "pct": 50.3,
+    "roi": -3.9,
+    "se": 0.3
+   },
+   "missing_games": {
+    "games": 5104,
+    "mae": 8.81,
+    "base_mae": 8.892,
+    "line_mae": 8.708
+   }
+  }
+ }
+}

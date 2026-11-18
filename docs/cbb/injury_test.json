@@ -1,0 +1,244 @@
+{
+ "rule": "regular who missed the team's last k games in a row is out",
+ "seasons": "2023-2026",
+ "by_streak": {
+  "0": {
+   "regular_team_games": 358735,
+   "played_pct": 96.7
+  },
+  "1": {
+   "regular_team_games": 11426,
+   "played_pct": 48.9
+  },
+  "2": {
+   "regular_team_games": 5597,
+   "played_pct": 33.9
+  },
+  "3": {
+   "regular_team_games": 3432,
+   "played_pct": 24.3
+  },
+  "4": {
+   "regular_team_games": 2461,
+   "played_pct": 18.4
+  },
+  "5": {
+   "regular_team_games": 1835,
+   "played_pct": 13.9
+  },
+  "6": {
+   "regular_team_games": 5038,
+   "played_pct": 8.9
+  }
+ },
+ "modes": {
+  "miss1": {
+   "player_games": 271580,
+   "minutes": {
+    "model_mae": 4.876,
+    "season_avg_mae": 5.212,
+    "gain": 0.336,
+    "gain_se": 0.004,
+    "model_bias": -0.13
+   },
+   "points": {
+    "model_mae": 4.423,
+    "season_avg_mae": 4.485,
+    "gain": 0.062,
+    "gain_se": 0.002,
+    "model_bias": -0.121
+   },
+   "rebounds": {
+    "model_mae": 1.848,
+    "season_avg_mae": 1.89,
+    "gain": 0.042,
+    "gain_se": 0.001,
+    "model_bias": -0.011
+   },
+   "assists": {
+    "model_mae": 1.124,
+    "season_avg_mae": 1.15,
+    "gain": 0.026,
+    "gain_se": 0.001,
+    "model_bias": -0.032
+   },
+   "threes": {
+    "model_mae": 0.803,
+    "season_avg_mae": 0.799,
+    "gain": -0.004,
+    "gain_se": 0.0,
+    "model_bias": -0.006
+   }
+  },
+  "miss2": {
+   "player_games": 271580,
+   "minutes": {
+    "model_mae": 4.893,
+    "season_avg_mae": 5.212,
+    "gain": 0.319,
+    "gain_se": 0.004,
+    "model_bias": -0.371
+   },
+   "points": {
+    "model_mae": 4.419,
+    "season_avg_mae": 4.485,
+    "gain": 0.066,
+    "gain_se": 0.002,
+    "model_bias": -0.197
+   },
+   "rebounds": {
+    "model_mae": 1.845,
+    "season_avg_mae": 1.89,
+    "gain": 0.045,
+    "gain_se": 0.001,
+    "model_bias": -0.044
+   },
+   "assists": {
+    "model_mae": 1.122,
+    "season_avg_mae": 1.15,
+    "gain": 0.027,
+    "gain_se": 0.001,
+    "model_bias": -0.047
+   },
+   "threes": {
+    "model_mae": 0.802,
+    "season_avg_mae": 0.799,
+    "gain": -0.002,
+    "gain_se": 0.0,
+    "model_bias": -0.014
+   }
+  },
+  "miss3": {
+   "player_games": 271580,
+   "minutes": {
+    "model_mae": 4.905,
+    "season_avg_mae": 5.212,
+    "gain": 0.307,
+    "gain_se": 0.004,
+    "model_bias": -0.462
+   },
+   "points": {
+    "model_mae": 4.418,
+    "season_avg_mae": 4.485,
+    "gain": 0.067,
+    "gain_se": 0.002,
+    "model_bias": -0.226
+   },
+   "rebounds": {
+    "model_mae": 1.844,
+    "season_avg_mae": 1.89,
+    "gain": 0.046,
+    "gain_se": 0.001,
+    "model_bias": -0.057
+   },
+   "assists": {
+    "model_mae": 1.122,
+    "season_avg_mae": 1.15,
+    "gain": 0.028,
+    "gain_se": 0.001,
+    "model_bias": -0.053
+   },
+   "threes": {
+    "model_mae": 0.801,
+    "season_avg_mae": 0.799,
+    "gain": -0.002,
+    "gain_se": 0.0,
+    "model_bias": -0.017
+   }
+  },
+  "none": {
+   "player_games": 271580,
+   "minutes": {
+    "model_mae": 4.914,
+    "season_avg_mae": 5.212,
+    "gain": 0.298,
+    "gain_se": 0.004,
+    "model_bias": -0.515
+   },
+   "points": {
+    "model_mae": 4.418,
+    "season_avg_mae": 4.485,
+    "gain": 0.067,
+    "gain_se": 0.002,
+    "model_bias": -0.243
+   },
+   "rebounds": {
+    "model_mae": 1.844,
+    "season_avg_mae": 1.89,
+    "gain": 0.046,
+    "gain_se": 0.001,
+    "model_bias": -0.064
+   },
+   "assists": {
+    "model_mae": 1.122,
+    "season_avg_mae": 1.15,
+    "gain": 0.028,
+    "gain_se": 0.001,
+    "model_bias": -0.056
+   },
+   "threes": {
+    "model_mae": 0.801,
+    "season_avg_mae": 0.799,
+    "gain": -0.002,
+    "gain_se": 0.0,
+    "model_bias": -0.019
+   }
+  },
+  "truth": {
+   "player_games": 271580,
+   "minutes": {
+    "model_mae": 4.808,
+    "season_avg_mae": 5.212,
+    "gain": 0.404,
+    "gain_se": 0.004,
+    "model_bias": 0.033
+   },
+   "points": {
+    "model_mae": 4.415,
+    "season_avg_mae": 4.485,
+    "gain": 0.07,
+    "gain_se": 0.002,
+    "model_bias": -0.069
+   },
+   "rebounds": {
+    "model_mae": 1.847,
+    "season_avg_mae": 1.89,
+    "gain": 0.043,
+    "gain_se": 0.001,
+    "model_bias": 0.011
+   },
+   "assists": {
+    "model_mae": 1.124,
+    "season_avg_mae": 1.15,
+    "gain": 0.026,
+    "gain_se": 0.001,
+    "model_bias": -0.022
+   },
+   "threes": {
+    "model_mae": 0.803,
+    "season_avg_mae": 0.799,
+    "gain": -0.004,
+    "gain_se": 0.0,
+    "model_bias": 0.0
+   }
+  }
+ },
+ "miss1_rule": {
+  "flagged": 29789,
+  "flagged_sat_pct": 68.2,
+  "absences_caught_pct": 63.2,
+  "played_anyway_no_projection": 9478
+ },
+ "miss2_rule": {
+  "flagged": 18363,
+  "flagged_sat_pct": 78.8,
+  "absences_caught_pct": 45.0,
+  "played_anyway_no_projection": 3889
+ },
+ "miss3_rule": {
+  "flagged": 12766,
+  "flagged_sat_pct": 84.4,
+  "absences_caught_pct": 33.5,
+  "played_anyway_no_projection": 1992
+ }
+}

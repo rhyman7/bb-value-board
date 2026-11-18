@@ -152,6 +152,19 @@ class State:
                 c[a] += 1
         return {a: v / k for a, v in c.items()}
 
+    def streak(self, tid):
+        """Games in a row each pool player has missed, counting back from the team's latest game."""
+        games = list(self.recent[tid])
+        out = {}
+        for a in self.pool(tid):
+            k = 0
+            for gm in reversed(games):
+                if a in gm:
+                    break
+                k += 1
+            out[a] = k
+        return out
+
     def add_game(self, gp):
         """gp: the box score rows of one game (both teams)."""
         for tid, tp in gp.groupby("team_id"):
@@ -187,6 +200,13 @@ class State:
 
 def regular(role, share):
     return share >= 0.3 and role >= 10
+
+
+def inferred_out(st: State, tid, k=2):
+    """No injury report: regulars who have missed the team's last k games in a row are taken to be
+    out (college; tested in experiments/cbb_injuries.py)."""
+    pool = st.pool(tid)
+    return {a for a, n in st.streak(tid).items() if n >= k and regular(*pool[a])}
 
 
 def team_rows(st: State, tid, opp, out_ids):
