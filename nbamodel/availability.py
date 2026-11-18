@@ -40,13 +40,17 @@ def player_box(season: int, refresh: bool = False) -> pd.DataFrame:
     return p[["game_id", "season", "date", "team_id", "athlete_id", "athlete_display_name", "minutes", "gmsc", "starter"]]
 
 
-def missing_value(g: pd.DataFrame, seasons) -> pd.DataFrame:
-    """Missing value for home and away in each game of `g` (columns miss_h, miss_a, plus the names)."""
+def missing_value(g: pd.DataFrame, seasons, box_fn=None, infer_k=None) -> pd.DataFrame:
+    """Missing value for home and away in each game of `g` (columns miss_h, miss_a, plus the names).
+    box_fn: the player box loader (NBA by default). infer_k: when set, a regular counts as missing
+    only if he has sat the team's last infer_k games in a row (what can be known with no injury
+    report), instead of whether he actually played."""
     rows = []
     prev_rate = {}   # athlete -> (gmsc, minutes) last season
+    box_fn = box_fn or player_box
     for season in seasons:
         try:
-            pb = player_box(season, refresh=False)
+            pb = box_fn(season, refresh=False)
         except Exception:
             continue
         played = pb[pb.minutes > 0].sort_values(["date", "game_id"])
@@ -70,8 +74,19 @@ def missing_value(g: pd.DataFrame, seasons) -> pd.DataFrame:
                         for aid, m in gm.items():
                             mins[aid].append(m)
                     miss, who = 0.0, []
+                    if infer_k:
+                        streak = {}
+                        for aid in mins:
+                            n = 0
+                            for gm in reversed(games):
+                                if aid in gm:
+                                    break
+                                n += 1
+                            streak[aid] = n
                     for aid, ms in mins.items():
-                        if aid in here or last_team.get(aid) != tid:
+                        if last_team.get(aid) != tid:
+                            continue
+                        if (streak[aid] < infer_k) if infer_k else (aid in here):
                             continue
                         role = float(np.mean(ms))  # minutes when he plays
                         share = len(ms) / max(len(games), 1)

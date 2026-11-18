@@ -28,7 +28,7 @@
     const days = [...new Set(rows.map((r) => r.date))].sort();
     const st = { day: days[0], q: "", key: "points", asc: false, all: false };
     $("#counts").textContent = `${rows.length} players over ${days.length} day${days.length === 1 ? "" : "s"} · ` +
-      (L === "cbb" ? "no college injury report, so full rosters are assumed" : feed.injuryReport ? "injury report read" : "injury report not read, so full rosters are assumed");
+      (L === "cbb" ? `no college injury report: ${feed.inferredOut != null ? feed.inferredOut + " regulars" : "regulars"} who sat their team's last 2 games are counted out` : feed.injuryReport ? "injury report read" : "injury report not read, so full rosters are assumed");
     const seg = $("#day-seg");
     seg.innerHTML = days.map((d) => `<button type="button" data-day="${d}">${dayLabel(d)}</button>`).join("");
     const head = `<thead><tr><th class="l"><button class="sort" data-k="name">Player</button></th><th class="l"><button class="sort" data-k="team">Game</button></th>` +
@@ -83,7 +83,7 @@
     $("#cv-model").textContent = f2(h.points.model_mae) + " points";
     $("#cv-avg").textContent = f2(h.points.season_avg_mae);
     $("#bt-note").textContent = `Every regular-season game ${bt.holdout_seasons}, using only what was known before tip-off; settings were fitted on ${bt.tune_seasons}. ` +
-      `Players who played and average 15+ minutes when they play (${h.player_games.toLocaleString()} player-games). ${L === "cbb" ? "In the backtest the model knows which regulars sat. On the live board it does not, because there is no college injury report, so live results should run a little worse." : "In the backtest the model knows which regulars sat, the way it would from the injury report."}`;
+      `Players who played and average 15+ minutes when they play (${h.player_games.toLocaleString()} player-games). ${L === "cbb" ? "In the backtest the model knows which regulars sat. On the live board it only knows who has sat his team's last 2 games (there is no college injury report), so live results should run a little worse. See the injury test below." : "In the backtest the model knows which regulars sat, the way it would from the injury report."}`;
     const rows = STATS.map(([k, lab]) => { const x = h[k];
       return `<tr><td>${lab}</td><td class="w">${f2(x.model_mae)}</td><td>${f2(x.season_avg_mae)}</td><td>${x.gain != null ? f2(x.gain) + " ± " + (x.gain_se < 0.005 ? "<0.01" : f2(x.gain_se)) : "–"}</td><td>${f1((100 * (x.season_avg_mae - x.model_mae)) / x.season_avg_mae)}%</td></tr>`; }).join("");
     const t = bt.teammates_out;
@@ -95,6 +95,20 @@
       <p class="note">This is where the projections earn most of their keep: the season average does not know who is missing.${L === "cbb" ? " On the college board this only helps once a player has already missed recent games." : ""}</p></div>` : ""}</div>`;
   }
 
+  // college only: how well "sat the last k games in a row" picks who is out
+  function drawInjuryTest(t) {
+    if (!t || !t.modes) return;
+    const box = document.createElement("div");
+    const r = (k) => t[`miss${k}_rule`];
+    const rows = [1, 2, 3].map((k) => `<tr><td>${k} game${k > 1 ? "s" : ""}${k === 2 ? " (used)" : ""}</td><td>${r(k).flagged.toLocaleString()}</td><td>${f1(r(k).flagged_sat_pct)}%</td><td>${f1(r(k).absences_caught_pct)}%</td><td>${f2(t.modes["miss" + k].minutes.model_mae)}</td></tr>`).join("");
+    box.innerHTML = `<h3 style="margin-top:24px">Who is out, without an injury report (${esc(t.seasons)})</h3><div class="tbl-wrap"><table>
+      <thead><tr><th>Sat this many in a row</th><th>Flagged</th><th>Flagged who sat</th><th>Absences caught</th><th>Minutes missed by</th></tr></thead><tbody>${rows}
+      <tr><td>Nobody out</td><td>–</td><td>–</td><td>–</td><td>${f2(t.modes.none.minutes.model_mae)}</td></tr>
+      <tr><td>Perfect injury report</td><td>–</td><td>–</td><td>–</td><td>${f2(t.modes.truth.minutes.model_mae)}</td></tr></tbody></table></div>
+      <p class="note">Most college absences are one game and give no warning, so a perfect report would help more than this rule can. Points projections barely move either way; minutes do.</p>`;
+    $("#bt-body").appendChild(box);
+  }
+
   (async function boot() {
     const [feed, bt] = await Promise.all([get(L === "nba" ? "../feed/nba.json" : "../feed/cbb_players.json"), get("players_backtest.json")]);
     // the college file keys games by id and has no game list: rebuild one from the players
@@ -104,5 +118,6 @@
     drawTonight(feed);
     drawGraded(feed && feed.playerGrades);
     drawBacktest(bt);
+    if (L === "cbb") drawInjuryTest(await get("injury_test.json"));
   })();
 })();

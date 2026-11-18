@@ -1,15 +1,16 @@
 {
- "generatedAt": "2026-11-18T00:30:55+00:00",
+ "generatedAt": "2026-11-18T00:57:23+00:00",
  "season": 2027,
  "gamesRated": 660,
  "marketWeight": 0.0,
  "coefficients": {
-  "r_margin": 0.898,
-  "r_early": 0.15,
-  "rest_diff": -0.073,
-  "b2b_h": -1.991,
-  "b2b_a": 2.053,
-  "far_road_diff": -1.278
+  "r_margin": 0.9,
+  "r_early": 0.148,
+  "rest_diff": -0.071,
+  "b2b_h": -1.979,
+  "b2b_a": 2.035,
+  "far_road_diff": -1.282,
+  "miss_diff": -0.627
  },
  "games": [
   {
@@ -29,11 +30,15 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "MUR team rating (+11.9 per 100)",
-      "pts": 8.68,
+      "pts": 8.69,
       "kind": "team"
      },
      {
@@ -68,21 +73,25 @@
    "away": "RUTG",
    "home": "HOU",
    "neutral": true,
-   "margin": 17.9,
+   "margin": 18.0,
    "total": 145.9,
    "pace": 68.5,
-   "win_prob": 0.94,
-   "projection": 17.9,
+   "win_prob": 0.941,
+   "projection": 18.0,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "HOU team rating (+39.4 per 100)",
-      "pts": 27.36,
+      "pts": 27.37,
       "kind": "team"
      },
      {
@@ -127,16 +136,20 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "FLA team rating (+32.8 per 100)",
-      "pts": 23.56,
+      "pts": 23.57,
       "kind": "team"
      },
      {
       "label": "ND team rating (+16.6 per 100)",
-      "pts": -11.93,
+      "pts": -11.94,
       "kind": "team"
      },
      {
@@ -180,21 +193,25 @@
     "MRST on a second straight road game in 4 days",
     "Rivalry game"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "ARMY team rating (-12.4 per 100)",
-      "pts": -8.3,
+      "pts": -8.31,
       "kind": "team"
      },
      {
       "label": "MRST team rating (-8.1 per 100)",
-      "pts": 5.4,
+      "pts": 5.41,
       "kind": "team"
      },
      {
       "label": "Home court",
-      "pts": 3.34,
+      "pts": 3.35,
       "kind": "site"
      },
      {
@@ -234,6 +251,10 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -243,7 +264,7 @@
      },
      {
       "label": "LIB team rating (-1.8 per 100)",
-      "pts": 1.25,
+      "pts": 1.26,
       "kind": "team"
      },
      {
@@ -283,16 +304,20 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "UML team rating (-7.9 per 100)",
-      "pts": -5.38,
+      "pts": -5.39,
       "kind": "team"
      },
      {
       "label": "SPU team rating (-18.7 per 100)",
-      "pts": 12.66,
+      "pts": 12.67,
       "kind": "team"
      },
      {
@@ -334,11 +359,15 @@
    "spots": [
     "LIP on a second straight road game in 4 days"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "PUR team rating (+20.1 per 100)",
-      "pts": 14.05,
+      "pts": 14.06,
       "kind": "team"
      },
      {
@@ -348,7 +377,7 @@
      },
      {
       "label": "Home court",
-      "pts": 3.49,
+      "pts": 3.5,
       "kind": "site"
      },
      {
@@ -388,16 +417,20 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "DUKE team rating (+37.9 per 100)",
-      "pts": 29.13,
+      "pts": 29.15,
       "kind": "team"
      },
      {
       "label": "ILL team rating (+36.1 per 100)",
-      "pts": -27.77,
+      "pts": -27.79,
       "kind": "team"
      },
      {
@@ -439,16 +472,20 @@
    "spots": [
     "RID on a second straight road game in 4 days"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "MIA team rating (+22.9 per 100)",
-      "pts": 16.76,
+      "pts": 16.77,
       "kind": "team"
      },
      {
       "label": "RID team rating (-24.2 per 100)",
-      "pts": 17.74,
+      "pts": 17.76,
       "kind": "team"
      },
      {
@@ -495,11 +532,15 @@
    "spots": [
     "Rivalry game"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "DAV team rating (+7.0 per 100)",
-      "pts": 4.51,
+      "pts": 4.52,
       "kind": "team"
      },
      {
@@ -549,21 +590,25 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "BUCK team rating (-19.5 per 100)",
-      "pts": -13.84,
+      "pts": -13.85,
       "kind": "team"
      },
      {
       "label": "AKR team rating (+6.3 per 100)",
-      "pts": -4.44,
+      "pts": -4.45,
       "kind": "team"
      },
      {
       "label": "Home court",
-      "pts": 3.54,
+      "pts": 3.55,
       "kind": "site"
      },
      {
@@ -593,16 +638,22 @@
    "away": "GB",
    "home": "UWF",
    "neutral": false,
-   "margin": -1.2,
+   "margin": -1.6,
    "total": 149.5,
    "pace": 67.6,
-   "win_prob": 0.455,
-   "projection": -1.2,
+   "win_prob": 0.439,
+   "projection": -1.6,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [
+     "Jordan Samuel (missed last 2)"
+    ],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -617,8 +668,13 @@
      },
      {
       "label": "Home court",
-      "pts": 3.43,
+      "pts": 3.44,
       "kind": "site"
+     },
+     {
+      "label": "UWF without Jordan Samuel (missed last 2)",
+      "pts": -0.42,
+      "kind": "missing"
      }
     ],
     "total": [
@@ -652,6 +708,10 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -661,7 +721,7 @@
      },
      {
       "label": "MSST team rating (+18.1 per 100)",
-      "pts": -13.3,
+      "pts": -13.31,
       "kind": "team"
      },
      {
@@ -701,6 +761,10 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -715,7 +779,7 @@
      },
      {
       "label": "Home court",
-      "pts": 3.51,
+      "pts": 3.52,
       "kind": "site"
      }
     ],
@@ -753,16 +817,20 @@
     "GT has a key game next (lookahead spot)",
     "NORF on a second straight road game in 4 days"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "GT team rating (+3.9 per 100)",
-      "pts": 2.83,
+      "pts": 2.84,
       "kind": "team"
      },
      {
       "label": "NORF team rating (-23.3 per 100)",
-      "pts": 16.9,
+      "pts": 16.91,
       "kind": "team"
      },
      {
@@ -800,7 +868,7 @@
    "margin": 2.9,
    "total": 154.0,
    "pace": 74.0,
-   "win_prob": 0.61,
+   "win_prob": 0.611,
    "projection": 2.9,
    "mkt_spread": null,
    "mkt_total": null,
@@ -809,11 +877,15 @@
    "spots": [
     "CSUN is 2+ time zones from home"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "TROY team rating (-4.6 per 100)",
-      "pts": -3.42,
+      "pts": -3.43,
       "kind": "team"
      },
      {
@@ -823,7 +895,7 @@
      },
      {
       "label": "Home court",
-      "pts": 3.75,
+      "pts": 3.76,
       "kind": "site"
      },
      {
@@ -863,6 +935,10 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -919,6 +995,10 @@
    "spots": [
     "TNST on a second straight road game, new time zone"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -975,11 +1055,15 @@
    "spots": [
     "Rivalry game"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "MAN team rating (-17.6 per 100)",
-      "pts": -12.34,
+      "pts": -12.35,
       "kind": "team"
      },
      {
@@ -1029,6 +1113,10 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -1038,7 +1126,7 @@
      },
      {
       "label": "WCU team rating (-1.4 per 100)",
-      "pts": 1.05,
+      "pts": 1.06,
       "kind": "team"
      },
      {
@@ -1085,6 +1173,10 @@
    "spots": [
     "CMU on a second straight road game in 4 days"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -1134,6 +1226,10 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -1153,7 +1249,7 @@
      },
      {
       "label": "Rest days",
-      "pts": 0.15,
+      "pts": 0.14,
       "kind": "schedule"
      }
     ],
@@ -1188,6 +1284,10 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -1242,16 +1342,20 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "PITT team rating (+16.0 per 100)",
-      "pts": 11.27,
+      "pts": 11.28,
       "kind": "team"
      },
      {
       "label": "VILL team rating (+18.1 per 100)",
-      "pts": -12.76,
+      "pts": -12.77,
       "kind": "team"
      },
      {
@@ -1286,11 +1390,11 @@
    "away": "BALL",
    "home": "FSU",
    "neutral": false,
-   "margin": 25.9,
+   "margin": 26.1,
    "total": 144.8,
    "pace": 70.4,
    "win_prob": 0.982,
-   "projection": 25.9,
+   "projection": 26.1,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
@@ -1298,11 +1402,17 @@
    "spots": [
     "BALL on a second straight road game, new time zone"
    ],
+   "missing": {
+    "home": [],
+    "away": [
+     "K'Jei Parker (missed last 2)"
+    ]
+   },
    "build": {
     "margin": [
      {
       "label": "FSU team rating (+17.8 per 100)",
-      "pts": 12.71,
+      "pts": 12.72,
       "kind": "team"
      },
      {
@@ -1314,6 +1424,11 @@
       "label": "Home court",
       "pts": 3.57,
       "kind": "site"
+     },
+     {
+      "label": "BALL without K'Jei Parker (missed last 2)",
+      "pts": 0.25,
+      "kind": "missing"
      }
     ],
     "total": [
@@ -1337,11 +1452,11 @@
    "away": "CLE",
    "home": "XAV",
    "neutral": false,
-   "margin": 37.0,
+   "margin": 37.1,
    "total": 160.7,
    "pace": 75.3,
    "win_prob": 0.997,
-   "projection": 37.0,
+   "projection": 37.1,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
@@ -1350,26 +1465,30 @@
     "XAV has a key game next (lookahead spot)",
     "CLE on a second straight road game, new time zone"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "XAV team rating (+24.5 per 100)",
-      "pts": 18.76,
+      "pts": 18.78,
       "kind": "team"
      },
      {
       "label": "CLE team rating (-19.1 per 100)",
-      "pts": 14.6,
+      "pts": 14.61,
       "kind": "team"
      },
      {
       "label": "Home court",
-      "pts": 3.82,
+      "pts": 3.83,
       "kind": "site"
      },
      {
       "label": "Rest days",
-      "pts": -0.15,
+      "pts": -0.14,
       "kind": "schedule"
      }
     ],
@@ -1394,21 +1513,25 @@
    "away": "SHU",
    "home": "PROV",
    "neutral": false,
-   "margin": 26.3,
+   "margin": 26.4,
    "total": 158.7,
    "pace": 74.5,
    "win_prob": 0.983,
-   "projection": 26.3,
+   "projection": 26.4,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "PROV team rating (+16.2 per 100)",
-      "pts": 12.23,
+      "pts": 12.24,
       "kind": "team"
      },
      {
@@ -1451,7 +1574,7 @@
    "margin": 16.3,
    "total": 137.9,
    "pace": 71.8,
-   "win_prob": 0.924,
+   "win_prob": 0.925,
    "projection": 16.3,
    "mkt_spread": null,
    "mkt_total": null,
@@ -1460,6 +1583,10 @@
    "spots": [
     "JOES off an emotional win (letdown spot)"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -1469,7 +1596,7 @@
      },
      {
       "label": "WAG team rating (-14.5 per 100)",
-      "pts": 10.57,
+      "pts": 10.58,
       "kind": "team"
      },
      {
@@ -1514,11 +1641,15 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "ALA team rating (+22.9 per 100)",
-      "pts": 18.66,
+      "pts": 18.67,
       "kind": "team"
      },
      {
@@ -1556,18 +1687,22 @@
    "margin": 3.1,
    "total": 159.8,
    "pace": 71.7,
-   "win_prob": 0.616,
+   "win_prob": 0.617,
    "projection": 3.1,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "IU team rating (+19.1 per 100)",
-      "pts": 13.88,
+      "pts": 13.89,
       "kind": "team"
      },
      {
@@ -1615,6 +1750,10 @@
     "MASS off an emotional win (letdown spot)",
     "BRY on a second straight road game in 4 days"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -1667,6 +1806,10 @@
     "FIU off an emotional win (letdown spot)",
     "FIU on a second straight road game, new time zone"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -1714,23 +1857,27 @@
    "margin": 3.4,
    "total": 139.2,
    "pace": 68.7,
-   "win_prob": 0.629,
+   "win_prob": 0.63,
    "projection": 3.4,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "LT team rating (-5.5 per 100)",
-      "pts": -3.84,
+      "pts": -3.85,
       "kind": "team"
      },
      {
       "label": "JXST team rating (-5.5 per 100)",
-      "pts": 3.8,
+      "pts": 3.81,
       "kind": "team"
      },
      {
@@ -1760,26 +1907,32 @@
    "away": "EIU",
    "home": "VAN",
    "neutral": false,
-   "margin": 40.4,
+   "margin": 40.8,
    "total": 149.3,
    "pace": 69.7,
    "win_prob": 0.998,
-   "projection": 40.4,
+   "projection": 40.8,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": [
+     "Demar Burton (missed last 2)"
+    ]
+   },
    "build": {
     "margin": [
      {
       "label": "VAN team rating (+31.4 per 100)",
-      "pts": 22.25,
+      "pts": 22.26,
       "kind": "team"
      },
      {
       "label": "EIU team rating (-20.8 per 100)",
-      "pts": 14.73,
+      "pts": 14.74,
       "kind": "team"
      },
      {
@@ -1789,8 +1942,13 @@
      },
      {
       "label": "Rest days",
-      "pts": -0.15,
+      "pts": -0.14,
       "kind": "schedule"
+     },
+     {
+      "label": "EIU without Demar Burton (missed last 2)",
+      "pts": 0.44,
+      "kind": "missing"
      }
     ],
     "total": [
@@ -1824,11 +1982,15 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "USM team rating (-7.4 per 100)",
-      "pts": -5.67,
+      "pts": -5.68,
       "kind": "team"
      },
      {
@@ -1880,6 +2042,10 @@
    "spots": [
     "SIUE on a second straight road game, new time zone"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -1889,7 +2055,7 @@
      },
      {
       "label": "SIUE team rating (-10.2 per 100)",
-      "pts": 7.14,
+      "pts": 7.15,
       "kind": "team"
      },
      {
@@ -1936,6 +2102,10 @@
    "spots": [
     "LIN on a second straight road game in 4 days"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -1945,7 +2115,7 @@
      },
      {
       "label": "LIN team rating (-15.3 per 100)",
-      "pts": 11.13,
+      "pts": 11.14,
       "kind": "team"
      },
      {
@@ -1990,16 +2160,20 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "OMA team rating (-11.7 per 100)",
-      "pts": -8.23,
+      "pts": -8.24,
       "kind": "team"
      },
      {
       "label": "LAM team rating (-7.3 per 100)",
-      "pts": 5.13,
+      "pts": 5.14,
       "kind": "team"
      },
      {
@@ -2029,26 +2203,30 @@
    "away": "LEM",
    "home": "EVAN",
    "neutral": false,
-   "margin": 5.7,
+   "margin": 5.8,
    "total": 150.9,
    "pace": 72.3,
    "win_prob": 0.708,
-   "projection": 5.7,
+   "projection": 5.8,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "EVAN team rating (-10.1 per 100)",
-      "pts": -7.4,
+      "pts": -7.41,
       "kind": "team"
      },
      {
       "label": "LEM team rating (-12.9 per 100)",
-      "pts": 9.48,
+      "pts": 9.49,
       "kind": "team"
      },
      {
@@ -2091,6 +2269,10 @@
     "RICE off an emotional win (letdown spot)",
     "AMCC on a second straight road game, new time zone"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -2145,6 +2327,10 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -2154,7 +2340,7 @@
      },
      {
       "label": "BELL team rating (-14.9 per 100)",
-      "pts": 10.05,
+      "pts": 10.06,
       "kind": "team"
      },
      {
@@ -2201,21 +2387,25 @@
    "spots": [
     "DEP off an emotional win (letdown spot)"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "DEP team rating (+16.0 per 100)",
-      "pts": 10.58,
+      "pts": 10.59,
       "kind": "team"
      },
      {
       "label": "UMES team rating (-15.3 per 100)",
-      "pts": 10.12,
+      "pts": 10.13,
       "kind": "team"
      },
      {
       "label": "Home court",
-      "pts": 3.3,
+      "pts": 3.31,
       "kind": "site"
      }
     ],
@@ -2240,31 +2430,35 @@
    "away": "ORU",
    "home": "SMU",
    "neutral": false,
-   "margin": 24.9,
+   "margin": 25.0,
    "total": 159.8,
    "pace": 74.0,
    "win_prob": 0.979,
-   "projection": 24.9,
+   "projection": 25.0,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "SMU team rating (+13.1 per 100)",
-      "pts": 9.87,
+      "pts": 9.88,
       "kind": "team"
      },
      {
       "label": "ORU team rating (-15.0 per 100)",
-      "pts": 11.29,
+      "pts": 11.3,
       "kind": "team"
      },
      {
       "label": "Home court",
-      "pts": 3.75,
+      "pts": 3.76,
       "kind": "site"
      }
     ],
@@ -2299,6 +2493,10 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -2313,7 +2511,7 @@
      },
      {
       "label": "Home court",
-      "pts": 3.72,
+      "pts": 3.73,
       "kind": "site"
      }
     ],
@@ -2348,16 +2546,20 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "UTAH team rating (+8.7 per 100)",
-      "pts": 6.04,
+      "pts": 6.05,
       "kind": "team"
      },
      {
       "label": "EWU team rating (-1.7 per 100)",
-      "pts": 1.21,
+      "pts": 1.22,
       "kind": "team"
      },
      {
@@ -2399,6 +2601,10 @@
    "spots": [
     "SHSU on a second straight road game, new time zone"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -2453,16 +2659,20 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "MISS team rating (+23.8 per 100)",
-      "pts": 17.33,
+      "pts": 17.34,
       "kind": "team"
      },
      {
       "label": "NICH team rating (-8.2 per 100)",
-      "pts": 5.95,
+      "pts": 5.96,
       "kind": "team"
      },
      {
@@ -2511,6 +2721,10 @@
     "ALST on a second straight road game in 4 days",
     "ALST is 2+ time zones from home"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -2520,7 +2734,7 @@
      },
      {
       "label": "ALST team rating (-12.0 per 100)",
-      "pts": 8.93,
+      "pts": 8.94,
       "kind": "team"
      },
      {
@@ -2570,11 +2784,15 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "UVA team rating (+26.5 per 100)",
-      "pts": 18.66,
+      "pts": 18.68,
       "kind": "team"
      },
      {
@@ -2624,16 +2842,20 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "TENN team rating (+21.4 per 100)",
-      "pts": 15.42,
+      "pts": 15.43,
       "kind": "team"
      },
      {
       "label": "MSU team rating (+34.7 per 100)",
-      "pts": -24.96,
+      "pts": -24.98,
       "kind": "team"
      },
      {
@@ -2673,16 +2895,20 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "KU team rating (+36.2 per 100)",
-      "pts": 27.58,
+      "pts": 27.6,
       "kind": "team"
      },
      {
       "label": "UNLV team rating (+6.3 per 100)",
-      "pts": -4.79,
+      "pts": -4.8,
       "kind": "team"
      },
      {
@@ -2722,11 +2948,15 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "CBU team rating (-16.9 per 100)",
-      "pts": -11.37,
+      "pts": -11.38,
       "kind": "team"
      },
      {
@@ -2741,7 +2971,7 @@
      },
      {
       "label": "Rest days",
-      "pts": -0.15,
+      "pts": -0.14,
       "kind": "schedule"
      }
     ],
@@ -2776,11 +3006,15 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "STAN team rating (+10.1 per 100)",
-      "pts": 7.36,
+      "pts": 7.37,
       "kind": "team"
      },
      {
@@ -2790,7 +3024,7 @@
      },
      {
       "label": "Home court",
-      "pts": 3.64,
+      "pts": 3.65,
       "kind": "site"
      }
     ],
@@ -2815,26 +3049,30 @@
    "away": "MTST",
    "home": "GONZ",
    "neutral": false,
-   "margin": 18.8,
+   "margin": 18.9,
    "total": 151.8,
    "pace": 69.1,
    "win_prob": 0.948,
-   "projection": 18.8,
+   "projection": 18.9,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "GONZ team rating (+28.7 per 100)",
-      "pts": 20.11,
+      "pts": 20.12,
       "kind": "team"
      },
      {
       "label": "MTST team rating (+6.7 per 100)",
-      "pts": -4.7,
+      "pts": -4.71,
       "kind": "team"
      },
      {
@@ -2879,16 +3117,20 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "AUB team rating (+21.1 per 100)",
-      "pts": 14.59,
+      "pts": 14.6,
       "kind": "team"
      },
      {
       "label": "WVU team rating (+22.8 per 100)",
-      "pts": -15.81,
+      "pts": -15.82,
       "kind": "team"
      },
      {
@@ -2918,11 +3160,11 @@
    "away": "JKST",
    "home": "BAY",
    "neutral": false,
-   "margin": 29.4,
+   "margin": 31.0,
    "total": 154.5,
    "pace": 75.3,
-   "win_prob": 0.989,
-   "projection": 29.4,
+   "win_prob": 0.992,
+   "projection": 31.0,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
@@ -2931,16 +3173,22 @@
     "JKST off an emotional win (letdown spot)",
     "JKST on a second straight road game, new time zone"
    ],
+   "missing": {
+    "home": [],
+    "away": [
+     "Daeshun Ruffin (missed last 2)"
+    ]
+   },
    "build": {
     "margin": [
      {
       "label": "BAY team rating (+21.9 per 100)",
-      "pts": 16.74,
+      "pts": 16.75,
       "kind": "team"
      },
      {
       "label": "JKST team rating (-11.5 per 100)",
-      "pts": 8.81,
+      "pts": 8.82,
       "kind": "team"
      },
      {
@@ -2952,6 +3200,11 @@
       "label": "Rest days",
       "pts": 0.07,
       "kind": "schedule"
+     },
+     {
+      "label": "JKST without Daeshun Ruffin (missed last 2)",
+      "pts": 1.56,
+      "kind": "missing"
      }
     ],
     "total": [
@@ -2987,6 +3240,10 @@
    "spots": [
     "IUIN on a second straight road game in 4 days"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -2996,7 +3253,7 @@
      },
      {
       "label": "IUIN team rating (-14.6 per 100)",
-      "pts": 10.91,
+      "pts": 10.92,
       "kind": "team"
      },
      {
@@ -3043,16 +3300,20 @@
    "spots": [
     "Rivalry game"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "EMU team rating (-3.5 per 100)",
-      "pts": -2.49,
+      "pts": -2.5,
       "kind": "team"
      },
      {
       "label": "DETM team rating (-20.3 per 100)",
-      "pts": 14.25,
+      "pts": 14.26,
       "kind": "team"
      },
      {
@@ -3085,23 +3346,27 @@
    "margin": -3.3,
    "total": 168.0,
    "pace": 73.9,
-   "win_prob": 0.377,
+   "win_prob": 0.376,
    "projection": -3.3,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "WIN team rating (-9.9 per 100)",
-      "pts": -7.4,
+      "pts": -7.41,
       "kind": "team"
      },
      {
       "label": "UTC team rating (-0.5 per 100)",
-      "pts": 0.37,
+      "pts": 0.38,
       "kind": "team"
      },
      {
@@ -3141,16 +3406,20 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "UPST team rating (-16.5 per 100)",
-      "pts": -12.02,
+      "pts": -12.03,
       "kind": "team"
      },
      {
       "label": "SAM team rating (-7.9 per 100)",
-      "pts": 5.74,
+      "pts": 5.75,
       "kind": "team"
      },
      {
@@ -3190,6 +3459,10 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -3199,12 +3472,12 @@
      },
      {
       "label": "TNTC team rating (-6.7 per 100)",
-      "pts": 4.95,
+      "pts": 4.96,
       "kind": "team"
      },
      {
       "label": "Home court",
-      "pts": 3.72,
+      "pts": 3.73,
       "kind": "site"
      }
     ],
@@ -3229,16 +3502,20 @@
    "away": "NAVY",
    "home": "GTWN",
    "neutral": false,
-   "margin": 18.2,
+   "margin": 18.3,
    "total": 143.2,
    "pace": 66.0,
    "win_prob": 0.943,
-   "projection": 18.2,
+   "projection": 18.3,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -3248,7 +3525,7 @@
      },
      {
       "label": "NAVY team rating (-10.0 per 100)",
-      "pts": 6.72,
+      "pts": 6.73,
       "kind": "team"
      },
      {
@@ -3278,21 +3555,25 @@
    "away": "UNCW",
    "home": "LIU",
    "neutral": false,
-   "margin": -8.3,
+   "margin": -8.4,
    "total": 144.0,
    "pace": 71.1,
    "win_prob": 0.217,
-   "projection": -8.3,
+   "projection": -8.4,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "LIU team rating (-11.1 per 100)",
-      "pts": -8.0,
+      "pts": -8.01,
       "kind": "team"
      },
      {
@@ -3307,7 +3588,7 @@
      },
      {
       "label": "Rest days",
-      "pts": 0.15,
+      "pts": 0.14,
       "kind": "schedule"
      }
     ],
@@ -3344,6 +3625,10 @@
    "spots": [
     "BING on a second straight road game in 4 days"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -3353,7 +3638,7 @@
      },
      {
       "label": "BING team rating (-17.5 per 100)",
-      "pts": 11.95,
+      "pts": 11.96,
       "kind": "team"
      },
      {
@@ -3395,11 +3680,15 @@
    "spots": [
     "BRWN on a second straight road game in 4 days"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "HC team rating (-21.4 per 100)",
-      "pts": -15.3,
+      "pts": -15.31,
       "kind": "team"
      },
      {
@@ -3409,7 +3698,7 @@
      },
      {
       "label": "Home court",
-      "pts": 3.57,
+      "pts": 3.58,
       "kind": "site"
      },
      {
@@ -3451,11 +3740,15 @@
    "spots": [
     "WOF on a second straight road game in 4 days"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "CHSO team rating (-7.8 per 100)",
-      "pts": -6.06,
+      "pts": -6.07,
       "kind": "team"
      },
      {
@@ -3493,7 +3786,7 @@
    "margin": 19.8,
    "total": 141.8,
    "pace": 66.7,
-   "win_prob": 0.954,
+   "win_prob": 0.955,
    "projection": 19.8,
    "mkt_spread": null,
    "mkt_total": null,
@@ -3502,16 +3795,20 @@
    "spots": [
     "CHST on a second straight road game, new time zone"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "UIC team rating (+3.6 per 100)",
-      "pts": 2.4,
+      "pts": 2.41,
       "kind": "team"
      },
      {
       "label": "CHST team rating (-20.8 per 100)",
-      "pts": 14.06,
+      "pts": 14.07,
       "kind": "team"
      },
      {
@@ -3558,16 +3855,20 @@
    "spots": [
     "NJIT on a second straight road game in 4 days"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "FDU team rating (-20.7 per 100)",
-      "pts": -13.91,
+      "pts": -13.92,
       "kind": "team"
      },
      {
       "label": "NJIT team rating (-24.6 per 100)",
-      "pts": 16.56,
+      "pts": 16.57,
       "kind": "team"
      },
      {
@@ -3597,16 +3898,20 @@
    "away": "NCCU",
    "home": "GMU",
    "neutral": false,
-   "margin": 18.4,
+   "margin": 18.5,
    "total": 130.8,
    "pace": 65.0,
    "win_prob": 0.945,
-   "projection": 18.4,
+   "projection": 18.5,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -3616,7 +3921,7 @@
      },
      {
       "label": "NCCU team rating (-14.9 per 100)",
-      "pts": 9.82,
+      "pts": 9.83,
       "kind": "team"
      },
      {
@@ -3656,6 +3961,10 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -3665,7 +3974,7 @@
      },
      {
       "label": "MORE team rating (-20.1 per 100)",
-      "pts": 13.89,
+      "pts": 13.9,
       "kind": "team"
      },
      {
@@ -3705,6 +4014,10 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -3719,7 +4032,7 @@
      },
      {
       "label": "Home court",
-      "pts": 3.15,
+      "pts": 3.16,
       "kind": "site"
      }
     ],
@@ -3747,18 +4060,22 @@
    "margin": 26.6,
    "total": 158.3,
    "pace": 76.0,
-   "win_prob": 0.983,
+   "win_prob": 0.984,
    "projection": 26.6,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "SJU team rating (+28.3 per 100)",
-      "pts": 21.85,
+      "pts": 21.86,
       "kind": "team"
      },
      {
@@ -3810,6 +4127,10 @@
    "spots": [
     "TOW off an emotional win (letdown spot)"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -3866,6 +4187,10 @@
    "spots": [
     "HOW off an emotional win (letdown spot)"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -3918,6 +4243,10 @@
     "LAS has a key game next (lookahead spot)",
     "COPP on a second straight road game in 4 days"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -3927,7 +4256,7 @@
      },
      {
       "label": "COPP team rating (-15.5 per 100)",
-      "pts": 10.86,
+      "pts": 10.87,
       "kind": "team"
      },
      {
@@ -3972,11 +4301,15 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "PRES team rating (-9.7 per 100)",
-      "pts": -6.92,
+      "pts": -6.93,
       "kind": "team"
      },
      {
@@ -4023,6 +4356,10 @@
    "spots": [
     "Rivalry game"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -4037,7 +4374,7 @@
      },
      {
       "label": "Home court",
-      "pts": 3.67,
+      "pts": 3.68,
       "kind": "site"
      }
     ],
@@ -4074,6 +4411,10 @@
    "spots": [
     "FUR on a second straight road game, new time zone"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -4113,32 +4454,43 @@
    "away": "VMI",
    "home": "LONG",
    "neutral": false,
-   "margin": 8.8,
+   "margin": 9.0,
    "total": 150.6,
    "pace": 73.9,
-   "win_prob": 0.794,
-   "projection": 8.8,
+   "win_prob": 0.8,
+   "projection": 9.0,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": [
+     "AJ Clark (missed last 3)"
+    ]
+   },
    "build": {
     "margin": [
      {
       "label": "LONG team rating (-6.6 per 100)",
-      "pts": -4.95,
+      "pts": -4.96,
       "kind": "team"
      },
      {
       "label": "VMI team rating (-13.3 per 100)",
-      "pts": 9.98,
+      "pts": 9.99,
       "kind": "team"
      },
      {
       "label": "Home court",
-      "pts": 3.75,
+      "pts": 3.76,
       "kind": "site"
+     },
+     {
+      "label": "VMI without AJ Clark (missed last 3)",
+      "pts": 0.21,
+      "kind": "missing"
      }
     ],
     "total": [
@@ -4172,16 +4524,20 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "NCAT team rating (-8.7 per 100)",
-      "pts": -6.65,
+      "pts": -6.66,
       "kind": "team"
      },
      {
       "label": "MORG team rating (-14.5 per 100)",
-      "pts": 11.02,
+      "pts": 11.03,
       "kind": "team"
      },
      {
@@ -4221,11 +4577,15 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "SC team rating (+11.3 per 100)",
-      "pts": 7.56,
+      "pts": 7.57,
       "kind": "team"
      },
      {
@@ -4235,7 +4595,7 @@
      },
      {
       "label": "Home court",
-      "pts": 3.34,
+      "pts": 3.35,
       "kind": "site"
      }
     ],
@@ -4263,13 +4623,17 @@
    "margin": 2.1,
    "total": 138.4,
    "pace": 63.5,
-   "win_prob": 0.579,
+   "win_prob": 0.58,
    "projection": 2.1,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -4326,11 +4690,15 @@
    "spots": [
     "NIU on a second straight road game, new time zone"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "MARQ team rating (+26.2 per 100)",
-      "pts": 18.3,
+      "pts": 18.31,
       "kind": "team"
      },
      {
@@ -4380,11 +4748,15 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "CIN team rating (+24.2 per 100)",
-      "pts": 17.75,
+      "pts": 17.76,
       "kind": "team"
      },
      {
@@ -4394,7 +4766,7 @@
      },
      {
       "label": "Home court",
-      "pts": 3.66,
+      "pts": 3.67,
       "kind": "site"
      }
     ],
@@ -4429,21 +4801,25 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "TTU team rating (+30.2 per 100)",
-      "pts": 22.52,
+      "pts": 22.53,
       "kind": "team"
      },
      {
       "label": "NOLA team rating (-8.7 per 100)",
-      "pts": 6.45,
+      "pts": 6.46,
       "kind": "team"
      },
      {
       "label": "Home court",
-      "pts": 3.72,
+      "pts": 3.73,
       "kind": "site"
      }
     ],
@@ -4480,6 +4856,10 @@
    "spots": [
     "UAPB on a second straight road game, new time zone"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -4489,7 +4869,7 @@
      },
      {
       "label": "UAPB team rating (-34.5 per 100)",
-      "pts": 27.47,
+      "pts": 27.49,
       "kind": "team"
      },
      {
@@ -4537,16 +4917,20 @@
     "LSU off an emotional win (letdown spot)",
     "ULM on a second straight road game, new time zone"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "LSU team rating (+27.2 per 100)",
-      "pts": 20.86,
+      "pts": 20.88,
       "kind": "team"
      },
      {
       "label": "ULM team rating (-15.7 per 100)",
-      "pts": 12.06,
+      "pts": 12.07,
       "kind": "team"
      },
      {
@@ -4588,6 +4972,10 @@
    "spots": [
     "FAMU on a second straight road game in 4 days"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -4597,7 +4985,7 @@
      },
      {
       "label": "FAMU team rating (-27.4 per 100)",
-      "pts": 20.3,
+      "pts": 20.32,
       "kind": "team"
      },
      {
@@ -4632,11 +5020,11 @@
    "away": "UIW",
    "home": "TXST",
    "neutral": false,
-   "margin": 22.5,
+   "margin": 22.6,
    "total": 140.5,
    "pace": 68.0,
    "win_prob": 0.97,
-   "projection": 22.5,
+   "projection": 22.6,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
@@ -4644,6 +5032,10 @@
    "spots": [
     "TXST off an emotional win (letdown spot)"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -4653,7 +5045,7 @@
      },
      {
       "label": "UIW team rating (-19.5 per 100)",
-      "pts": 13.44,
+      "pts": 13.45,
       "kind": "team"
      },
      {
@@ -4688,11 +5080,11 @@
    "away": "PFW",
    "home": "BRAD",
    "neutral": false,
-   "margin": 8.1,
+   "margin": 7.5,
    "total": 139.5,
    "pace": 68.7,
-   "win_prob": 0.776,
-   "projection": 8.1,
+   "win_prob": 0.76,
+   "projection": 7.5,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
@@ -4701,6 +5093,12 @@
     "BRAD off an emotional win (letdown spot)",
     "PFW on a second straight road game in 4 days"
    ],
+   "missing": {
+    "home": [
+     "Josh Ibukunoluwa (missed last 2)"
+    ],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -4710,7 +5108,7 @@
      },
      {
       "label": "PFW team rating (-10.1 per 100)",
-      "pts": 7.03,
+      "pts": 7.04,
       "kind": "team"
      },
      {
@@ -4722,6 +5120,11 @@
       "label": "Rest days",
       "pts": -0.07,
       "kind": "schedule"
+     },
+     {
+      "label": "BRAD without Josh Ibukunoluwa (missed last 2)",
+      "pts": -0.58,
+      "kind": "missing"
      }
     ],
     "total": [
@@ -4755,6 +5158,10 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -4797,7 +5204,7 @@
    "margin": -2.7,
    "total": 127.3,
    "pace": 70.1,
-   "win_prob": 0.397,
+   "win_prob": 0.398,
    "projection": -2.7,
    "mkt_spread": null,
    "mkt_total": null,
@@ -4806,16 +5213,20 @@
    "spots": [
     "UNH on a second straight road game in 4 days"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "STO team rating (-19.9 per 100)",
-      "pts": -14.17,
+      "pts": -14.18,
       "kind": "team"
      },
      {
       "label": "UNH team rating (-11.2 per 100)",
-      "pts": 7.98,
+      "pts": 7.99,
       "kind": "team"
      },
      {
@@ -4860,16 +5271,20 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "GWEB team rating (-20.7 per 100)",
-      "pts": -14.77,
+      "pts": -14.78,
       "kind": "team"
      },
      {
       "label": "UNCG team rating (-10.2 per 100)",
-      "pts": 7.27,
+      "pts": 7.28,
       "kind": "team"
      },
      {
@@ -4911,6 +5326,10 @@
    "spots": [
     "LUC off an emotional win (letdown spot)"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -4920,7 +5339,7 @@
      },
      {
       "label": "WICH team rating (+13.7 per 100)",
-      "pts": -9.97,
+      "pts": -9.98,
       "kind": "team"
      },
      {
@@ -4960,6 +5379,10 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -5011,11 +5434,15 @@
    "spots": [
     "Rivalry game"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "SYR team rating (+18.7 per 100)",
-      "pts": 14.13,
+      "pts": 14.14,
       "kind": "team"
      },
      {
@@ -5065,21 +5492,25 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "NEB team rating (+31.6 per 100)",
-      "pts": 23.77,
+      "pts": 23.79,
       "kind": "team"
      },
      {
       "label": "SDAK team rating (-17.3 per 100)",
-      "pts": 13.06,
+      "pts": 13.07,
       "kind": "team"
      },
      {
       "label": "Home court",
-      "pts": 3.76,
+      "pts": 3.77,
       "kind": "site"
      },
      {
@@ -5121,21 +5552,25 @@
    "spots": [
     "CONN is 2+ time zones from home"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "ARIZ team rating (+27.8 per 100)",
-      "pts": 19.86,
+      "pts": 19.87,
       "kind": "team"
      },
      {
       "label": "CONN team rating (+33.0 per 100)",
-      "pts": -23.59,
+      "pts": -23.61,
       "kind": "team"
      },
      {
       "label": "Home court",
-      "pts": 3.57,
+      "pts": 3.58,
       "kind": "site"
      },
      {
@@ -5165,26 +5600,30 @@
    "away": "UNCO",
    "home": "BYU",
    "neutral": false,
-   "margin": 28.9,
+   "margin": 29.0,
    "total": 163.0,
    "pace": 72.9,
-   "win_prob": 0.988,
-   "projection": 28.9,
+   "win_prob": 0.989,
+   "projection": 29.0,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "BYU team rating (+23.4 per 100)",
-      "pts": 17.33,
+      "pts": 17.34,
       "kind": "team"
      },
      {
       "label": "UNCO team rating (-10.7 per 100)",
-      "pts": 7.9,
+      "pts": 7.91,
       "kind": "team"
      },
      {
@@ -5226,16 +5665,20 @@
    "spots": [
     "Rivalry game"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "USU team rating (+26.5 per 100)",
-      "pts": 20.5,
+      "pts": 20.51,
       "kind": "team"
      },
      {
       "label": "WEB team rating (-12.7 per 100)",
-      "pts": 9.8,
+      "pts": 9.81,
       "kind": "team"
      },
      {
@@ -5277,6 +5720,10 @@
    "spots": [
     "CSU has a key game next (lookahead spot)"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -5324,7 +5771,7 @@
    "margin": 23.2,
    "total": 159.3,
    "pace": 67.9,
-   "win_prob": 0.972,
+   "win_prob": 0.973,
    "projection": 23.2,
    "mkt_spread": null,
    "mkt_total": null,
@@ -5333,11 +5780,15 @@
    "spots": [
     "OAK is 2+ time zones from home"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "ASU team rating (+18.2 per 100)",
-      "pts": 12.57,
+      "pts": 12.58,
       "kind": "team"
      },
      {
@@ -5389,6 +5840,10 @@
    "spots": [
     "Rivalry game"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -5433,16 +5888,22 @@
    "away": "PORT",
    "home": "COLO",
    "neutral": false,
-   "margin": 15.5,
+   "margin": 15.7,
    "total": 156.4,
    "pace": 74.8,
-   "win_prob": 0.916,
-   "projection": 15.5,
+   "win_prob": 0.918,
+   "projection": 15.7,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": [
+     "Carlin Briggs (missed last 2)"
+    ]
+   },
    "build": {
     "margin": [
      {
@@ -5452,13 +5913,18 @@
      },
      {
       "label": "PORT team rating (-5.0 per 100)",
-      "pts": 3.79,
+      "pts": 3.8,
       "kind": "team"
      },
      {
       "label": "Home court",
       "pts": 3.8,
       "kind": "site"
+     },
+     {
+      "label": "PORT without Carlin Briggs (missed last 2)",
+      "pts": 0.2,
+      "kind": "missing"
      }
     ],
     "total": [
@@ -5492,16 +5958,20 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "CREI team rating (+15.5 per 100)",
-      "pts": 11.3,
+      "pts": 11.31,
       "kind": "team"
      },
      {
       "label": "BCU team rating (-2.7 per 100)",
-      "pts": 1.96,
+      "pts": 1.97,
       "kind": "team"
      },
      {
@@ -5548,16 +6018,20 @@
    "spots": [
     "ALCN on a second straight road game, new time zone"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "MIZ team rating (+27.9 per 100)",
-      "pts": 19.96,
+      "pts": 19.98,
       "kind": "team"
      },
      {
       "label": "ALCN team rating (-24.1 per 100)",
-      "pts": 17.29,
+      "pts": 17.31,
       "kind": "team"
      },
      {
@@ -5604,6 +6078,10 @@
    "spots": [
     "UCR on a second straight road game in 4 days"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -5613,7 +6091,7 @@
      },
      {
       "label": "UCR team rating (-4.6 per 100)",
-      "pts": 3.46,
+      "pts": 3.47,
       "kind": "team"
      },
      {
@@ -5653,6 +6131,10 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -5662,7 +6144,7 @@
      },
      {
       "label": "IDHO team rating (-6.3 per 100)",
-      "pts": 4.52,
+      "pts": 4.53,
       "kind": "team"
      },
      {
@@ -5704,6 +6186,10 @@
    "spots": [
     "UL is 2+ time zones from home"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -5713,12 +6199,12 @@
      },
      {
       "label": "UL team rating (-13.0 per 100)",
-      "pts": 8.62,
+      "pts": 8.63,
       "kind": "team"
      },
      {
       "label": "Home court",
-      "pts": 3.32,
+      "pts": 3.33,
       "kind": "site"
      },
      {
@@ -5758,6 +6244,10 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -5810,21 +6300,25 @@
     "TXSO on a second straight road game in 4 days",
     "TXSO is 2+ time zones from home"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "SDSU team rating (+15.3 per 100)",
-      "pts": 11.8,
+      "pts": 11.81,
       "kind": "team"
      },
      {
       "label": "TXSO team rating (-10.7 per 100)",
-      "pts": 8.29,
+      "pts": 8.3,
       "kind": "team"
      },
      {
       "label": "Home court",
-      "pts": 3.86,
+      "pts": 3.87,
       "kind": "site"
      },
      {
@@ -5869,11 +6363,15 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "UCLA team rating (+32.8 per 100)",
-      "pts": 25.56,
+      "pts": 25.58,
       "kind": "team"
      },
      {
@@ -5888,7 +6386,7 @@
      },
      {
       "label": "Rest days",
-      "pts": 0.15,
+      "pts": 0.14,
       "kind": "schedule"
      }
     ],
@@ -5916,23 +6414,27 @@
    "margin": -6.8,
    "total": 162.6,
    "pace": 74.6,
-   "win_prob": 0.26,
+   "win_prob": 0.259,
    "projection": -6.8,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "MUR team rating (+11.9 per 100)",
-      "pts": 9.0,
+      "pts": 9.01,
       "kind": "team"
      },
      {
       "label": "NCSU team rating (+20.9 per 100)",
-      "pts": -15.82,
+      "pts": -15.83,
       "kind": "team"
      },
      {
@@ -5972,6 +6474,10 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -6011,16 +6517,20 @@
    "away": "ME",
    "home": "QUIN",
    "neutral": false,
-   "margin": 8.0,
+   "margin": 8.1,
    "total": 136.7,
    "pace": 68.6,
    "win_prob": 0.775,
-   "projection": 8.0,
+   "projection": 8.1,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -6030,7 +6540,7 @@
      },
      {
       "label": "ME team rating (-13.4 per 100)",
-      "pts": 9.35,
+      "pts": 9.36,
       "kind": "team"
      },
      {
@@ -6070,6 +6580,10 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -6079,12 +6593,12 @@
      },
      {
       "label": "LR team rating (-10.1 per 100)",
-      "pts": 6.88,
+      "pts": 6.89,
       "kind": "team"
      },
      {
       "label": "Home court",
-      "pts": 3.39,
+      "pts": 3.4,
       "kind": "site"
      },
      {
@@ -6124,11 +6638,15 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "GRAM team rating (-10.5 per 100)",
-      "pts": -7.93,
+      "pts": -7.94,
       "kind": "team"
      },
      {
@@ -6180,21 +6698,25 @@
    "spots": [
     "OSU has a key game next (lookahead spot)"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "OSU team rating (+17.7 per 100)",
-      "pts": 12.89,
+      "pts": 12.9,
       "kind": "team"
      },
      {
       "label": "UMBC team rating (-9.6 per 100)",
-      "pts": 6.99,
+      "pts": 7.0,
       "kind": "team"
      },
      {
       "label": "Home court",
-      "pts": 3.64,
+      "pts": 3.65,
       "kind": "site"
      }
     ],
@@ -6219,11 +6741,11 @@
    "away": "BUF",
    "home": "SBU",
    "neutral": false,
-   "margin": 14.7,
+   "margin": 14.8,
    "total": 147.6,
    "pace": 68.6,
    "win_prob": 0.906,
-   "projection": 14.7,
+   "projection": 14.8,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
@@ -6232,11 +6754,15 @@
     "BUF off an emotional win (letdown spot)",
     "Rivalry game"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "SBU team rating (+7.6 per 100)",
-      "pts": 5.29,
+      "pts": 5.3,
       "kind": "team"
      },
      {
@@ -6246,7 +6772,7 @@
      },
      {
       "label": "Home court",
-      "pts": 3.48,
+      "pts": 3.49,
       "kind": "site"
      }
     ],
@@ -6283,6 +6809,10 @@
    "spots": [
     "BTLR has a key game next (lookahead spot)"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -6297,7 +6827,7 @@
      },
      {
       "label": "Home court",
-      "pts": 3.87,
+      "pts": 3.88,
       "kind": "site"
      }
     ],
@@ -6336,11 +6866,15 @@
     "MTST on a second straight road game, new time zone",
     "MTST is 2+ time zones from home"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "HPU team rating (+15.8 per 100)",
-      "pts": 10.94,
+      "pts": 10.95,
       "kind": "team"
      },
      {
@@ -6390,11 +6924,15 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "LT team rating (-5.5 per 100)",
-      "pts": -3.95,
+      "pts": -3.96,
       "kind": "team"
      },
      {
@@ -6429,11 +6967,11 @@
    "away": "COFC",
    "home": "DRKE",
    "neutral": false,
-   "margin": -5.5,
+   "margin": -5.6,
    "total": 154.6,
    "pace": 70.0,
    "win_prob": 0.299,
-   "projection": -5.5,
+   "projection": -5.6,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
@@ -6441,11 +6979,15 @@
    "spots": [
     "COFC off an emotional win (letdown spot)"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "DRKE team rating (-6.6 per 100)",
-      "pts": -4.71,
+      "pts": -4.72,
       "kind": "team"
      },
      {
@@ -6497,16 +7039,20 @@
    "spots": [
     "LOU has a key game next (lookahead spot)"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "LOU team rating (+20.9 per 100)",
-      "pts": 14.78,
+      "pts": 14.79,
       "kind": "team"
      },
      {
       "label": "STET team rating (-16.3 per 100)",
-      "pts": 11.54,
+      "pts": 11.55,
       "kind": "team"
      },
      {
@@ -6548,16 +7094,20 @@
    "spots": [
     "TEX off an emotional win (letdown spot)"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "TEX team rating (+28.4 per 100)",
-      "pts": 20.61,
+      "pts": 20.63,
       "kind": "team"
      },
      {
       "label": "SUU team rating (-15.2 per 100)",
-      "pts": 11.06,
+      "pts": 11.07,
       "kind": "team"
      },
      {
@@ -6597,6 +7147,10 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -6641,37 +7195,48 @@
    "away": "TA&M",
    "home": "TCU",
    "neutral": false,
-   "margin": -1.5,
+   "margin": -1.2,
    "total": 165.2,
    "pace": 78.9,
-   "win_prob": 0.443,
-   "projection": -1.5,
+   "win_prob": 0.455,
+   "projection": -1.2,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": [
+     "Cade Phillips (missed last 2)"
+    ]
+   },
    "build": {
     "margin": [
      {
       "label": "TCU team rating (+17.8 per 100)",
-      "pts": 14.28,
+      "pts": 14.29,
       "kind": "team"
      },
      {
       "label": "TA&M team rating (+24.6 per 100)",
-      "pts": -19.71,
+      "pts": -19.72,
       "kind": "team"
      },
      {
       "label": "Home court",
-      "pts": 4.0,
+      "pts": 4.01,
       "kind": "site"
      },
      {
       "label": "Rest days",
       "pts": -0.07,
       "kind": "schedule"
+     },
+     {
+      "label": "TA&M without Cade Phillips (missed last 2)",
+      "pts": 0.32,
+      "kind": "missing"
      }
     ],
     "total": [
@@ -6705,6 +7270,10 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -6714,7 +7283,7 @@
      },
      {
       "label": "GASO team rating (-7.5 per 100)",
-      "pts": 5.55,
+      "pts": 5.56,
       "kind": "team"
      },
      {
@@ -6754,16 +7323,20 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "WIS team rating (+14.3 per 100)",
-      "pts": 10.18,
+      "pts": 10.19,
       "kind": "team"
      },
      {
       "label": "HALL team rating (+12.3 per 100)",
-      "pts": -8.8,
+      "pts": -8.81,
       "kind": "team"
      },
      {
@@ -6803,6 +7376,10 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -6850,18 +7427,22 @@
    "margin": 14.2,
    "total": 161.1,
    "pace": 71.6,
-   "win_prob": 0.899,
+   "win_prob": 0.9,
    "projection": 14.2,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "WASH team rating (+8.2 per 100)",
-      "pts": 5.95,
+      "pts": 5.96,
       "kind": "team"
      },
      {
@@ -6906,6 +7487,10 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -6915,7 +7500,7 @@
      },
      {
       "label": "UCSB team rating (+10.5 per 100)",
-      "pts": -7.31,
+      "pts": -7.32,
       "kind": "team"
      },
      {
@@ -6945,11 +7530,11 @@
    "away": "ORST",
    "home": "ORE",
    "neutral": true,
-   "margin": 2.6,
+   "margin": 2.2,
    "total": 164.4,
    "pace": 71.2,
-   "win_prob": 0.599,
-   "projection": 2.6,
+   "win_prob": 0.582,
+   "projection": 2.2,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
@@ -6957,6 +7542,12 @@
    "spots": [
     "Rivalry game"
    ],
+   "missing": {
+    "home": [
+     "Tyrone Riley IV (missed last 2)"
+    ],
+    "away": []
+   },
    "build": {
     "margin": [
      {
@@ -6978,6 +7569,11 @@
       "label": "Rest days",
       "pts": -0.07,
       "kind": "schedule"
+     },
+     {
+      "label": "ORE without Tyrone Riley IV (missed last 2)",
+      "pts": -0.46,
+      "kind": "missing"
      }
     ],
     "total": [
@@ -7014,16 +7610,20 @@
     "ETAM on a second straight road game in 4 days",
     "ETAM is 2+ time zones from home"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "CAL team rating (+6.9 per 100)",
-      "pts": 5.01,
+      "pts": 5.02,
       "kind": "team"
      },
      {
       "label": "ETAM team rating (-9.2 per 100)",
-      "pts": 6.65,
+      "pts": 6.66,
       "kind": "team"
      },
      {
@@ -7066,23 +7666,27 @@
    "margin": 18.2,
    "total": 145.7,
    "pace": 74.4,
-   "win_prob": 0.942,
+   "win_prob": 0.943,
    "projection": 18.2,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "STAN team rating (+10.1 per 100)",
-      "pts": 7.63,
+      "pts": 7.64,
       "kind": "team"
      },
      {
       "label": "SAC team rating (-9.0 per 100)",
-      "pts": 6.77,
+      "pts": 6.78,
       "kind": "team"
      },
      {
@@ -7124,16 +7728,20 @@
    "spots": [
     "VCU is 2+ time zones from home"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "SCU team rating (+14.9 per 100)",
-      "pts": 11.33,
+      "pts": 11.34,
       "kind": "team"
      },
      {
       "label": "VCU team rating (+15.6 per 100)",
-      "pts": -11.88,
+      "pts": -11.89,
       "kind": "team"
      },
      {
@@ -7182,11 +7790,15 @@
     "TAR on a second straight road game, new time zone",
     "TAR is 2+ time zones from home"
    ],
+   "missing": {
+    "home": [],
+    "away": []
+   },
    "build": {
     "margin": [
      {
       "label": "USC team rating (+27.0 per 100)",
-      "pts": 21.15,
+      "pts": 21.17,
       "kind": "team"
      },
      {
@@ -7196,7 +7808,7 @@
      },
      {
       "label": "Home court",
-      "pts": 3.92,
+      "pts": 3.93,
       "kind": "site"
      },
      {

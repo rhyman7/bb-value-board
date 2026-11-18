@@ -107,7 +107,7 @@
         <p class="note">Lines are ESPN's, from the team's side (negative = favored).</p></div>
         <div class="two">${formTable(g.away, T[g.away] && T[g.away].last10)}${formTable(g.home, T[g.home] && T[g.home].last10)}</div></section>` : ""}
       ${g.players && (g.players.home.length || g.players.away.length) ? `<section><div class="section-head"><h2>Player projections</h2>
-        <p class="note">The model's projection, with the player's season average under it. Minutes come from his recent minutes and who is out${L === "cbb" ? " (there is no college injury report, so full rosters are assumed)" : feed.injuryReport ? "" : " (the injury report could not be read for this update, so full rosters are assumed)"}; production per minute is adjusted for the opponent. <a href="players.html">All players tonight and how the projections have done</a>.</p></div>
+        <p class="note">The model's projection, with the player's season average under it. Minutes come from his recent minutes and who is out${L === "cbb" ? " (there is no college injury report, so a regular who has sat his team's last 2 games is counted out, plus anyone ESPN lists)" : feed.injuryReport ? "" : " (the injury report could not be read for this update, so full rosters are assumed)"}; production per minute is adjusted for the opponent. <a href="players.html">All players tonight and how the projections have done</a>.</p></div>
         <div class="two">${playerTable(g.away, g.players.away, g.players.out && g.players.out.away)}${playerTable(g.home, g.players.home, g.players.out && g.players.out.home)}</div></section>` : ""}`;
   }
   boot();

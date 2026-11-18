@@ -20,7 +20,7 @@ import pandas as pd
 from nbamodel import archive, gamepage, lines as line_log, players
 from nbamodel.ratings import rating_projection
 
-from . import backtest, data, players as cbb_players, ratings, roster, spots
+from . import availability, backtest, data, players as cbb_players, ratings, roster, spots
 
 ET = ZoneInfo("America/New_York")
 ROOT = Path(__file__).resolve().parent.parent
@@ -84,6 +84,7 @@ def run():
     shifts = roster.prior_shift(range(backtest.FIRST_RATED, season + 1))
     seasons = list(range(backtest.FIRST_RATED, season + 1))
     rated, final = ratings.walk_forward(g_done, backtest.SETTINGS, seasons=seasons, shifts=shifts, return_final=True)
+    rated = rated.merge(availability.missing_value(g_done, seasons)[["game_id", "miss_h", "miss_a"]], on="game_id", how="left")
     rated = backtest.add_features(rating_projection(rated))
     rated = rated.merge(spots.spots(g_done, rated), on="game_id", how="left")
     rated["far_road_diff"] = rated.far_road_diff.fillna(0.0)
@@ -102,6 +103,15 @@ def run():
             last_played[t] = max(last_played.get(t, x.date), x.date)
 
     lines = line_log.espn_lines("cbb", sorted(set(s.day)))
+    # who is out: no college injury report, so regulars who sat their last 2 games, plus anyone ESPN
+    # lists Out or Doubtful for today's games (ESPN's college coverage is thin)
+    espn_out, espn_note = availability.espn_injuries([str(x) for x in s[s.day == today].game_id])
+    try:
+        miss, miss_detail, out_ids = availability.current(season, espn_out)
+    except Exception as e:
+        print("missing players failed:", repr(e))
+        miss, miss_detail, out_ids = {}, {}, set()
+    print(espn_note, f"; {len(out_ids)} regulars counted out")
     tags, far = upcoming_spots(g_done, rated, sched, d1, final, today, lines)
     games = []
     for x in s.sort_values("et").itertuples():
@@ -114,6 +124,7 @@ def run():
             "lg_eff": final["_mean"], "lg_hca": backtest.SETTINGS.hca, "lg_pace": final["_pace"],
             "neutral": bool(x.neutral_site), "rest_h": rest(hid), "rest_a": rest(aid), "g7_h": 0, "g7_a": 0, "n_this": n_this,
             "far_road_diff": far.get(str(x.game_id), 0.0),
+            "miss_h": miss.get(hid, 0.0), "miss_a": miss.get(aid, 0.0),
         }])
         row = backtest.predict(backtest.add_features(rating_projection(row)), coef).iloc[0]
         m = float(row.m_margin)
@@ -121,7 +132,8 @@ def run():
         cm = {k: v for k, v in coef.items() if k != "r_early"}
         cm["r_margin"] = coef["r_margin"] + coef.get("r_early", 0.0) * fade
         build = gamepage.build(row, {"margin": cm, "total": {"const": 0.0, "r_total": 1.0}},
-                               x.home_abbreviation, x.away_abbreviation, {}, False)
+                               x.home_abbreviation, x.away_abbreviation,
+                               {"h": miss_detail.get(hid, []), "a": miss_detail.get(aid, [])}, False)
         sp, tot, ml_h, ml_a = lines.get(str(x.game_id), (None, None, None, None))
         games.append({
             "id": str(x.game_id), "date": x.day.isoformat(), "tip": x.et.isoformat(), "away": x.away_abbreviation, "home": x.home_abbreviation,
@@ -129,6 +141,7 @@ def run():
             "pace": round(float(row.r_pace), 1), "win_prob": round(float(1 / (1 + np.exp(-m / 6.5))), 3),
             "projection": round(m, 1), "mkt_spread": sp, "mkt_total": tot, "mkt_ml_home": ml_h, "mkt_ml_away": ml_a,
             "spots": tags.get(str(x.game_id), []),
+            "missing": {"home": [n for n, _ in miss_detail.get(hid, [])], "away": [n for n, _ in miss_detail.get(aid, [])]},
             "build": build,
         })
     # game pages: four factors with ranks (among all of Division I) and last ten games, for the teams on the board
@@ -169,13 +182,13 @@ def run():
             players.run(L)
         pst = players.state_today(season, lg=L)
         sx = s.sort_values("et")
-        proj = players.tonight(pst, [(x["id"], int(r.home_id), int(r.away_id)) for x, r in zip(games, sx.itertuples())], set(), abbr_of, lg=L)
+        proj = players.tonight(pst, [(x["id"], int(r.home_id), int(r.away_id)) for x, r in zip(games, sx.itertuples())], out_ids, abbr_of, lg=L)
         for x in games:
             if x["id"] in proj:
                 proj[x["id"]]["date"] = x["date"]
         todays = {k: v for k, v in proj.items() if v.get("date") == today.isoformat()}
         n_players = players.log(today, todays, lg=L)
-        PFEED.write_text(json.dumps({"generatedAt": feed["generatedAt"], "injuryReport": False,
+        PFEED.write_text(json.dumps({"generatedAt": feed["generatedAt"], "injuryReport": False, "inferredOut": len(out_ids),
                                      "games": proj, "playerGrades": players.grade_log(season, lg=L)}, allow_nan=False))
     except Exception as e:
         print("college player projections failed:", repr(e))
