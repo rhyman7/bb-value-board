@@ -1,7 +1,7 @@
 name: Odds API past props pull
 
 # Pull of past NBA player props for the props backtest. Runs on demand only, with the markets and
-# credit cap Ryan approved; resumes where it stopped and commits the CSV to the branch it ran on.
+# credit cap Ryan approved (2026-11-18: all four stats, about 100 games, about 4,000 credits); resumes where it stopped and commits the CSV to the branch it ran on.
 on:
   workflow_dispatch:
     inputs:
@@ -10,7 +10,10 @@ on:
         default: "player_points"
       max_credits:
         description: "Stop before using more than this many credits"
-        default: "1600"
+        default: "4050"
+      per_day:
+        description: "Games taken from each game day"
+        default: "3"
 
 permissions:
   contents: write
@@ -33,6 +36,7 @@ jobs:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           PROP_MARKETS: ${{ inputs.markets }}
           MAX_CREDITS: ${{ inputs.max_credits }}
+          MAX_PER_DAY: ${{ inputs.per_day }}
       - name: Commit
         if: always()
         run: |

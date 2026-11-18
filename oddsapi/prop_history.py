@@ -57,6 +57,7 @@ def run():
     assert all(m in MARKETS for m in markets.split(","))
     per_game = 10 * len(markets.split(","))
     days = json.loads((DIR / "props_plan.json").read_text())["days"]
+    per_day = int(os.environ.get("MAX_PER_DAY", "3"))
     done = set()
     if PATH.exists():
         with gzip.open(PATH, "rt", newline="") as f:
@@ -75,7 +76,10 @@ def run():
             except Exception as ex:
                 print("  events failed", day, repr(ex))
                 continue
-            for e in evs.get("data", []):
+            taken = 0
+            for e in sorted(evs.get("data", []), key=lambda e: e["id"]):
+                if taken >= per_day:
+                    break
                 tip = datetime.fromisoformat(e["commence_time"].replace("Z", "+00:00"))
                 if not (d0 + timedelta(hours=16) <= tip <= d0 + timedelta(hours=36)) or e["id"] in done:
                     continue
@@ -92,6 +96,7 @@ def run():
                 for r in rows or [{"day": day, "event_id": e["id"], "commence_time": e["commence_time"]}]:
                     w.writerow(r)
                 done.add(e["id"])
+                taken += 1
                 f.flush()
     print("days done; credits used", client.used_total)
 
