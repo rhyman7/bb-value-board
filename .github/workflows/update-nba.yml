@@ -36,6 +36,8 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python -m pytest -q
       - name: Projections
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}   # NBA props on the late-afternoon run only, about 4 credits a game
         run: |
           if [ "${{ inputs.backtest }}" = "true" ] || [ "$(date -u +%u)" = "1" ]; then
             python -m nbamodel.pipeline --backtest
