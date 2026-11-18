@@ -162,3 +162,16 @@ a.bug { color: inherit; text-decoration: none; } a.bug:hover { border-color: var
 .rk.q5 { border-color: var(--axis); color: var(--ink-2); }
 td.w { font-weight: 700; }
 .cbar.u { background: none; }
+
+/* ---- player projections ---- */
+table.pl td small { display: block; font-size: 11.5px; color: var(--ink-3); line-height: 1.2; }
+table.pl td.l, table.pl th.l { white-space: nowrap; }
+.grades { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 20px 28px; }
+.grades > div { display: grid; gap: 10px; }
+button.more { font: 600 14px var(--sans); color: var(--ink); background: var(--surface); border: 1px solid var(--axis); border-radius: 5px; padding: 8px 14px; cursor: pointer; }
+button.more:hover { background: var(--raised); }
+.grades > div { min-width: 0; }
+th button.sort { all: unset; cursor: pointer; }
+th button.sort:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+th[aria-sort] button.sort::after { content: " \25BE"; }
+th[aria-sort="ascending"] button.sort::after { content: " \25B4"; }

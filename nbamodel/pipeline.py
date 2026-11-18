@@ -20,7 +20,7 @@ from zoneinfo import ZoneInfo
 import numpy as np
 import pandas as pd
 
-from . import availability, backtest, data, gamepage, lines as line_log, market, model, ratings
+from . import availability, backtest, data, gamepage, lines as line_log, market, model, players, ratings
 
 ET = ZoneInfo("America/New_York")
 ROOT = Path(__file__).resolve().parent.parent
@@ -228,10 +228,28 @@ def run(do_backtest: bool = False):
         t["stats"] = tstats.get(ab)
         t["last10"] = form.get(ab, [])
 
+    # player projections for every game on the board; today's are logged and graded the next morning
+    n_players, pgrade = 0, None
+    try:
+        if do_backtest or not players.PARAMS_FILE.exists():
+            players.run()
+        pst = players.state_today(season)
+        pid = {int(k): v for k, v in abbr.items()}
+        proj = players.tonight(pst, [(x["id"], int(r.home_id), int(r.away_id)) for x, r in
+                                     zip(games, sched.sort_values("et").itertuples())], set(inj or {}), pid)
+        for x in games:
+            x["players"] = proj.get(x["id"])
+        todays = {k: v for k, v in proj.items() if any(x["id"] == k and x["date"] == today.isoformat() for x in games)}
+        n_players = players.log(today, todays)
+        pgrade = players.grade_log(season)
+    except Exception as e:  # the board still goes out without them
+        print("player projections failed:", repr(e))
+
     feed = {
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "season": season,
         "injuryReport": inj is not None,
+        "playerGrades": pgrade,
         "marketRatings": mk is not None,
         "marketWeight": {"side": round(w_side, 3), "total": round(w_total, 3)},
         "homeCourt": round(hca * pmean / 100, 2),
@@ -244,7 +262,7 @@ def run(do_backtest: bool = False):
     line_log.log("nba", games)
     print(f"{len(games)} games projected for {today} to {today + timedelta(days=DAYS_AHEAD - 1)}; "
           f"injury report {'read' if inj is not None else 'NOT read (full rosters assumed)'}; "
-          f"{sum(1 for x in games if x['mkt_spread'] is not None)} with a market line")
+          f"{sum(1 for x in games if x['mkt_spread'] is not None)} with a market line; {n_players} player projections logged")
     return feed
 
 

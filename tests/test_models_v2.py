@@ -75,3 +75,30 @@ def test_moneyline_parse_and_grade(tmp_path, monkeypatch):
     e = ml["by_edge"]["4%+"]
     assert ml["games"] == 10 and e["bets"] == 10 and e["won"] == 6
     assert abs(e["roi_pct"] - 100 * (6 * 1.4 - 4) / 10) < 0.1
+
+
+def test_player_projection_shape():
+    """team_rows/project on a tiny made-up season: projections exist, are non-negative, minutes
+    capped, and a missing regular shows up in the out list."""
+    import pandas as pd
+    from nbamodel import players as P
+    st = P.State()
+    rows = []
+    for g in range(6):
+        for tid, opp in ((1, 2), (2, 1)):
+            for a in range(8):
+                aid = tid * 100 + a
+                rows.append({"game_id": f"g{g}", "team_id": tid, "opponent_team_id": opp, "athlete_id": aid,
+                             "athlete_display_name": f"P{aid}", "minutes": 36 - 3 * a, "points": 20 - 2 * a,
+                             "rebounds": 5, "assists": 3, "threes": 1})
+    df = pd.DataFrame(rows)
+    for _, gp in df.groupby("game_id"):
+        st.add_game(gp)
+    r = P.team_rows(st, 1, 2, {100})
+    assert r and all(x["athlete_id"] != 100 for x in r)
+    assert r[0]["out"] == ["P100"]
+    params = {"minutes": {"const": 0.0, "ewm15": 0.0, "ewm30": 1.0, "role": 0.0, "season_avg": 0.0, "last_game": 0.0, "teammates_out": 1.0},
+              "beta": {s: 1.0 for s in P.STATS}, "u": {s: 0.5 for s in P.STATS}}
+    p = P.project(pd.DataFrame(r), params)
+    assert (p.p_minutes <= P.MAX_MIN).all() and (p[[f"p_{s}" for s in P.STATS]] >= 0).all().all()
+    assert p.p_minutes.iloc[0] > 33   # picks up some of the missing starter's minutes

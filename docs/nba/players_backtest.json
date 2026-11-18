@@ -1,0 +1,284 @@
+{
+ "params": {
+  "minutes": {
+   "const": 1.9803,
+   "ewm15": -0.1939,
+   "ewm30": 0.5377,
+   "role": 0.1707,
+   "season_avg": 0.2655,
+   "last_game": 0.1,
+   "teammates_out": 0.4787
+  },
+  "beta": {
+   "points": 1.0,
+   "rebounds": 1.0,
+   "assists": 1.0,
+   "threes": 1.0
+  },
+  "u": {
+   "points": 0.0,
+   "rebounds": 0.0,
+   "assists": 0.0,
+   "threes": 0.0
+  },
+  "cal": {
+   "minutes": [
+    -0.6728,
+    0.9462,
+    0.0803
+   ],
+   "points": [
+    -0.8772,
+    0.953,
+    0.136
+   ],
+   "rebounds": [
+    -0.2325,
+    0.8729,
+    0.1652
+   ],
+   "assists": [
+    -0.1383,
+    0.8724,
+    0.2118
+   ],
+   "threes": [
+    -0.0406,
+    0.8973,
+    0.1428
+   ]
+  }
+ },
+ "tune_seasons": "2021-2023",
+ "holdout_seasons": "2024-2026",
+ "tune": {
+  "player_games": 54537,
+  "minutes": {
+   "model_mae": 4.645,
+   "season_avg_mae": 5.184,
+   "gain": 0.539,
+   "gain_se": 0.012,
+   "model_bias": 0.001
+  },
+  "points": {
+   "model_mae": 4.88,
+   "season_avg_mae": 5.007,
+   "gain": 0.126,
+   "gain_se": 0.007,
+   "model_bias": 0.0
+  },
+  "rebounds": {
+   "model_mae": 1.967,
+   "season_avg_mae": 2.024,
+   "gain": 0.057,
+   "gain_se": 0.003,
+   "model_bias": -0.0
+  },
+  "assists": {
+   "model_mae": 1.409,
+   "season_avg_mae": 1.427,
+   "gain": 0.018,
+   "gain_se": 0.002,
+   "model_bias": -0.0
+  },
+  "threes": {
+   "model_mae": 0.95,
+   "season_avg_mae": 0.953,
+   "gain": 0.003,
+   "gain_se": 0.001,
+   "model_bias": -0.0
+  }
+ },
+ "holdout": {
+  "player_games": 56980,
+  "minutes": {
+   "model_mae": 4.598,
+   "season_avg_mae": 5.145,
+   "gain": 0.547,
+   "gain_se": 0.011,
+   "model_bias": -0.06
+  },
+  "points": {
+   "model_mae": 4.923,
+   "season_avg_mae": 5.06,
+   "gain": 0.137,
+   "gain_se": 0.007,
+   "model_bias": 0.065
+  },
+  "rebounds": {
+   "model_mae": 1.968,
+   "season_avg_mae": 2.025,
+   "gain": 0.057,
+   "gain_se": 0.003,
+   "model_bias": -0.052
+  },
+  "assists": {
+   "model_mae": 1.471,
+   "season_avg_mae": 1.499,
+   "gain": 0.028,
+   "gain_se": 0.002,
+   "model_bias": 0.004
+  },
+  "threes": {
+   "model_mae": 0.977,
+   "season_avg_mae": 0.983,
+   "gain": 0.007,
+   "gain_se": 0.001,
+   "model_bias": -0.009
+  }
+ },
+ "by_season": {
+  "2024": {
+   "player_games": 18691,
+   "minutes": {
+    "model_mae": 4.667,
+    "season_avg_mae": 5.24,
+    "gain": 0.573,
+    "gain_se": 0.02,
+    "model_bias": -0.206
+   },
+   "points": {
+    "model_mae": 4.936,
+    "season_avg_mae": 5.056,
+    "gain": 0.12,
+    "gain_se": 0.011,
+    "model_bias": 0.183
+   },
+   "rebounds": {
+    "model_mae": 1.964,
+    "season_avg_mae": 2.021,
+    "gain": 0.057,
+    "gain_se": 0.004,
+    "model_bias": -0.071
+   },
+   "assists": {
+    "model_mae": 1.484,
+    "season_avg_mae": 1.516,
+    "gain": 0.032,
+    "gain_se": 0.003,
+    "model_bias": -0.036
+   },
+   "threes": {
+    "model_mae": 0.961,
+    "season_avg_mae": 0.97,
+    "gain": 0.009,
+    "gain_se": 0.002,
+    "model_bias": -0.014
+   }
+  },
+  "2025": {
+   "player_games": 18928,
+   "minutes": {
+    "model_mae": 4.582,
+    "season_avg_mae": 5.115,
+    "gain": 0.533,
+    "gain_se": 0.02,
+    "model_bias": -0.046
+   },
+   "points": {
+    "model_mae": 4.95,
+    "season_avg_mae": 5.097,
+    "gain": 0.147,
+    "gain_se": 0.012,
+    "model_bias": -0.013
+   },
+   "rebounds": {
+    "model_mae": 1.993,
+    "season_avg_mae": 2.05,
+    "gain": 0.057,
+    "gain_se": 0.005,
+    "model_bias": -0.071
+   },
+   "assists": {
+    "model_mae": 1.463,
+    "season_avg_mae": 1.489,
+    "gain": 0.026,
+    "gain_se": 0.003,
+    "model_bias": 0.028
+   },
+   "threes": {
+    "model_mae": 0.991,
+    "season_avg_mae": 0.996,
+    "gain": 0.005,
+    "gain_se": 0.002,
+    "model_bias": -0.022
+   }
+  },
+  "2026": {
+   "player_games": 19361,
+   "minutes": {
+    "model_mae": 4.548,
+    "season_avg_mae": 5.084,
+    "gain": 0.536,
+    "gain_se": 0.02,
+    "model_bias": 0.068
+   },
+   "points": {
+    "model_mae": 4.883,
+    "season_avg_mae": 5.027,
+    "gain": 0.144,
+    "gain_se": 0.011,
+    "model_bias": 0.027
+   },
+   "rebounds": {
+    "model_mae": 1.948,
+    "season_avg_mae": 2.003,
+    "gain": 0.055,
+    "gain_se": 0.004,
+    "model_bias": -0.015
+   },
+   "assists": {
+    "model_mae": 1.467,
+    "season_avg_mae": 1.492,
+    "gain": 0.025,
+    "gain_se": 0.003,
+    "model_bias": 0.02
+   },
+   "threes": {
+    "model_mae": 0.978,
+    "season_avg_mae": 0.984,
+    "gain": 0.006,
+    "gain_se": 0.002,
+    "model_bias": 0.009
+   }
+  }
+ },
+ "teammates_out": {
+  "player_games": 26039,
+  "minutes": {
+   "model_mae": 4.816,
+   "season_avg_mae": 5.657,
+   "gain": 0.841,
+   "gain_se": 0.02,
+   "model_bias": -0.2
+  },
+  "points": {
+   "model_mae": 5.022,
+   "season_avg_mae": 5.222,
+   "gain": 0.2,
+   "gain_se": 0.011,
+   "model_bias": -0.266
+  },
+  "rebounds": {
+   "model_mae": 2.007,
+   "season_avg_mae": 2.063,
+   "gain": 0.056,
+   "gain_se": 0.004,
+   "model_bias": -0.086
+  },
+  "assists": {
+   "model_mae": 1.505,
+   "season_avg_mae": 1.54,
+   "gain": 0.035,
+   "gain_se": 0.003,
+   "model_bias": -0.063
+  },
+  "threes": {
+   "model_mae": 0.999,
+   "season_avg_mae": 1.001,
+   "gain": 0.001,
+   "gain_se": 0.002,
+   "model_bias": -0.039
+  }
+ }
+}
