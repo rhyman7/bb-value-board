@@ -57,6 +57,15 @@
       <thead><tr><th>Date</th><th class="l">Opponent</th><th>Result</th><th>Line</th><th>ATS</th></tr></thead><tbody>${rows}</tbody></table></div></div>`;
   }
 
+  // player projections: model next to the player's season average (small, under it)
+  function playerTable(team, list, out) {
+    if (!list || !list.length) return "";
+    const cell = (p, k) => `<td>${f1(p[k])}${p.avg && p.avg[k] != null ? `<small>${f1(p.avg[k])}</small>` : ""}</td>`;
+    const rows = list.map((p) => `<tr><td class="l">${esc(p.name)}</td>${["minutes", "points", "rebounds", "assists", "threes"].map((k) => cell(p, k)).join("")}</tr>`).join("");
+    return `<div><h3>${esc(team)}</h3>${out && out.length ? `<p class="note">Out: ${out.map(esc).join(", ")}</p>` : ""}<div class="tbl-wrap"><table class="pl">
+      <thead><tr><th class="l">Player</th><th>Min</th><th>Pts</th><th>Reb</th><th>Ast</th><th>3PM</th></tr></thead><tbody>${rows}</tbody></table></div></div>`;
+  }
+
   async function boot() {
     const id = new URLSearchParams(location.search).get("id");
     let feed = null;
@@ -93,7 +102,10 @@
         <div class="two">${matchTable(g.away, g.home, T, labels, nTeams)}${matchTable(g.home, g.away, T, labels, nTeams)}</div></section>` : ""}
       ${T[g.home] && T[g.home].last10 ? `<section><div class="section-head"><h2>Recent form</h2>
         <p class="note">Lines are ESPN's, from the team's side (negative = favored).</p></div>
-        <div class="two">${formTable(g.away, T[g.away] && T[g.away].last10)}${formTable(g.home, T[g.home] && T[g.home].last10)}</div></section>` : ""}`;
+        <div class="two">${formTable(g.away, T[g.away] && T[g.away].last10)}${formTable(g.home, T[g.home] && T[g.home].last10)}</div></section>` : ""}
+      ${g.players && (g.players.home.length || g.players.away.length) ? `<section><div class="section-head"><h2>Player projections</h2>
+        <p class="note">The model's projection, with the player's season average under it. Minutes come from his recent minutes and who is out${feed.injuryReport ? "" : " (the injury report could not be read for this update, so full rosters are assumed)"}; production per minute is adjusted for the opponent. <a href="players.html">All players tonight and how the projections have done</a>.</p></div>
+        <div class="two">${playerTable(g.away, g.players.away, g.players.out && g.players.out.away)}${playerTable(g.home, g.players.home, g.players.out && g.players.out.home)}</div></section>` : ""}`;
   }
   boot();
 })();
