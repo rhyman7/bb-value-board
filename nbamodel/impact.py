@@ -118,7 +118,37 @@ def _accumulate(rows, index, n):
     return A, b
 
 
-def walk(seasons, lam=LAMBDA, current=None):
+PRIOR_SLOPE, PRIOR_CONST = 0.17, -1.9   # impact ~ 0.17 x Game Score per 48 - 1.9 (2018-20 regulars)
+
+
+def _box_prior(season, cut, index, n, cache):
+    """Box-score prior for each player at `cut`: Game Score per 48 this season to date plus half of
+    last season, shrunk toward replacement with 300 minutes, mapped onto the impact scale."""
+    from .availability import PRIOR_MIN, REPLACEMENT, player_box
+    for s in (season, season - 1):
+        if s not in cache:
+            try:
+                cache[s] = player_box(s)
+            except Exception:
+                cache[s] = None
+    pr = np.zeros(n)
+    parts = []
+    if cache.get(season) is not None:
+        c = cache[season]
+        parts.append(c[c.date < cut][["athlete_id", "gmsc", "minutes"]])
+    if cache.get(season - 1) is not None:
+        parts.append(cache[season - 1][["athlete_id", "gmsc", "minutes"]].assign(gmsc=lambda d: d.gmsc * 0.5, minutes=lambda d: d.minutes * 0.5))
+    if not parts:
+        return pr
+    agg = pd.concat(parts).groupby("athlete_id")[["gmsc", "minutes"]].sum()
+    rate = (agg.gmsc + REPLACEMENT * PRIOR_MIN) / (agg.minutes + PRIOR_MIN) * 48
+    for a, v in (PRIOR_SLOPE * rate + PRIOR_CONST).items():
+        if a in index:
+            pr[index[a]] = v
+    return pr
+
+
+def walk(seasons, lam=LAMBDA, current=None, box_prior=False):
     """Walk-forward ratings. Returns (fits, index): fits is a list of (from_date, ratings array, home)
     in date order; a game on date d uses the last fit with from_date <= d. `current`: the season in
     progress, whose rows are rebuilt from fresh box scores."""
@@ -128,6 +158,7 @@ def walk(seasons, lam=LAMBDA, current=None):
     n = len(index) + 1
     full = {}
     fits = []
+    pcache = {}
     P = np.full(n, lam)
     P[-1] = 1e-6
     for s in seasons:
@@ -153,7 +184,8 @@ def walk(seasons, lam=LAMBDA, current=None):
                 a_, b_ = _accumulate(chunk, index, n)
                 Ac += a_
                 bc += b_
-            sol = np.linalg.solve(A0 + Ac + np.diag(P), b0 + bc)
+            prior = _box_prior(s, c, index, n, pcache) if box_prior else np.zeros(n)
+            sol = np.linalg.solve(A0 + Ac + np.diag(P), b0 + bc + P * prior)
             fits.append((c, sol[:-1].copy(), float(sol[-1])))
         full[s] = (Ac, bc)
     return fits, index

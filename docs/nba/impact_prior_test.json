@@ -1,0 +1,70 @@
+{
+ "lam0.3": {
+  "tune": {
+   "games": 4747,
+   "base_mae": 9.9058,
+   "new_mae": 9.904,
+   "change": -0.0018,
+   "se": 0.0011
+  },
+  "holdout": {
+   "games": 7233,
+   "base_mae": 10.6659,
+   "new_mae": 10.6633,
+   "change": -0.0026,
+   "se": 0.001
+  },
+  "passes": true
+ },
+ "lam1": {
+  "tune": {
+   "games": 4747,
+   "base_mae": 9.9058,
+   "new_mae": 9.9112,
+   "change": 0.0055,
+   "se": 0.006
+  },
+  "holdout": {
+   "games": 7233,
+   "base_mae": 10.6659,
+   "new_mae": 10.6598,
+   "change": -0.0062,
+   "se": 0.0048
+  },
+  "passes": false
+ },
+ "lam3": {
+  "tune": {
+   "games": 4747,
+   "base_mae": 9.9058,
+   "new_mae": 9.92,
+   "change": 0.0142,
+   "se": 0.0113
+  },
+  "holdout": {
+   "games": 7233,
+   "base_mae": 10.6659,
+   "new_mae": 10.6724,
+   "change": 0.0065,
+   "se": 0.0091
+  },
+  "passes": false
+ },
+ "lam10": {
+  "tune": {
+   "games": 4747,
+   "base_mae": 9.9058,
+   "new_mae": 9.9255,
+   "change": 0.0197,
+   "se": 0.0158
+  },
+  "holdout": {
+   "games": 7233,
+   "base_mae": 10.6659,
+   "new_mae": 10.6959,
+   "change": 0.0299,
+   "se": 0.0131
+  },
+  "passes": false
+ }
+}

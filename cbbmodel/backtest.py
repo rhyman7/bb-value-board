@@ -23,10 +23,10 @@ import pandas as pd
 from nbamodel import model as nba_model
 from nbamodel.ratings import rating_projection
 
-from . import availability, data, ratings, roster, spots
+from . import availability, data, lineup, ratings, roster, spots
 
 SETTINGS = ratings.Settings(half_life=240.0, ridge_eff=3.0, carry=0.85, roster_k=0.3)
-FEATURES = ["r_margin", "r_early", "rest_diff", "b2b_h", "b2b_a", "far_road_diff", "miss_diff"]
+FEATURES = ["r_margin", "r_early", "rest_diff", "b2b_h", "b2b_a", "far_road_diff", "miss_diff", "lineup_diff"]
 # miss_diff: home minus away value of regulars who have sat their team's last 2 games in a row
 # (cbbmodel/availability.py; no college injury report). Added 2026-11-17 after it passed the keep rule:
 # holdout 2019-23 home games 8.974 -> 8.969 (0.0052 +/- 0.0024), tuning 8.902 -> 8.890
@@ -51,6 +51,7 @@ def add_features(df):
     the model gets a second, fading copy of the ratings' margin to stretch them back out."""
     df = nba_model.features(df)
     df["r_early"] = df.r_margin * np.clip(1 - df.n_this / EARLY_GAMES, 0, 1)
+    df["lineup_diff"] = df["lineup_diff"].fillna(0.0) if "lineup_diff" in df else 0.0
     return df
 
 
@@ -82,13 +83,19 @@ def grade(x):
     }
 
 
-def run(last_season, verbose=True):
+def run(last_season, verbose=True, extra=None):
+    """extra: optional per-game feature columns (with game_id) for experiments, filled with 0 when missing."""
     g = data.all_games(last_season, refresh_spreads=True)
     shifts = roster.prior_shift(range(FIRST_RATED, last_season + 1))
     seasons = list(range(FIRST_RATED, last_season + 1))
     rated = rating_projection(ratings.walk_forward(g, SETTINGS, seasons=seasons, shifts=shifts))
     rated = rated.merge(availability.missing_value(g, seasons)[["game_id", "miss_h", "miss_a"]], on="game_id", how="left")
+    rated = rated.merge(lineup.history(g, seasons, current=last_season)[["game_id", "lineup_diff"]], on="game_id", how="left")
     rated = add_features(rated)
+    if extra is not None:
+        rated = rated.merge(extra, on="game_id", how="left")
+        cols = [c for c in extra.columns if c != "game_id"]
+        rated[cols] = rated[cols].fillna(0.0)
     # situational spots: each tested against the line on its own; only far_road_diff is in the model
     rated = rated.merge(spots.spots(g, rated), on="game_id", how="left")
     rated["far_road_diff"] = rated.far_road_diff.fillna(0.0)

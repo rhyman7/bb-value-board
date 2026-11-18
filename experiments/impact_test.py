@@ -57,3 +57,16 @@ if __name__ == "__main__":
                 res[f"{tag}_lam{lam:g}_replace_missing"] = r = compare(base, run(gs, ["imp_diff"], drop=["miss_diff"], avail=avail))
                 print(tag, lam, "replace", json.dumps(r), flush=True)
     OUT.write_text(json.dumps(res, indent=1))
+
+
+def prior_test(lams=(0.3, 1.0, 3.0)):
+    """The same test with a box-score prior: compared with the impact ratings now in the model."""
+    from nbamodel import impact as I
+    base = run()
+    out = {}
+    for lam in lams:
+        fits, index = I.walk(SEASONS, lam=lam, box_prior=True)
+        gs = I.game_strength(SEASONS, fits, index)[["game_id", "imp_diff"]].rename(columns={"imp_diff": "imp_prior"})
+        out[f"lam{lam:g}"] = r = compare(base, run(gs, ["imp_prior"], drop=["imp_diff"]))
+        print("box prior", lam, json.dumps(r), flush=True)
+    return out
