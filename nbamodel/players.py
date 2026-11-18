@@ -50,6 +50,21 @@ def box(season: int, refresh: bool = False) -> pd.DataFrame:
     return clean_box(p[p.season_type == 2].copy())
 
 
+POS_GROUPS = ("G", "F", "C")
+
+
+def pos_group(abbr: str) -> str:
+    """ESPN's listed position -> guard, forward or center ("" when unknown)."""
+    a = abbr.upper()
+    if a.startswith("C") or a == "F-C":
+        return "C"
+    if a in ("PG", "SG", "G", "G-F"):
+        return "G"
+    if a in ("SF", "PF", "F", "GF"):
+        return "F"
+    return ""
+
+
 def clean_box(p: pd.DataFrame) -> pd.DataFrame:
     """hoopR player box rows -> one row per player who played, with the stats used here."""
     for c in ["minutes", "points", "rebounds", "assists", "three_point_field_goals_made"]:
@@ -61,8 +76,10 @@ def clean_box(p: pd.DataFrame) -> pd.DataFrame:
     p["opponent_team_id"] = p.opponent_team_id.astype(int)
     p["game_id"] = p.game_id.astype(str)
     p["date"] = pd.to_datetime(p.game_date)
+    pos = p["athlete_position_abbreviation"] if "athlete_position_abbreviation" in p else pd.Series("", index=p.index)
+    p["pos"] = pos.fillna("").astype(str).map(pos_group)
     keep = ["game_id", "date", "team_id", "opponent_team_id", "home_away", "athlete_id", "athlete_display_name",
-            "team_abbreviation", "minutes"] + STATS
+            "team_abbreviation", "pos", "minutes"] + STATS
     return p[keep].sort_values(["date", "game_id"]).reset_index(drop=True)
 
 
@@ -108,6 +125,9 @@ class State:
         self.recent = defaultdict(lambda: deque(maxlen=WINDOW))   # team -> deque of {athlete: minutes}
         self.allowed = defaultdict(lambda: defaultdict(float))    # team -> stat -> allowed sum, "games"
         self.league = defaultdict(float)                          # stat -> sum over team-games, "games"
+        self.pos = {}                                             # athlete -> latest listed position group
+        self.allowed_pos = defaultdict(lambda: defaultdict(lambda: defaultdict(float)))  # team -> group -> stat/"minutes"
+        self.league_pos = defaultdict(lambda: defaultdict(float))                       # group -> stat/"minutes"
 
     def rate(self, aid, stat):
         t, p = self.tot[aid], self.prev.get(aid)
@@ -129,6 +149,21 @@ class State:
         lg = self.league[stat] / g
         a = self.allowed[tid]
         return (a[stat] + lg * OPP_GAMES) / ((a["games"] + OPP_GAMES) * lg)
+
+    def opp_pos_factor(self, tid, grp, stat):
+        """What this opponent has allowed per minute to players at this position, against the league,
+        shrunk with OPP_GAMES games of the league's rate. Falls back to the team-wide factor when the
+        position is unknown."""
+        lp = self.league_pos.get(grp)
+        g = self.league["games"]
+        if not grp or not lp or not lp["minutes"] or not g:
+            return self.opp_factor(tid, stat)
+        lr = lp[stat] / lp["minutes"]
+        if lr <= 0:
+            return 1.0
+        prior = OPP_GAMES * lp["minutes"] / g          # minutes this position plays in OPP_GAMES games
+        a = self.allowed_pos[tid][grp]
+        return (a[stat] + lr * prior) / ((a["minutes"] + prior) * lr)
 
     def pool(self, tid):
         """Regulars and others who played for this team in its last WINDOW games: athlete -> (minutes
@@ -178,6 +213,15 @@ class State:
                 a[s] += v
                 self.league[s] += v
             for r in tp.itertuples():
+                grp = getattr(r, "pos", "")
+                if grp:
+                    self.pos[r.athlete_id] = grp
+                    ap, lp = self.allowed_pos[opp][grp], self.league_pos[grp]
+                    ap["minutes"] += r.minutes
+                    lp["minutes"] += r.minutes
+                    for s in STATS:
+                        ap[s] += getattr(r, s)
+                        lp[s] += getattr(r, s)
                 t = self.tot[r.athlete_id]
                 t["minutes"] += r.minutes
                 t["games"] += 1
@@ -242,6 +286,8 @@ def team_rows(st: State, tid, opp, out_ids):
                      "last_min": float(last.get(a, 0.0)), "miss_ratio": missing_min / avail_min,
                      **{f"rate_{s}": rates[a][s] for s in STATS},
                      **{f"opp_{s}": st.opp_factor(opp, s) for s in STATS},
+                     "pos": st.pos.get(a, ""),
+                     **{f"opp_pos_{s}": st.opp_pos_factor(opp, st.pos.get(a, ""), s) for s in STATS},
                      **{f"mshare_{s}": share[s] for s in STATS},
                      "base_games": t["games"],
                      **{f"avg_{s}": (t[s] / t["games"]) if t["games"] else np.nan for s in STATS + ["minutes"]},

@@ -1,0 +1,82 @@
+{
+ "league": "nba",
+ "position_known_share": 1.0,
+ "spread_of_position_vs_team_factor_log_sd": {
+  "points": 0.0347,
+  "rebounds": 0.0364,
+  "assists": 0.0596,
+  "threes": 0.0912
+ },
+ "today_beta": {
+  "points": 1.0,
+  "rebounds": 1.0,
+  "assists": 1.0,
+  "threes": 1.0
+ },
+ "new_beta": {
+  "points": 1.0,
+  "rebounds": 1.0,
+  "assists": 1.0,
+  "threes": 1.0
+ },
+ "gamma": {
+  "points": 0.5,
+  "rebounds": 0.5,
+  "assists": 0.5,
+  "threes": 0.0
+ },
+ "tune": {
+  "player_games": 54537,
+  "points": {
+   "today_mae": 4.8803,
+   "position_mae": 4.8805,
+   "change": 0.0002,
+   "se": 0.001
+  },
+  "rebounds": {
+   "today_mae": 1.9674,
+   "position_mae": 1.9667,
+   "change": -0.0007,
+   "se": 0.0004
+  },
+  "assists": {
+   "today_mae": 1.4091,
+   "position_mae": 1.4091,
+   "change": 0.0,
+   "se": 0.0003
+  },
+  "threes": {
+   "today_mae": 0.9501,
+   "position_mae": 0.9501,
+   "change": 0.0,
+   "se": 0.0
+  }
+ },
+ "holdout": {
+  "player_games": 56980,
+  "points": {
+   "today_mae": 4.9226,
+   "position_mae": 4.9223,
+   "change": -0.0003,
+   "se": 0.0009
+  },
+  "rebounds": {
+   "today_mae": 1.968,
+   "position_mae": 1.9682,
+   "change": 0.0003,
+   "se": 0.0003
+  },
+  "assists": {
+   "today_mae": 1.4711,
+   "position_mae": 1.4712,
+   "change": 0.0001,
+   "se": 0.0003
+  },
+  "threes": {
+   "today_mae": 0.9766,
+   "position_mae": 0.9766,
+   "change": 0.0,
+   "se": 0.0
+  }
+ }
+}
