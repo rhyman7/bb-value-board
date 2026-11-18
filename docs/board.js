@@ -263,6 +263,22 @@
       <p class="note">If the line keeps moving toward the model more than half the time, the model is seeing something before the market does. That is the first sign of an edge, and it shows up long before a win-loss record means anything.</p>`;
   }
 
+  // NBA only: does the model beat the line when injury news breaks before tip (pretip.py)
+  function drawPretip(pt) {
+    const box = $("#openers-body");
+    if (!box) return;
+    const body = pt && pt.news_events ? `<div class="tbl-wrap"><table><thead><tr><th></th><th>Result</th></tr></thead><tbody>
+        <tr><td>Times injury news moved the model 0.5+ points</td><td>${pt.news_events}</td></tr>
+        <tr><td>Line then moved toward the model</td><td>${pt.line_moved_toward_model_pct == null ? "–" : pt.line_moved_toward_model_pct.toFixed(1) + "%"}</td></tr>
+        <tr><td>Average move toward the model</td><td>${pt.avg_move_toward_model == null ? "–" : minus(f1(pt.avg_move_toward_model)) + " pts"}</td></tr>
+        <tr><td>Model's side at the line when the news broke</td><td>${rec(pt.record_at_news_line)} ${pctCell(pt.record_at_news_line)}</td></tr>
+        <tr><td>Same side at the last line before tip</td><td>${rec(pt.record_at_close_same_side)} ${pctCell(pt.record_at_close_same_side)}</td></tr></tbody></table></div>
+        <p class="note">${pt.runs} pre-tip runs over ${pt.games_logged} games. Too early to read before a couple of hundred news events.</p>`
+      : `<p class="empty">From November 18, 2026 the board re-reads the injury report every 30 minutes before tip-off, updates the model's number and logs the line. Results show here once news has moved the model and the games are over.</p>`;
+    box.insertAdjacentHTML("beforeend", `<h3 style="margin-top:24px">When injury news breaks before tip</h3>
+      <p class="note">If the model reacts to a late scratch before the books do, the line should keep moving its way after the news. This is where an edge is most likely to show.</p>${body}`);
+  }
+
   // NBA only: tests on past lines (Odds API) and the live first-half record
   function drawSoft(past, tt, sm) {
     const box = $("#soft-body");
@@ -306,8 +322,9 @@
     if (mlHtml) $("#model-body").insertAdjacentHTML("beforeend", mlHtml);
     drawOpeners(op);
     if (L === "nba") {
-      const [past, tt, sm] = await Promise.all([get("../opening_lines_test.json"), get("../team_totals_test.json"), get("soft_markets.json")]);
+      const [past, tt, sm, pt] = await Promise.all([get("../opening_lines_test.json"), get("../team_totals_test.json"), get("soft_markets.json"), get("pretip.json")]);
       drawSoft(past, tt, sm);
+      drawPretip(pt);
     }
   }
   boot();

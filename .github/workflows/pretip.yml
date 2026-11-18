@@ -1,0 +1,45 @@
+name: NBA pre-tip updates
+
+# Every 30 minutes from about 4 PM to 11 PM New York time on NBA nights: re-read the injury report,
+# update the model's number for games tipping within 3.5 hours, and log it with the line (Odds API,
+# 1 credit, read on the hour or when the injury report changed: about 300 credits a month).
+# Approved by Ryan on 2026-11-18.
+on:
+  schedule:
+    - cron: "7,37 21-23 * 10-12,1-6 *"
+    - cron: "7,37 0-4 * 10-12,1-6 *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-nba
+  cancel-in-progress: false
+
+jobs:
+  pretip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/cache/restore@v4
+        with:
+          path: data/cache
+          key: hoopr-${{ github.run_id }}
+          restore-keys: hoopr-
+      - run: pip install -r requirements.txt
+      - name: Pre-tip update
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python -m nbamodel.pretip
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/lines/nba_pretip.csv 2>/dev/null || true
+          if git diff --staged --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "Pre-tip update ($(date -u +%Y-%m-%dT%H:%MZ))"
+          for i in 1 2 3; do git pull --rebase origin main && git push && break; sleep 10; done

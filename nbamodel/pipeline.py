@@ -216,6 +216,8 @@ def run(do_backtest: bool = False):
             "win_prob": round(float(1 / (1 + np.exp(-float(row.m_margin) / 7.0))), 3),
             "rest": {"away": int(row.rest_a), "home": int(row.rest_h)},
             "build": build,
+            "imp": {"home": None if row.imp_h is None or pd.isna(row.imp_h) else round(float(row.imp_h), 3),
+                    "away": None if row.imp_a is None or pd.isna(row.imp_a) else round(float(row.imp_a), 3)},
             "missing": {"away": round(float(row.miss_a), 1), "home": round(float(row.miss_h), 1),
                         "away_names": miss_names.get(aid, []), "home_names": miss_names.get(hid, [])},
         })
@@ -299,6 +301,11 @@ def run(do_backtest: bool = False):
     # past nights: freeze today's games before tip-off, grade the ones that have finished
     archive.freeze("nba", games, now)
     archive.grade("nba", g[g.season == season], f"{season - 1}-10-01")
+    try:   # the pre-tip injury-news test (pretip.py)
+        from . import pretip
+        pretip.grade(season)
+    except Exception as e:
+        print("pre-tip grade failed:", repr(e))
     print(f"{len(games)} games projected for {today} to {today + timedelta(days=DAYS_AHEAD - 1)}; "
           f"injury report {'read' if inj is not None else 'NOT read (full rosters assumed)'}; "
           f"{sum(1 for x in games if x['mkt_spread'] is not None)} with a market line; {n_players} player projections logged")
