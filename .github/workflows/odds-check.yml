@@ -2,9 +2,6 @@ name: Odds API check
 
 # Runs the free key/credit check on pushes to the odds-api branch and on demand.
 on:
-  push:
-    branches: [odds-api]
-    paths: ["oddsapi/**", ".github/workflows/odds-check.yml"]
   workflow_dispatch:
 
 permissions:

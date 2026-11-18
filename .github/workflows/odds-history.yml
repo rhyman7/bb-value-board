@@ -8,9 +8,6 @@ on:
       max_credits:
         description: "Stop before using more than this many credits"
         default: "13000"
-  push:
-    branches: [odds-api]
-    paths: ["data/odds/plan.json", ".github/workflows/odds-history.yml"]
 
 permissions:
   contents: write
