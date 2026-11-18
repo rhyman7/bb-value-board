@@ -16,7 +16,18 @@
    "mkt_total": 221.5,
    "mkt_ml_home": -289.0,
    "mkt_ml_away": 236.0,
-   "frozenAt": "2026-11-17T22:40-05:00"
+   "frozenAt": "2026-11-17T22:40-05:00",
+   "final": {
+    "home": 118,
+    "away": 114
+   },
+   "su": "W",
+   "ats": "L",
+   "ou": "W",
+   "err": {
+    "model": 5.8,
+    "line": 2.5
+   }
   }
  }
 }

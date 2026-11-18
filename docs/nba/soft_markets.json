@@ -1,29 +1,29 @@
 {
  "generated": "2026-11-18",
- "games": 0,
- "last_night": null,
+ "games": 2,
+ "last_night": "2026-11-17",
  "h1_spread": {
-  "games": 0,
+  "games": 2,
   "mae": {
-   "model": null,
-   "line": null
+   "model": 6.59,
+   "line": 6.25
   },
   "by_gap": {
    "0+": {
-    "w": 0,
-    "l": 0,
+    "w": 1,
+    "l": 1,
     "p": 0,
-    "pct": null,
-    "roi": null,
-    "se": null
+    "pct": 50.0,
+    "roi": -8.3,
+    "se": 35.4
    },
    "1+": {
-    "w": 0,
-    "l": 0,
+    "w": 1,
+    "l": 1,
     "p": 0,
-    "pct": null,
-    "roi": null,
-    "se": null
+    "pct": 50.0,
+    "roi": -8.3,
+    "se": 35.4
    },
    "2+": {
     "w": 0,
@@ -44,43 +44,43 @@
   }
  },
  "h1_total": {
-  "games": 0,
+  "games": 2,
   "mae": {
-   "model": null,
-   "line": null
+   "model": 7.04,
+   "line": 10.75
   },
   "by_gap": {
    "0+": {
-    "w": 0,
+    "w": 2,
     "l": 0,
     "p": 0,
-    "pct": null,
-    "roi": null,
-    "se": null
+    "pct": 100.0,
+    "roi": 87.7,
+    "se": 35.4
    },
    "1.5+": {
-    "w": 0,
+    "w": 1,
     "l": 0,
     "p": 0,
-    "pct": null,
-    "roi": null,
-    "se": null
+    "pct": 100.0,
+    "roi": 87.0,
+    "se": 50.0
    },
    "3+": {
-    "w": 0,
+    "w": 1,
     "l": 0,
     "p": 0,
-    "pct": null,
-    "roi": null,
-    "se": null
+    "pct": 100.0,
+    "roi": 87.0,
+    "se": 50.0
    },
    "4.5+": {
-    "w": 0,
+    "w": 1,
     "l": 0,
     "p": 0,
-    "pct": null,
-    "roi": null,
-    "se": null
+    "pct": 100.0,
+    "roi": 87.0,
+    "se": 50.0
    }
   }
  }
