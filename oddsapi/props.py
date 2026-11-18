@@ -2,8 +2,11 @@
 the Odds API carries, reduced to one consensus line per player and market (the median line, with
 the median over and under prices at it).
 
-Cost: about 4 credits per game (one per market returned). The pipeline calls it once a day, on the
-late-afternoon run, so a full slate costs roughly 30 to 60 credits.
+Since 2026-11-18 the same call also asks for first-half spreads and totals (Ryan chose to log them
+live rather than buy history), reduced the same way to one consensus line per game.
+
+Cost: about 6 credits per game (one per market returned). The pipeline calls it once a day, on the
+late-afternoon run, so a full slate costs roughly 40 to 90 credits.
 """
 from __future__ import annotations
 
@@ -13,6 +16,8 @@ from datetime import datetime, timezone
 from . import client
 
 MARKETS = {"player_points": "points", "player_rebounds": "rebounds", "player_assists": "assists", "player_threes": "threes"}
+GAME_MARKETS = ["spreads_h1", "totals_h1"]
+GAME_LINES = {}     # filled by today_props: {game_id: {"h1_spread", "h1_spread_home_price", ...}}
 
 
 def _norm(name):
@@ -34,10 +39,11 @@ def today_props(game_teams, day_iso):
             continue
         try:
             ev, _ = client.get(f"/sports/{client.SPORTS['nba']}/events/{eid}/odds", regions="us",
-                               markets=",".join(MARKETS), oddsFormat="american")
+                               markets=",".join(list(MARKETS) + GAME_MARKETS), oddsFormat="american")
         except Exception as ex:
             print("  props failed for", home, away, repr(ex))
             continue
+        GAME_LINES[gid] = _game_lines(ev, home)
         quotes = {}
         for bk in ev.get("bookmakers", []):
             for m in bk.get("markets", []):
@@ -60,6 +66,32 @@ def today_props(game_teams, day_iso):
             g.setdefault(who, {})[stat] = {"line": line, "over": int(statistics.median(q[1] for q in at)),
                                            "under": int(statistics.median(q[2] for q in at)), "books": len(qs)}
         out[gid] = g
+    return out
+
+
+def _consensus(qs):
+    """qs: (line, price_a, price_b) per book -> median line and the median prices at it."""
+    line = statistics.median(q[0] for q in qs)
+    at = [q for q in qs if q[0] == line] or qs
+    return line, int(statistics.median(q[1] for q in at)), int(statistics.median(q[2] for q in at)), len(qs)
+
+
+def _game_lines(ev, home):
+    """First-half spread (+ = home favored, our sign) and total, consensus across books."""
+    sp, tot = [], []
+    for bk in ev.get("bookmakers", []):
+        for m in bk.get("markets", []):
+            o = {x["name"]: x for x in m.get("outcomes", []) if x.get("point") is not None}
+            if m["key"] == "spreads_h1" and home in o and len(o) == 2:
+                away = next(x for k, x in o.items() if k != home)
+                sp.append((-float(o[home]["point"]), int(o[home]["price"]), int(away["price"])))
+            elif m["key"] == "totals_h1" and "Over" in o and "Under" in o and o["Over"]["point"] == o["Under"]["point"]:
+                tot.append((float(o["Over"]["point"]), int(o["Over"]["price"]), int(o["Under"]["price"])))
+    out = {}
+    if sp:
+        out["h1_spread"], out["h1_home_price"], out["h1_away_price"], out["h1_spread_books"] = _consensus(sp)
+    if tot:
+        out["h1_total"], out["h1_over_price"], out["h1_under_price"], out["h1_total_books"] = _consensus(tot)
     return out
 
 
