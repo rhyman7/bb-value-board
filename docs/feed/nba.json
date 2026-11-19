@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-19T19:05:38+00:00",
+ "generatedAt": "2026-11-19T23:01:36+00:00",
  "season": 2027,
  "injuryReport": true,
  "playerGrades": {
@@ -494,8 +494,8 @@
    "market_ratings_margin": null,
    "mkt_spread": 15.5,
    "mkt_total": 224.5,
-   "mkt_ml_home": -1040.0,
-   "mkt_ml_away": 670.0,
+   "mkt_ml_home": -1020.0,
+   "mkt_ml_away": 660.0,
    "projection": 14.8,
    "projection_total": 224.5,
    "win_prob": 0.795,
@@ -585,6 +585,32 @@
        "rebounds": 3.9,
        "assists": 2.9,
        "threes": 1.4
+      },
+      "props": {
+       "assists": {
+        "line": 2.5,
+        "over": -105,
+        "under": -125,
+        "books": 6
+       },
+       "points": {
+        "line": 11.5,
+        "over": -128,
+        "under": 100,
+        "books": 8
+       },
+       "rebounds": {
+        "line": 3.5,
+        "over": -138,
+        "under": 106,
+        "books": 7
+       },
+       "threes": {
+        "line": 1.5,
+        "over": -127,
+        "under": -102,
+        "books": 8
+       }
       }
      },
      {
@@ -603,6 +629,32 @@
        "rebounds": 12.0,
        "assists": 3.3,
        "threes": 1.9
+      },
+      "props": {
+       "assists": {
+        "line": 3.5,
+        "over": 119,
+        "under": -159,
+        "books": 7
+       },
+       "points": {
+        "line": 27.5,
+        "over": -122,
+        "under": -106,
+        "books": 9
+       },
+       "rebounds": {
+        "line": 11.5,
+        "over": -127,
+        "under": -105,
+        "books": 9
+       },
+       "threes": {
+        "line": 2.5,
+        "over": 140,
+        "under": -185,
+        "books": 8
+       }
       }
      },
      {
@@ -621,6 +673,32 @@
        "rebounds": 5.2,
        "assists": 5.5,
        "threes": 2.0
+      },
+      "props": {
+       "assists": {
+        "line": 7.5,
+        "over": 116,
+        "under": -150,
+        "books": 9
+       },
+       "points": {
+        "line": 17.5,
+        "over": -121,
+        "under": -106,
+        "books": 8
+       },
+       "rebounds": {
+        "line": 5.5,
+        "over": 126,
+        "under": -164,
+        "books": 7
+       },
+       "threes": {
+        "line": 1.5,
+        "over": -125,
+        "under": -105,
+        "books": 7
+       }
       }
      },
      {
@@ -639,6 +717,32 @@
        "rebounds": 4.2,
        "assists": 5.5,
        "threes": 0.9
+      },
+      "props": {
+       "assists": {
+        "line": 6.5,
+        "over": 115,
+        "under": -152,
+        "books": 7
+       },
+       "points": {
+        "line": 15.5,
+        "over": -110,
+        "under": -119,
+        "books": 8
+       },
+       "rebounds": {
+        "line": 3.5,
+        "over": -161,
+        "under": 122,
+        "books": 7
+       },
+       "threes": {
+        "line": 1.5,
+        "over": 132,
+        "under": -174,
+        "books": 6
+       }
       }
      },
      {
@@ -657,6 +761,32 @@
        "rebounds": 4.2,
        "assists": 1.4,
        "threes": 2.7
+      },
+      "props": {
+       "assists": {
+        "line": 1.5,
+        "over": -103,
+        "under": -126,
+        "books": 5
+       },
+       "points": {
+        "line": 10.5,
+        "over": -114,
+        "under": -114,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 5.5,
+        "over": 112,
+        "under": -149,
+        "books": 7
+       },
+       "threes": {
+        "line": 2.5,
+        "over": -133,
+        "under": 102,
+        "books": 7
+       }
       }
      },
      {
@@ -675,6 +805,32 @@
        "rebounds": 5.6,
        "assists": 2.3,
        "threes": 0.3
+      },
+      "props": {
+       "points": {
+        "line": 11.5,
+        "over": -107,
+        "under": -119,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 5.5,
+        "over": 104,
+        "under": -137,
+        "books": 7
+       },
+       "assists": {
+        "line": 1.5,
+        "over": -150,
+        "under": 110,
+        "books": 1
+       },
+       "threes": {
+        "line": 0.5,
+        "over": -114,
+        "under": -116,
+        "books": 3
+       }
       }
      },
      {
@@ -693,6 +849,20 @@
        "rebounds": 4.1,
        "assists": 1.0,
        "threes": 0.0
+      },
+      "props": {
+       "points": {
+        "line": 4.5,
+        "over": -106,
+        "under": -122,
+        "books": 1
+       },
+       "rebounds": {
+        "line": 4.5,
+        "over": 112,
+        "under": -145,
+        "books": 1
+       }
       }
      },
      {
@@ -767,6 +937,32 @@
        "rebounds": 2.4,
        "assists": 6.9,
        "threes": 2.5
+      },
+      "props": {
+       "assists": {
+        "line": 6.5,
+        "over": 107,
+        "under": -141,
+        "books": 8
+       },
+       "points": {
+        "line": 19.5,
+        "over": -110,
+        "under": -120,
+        "books": 8
+       },
+       "rebounds": {
+        "line": 2.5,
+        "over": 100,
+        "under": -131,
+        "books": 6
+       },
+       "threes": {
+        "line": 2.5,
+        "over": 125,
+        "under": -164,
+        "books": 8
+       }
       }
      },
      {
@@ -785,6 +981,32 @@
        "rebounds": 4.5,
        "assists": 1.2,
        "threes": 2.0
+      },
+      "props": {
+       "points": {
+        "line": 8.5,
+        "over": -128,
+        "under": 100,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 3.5,
+        "over": -133,
+        "under": 101,
+        "books": 7
+       },
+       "threes": {
+        "line": 1.5,
+        "over": 133,
+        "under": -172,
+        "books": 7
+       },
+       "assists": {
+        "line": 1.5,
+        "over": 155,
+        "under": -205,
+        "books": 4
+       }
       }
      },
      {
@@ -803,6 +1025,32 @@
        "rebounds": 5.9,
        "assists": 1.5,
        "threes": 2.1
+      },
+      "props": {
+       "points": {
+        "line": 11.5,
+        "over": -118,
+        "under": -109,
+        "books": 8
+       },
+       "rebounds": {
+        "line": 4.5,
+        "over": -121,
+        "under": -109,
+        "books": 7
+       },
+       "threes": {
+        "line": 1.5,
+        "over": -145,
+        "under": 110,
+        "books": 9
+       },
+       "assists": {
+        "line": 1.5,
+        "over": 150,
+        "under": -200,
+        "books": 3
+       }
       }
      },
      {
@@ -821,6 +1069,32 @@
        "rebounds": 3.9,
        "assists": 4.2,
        "threes": 0.8
+      },
+      "props": {
+       "assists": {
+        "line": 3.5,
+        "over": 112,
+        "under": -150,
+        "books": 7
+       },
+       "points": {
+        "line": 5.5,
+        "over": -114,
+        "under": -115,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 3.0,
+        "over": -105,
+        "under": -108,
+        "books": 6
+       },
+       "threes": {
+        "line": 0.5,
+        "over": -111,
+        "under": -118,
+        "books": 2
+       }
       }
      },
      {
@@ -839,6 +1113,32 @@
        "rebounds": 5.4,
        "assists": 1.8,
        "threes": 1.6
+      },
+      "props": {
+       "points": {
+        "line": 11.5,
+        "over": -114,
+        "under": -114,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 4.5,
+        "over": -126,
+        "under": -104,
+        "books": 7
+       },
+       "threes": {
+        "line": 1.5,
+        "over": -108,
+        "under": -120,
+        "books": 7
+       },
+       "assists": {
+        "line": 1.5,
+        "over": -125,
+        "under": -105,
+        "books": 3
+       }
       }
      },
      {
@@ -875,6 +1175,32 @@
        "rebounds": 3.3,
        "assists": 3.1,
        "threes": 1.7
+      },
+      "props": {
+       "assists": {
+        "line": 2.5,
+        "over": -108,
+        "under": -122,
+        "books": 5
+       },
+       "points": {
+        "line": 9.5,
+        "over": -122,
+        "under": -106,
+        "books": 7
+       },
+       "threes": {
+        "line": 1.5,
+        "over": 145,
+        "under": -194,
+        "books": 6
+       },
+       "rebounds": {
+        "line": 2.5,
+        "over": -130,
+        "under": 100,
+        "books": 5
+       }
       }
      },
      {
@@ -893,6 +1219,14 @@
        "rebounds": 2.8,
        "assists": 2.7,
        "threes": 1.4
+      },
+      "props": {
+       "points": {
+        "line": 5.0,
+        "over": -127,
+        "under": -101,
+        "books": 2
+       }
       }
      },
      {
@@ -958,18 +1292,18 @@
    "tip": "2026-11-19T20:00:00-05:00",
    "away": "POR",
    "home": "MIL",
-   "margin": -11.8,
-   "total": 230.1,
+   "margin": -12.9,
+   "total": 229.6,
    "ratings_margin": -8.3,
    "pace": 102.3,
    "market_ratings_margin": null,
-   "mkt_spread": -10.5,
+   "mkt_spread": -11.5,
    "mkt_total": 230.5,
-   "mkt_ml_home": 360.0,
-   "mkt_ml_away": -467.0,
-   "projection": -10.7,
+   "mkt_ml_home": 394.0,
+   "mkt_ml_away": -518.0,
+   "projection": -11.7,
    "projection_total": 230.5,
-   "win_prob": 0.156,
+   "win_prob": 0.136,
    "rest": {
     "away": 1,
     "home": 0
@@ -1002,13 +1336,23 @@
       "kind": "schedule"
      },
      {
+      "label": "MIL without Myles Turner",
+      "pts": -0.25,
+      "kind": "missing"
+     },
+     {
+      "label": "MIL without Kyle Kuzma",
+      "pts": -0.49,
+      "kind": "missing"
+     },
+     {
       "label": "POR without Robert Williams III",
       "pts": 0.76,
       "kind": "missing"
      },
      {
-      "label": "Lineup strength from player impact ratings (MIL -4.7, POR +12.1 per 48)",
-      "pts": -5.18,
+      "label": "Lineup strength from player impact ratings (MIL -5.9, POR +12.1 per 48)",
+      "pts": -5.56,
       "kind": "players"
      }
     ],
@@ -1030,26 +1374,30 @@
      },
      {
       "label": "Players out, both teams",
-      "pts": -0.51,
+      "pts": -0.99,
       "kind": "missing"
      }
     ]
    },
    "imp": {
-    "home": -4.699,
+    "home": -5.936,
     "away": 12.125
    },
    "missing": {
     "away": 2.8,
-    "home": 0.0,
+    "home": 2.6,
     "away_names": [
      "Robert Williams III"
     ],
-    "home_names": []
+    "home_names": [
+     "Kyle Kuzma"
+    ]
    },
    "players": {
     "out": {
      "home": [
+      "Kyle Kuzma",
+      "Myles Turner",
       "Ousmane Dieng"
      ],
      "away": [
@@ -1064,35 +1412,43 @@
       "name": "Tyler Herro",
       "team": "MIL",
       "opp": "POR",
-      "minutes": 27.2,
-      "points": 17.8,
-      "rebounds": 3.8,
-      "assists": 3.7,
-      "threes": 2.1,
+      "minutes": 29.9,
+      "points": 19.6,
+      "rebounds": 4.2,
+      "assists": 4.0,
+      "threes": 2.3,
       "avg": {
        "minutes": 30.0,
        "points": 19.4,
        "rebounds": 4.0,
        "assists": 4.2,
        "threes": 2.5
-      }
-     },
-     {
-      "id": 3134907,
-      "name": "Kyle Kuzma",
-      "team": "MIL",
-      "opp": "POR",
-      "minutes": 26.7,
-      "points": 12.7,
-      "rebounds": 4.8,
-      "assists": 2.5,
-      "threes": 1.4,
-      "avg": {
-       "minutes": 27.1,
-       "points": 12.3,
-       "rebounds": 5.3,
-       "assists": 2.4,
-       "threes": 1.7
+      },
+      "props": {
+       "assists": {
+        "line": 4.5,
+        "over": 119,
+        "under": -159,
+        "books": 7
+       },
+       "points": {
+        "line": 20.5,
+        "over": -123,
+        "under": -104,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 3.5,
+        "over": -157,
+        "under": 120,
+        "books": 7
+       },
+       "threes": {
+        "line": 2.5,
+        "over": 108,
+        "under": -139,
+        "books": 7
+       }
       }
      },
      {
@@ -1100,11 +1456,11 @@
       "name": "Jaime Jaquez Jr.",
       "team": "MIL",
       "opp": "POR",
-      "minutes": 25.9,
-      "points": 14.3,
-      "rebounds": 4.7,
-      "assists": 3.4,
-      "threes": 1.3,
+      "minutes": 28.6,
+      "points": 15.8,
+      "rebounds": 5.2,
+      "assists": 3.7,
+      "threes": 1.4,
       "avg": {
        "minutes": 27.6,
        "points": 15.4,
@@ -1114,39 +1470,47 @@
       }
      },
      {
-      "id": 3133628,
-      "name": "Myles Turner",
-      "team": "MIL",
-      "opp": "POR",
-      "minutes": 24.4,
-      "points": 8.7,
-      "rebounds": 5.1,
-      "assists": 2.0,
-      "threes": 1.4,
-      "avg": {
-       "minutes": 26.6,
-       "points": 7.1,
-       "rebounds": 6.0,
-       "assists": 2.7,
-       "threes": 1.3
-      }
-     },
-     {
       "id": 5082206,
       "name": "Brayden Burries",
       "team": "MIL",
       "opp": "POR",
-      "minutes": 23.2,
-      "points": 10.6,
-      "rebounds": 5.3,
-      "assists": 2.3,
-      "threes": 1.1,
+      "minutes": 25.8,
+      "points": 11.8,
+      "rebounds": 5.9,
+      "assists": 2.5,
+      "threes": 1.2,
       "avg": {
        "minutes": 22.1,
        "points": 10.1,
        "rebounds": 5.5,
        "assists": 2.3,
        "threes": 1.1
+      },
+      "props": {
+       "assists": {
+        "line": 2.5,
+        "over": -129,
+        "under": -105,
+        "books": 6
+       },
+       "points": {
+        "line": 12.5,
+        "over": -111,
+        "under": -118,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 5.5,
+        "over": -112,
+        "under": -116,
+        "books": 7
+       },
+       "threes": {
+        "line": 1.5,
+        "over": 105,
+        "under": -139,
+        "books": 7
+       }
       }
      },
      {
@@ -1154,17 +1518,43 @@
       "name": "Ryan Rollins",
       "team": "MIL",
       "opp": "POR",
-      "minutes": 21.3,
-      "points": 10.5,
-      "rebounds": 3.7,
-      "assists": 3.5,
-      "threes": 1.5,
+      "minutes": 23.7,
+      "points": 11.7,
+      "rebounds": 4.1,
+      "assists": 3.8,
+      "threes": 1.6,
       "avg": {
        "minutes": 23.8,
        "points": 10.5,
        "rebounds": 5.0,
        "assists": 3.9,
        "threes": 1.6
+      },
+      "props": {
+       "assists": {
+        "line": 4.5,
+        "over": 110,
+        "under": -147,
+        "books": 7
+       },
+       "points": {
+        "line": 11.5,
+        "over": -109,
+        "under": -122,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 4.5,
+        "over": 130,
+        "under": -169,
+        "books": 7
+       },
+       "threes": {
+        "line": 1.5,
+        "over": -117,
+        "under": -112,
+        "books": 6
+       }
       }
      },
      {
@@ -1172,11 +1562,11 @@
       "name": "Kasparas Jakucionis",
       "team": "MIL",
       "opp": "POR",
-      "minutes": 19.6,
-      "points": 7.8,
-      "rebounds": 2.7,
-      "assists": 3.0,
-      "threes": 1.1,
+      "minutes": 21.6,
+      "points": 8.6,
+      "rebounds": 2.9,
+      "assists": 3.3,
+      "threes": 1.2,
       "avg": {
        "minutes": 18.9,
        "points": 8.9,
@@ -1190,17 +1580,31 @@
       "name": "Kel'el Ware",
       "team": "MIL",
       "opp": "POR",
-      "minutes": 18.3,
-      "points": 8.8,
-      "rebounds": 6.7,
-      "assists": 0.7,
-      "threes": 0.8,
+      "minutes": 20.2,
+      "points": 9.8,
+      "rebounds": 7.3,
+      "assists": 0.8,
+      "threes": 0.9,
       "avg": {
        "minutes": 18.1,
        "points": 8.7,
        "rebounds": 6.5,
        "assists": 0.9,
        "threes": 0.7
+      },
+      "props": {
+       "points": {
+        "line": 10.5,
+        "over": -122,
+        "under": -106,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 8.5,
+        "over": 101,
+        "under": -134,
+        "books": 6
+       }
       }
      },
      {
@@ -1208,17 +1612,31 @@
       "name": "Nate Ament",
       "team": "MIL",
       "opp": "POR",
-      "minutes": 18.0,
-      "points": 7.5,
-      "rebounds": 2.7,
-      "assists": 0.8,
-      "threes": 1.0,
+      "minutes": 19.9,
+      "points": 8.4,
+      "rebounds": 3.0,
+      "assists": 0.9,
+      "threes": 1.1,
       "avg": {
        "minutes": 17.5,
        "points": 7.3,
        "rebounds": 2.7,
        "assists": 0.6,
        "threes": 1.0
+      },
+      "props": {
+       "points": {
+        "line": 8.5,
+        "over": -115,
+        "under": -113,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 3.5,
+        "over": -108,
+        "under": -124,
+        "books": 6
+       }
       }
      },
      {
@@ -1226,11 +1644,11 @@
       "name": "Gary Trent Jr.",
       "team": "MIL",
       "opp": "POR",
-      "minutes": 14.6,
-      "points": 5.6,
-      "rebounds": 0.8,
+      "minutes": 16.1,
+      "points": 6.2,
+      "rebounds": 0.9,
       "assists": 0.7,
-      "threes": 1.2,
+      "threes": 1.3,
       "avg": {
        "minutes": 12.1,
        "points": 5.3,
@@ -1244,11 +1662,11 @@
       "name": "AJ Green",
       "team": "MIL",
       "opp": "POR",
-      "minutes": 14.0,
-      "points": 4.9,
-      "rebounds": 1.2,
-      "assists": 1.0,
-      "threes": 1.4,
+      "minutes": 15.2,
+      "points": 5.3,
+      "rebounds": 1.3,
+      "assists": 1.1,
+      "threes": 1.5,
       "avg": {
        "minutes": 16.3,
        "points": 5.9,
@@ -1262,11 +1680,11 @@
       "name": "Jericho Sims",
       "team": "MIL",
       "opp": "POR",
-      "minutes": 13.0,
-      "points": 2.7,
-      "rebounds": 3.0,
-      "assists": 0.8,
-      "threes": 0.0,
+      "minutes": 14.3,
+      "points": 3.0,
+      "rebounds": 3.3,
+      "assists": 0.9,
+      "threes": 0.1,
       "avg": {
        "minutes": 10.2,
        "points": 1.2,
@@ -1280,10 +1698,10 @@
       "name": "Caris LeVert",
       "team": "MIL",
       "opp": "POR",
-      "minutes": 8.6,
-      "points": 3.7,
-      "rebounds": 1.2,
-      "assists": 1.3,
+      "minutes": 9.4,
+      "points": 4.0,
+      "rebounds": 1.3,
+      "assists": 1.4,
       "threes": 0.5,
       "avg": {
        "minutes": 8.0,
@@ -1311,6 +1729,32 @@
        "rebounds": 3.4,
        "assists": 1.3,
        "threes": 2.6
+      },
+      "props": {
+       "points": {
+        "line": 13.5,
+        "over": -102,
+        "under": -128,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 4.5,
+        "over": -110,
+        "under": -119,
+        "books": 7
+       },
+       "threes": {
+        "line": 2.5,
+        "over": 104,
+        "under": -136,
+        "books": 7
+       },
+       "assists": {
+        "line": 1.5,
+        "over": -114,
+        "under": -116,
+        "books": 2
+       }
       }
      },
      {
@@ -1329,6 +1773,32 @@
        "rebounds": 6.2,
        "assists": 6.1,
        "threes": 2.1
+      },
+      "props": {
+       "assists": {
+        "line": 5.5,
+        "over": -115,
+        "under": -112,
+        "books": 8
+       },
+       "points": {
+        "line": 23.5,
+        "over": -119,
+        "under": -109,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 6.5,
+        "over": -128,
+        "under": -102,
+        "books": 7
+       },
+       "threes": {
+        "line": 1.5,
+        "over": -153,
+        "under": 118,
+        "books": 7
+       }
       }
      },
      {
@@ -1347,6 +1817,32 @@
        "rebounds": 3.0,
        "assists": 4.4,
        "threes": 3.1
+      },
+      "props": {
+       "assists": {
+        "line": 4.5,
+        "over": -128,
+        "under": -102,
+        "books": 7
+       },
+       "points": {
+        "line": 23.5,
+        "over": -107,
+        "under": -119,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 3.5,
+        "over": 100,
+        "under": -131,
+        "books": 7
+       },
+       "threes": {
+        "line": 3.5,
+        "over": 110,
+        "under": -145,
+        "books": 8
+       }
       }
      },
      {
@@ -1365,6 +1861,32 @@
        "rebounds": 3.6,
        "assists": 4.1,
        "threes": 2.5
+      },
+      "props": {
+       "assists": {
+        "line": 4.5,
+        "over": -112,
+        "under": -119,
+        "books": 7
+       },
+       "points": {
+        "line": 13.5,
+        "over": -114,
+        "under": -114,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 4.5,
+        "over": 123,
+        "under": -162,
+        "books": 7
+       },
+       "threes": {
+        "line": 2.5,
+        "over": 120,
+        "under": -158,
+        "books": 7
+       }
       }
      },
      {
@@ -1383,6 +1905,32 @@
        "rebounds": 10.6,
        "assists": 1.8,
        "threes": 0.9
+      },
+      "props": {
+       "assists": {
+        "line": 2.5,
+        "over": 108,
+        "under": -143,
+        "books": 6
+       },
+       "points": {
+        "line": 12.5,
+        "over": -118,
+        "under": -110,
+        "books": 8
+       },
+       "rebounds": {
+        "line": 12.5,
+        "over": -111,
+        "under": -118,
+        "books": 8
+       },
+       "threes": {
+        "line": 0.5,
+        "over": -209,
+        "under": 154,
+        "books": 2
+       }
       }
      },
      {
@@ -1401,6 +1949,32 @@
        "rebounds": 3.7,
        "assists": 1.9,
        "threes": 1.4
+      },
+      "props": {
+       "points": {
+        "line": 8.5,
+        "over": 101,
+        "under": -132,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 3.5,
+        "over": -120,
+        "under": -109,
+        "books": 7
+       },
+       "threes": {
+        "line": 1.5,
+        "over": -114,
+        "under": -115,
+        "books": 7
+       },
+       "assists": {
+        "line": 1.5,
+        "over": -179,
+        "under": 135,
+        "books": 5
+       }
       }
      },
      {
@@ -1419,6 +1993,32 @@
        "rebounds": 1.8,
        "assists": 1.4,
        "threes": 0.9
+      },
+      "props": {
+       "points": {
+        "line": 11.5,
+        "over": -102,
+        "under": -125,
+        "books": 7
+       },
+       "threes": {
+        "line": 1.5,
+        "over": 102,
+        "under": -135,
+        "books": 6
+       },
+       "assists": {
+        "line": 2.5,
+        "over": 100,
+        "under": -130,
+        "books": 5
+       },
+       "rebounds": {
+        "line": 2.5,
+        "over": 109,
+        "under": -143,
+        "books": 5
+       }
       }
      },
      {
@@ -1484,18 +2084,18 @@
    "tip": "2026-11-19T20:00:00-05:00",
    "away": "GS",
    "home": "MEM",
-   "margin": 2.3,
-   "total": 230.7,
+   "margin": 1.2,
+   "total": 230.3,
    "ratings_margin": 1.0,
    "pace": 103.1,
    "market_ratings_margin": null,
-   "mkt_spread": 6.5,
-   "mkt_total": 226.5,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
-   "projection": 6.0,
-   "projection_total": 226.5,
-   "win_prob": 0.582,
+   "mkt_spread": 5.5,
+   "mkt_total": 225.5,
+   "mkt_ml_home": -216.0,
+   "mkt_ml_away": 179.0,
+   "projection": 5.0,
+   "projection_total": 225.5,
+   "win_prob": 0.543,
    "rest": {
     "away": 0,
     "home": 0
@@ -1543,6 +2143,11 @@
       "kind": "missing"
      },
      {
+      "label": "MEM without Zach Edey",
+      "pts": -0.54,
+      "kind": "missing"
+     },
+     {
       "label": "MEM without GG Jackson",
       "pts": -0.34,
       "kind": "missing"
@@ -1558,8 +2163,8 @@
       "kind": "missing"
      },
      {
-      "label": "Lineup strength from player impact ratings (MEM +8.9, GS +6.5 per 48)",
-      "pts": 0.74,
+      "label": "Lineup strength from player impact ratings (MEM +7.0, GS +6.5 per 48)",
+      "pts": 0.16,
       "kind": "players"
      }
     ],
@@ -1591,30 +2196,32 @@
      },
      {
       "label": "Players out, both teams",
-      "pts": -3.5,
+      "pts": -3.86,
       "kind": "missing"
      }
     ]
    },
    "imp": {
-    "home": 8.865,
+    "home": 6.972,
     "away": 6.454
    },
    "missing": {
     "away": 10.4,
-    "home": 8.5,
+    "home": 10.5,
     "away_names": [
      "Stephen Curry",
      "Brandon Williams"
     ],
     "home_names": [
      "Ty Jerome",
+     "Zach Edey",
      "GG Jackson"
     ]
    },
    "players": {
     "out": {
      "home": [
+      "Zach Edey",
       "Ty Jerome",
       "GG Jackson",
       "Scotty Pippen Jr."
@@ -1631,10 +2238,10 @@
       "name": "Cedric Coward",
       "team": "MEM",
       "opp": "GS",
-      "minutes": 29.6,
-      "points": 15.4,
-      "rebounds": 7.5,
-      "assists": 3.5,
+      "minutes": 30.5,
+      "points": 15.8,
+      "rebounds": 7.7,
+      "assists": 3.6,
       "threes": 2.1,
       "avg": {
        "minutes": 29.0,
@@ -1642,6 +2249,32 @@
        "rebounds": 8.4,
        "assists": 3.4,
        "threes": 2.4
+      },
+      "props": {
+       "assists": {
+        "line": 3.5,
+        "over": -109,
+        "under": -120,
+        "books": 7
+       },
+       "points": {
+        "line": 15.5,
+        "over": -106,
+        "under": -122,
+        "books": 8
+       },
+       "rebounds": {
+        "line": 7.5,
+        "over": -115,
+        "under": -114,
+        "books": 8
+       },
+       "threes": {
+        "line": 1.5,
+        "over": -169,
+        "under": 131,
+        "books": 8
+       }
       }
      },
      {
@@ -1649,17 +2282,43 @@
       "name": "Cameron Boozer",
       "team": "MEM",
       "opp": "GS",
-      "minutes": 29.4,
-      "points": 15.9,
-      "rebounds": 8.5,
-      "assists": 5.2,
-      "threes": 1.8,
+      "minutes": 30.2,
+      "points": 16.3,
+      "rebounds": 8.7,
+      "assists": 5.3,
+      "threes": 1.9,
       "avg": {
        "minutes": 31.0,
        "points": 16.6,
        "rebounds": 9.4,
        "assists": 5.3,
        "threes": 1.9
+      },
+      "props": {
+       "assists": {
+        "line": 4.5,
+        "over": -148,
+        "under": 114,
+        "books": 9
+       },
+       "points": {
+        "line": 19.5,
+        "over": -106,
+        "under": -122,
+        "books": 9
+       },
+       "rebounds": {
+        "line": 9.5,
+        "over": 103,
+        "under": -135,
+        "books": 8
+       },
+       "threes": {
+        "line": 1.5,
+        "over": -177,
+        "under": 134,
+        "books": 8
+       }
       }
      },
      {
@@ -1667,17 +2326,43 @@
       "name": "Jaylen Wells",
       "team": "MEM",
       "opp": "GS",
-      "minutes": 26.5,
-      "points": 11.7,
-      "rebounds": 3.1,
+      "minutes": 27.2,
+      "points": 12.0,
+      "rebounds": 3.2,
       "assists": 1.7,
-      "threes": 1.9,
+      "threes": 2.0,
       "avg": {
        "minutes": 27.0,
        "points": 10.7,
        "rebounds": 3.0,
        "assists": 1.5,
        "threes": 2.0
+      },
+      "props": {
+       "points": {
+        "line": 10.5,
+        "over": -103,
+        "under": -127,
+        "books": 6
+       },
+       "rebounds": {
+        "line": 2.5,
+        "over": -157,
+        "under": 120,
+        "books": 5
+       },
+       "threes": {
+        "line": 1.5,
+        "over": -141,
+        "under": 110,
+        "books": 6
+       },
+       "assists": {
+        "line": 1.5,
+        "over": -118,
+        "under": -111,
+        "books": 4
+       }
       }
      },
      {
@@ -1685,17 +2370,43 @@
       "name": "Cam Spencer",
       "team": "MEM",
       "opp": "GS",
-      "minutes": 25.4,
-      "points": 12.5,
-      "rebounds": 3.1,
-      "assists": 6.2,
-      "threes": 2.2,
+      "minutes": 26.2,
+      "points": 12.8,
+      "rebounds": 3.2,
+      "assists": 6.4,
+      "threes": 2.3,
       "avg": {
        "minutes": 22.2,
        "points": 11.4,
        "rebounds": 3.1,
        "assists": 5.5,
        "threes": 2.1
+      },
+      "props": {
+       "assists": {
+        "line": 7.5,
+        "over": 105,
+        "under": -139,
+        "books": 7
+       },
+       "points": {
+        "line": 12.5,
+        "over": -122,
+        "under": -104,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 3.5,
+        "over": 120,
+        "under": -162,
+        "books": 7
+       },
+       "threes": {
+        "line": 2.5,
+        "over": 137,
+        "under": -181,
+        "books": 7
+       }
       }
      },
      {
@@ -1703,17 +2414,43 @@
       "name": "Jerami Grant",
       "team": "MEM",
       "opp": "GS",
-      "minutes": 22.5,
-      "points": 12.5,
+      "minutes": 23.1,
+      "points": 12.9,
       "rebounds": 2.3,
       "assists": 1.9,
-      "threes": 1.7,
+      "threes": 1.8,
       "avg": {
        "minutes": 23.4,
        "points": 11.1,
        "rebounds": 1.9,
        "assists": 1.9,
        "threes": 1.8
+      },
+      "props": {
+       "points": {
+        "line": 10.5,
+        "over": -123,
+        "under": -104,
+        "books": 6
+       },
+       "threes": {
+        "line": 1.5,
+        "over": -115,
+        "under": -115,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 2.5,
+        "over": 120,
+        "under": -156,
+        "books": 5
+       },
+       "assists": {
+        "line": 1.5,
+        "over": 107,
+        "under": -139,
+        "books": 1
+       }
       }
      },
      {
@@ -1721,10 +2458,10 @@
       "name": "Javon Small",
       "team": "MEM",
       "opp": "GS",
-      "minutes": 22.5,
-      "points": 10.2,
+      "minutes": 23.1,
+      "points": 10.5,
       "rebounds": 3.2,
-      "assists": 4.8,
+      "assists": 4.9,
       "threes": 1.5,
       "avg": {
        "minutes": 21.9,
@@ -1735,31 +2472,13 @@
       }
      },
      {
-      "id": 4600663,
-      "name": "Zach Edey",
-      "team": "MEM",
-      "opp": "GS",
-      "minutes": 21.0,
-      "points": 9.9,
-      "rebounds": 7.3,
-      "assists": 1.1,
-      "threes": 0.2,
-      "avg": {
-       "minutes": 20.8,
-       "points": 9.2,
-       "rebounds": 7.4,
-       "assists": 0.9,
-       "threes": 0.1
-      }
-     },
-     {
       "id": 4684806,
       "name": "Taylor Hendricks",
       "team": "MEM",
       "opp": "GS",
-      "minutes": 17.2,
-      "points": 7.8,
-      "rebounds": 3.6,
+      "minutes": 17.8,
+      "points": 8.1,
+      "rebounds": 3.7,
       "assists": 1.0,
       "threes": 1.0,
       "avg": {
@@ -1768,6 +2487,20 @@
        "rebounds": 3.6,
        "assists": 0.9,
        "threes": 0.9
+      },
+      "props": {
+       "points": {
+        "line": 7.5,
+        "over": -121,
+        "under": -111,
+        "books": 5
+       },
+       "rebounds": {
+        "line": 3.5,
+        "over": -143,
+        "under": 110,
+        "books": 4
+       }
       }
      },
      {
@@ -1775,17 +2508,31 @@
       "name": "Isaiah Stewart",
       "team": "MEM",
       "opp": "GS",
-      "minutes": 16.4,
-      "points": 8.2,
-      "rebounds": 3.3,
+      "minutes": 16.9,
+      "points": 8.4,
+      "rebounds": 3.4,
       "assists": 0.9,
-      "threes": 0.6,
+      "threes": 0.7,
       "avg": {
        "minutes": 18.1,
        "points": 10.9,
        "rebounds": 3.3,
        "assists": 0.9,
        "threes": 0.9
+      },
+      "props": {
+       "points": {
+        "line": 9.5,
+        "over": -105,
+        "under": -123,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 4.5,
+        "over": 107,
+        "under": -141,
+        "books": 7
+       }
       }
      },
      {
@@ -1793,9 +2540,9 @@
       "name": "Olivier-Maxence Prosper",
       "team": "MEM",
       "opp": "GS",
-      "minutes": 12.2,
-      "points": 6.3,
-      "rebounds": 2.1,
+      "minutes": 12.6,
+      "points": 6.5,
+      "rebounds": 2.2,
       "assists": 0.7,
       "threes": 0.7,
       "avg": {
@@ -1811,10 +2558,10 @@
       "name": "Quinten Post",
       "team": "MEM",
       "opp": "GS",
-      "minutes": 10.1,
-      "points": 4.1,
-      "rebounds": 2.1,
-      "assists": 0.6,
+      "minutes": 10.4,
+      "points": 4.2,
+      "rebounds": 2.2,
+      "assists": 0.7,
       "threes": 0.7,
       "avg": {
        "minutes": 11.8,
@@ -1829,10 +2576,10 @@
       "name": "Kris Murray",
       "team": "MEM",
       "opp": "GS",
-      "minutes": 9.8,
+      "minutes": 10.0,
       "points": 1.9,
       "rebounds": 1.4,
-      "assists": 0.6,
+      "assists": 0.7,
       "threes": 0.3,
       "avg": {
        "minutes": 10.6,
@@ -1860,6 +2607,32 @@
        "rebounds": 7.3,
        "assists": 3.5,
        "threes": 2.1
+      },
+      "props": {
+       "assists": {
+        "line": 4.5,
+        "over": -111,
+        "under": -119,
+        "books": 7
+       },
+       "points": {
+        "line": 22.5,
+        "over": -108,
+        "under": -120,
+        "books": 8
+       },
+       "rebounds": {
+        "line": 7.5,
+        "over": -105,
+        "under": -125,
+        "books": 8
+       },
+       "threes": {
+        "line": 1.5,
+        "over": -184,
+        "under": 142,
+        "books": 8
+       }
       }
      },
      {
@@ -1878,6 +2651,32 @@
        "rebounds": 4.8,
        "assists": 3.8,
        "threes": 2.6
+      },
+      "props": {
+       "assists": {
+        "line": 4.5,
+        "over": -111,
+        "under": -118,
+        "books": 7
+       },
+       "points": {
+        "line": 16.5,
+        "over": -105,
+        "under": -127,
+        "books": 8
+       },
+       "rebounds": {
+        "line": 4.5,
+        "over": -128,
+        "under": -102,
+        "books": 7
+       },
+       "threes": {
+        "line": 2.5,
+        "over": -105,
+        "under": -125,
+        "books": 7
+       }
       }
      },
      {
@@ -1896,6 +2695,26 @@
        "rebounds": 2.1,
        "assists": 1.1,
        "threes": 1.1
+      },
+      "props": {
+       "points": {
+        "line": 7.5,
+        "over": -117,
+        "under": -111,
+        "books": 7
+       },
+       "threes": {
+        "line": 1.5,
+        "over": 149,
+        "under": -200,
+        "books": 6
+       },
+       "rebounds": {
+        "line": 2.5,
+        "over": -123,
+        "under": -105,
+        "books": 5
+       }
       }
      },
      {
@@ -1914,6 +2733,32 @@
        "rebounds": 3.9,
        "assists": 2.3,
        "threes": 2.1
+      },
+      "props": {
+       "assists": {
+        "line": 2.5,
+        "over": -128,
+        "under": 100,
+        "books": 6
+       },
+       "points": {
+        "line": 10.5,
+        "over": -119,
+        "under": -110,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 3.5,
+        "over": 102,
+        "under": -130,
+        "books": 7
+       },
+       "threes": {
+        "line": 1.5,
+        "over": -136,
+        "under": 105,
+        "books": 7
+       }
       }
      },
      {
@@ -1932,6 +2777,32 @@
        "rebounds": 4.3,
        "assists": 1.8,
        "threes": 0.5
+      },
+      "props": {
+       "assists": {
+        "line": 2.5,
+        "over": 116,
+        "under": -152,
+        "books": 6
+       },
+       "points": {
+        "line": 8.5,
+        "over": -105,
+        "under": -123,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 4.5,
+        "over": 121,
+        "under": -156,
+        "books": 7
+       },
+       "threes": {
+        "line": 0.5,
+        "over": -169,
+        "under": 129,
+        "books": 1
+       }
       }
      },
      {
@@ -1968,6 +2839,26 @@
        "rebounds": 5.4,
        "assists": 0.5,
        "threes": 0.0
+      },
+      "props": {
+       "points": {
+        "line": 8.5,
+        "over": -122,
+        "under": -106,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 7.5,
+        "over": 110,
+        "under": -143,
+        "books": 7
+       },
+       "assists": {
+        "line": 1.5,
+        "over": 128,
+        "under": -167,
+        "books": 1
+       }
       }
      },
      {
@@ -2004,6 +2895,32 @@
        "rebounds": 3.8,
        "assists": 1.8,
        "threes": 0.9
+      },
+      "props": {
+       "assists": {
+        "line": 2.5,
+        "over": 110,
+        "under": -147,
+        "books": 6
+       },
+       "points": {
+        "line": 6.5,
+        "over": -102,
+        "under": -127,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 3.5,
+        "over": -141,
+        "under": 108,
+        "books": 7
+       },
+       "threes": {
+        "line": 1.5,
+        "over": 167,
+        "under": -224,
+        "books": 5
+       }
       }
      },
      {
@@ -2155,6 +3072,32 @@
        "rebounds": 6.1,
        "assists": 3.7,
        "threes": 1.3
+      },
+      "props": {
+       "assists": {
+        "line": 3.5,
+        "over": 120,
+        "under": -160,
+        "books": 7
+       },
+       "points": {
+        "line": 16.5,
+        "over": -105,
+        "under": -127,
+        "books": 8
+       },
+       "rebounds": {
+        "line": 5.5,
+        "over": 108,
+        "under": -141,
+        "books": 7
+       },
+       "threes": {
+        "line": 1.5,
+        "over": 113,
+        "under": -147,
+        "books": 7
+       }
       }
      },
      {
@@ -2173,6 +3116,32 @@
        "rebounds": 4.6,
        "assists": 3.5,
        "threes": 2.1
+      },
+      "props": {
+       "assists": {
+        "line": 3.5,
+        "over": -158,
+        "under": 120,
+        "books": 7
+       },
+       "points": {
+        "line": 17.5,
+        "over": -118,
+        "under": -113,
+        "books": 8
+       },
+       "rebounds": {
+        "line": 4.5,
+        "over": 120,
+        "under": -160,
+        "books": 7
+       },
+       "threes": {
+        "line": 1.5,
+        "over": -164,
+        "under": 126,
+        "books": 8
+       }
       }
      },
      {
@@ -2191,6 +3160,32 @@
        "rebounds": 4.1,
        "assists": 5.5,
        "threes": 3.5
+      },
+      "props": {
+       "assists": {
+        "line": 5.5,
+        "over": -141,
+        "under": 108,
+        "books": 8
+       },
+       "points": {
+        "line": 18.5,
+        "over": -124,
+        "under": -105,
+        "books": 9
+       },
+       "rebounds": {
+        "line": 4.5,
+        "over": 114,
+        "under": -152,
+        "books": 7
+       },
+       "threes": {
+        "line": 3.5,
+        "over": -115,
+        "under": -115,
+        "books": 8
+       }
       }
      },
      {
@@ -2209,6 +3204,26 @@
        "rebounds": 11.1,
        "assists": 1.7,
        "threes": 0.0
+      },
+      "props": {
+       "assists": {
+        "line": 1.5,
+        "over": -129,
+        "under": -102,
+        "books": 6
+       },
+       "points": {
+        "line": 8.5,
+        "over": -104,
+        "under": -125,
+        "books": 8
+       },
+       "rebounds": {
+        "line": 10.5,
+        "over": 111,
+        "under": -145,
+        "books": 8
+       }
       }
      },
      {
@@ -2227,6 +3242,32 @@
        "rebounds": 5.7,
        "assists": 2.8,
        "threes": 1.6
+      },
+      "props": {
+       "assists": {
+        "line": 2.5,
+        "over": 119,
+        "under": -155,
+        "books": 6
+       },
+       "points": {
+        "line": 12.5,
+        "over": -120,
+        "under": -106,
+        "books": 8
+       },
+       "rebounds": {
+        "line": 5.5,
+        "over": 117,
+        "under": -155,
+        "books": 7
+       },
+       "threes": {
+        "line": 1.5,
+        "over": 142,
+        "under": -190,
+        "books": 7
+       }
       }
      },
      {
@@ -2245,6 +3286,32 @@
        "rebounds": 3.3,
        "assists": 2.9,
        "threes": 1.4
+      },
+      "props": {
+       "assists": {
+        "line": 2.5,
+        "over": 102,
+        "under": -130,
+        "books": 6
+       },
+       "points": {
+        "line": 11.5,
+        "over": -114,
+        "under": -114,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 2.5,
+        "over": -146,
+        "under": 112,
+        "books": 6
+       },
+       "threes": {
+        "line": 1.5,
+        "over": 133,
+        "under": -181,
+        "books": 6
+       }
       }
      },
      {
@@ -2263,6 +3330,26 @@
        "rebounds": 3.9,
        "assists": 1.1,
        "threes": 1.0
+      },
+      "props": {
+       "points": {
+        "line": 5.5,
+        "over": -127,
+        "under": -106,
+        "books": 7
+       },
+       "rebounds": {
+        "line": 4.5,
+        "over": 120,
+        "under": -160,
+        "books": 7
+       },
+       "threes": {
+        "line": 0.5,
+        "over": -201,
+        "under": 152,
+        "books": 4
+       }
       }
      },
      {
@@ -2281,6 +3368,20 @@
        "rebounds": 6.6,
        "assists": 0.5,
        "threes": 0.0
+      },
+      "props": {
+       "points": {
+        "line": 4.5,
+        "over": -126,
+        "under": -105,
+        "books": 5
+       },
+       "rebounds": {
+        "line": 5.5,
+        "over": 102,
+        "under": -136,
+        "books": 5
+       }
       }
      },
      {
@@ -2299,6 +3400,32 @@
        "rebounds": 1.4,
        "assists": 2.9,
        "threes": 1.8
+      },
+      "props": {
+       "assists": {
+        "line": 2.5,
+        "over": 122,
+        "under": -159,
+        "books": 4
+       },
+       "points": {
+        "line": 7.5,
+        "over": -125,
+        "under": -105,
+        "books": 4
+       },
+       "rebounds": {
+        "line": 1.5,
+        "over": 109,
+        "under": -141,
+        "books": 1
+       },
+       "threes": {
+        "line": 1.5,
+        "over": -101,
+        "under": -128,
+        "books": 4
+       }
       }
      }
     ],
@@ -2319,6 +3446,32 @@
        "rebounds": 5.3,
        "assists": 2.0,
        "threes": 2.1
+      },
+      "props": {
+       "assists": {
+        "line": 1.5,
+        "over": -138,
+        "under": 108,
+        "books": 6
+       },
+       "points": {
+        "line": 15.5,
+        "over": -108,
+        "under": -120,
+        "books": 8
+       },
+       "rebounds": {
+        "line": 4.5,
+        "over": -143,
+        "under": 109,
+        "books": 7
+       },
+       "threes": {
+        "line": 1.5,
+        "over": -178,
+        "under": 133,
+        "books": 7
+       }
       }
      },
      {
@@ -2337,6 +3490,32 @@
        "rebounds": 2.9,
        "assists": 5.9,
        "threes": 2.9
+      },
+      "props": {
+       "assists": {
+        "line": 5.5,
+        "over": -139,
+        "under": 105,
+        "books": 9
+       },
+       "points": {
+        "line": 25.5,
+        "over": -120,
+        "under": -111,
+        "books": 8
+       },
+       "rebounds": {
+        "line": 2.5,
+        "over": -155,
+        "under": 115,
+        "books": 6
+       },
+       "threes": {
+        "line": 2.5,
+        "over": -105,
+        "under": -123,
+        "books": 9
+       }
       }
      },
      {
@@ -2355,6 +3534,32 @@
        "rebounds": 14.1,
        "assists": 3.9,
        "threes": 2.0
+      },
+      "props": {
+       "assists": {
+        "line": 3.5,
+        "over": -127,
+        "under": -102,
+        "books": 8
+       },
+       "points": {
+        "line": 20.5,
+        "over": -121,
+        "under": -107,
+        "books": 8
+       },
+       "rebounds": {
+        "line": 12.5,
+        "over": -138,
+        "under": 105,
+        "books": 9
+       },
+       "threes": {
+        "line": 1.5,
+        "over": -134,
+        "under": 102,
+        "books": 8
+       }
       }
      },
      {
@@ -2373,6 +3578,32 @@
        "rebounds": 6.3,
        "assists": 3.5,
        "threes": 1.3
+      },
+      "props": {
+       "assists": {
+        "line": 3.5,
+        "over": 122,
+        "under": -164,
+        "books": 7
+       },
+       "points": {
+        "line": 7.5,
+        "over": -110,
+        "under": -118,
+        "books": 8
+       },
+       "rebounds": {
+        "line": 5.5,
+        "over": -145,
+        "under": 112,
+        "books": 8
+       },
+       "threes": {
+        "line": 1.5,
+        "over": 148,
+        "under": -200,
+        "books": 7
+       }
       }
      },
      {
@@ -2391,6 +3622,32 @@
        "rebounds": 3.6,
        "assists": 2.1,
        "threes": 0.9
+      },
+      "props": {
+       "assists": {
+        "line": 2.5,
+        "over": 116,
+        "under": -155,
+        "books": 6
+       },
+       "points": {
+        "line": 9.5,
+        "over": -115,
+        "under": -113,
+        "books": 8
+       },
+       "rebounds": {
+        "line": 3.0,
+        "over": -104,
+        "under": -117,
+        "books": 6
+       },
+       "threes": {
+        "line": 1.5,
+        "over": 171,
+        "under": -230,
+        "books": 7
+       }
       }
      },
      {
@@ -2409,6 +3666,32 @@
        "rebounds": 1.7,
        "assists": 1.8,
        "threes": 2.2
+      },
+      "props": {
+       "points": {
+        "line": 8.5,
+        "over": -114,
+        "under": -116,
+        "books": 7
+       },
+       "threes": {
+        "line": 1.5,
+        "over": -147,
+        "under": 110,
+        "books": 7
+       },
+       "assists": {
+        "line": 1.5,
+        "over": 143,
+        "under": -190,
+        "books": 3
+       },
+       "rebounds": {
+        "line": 1.5,
+        "over": -147,
+        "under": 114,
+        "books": 1
+       }
       }
      },
      {
@@ -2427,6 +3710,26 @@
        "rebounds": 1.4,
        "assists": 1.1,
        "threes": 2.0
+      },
+      "props": {
+       "rebounds": {
+        "line": 1.5,
+        "over": 141,
+        "under": -185,
+        "books": 1
+       },
+       "threes": {
+        "line": 1.5,
+        "over": 141,
+        "under": -185,
+        "books": 5
+       },
+       "points": {
+        "line": 5.5,
+        "over": -108,
+        "under": -120,
+        "books": 4
+       }
       }
      },
      {
@@ -2546,18 +3849,18 @@
    "tip": "2026-11-20T19:00:00-05:00",
    "away": "CHA",
    "home": "ATL",
-   "margin": 4.0,
-   "total": 226.8,
+   "margin": 5.0,
+   "total": 226.0,
    "ratings_margin": 4.2,
    "pace": 102.8,
    "market_ratings_margin": null,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
-   "projection": 4.0,
-   "projection_total": 226.8,
-   "win_prob": 0.64,
+   "mkt_spread": 5.5,
+   "mkt_total": 218.5,
+   "mkt_ml_home": -212.0,
+   "mkt_ml_away": 177.0,
+   "projection": 5.4,
+   "projection_total": 218.5,
+   "win_prob": 0.67,
    "rest": {
     "away": 2,
     "home": 1
@@ -2590,6 +3893,11 @@
       "kind": "missing"
      },
      {
+      "label": "ATL without Jock Landale",
+      "pts": -0.43,
+      "kind": "missing"
+     },
+     {
       "label": "ATL without Asa Newell",
       "pts": -0.1,
       "kind": "missing"
@@ -2600,8 +3908,13 @@
       "kind": "missing"
      },
      {
-      "label": "Lineup strength from player impact ratings (ATL +3.3, CHA -2.1 per 48)",
-      "pts": 1.65,
+      "label": "CHA without Grayson Allen",
+      "pts": 0.81,
+      "kind": "missing"
+     },
+     {
+      "label": "Lineup strength from player impact ratings (ATL +3.0, CHA -4.1 per 48)",
+      "pts": 2.2,
       "kind": "players"
      }
     ],
@@ -2618,31 +3931,36 @@
      },
      {
       "label": "Players out, both teams",
-      "pts": -0.87,
+      "pts": -1.68,
       "kind": "missing"
      }
     ]
    },
    "imp": {
-    "home": 3.266,
-    "away": -2.096
+    "home": 3.01,
+    "away": -4.143
    },
    "missing": {
-    "away": 0.9,
-    "home": 3.8,
-    "away_names": [],
+    "away": 3.8,
+    "home": 5.3,
+    "away_names": [
+     "Grayson Allen"
+    ],
     "home_names": [
-     "CJ McCollum"
+     "CJ McCollum",
+     "Jock Landale"
     ]
    },
    "players": {
     "out": {
      "home": [
       "CJ McCollum",
+      "Jock Landale",
       "Asa Newell"
      ],
      "away": [
-      "Dennis Schroder"
+      "Dennis Schroder",
+      "Grayson Allen"
      ]
     },
     "home": [
@@ -2651,10 +3969,10 @@
       "name": "Jalen Johnson",
       "team": "ATL",
       "opp": "CHA",
-      "minutes": 34.4,
-      "points": 20.6,
-      "rebounds": 9.0,
-      "assists": 7.7,
+      "minutes": 34.9,
+      "points": 20.9,
+      "rebounds": 9.1,
+      "assists": 7.8,
       "threes": 1.3,
       "avg": {
        "minutes": 34.3,
@@ -2669,9 +3987,9 @@
       "name": "Onyeka Okongwu",
       "team": "ATL",
       "opp": "CHA",
-      "minutes": 32.5,
-      "points": 15.9,
-      "rebounds": 7.8,
+      "minutes": 32.9,
+      "points": 16.1,
+      "rebounds": 7.9,
       "assists": 3.0,
       "threes": 2.1,
       "avg": {
@@ -2687,9 +4005,9 @@
       "name": "Nickeil Alexander-Walker",
       "team": "ATL",
       "opp": "CHA",
-      "minutes": 32.3,
-      "points": 20.9,
-      "rebounds": 3.4,
+      "minutes": 32.7,
+      "points": 21.2,
+      "rebounds": 3.5,
       "assists": 3.4,
       "threes": 3.5,
       "avg": {
@@ -2705,10 +4023,10 @@
       "name": "Dyson Daniels",
       "team": "ATL",
       "opp": "CHA",
-      "minutes": 32.0,
-      "points": 10.8,
-      "rebounds": 6.9,
-      "assists": 5.7,
+      "minutes": 32.4,
+      "points": 10.9,
+      "rebounds": 7.0,
+      "assists": 5.8,
       "threes": 0.3,
       "avg": {
        "minutes": 30.9,
@@ -2723,11 +4041,11 @@
       "name": "Aaron Wiggins",
       "team": "ATL",
       "opp": "CHA",
-      "minutes": 25.5,
-      "points": 12.4,
-      "rebounds": 3.4,
+      "minutes": 25.9,
+      "points": 12.6,
+      "rebounds": 3.5,
       "assists": 2.3,
-      "threes": 2.3,
+      "threes": 2.4,
       "avg": {
        "minutes": 25.9,
        "points": 13.9,
@@ -2741,8 +4059,8 @@
       "name": "Luguentz Dort",
       "team": "ATL",
       "opp": "CHA",
-      "minutes": 24.9,
-      "points": 8.7,
+      "minutes": 25.2,
+      "points": 8.8,
       "rebounds": 3.1,
       "assists": 1.5,
       "threes": 1.8,
@@ -2759,10 +4077,10 @@
       "name": "Kingston Flemings",
       "team": "ATL",
       "opp": "CHA",
-      "minutes": 19.9,
-      "points": 7.5,
+      "minutes": 20.2,
+      "points": 7.6,
       "rebounds": 2.4,
-      "assists": 3.6,
+      "assists": 3.7,
       "threes": 0.8,
       "avg": {
        "minutes": 21.5,
@@ -2777,10 +4095,10 @@
       "name": "Corey Kispert",
       "team": "ATL",
       "opp": "CHA",
-      "minutes": 13.9,
-      "points": 7.3,
-      "rebounds": 1.4,
-      "assists": 1.1,
+      "minutes": 14.1,
+      "points": 7.4,
+      "rebounds": 1.5,
+      "assists": 1.2,
       "threes": 1.4,
       "avg": {
        "minutes": 11.4,
@@ -2791,33 +4109,15 @@
       }
      },
      {
-      "id": 3146557,
-      "name": "Jock Landale",
-      "team": "ATL",
-      "opp": "CHA",
-      "minutes": 13.8,
-      "points": 6.2,
-      "rebounds": 3.6,
-      "assists": 1.3,
-      "threes": 0.7,
-      "avg": {
-       "minutes": 15.4,
-       "points": 6.8,
-       "rebounds": 4.9,
-       "assists": 1.7,
-       "threes": 0.6
-      }
-     },
-     {
       "id": 5106262,
       "name": "Zuby Ejiofor",
       "team": "ATL",
       "opp": "CHA",
-      "minutes": 12.2,
-      "points": 4.9,
+      "minutes": 12.4,
+      "points": 5.0,
       "rebounds": 2.6,
       "assists": 1.2,
-      "threes": 0.7,
+      "threes": 0.8,
       "avg": {
        "minutes": 11.3,
        "points": 4.6,
@@ -2831,7 +4131,7 @@
       "name": "RayJ Dennis",
       "team": "ATL",
       "opp": "CHA",
-      "minutes": 10.1,
+      "minutes": 10.2,
       "points": 3.9,
       "rebounds": 1.5,
       "assists": 2.1,
@@ -2851,11 +4151,11 @@
       "name": "Naz Reid",
       "team": "CHA",
       "opp": "ATL",
-      "minutes": 31.5,
-      "points": 17.8,
-      "rebounds": 8.1,
-      "assists": 2.7,
-      "threes": 2.4,
+      "minutes": 32.9,
+      "points": 18.6,
+      "rebounds": 8.4,
+      "assists": 2.9,
+      "threes": 2.5,
       "avg": {
        "minutes": 30.6,
        "points": 17.6,
@@ -2869,10 +4169,10 @@
       "name": "Moussa Diabate",
       "team": "CHA",
       "opp": "ATL",
-      "minutes": 29.7,
-      "points": 9.3,
-      "rebounds": 10.0,
-      "assists": 2.3,
+      "minutes": 31.0,
+      "points": 9.8,
+      "rebounds": 10.4,
+      "assists": 2.4,
       "threes": 0.1,
       "avg": {
        "minutes": 29.6,
@@ -2887,11 +4187,11 @@
       "name": "Brandon Miller",
       "team": "CHA",
       "opp": "ATL",
-      "minutes": 27.8,
-      "points": 18.8,
-      "rebounds": 4.4,
-      "assists": 2.9,
-      "threes": 2.5,
+      "minutes": 28.9,
+      "points": 19.6,
+      "rebounds": 4.6,
+      "assists": 3.0,
+      "threes": 2.6,
       "avg": {
        "minutes": 30.5,
        "points": 19.9,
@@ -2905,11 +4205,11 @@
       "name": "Sion James",
       "team": "CHA",
       "opp": "ATL",
-      "minutes": 27.5,
-      "points": 6.5,
-      "rebounds": 4.3,
-      "assists": 3.0,
-      "threes": 1.1,
+      "minutes": 28.8,
+      "points": 6.8,
+      "rebounds": 4.5,
+      "assists": 3.1,
+      "threes": 1.2,
       "avg": {
        "minutes": 27.1,
        "points": 5.6,
@@ -2919,33 +4219,15 @@
       }
      },
      {
-      "id": 3135045,
-      "name": "Grayson Allen",
-      "team": "CHA",
-      "opp": "ATL",
-      "minutes": 23.8,
-      "points": 13.7,
-      "rebounds": 2.7,
-      "assists": 3.2,
-      "threes": 2.6,
-      "avg": {
-       "minutes": 27.2,
-       "points": 14.9,
-       "rebounds": 3.1,
-       "assists": 3.3,
-       "threes": 3.4
-      }
-     },
-     {
       "id": 2583632,
       "name": "Royce O'Neale",
       "team": "CHA",
       "opp": "ATL",
-      "minutes": 23.1,
-      "points": 7.5,
-      "rebounds": 3.8,
-      "assists": 1.6,
-      "threes": 1.8,
+      "minutes": 24.1,
+      "points": 7.9,
+      "rebounds": 4.0,
+      "assists": 1.7,
+      "threes": 1.9,
       "avg": {
        "minutes": 20.4,
        "points": 5.7,
@@ -2955,33 +4237,15 @@
       }
      },
      {
-      "id": 4066218,
-      "name": "Grant Williams",
-      "team": "CHA",
-      "opp": "ATL",
-      "minutes": 22.2,
-      "points": 9.2,
-      "rebounds": 3.9,
-      "assists": 1.6,
-      "threes": 1.7,
-      "avg": {
-       "minutes": 22.0,
-       "points": 11.3,
-       "rebounds": 2.7,
-       "assists": 0.7,
-       "threes": 2.3
-      }
-     },
-     {
       "id": 4395651,
       "name": "Coby White",
       "team": "CHA",
       "opp": "ATL",
-      "minutes": 20.4,
-      "points": 13.9,
-      "rebounds": 2.6,
-      "assists": 3.4,
-      "threes": 1.5,
+      "minutes": 21.3,
+      "points": 14.5,
+      "rebounds": 2.7,
+      "assists": 3.6,
+      "threes": 1.6,
       "avg": {
        "minutes": 19.4,
        "points": 12.7,
@@ -2995,9 +4259,9 @@
       "name": "Ryan Kalkbrenner",
       "team": "CHA",
       "opp": "ATL",
-      "minutes": 17.5,
-      "points": 5.5,
-      "rebounds": 4.7,
+      "minutes": 18.2,
+      "points": 5.8,
+      "rebounds": 4.9,
       "assists": 1.1,
       "threes": 0.1,
       "avg": {
@@ -3013,10 +4277,10 @@
       "name": "Christian Anderson",
       "team": "CHA",
       "opp": "ATL",
-      "minutes": 14.5,
-      "points": 5.9,
-      "rebounds": 1.9,
-      "assists": 2.0,
+      "minutes": 15.1,
+      "points": 6.1,
+      "rebounds": 2.0,
+      "assists": 2.1,
       "threes": 1.0,
       "avg": {
        "minutes": 13.4,
@@ -3031,10 +4295,10 @@
       "name": "Hannes Steinbach",
       "team": "CHA",
       "opp": "ATL",
-      "minutes": 12.2,
-      "points": 4.0,
-      "rebounds": 3.2,
-      "assists": 0.8,
+      "minutes": 12.8,
+      "points": 4.3,
+      "rebounds": 3.3,
+      "assists": 0.9,
       "threes": 0.3,
       "avg": {
        "minutes": 12.6,
@@ -3049,10 +4313,10 @@
       "name": "Tidjane Salaun",
       "team": "CHA",
       "opp": "ATL",
-      "minutes": 11.4,
-      "points": 4.4,
-      "rebounds": 2.7,
-      "assists": 0.3,
+      "minutes": 11.8,
+      "points": 4.6,
+      "rebounds": 2.8,
+      "assists": 0.4,
       "threes": 0.8,
       "avg": {
        "minutes": 13.7,
@@ -3067,8 +4331,8 @@
       "name": "Liam McNeeley",
       "team": "CHA",
       "opp": "ATL",
-      "minutes": 8.9,
-      "points": 3.1,
+      "minutes": 9.2,
+      "points": 3.2,
       "rebounds": 1.6,
       "assists": 0.7,
       "threes": 0.5,
@@ -3089,8 +4353,8 @@
    "tip": "2026-11-20T19:30:00-05:00",
    "away": "TOR",
    "home": "DET",
-   "margin": 6.1,
-   "total": 225.6,
+   "margin": 8.9,
+   "total": 224.4,
    "ratings_margin": 6.8,
    "pace": 101.6,
    "market_ratings_margin": null,
@@ -3098,9 +4362,9 @@
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
-   "projection": 6.1,
-   "projection_total": 225.6,
-   "win_prob": 0.706,
+   "projection": 8.9,
+   "projection_total": 224.4,
+   "win_prob": 0.781,
    "rest": {
     "away": 1,
     "home": 1
@@ -3128,8 +4392,18 @@
       "kind": "missing"
      },
      {
-      "label": "Lineup strength from player impact ratings (DET +11.3, TOR +6.0 per 48)",
-      "pts": 1.64,
+      "label": "TOR without RJ Barrett",
+      "pts": 1.34,
+      "kind": "missing"
+     },
+     {
+      "label": "TOR without Collin Murray-Boyles",
+      "pts": 0.44,
+      "kind": "missing"
+     },
+     {
+      "label": "Lineup strength from player impact ratings (DET +12.3, TOR +3.5 per 48)",
+      "pts": 2.69,
       "kind": "players"
      }
     ],
@@ -3146,19 +4420,22 @@
      },
      {
       "label": "Players out, both teams",
-      "pts": -0.33,
+      "pts": -1.54,
       "kind": "missing"
      }
     ]
    },
    "imp": {
-    "home": 11.32,
-    "away": 6.005
+    "home": 12.273,
+    "away": 3.546
    },
    "missing": {
-    "away": 0.0,
-    "home": 1.8,
-    "away_names": [],
+    "away": 6.3,
+    "home": 2.0,
+    "away_names": [
+     "RJ Barrett",
+     "Collin Murray-Boyles"
+    ],
     "home_names": [
      "Duncan Robinson"
     ]
@@ -3166,9 +4443,13 @@
    "players": {
     "out": {
      "home": [
-      "Duncan Robinson"
+      "Duncan Robinson",
+      "Ronald Holland II"
      ],
-     "away": []
+     "away": [
+      "RJ Barrett",
+      "Collin Murray-Boyles"
+     ]
     },
     "home": [
      {
@@ -3176,10 +4457,10 @@
       "name": "Daniss Jenkins",
       "team": "DET",
       "opp": "TOR",
-      "minutes": 32.3,
-      "points": 15.5,
-      "rebounds": 3.9,
-      "assists": 5.6,
+      "minutes": 33.0,
+      "points": 15.9,
+      "rebounds": 4.0,
+      "assists": 5.7,
       "threes": 2.0,
       "avg": {
        "minutes": 29.3,
@@ -3194,10 +4475,10 @@
       "name": "Cade Cunningham",
       "team": "DET",
       "opp": "TOR",
-      "minutes": 31.9,
-      "points": 23.3,
-      "rebounds": 4.9,
-      "assists": 8.1,
+      "minutes": 32.7,
+      "points": 23.8,
+      "rebounds": 5.0,
+      "assists": 8.2,
       "threes": 1.8,
       "avg": {
        "minutes": 35.0,
@@ -3212,11 +4493,11 @@
       "name": "Kevin Huerter",
       "team": "DET",
       "opp": "TOR",
-      "minutes": 29.9,
-      "points": 12.5,
-      "rebounds": 3.8,
+      "minutes": 30.6,
+      "points": 12.8,
+      "rebounds": 3.9,
       "assists": 3.3,
-      "threes": 1.7,
+      "threes": 1.8,
       "avg": {
        "minutes": 26.1,
        "points": 9.9,
@@ -3230,10 +4511,10 @@
       "name": "Ausar Thompson",
       "team": "DET",
       "opp": "TOR",
-      "minutes": 29.1,
-      "points": 11.1,
-      "rebounds": 7.4,
-      "assists": 4.7,
+      "minutes": 29.7,
+      "points": 11.3,
+      "rebounds": 7.5,
+      "assists": 4.8,
       "threes": 0.1,
       "avg": {
        "minutes": 28.3,
@@ -3248,10 +4529,10 @@
       "name": "John Collins",
       "team": "DET",
       "opp": "TOR",
-      "minutes": 26.5,
-      "points": 12.4,
-      "rebounds": 5.4,
-      "assists": 0.9,
+      "minutes": 27.1,
+      "points": 12.6,
+      "rebounds": 5.5,
+      "assists": 1.0,
       "threes": 1.3,
       "avg": {
        "minutes": 26.3,
@@ -3266,9 +4547,9 @@
       "name": "Paul Reed",
       "team": "DET",
       "opp": "TOR",
-      "minutes": 24.6,
-      "points": 12.4,
-      "rebounds": 7.3,
+      "minutes": 25.1,
+      "points": 12.6,
+      "rebounds": 7.4,
       "assists": 2.2,
       "threes": 0.4,
       "avg": {
@@ -3284,9 +4565,9 @@
       "name": "Javonte Green",
       "team": "DET",
       "opp": "TOR",
-      "minutes": 22.1,
-      "points": 8.5,
-      "rebounds": 3.3,
+      "minutes": 22.6,
+      "points": 8.7,
+      "rebounds": 3.4,
       "assists": 0.8,
       "threes": 1.3,
       "avg": {
@@ -3298,32 +4579,14 @@
       }
      },
      {
-      "id": 4683771,
-      "name": "Ronald Holland II",
-      "team": "DET",
-      "opp": "TOR",
-      "minutes": 15.5,
-      "points": 5.7,
-      "rebounds": 3.2,
-      "assists": 1.3,
-      "threes": 0.6,
-      "avg": {
-       "minutes": 16.0,
-       "points": 4.9,
-       "rebounds": 3.8,
-       "assists": 1.8,
-       "threes": 0.7
-      }
-     },
-     {
       "id": 4395702,
       "name": "Isaiah Joe",
       "team": "DET",
       "opp": "TOR",
-      "minutes": 14.7,
-      "points": 7.6,
-      "rebounds": 1.7,
-      "assists": 1.0,
+      "minutes": 15.0,
+      "points": 7.8,
+      "rebounds": 1.8,
+      "assists": 1.1,
       "threes": 1.6,
       "avg": {
        "minutes": 14.2,
@@ -3338,8 +4601,8 @@
       "name": "Chaz Lanier",
       "team": "DET",
       "opp": "TOR",
-      "minutes": 12.1,
-      "points": 4.4,
+      "minutes": 12.3,
+      "points": 4.5,
       "rebounds": 1.2,
       "assists": 0.7,
       "threes": 1.0,
@@ -3350,6 +4613,24 @@
        "assists": 0.2,
        "threes": 1.2
       }
+     },
+     {
+      "id": 4397449,
+      "name": "Elijah Harkless",
+      "team": "DET",
+      "opp": "TOR",
+      "minutes": 8.1,
+      "points": 2.4,
+      "rebounds": 0.8,
+      "assists": 1.1,
+      "threes": 0.3,
+      "avg": {
+       "minutes": 5.8,
+       "points": 2.0,
+       "rebounds": 0.8,
+       "assists": 1.2,
+       "threes": 0.0
+      }
      }
     ],
     "away": [
@@ -3358,11 +4639,11 @@
       "name": "Ja'Kobe Walter",
       "team": "TOR",
       "opp": "DET",
-      "minutes": 31.9,
-      "points": 12.2,
-      "rebounds": 4.1,
-      "assists": 2.1,
-      "threes": 2.3,
+      "minutes": 35.5,
+      "points": 13.6,
+      "rebounds": 4.6,
+      "assists": 2.3,
+      "threes": 2.6,
       "avg": {
        "minutes": 31.3,
        "points": 12.2,
@@ -3376,11 +4657,11 @@
       "name": "Immanuel Quickley",
       "team": "TOR",
       "opp": "DET",
-      "minutes": 31.3,
-      "points": 16.7,
-      "rebounds": 3.8,
-      "assists": 5.5,
-      "threes": 2.4,
+      "minutes": 34.7,
+      "points": 18.5,
+      "rebounds": 4.2,
+      "assists": 6.0,
+      "threes": 2.6,
       "avg": {
        "minutes": 32.0,
        "points": 17.8,
@@ -3390,33 +4671,15 @@
       }
      },
      {
-      "id": 4395625,
-      "name": "RJ Barrett",
-      "team": "TOR",
-      "opp": "DET",
-      "minutes": 30.2,
-      "points": 18.9,
-      "rebounds": 5.6,
-      "assists": 3.6,
-      "threes": 1.4,
-      "avg": {
-       "minutes": 34.1,
-       "points": 20.9,
-       "rebounds": 6.4,
-       "assists": 4.3,
-       "threes": 1.5
-      }
-     },
-     {
       "id": 4433134,
       "name": "Scottie Barnes",
       "team": "TOR",
       "opp": "DET",
-      "minutes": 29.3,
-      "points": 18.2,
-      "rebounds": 6.6,
-      "assists": 4.5,
-      "threes": 0.8,
+      "minutes": 32.9,
+      "points": 20.3,
+      "rebounds": 7.3,
+      "assists": 5.0,
+      "threes": 0.9,
       "avg": {
        "minutes": 33.7,
        "points": 23.8,
@@ -3430,10 +4693,10 @@
       "name": "Jakob Poeltl",
       "team": "TOR",
       "opp": "DET",
-      "minutes": 23.4,
-      "points": 9.1,
-      "rebounds": 6.5,
-      "assists": 1.7,
+      "minutes": 25.9,
+      "points": 10.1,
+      "rebounds": 7.1,
+      "assists": 1.9,
       "threes": 0.1,
       "avg": {
        "minutes": 23.3,
@@ -3448,11 +4711,11 @@
       "name": "Jamal Shead",
       "team": "TOR",
       "opp": "DET",
-      "minutes": 23.0,
-      "points": 7.3,
-      "rebounds": 1.9,
-      "assists": 5.7,
-      "threes": 1.0,
+      "minutes": 25.5,
+      "points": 8.1,
+      "rebounds": 2.1,
+      "assists": 6.2,
+      "threes": 1.1,
       "avg": {
        "minutes": 23.8,
        "points": 8.2,
@@ -3462,33 +4725,15 @@
       }
      },
      {
-      "id": 5093267,
-      "name": "Collin Murray-Boyles",
-      "team": "TOR",
-      "opp": "DET",
-      "minutes": 20.8,
-      "points": 8.1,
-      "rebounds": 4.4,
-      "assists": 1.7,
-      "threes": 0.4,
-      "avg": {
-       "minutes": 23.6,
-       "points": 9.3,
-       "rebounds": 4.6,
-       "assists": 1.8,
-       "threes": 0.5
-      }
-     },
-     {
       "id": 4431893,
       "name": "Jamison Battle",
       "team": "TOR",
       "opp": "DET",
-      "minutes": 20.5,
-      "points": 8.8,
-      "rebounds": 2.7,
-      "assists": 0.7,
-      "threes": 1.7,
+      "minutes": 22.6,
+      "points": 9.7,
+      "rebounds": 2.9,
+      "assists": 0.8,
+      "threes": 1.9,
       "avg": {
        "minutes": 18.7,
        "points": 9.0,
@@ -3502,11 +4747,11 @@
       "name": "Allen Graves",
       "team": "TOR",
       "opp": "DET",
-      "minutes": 18.1,
-      "points": 6.0,
-      "rebounds": 3.3,
-      "assists": 1.1,
-      "threes": 0.7,
+      "minutes": 20.1,
+      "points": 6.7,
+      "rebounds": 3.7,
+      "assists": 1.2,
+      "threes": 0.8,
       "avg": {
        "minutes": 14.9,
        "points": 4.6,
@@ -3520,11 +4765,11 @@
       "name": "Alijah Martin",
       "team": "TOR",
       "opp": "DET",
-      "minutes": 13.8,
-      "points": 5.5,
-      "rebounds": 2.1,
-      "assists": 1.0,
-      "threes": 0.8,
+      "minutes": 15.2,
+      "points": 6.1,
+      "rebounds": 2.4,
+      "assists": 1.1,
+      "threes": 0.9,
       "avg": {
        "minutes": 12.3,
        "points": 5.4,
@@ -3538,16 +4783,34 @@
       "name": "Trayce Jackson-Davis",
       "team": "TOR",
       "opp": "DET",
-      "minutes": 10.7,
-      "points": 3.6,
-      "rebounds": 3.1,
-      "assists": 0.7,
+      "minutes": 11.8,
+      "points": 4.1,
+      "rebounds": 3.4,
+      "assists": 0.8,
       "threes": 0.1,
       "avg": {
        "minutes": 8.4,
        "points": 3.1,
        "rebounds": 3.1,
        "assists": 0.5,
+       "threes": 0.0
+      }
+     },
+     {
+      "id": 2993874,
+      "name": "Kyle Anderson",
+      "team": "TOR",
+      "opp": "DET",
+      "minutes": 8.1,
+      "points": 1.9,
+      "rebounds": 1.3,
+      "assists": 1.2,
+      "threes": 0.1,
+      "avg": {
+       "minutes": 7.3,
+       "points": 1.4,
+       "rebounds": 1.1,
+       "assists": 1.4,
        "threes": 0.0
       }
      }
@@ -3560,8 +4823,8 @@
    "tip": "2026-11-20T19:30:00-05:00",
    "away": "IND",
    "home": "CLE",
-   "margin": 7.6,
-   "total": 235.7,
+   "margin": 7.0,
+   "total": 235.4,
    "ratings_margin": 9.1,
    "pace": 103.2,
    "market_ratings_margin": null,
@@ -3569,9 +4832,9 @@
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
-   "projection": 7.6,
-   "projection_total": 235.7,
-   "win_prob": 0.747,
+   "projection": 7.0,
+   "projection_total": 235.4,
+   "win_prob": 0.732,
    "rest": {
     "away": 1,
     "home": 1
@@ -3604,8 +4867,13 @@
       "kind": "missing"
      },
      {
-      "label": "Lineup strength from player impact ratings (CLE +11.5, IND +2.3 per 48)",
-      "pts": 2.85,
+      "label": "CLE without Jaylon Tyson",
+      "pts": -0.44,
+      "kind": "missing"
+     },
+     {
+      "label": "Lineup strength from player impact ratings (CLE +11.3, IND +2.3 per 48)",
+      "pts": 2.78,
       "kind": "players"
      }
     ],
@@ -3622,27 +4890,29 @@
      },
      {
       "label": "Players out, both teams",
-      "pts": -1.09,
+      "pts": -1.38,
       "kind": "missing"
      }
     ]
    },
    "imp": {
-    "home": 11.529,
+    "home": 11.278,
     "away": 2.268
    },
    "missing": {
     "away": 0.0,
-    "home": 5.9,
+    "home": 7.5,
     "away_names": [],
     "home_names": [
-     "Evan Mobley"
+     "Evan Mobley",
+     "Jaylon Tyson"
     ]
    },
    "players": {
     "out": {
      "home": [
-      "Evan Mobley"
+      "Evan Mobley",
+      "Jaylon Tyson"
      ],
      "away": []
     },
@@ -3652,10 +4922,10 @@
       "name": "James Harden",
       "team": "CLE",
       "opp": "IND",
-      "minutes": 32.3,
-      "points": 18.9,
-      "rebounds": 4.7,
-      "assists": 6.8,
+      "minutes": 33.2,
+      "points": 19.5,
+      "rebounds": 4.9,
+      "assists": 6.9,
       "threes": 2.8,
       "avg": {
        "minutes": 33.1,
@@ -3670,11 +4940,11 @@
       "name": "Donovan Mitchell",
       "team": "CLE",
       "opp": "IND",
-      "minutes": 32.3,
-      "points": 25.9,
-      "rebounds": 4.7,
-      "assists": 5.5,
-      "threes": 2.9,
+      "minutes": 33.2,
+      "points": 26.6,
+      "rebounds": 4.9,
+      "assists": 5.6,
+      "threes": 3.0,
       "avg": {
        "minutes": 33.2,
        "points": 24.8,
@@ -3688,10 +4958,10 @@
       "name": "Jarrett Allen",
       "team": "CLE",
       "opp": "IND",
-      "minutes": 26.7,
-      "points": 14.4,
-      "rebounds": 8.6,
-      "assists": 1.8,
+      "minutes": 27.5,
+      "points": 14.8,
+      "rebounds": 8.8,
+      "assists": 1.9,
       "threes": 0.2,
       "avg": {
        "minutes": 26.5,
@@ -3706,11 +4976,11 @@
       "name": "Meleek Thomas",
       "team": "CLE",
       "opp": "IND",
-      "minutes": 23.8,
-      "points": 13.3,
-      "rebounds": 3.1,
-      "assists": 1.8,
-      "threes": 2.5,
+      "minutes": 24.4,
+      "points": 13.6,
+      "rebounds": 3.2,
+      "assists": 1.9,
+      "threes": 2.6,
       "avg": {
        "minutes": 23.8,
        "points": 13.4,
@@ -3724,11 +4994,11 @@
       "name": "Tyrese Proctor",
       "team": "CLE",
       "opp": "IND",
-      "minutes": 23.5,
-      "points": 11.5,
-      "rebounds": 3.5,
-      "assists": 3.1,
-      "threes": 2.0,
+      "minutes": 24.2,
+      "points": 11.9,
+      "rebounds": 3.6,
+      "assists": 3.2,
+      "threes": 2.1,
       "avg": {
        "minutes": 20.3,
        "points": 9.7,
@@ -3742,10 +5012,10 @@
       "name": "Peyton Watson",
       "team": "CLE",
       "opp": "IND",
-      "minutes": 23.3,
-      "points": 10.6,
-      "rebounds": 4.0,
-      "assists": 2.0,
+      "minutes": 23.9,
+      "points": 10.9,
+      "rebounds": 4.1,
+      "assists": 2.1,
       "threes": 1.1,
       "avg": {
        "minutes": 27.5,
@@ -3756,33 +5026,15 @@
       }
      },
      {
-      "id": 4683747,
-      "name": "Jaylon Tyson",
-      "team": "CLE",
-      "opp": "IND",
-      "minutes": 22.4,
-      "points": 10.4,
-      "rebounds": 3.8,
-      "assists": 2.2,
-      "threes": 1.7,
-      "avg": {
-       "minutes": 23.9,
-       "points": 9.5,
-       "rebounds": 3.1,
-       "assists": 2.5,
-       "threes": 1.6
-      }
-     },
-     {
       "id": 4066757,
       "name": "Sam Merrill",
       "team": "CLE",
       "opp": "IND",
-      "minutes": 21.9,
-      "points": 9.3,
-      "rebounds": 2.7,
-      "assists": 2.0,
-      "threes": 2.1,
+      "minutes": 22.4,
+      "points": 9.6,
+      "rebounds": 2.8,
+      "assists": 2.1,
+      "threes": 2.2,
       "avg": {
        "minutes": 23.1,
        "points": 7.6,
@@ -3796,10 +5048,10 @@
       "name": "Mario Hezonja",
       "team": "CLE",
       "opp": "IND",
-      "minutes": 20.9,
-      "points": 9.8,
-      "rebounds": 5.5,
-      "assists": 2.0,
+      "minutes": 21.5,
+      "points": 10.0,
+      "rebounds": 5.7,
+      "assists": 2.1,
       "threes": 1.3,
       "avg": {
        "minutes": 19.6,
@@ -3814,9 +5066,9 @@
       "name": "Thomas Bryant",
       "team": "CLE",
       "opp": "IND",
-      "minutes": 15.3,
-      "points": 8.4,
-      "rebounds": 3.9,
+      "minutes": 15.7,
+      "points": 8.6,
+      "rebounds": 4.0,
       "assists": 0.9,
       "threes": 1.1,
       "avg": {
@@ -3832,10 +5084,10 @@
       "name": "Norchad Omier",
       "team": "CLE",
       "opp": "IND",
-      "minutes": 14.9,
-      "points": 5.6,
-      "rebounds": 4.2,
-      "assists": 1.5,
+      "minutes": 15.3,
+      "points": 5.8,
+      "rebounds": 4.3,
+      "assists": 1.6,
       "threes": 0.5,
       "avg": {
        "minutes": 14.2,
@@ -3850,10 +5102,10 @@
       "name": "Craig Porter Jr.",
       "team": "CLE",
       "opp": "IND",
-      "minutes": 13.3,
-      "points": 2.9,
-      "rebounds": 2.5,
-      "assists": 2.2,
+      "minutes": 13.7,
+      "points": 3.0,
+      "rebounds": 2.6,
+      "assists": 2.3,
       "threes": 0.3,
       "avg": {
        "minutes": 11.8,
@@ -3868,9 +5120,9 @@
       "name": "Riley Minix",
       "team": "CLE",
       "opp": "IND",
-      "minutes": 13.2,
-      "points": 4.9,
-      "rebounds": 2.0,
+      "minutes": 13.6,
+      "points": 5.1,
+      "rebounds": 2.1,
       "assists": 0.7,
       "threes": 0.7,
       "avg": {
@@ -3886,8 +5138,8 @@
       "name": "Tristan Enaruna",
       "team": "CLE",
       "opp": "IND",
-      "minutes": 9.2,
-      "points": 3.3,
+      "minutes": 9.5,
+      "points": 3.4,
       "rebounds": 1.6,
       "assists": 0.7,
       "threes": 0.3,
@@ -7225,8 +8477,8 @@
    "tip": "2026-11-21T13:00:00-05:00",
    "away": "MIL",
    "home": "PHI",
-   "margin": 7.9,
-   "total": 230.0,
+   "margin": 9.0,
+   "total": 229.5,
    "ratings_margin": 9.6,
    "pace": 101.5,
    "market_ratings_margin": null,
@@ -7234,9 +8486,9 @@
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
-   "projection": 7.9,
-   "projection_total": 230.0,
-   "win_prob": 0.756,
+   "projection": 9.0,
+   "projection_total": 229.5,
+   "win_prob": 0.784,
    "rest": {
     "away": 1,
     "home": 2
@@ -7274,8 +8526,18 @@
       "kind": "missing"
      },
      {
-      "label": "Lineup strength from player impact ratings (PHI +6.7, MIL -4.7 per 48)",
-      "pts": 3.5,
+      "label": "MIL without Myles Turner",
+      "pts": 0.25,
+      "kind": "missing"
+     },
+     {
+      "label": "MIL without Kyle Kuzma",
+      "pts": 0.49,
+      "kind": "missing"
+     },
+     {
+      "label": "Lineup strength from player impact ratings (PHI +6.7, MIL -5.9 per 48)",
+      "pts": 3.88,
       "kind": "players"
      }
     ],
@@ -7292,19 +8554,21 @@
      },
      {
       "label": "Players out, both teams",
-      "pts": -1.44,
+      "pts": -1.92,
       "kind": "missing"
      }
     ]
    },
    "imp": {
     "home": 6.655,
-    "away": -4.699
+    "away": -5.936
    },
    "missing": {
-    "away": 0.0,
+    "away": 2.6,
     "home": 7.8,
-    "away_names": [],
+    "away_names": [
+     "Kyle Kuzma"
+    ],
     "home_names": [
      "Jaylen Brown"
     ]
@@ -7316,6 +8580,8 @@
       "Adem Bona"
      ],
      "away": [
+      "Kyle Kuzma",
+      "Myles Turner",
       "Ousmane Dieng"
      ]
     },
@@ -7489,11 +8755,11 @@
       "name": "Tyler Herro",
       "team": "MIL",
       "opp": "PHI",
-      "minutes": 27.2,
-      "points": 17.9,
-      "rebounds": 4.0,
-      "assists": 3.8,
-      "threes": 2.2,
+      "minutes": 29.9,
+      "points": 19.6,
+      "rebounds": 4.3,
+      "assists": 4.2,
+      "threes": 2.4,
       "avg": {
        "minutes": 30.0,
        "points": 19.4,
@@ -7503,33 +8769,15 @@
       }
      },
      {
-      "id": 3134907,
-      "name": "Kyle Kuzma",
-      "team": "MIL",
-      "opp": "PHI",
-      "minutes": 26.7,
-      "points": 12.7,
-      "rebounds": 4.9,
-      "assists": 2.6,
-      "threes": 1.4,
-      "avg": {
-       "minutes": 27.1,
-       "points": 12.3,
-       "rebounds": 5.3,
-       "assists": 2.4,
-       "threes": 1.7
-      }
-     },
-     {
       "id": 4432848,
       "name": "Jaime Jaquez Jr.",
       "team": "MIL",
       "opp": "PHI",
-      "minutes": 25.9,
-      "points": 14.3,
-      "rebounds": 4.9,
-      "assists": 3.6,
-      "threes": 1.3,
+      "minutes": 28.6,
+      "points": 15.8,
+      "rebounds": 5.3,
+      "assists": 3.9,
+      "threes": 1.4,
       "avg": {
        "minutes": 27.6,
        "points": 15.4,
@@ -7539,33 +8787,15 @@
       }
      },
      {
-      "id": 3133628,
-      "name": "Myles Turner",
-      "team": "MIL",
-      "opp": "PHI",
-      "minutes": 24.4,
-      "points": 8.8,
-      "rebounds": 5.2,
-      "assists": 2.1,
-      "threes": 1.5,
-      "avg": {
-       "minutes": 26.6,
-       "points": 7.1,
-       "rebounds": 6.0,
-       "assists": 2.7,
-       "threes": 1.3
-      }
-     },
-     {
       "id": 5082206,
       "name": "Brayden Burries",
       "team": "MIL",
       "opp": "PHI",
-      "minutes": 23.2,
-      "points": 10.7,
-      "rebounds": 5.5,
-      "assists": 2.4,
-      "threes": 1.1,
+      "minutes": 25.8,
+      "points": 11.8,
+      "rebounds": 6.0,
+      "assists": 2.7,
+      "threes": 1.2,
       "avg": {
        "minutes": 22.1,
        "points": 10.1,
@@ -7579,11 +8809,11 @@
       "name": "Ryan Rollins",
       "team": "MIL",
       "opp": "PHI",
-      "minutes": 21.3,
-      "points": 10.5,
-      "rebounds": 3.8,
-      "assists": 3.7,
-      "threes": 1.5,
+      "minutes": 23.7,
+      "points": 11.7,
+      "rebounds": 4.2,
+      "assists": 4.0,
+      "threes": 1.7,
       "avg": {
        "minutes": 23.8,
        "points": 10.5,
@@ -7597,11 +8827,11 @@
       "name": "Kasparas Jakucionis",
       "team": "MIL",
       "opp": "PHI",
-      "minutes": 19.6,
-      "points": 7.8,
-      "rebounds": 2.7,
-      "assists": 3.2,
-      "threes": 1.2,
+      "minutes": 21.6,
+      "points": 8.6,
+      "rebounds": 3.0,
+      "assists": 3.4,
+      "threes": 1.3,
       "avg": {
        "minutes": 18.9,
        "points": 8.9,
@@ -7615,11 +8845,11 @@
       "name": "Kel'el Ware",
       "team": "MIL",
       "opp": "PHI",
-      "minutes": 18.3,
-      "points": 8.8,
-      "rebounds": 6.9,
-      "assists": 0.8,
-      "threes": 0.8,
+      "minutes": 20.2,
+      "points": 9.8,
+      "rebounds": 7.5,
+      "assists": 0.9,
+      "threes": 0.9,
       "avg": {
        "minutes": 18.1,
        "points": 8.7,
@@ -7633,11 +8863,11 @@
       "name": "Nate Ament",
       "team": "MIL",
       "opp": "PHI",
-      "minutes": 18.0,
-      "points": 7.6,
-      "rebounds": 2.8,
-      "assists": 0.9,
-      "threes": 1.0,
+      "minutes": 19.9,
+      "points": 8.4,
+      "rebounds": 3.1,
+      "assists": 1.0,
+      "threes": 1.1,
       "avg": {
        "minutes": 17.5,
        "points": 7.3,
@@ -7651,11 +8881,11 @@
       "name": "Gary Trent Jr.",
       "team": "MIL",
       "opp": "PHI",
-      "minutes": 14.6,
-      "points": 5.6,
-      "rebounds": 0.8,
-      "assists": 0.7,
-      "threes": 1.3,
+      "minutes": 16.1,
+      "points": 6.2,
+      "rebounds": 0.9,
+      "assists": 0.8,
+      "threes": 1.4,
       "avg": {
        "minutes": 12.1,
        "points": 5.3,
@@ -7669,11 +8899,11 @@
       "name": "AJ Green",
       "team": "MIL",
       "opp": "PHI",
-      "minutes": 14.0,
-      "points": 4.9,
-      "rebounds": 1.3,
-      "assists": 1.0,
-      "threes": 1.4,
+      "minutes": 15.2,
+      "points": 5.3,
+      "rebounds": 1.4,
+      "assists": 1.1,
+      "threes": 1.5,
       "avg": {
        "minutes": 16.3,
        "points": 5.9,
@@ -7687,9 +8917,9 @@
       "name": "Jericho Sims",
       "team": "MIL",
       "opp": "PHI",
-      "minutes": 13.0,
-      "points": 2.7,
-      "rebounds": 3.1,
+      "minutes": 14.3,
+      "points": 3.0,
+      "rebounds": 3.4,
       "assists": 0.9,
       "threes": 0.1,
       "avg": {
@@ -7705,11 +8935,11 @@
       "name": "Caris LeVert",
       "team": "MIL",
       "opp": "PHI",
-      "minutes": 8.6,
-      "points": 3.7,
-      "rebounds": 1.2,
-      "assists": 1.3,
-      "threes": 0.5,
+      "minutes": 9.4,
+      "points": 4.0,
+      "rebounds": 1.3,
+      "assists": 1.4,
+      "threes": 0.6,
       "avg": {
        "minutes": 8.0,
        "points": 8.0,
@@ -8733,8 +9963,8 @@
    "tip": "2026-11-21T20:00:00-05:00",
    "away": "MEM",
    "home": "MIN",
-   "margin": 9.3,
-   "total": 233.4,
+   "margin": 10.4,
+   "total": 233.0,
    "ratings_margin": 6.7,
    "pace": 104.5,
    "market_ratings_margin": null,
@@ -8742,9 +9972,9 @@
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
-   "projection": 9.3,
-   "projection_total": 233.4,
-   "win_prob": 0.791,
+   "projection": 10.4,
+   "projection_total": 233.0,
+   "win_prob": 0.816,
    "rest": {
     "away": 1,
     "home": 1
@@ -8777,13 +10007,18 @@
       "kind": "missing"
      },
      {
+      "label": "MEM without Zach Edey",
+      "pts": 0.54,
+      "kind": "missing"
+     },
+     {
       "label": "MEM without GG Jackson",
       "pts": 0.34,
       "kind": "missing"
      },
      {
-      "label": "Lineup strength from player impact ratings (MIN +15.3, MEM +8.9 per 48)",
-      "pts": 1.98,
+      "label": "Lineup strength from player impact ratings (MIN +15.3, MEM +7.0 per 48)",
+      "pts": 2.56,
       "kind": "players"
      }
     ],
@@ -8800,20 +10035,21 @@
      },
      {
       "label": "Players out, both teams",
-      "pts": -1.58,
+      "pts": -1.93,
       "kind": "missing"
      }
     ]
    },
    "imp": {
     "home": 15.287,
-    "away": 8.865
+    "away": 6.972
    },
    "missing": {
-    "away": 8.5,
+    "away": 10.5,
     "home": 0.0,
     "away_names": [
      "Ty Jerome",
+     "Zach Edey",
      "GG Jackson"
     ],
     "home_names": []
@@ -8824,6 +10060,7 @@
       "Jaylen Clark"
      ],
      "away": [
+      "Zach Edey",
       "Ty Jerome",
       "GG Jackson",
       "Scotty Pippen Jr."
@@ -8999,11 +10236,11 @@
       "name": "Cedric Coward",
       "team": "MEM",
       "opp": "MIN",
-      "minutes": 29.6,
-      "points": 14.9,
-      "rebounds": 7.5,
-      "assists": 3.3,
-      "threes": 1.9,
+      "minutes": 30.5,
+      "points": 15.3,
+      "rebounds": 7.7,
+      "assists": 3.4,
+      "threes": 2.0,
       "avg": {
        "minutes": 29.0,
        "points": 14.5,
@@ -9017,11 +10254,11 @@
       "name": "Cameron Boozer",
       "team": "MEM",
       "opp": "MIN",
-      "minutes": 29.4,
-      "points": 15.4,
-      "rebounds": 8.5,
-      "assists": 4.9,
-      "threes": 1.7,
+      "minutes": 30.2,
+      "points": 15.8,
+      "rebounds": 8.7,
+      "assists": 5.0,
+      "threes": 1.8,
       "avg": {
        "minutes": 31.0,
        "points": 16.6,
@@ -9035,9 +10272,9 @@
       "name": "Jaylen Wells",
       "team": "MEM",
       "opp": "MIN",
-      "minutes": 26.5,
-      "points": 11.3,
-      "rebounds": 3.1,
+      "minutes": 27.2,
+      "points": 11.6,
+      "rebounds": 3.2,
       "assists": 1.6,
       "threes": 1.8,
       "avg": {
@@ -9053,11 +10290,11 @@
       "name": "Cam Spencer",
       "team": "MEM",
       "opp": "MIN",
-      "minutes": 25.4,
-      "points": 12.0,
-      "rebounds": 3.1,
-      "assists": 5.8,
-      "threes": 2.1,
+      "minutes": 26.2,
+      "points": 12.4,
+      "rebounds": 3.2,
+      "assists": 6.0,
+      "threes": 2.2,
       "avg": {
        "minutes": 22.2,
        "points": 11.4,
@@ -9071,11 +10308,11 @@
       "name": "Jerami Grant",
       "team": "MEM",
       "opp": "MIN",
-      "minutes": 22.5,
-      "points": 12.1,
+      "minutes": 23.1,
+      "points": 12.4,
       "rebounds": 2.3,
       "assists": 1.8,
-      "threes": 1.6,
+      "threes": 1.7,
       "avg": {
        "minutes": 23.4,
        "points": 11.1,
@@ -9089,10 +10326,10 @@
       "name": "Javon Small",
       "team": "MEM",
       "opp": "MIN",
-      "minutes": 22.5,
-      "points": 9.9,
+      "minutes": 23.1,
+      "points": 10.1,
       "rebounds": 3.2,
-      "assists": 4.5,
+      "assists": 4.7,
       "threes": 1.4,
       "avg": {
        "minutes": 21.9,
@@ -9103,33 +10340,15 @@
       }
      },
      {
-      "id": 4600663,
-      "name": "Zach Edey",
-      "team": "MEM",
-      "opp": "MIN",
-      "minutes": 21.0,
-      "points": 9.5,
-      "rebounds": 7.3,
-      "assists": 1.1,
-      "threes": 0.2,
-      "avg": {
-       "minutes": 20.8,
-       "points": 9.2,
-       "rebounds": 7.4,
-       "assists": 0.9,
-       "threes": 0.1
-      }
-     },
-     {
       "id": 4684806,
       "name": "Taylor Hendricks",
       "team": "MEM",
       "opp": "MIN",
-      "minutes": 17.2,
-      "points": 7.5,
-      "rebounds": 3.6,
+      "minutes": 17.8,
+      "points": 7.8,
+      "rebounds": 3.7,
       "assists": 1.0,
-      "threes": 0.9,
+      "threes": 1.0,
       "avg": {
        "minutes": 13.3,
        "points": 8.5,
@@ -9143,10 +10362,10 @@
       "name": "Isaiah Stewart",
       "team": "MEM",
       "opp": "MIN",
-      "minutes": 16.4,
-      "points": 7.9,
-      "rebounds": 3.3,
-      "assists": 0.8,
+      "minutes": 16.9,
+      "points": 8.1,
+      "rebounds": 3.4,
+      "assists": 0.9,
       "threes": 0.6,
       "avg": {
        "minutes": 18.1,
@@ -9161,9 +10380,9 @@
       "name": "Olivier-Maxence Prosper",
       "team": "MEM",
       "opp": "MIN",
-      "minutes": 12.2,
-      "points": 6.1,
-      "rebounds": 2.1,
+      "minutes": 12.6,
+      "points": 6.3,
+      "rebounds": 2.2,
       "assists": 0.6,
       "threes": 0.6,
       "avg": {
@@ -9179,9 +10398,9 @@
       "name": "Quinten Post",
       "team": "MEM",
       "opp": "MIN",
-      "minutes": 10.1,
-      "points": 4.0,
-      "rebounds": 2.1,
+      "minutes": 10.4,
+      "points": 4.1,
+      "rebounds": 2.2,
       "assists": 0.6,
       "threes": 0.7,
       "avg": {
@@ -9197,11 +10416,11 @@
       "name": "Kris Murray",
       "team": "MEM",
       "opp": "MIN",
-      "minutes": 9.8,
+      "minutes": 10.0,
       "points": 1.8,
       "rebounds": 1.4,
       "assists": 0.6,
-      "threes": 0.2,
+      "threes": 0.3,
       "avg": {
        "minutes": 10.6,
        "points": 1.5,
