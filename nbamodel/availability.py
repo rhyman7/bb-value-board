@@ -11,6 +11,7 @@ quarterback. On the board it comes from the injury report.
 """
 from __future__ import annotations
 
+import re
 from collections import defaultdict, deque
 
 import numpy as np
@@ -21,6 +22,22 @@ from .data import CACHE, _get
 WINDOW = 15
 REPLACEMENT = 0.28      # Game Score per minute of a replacement-level player (about the 20th percentile of regulars)
 PRIOR_MIN = 300.0       # minutes of replacement-level production a player's rate is shrunk with
+
+
+_ID_IN_LINK = re.compile(r"/id/(\d+)|~a:(\d+)")
+
+
+def espn_athlete_id(ath):
+    """ESPN athlete id from an injury entry's athlete block. ESPN's injuries feed leaves out
+    athlete.id and only carries it inside the player links (".../player/_/id/3146557/...")."""
+    ath = ath or {}
+    if ath.get("id"):
+        return int(ath["id"])
+    for s in [ath.get("uid") or ""] + [ln.get("href") or "" for ln in ath.get("links") or []]:
+        m = _ID_IN_LINK.search(s)
+        if m:
+            return int(m.group(1) or m.group(2))
+    return None
 
 
 def player_box(season: int, refresh: bool = False) -> pd.DataFrame:
