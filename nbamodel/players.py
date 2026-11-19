@@ -479,6 +479,8 @@ def grade_log(season, lg=NBA):
             if f"line_{k}" not in x:
                 continue
             y = x.dropna(subset=[f"line_{k}", f"over_{k}", f"under_{k}"])
+            # rows logged before the price fix (2026-11-19) can carry a "price" between -100 and +100
+            y = y[(y[f"over_{k}"].abs() >= 100) & (y[f"under_{k}"].abs() >= 100)]
             if y.empty:
                 continue
             lean = y[f"p_{k}"] - y[f"line_{k}"]

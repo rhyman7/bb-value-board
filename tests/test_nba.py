@@ -62,3 +62,11 @@ def test_injuries_parse_feed_without_athlete_id(monkeypatch):
     ]}]}
     monkeypatch.setattr(pipeline, "_json", lambda url: feed)
     assert pipeline.injuries() == {111: "out"}
+
+
+def test_median_price_stays_a_price():
+    from oddsapi.props import median_price
+    assert median_price([-110, 105]) in (-103, -102)   # plain median would be -2.5
+    assert median_price([-110, -110, -120]) == -110
+    assert median_price([120, 140]) == 130
+    assert median_price([]) is None

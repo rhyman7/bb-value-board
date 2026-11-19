@@ -63,17 +63,27 @@ def today_props(game_teams, day_iso):
         for (who, stat), qs in quotes.items():
             line = statistics.median(q[0] for q in qs)
             at = [q for q in qs if q[0] == line] or qs
-            g.setdefault(who, {})[stat] = {"line": line, "over": int(statistics.median(q[1] for q in at)),
-                                           "under": int(statistics.median(q[2] for q in at)), "books": len(qs)}
+            g.setdefault(who, {})[stat] = {"line": line, "over": median_price(q[1] for q in at),
+                                           "under": median_price(q[2] for q in at), "books": len(qs)}
         out[gid] = g
     return out
+
+
+def median_price(prices):
+    """Median of American prices, taken in decimal odds. A plain median of an even count can land
+    between -100 and +100 (median of -110 and +105 is -2.5), which isn't a price."""
+    dec = [1 + (p / 100 if p > 0 else 100 / -p) for p in prices if p]
+    if not dec:
+        return None
+    d = statistics.median(dec) - 1
+    return int(round(100 * d)) if d >= 1 else int(round(-100 / d))
 
 
 def _consensus(qs):
     """qs: (line, price_a, price_b) per book -> median line and the median prices at it."""
     line = statistics.median(q[0] for q in qs)
     at = [q for q in qs if q[0] == line] or qs
-    return line, int(statistics.median(q[1] for q in at)), int(statistics.median(q[2] for q in at)), len(qs)
+    return line, median_price(q[1] for q in at), median_price(q[2] for q in at), len(qs)
 
 
 def _game_lines(ev, home):
