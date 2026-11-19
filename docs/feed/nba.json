@@ -1,8 +1,441 @@
 {
- "generatedAt": "2026-11-19T16:47:53+00:00",
+ "generatedAt": "2026-11-19T19:05:38+00:00",
  "season": 2027,
  "injuryReport": true,
- "playerGrades": null,
+ "playerGrades": {
+  "nights": 2,
+  "lastNight": "2026-11-18",
+  "last_night": {
+   "player_games": 248,
+   "minutes": {
+    "model_mae": 4.69,
+    "season_avg_mae": 4.79,
+    "model_closer_pct": 50.0
+   },
+   "points": {
+    "model_mae": 4.32,
+    "season_avg_mae": 4.42,
+    "model_closer_pct": 51.6
+   },
+   "rebounds": {
+    "model_mae": 1.84,
+    "season_avg_mae": 1.9,
+    "model_closer_pct": 48.4
+   },
+   "assists": {
+    "model_mae": 1.34,
+    "season_avg_mae": 1.35,
+    "model_closer_pct": 48.0
+   },
+   "threes": {
+    "model_mae": 0.96,
+    "season_avg_mae": 0.98,
+    "model_closer_pct": 38.7
+   }
+  },
+  "last_7_days": {
+   "player_games": 341,
+   "minutes": {
+    "model_mae": 4.84,
+    "season_avg_mae": 4.89,
+    "model_closer_pct": 49.6
+   },
+   "points": {
+    "model_mae": 4.44,
+    "season_avg_mae": 4.52,
+    "model_closer_pct": 50.7
+   },
+   "rebounds": {
+    "model_mae": 1.96,
+    "season_avg_mae": 2.02,
+    "model_closer_pct": 51.0
+   },
+   "assists": {
+    "model_mae": 1.35,
+    "season_avg_mae": 1.36,
+    "model_closer_pct": 46.3
+   },
+   "threes": {
+    "model_mae": 0.98,
+    "season_avg_mae": 1.0,
+    "model_closer_pct": 40.2
+   }
+  },
+  "season": {
+   "player_games": 341,
+   "minutes": {
+    "model_mae": 4.84,
+    "season_avg_mae": 4.89,
+    "model_closer_pct": 49.6
+   },
+   "points": {
+    "model_mae": 4.44,
+    "season_avg_mae": 4.52,
+    "model_closer_pct": 50.7
+   },
+   "rebounds": {
+    "model_mae": 1.96,
+    "season_avg_mae": 2.02,
+    "model_closer_pct": 51.0
+   },
+   "assists": {
+    "model_mae": 1.35,
+    "season_avg_mae": 1.36,
+    "model_closer_pct": 46.3
+   },
+   "threes": {
+    "model_mae": 0.98,
+    "season_avg_mae": 1.0,
+    "model_closer_pct": 40.2
+   }
+  },
+  "props": {
+   "points": {
+    "0+": {
+     "picks": 92,
+     "w": 39,
+     "l": 53,
+     "pct": 42.4,
+     "roi": -21.4
+    },
+    "1.5+": {
+     "picks": 49,
+     "w": 20,
+     "l": 29,
+     "pct": 40.8,
+     "roi": -26.0
+    },
+    "3+": {
+     "picks": 22,
+     "w": 10,
+     "l": 12,
+     "pct": 45.5,
+     "roi": -20.3
+    }
+   },
+   "rebounds": {
+    "0+": {
+     "picks": 64,
+     "w": 37,
+     "l": 27,
+     "pct": 57.8,
+     "roi": 8.3
+    },
+    "1+": {
+     "picks": 19,
+     "w": 14,
+     "l": 5,
+     "pct": 73.7,
+     "roi": 40.5
+    },
+    "2+": {
+     "picks": 6,
+     "w": 4,
+     "l": 2,
+     "pct": 66.7,
+     "roi": 7.6
+    }
+   },
+   "assists": {
+    "0+": {
+     "picks": 58,
+     "w": 25,
+     "l": 33,
+     "pct": 43.1,
+     "roi": -25.7
+    },
+    "1+": {
+     "picks": 14,
+     "w": 4,
+     "l": 10,
+     "pct": 28.6,
+     "roi": -53.2
+    },
+    "2+": {
+     "picks": 7,
+     "w": 3,
+     "l": 4,
+     "pct": 42.9,
+     "roi": -31.1
+    }
+   },
+   "threes": {
+    "0+": {
+     "picks": 63,
+     "w": 30,
+     "l": 33,
+     "pct": 47.6,
+     "roi": -17.8
+    },
+    "0.5+": {
+     "picks": 26,
+     "w": 9,
+     "l": 17,
+     "pct": 34.6,
+     "roi": -34.9
+    },
+    "1+": {
+     "picks": 8,
+     "w": 4,
+     "l": 4,
+     "pct": 50.0,
+     "roi": -41.2
+    }
+   }
+  },
+  "props_last_night": {
+   "points": {
+    "0+": {
+     "picks": 60,
+     "w": 28,
+     "l": 32,
+     "pct": 46.7,
+     "roi": -12.8
+    },
+    "1.5+": {
+     "picks": 36,
+     "w": 14,
+     "l": 22,
+     "pct": 38.9,
+     "roi": -28.8
+    },
+    "3+": {
+     "picks": 13,
+     "w": 5,
+     "l": 8,
+     "pct": 38.5,
+     "roi": -32.9
+    }
+   },
+   "rebounds": {
+    "0+": {
+     "picks": 42,
+     "w": 27,
+     "l": 15,
+     "pct": 64.3,
+     "roi": 23.1
+    },
+    "1+": {
+     "picks": 14,
+     "w": 11,
+     "l": 3,
+     "pct": 78.6,
+     "roi": 55.2
+    },
+    "2+": {
+     "picks": 4,
+     "w": 3,
+     "l": 1,
+     "pct": 75.0,
+     "roi": 21.5
+    }
+   },
+   "assists": {
+    "0+": {
+     "picks": 38,
+     "w": 11,
+     "l": 27,
+     "pct": 28.9,
+     "roi": -47.7
+    },
+    "1+": {
+     "picks": 14,
+     "w": 4,
+     "l": 10,
+     "pct": 28.6,
+     "roi": -53.2
+    },
+    "2+": {
+     "picks": 7,
+     "w": 3,
+     "l": 4,
+     "pct": 42.9,
+     "roi": -31.1
+    }
+   },
+   "threes": {
+    "0+": {
+     "picks": 45,
+     "w": 19,
+     "l": 26,
+     "pct": 42.2,
+     "roi": -26.6
+    },
+    "0.5+": {
+     "picks": 24,
+     "w": 8,
+     "l": 16,
+     "pct": 33.3,
+     "roi": -36.2
+    },
+    "1+": {
+     "picks": 8,
+     "w": 4,
+     "l": 4,
+     "pct": 50.0,
+     "roi": -41.2
+    }
+   }
+  },
+  "last_night_top": [
+   {
+    "name": "Luka Doncic",
+    "team": "LAL",
+    "opp": "UTAH",
+    "p_points": 36.9,
+    "a_points": 29.0,
+    "p_rebounds": 7.3,
+    "a_rebounds": 5.0,
+    "p_assists": 7.5,
+    "a_assists": 7.0,
+    "p_threes": 4.4,
+    "a_threes": 2.0
+   },
+   {
+    "name": "Shai Gilgeous-Alexander",
+    "team": "OKC",
+    "opp": "ATL",
+    "p_points": 29.8,
+    "a_points": 34.0,
+    "p_rebounds": 4.1,
+    "a_rebounds": 5.0,
+    "p_assists": 5.2,
+    "a_assists": 3.0,
+    "p_threes": 1.9,
+    "a_threes": 1.0
+   },
+   {
+    "name": "Giannis Antetokounmpo",
+    "team": "MIA",
+    "opp": "MIL",
+    "p_points": 28.4,
+    "a_points": 27.0,
+    "p_rebounds": 11.3,
+    "a_rebounds": 14.0,
+    "p_assists": 5.5,
+    "a_assists": 9.0,
+    "p_threes": 0.6,
+    "a_threes": 0.0
+   },
+   {
+    "name": "Devin Booker",
+    "team": "PHX",
+    "opp": "SAC",
+    "p_points": 25.2,
+    "a_points": 29.0,
+    "p_rebounds": 3.2,
+    "a_rebounds": 2.0,
+    "p_assists": 5.6,
+    "a_assists": 6.0,
+    "p_threes": 1.9,
+    "a_threes": 2.0
+   },
+   {
+    "name": "Donovan Mitchell",
+    "team": "CLE",
+    "opp": "MEM",
+    "p_points": 25.0,
+    "a_points": 34.0,
+    "p_rebounds": 4.4,
+    "a_rebounds": 4.0,
+    "p_assists": 5.4,
+    "a_assists": 3.0,
+    "p_threes": 2.7,
+    "a_threes": 2.0
+   },
+   {
+    "name": "Nikola Jokic",
+    "team": "DEN",
+    "opp": "BOS",
+    "p_points": 24.4,
+    "a_points": 24.0,
+    "p_rebounds": 11.2,
+    "a_rebounds": 8.0,
+    "p_assists": 9.5,
+    "a_assists": 9.0,
+    "p_threes": 1.5,
+    "a_threes": 3.0
+   },
+   {
+    "name": "Michael Porter Jr.",
+    "team": "BKN",
+    "opp": "CHI",
+    "p_points": 24.4,
+    "a_points": 5.0,
+    "p_rebounds": 7.4,
+    "a_rebounds": 3.0,
+    "p_assists": 2.4,
+    "a_assists": 1.0,
+    "p_threes": 3.3,
+    "a_threes": 1.0
+   },
+   {
+    "name": "Jayson Tatum",
+    "team": "BOS",
+    "opp": "DEN",
+    "p_points": 24.1,
+    "a_points": 24.0,
+    "p_rebounds": 7.2,
+    "a_rebounds": 8.0,
+    "p_assists": 6.6,
+    "a_assists": 3.0,
+    "p_threes": 2.7,
+    "a_threes": 3.0
+   },
+   {
+    "name": "Franz Wagner",
+    "team": "ORL",
+    "opp": "PHI",
+    "p_points": 23.9,
+    "a_points": 27.0,
+    "p_rebounds": 6.5,
+    "a_rebounds": 8.0,
+    "p_assists": 6.5,
+    "a_assists": 11.0,
+    "p_threes": 1.4,
+    "a_threes": 1.0
+   },
+   {
+    "name": "Darius Acuff Jr.",
+    "team": "SAC",
+    "opp": "PHX",
+    "p_points": 23.8,
+    "a_points": 36.0,
+    "p_rebounds": 3.7,
+    "a_rebounds": 4.0,
+    "p_assists": 6.5,
+    "a_assists": 6.0,
+    "p_threes": 2.8,
+    "a_threes": 6.0
+   },
+   {
+    "name": "Jamal Murray",
+    "team": "DEN",
+    "opp": "BOS",
+    "p_points": 23.6,
+    "a_points": 21.0,
+    "p_rebounds": 4.6,
+    "a_rebounds": 7.0,
+    "p_assists": 6.3,
+    "a_assists": 2.0,
+    "p_threes": 3.3,
+    "a_threes": 2.0
+   },
+   {
+    "name": "Anthony Davis",
+    "team": "WSH",
+    "opp": "TOR",
+    "p_points": 22.9,
+    "a_points": 25.0,
+    "p_rebounds": 9.7,
+    "a_rebounds": 14.0,
+    "p_assists": 2.5,
+    "a_assists": 2.0,
+    "p_threes": 0.7,
+    "a_threes": 2.0
+   }
+  ]
+ },
  "marketRatings": false,
  "marketWeight": {
   "side": 0.123,
@@ -60,11 +493,11 @@
    "pace": 100.2,
    "market_ratings_margin": null,
    "mkt_spread": 15.5,
-   "mkt_total": 225.5,
+   "mkt_total": 224.5,
    "mkt_ml_home": -1040.0,
    "mkt_ml_away": 670.0,
    "projection": 14.8,
-   "projection_total": 225.5,
+   "projection_total": 224.5,
    "win_prob": 0.795,
    "rest": {
     "away": 1,
@@ -531,11 +964,11 @@
    "pace": 102.3,
    "market_ratings_margin": null,
    "mkt_spread": -10.5,
-   "mkt_total": 229.5,
+   "mkt_total": 230.5,
    "mkt_ml_home": 360.0,
    "mkt_ml_away": -467.0,
    "projection": -10.7,
-   "projection_total": 229.5,
+   "projection_total": 230.5,
    "win_prob": 0.156,
    "rest": {
     "away": 1,
@@ -1051,18 +1484,18 @@
    "tip": "2026-11-19T20:00:00-05:00",
    "away": "GS",
    "home": "MEM",
-   "margin": 3.2,
+   "margin": 2.3,
    "total": 230.7,
    "ratings_margin": 1.0,
    "pace": 103.1,
    "market_ratings_margin": null,
    "mkt_spread": 6.5,
    "mkt_total": 226.5,
-   "mkt_ml_home": -243.0,
-   "mkt_ml_away": 200.0,
-   "projection": 6.1,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
+   "projection": 6.0,
    "projection_total": 226.5,
-   "win_prob": 0.611,
+   "win_prob": 0.582,
    "rest": {
     "away": 0,
     "home": 0
@@ -1125,8 +1558,8 @@
       "kind": "missing"
      },
      {
-      "label": "Lineup strength from player impact ratings (MEM +8.9, GS +3.7 per 48)",
-      "pts": 1.59,
+      "label": "Lineup strength from player impact ratings (MEM +8.9, GS +6.5 per 48)",
+      "pts": 0.74,
       "kind": "players"
      }
     ],
@@ -1165,7 +1598,7 @@
    },
    "imp": {
     "home": 8.865,
-    "away": 3.694
+    "away": 6.454
    },
    "missing": {
     "away": 10.4,
@@ -1187,6 +1620,7 @@
       "Scotty Pippen Jr."
      ],
      "away": [
+      "Draymond Green",
       "Stephen Curry",
       "Brandon Williams"
      ]
@@ -1415,11 +1849,11 @@
       "name": "Yaxel Lendeborg",
       "team": "GS",
       "opp": "MEM",
-      "minutes": 30.1,
-      "points": 19.3,
-      "rebounds": 6.6,
-      "assists": 3.4,
-      "threes": 1.9,
+      "minutes": 31.7,
+      "points": 20.2,
+      "rebounds": 6.9,
+      "assists": 3.5,
+      "threes": 2.0,
       "avg": {
        "minutes": 31.5,
        "points": 20.3,
@@ -1433,11 +1867,11 @@
       "name": "Brandin Podziemski",
       "team": "GS",
       "opp": "MEM",
-      "minutes": 29.8,
-      "points": 14.9,
-      "rebounds": 4.7,
-      "assists": 3.7,
-      "threes": 2.1,
+      "minutes": 31.3,
+      "points": 15.7,
+      "rebounds": 5.0,
+      "assists": 3.9,
+      "threes": 2.2,
       "avg": {
        "minutes": 32.0,
        "points": 15.8,
@@ -1447,33 +1881,15 @@
       }
      },
      {
-      "id": 6589,
-      "name": "Draymond Green",
-      "team": "GS",
-      "opp": "MEM",
-      "minutes": 24.1,
-      "points": 5.4,
-      "rebounds": 4.4,
-      "assists": 5.5,
-      "threes": 0.8,
-      "avg": {
-       "minutes": 25.6,
-       "points": 3.2,
-       "rebounds": 4.7,
-       "assists": 6.5,
-       "threes": 0.3
-      }
-     },
-     {
       "id": 4897262,
       "name": "Will Richard",
       "team": "GS",
       "opp": "MEM",
-      "minutes": 21.8,
-      "points": 7.4,
-      "rebounds": 2.5,
+      "minutes": 22.9,
+      "points": 7.8,
+      "rebounds": 2.6,
       "assists": 1.4,
-      "threes": 1.1,
+      "threes": 1.2,
       "avg": {
        "minutes": 19.3,
        "points": 7.0,
@@ -1487,10 +1903,10 @@
       "name": "De'Anthony Melton",
       "team": "GS",
       "opp": "MEM",
-      "minutes": 20.8,
-      "points": 10.0,
-      "rebounds": 3.2,
-      "assists": 2.3,
+      "minutes": 21.8,
+      "points": 10.5,
+      "rebounds": 3.4,
+      "assists": 2.4,
       "threes": 1.6,
       "avg": {
        "minutes": 21.8,
@@ -1505,10 +1921,10 @@
       "name": "Gui Santos",
       "team": "GS",
       "opp": "MEM",
-      "minutes": 17.9,
-      "points": 7.1,
-      "rebounds": 3.5,
-      "assists": 1.9,
+      "minutes": 18.8,
+      "points": 7.5,
+      "rebounds": 3.7,
+      "assists": 2.0,
       "threes": 0.8,
       "avg": {
        "minutes": 18.6,
@@ -1523,9 +1939,9 @@
       "name": "Georges Niang",
       "team": "GS",
       "opp": "MEM",
-      "minutes": 17.3,
-      "points": 6.9,
-      "rebounds": 2.7,
+      "minutes": 18.2,
+      "points": 7.3,
+      "rebounds": 2.8,
       "assists": 1.5,
       "threes": 1.1,
       "avg": {
@@ -1541,10 +1957,10 @@
       "name": "Charles Bassey",
       "team": "GS",
       "opp": "MEM",
-      "minutes": 16.8,
-      "points": 8.7,
-      "rebounds": 5.4,
-      "assists": 0.8,
+      "minutes": 17.7,
+      "points": 9.1,
+      "rebounds": 5.6,
+      "assists": 0.9,
       "threes": 0.2,
       "avg": {
        "minutes": 14.1,
@@ -1559,11 +1975,11 @@
       "name": "LJ Cryer",
       "team": "GS",
       "opp": "MEM",
-      "minutes": 16.0,
-      "points": 8.3,
+      "minutes": 17.0,
+      "points": 8.8,
       "rebounds": 1.3,
-      "assists": 1.8,
-      "threes": 1.9,
+      "assists": 1.9,
+      "threes": 2.0,
       "avg": {
        "minutes": 12.3,
        "points": 7.0,
@@ -1577,11 +1993,11 @@
       "name": "Al Horford",
       "team": "GS",
       "opp": "MEM",
-      "minutes": 14.5,
-      "points": 4.6,
-      "rebounds": 3.1,
-      "assists": 1.7,
-      "threes": 0.9,
+      "minutes": 15.3,
+      "points": 4.9,
+      "rebounds": 3.2,
+      "assists": 1.8,
+      "threes": 1.0,
       "avg": {
        "minutes": 16.9,
        "points": 3.9,
@@ -1595,10 +2011,10 @@
       "name": "Gary Payton II",
       "team": "GS",
       "opp": "MEM",
-      "minutes": 13.6,
-      "points": 5.8,
-      "rebounds": 2.5,
-      "assists": 1.0,
+      "minutes": 14.2,
+      "points": 6.1,
+      "rebounds": 2.7,
+      "assists": 1.1,
       "threes": 0.5,
       "avg": {
        "minutes": 13.2,
@@ -1613,10 +2029,10 @@
       "name": "Graham Ike",
       "team": "GS",
       "opp": "MEM",
-      "minutes": 11.2,
-      "points": 4.8,
-      "rebounds": 2.4,
-      "assists": 1.2,
+      "minutes": 11.8,
+      "points": 5.1,
+      "rebounds": 2.5,
+      "assists": 1.3,
       "threes": 0.5,
       "avg": {
        "minutes": 9.9,
@@ -1624,6 +2040,24 @@
        "rebounds": 2.6,
        "assists": 1.2,
        "threes": 0.4
+      }
+     },
+     {
+      "id": 4897449,
+      "name": "Malevy Leons",
+      "team": "GS",
+      "opp": "MEM",
+      "minutes": 8.1,
+      "points": 2.1,
+      "rebounds": 1.3,
+      "assists": 0.4,
+      "threes": 0.2,
+      "avg": {
+       "minutes": 6.7,
+       "points": 1.2,
+       "rebounds": 1.2,
+       "assists": 0.0,
+       "threes": 0.1
       }
      }
     ]

@@ -13,10 +13,10 @@
    "win_prob": 0.795,
    "projection": 14.8,
    "mkt_spread": 15.5,
-   "mkt_total": 225.5,
+   "mkt_total": 224.5,
    "mkt_ml_home": -1040.0,
    "mkt_ml_away": 670.0,
-   "frozenAt": "2026-11-19T11:46-05:00"
+   "frozenAt": "2026-11-19T14:04-05:00"
   },
   "401910020": {
    "id": "401910020",
@@ -30,10 +30,10 @@
    "win_prob": 0.156,
    "projection": -10.7,
    "mkt_spread": -10.5,
-   "mkt_total": 229.5,
+   "mkt_total": 230.5,
    "mkt_ml_home": 360.0,
    "mkt_ml_away": -467.0,
-   "frozenAt": "2026-11-19T11:46-05:00"
+   "frozenAt": "2026-11-19T14:04-05:00"
   },
   "401910019": {
    "id": "401910019",
@@ -42,15 +42,15 @@
    "away": "GS",
    "home": "MEM",
    "neutral": null,
-   "margin": 3.2,
+   "margin": 2.3,
    "total": 230.7,
-   "win_prob": 0.611,
-   "projection": 6.1,
+   "win_prob": 0.582,
+   "projection": 6.0,
    "mkt_spread": 6.5,
    "mkt_total": 226.5,
-   "mkt_ml_home": -243.0,
-   "mkt_ml_away": 200.0,
-   "frozenAt": "2026-11-19T11:46-05:00"
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
+   "frozenAt": "2026-11-19T14:04-05:00"
   },
   "401910021": {
    "id": "401910021",
@@ -67,7 +67,7 @@
    "mkt_total": 216.5,
    "mkt_ml_home": -104.0,
    "mkt_ml_away": -113.0,
-   "frozenAt": "2026-11-19T11:46-05:00"
+   "frozenAt": "2026-11-19T14:04-05:00"
   }
  }
 }
