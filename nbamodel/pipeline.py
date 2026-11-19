@@ -48,7 +48,7 @@ def injuries():
         for it in team.get("injuries", []):
             st = (it.get("status") or "").lower()
             ath = it.get("athlete") or {}
-            aid = ath.get("id") or (ath.get("links") and None)
+            aid = availability.espn_athlete_id(ath)
             if aid and st in ("out", "doubtful"):
                 out[int(aid)] = st
     return out

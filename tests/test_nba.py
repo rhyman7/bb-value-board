@@ -41,3 +41,24 @@ def test_market_weight_recovers_signal():
     df = pd.DataFrame({"m": model_, "l": line, "a": actual})
     w, se, n = model.market_weight(df, "m", "l", "a")
     assert abs(w - 0.4) < 3 * se
+
+
+def test_espn_athlete_id_from_injury_links():
+    from nbamodel.availability import espn_athlete_id
+    # ESPN's injuries feed (Nov 2026) has no athlete.id, only links
+    ath = {"displayName": "Jock Landale", "links": [
+        {"rel": ["playercard"], "href": "https://www.espn.com/nba/player/_/id/3146557/jock-landale"}]}
+    assert espn_athlete_id(ath) == 3146557
+    assert espn_athlete_id({"links": [{"href": "sportscenter://x?uid=s:40~l:46~a:42&section=stats"}]}) == 42
+    assert espn_athlete_id({"id": "7"}) == 7
+    assert espn_athlete_id({}) is None and espn_athlete_id(None) is None
+
+
+def test_injuries_parse_feed_without_athlete_id(monkeypatch):
+    from nbamodel import pipeline
+    feed = {"injuries": [{"id": "1", "injuries": [
+        {"status": "Out", "athlete": {"links": [{"href": "https://www.espn.com/nba/player/_/id/111/a"}]}},
+        {"status": "Day-To-Day", "athlete": {"links": [{"href": "https://www.espn.com/nba/player/_/id/222/b"}]}},
+    ]}]}
+    monkeypatch.setattr(pipeline, "_json", lambda url: feed)
+    assert pipeline.injuries() == {111: "out"}

@@ -53,11 +53,11 @@ def _json(url):
 
 
 def _collect(blocks, out):
-    """ESPN injury blocks: [{team, injuries: [{athlete: {id}, status}]}]. Out and Doubtful count."""
+    """ESPN injury blocks: [{team, injuries: [{athlete: {id or links}, status}]}]. Out and Doubtful count."""
     for team in blocks or []:
         for it in team.get("injuries", []) or []:
             st = (it.get("status") or (it.get("type") or {}).get("description") or "").lower()
-            aid = (it.get("athlete") or {}).get("id")
+            aid = nba_av.espn_athlete_id(it.get("athlete"))
             if aid and any(w in st for w in ("out", "doubtful")):
                 out[int(aid)] = st
 
