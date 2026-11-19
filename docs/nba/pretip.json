@@ -1,0 +1,22 @@
+{
+ "generated": "2026-11-18",
+ "runs": 1,
+ "games_logged": 2,
+ "news_events": 0,
+ "line_moved_toward_model_pct": null,
+ "avg_move_toward_model": null,
+ "record_at_news_line": {
+  "w": 0,
+  "l": 0,
+  "p": 0,
+  "pct": null,
+  "se": null
+ },
+ "record_at_close_same_side": {
+  "w": 0,
+  "l": 0,
+  "p": 0,
+  "pct": null,
+  "se": null
+ }
+}

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T22:56:00+00:00",
+ "generatedAt": "2026-11-19T03:19:34+00:00",
  "season": 2027,
  "injuryReport": true,
  "playerGrades": {
@@ -494,8 +494,8 @@
    "market_ratings_margin": null,
    "mkt_spread": 1.5,
    "mkt_total": 221.5,
-   "mkt_ml_home": -109.0,
-   "mkt_ml_away": -108.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": 1.4,
    "projection_total": 221.5,
    "win_prob": 0.531,
@@ -576,32 +576,6 @@
        "rebounds": 6.8,
        "assists": 8.3,
        "threes": 1.3
-      },
-      "props": {
-       "assists": {
-        "line": 6.5,
-        "over": -120,
-        "under": -112,
-        "books": 7
-       },
-       "points": {
-        "line": 25.5,
-        "over": -111,
-        "under": -116,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 6.5,
-        "over": 100,
-        "under": -132,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -103,
-        "under": -130,
-        "books": 7
-       }
       }
      },
      {
@@ -620,32 +594,6 @@
        "rebounds": 4.4,
        "assists": 2.7,
        "threes": 4.0
-      },
-      "props": {
-       "assists": {
-        "line": 2.5,
-        "over": -141,
-        "under": 109,
-        "books": 6
-       },
-       "points": {
-        "line": 18.5,
-        "over": -115,
-        "under": -116,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": -106,
-        "under": -123,
-        "books": 7
-       },
-       "threes": {
-        "line": 3.5,
-        "over": 122,
-        "under": -162,
-        "books": 7
-       }
       }
      },
      {
@@ -664,32 +612,6 @@
        "rebounds": 5.2,
        "assists": 5.6,
        "threes": 2.1
-      },
-      "props": {
-       "assists": {
-        "line": 4.5,
-        "over": -135,
-        "under": 103,
-        "books": 7
-       },
-       "points": {
-        "line": 14.5,
-        "over": -113,
-        "under": -115,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": -108,
-        "under": -120,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -121,
-        "under": -110,
-        "books": 7
-       }
       }
      },
      {
@@ -708,32 +630,6 @@
        "rebounds": 4.1,
        "assists": 1.8,
        "threes": 3.4
-      },
-      "props": {
-       "points": {
-        "line": 10.5,
-        "over": -116,
-        "under": -113,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -126,
-        "under": -105,
-        "books": 7
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -130,
-        "under": -101,
-        "books": 5
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 114,
-        "under": -150,
-        "books": 6
-       }
       }
      },
      {
@@ -788,32 +684,6 @@
        "rebounds": 4.6,
        "assists": 4.8,
        "threes": 0.8
-      },
-      "props": {
-       "assists": {
-        "line": 3.5,
-        "over": -152,
-        "under": 118,
-        "books": 7
-       },
-       "points": {
-        "line": 10.5,
-        "over": 102,
-        "under": -132,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -116,
-        "under": -113,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -125,
-        "under": -106,
-        "books": 6
-       }
       }
      },
      {
@@ -942,32 +812,6 @@
        "rebounds": 3.3,
        "assists": 5.8,
        "threes": 2.7
-      },
-      "props": {
-       "assists": {
-        "line": 5.5,
-        "over": 116,
-        "under": -154,
-        "books": 8
-       },
-       "threes": {
-        "line": 2.5,
-        "over": -110,
-        "under": -119,
-        "books": 7
-       },
-       "points": {
-        "line": 25.5,
-        "over": -108,
-        "under": -122,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -103,
-        "under": -130,
-        "books": 6
-       }
       }
      },
      {
@@ -1004,32 +848,6 @@
        "rebounds": 6.4,
        "assists": 3.7,
        "threes": 1.5
-      },
-      "props": {
-       "assists": {
-        "line": 3.5,
-        "over": 107,
-        "under": -141,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -108,
-        "under": -120,
-        "books": 7
-       },
-       "points": {
-        "line": 13.5,
-        "over": -102,
-        "under": -127,
-        "books": 6
-       },
-       "rebounds": {
-        "line": 6.0,
-        "over": -3,
-        "under": -130,
-        "books": 6
-       }
       }
      },
      {
@@ -1048,32 +866,6 @@
        "rebounds": 8.5,
        "assists": 3.5,
        "threes": 0.5
-      },
-      "props": {
-       "assists": {
-        "line": 3.5,
-        "over": 117,
-        "under": -157,
-        "books": 7
-       },
-       "points": {
-        "line": 23.5,
-        "over": -120,
-        "under": -109,
-        "books": 6
-       },
-       "rebounds": {
-        "line": 7.5,
-        "over": -119,
-        "under": -109,
-        "books": 6
-       },
-       "threes": {
-        "line": 1.0,
-        "over": -14,
-        "under": -40,
-        "books": 4
-       }
       }
      },
      {
@@ -1092,32 +884,6 @@
        "rebounds": 7.2,
        "assists": 6.9,
        "threes": 0.8
-      },
-      "props": {
-       "assists": {
-        "line": 6.5,
-        "over": -143,
-        "under": 110,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 137,
-        "under": -183,
-        "books": 7
-       },
-       "points": {
-        "line": 16.5,
-        "over": -119,
-        "under": -108,
-        "books": 6
-       },
-       "rebounds": {
-        "line": 6.5,
-        "over": -129,
-        "under": -2,
-        "books": 6
-       }
       }
      },
      {
@@ -1136,32 +902,6 @@
        "rebounds": 4.6,
        "assists": 1.8,
        "threes": 1.0
-      },
-      "props": {
-       "assists": {
-        "line": 1.5,
-        "over": -114,
-        "under": -115,
-        "books": 5
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 160,
-        "under": -215,
-        "books": 6
-       },
-       "points": {
-        "line": 5.5,
-        "over": -119,
-        "under": -109,
-        "books": 6
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": -122,
-        "under": -107,
-        "books": 5
-       }
       }
      },
      {
@@ -1180,26 +920,6 @@
        "rebounds": 2.7,
        "assists": 1.7,
        "threes": 1.3
-      },
-      "props": {
-       "threes": {
-        "line": 1.5,
-        "over": 132,
-        "under": -172,
-        "books": 7
-       },
-       "points": {
-        "line": 6.5,
-        "over": -114,
-        "under": -114,
-        "books": 6
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": -139,
-        "under": 105,
-        "books": 5
-       }
       }
      },
      {
@@ -1218,32 +938,6 @@
        "rebounds": 2.0,
        "assists": 1.2,
        "threes": 2.3
-      },
-      "props": {
-       "assists": {
-        "line": 1.5,
-        "over": -113,
-        "under": -115,
-        "books": 6
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 136,
-        "under": -180,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": 123,
-        "under": -166,
-        "books": 6
-       },
-       "points": {
-        "line": 11.5,
-        "over": -108,
-        "under": -120,
-        "books": 6
-       }
       }
      },
      {
@@ -1298,8 +992,8 @@
    "market_ratings_margin": null,
    "mkt_spread": -9.5,
    "mkt_total": 225.5,
-   "mkt_ml_home": 293.0,
-   "mkt_ml_away": -368.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": -9.6,
    "projection_total": 225.5,
    "win_prob": 0.186,
@@ -1385,32 +1079,6 @@
        "rebounds": 6.2,
        "assists": 4.0,
        "threes": 1.6
-      },
-      "props": {
-       "assists": {
-        "line": 3.5,
-        "over": -112,
-        "under": -115,
-        "books": 7
-       },
-       "points": {
-        "line": 21.5,
-        "over": -111,
-        "under": -115,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 5.5,
-        "over": -110,
-        "under": -121,
-        "books": 8
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 100,
-        "under": -128,
-        "books": 7
-       }
       }
      },
      {
@@ -1447,32 +1115,6 @@
        "rebounds": 2.8,
        "assists": 1.8,
        "threes": 1.7
-      },
-      "props": {
-       "points": {
-        "line": 13.5,
-        "over": -112,
-        "under": -115,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -112,
-        "under": -119,
-        "books": 7
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 141,
-        "under": -190,
-        "books": 8
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -123,
-        "under": -104,
-        "books": 1
-       }
       }
      },
      {
@@ -1509,32 +1151,6 @@
        "rebounds": 3.0,
        "assists": 1.3,
        "threes": 0.9
-      },
-      "props": {
-       "points": {
-        "line": 12.5,
-        "over": -118,
-        "under": -110,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -121,
-        "under": -108,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 126,
-        "under": -162,
-        "books": 7
-       },
-       "assists": {
-        "line": 1.5,
-        "over": 103,
-        "under": -133,
-        "books": 1
-       }
       }
      },
      {
@@ -1553,32 +1169,6 @@
        "rebounds": 3.8,
        "assists": 3.1,
        "threes": 1.1
-      },
-      "props": {
-       "points": {
-        "line": 11.5,
-        "over": -103,
-        "under": -129,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -134,
-        "under": 102,
-        "books": 6
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 105,
-        "under": -139,
-        "books": 7
-       },
-       "assists": {
-        "line": 3.5,
-        "over": -164,
-        "under": 123,
-        "books": 5
-       }
       }
      },
      {
@@ -1597,26 +1187,6 @@
        "rebounds": 8.4,
        "assists": 1.7,
        "threes": 0.0
-      },
-      "props": {
-       "points": {
-        "line": 12.5,
-        "over": -110,
-        "under": -120,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 8.5,
-        "over": -140,
-        "under": 106,
-        "books": 7
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -138,
-        "under": 105,
-        "books": 4
-       }
       }
      },
      {
@@ -1635,26 +1205,6 @@
        "rebounds": 4.4,
        "assists": 1.5,
        "threes": 1.5
-      },
-      "props": {
-       "points": {
-        "line": 8.5,
-        "over": -112,
-        "under": -120,
-        "books": 6
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": 115,
-        "under": -152,
-        "books": 6
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 145,
-        "under": -190,
-        "books": 6
-       }
       }
      },
      {
@@ -1709,26 +1259,6 @@
        "rebounds": 2.6,
        "assists": 4.6,
        "threes": 0.0
-      },
-      "props": {
-       "assists": {
-        "line": 4.5,
-        "over": -150,
-        "under": 114,
-        "books": 6
-       },
-       "points": {
-        "line": 8.5,
-        "over": -106,
-        "under": -120,
-        "books": 6
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": 104,
-        "under": -135,
-        "books": 4
-       }
       }
      },
      {
@@ -1839,26 +1369,6 @@
        "rebounds": 9.3,
        "assists": 7.2,
        "threes": 1.0
-      },
-      "props": {
-       "assists": {
-        "line": 6.5,
-        "over": -119,
-        "under": -110,
-        "books": 7
-       },
-       "points": {
-        "line": 20.5,
-        "over": -112,
-        "under": -117,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 9.5,
-        "over": -107,
-        "under": -123,
-        "books": 7
-       }
       }
      },
      {
@@ -1895,32 +1405,6 @@
        "rebounds": 5.5,
        "assists": 3.8,
        "threes": 1.5
-      },
-      "props": {
-       "assists": {
-        "line": 3.5,
-        "over": -144,
-        "under": 109,
-        "books": 7
-       },
-       "points": {
-        "line": 22.5,
-        "over": -110,
-        "under": -117,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 5.5,
-        "over": 114,
-        "under": -149,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -141,
-        "under": 109,
-        "books": 7
-       }
       }
      },
      {
@@ -1939,32 +1423,6 @@
        "rebounds": 7.0,
        "assists": 3.4,
        "threes": 0.4
-      },
-      "props": {
-       "assists": {
-        "line": 3.5,
-        "over": 0,
-        "under": -129,
-        "books": 6
-       },
-       "points": {
-        "line": 15.5,
-        "over": -108,
-        "under": -120,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 6.5,
-        "over": -145,
-        "under": 110,
-        "books": 6
-       },
-       "threes": {
-        "line": 0.5,
-        "over": 225,
-        "under": -325,
-        "books": 1
-       }
       }
      },
      {
@@ -1983,32 +1441,6 @@
        "rebounds": 3.1,
        "assists": 5.4,
        "threes": 2.8
-      },
-      "props": {
-       "assists": {
-        "line": 5.5,
-        "over": 116,
-        "under": -152,
-        "books": 7
-       },
-       "points": {
-        "line": 12.5,
-        "over": -122,
-        "under": -110,
-        "books": 6
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": 124,
-        "under": -164,
-        "books": 6
-       },
-       "threes": {
-        "line": 2.5,
-        "over": -126,
-        "under": -104,
-        "books": 6
-       }
       }
      },
      {
@@ -2027,20 +1459,6 @@
        "rebounds": 6.3,
        "assists": 1.4,
        "threes": 1.0
-      },
-      "props": {
-       "points": {
-        "line": 11.5,
-        "over": 100,
-        "under": -128,
-        "books": 1
-       },
-       "rebounds": {
-        "line": 6.5,
-        "over": 124,
-        "under": -160,
-        "books": 1
-       }
       }
      },
      {
@@ -2059,32 +1477,6 @@
        "rebounds": 1.5,
        "assists": 2.8,
        "threes": 2.1
-      },
-      "props": {
-       "assists": {
-        "line": 2.5,
-        "over": 148,
-        "under": -192,
-        "books": 5
-       },
-       "points": {
-        "line": 7.5,
-        "over": -125,
-        "under": -105,
-        "books": 6
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -133,
-        "under": 2,
-        "books": 6
-       },
-       "rebounds": {
-        "line": 1.5,
-        "over": -156,
-        "under": 120,
-        "books": 1
-       }
       }
      },
      {
@@ -2175,20 +1567,6 @@
        "rebounds": 4.5,
        "assists": 1.0,
        "threes": 0.0
-      },
-      "props": {
-       "rebounds": {
-        "line": 5.5,
-        "over": 111,
-        "under": -143,
-        "books": 2
-       },
-       "points": {
-        "line": 4.5,
-        "over": 107,
-        "under": -139,
-        "books": 1
-       }
       }
      }
     ]
@@ -2207,8 +1585,8 @@
    "market_ratings_margin": null,
    "mkt_spread": 4.5,
    "mkt_total": 238.5,
-   "mkt_ml_home": -196.0,
-   "mkt_ml_away": 164.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": 4.3,
    "projection_total": 238.5,
    "win_prob": 0.601,
@@ -2284,32 +1662,6 @@
        "rebounds": 4.9,
        "assists": 5.5,
        "threes": 2.8
-      },
-      "props": {
-       "assists": {
-        "line": 5.5,
-        "over": 121,
-        "under": -159,
-        "books": 7
-       },
-       "points": {
-        "line": 25.5,
-        "over": -120,
-        "under": -108,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": 115,
-        "under": -150,
-        "books": 7
-       },
-       "threes": {
-        "line": 2.5,
-        "over": -120,
-        "under": -108,
-        "books": 7
-       }
       }
      },
      {
@@ -2328,32 +1680,6 @@
        "rebounds": 4.6,
        "assists": 6.1,
        "threes": 2.6
-      },
-      "props": {
-       "assists": {
-        "line": 6.5,
-        "over": -107,
-        "under": -122,
-        "books": 7
-       },
-       "points": {
-        "line": 17.5,
-        "over": -110,
-        "under": -116,
-        "books": 8
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": -102,
-        "under": -128,
-        "books": 7
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 110,
-        "under": -143,
-        "books": 7
-       }
       }
      },
      {
@@ -2390,26 +1716,6 @@
        "rebounds": 8.8,
        "assists": 1.5,
        "threes": 0.2
-      },
-      "props": {
-       "points": {
-        "line": 13.5,
-        "over": -125,
-        "under": -105,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 9.5,
-        "over": 105,
-        "under": -140,
-        "books": 8
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -120,
-        "under": -112,
-        "books": 3
-       }
       }
      },
      {
@@ -2446,32 +1752,6 @@
        "rebounds": 2.9,
        "assists": 1.6,
        "threes": 2.5
-      },
-      "props": {
-       "assists": {
-        "line": 1.5,
-        "over": -167,
-        "under": 127,
-        "books": 6
-       },
-       "points": {
-        "line": 13.5,
-        "over": -105,
-        "under": -123,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -113,
-        "under": -120,
-        "books": 6
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 102,
-        "under": -135,
-        "books": 7
-       }
       }
      },
      {
@@ -2490,32 +1770,6 @@
        "rebounds": 3.5,
        "assists": 2.8,
        "threes": 1.8
-      },
-      "props": {
-       "assists": {
-        "line": 3.5,
-        "over": 100,
-        "under": -133,
-        "books": 7
-       },
-       "points": {
-        "line": 13.5,
-        "over": -113,
-        "under": -117,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -157,
-        "under": 117,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -180,
-        "under": 135,
-        "books": 7
-       }
       }
      },
      {
@@ -2570,32 +1824,6 @@
        "rebounds": 5.3,
        "assists": 1.6,
        "threes": 1.1
-      },
-      "props": {
-       "assists": {
-        "line": 1.5,
-        "over": -125,
-        "under": -105,
-        "books": 6
-       },
-       "points": {
-        "line": 9.5,
-        "over": -117,
-        "under": -112,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 5.5,
-        "over": 120,
-        "under": -159,
-        "books": 6
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 120,
-        "under": -160,
-        "books": 5
-       }
       }
      },
      {
@@ -2614,26 +1842,6 @@
        "rebounds": 3.3,
        "assists": 1.0,
        "threes": 1.1
-      },
-      "props": {
-       "points": {
-        "line": 8.5,
-        "over": -112,
-        "under": -120,
-        "books": 6
-       },
-       "rebounds": {
-        "line": 4.0,
-        "over": 8,
-        "under": -142,
-        "books": 2
-       },
-       "threes": {
-        "line": 0.5,
-        "over": -196,
-        "under": 149,
-        "books": 1
-       }
       }
      },
      {
@@ -2726,32 +1934,6 @@
        "rebounds": 9.5,
        "assists": 5.4,
        "threes": 2.0
-      },
-      "props": {
-       "assists": {
-        "line": 4.5,
-        "over": -150,
-        "under": 110,
-        "books": 8
-       },
-       "points": {
-        "line": 19.5,
-        "over": -118,
-        "under": -110,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 8.5,
-        "over": -115,
-        "under": -112,
-        "books": 7
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 151,
-        "under": -202,
-        "books": 7
-       }
       }
      },
      {
@@ -2770,32 +1952,6 @@
        "rebounds": 8.8,
        "assists": 3.3,
        "threes": 2.2
-      },
-      "props": {
-       "assists": {
-        "line": 3.5,
-        "over": -148,
-        "under": 113,
-        "books": 7
-       },
-       "points": {
-        "line": 16.5,
-        "over": -104,
-        "under": -130,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 7.5,
-        "over": -106,
-        "under": -123,
-        "books": 7
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 144,
-        "under": -192,
-        "books": 8
-       }
       }
      },
      {
@@ -2832,32 +1988,6 @@
        "rebounds": 2.9,
        "assists": 1.4,
        "threes": 2.1
-      },
-      "props": {
-       "points": {
-        "line": 10.5,
-        "over": -127,
-        "under": -104,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": -128,
-        "under": 100,
-        "books": 6
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -172,
-        "under": 130,
-        "books": 7
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -105,
-        "under": -125,
-        "books": 5
-       }
       }
      },
      {
@@ -2876,32 +2006,6 @@
        "rebounds": 3.2,
        "assists": 5.4,
        "threes": 1.9
-      },
-      "props": {
-       "assists": {
-        "line": 7.5,
-        "over": -138,
-        "under": 105,
-        "books": 7
-       },
-       "points": {
-        "line": 12.5,
-        "over": -118,
-        "under": -112,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": 112,
-        "under": -148,
-        "books": 7
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 145,
-        "under": -195,
-        "books": 7
-       }
       }
      },
      {
@@ -2938,32 +2042,6 @@
        "rebounds": 2.0,
        "assists": 2.0,
        "threes": 1.8
-      },
-      "props": {
-       "points": {
-        "line": 12.5,
-        "over": -122,
-        "under": -109,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -132,
-        "under": 105,
-        "books": 7
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -141,
-        "under": 108,
-        "books": 4
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": 120,
-        "under": -162,
-        "books": 2
-       }
       }
      },
      {
@@ -2982,20 +2060,6 @@
        "rebounds": 7.9,
        "assists": 0.9,
        "threes": 0.1
-      },
-      "props": {
-       "points": {
-        "line": 9.5,
-        "over": -113,
-        "under": -113,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 8.5,
-        "over": 103,
-        "under": -136,
-        "books": 7
-       }
       }
      },
      {
@@ -3032,20 +2096,6 @@
        "rebounds": 3.3,
        "assists": 0.8,
        "threes": 0.9
-      },
-      "props": {
-       "points": {
-        "line": 7.5,
-        "over": -108,
-        "under": -120,
-        "books": 1
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -137,
-        "under": 106,
-        "books": 1
-       }
       }
      },
      {
@@ -3154,8 +2204,8 @@
    "market_ratings_margin": null,
    "mkt_spread": 12.5,
    "mkt_total": 235.5,
-   "mkt_ml_home": -700.0,
-   "mkt_ml_away": 504.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": 12.4,
    "projection_total": 235.5,
    "win_prob": 0.847,
@@ -3241,32 +2291,6 @@
        "rebounds": 2.4,
        "assists": 9.2,
        "threes": 2.3
-      },
-      "props": {
-       "assists": {
-        "line": 8.5,
-        "over": -137,
-        "under": 105,
-        "books": 8
-       },
-       "points": {
-        "line": 14.5,
-        "over": -1,
-        "under": -129,
-        "books": 8
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": -125,
-        "under": -106,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -186,
-        "under": 138,
-        "books": 7
-       }
       }
      },
      {
@@ -3285,32 +2309,6 @@
        "rebounds": 12.5,
        "assists": 5.2,
        "threes": 0.6
-      },
-      "props": {
-       "assists": {
-        "line": 6.5,
-        "over": 122,
-        "under": -159,
-        "books": 7
-       },
-       "points": {
-        "line": 29.5,
-        "over": -110,
-        "under": -119,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 12.5,
-        "over": -108,
-        "under": -122,
-        "books": 7
-       },
-       "threes": {
-        "line": 0.5,
-        "over": 108,
-        "under": -142,
-        "books": 4
-       }
       }
      },
      {
@@ -3329,32 +2327,6 @@
        "rebounds": 8.0,
        "assists": 3.2,
        "threes": 0.6
-      },
-      "props": {
-       "assists": {
-        "line": 3.5,
-        "over": 116,
-        "under": -152,
-        "books": 7
-       },
-       "points": {
-        "line": 17.5,
-        "over": -113,
-        "under": -115,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 8.5,
-        "over": -110,
-        "under": -119,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 175,
-        "under": -235,
-        "books": 6
-       }
       }
      },
      {
@@ -3373,32 +2345,6 @@
        "rebounds": 2.9,
        "assists": 1.6,
        "threes": 1.4
-      },
-      "props": {
-       "points": {
-        "line": 9.5,
-        "over": -105,
-        "under": -123,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": 112,
-        "under": -145,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 113,
-        "under": -150,
-        "books": 7
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -147,
-        "under": 113,
-        "books": 4
-       }
       }
      },
      {
@@ -3417,32 +2363,6 @@
        "rebounds": 3.5,
        "assists": 3.5,
        "threes": 1.4
-      },
-      "props": {
-       "assists": {
-        "line": 3.5,
-        "over": 118,
-        "under": -157,
-        "books": 7
-       },
-       "points": {
-        "line": 10.5,
-        "over": -103,
-        "under": -127,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": 110,
-        "under": -149,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 171,
-        "under": -231,
-        "books": 7
-       }
       }
      },
      {
@@ -3461,32 +2381,6 @@
        "rebounds": 1.4,
        "assists": 2.1,
        "threes": 4.1
-      },
-      "props": {
-       "points": {
-        "line": 13.5,
-        "over": -118,
-        "under": -112,
-        "books": 7
-       },
-       "threes": {
-        "line": 3.5,
-        "over": -115,
-        "under": -111,
-        "books": 7
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -141,
-        "under": 107,
-        "books": 5
-       },
-       "rebounds": {
-        "line": 1.5,
-        "over": -158,
-        "under": 119,
-        "books": 2
-       }
       }
      },
      {
@@ -3505,32 +2399,6 @@
        "rebounds": 1.8,
        "assists": 1.4,
        "threes": 1.3
-      },
-      "props": {
-       "points": {
-        "line": 8.5,
-        "over": -125,
-        "under": -105,
-        "books": 5
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -149,
-        "under": 112,
-        "books": 5
-       },
-       "assists": {
-        "line": 2.5,
-        "over": 118,
-        "under": -155,
-        "books": 4
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": -120,
-        "under": -109,
-        "books": 4
-       }
       }
      },
      {
@@ -3549,32 +2417,6 @@
        "rebounds": 5.5,
        "assists": 1.6,
        "threes": 1.3
-      },
-      "props": {
-       "points": {
-        "line": 7.5,
-        "over": -126,
-        "under": -101,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 5.5,
-        "over": 105,
-        "under": -139,
-        "books": 6
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 135,
-        "under": -179,
-        "books": 6
-       },
-       "assists": {
-        "line": 1.5,
-        "over": 125,
-        "under": -164,
-        "books": 4
-       }
       }
      },
      {
@@ -3667,32 +2509,6 @@
        "rebounds": 4.2,
        "assists": 4.2,
        "threes": 2.7
-      },
-      "props": {
-       "assists": {
-        "line": 4.5,
-        "over": -128,
-        "under": -106,
-        "books": 7
-       },
-       "points": {
-        "line": 21.5,
-        "over": -113,
-        "under": -113,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": 106,
-        "under": -138,
-        "books": 7
-       },
-       "threes": {
-        "line": 2.5,
-        "over": -131,
-        "under": 0,
-        "books": 7
-       }
       }
      },
      {
@@ -3729,32 +2545,6 @@
        "rebounds": 6.1,
        "assists": 2.6,
        "threes": 1.4
-      },
-      "props": {
-       "points": {
-        "line": 9.5,
-        "over": -108,
-        "under": -119,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 5.5,
-        "over": -110,
-        "under": -118,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -110,
-        "under": -120,
-        "books": 7
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -149,
-        "under": 110,
-        "books": 5
-       }
       }
      },
      {
@@ -3773,32 +2563,6 @@
        "rebounds": 5.3,
        "assists": 2.5,
        "threes": 1.6
-      },
-      "props": {
-       "assists": {
-        "line": 2.5,
-        "over": -116,
-        "under": -111,
-        "books": 6
-       },
-       "points": {
-        "line": 11.5,
-        "over": -117,
-        "under": -109,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": -128,
-        "under": -2,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 100,
-        "under": -130,
-        "books": 7
-       }
       }
      },
      {
@@ -3817,32 +2581,6 @@
        "rebounds": 5.4,
        "assists": 2.4,
        "threes": 0.9
-      },
-      "props": {
-       "assists": {
-        "line": 3.5,
-        "over": 115,
-        "under": -150,
-        "books": 7
-       },
-       "points": {
-        "line": 12.5,
-        "over": -106,
-        "under": -121,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 5.5,
-        "over": -141,
-        "under": 108,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 121,
-        "under": -160,
-        "books": 7
-       }
       }
      },
      {
@@ -3879,26 +2617,6 @@
        "rebounds": 6.8,
        "assists": 0.9,
        "threes": 0.6
-      },
-      "props": {
-       "points": {
-        "line": 8.5,
-        "over": -102,
-        "under": -126,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 6.5,
-        "over": 105,
-        "under": -136,
-        "books": 7
-       },
-       "threes": {
-        "line": 0.5,
-        "over": -147,
-        "under": 110,
-        "books": 5
-       }
       }
      },
      {
@@ -3917,26 +2635,6 @@
        "rebounds": 2.6,
        "assists": 0.6,
        "threes": 1.1
-      },
-      "props": {
-       "points": {
-        "line": 7.5,
-        "over": -1,
-        "under": -128,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": 126,
-        "under": -165,
-        "books": 7
-       },
-       "threes": {
-        "line": 0.5,
-        "over": -177,
-        "under": 134,
-        "books": 4
-       }
       }
      },
      {
@@ -4045,8 +2743,8 @@
    "market_ratings_margin": null,
    "mkt_spread": 3.5,
    "mkt_total": 224.5,
-   "mkt_ml_home": -176.0,
-   "mkt_ml_away": 147.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": 4.3,
    "projection_total": 224.5,
    "win_prob": 0.805,
@@ -4173,32 +2871,6 @@
        "rebounds": 3.6,
        "assists": 5.8,
        "threes": 2.5
-      },
-      "props": {
-       "assists": {
-        "line": 6.5,
-        "over": -8,
-        "under": -121,
-        "books": 2
-       },
-       "points": {
-        "line": 22.0,
-        "over": -113,
-        "under": -113,
-        "books": 2
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": -6,
-        "under": -122,
-        "books": 2
-       },
-       "threes": {
-        "line": 2.5,
-        "over": -144,
-        "under": 111,
-        "books": 2
-       }
       }
      },
      {
@@ -4217,32 +2889,6 @@
        "rebounds": 3.8,
        "assists": 1.9,
        "threes": 2.5
-      },
-      "props": {
-       "assists": {
-        "line": 2.0,
-        "over": -16,
-        "under": -23,
-        "books": 2
-       },
-       "points": {
-        "line": 15.0,
-        "over": -106,
-        "under": -120,
-        "books": 2
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": -127,
-        "under": -2,
-        "books": 2
-       },
-       "threes": {
-        "line": 2.5,
-        "over": -119,
-        "under": -10,
-        "books": 2
-       }
       }
      },
      {
@@ -4261,26 +2907,6 @@
        "rebounds": 4.8,
        "assists": 1.8,
        "threes": 0.5
-      },
-      "props": {
-       "assists": {
-        "line": 2.5,
-        "over": -125,
-        "under": -5,
-        "books": 2
-       },
-       "points": {
-        "line": 14.0,
-        "over": -122,
-        "under": -104,
-        "books": 2
-       },
-       "rebounds": {
-        "line": 7.5,
-        "over": -10,
-        "under": -118,
-        "books": 2
-       }
       }
      },
      {
@@ -4299,32 +2925,6 @@
        "rebounds": 2.0,
        "assists": 6.5,
        "threes": 1.0
-      },
-      "props": {
-       "points": {
-        "line": 11.0,
-        "over": -7,
-        "under": -119,
-        "books": 2
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -2,
-        "under": -127,
-        "books": 2
-       },
-       "assists": {
-        "line": 8.5,
-        "over": -104,
-        "under": -127,
-        "books": 1
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": -132,
-        "under": 100,
-        "books": 1
-       }
       }
      },
      {
@@ -4361,20 +2961,6 @@
        "rebounds": 6.4,
        "assists": 1.3,
        "threes": 0.0
-      },
-      "props": {
-       "points": {
-        "line": 11.0,
-        "over": -115,
-        "under": -111,
-        "books": 2
-       },
-       "rebounds": {
-        "line": 7.5,
-        "over": -114,
-        "under": -115,
-        "books": 1
-       }
       }
      },
      {
@@ -4449,32 +3035,6 @@
        "rebounds": 9.8,
        "assists": 2.1,
        "threes": 0.7
-      },
-      "props": {
-       "assists": {
-        "line": 2.5,
-        "over": 118,
-        "under": -152,
-        "books": 6
-       },
-       "points": {
-        "line": 22.5,
-        "over": -111,
-        "under": -117,
-        "books": 8
-       },
-       "rebounds": {
-        "line": 9.5,
-        "over": -130,
-        "under": 101,
-        "books": 7
-       },
-       "threes": {
-        "line": 0.5,
-        "over": -135,
-        "under": 105,
-        "books": 1
-       }
       }
      },
      {
@@ -4493,32 +3053,6 @@
        "rebounds": 2.9,
        "assists": 8.9,
        "threes": 2.0
-      },
-      "props": {
-       "assists": {
-        "line": 8.5,
-        "over": 105,
-        "under": -141,
-        "books": 8
-       },
-       "points": {
-        "line": 17.5,
-        "over": -115,
-        "under": -113,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": 104,
-        "under": -136,
-        "books": 6
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -178,
-        "under": 134,
-        "books": 7
-       }
       }
      },
      {
@@ -4537,32 +3071,6 @@
        "rebounds": 4.4,
        "assists": 4.5,
        "threes": 2.3
-      },
-      "props": {
-       "assists": {
-        "line": 4.5,
-        "over": 112,
-        "under": -152,
-        "books": 7
-       },
-       "points": {
-        "line": 14.5,
-        "over": -119,
-        "under": -111,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": -103,
-        "under": -125,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -176,
-        "under": 132,
-        "books": 7
-       }
       }
      },
      {
@@ -4581,32 +3089,6 @@
        "rebounds": 6.1,
        "assists": 2.3,
        "threes": 0.9
-      },
-      "props": {
-       "points": {
-        "line": 16.5,
-        "over": -107,
-        "under": -124,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 5.5,
-        "over": -104,
-        "under": -127,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 152,
-        "under": -209,
-        "books": 8
-       },
-       "assists": {
-        "line": 2.5,
-        "over": 125,
-        "under": -165,
-        "books": 5
-       }
       }
      },
      {
@@ -4625,32 +3107,6 @@
        "rebounds": 7.3,
        "assists": 1.6,
        "threes": 1.1
-      },
-      "props": {
-       "points": {
-        "line": 11.5,
-        "over": -1,
-        "under": -128,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 7.0,
-        "over": -11,
-        "under": -20,
-        "books": 8
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 165,
-        "under": -220,
-        "books": 7
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -144,
-        "under": 108,
-        "books": 5
-       }
       }
      },
      {
@@ -4669,32 +3125,6 @@
        "rebounds": 2.0,
        "assists": 1.1,
        "threes": 1.4
-      },
-      "props": {
-       "points": {
-        "line": 9.5,
-        "over": -108,
-        "under": -119,
-        "books": 6
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -115,
-        "under": -114,
-        "books": 6
-       },
-       "assists": {
-        "line": 1.5,
-        "over": 122,
-        "under": -159,
-        "books": 1
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": 116,
-        "under": -155,
-        "books": 4
-       }
       }
      },
      {
@@ -4713,32 +3143,6 @@
        "rebounds": 4.1,
        "assists": 0.6,
        "threes": 0.4
-      },
-      "props": {
-       "points": {
-        "line": 6.5,
-        "over": -107,
-        "under": -125,
-        "books": 6
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": 113,
-        "under": -147,
-        "books": 6
-       },
-       "assists": {
-        "line": 1.5,
-        "over": 135,
-        "under": -175,
-        "books": 1
-       },
-       "threes": {
-        "line": 0.5,
-        "over": -114,
-        "under": -114,
-        "books": 1
-       }
       }
      },
      {
@@ -4829,8 +3233,8 @@
    "market_ratings_margin": null,
    "mkt_spread": 1.5,
    "mkt_total": 239.5,
-   "mkt_ml_home": -124.0,
-   "mkt_ml_away": 105.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": 1.5,
    "projection_total": 239.5,
    "win_prob": 0.542,
@@ -4929,32 +3333,6 @@
        "rebounds": 6.2,
        "assists": 4.7,
        "threes": 1.5
-      },
-      "props": {
-       "assists": {
-        "line": 5.5,
-        "over": 117,
-        "under": -155,
-        "books": 7
-       },
-       "points": {
-        "line": 22.5,
-        "over": -108,
-        "under": -120,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 6.5,
-        "over": -119,
-        "under": -109,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 130,
-        "under": -175,
-        "books": 7
-       }
       }
      },
      {
@@ -4973,32 +3351,6 @@
        "rebounds": 1.8,
        "assists": 2.7,
        "threes": 1.7
-      },
-      "props": {
-       "assists": {
-        "line": 4.5,
-        "over": 121,
-        "under": -159,
-        "books": 7
-       },
-       "points": {
-        "line": 12.5,
-        "over": -129,
-        "under": 100,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 100,
-        "under": -132,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": 138,
-        "under": -190,
-        "books": 3
-       }
       }
      },
      {
@@ -5017,26 +3369,6 @@
        "rebounds": 7.3,
        "assists": 4.2,
        "threes": 0.4
-      },
-      "props": {
-       "assists": {
-        "line": 4.5,
-        "over": 119,
-        "under": -159,
-        "books": 7
-       },
-       "points": {
-        "line": 10.5,
-        "over": -102,
-        "under": -126,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 8.5,
-        "over": -104,
-        "under": -126,
-        "books": 7
-       }
       }
      },
      {
@@ -5055,32 +3387,6 @@
        "rebounds": 2.0,
        "assists": 2.6,
        "threes": 2.1
-      },
-      "props": {
-       "assists": {
-        "line": 2.5,
-        "over": -138,
-        "under": 105,
-        "books": 6
-       },
-       "points": {
-        "line": 10.5,
-        "over": -123,
-        "under": -105,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": 130,
-        "under": -174,
-        "books": 6
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 141,
-        "under": -185,
-        "books": 7
-       }
       }
      },
      {
@@ -5099,26 +3405,6 @@
        "rebounds": 4.5,
        "assists": 1.0,
        "threes": 0.9
-      },
-      "props": {
-       "points": {
-        "line": 7.5,
-        "over": 101,
-        "under": -130,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -106,
-        "under": -123,
-        "books": 7
-       },
-       "threes": {
-        "line": 0.5,
-        "over": -209,
-        "under": 156,
-        "books": 4
-       }
       }
      },
      {
@@ -5155,32 +3441,6 @@
        "rebounds": 1.9,
        "assists": 3.8,
        "threes": 1.9
-      },
-      "props": {
-       "assists": {
-        "line": 3.5,
-        "over": 116,
-        "under": -154,
-        "books": 7
-       },
-       "points": {
-        "line": 10.5,
-        "over": -113,
-        "under": -114,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -115,
-        "under": -115,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": 135,
-        "under": -180,
-        "books": 5
-       }
       }
      },
      {
@@ -5273,32 +3533,6 @@
        "rebounds": 2.9,
        "assists": 2.2,
        "threes": 2.2
-      },
-      "props": {
-       "points": {
-        "line": 23.5,
-        "over": -107,
-        "under": -121,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": -158,
-        "under": 118,
-        "books": 6
-       },
-       "threes": {
-        "line": 2.5,
-        "over": -129,
-        "under": -102,
-        "books": 7
-       },
-       "assists": {
-        "line": 2.5,
-        "over": 116,
-        "under": -153,
-        "books": 5
-       }
       }
      },
      {
@@ -5317,32 +3551,6 @@
        "rebounds": 4.7,
        "assists": 1.8,
        "threes": 1.8
-      },
-      "props": {
-       "points": {
-        "line": 16.5,
-        "over": -108,
-        "under": -120,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 5.5,
-        "over": 103,
-        "under": -137,
-        "books": 7
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 130,
-        "under": -170,
-        "books": 7
-       },
-       "assists": {
-        "line": 2.5,
-        "over": 150,
-        "under": -200,
-        "books": 5
-       }
       }
      },
      {
@@ -5361,32 +3569,6 @@
        "rebounds": 5.2,
        "assists": 8.5,
        "threes": 1.2
-      },
-      "props": {
-       "assists": {
-        "line": 8.5,
-        "over": -109,
-        "under": -122,
-        "books": 7
-       },
-       "points": {
-        "line": 12.5,
-        "over": 100,
-        "under": -133,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 6.5,
-        "over": 107,
-        "under": -140,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 112,
-        "under": -145,
-        "books": 7
-       }
       }
      },
      {
@@ -5405,32 +3587,6 @@
        "rebounds": 2.3,
        "assists": 1.7,
        "threes": 0.6
-      },
-      "props": {
-       "points": {
-        "line": 9.5,
-        "over": -110,
-        "under": -117,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": -168,
-        "under": 127,
-        "books": 6
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -174,
-        "under": 132,
-        "books": 5
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 147,
-        "under": -195,
-        "books": 6
-       }
       }
      },
      {
@@ -5449,32 +3605,6 @@
        "rebounds": 8.1,
        "assists": 2.1,
        "threes": 1.8
-      },
-      "props": {
-       "points": {
-        "line": 14.5,
-        "over": -112,
-        "under": -119,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 8.5,
-        "over": -110,
-        "under": -121,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -158,
-        "under": 119,
-        "books": 7
-       },
-       "assists": {
-        "line": 2.5,
-        "over": 145,
-        "under": -192,
-        "books": 5
-       }
       }
      },
      {
@@ -5511,26 +3641,6 @@
        "rebounds": 3.2,
        "assists": 2.0,
        "threes": 1.2
-      },
-      "props": {
-       "points": {
-        "line": 6.5,
-        "over": -112,
-        "under": -118,
-        "books": 6
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": -118,
-        "under": -111,
-        "books": 4
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 145,
-        "under": -190,
-        "books": 5
-       }
       }
      },
      {
@@ -5549,26 +3659,6 @@
        "rebounds": 2.2,
        "assists": 3.2,
        "threes": 0.4
-      },
-      "props": {
-       "assists": {
-        "line": 4.0,
-        "over": -18,
-        "under": -16,
-        "books": 6
-       },
-       "points": {
-        "line": 11.5,
-        "over": -112,
-        "under": -117,
-        "books": 6
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": 104,
-        "under": -136,
-        "books": 4
-       }
       }
      },
      {
@@ -5713,8 +3803,8 @@
    "market_ratings_margin": null,
    "mkt_spread": 4.5,
    "mkt_total": 225.5,
-   "mkt_ml_home": -197.0,
-   "mkt_ml_away": 164.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": 3.6,
    "projection_total": 225.5,
    "win_prob": 0.403,
@@ -5804,27 +3894,27 @@
       "props": {
        "assists": {
         "line": 6.5,
-        "over": 109,
-        "under": -144,
-        "books": 8
+        "over": -195,
+        "under": 150,
+        "books": 1
        },
        "points": {
-        "line": 23.5,
-        "over": -115,
-        "under": -114,
-        "books": 7
+        "line": 34.5,
+        "over": -135,
+        "under": 105,
+        "books": 1
        },
        "rebounds": {
-        "line": 6.5,
-        "over": -132,
-        "under": 100,
-        "books": 7
+        "line": 4.5,
+        "over": 165,
+        "under": -215,
+        "books": 1
        },
        "threes": {
-        "line": 1.5,
-        "over": 110,
-        "under": -141,
-        "books": 7
+        "line": 3.5,
+        "over": 290,
+        "under": -410,
+        "books": 1
        }
       }
      },
@@ -5844,32 +3934,6 @@
        "rebounds": 3.5,
        "assists": 4.4,
        "threes": 3.5
-      },
-      "props": {
-       "assists": {
-        "line": 4.5,
-        "over": 110,
-        "under": -142,
-        "books": 7
-       },
-       "points": {
-        "line": 22.5,
-        "over": -116,
-        "under": -111,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -119,
-        "under": -112,
-        "books": 7
-       },
-       "threes": {
-        "line": 3.5,
-        "over": 125,
-        "under": -165,
-        "books": 7
-       }
       }
      },
      {
@@ -5888,32 +3952,6 @@
        "rebounds": 6.8,
        "assists": 1.3,
        "threes": 2.1
-      },
-      "props": {
-       "points": {
-        "line": 12.5,
-        "over": -118,
-        "under": -110,
-        "books": 8
-       },
-       "rebounds": {
-        "line": 6.5,
-        "over": 103,
-        "under": -132,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -136,
-        "under": 105,
-        "books": 7
-       },
-       "assists": {
-        "line": 1.5,
-        "over": 143,
-        "under": -190,
-        "books": 3
-       }
       }
      },
      {
@@ -5932,32 +3970,6 @@
        "rebounds": 3.1,
        "assists": 2.2,
        "threes": 1.1
-      },
-      "props": {
-       "points": {
-        "line": 5.5,
-        "over": -122,
-        "under": -109,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": 109,
-        "under": -141,
-        "books": 7
-       },
-       "assists": {
-        "line": 2.5,
-        "over": 115,
-        "under": -151,
-        "books": 5
-       },
-       "threes": {
-        "line": 0.5,
-        "over": -143,
-        "under": 108,
-        "books": 2
-       }
       }
      },
      {
@@ -5976,14 +3988,6 @@
        "rebounds": 2.7,
        "assists": 4.3,
        "threes": 1.0
-      },
-      "props": {
-       "points": {
-        "line": 10.5,
-        "over": -114,
-        "under": -114,
-        "books": 1
-       }
       }
      },
      {
@@ -6002,26 +4006,6 @@
        "rebounds": 4.8,
        "assists": 1.3,
        "threes": 1.1
-      },
-      "props": {
-       "points": {
-        "line": 5.5,
-        "over": -124,
-        "under": -105,
-        "books": 5
-       },
-       "threes": {
-        "line": 0.5,
-        "over": -176,
-        "under": 133,
-        "books": 4
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": 124,
-        "under": -164,
-        "books": 4
-       }
       }
      },
      {
@@ -6040,26 +4024,6 @@
        "rebounds": 5.1,
        "assists": 1.9,
        "threes": 0.1
-      },
-      "props": {
-       "points": {
-        "line": 7.5,
-        "over": -124,
-        "under": -105,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 5.5,
-        "over": -116,
-        "under": -112,
-        "books": 7
-       },
-       "assists": {
-        "line": 1.5,
-        "over": 119,
-        "under": -158,
-        "books": 4
-       }
       }
      },
      {
@@ -6132,26 +4096,6 @@
        "rebounds": 3.6,
        "assists": 0.8,
        "threes": 1.2
-      },
-      "props": {
-       "points": {
-        "line": 7.5,
-        "over": -108,
-        "under": -121,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -119,
-        "under": -110,
-        "books": 7
-       },
-       "assists": {
-        "line": 1.5,
-        "over": 100,
-        "under": -130,
-        "books": 1
-       }
       }
      },
      {
@@ -6211,28 +4155,28 @@
       },
       "props": {
        "assists": {
-        "line": 4.5,
-        "over": 112,
-        "under": -148,
-        "books": 7
+        "line": 5.5,
+        "over": -115,
+        "under": -115,
+        "books": 1
        },
        "points": {
-        "line": 24.5,
-        "over": -110,
-        "under": -119,
-        "books": 7
+        "line": 16.5,
+        "over": 110,
+        "under": -140,
+        "books": 1
        },
        "rebounds": {
-        "line": 7.5,
-        "over": 111,
-        "under": -148,
-        "books": 7
+        "line": 4.5,
+        "over": -215,
+        "under": 165,
+        "books": 1
        },
        "threes": {
-        "line": 2.5,
-        "over": 133,
-        "under": -178,
-        "books": 8
+        "line": 0.5,
+        "over": 190,
+        "under": -250,
+        "books": 1
        }
       }
      },
@@ -6256,27 +4200,27 @@
       "props": {
        "assists": {
         "line": 4.5,
-        "over": 110,
-        "under": -143,
-        "books": 7
+        "over": -110,
+        "under": -120,
+        "books": 1
        },
        "points": {
-        "line": 17.5,
-        "over": -118,
-        "under": -111,
-        "books": 7
+        "line": 12.5,
+        "over": 120,
+        "under": -154,
+        "books": 1
        },
        "rebounds": {
-        "line": 5.5,
-        "over": 105,
-        "under": -140,
-        "books": 8
+        "line": 4.5,
+        "over": -125,
+        "under": -105,
+        "books": 1
        },
        "threes": {
-        "line": 2.5,
-        "over": -139,
-        "under": 106,
-        "books": 7
+        "line": 0.5,
+        "over": 180,
+        "under": -238,
+        "books": 1
        }
       }
      },
@@ -6296,32 +4240,6 @@
        "rebounds": 5.0,
        "assists": 6.9,
        "threes": 0.2
-      },
-      "props": {
-       "assists": {
-        "line": 5.5,
-        "over": -117,
-        "under": -112,
-        "books": 7
-       },
-       "points": {
-        "line": 4.5,
-        "over": -136,
-        "under": 101,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": -122,
-        "under": -108,
-        "books": 7
-       },
-       "threes": {
-        "line": 0.5,
-        "over": -109,
-        "under": -120,
-        "books": 4
-       }
       }
      },
      {
@@ -6340,32 +4258,6 @@
        "rebounds": 4.1,
        "assists": 2.3,
        "threes": 2.2
-      },
-      "props": {
-       "assists": {
-        "line": 2.5,
-        "over": -144,
-        "under": 111,
-        "books": 5
-       },
-       "points": {
-        "line": 11.0,
-        "over": -109,
-        "under": -118,
-        "books": 6
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": 105,
-        "under": -135,
-        "books": 6
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -145,
-        "under": 112,
-        "books": 6
-       }
       }
      },
      {
@@ -6420,32 +4312,6 @@
        "rebounds": 4.2,
        "assists": 1.5,
        "threes": 0.5
-      },
-      "props": {
-       "points": {
-        "line": 8.5,
-        "over": -109,
-        "under": -120,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -122,
-        "under": -109,
-        "books": 7
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -141,
-        "under": 108,
-        "books": 5
-       },
-       "threes": {
-        "line": 0.5,
-        "over": -153,
-        "under": 117,
-        "books": 4
-       }
       }
      },
      {
@@ -6500,32 +4366,6 @@
        "rebounds": 3.8,
        "assists": 1.8,
        "threes": 0.9
-      },
-      "props": {
-       "assists": {
-        "line": 2.5,
-        "over": -122,
-        "under": -105,
-        "books": 5
-       },
-       "points": {
-        "line": 6.5,
-        "over": -122,
-        "under": -104,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": -101,
-        "under": -129,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 107,
-        "under": -139,
-        "books": 7
-       }
       }
      },
      {
@@ -6616,8 +4456,8 @@
    "market_ratings_margin": null,
    "mkt_spread": 6.5,
    "mkt_total": 228.5,
-   "mkt_ml_home": -249.0,
-   "mkt_ml_away": 205.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": 6.6,
    "projection_total": 228.5,
    "win_prob": 0.747,
@@ -6696,28 +4536,28 @@
       },
       "props": {
        "assists": {
-        "line": 5.5,
-        "over": 100,
-        "under": -131,
-        "books": 7
+        "line": 2.5,
+        "over": 58,
+        "under": -214,
+        "books": 2
        },
        "points": {
-        "line": 31.5,
-        "over": -114,
-        "under": -114,
-        "books": 7
+        "line": 36.5,
+        "over": -6,
+        "under": -28,
+        "books": 3
        },
        "rebounds": {
-        "line": 4.5,
-        "over": 115,
-        "under": -152,
-        "books": 7
+        "line": 3.5,
+        "over": 108,
+        "under": -144,
+        "books": 1
        },
        "threes": {
-        "line": 1.5,
-        "over": -178,
-        "under": 135,
-        "books": 7
+        "line": 1.0,
+        "over": 364,
+        "under": -582,
+        "books": 2
        }
       }
      },
@@ -6739,29 +4579,29 @@
        "threes": 2.2
       },
       "props": {
-       "points": {
-        "line": 13.5,
-        "over": -123,
-        "under": -106,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": 102,
-        "under": -132,
-        "books": 7
-       },
-       "threes": {
-        "line": 2.5,
-        "over": -104,
-        "under": -129,
-        "books": 7
-       },
        "assists": {
         "line": 1.5,
-        "over": -165,
-        "under": 126,
-        "books": 6
+        "over": 360,
+        "under": -580,
+        "books": 1
+       },
+       "rebounds": {
+        "line": 2.5,
+        "over": 200,
+        "under": -280,
+        "books": 1
+       },
+       "threes": {
+        "line": 3.5,
+        "over": 315,
+        "under": -470,
+        "books": 2
+       },
+       "points": {
+        "line": 13.5,
+        "over": 140,
+        "under": -180,
+        "books": 1
        }
       }
      },
@@ -6801,29 +4641,23 @@
        "threes": 0.8
       },
       "props": {
-       "assists": {
-        "line": 3.5,
-        "over": -124,
-        "under": -105,
-        "books": 7
-       },
        "points": {
-        "line": 18.5,
-        "over": -108,
-        "under": -120,
-        "books": 7
+        "line": 14.0,
+        "over": -41,
+        "under": 3,
+        "books": 2
        },
-       "rebounds": {
-        "line": 3.5,
-        "over": -126,
-        "under": -105,
-        "books": 7
+       "assists": {
+        "line": 6.5,
+        "over": 325,
+        "under": -475,
+        "books": 1
        },
        "threes": {
-        "line": 1.5,
-        "over": 146,
-        "under": -198,
-        "books": 8
+        "line": 0.5,
+        "over": 850,
+        "under": -1750,
+        "books": 1
        }
       }
      },
@@ -6864,22 +4698,16 @@
       },
       "props": {
        "assists": {
-        "line": 3.5,
-        "over": -155,
-        "under": 118,
-        "books": 7
+        "line": 5.5,
+        "over": 2200,
+        "under": -10000,
+        "books": 1
        },
        "points": {
-        "line": 9.5,
-        "over": -122,
-        "under": -105,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 10.5,
-        "over": -125,
-        "under": -106,
-        "books": 7
+        "line": 6.5,
+        "over": 1800,
+        "under": -6500,
+        "books": 1
        }
       }
      },
@@ -6901,23 +4729,23 @@
        "threes": 0.1
       },
       "props": {
-       "points": {
-        "line": 9.5,
-        "over": -118,
-        "under": -110,
-        "books": 7
-       },
        "rebounds": {
-        "line": 7.5,
-        "over": 0,
-        "under": -132,
-        "books": 7
+        "line": 6.5,
+        "over": 131,
+        "under": -171,
+        "books": 2
        },
        "assists": {
-        "line": 1.5,
-        "over": -109,
-        "under": -125,
-        "books": 5
+        "line": 7.5,
+        "over": 575,
+        "under": -950,
+        "books": 1
+       },
+       "points": {
+        "line": 8.5,
+        "over": 185,
+        "under": -245,
+        "books": 1
        }
       }
      },
@@ -6939,29 +4767,29 @@
        "threes": 1.4
       },
       "props": {
-       "points": {
-        "line": 7.5,
-        "over": -128,
-        "under": 100,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": -104,
-        "under": -127,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 125,
-        "under": -165,
-        "books": 7
-       },
        "assists": {
         "line": 1.5,
-        "over": -120,
-        "under": -109,
-        "books": 4
+        "over": 360,
+        "under": -600,
+        "books": 1
+       },
+       "rebounds": {
+        "line": 5.5,
+        "over": 136,
+        "under": -182,
+        "books": 1
+       },
+       "threes": {
+        "line": 0.5,
+        "over": 1475,
+        "under": -7900,
+        "books": 2
+       },
+       "points": {
+        "line": 10.5,
+        "over": 1100,
+        "under": -2500,
+        "books": 1
        }
       }
      },
@@ -6981,26 +4809,6 @@
        "rebounds": 4.0,
        "assists": 3.0,
        "threes": 1.5
-      },
-      "props": {
-       "threes": {
-        "line": 1.5,
-        "over": 149,
-        "under": -197,
-        "books": 7
-       },
-       "points": {
-        "line": 6.5,
-        "over": -120,
-        "under": -113,
-        "books": 6
-       },
-       "rebounds": {
-        "line": 3.0,
-        "over": -9,
-        "under": -33,
-        "books": 2
-       }
       }
      },
      {
@@ -7037,6 +4845,14 @@
        "rebounds": 4.0,
        "assists": 1.6,
        "threes": 0.7
+      },
+      "props": {
+       "points": {
+        "line": 3.5,
+        "over": 4000,
+        "under": -100000,
+        "books": 1
+       }
       }
      },
      {
@@ -7150,28 +4966,28 @@
       },
       "props": {
        "assists": {
-        "line": 7.5,
-        "over": 109,
-        "under": -145,
-        "books": 7
+        "line": 10.5,
+        "over": 100,
+        "under": -132,
+        "books": 1
        },
        "points": {
-        "line": 19.5,
-        "over": -110,
-        "under": -116,
-        "books": 7
+        "line": 15.5,
+        "over": 100,
+        "under": -132,
+        "books": 1
        },
        "rebounds": {
-        "line": 9.5,
-        "over": -2,
-        "under": -128,
-        "books": 7
+        "line": 13.0,
+        "over": -12,
+        "under": -41,
+        "books": 2
        },
        "threes": {
         "line": 1.5,
-        "over": 131,
-        "under": -176,
-        "books": 7
+        "over": 520,
+        "under": -1000,
+        "books": 1
        }
       }
      },
@@ -7194,28 +5010,28 @@
       },
       "props": {
        "assists": {
-        "line": 3.5,
-        "over": 130,
-        "under": -172,
-        "books": 7
+        "line": 5.5,
+        "over": 250,
+        "under": -360,
+        "books": 1
        },
        "points": {
-        "line": 21.5,
-        "over": -119,
-        "under": -110,
-        "books": 8
+        "line": 20.5,
+        "over": -114,
+        "under": -114,
+        "books": 1
        },
        "rebounds": {
-        "line": 3.5,
-        "over": 101,
-        "under": -133,
-        "books": 7
+        "line": 2.5,
+        "over": 194,
+        "under": -270,
+        "books": 1
        },
        "threes": {
-        "line": 3.5,
-        "over": -116,
-        "under": -111,
-        "books": 7
+        "line": 2.5,
+        "over": 144,
+        "under": -198,
+        "books": 1
        }
       }
      },
@@ -7239,27 +5055,27 @@
       "props": {
        "assists": {
         "line": 2.5,
-        "over": -122,
-        "under": -104,
-        "books": 6
+        "over": 240,
+        "under": -360,
+        "books": 1
        },
        "points": {
-        "line": 13.5,
-        "over": -119,
-        "under": -110,
-        "books": 7
+        "line": 25.5,
+        "over": 122,
+        "under": -162,
+        "books": 1
        },
        "rebounds": {
-        "line": 7.5,
-        "over": -130,
-        "under": 102,
-        "books": 7
+        "line": 8.5,
+        "over": -200,
+        "under": 148,
+        "books": 1
        },
        "threes": {
-        "line": 1.5,
-        "over": -154,
-        "under": 116,
-        "books": 7
+        "line": 5.5,
+        "over": 280,
+        "under": -420,
+        "books": 1
        }
       }
      },
@@ -7282,22 +5098,22 @@
       },
       "props": {
        "assists": {
-        "line": 5.5,
-        "over": -125,
-        "under": -103,
-        "books": 7
+        "line": 4.5,
+        "over": 104,
+        "under": -138,
+        "books": 1
        },
        "points": {
         "line": 10.5,
-        "over": -103,
-        "under": -126,
-        "books": 7
+        "over": 205,
+        "under": -290,
+        "books": 1
        },
        "rebounds": {
-        "line": 7.5,
-        "over": 2,
-        "under": -134,
-        "books": 7
+        "line": 8.5,
+        "over": -154,
+        "under": 116,
+        "books": 1
        }
       }
      },
@@ -7335,32 +5151,6 @@
        "rebounds": 3.6,
        "assists": 2.5,
        "threes": 2.7
-      },
-      "props": {
-       "assists": {
-        "line": 2.5,
-        "over": -105,
-        "under": -125,
-        "books": 6
-       },
-       "points": {
-        "line": 14.5,
-        "over": 0,
-        "under": -131,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -137,
-        "under": 105,
-        "books": 8
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 102,
-        "under": -130,
-        "books": 7
-       }
       }
      },
      {
@@ -7382,28 +5172,10 @@
       },
       "props": {
        "points": {
-        "line": 10.5,
-        "over": -106,
-        "under": -121,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": 122,
-        "under": -160,
-        "books": 7
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -156,
-        "under": 120,
-        "books": 7
-       },
-       "assists": {
-        "line": 1.5,
-        "over": 109,
-        "under": -143,
-        "books": 4
+        "line": 16.5,
+        "over": 450,
+        "under": -800,
+        "books": 1
        }
       }
      },
@@ -7459,14 +5231,6 @@
        "rebounds": 1.0,
        "assists": 0.7,
        "threes": 1.9
-      },
-      "props": {
-       "points": {
-        "line": 8.5,
-        "over": -110,
-        "under": -118,
-        "books": 1
-       }
       }
      },
      {
@@ -7539,8 +5303,8 @@
    "market_ratings_margin": null,
    "mkt_spread": -4.5,
    "mkt_total": 226.5,
-   "mkt_ml_home": 155.0,
-   "mkt_ml_away": -185.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": -5.1,
    "projection_total": 226.5,
    "win_prob": 0.202,
@@ -7633,28 +5397,28 @@
        "threes": 2.3
       },
       "props": {
-       "points": {
-        "line": 19.5,
-        "over": -108,
-        "under": -121,
-        "books": 7
+       "assists": {
+        "line": 5.5,
+        "over": 240,
+        "under": -342,
+        "books": 2
        },
        "rebounds": {
         "line": 5.5,
-        "over": -102,
-        "under": -129,
-        "books": 7
+        "over": 124,
+        "under": -165,
+        "books": 3
        },
        "threes": {
-        "line": 2.5,
-        "over": 107,
-        "under": -139,
-        "books": 7
+        "line": 1.5,
+        "over": 335,
+        "under": -512,
+        "books": 2
        },
-       "assists": {
-        "line": 2.5,
-        "over": 104,
-        "under": -138,
+       "points": {
+        "line": 8.5,
+        "over": -152,
+        "under": 117,
         "books": 2
        }
       }
@@ -7678,22 +5442,22 @@
       },
       "props": {
        "assists": {
-        "line": 3.5,
-        "over": 144,
-        "under": -188,
-        "books": 6
-       },
-       "points": {
-        "line": 21.5,
-        "over": -121,
-        "under": -110,
-        "books": 8
+        "line": 1.5,
+        "over": 122,
+        "under": -161,
+        "books": 2
        },
        "rebounds": {
-        "line": 5.5,
-        "over": -126,
-        "under": -105,
-        "books": 7
+        "line": 6.5,
+        "over": -143,
+        "under": 10,
+        "books": 3
+       },
+       "points": {
+        "line": 22.5,
+        "over": -122,
+        "under": -107,
+        "books": 2
        }
       }
      },
@@ -7715,29 +5479,29 @@
        "threes": 1.1
       },
       "props": {
-       "assists": {
-        "line": 6.5,
-        "over": -116,
-        "under": -114,
-        "books": 7
-       },
        "points": {
         "line": 17.5,
-        "over": -117,
-        "under": -111,
-        "books": 7
+        "over": -122,
+        "under": -107,
+        "books": 2
+       },
+       "assists": {
+        "line": 4.5,
+        "over": 105,
+        "under": -135,
+        "books": 1
        },
        "rebounds": {
-        "line": 4.5,
-        "over": -129,
-        "under": -2,
-        "books": 7
+        "line": 5.5,
+        "over": 140,
+        "under": -180,
+        "books": 1
        },
        "threes": {
-        "line": 1.5,
-        "over": 105,
-        "under": -139,
-        "books": 7
+        "line": 2.5,
+        "over": 550,
+        "under": -920,
+        "books": 1
        }
       }
      },
@@ -7814,16 +5578,10 @@
       },
       "props": {
        "points": {
-        "line": 11.0,
-        "over": -114,
-        "under": -112,
-        "books": 6
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -111,
-        "under": -117,
-        "books": 7
+        "line": 19.5,
+        "over": 126,
+        "under": -168,
+        "books": 2
        }
       }
      },
@@ -7843,26 +5601,6 @@
        "rebounds": 6.5,
        "assists": 2.3,
        "threes": 0.7
-      },
-      "props": {
-       "assists": {
-        "line": 2.5,
-        "over": 128,
-        "under": -169,
-        "books": 3
-       },
-       "points": {
-        "line": 9.5,
-        "over": -119,
-        "under": -107,
-        "books": 3
-       },
-       "rebounds": {
-        "line": 5.5,
-        "over": -136,
-        "under": 104,
-        "books": 3
-       }
       }
      },
      {
@@ -7881,26 +5619,6 @@
        "rebounds": 9.2,
        "assists": 1.8,
        "threes": 0.0
-      },
-      "props": {
-       "points": {
-        "line": 7.5,
-        "over": 100,
-        "under": -133,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 8.5,
-        "over": -116,
-        "under": -114,
-        "books": 7
-       },
-       "assists": {
-        "line": 1.5,
-        "over": 102,
-        "under": -132,
-        "books": 1
-       }
       }
      },
      {
@@ -8029,32 +5747,6 @@
        "rebounds": 5.2,
        "assists": 7.8,
        "threes": 2.0
-      },
-      "props": {
-       "assists": {
-        "line": 8.0,
-        "over": -12,
-        "under": -120,
-        "books": 8
-       },
-       "points": {
-        "line": 25.5,
-        "over": -113,
-        "under": -119,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 5.5,
-        "over": 114,
-        "under": -152,
-        "books": 7
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 139,
-        "under": -186,
-        "books": 7
-       }
       }
      },
      {
@@ -8076,28 +5768,28 @@
       },
       "props": {
        "assists": {
-        "line": 6.5,
-        "over": -148,
-        "under": 107,
-        "books": 7
-       },
-       "points": {
-        "line": 18.5,
-        "over": -123,
-        "under": -103,
-        "books": 7
+        "line": 9.5,
+        "over": 103,
+        "under": -135,
+        "books": 3
        },
        "rebounds": {
         "line": 4.5,
-        "over": 120,
-        "under": -157,
-        "books": 7
+        "over": 257,
+        "under": -375,
+        "books": 2
        },
        "threes": {
-        "line": 2.5,
-        "over": 147,
-        "under": -198,
-        "books": 7
+        "line": 3.5,
+        "over": 490,
+        "under": -900,
+        "books": 1
+       },
+       "points": {
+        "line": 15.5,
+        "over": 120,
+        "under": -155,
+        "books": 1
        }
       }
      },
@@ -8119,29 +5811,17 @@
        "threes": 1.5
       },
       "props": {
-       "assists": {
-        "line": 3.5,
-        "over": -148,
-        "under": 115,
-        "books": 7
-       },
        "points": {
-        "line": 15.5,
-        "over": -109,
-        "under": -121,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": -102,
-        "under": -130,
-        "books": 7
+        "line": 11.5,
+        "over": 120,
+        "under": -154,
+        "books": 1
        },
        "threes": {
-        "line": 2.5,
-        "over": 125,
-        "under": -166,
-        "books": 7
+        "line": 1.5,
+        "over": 200,
+        "under": -270,
+        "books": 1
        }
       }
      },
@@ -8164,22 +5844,22 @@
       },
       "props": {
        "assists": {
-        "line": 6.5,
-        "over": -103,
-        "under": -129,
-        "books": 7
+        "line": 4.5,
+        "over": -166,
+        "under": 124,
+        "books": 1
        },
        "points": {
-        "line": 13.5,
-        "over": -118,
-        "under": -110,
-        "books": 7
+        "line": 10.5,
+        "over": -108,
+        "under": -122,
+        "books": 1
        },
        "rebounds": {
-        "line": 8.5,
-        "over": -104,
-        "under": -126,
-        "books": 7
+        "line": 6.5,
+        "over": 178,
+        "under": -245,
+        "books": 1
        }
       }
      },
@@ -8238,22 +5918,16 @@
       },
       "props": {
        "points": {
-        "line": 13.5,
-        "over": -111,
-        "under": -115,
-        "books": 7
+        "line": 16.5,
+        "over": -112,
+        "under": -117,
+        "books": 2
        },
        "rebounds": {
-        "line": 6.5,
-        "over": 102,
-        "under": -136,
-        "books": 8
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 144,
-        "under": -196,
-        "books": 8
+        "line": 5.5,
+        "over": -159,
+        "under": 120,
+        "books": 2
        }
       }
      },
@@ -8273,6 +5947,14 @@
        "rebounds": 2.5,
        "assists": 0.5,
        "threes": 0.9
+      },
+      "props": {
+       "rebounds": {
+        "line": 7.5,
+        "over": 130,
+        "under": -174,
+        "books": 1
+       }
       }
      },
      {
@@ -8363,8 +6045,8 @@
    "market_ratings_margin": null,
    "mkt_spread": -2.5,
    "mkt_total": 218.5,
-   "mkt_ml_home": 120.0,
-   "mkt_ml_away": -142.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": -2.5,
    "projection_total": 218.5,
    "win_prob": 0.42,
@@ -8443,28 +6125,28 @@
       },
       "props": {
        "assists": {
-        "line": 9.5,
-        "over": 115,
-        "under": -149,
-        "books": 7
+        "line": 9.0,
+        "over": -8,
+        "under": -123,
+        "books": 4
        },
        "points": {
-        "line": 24.5,
-        "over": -110,
-        "under": -116,
-        "books": 7
+        "line": 25.5,
+        "over": -115,
+        "under": -115,
+        "books": 3
        },
        "rebounds": {
-        "line": 11.5,
-        "over": -1,
-        "under": -130,
-        "books": 7
+        "line": 10.5,
+        "over": 104,
+        "under": -136,
+        "books": 4
        },
        "threes": {
-        "line": 1.5,
-        "over": 105,
-        "under": -135,
-        "books": 7
+        "line": 2.5,
+        "over": 152,
+        "under": -209,
+        "books": 3
        }
       }
      },
@@ -8487,28 +6169,28 @@
       },
       "props": {
        "assists": {
-        "line": 6.5,
-        "over": 118,
-        "under": -155,
-        "books": 7
+        "line": 4.5,
+        "over": 100,
+        "under": -130,
+        "books": 4
        },
        "points": {
         "line": 21.5,
-        "over": -120,
-        "under": -109,
-        "books": 7
+        "over": -110,
+        "under": -120,
+        "books": 4
        },
        "rebounds": {
         "line": 4.5,
-        "over": 109,
-        "under": -143,
-        "books": 7
+        "over": 113,
+        "under": -148,
+        "books": 3
        },
        "threes": {
         "line": 2.5,
-        "over": -120,
-        "under": -107,
-        "books": 7
+        "over": -160,
+        "under": 124,
+        "books": 3
        }
       }
      },
@@ -8532,27 +6214,27 @@
       "props": {
        "points": {
         "line": 11.5,
-        "over": -102,
-        "under": -127,
-        "books": 7
+        "over": -121,
+        "under": -109,
+        "books": 4
        },
        "rebounds": {
-        "line": 4.5,
-        "over": 114,
-        "under": -150,
-        "books": 7
+        "line": 4.0,
+        "over": -30,
+        "under": -6,
+        "books": 4
        },
        "threes": {
-        "line": 1.5,
-        "over": 112,
-        "under": -149,
-        "books": 7
+        "line": 0.5,
+        "over": -194,
+        "under": 146,
+        "books": 2
        },
        "assists": {
         "line": 2.5,
-        "over": 140,
-        "under": -189,
-        "books": 5
+        "over": 110,
+        "under": -140,
+        "books": 1
        }
       }
      },
@@ -8575,27 +6257,21 @@
       },
       "props": {
        "points": {
-        "line": 12.5,
-        "over": -102,
-        "under": -128,
-        "books": 7
+        "line": 9.5,
+        "over": -105,
+        "under": -125,
+        "books": 4
        },
        "rebounds": {
         "line": 3.5,
-        "over": -114,
-        "under": -113,
-        "books": 7
+        "over": -138,
+        "under": 104,
+        "books": 4
        },
        "threes": {
         "line": 1.5,
-        "over": -182,
-        "under": 136,
-        "books": 7
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -155,
-        "under": 117,
+        "over": -112,
+        "under": -118,
         "books": 3
        }
       }
@@ -8619,28 +6295,22 @@
       },
       "props": {
        "points": {
-        "line": 11.5,
-        "over": -113,
-        "under": -114,
-        "books": 7
+        "line": 12.5,
+        "over": -111,
+        "under": -119,
+        "books": 4
        },
        "rebounds": {
-        "line": 4.5,
-        "over": -119,
-        "under": -111,
-        "books": 8
+        "line": 5.5,
+        "over": -2,
+        "under": -128,
+        "books": 4
        },
        "threes": {
-        "line": 1.5,
-        "over": 124,
-        "under": -162,
-        "books": 7
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -169,
-        "under": 129,
-        "books": 5
+        "line": 0.5,
+        "over": -207,
+        "under": 156,
+        "books": 2
        }
       }
      },
@@ -8664,21 +6334,15 @@
       "props": {
        "assists": {
         "line": 2.5,
-        "over": 115,
-        "under": -151,
-        "books": 6
+        "over": -18,
+        "under": -14,
+        "books": 2
        },
        "points": {
         "line": 8.5,
-        "over": -111,
-        "under": -118,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 1.5,
-        "over": -155,
-        "under": 116,
-        "books": 2
+        "over": -3,
+        "under": -126,
+        "books": 4
        }
       }
      },
@@ -8701,16 +6365,16 @@
       },
       "props": {
        "points": {
-        "line": 4.5,
-        "over": -139,
-        "under": 106,
-        "books": 7
+        "line": 4.0,
+        "over": -22,
+        "under": -11,
+        "books": 4
        },
        "rebounds": {
-        "line": 3.5,
-        "over": -130,
-        "under": 100,
-        "books": 6
+        "line": 6.0,
+        "over": -121,
+        "under": -12,
+        "books": 2
        }
       }
      },
@@ -8730,6 +6394,14 @@
        "rebounds": 2.4,
        "assists": 1.0,
        "threes": 1.0
+      },
+      "props": {
+       "points": {
+        "line": 3.5,
+        "over": 114,
+        "under": -145,
+        "books": 1
+       }
       }
      },
      {
@@ -8807,28 +6479,28 @@
       },
       "props": {
        "assists": {
-        "line": 6.5,
-        "over": -143,
-        "under": 109,
-        "books": 8
+        "line": 4.5,
+        "over": 11,
+        "under": -148,
+        "books": 4
        },
        "points": {
-        "line": 25.5,
-        "over": -111,
-        "under": -119,
-        "books": 8
+        "line": 31.5,
+        "over": -1,
+        "under": -130,
+        "books": 3
        },
        "rebounds": {
-        "line": 6.5,
-        "over": -150,
-        "under": 112,
-        "books": 7
+        "line": 8.5,
+        "over": -115,
+        "under": -115,
+        "books": 4
        },
        "threes": {
-        "line": 2.5,
-        "over": -138,
-        "under": 104,
-        "books": 7
+        "line": 3.5,
+        "over": -176,
+        "under": 130,
+        "books": 3
        }
       }
      },
@@ -8851,28 +6523,28 @@
       },
       "props": {
        "assists": {
-        "line": 3.5,
-        "over": -119,
-        "under": -108,
-        "books": 7
+        "line": 2.5,
+        "over": -118,
+        "under": -112,
+        "books": 3
        },
        "points": {
-        "line": 18.5,
-        "over": -121,
-        "under": -106,
-        "books": 7
+        "line": 15.5,
+        "over": -122,
+        "under": -108,
+        "books": 4
        },
        "rebounds": {
-        "line": 5.5,
-        "over": 111,
-        "under": -145,
-        "books": 7
+        "line": 6.5,
+        "over": 102,
+        "under": -133,
+        "books": 4
        },
        "threes": {
-        "line": 2.5,
-        "over": -156,
-        "under": 121,
-        "books": 8
+        "line": 3.5,
+        "over": 134,
+        "under": -176,
+        "books": 3
        }
       }
      },
@@ -8895,28 +6567,28 @@
       },
       "props": {
        "assists": {
-        "line": 4.5,
-        "over": 107,
-        "under": -141,
-        "books": 7
+        "line": 6.5,
+        "over": -3,
+        "under": -127,
+        "books": 4
        },
        "points": {
-        "line": 13.5,
-        "over": -112,
-        "under": -115,
-        "books": 7
+        "line": 11.5,
+        "over": -128,
+        "under": -104,
+        "books": 4
        },
        "rebounds": {
         "line": 3.5,
-        "over": 128,
-        "under": -168,
-        "books": 7
+        "over": 111,
+        "under": -147,
+        "books": 4
        },
        "threes": {
         "line": 1.5,
-        "over": -187,
-        "under": 137,
-        "books": 7
+        "over": 102,
+        "under": -136,
+        "books": 3
        }
       }
      },
@@ -8939,28 +6611,28 @@
       },
       "props": {
        "assists": {
-        "line": 4.5,
-        "over": 119,
-        "under": -160,
-        "books": 7
+        "line": 3.0,
+        "over": -15,
+        "under": -22,
+        "books": 4
        },
        "points": {
-        "line": 13.5,
-        "over": -115,
-        "under": -112,
-        "books": 7
+        "line": 15.5,
+        "over": -112,
+        "under": -117,
+        "books": 4
        },
        "rebounds": {
-        "line": 3.0,
-        "over": -13,
-        "under": -25,
-        "books": 6
+        "line": 2.5,
+        "over": 132,
+        "under": -174,
+        "books": 3
        },
        "threes": {
-        "line": 2.5,
-        "over": 122,
-        "under": -161,
-        "books": 7
+        "line": 3.5,
+        "over": -126,
+        "under": -4,
+        "books": 3
        }
       }
      },
@@ -8983,22 +6655,22 @@
       },
       "props": {
        "points": {
-        "line": 7.5,
-        "over": -112,
-        "under": -116,
-        "books": 7
+        "line": 8.5,
+        "over": -129,
+        "under": -2,
+        "books": 4
        },
        "rebounds": {
-        "line": 2.5,
-        "over": -141,
-        "under": 104,
-        "books": 6
+        "line": 1.5,
+        "over": -181,
+        "under": 137,
+        "books": 3
        },
        "threes": {
         "line": 2.5,
-        "over": 155,
-        "under": -204,
-        "books": 7
+        "over": -125,
+        "under": -105,
+        "books": 3
        }
       }
      },
@@ -9021,22 +6693,22 @@
       },
       "props": {
        "points": {
-        "line": 8.5,
-        "over": -125,
-        "under": -104,
-        "books": 7
+        "line": 7.5,
+        "over": 102,
+        "under": -135,
+        "books": 4
        },
        "rebounds": {
-        "line": 6.5,
-        "over": -2,
-        "under": -130,
-        "books": 7
+        "line": 7.5,
+        "over": 114,
+        "under": -147,
+        "books": 4
        },
        "assists": {
-        "line": 1.5,
-        "over": -110,
-        "under": -121,
-        "books": 5
+        "line": 2.5,
+        "over": 145,
+        "under": -188,
+        "books": 1
        }
       }
      },
@@ -9056,6 +6728,26 @@
        "rebounds": 3.9,
        "assists": 1.5,
        "threes": 1.4
+      },
+      "props": {
+       "points": {
+        "line": 3.5,
+        "over": 120,
+        "under": -154,
+        "books": 1
+       },
+       "rebounds": {
+        "line": 2.5,
+        "over": 100,
+        "under": -130,
+        "books": 1
+       },
+       "threes": {
+        "line": 0.5,
+        "over": -160,
+        "under": 124,
+        "books": 1
+       }
       }
      },
      {
@@ -9077,16 +6769,22 @@
       },
       "props": {
        "points": {
-        "line": 5.5,
-        "over": 102,
-        "under": -132,
-        "books": 7
+        "line": 2.5,
+        "over": -152,
+        "under": 115,
+        "books": 2
        },
        "rebounds": {
-        "line": 3.5,
-        "over": 122,
-        "under": -163,
-        "books": 7
+        "line": 2.0,
+        "over": -24,
+        "under": -23,
+        "books": 2
+       },
+       "threes": {
+        "line": 0.5,
+        "over": 116,
+        "under": -151,
+        "books": 2
        }
       }
      },
@@ -9178,8 +6876,8 @@
    "market_ratings_margin": null,
    "mkt_spread": -6.5,
    "mkt_total": 226.5,
-   "mkt_ml_home": 221.0,
-   "mkt_ml_away": -269.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": -6.7,
    "projection_total": 226.5,
    "win_prob": 0.234,
@@ -9268,28 +6966,28 @@
       },
       "props": {
        "assists": {
-        "line": 6.5,
-        "over": -108,
-        "under": -120,
+        "line": 5.5,
+        "over": -138,
+        "under": 105,
         "books": 7
        },
        "points": {
-        "line": 24.5,
-        "over": -108,
-        "under": -120,
+        "line": 27.5,
+        "over": -112,
+        "under": -118,
         "books": 7
        },
        "rebounds": {
         "line": 3.5,
-        "over": -119,
-        "under": -111,
+        "over": 110,
+        "under": -150,
         "books": 7
        },
        "threes": {
         "line": 3.5,
-        "over": 133,
-        "under": -179,
-        "books": 7
+        "over": -122,
+        "under": -107,
+        "books": 8
        }
       }
      },
@@ -9313,21 +7011,21 @@
       "props": {
        "assists": {
         "line": 5.5,
-        "over": -117,
-        "under": -112,
-        "books": 7
+        "over": -130,
+        "under": 100,
+        "books": 6
        },
        "points": {
-        "line": 13.5,
-        "over": -116,
-        "under": -111,
-        "books": 7
+        "line": 14.0,
+        "over": -113,
+        "under": -118,
+        "books": 8
        },
        "rebounds": {
-        "line": 12.5,
-        "over": -114,
-        "under": -114,
-        "books": 7
+        "line": 15.0,
+        "over": -109,
+        "under": -122,
+        "books": 8
        }
       }
      },
@@ -9350,28 +7048,28 @@
       },
       "props": {
        "points": {
-        "line": 13.5,
-        "over": -113,
-        "under": -116,
-        "books": 7
+        "line": 12.5,
+        "over": 105,
+        "under": -135,
+        "books": 6
        },
        "rebounds": {
-        "line": 4.5,
-        "over": 124,
-        "under": -164,
+        "line": 3.5,
+        "over": -4,
+        "under": -125,
         "books": 7
        },
        "threes": {
         "line": 1.5,
-        "over": -148,
-        "under": 112,
+        "over": -116,
+        "under": -115,
         "books": 7
        },
        "assists": {
-        "line": 1.5,
-        "over": 131,
-        "under": -172,
-        "books": 4
+        "line": 2.0,
+        "over": 132,
+        "under": -171,
+        "books": 2
        }
       }
      },
@@ -9395,27 +7093,27 @@
       "props": {
        "assists": {
         "line": 2.5,
-        "over": -115,
-        "under": -112,
-        "books": 6
+        "over": 115,
+        "under": -150,
+        "books": 5
        },
        "points": {
         "line": 18.5,
-        "over": -104,
-        "under": -124,
+        "over": -105,
+        "under": -123,
         "books": 7
        },
        "rebounds": {
-        "line": 3.5,
-        "over": 132,
-        "under": -177,
+        "line": 2.5,
+        "over": -120,
+        "under": -110,
         "books": 6
        },
        "threes": {
         "line": 2.5,
-        "over": 104,
-        "under": -136,
-        "books": 7
+        "over": 115,
+        "under": -156,
+        "books": 8
        }
       }
      },
@@ -9435,6 +7133,32 @@
        "rebounds": 2.8,
        "assists": 1.3,
        "threes": 1.0
+      },
+      "props": {
+       "assists": {
+        "line": 2.5,
+        "over": 176,
+        "under": -237,
+        "books": 3
+       },
+       "points": {
+        "line": 9.5,
+        "over": 0,
+        "under": -131,
+        "books": 6
+       },
+       "rebounds": {
+        "line": 3.5,
+        "over": 100,
+        "under": -130,
+        "books": 7
+       },
+       "threes": {
+        "line": 1.5,
+        "over": 134,
+        "under": -187,
+        "books": 6
+       }
       }
      },
      {
@@ -9475,14 +7199,14 @@
       "props": {
        "points": {
         "line": 7.5,
-        "over": -126,
-        "under": -104,
+        "over": -114,
+        "under": -115,
         "books": 7
        },
        "rebounds": {
         "line": 5.5,
-        "over": -113,
-        "under": -117,
+        "over": 102,
+        "under": -137,
         "books": 7
        }
       }
@@ -9521,6 +7245,20 @@
        "rebounds": 6.2,
        "assists": 2.0,
        "threes": 0.0
+      },
+      "props": {
+       "points": {
+        "line": 4.5,
+        "over": 100,
+        "under": -130,
+        "books": 6
+       },
+       "rebounds": {
+        "line": 5.5,
+        "over": -115,
+        "under": -114,
+        "books": 6
+       }
       }
      },
      {
@@ -9617,27 +7355,27 @@
       "props": {
        "assists": {
         "line": 5.5,
-        "over": 113,
-        "under": -148,
-        "books": 8
+        "over": -115,
+        "under": -115,
+        "books": 9
        },
        "points": {
         "line": 26.5,
-        "over": -105,
-        "under": -125,
-        "books": 7
+        "over": -110,
+        "under": -119,
+        "books": 8
        },
        "rebounds": {
         "line": 3.5,
-        "over": 126,
-        "under": -165,
+        "over": -33,
+        "under": -3,
         "books": 7
        },
        "threes": {
-        "line": 1.5,
-        "over": -169,
-        "under": 130,
-        "books": 7
+        "line": 2.0,
+        "over": -142,
+        "under": 4,
+        "books": 8
        }
       }
      },
@@ -9661,26 +7399,26 @@
       "props": {
        "assists": {
         "line": 2.5,
-        "over": 101,
-        "under": -133,
+        "over": 124,
+        "under": -162,
         "books": 6
        },
        "points": {
-        "line": 13.5,
-        "over": -124,
-        "under": -104,
+        "line": 15.5,
+        "over": -115,
+        "under": -115,
         "books": 7
        },
        "rebounds": {
         "line": 5.5,
-        "over": -142,
-        "under": 107,
-        "books": 8
+        "over": -140,
+        "under": 110,
+        "books": 9
        },
        "threes": {
         "line": 1.5,
-        "over": -115,
-        "under": -112,
+        "over": 107,
+        "under": -143,
         "books": 7
        }
       }
@@ -9704,28 +7442,28 @@
       },
       "props": {
        "points": {
-        "line": 13.5,
-        "over": -128,
-        "under": -102,
-        "books": 7
+        "line": 17.0,
+        "over": -117,
+        "under": -114,
+        "books": 8
        },
        "rebounds": {
         "line": 3.5,
-        "over": 116,
-        "under": -154,
-        "books": 7
+        "over": -132,
+        "under": 1,
+        "books": 6
        },
        "threes": {
-        "line": 1.5,
-        "over": -110,
-        "under": -122,
+        "line": 2.5,
+        "over": 129,
+        "under": -169,
         "books": 7
        },
        "assists": {
-        "line": 1.5,
-        "over": -106,
-        "under": -122,
-        "books": 5
+        "line": 2.5,
+        "over": 0,
+        "under": -131,
+        "books": 4
        }
       }
      },
@@ -9748,28 +7486,28 @@
       },
       "props": {
        "assists": {
-        "line": 2.5,
-        "over": -125,
-        "under": -108,
-        "books": 6
+        "line": 3.5,
+        "over": 120,
+        "under": -155,
+        "books": 7
        },
        "points": {
-        "line": 13.5,
-        "over": -115,
-        "under": -113,
+        "line": 11.5,
+        "over": -112,
+        "under": -118,
         "books": 8
        },
        "rebounds": {
-        "line": 3.5,
-        "over": 115,
-        "under": -154,
-        "books": 7
+        "line": 2.5,
+        "over": -130,
+        "under": -1,
+        "books": 6
        },
        "threes": {
         "line": 1.5,
         "over": 130,
-        "under": -170,
-        "books": 8
+        "under": -177,
+        "books": 9
        }
       }
      },
@@ -9793,27 +7531,27 @@
       "props": {
        "assists": {
         "line": 3.5,
-        "over": -148,
-        "under": 111,
-        "books": 6
+        "over": -140,
+        "under": 110,
+        "books": 7
        },
        "points": {
         "line": 10.5,
-        "over": -123,
-        "under": -103,
-        "books": 6
+        "over": -110,
+        "under": -120,
+        "books": 7
        },
        "rebounds": {
         "line": 3.5,
-        "over": 127,
-        "under": -167,
-        "books": 6
+        "over": 118,
+        "under": -156,
+        "books": 7
        },
        "threes": {
         "line": 2.5,
-        "over": -113,
-        "under": -116,
-        "books": 6
+        "over": -110,
+        "under": -120,
+        "books": 7
        }
       }
      },
@@ -9837,20 +7575,20 @@
       "props": {
        "assists": {
         "line": 2.5,
-        "over": -140,
-        "under": 105,
+        "over": -119,
+        "under": -111,
         "books": 6
        },
        "points": {
-        "line": 6.5,
-        "over": -103,
-        "under": -129,
+        "line": 7.5,
+        "over": -105,
+        "under": -125,
         "books": 7
        },
        "rebounds": {
         "line": 5.5,
-        "over": 101,
-        "under": -134,
+        "over": 100,
+        "under": -130,
         "books": 7
        }
       }
@@ -9875,27 +7613,27 @@
       "props": {
        "points": {
         "line": 8.5,
-        "over": -123,
-        "under": -105,
+        "over": -112,
+        "under": -117,
         "books": 6
        },
        "rebounds": {
         "line": 4.5,
-        "over": -104,
-        "under": -129,
+        "over": -4,
+        "under": -127,
         "books": 6
        },
        "threes": {
         "line": 1.5,
-        "over": -118,
-        "under": -112,
+        "over": -107,
+        "under": -123,
         "books": 6
        },
        "assists": {
         "line": 2.0,
         "over": -18,
-        "under": -26,
-        "books": 4
+        "under": -25,
+        "books": 2
        }
       }
      },
@@ -9919,14 +7657,14 @@
       "props": {
        "points": {
         "line": 8.5,
-        "over": -120,
-        "under": -108,
+        "over": -111,
+        "under": -119,
         "books": 6
        },
        "threes": {
         "line": 1.5,
-        "over": -136,
-        "under": 104,
+        "over": -134,
+        "under": 103,
         "books": 6
        }
       }
@@ -10001,8 +7739,8 @@
    "market_ratings_margin": null,
    "mkt_spread": 12.5,
    "mkt_total": 230.5,
-   "mkt_ml_home": -545.0,
-   "mkt_ml_away": 411.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": 12.6,
    "projection_total": 230.5,
    "win_prob": 0.871,
@@ -10111,28 +7849,28 @@
       },
       "props": {
        "assists": {
-        "line": 8.5,
-        "over": 100,
-        "under": -133,
+        "line": 7.5,
+        "over": -120,
+        "under": -113,
         "books": 8
        },
        "points": {
-        "line": 37.5,
-        "over": -111,
-        "under": -116,
-        "books": 7
+        "line": 38.5,
+        "over": -120,
+        "under": -110,
+        "books": 8
        },
        "rebounds": {
         "line": 7.5,
-        "over": -111,
-        "under": -118,
-        "books": 7
+        "over": 0,
+        "under": -130,
+        "books": 8
        },
        "threes": {
         "line": 4.5,
-        "over": -127,
-        "under": -105,
-        "books": 7
+        "over": -108,
+        "under": -124,
+        "books": 8
        }
       }
      },
@@ -10156,27 +7894,27 @@
       "props": {
        "assists": {
         "line": 2.5,
-        "over": -137,
-        "under": 104,
-        "books": 6
+        "over": -110,
+        "under": -120,
+        "books": 5
        },
        "points": {
         "line": 15.5,
-        "over": -123,
-        "under": -108,
+        "over": -114,
+        "under": -116,
         "books": 7
        },
        "rebounds": {
         "line": 3.5,
-        "over": -145,
-        "under": 110,
-        "books": 7
+        "over": -132,
+        "under": -103,
+        "books": 5
        },
        "threes": {
         "line": 1.5,
-        "over": -172,
-        "under": 128,
-        "books": 7
+        "over": -165,
+        "under": 120,
+        "books": 6
        }
       }
      },
@@ -10216,23 +7954,23 @@
        "threes": 0.0
       },
       "props": {
+       "assists": {
+        "line": 2.5,
+        "over": 2,
+        "under": -135,
+        "books": 6
+       },
        "points": {
-        "line": 13.5,
-        "over": -131,
-        "under": 100,
-        "books": 7
+        "line": 14.5,
+        "over": -112,
+        "under": -118,
+        "books": 8
        },
        "rebounds": {
         "line": 10.5,
-        "over": -134,
-        "under": 101,
-        "books": 7
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -125,
-        "under": -105,
-        "books": 5
+        "over": -150,
+        "under": 110,
+        "books": 9
        }
       }
      },
@@ -10255,21 +7993,21 @@
       },
       "props": {
        "points": {
-        "line": 6.5,
-        "over": -125,
-        "under": -105,
+        "line": 5.5,
+        "over": -122,
+        "under": -107,
         "books": 7
        },
        "rebounds": {
         "line": 2.5,
-        "over": -102,
-        "under": -130,
+        "over": 121,
+        "under": -161,
         "books": 6
        },
        "threes": {
         "line": 1.5,
-        "over": 113,
-        "under": -149,
+        "over": 124,
+        "under": -168,
         "books": 6
        }
       }
@@ -10292,28 +8030,28 @@
        "threes": 1.0
       },
       "props": {
-       "points": {
-        "line": 6.5,
-        "over": -131,
-        "under": 0,
-        "books": 7
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": 105,
-        "under": -138,
-        "books": 7
-       },
        "assists": {
         "line": 1.5,
-        "over": -154,
-        "under": 119,
-        "books": 1
+        "over": 120,
+        "under": -160,
+        "books": 3
+       },
+       "points": {
+        "line": 5.5,
+        "over": -111,
+        "under": -119,
+        "books": 6
+       },
+       "rebounds": {
+        "line": 3.5,
+        "over": 112,
+        "under": -147,
+        "books": 6
        },
        "threes": {
         "line": 0.5,
-        "over": -209,
-        "under": 157,
+        "over": -160,
+        "under": 120,
         "books": 5
        }
       }
@@ -10338,26 +8076,26 @@
       "props": {
        "points": {
         "line": 10.5,
-        "over": -105,
-        "under": -125,
+        "over": -108,
+        "under": -124,
         "books": 7
        },
        "rebounds": {
         "line": 4.5,
-        "over": -139,
-        "under": 107,
+        "over": 100,
+        "under": -130,
         "books": 6
        },
        "threes": {
         "line": 1.5,
-        "over": 110,
-        "under": -146,
-        "books": 8
+        "over": 115,
+        "under": -154,
+        "books": 7
        },
        "assists": {
         "line": 1.5,
-        "over": -130,
-        "under": 100,
+        "over": -105,
+        "under": -123,
         "books": 1
        }
       }
@@ -10378,6 +8116,20 @@
        "rebounds": 2.4,
        "assists": 2.0,
        "threes": 1.7
+      },
+      "props": {
+       "points": {
+        "line": 8.5,
+        "over": -8,
+        "under": -120,
+        "books": 5
+       },
+       "threes": {
+        "line": 1.5,
+        "over": 112,
+        "under": -152,
+        "books": 5
+       }
       }
      },
      {
@@ -10400,27 +8152,27 @@
       "props": {
        "assists": {
         "line": 2.5,
-        "over": -155,
-        "under": 118,
+        "over": -147,
+        "under": 110,
         "books": 5
        },
        "points": {
-        "line": 13.5,
-        "over": -108,
-        "under": -127,
-        "books": 6
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 112,
-        "under": -147,
+        "line": 13.0,
+        "over": -116,
+        "under": -114,
         "books": 6
        },
        "rebounds": {
         "line": 2.5,
-        "over": 136,
-        "under": -179,
-        "books": 1
+        "over": 121,
+        "under": -158,
+        "books": 3
+       },
+       "threes": {
+        "line": 1.5,
+        "over": 116,
+        "under": -151,
+        "books": 6
        }
       }
      },
@@ -10518,27 +8270,27 @@
       "props": {
        "assists": {
         "line": 6.5,
-        "over": -145,
-        "under": 110,
-        "books": 7
+        "over": -130,
+        "under": 0,
+        "books": 8
        },
        "points": {
-        "line": 22.5,
+        "line": 24.0,
         "over": -112,
-        "under": -118,
-        "books": 7
+        "under": -117,
+        "books": 8
        },
        "rebounds": {
         "line": 4.5,
-        "over": 134,
-        "under": -175,
+        "over": -109,
+        "under": -123,
         "books": 7
        },
        "threes": {
         "line": 2.5,
-        "over": 114,
-        "under": -151,
-        "books": 6
+        "over": 122,
+        "under": -159,
+        "books": 7
        }
       }
      },
@@ -10562,27 +8314,27 @@
       "props": {
        "assists": {
         "line": 3.5,
-        "over": -159,
-        "under": 121,
-        "books": 7
+        "over": -118,
+        "under": -112,
+        "books": 8
        },
        "points": {
-        "line": 18.5,
-        "over": -113,
-        "under": -117,
-        "books": 7
+        "line": 17.5,
+        "over": 0,
+        "under": -130,
+        "books": 8
        },
        "rebounds": {
-        "line": 4.5,
-        "over": 116,
-        "under": -157,
+        "line": 3.5,
+        "over": -125,
+        "under": -4,
         "books": 7
        },
        "threes": {
         "line": 2.5,
-        "over": 112,
-        "under": -147,
-        "books": 7
+        "over": 120,
+        "under": -162,
+        "books": 8
        }
       }
      },
@@ -10605,27 +8357,27 @@
       },
       "props": {
        "assists": {
-        "line": 1.5,
-        "over": -185,
-        "under": 141,
-        "books": 3
+        "line": 2.5,
+        "over": -145,
+        "under": 110,
+        "books": 5
        },
        "points": {
-        "line": 13.5,
-        "over": -1,
-        "under": -130,
-        "books": 8
+        "line": 14.5,
+        "over": -109,
+        "under": -121,
+        "books": 7
        },
        "rebounds": {
         "line": 5.5,
-        "over": 115,
-        "under": -153,
-        "books": 8
+        "over": -115,
+        "under": -115,
+        "books": 7
        },
        "threes": {
         "line": 1.5,
-        "over": -173,
-        "under": 130,
+        "over": -143,
+        "under": 107,
         "books": 7
        }
       }
@@ -10666,17 +8418,29 @@
        "threes": 0.6
       },
       "props": {
+       "assists": {
+        "line": 1.5,
+        "over": 113,
+        "under": -147,
+        "books": 1
+       },
        "points": {
-        "line": 9.5,
-        "over": -102,
-        "under": -127,
+        "line": 7.5,
+        "over": -118,
+        "under": -113,
         "books": 3
        },
        "rebounds": {
-        "line": 8.5,
-        "over": 102,
-        "under": -134,
-        "books": 2
+        "line": 7.5,
+        "over": -4,
+        "under": -127,
+        "books": 3
+       },
+       "threes": {
+        "line": 0.5,
+        "over": -130,
+        "under": 100,
+        "books": 1
        }
       }
      },
@@ -10698,29 +8462,29 @@
        "threes": 1.8
       },
       "props": {
+       "assists": {
+        "line": 1.5,
+        "over": -169,
+        "under": 130,
+        "books": 4
+       },
        "points": {
         "line": 15.5,
-        "over": -111,
-        "under": -115,
-        "books": 5
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 148,
-        "under": -205,
-        "books": 5
+        "over": -117,
+        "under": -113,
+        "books": 7
        },
        "rebounds": {
         "line": 3.5,
-        "over": -137,
+        "over": -136,
         "under": 102,
-        "books": 4
+        "books": 7
        },
-       "assists": {
-        "line": 2.5,
-        "over": 112,
-        "under": -152,
-        "books": 1
+       "threes": {
+        "line": 1.5,
+        "over": -180,
+        "under": 136,
+        "books": 7
        }
       }
      },
@@ -10762,15 +8526,21 @@
       "props": {
        "points": {
         "line": 5.5,
-        "over": -132,
-        "under": 101,
-        "books": 5
+        "over": -125,
+        "under": -105,
+        "books": 6
        },
        "rebounds": {
         "line": 3.5,
-        "over": 106,
-        "under": -137,
-        "books": 5
+        "over": 117,
+        "under": -154,
+        "books": 6
+       },
+       "threes": {
+        "line": 0.5,
+        "over": -221,
+        "under": 164,
+        "books": 2
        }
       }
      },
@@ -10808,6 +8578,20 @@
        "rebounds": 6.0,
        "assists": 1.6,
        "threes": 0.0
+      },
+      "props": {
+       "points": {
+        "line": 5.5,
+        "over": -122,
+        "under": -106,
+        "books": 3
+       },
+       "rebounds": {
+        "line": 4.5,
+        "over": -119,
+        "under": -11,
+        "books": 4
+       }
       }
      },
      {
@@ -10829,16 +8613,16 @@
       },
       "props": {
        "points": {
-        "line": 4.5,
-        "over": -106,
-        "under": -127,
-        "books": 4
+        "line": 6.5,
+        "over": 130,
+        "under": -170,
+        "books": 5
        },
        "threes": {
-        "line": 0.5,
-        "over": -175,
-        "under": 135,
-        "books": 1
+        "line": 1.0,
+        "over": -161,
+        "under": 122,
+        "books": 2
        }
       }
      },
@@ -10892,12 +8676,12 @@
    "ratings_margin": 10.4,
    "pace": 100.2,
    "market_ratings_margin": null,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
-   "projection": 11.5,
-   "projection_total": 228.5,
+   "mkt_spread": 16.5,
+   "mkt_total": 225.5,
+   "mkt_ml_home": -1140.0,
+   "mkt_ml_away": 720.0,
+   "projection": 15.9,
+   "projection_total": 225.5,
    "win_prob": 0.837,
    "rest": {
     "away": 1,
