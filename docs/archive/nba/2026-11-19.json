@@ -1,0 +1,73 @@
+{
+ "date": "2026-11-19",
+ "games": {
+  "401910022": {
+   "id": "401910022",
+   "date": "2026-11-19",
+   "tip": "2026-11-19T20:00:00-05:00",
+   "away": "LAC",
+   "home": "SA",
+   "neutral": null,
+   "margin": 9.6,
+   "total": 227.7,
+   "win_prob": 0.797,
+   "projection": 14.8,
+   "mkt_spread": 15.5,
+   "mkt_total": 224.5,
+   "mkt_ml_home": -1320.0,
+   "mkt_ml_away": 800.0,
+   "frozenAt": "2026-11-19T05:12-05:00"
+  },
+  "401910020": {
+   "id": "401910020",
+   "date": "2026-11-19",
+   "tip": "2026-11-19T20:00:00-05:00",
+   "away": "POR",
+   "home": "MIL",
+   "neutral": null,
+   "margin": -11.0,
+   "total": 228.6,
+   "win_prob": 0.172,
+   "projection": -10.6,
+   "mkt_spread": -10.5,
+   "mkt_total": 228.5,
+   "mkt_ml_home": 329.0,
+   "mkt_ml_away": -420.0,
+   "frozenAt": "2026-11-19T05:12-05:00"
+  },
+  "401910019": {
+   "id": "401910019",
+   "date": "2026-11-19",
+   "tip": "2026-11-19T20:00:00-05:00",
+   "away": "GS",
+   "home": "MEM",
+   "neutral": null,
+   "margin": 1.9,
+   "total": 231.1,
+   "win_prob": 0.566,
+   "projection": 6.8,
+   "mkt_spread": 7.5,
+   "mkt_total": 225.5,
+   "mkt_ml_home": -299.0,
+   "mkt_ml_away": 243.0,
+   "frozenAt": "2026-11-19T05:12-05:00"
+  },
+  "401910021": {
+   "id": "401910021",
+   "date": "2026-11-19",
+   "tip": "2026-11-19T20:00:00-05:00",
+   "away": "NY",
+   "home": "MIN",
+   "neutral": null,
+   "margin": 2.2,
+   "total": 223.0,
+   "win_prob": 0.578,
+   "projection": -1.0,
+   "mkt_spread": -1.5,
+   "mkt_total": 215.5,
+   "mkt_ml_home": 105.0,
+   "mkt_ml_away": -124.0,
+   "frozenAt": "2026-11-19T05:12-05:00"
+  }
+ }
+}
