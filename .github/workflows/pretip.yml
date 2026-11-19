@@ -2,24 +2,28 @@ name: NBA pre-tip updates
 
 # Every 30 minutes from about 4 PM to 11 PM New York time on NBA nights: re-read the injury report,
 # update the model's number for games tipping within 3.5 hours, and log it with the line (Odds API,
-# 1 credit, read on the hour or when the injury report changed: about 300 credits a month).
+# 1 credit, read on the hour or when the news moved the model: about 300 credits a month).
 # Approved by Ryan on 2026-11-18.
+# GitHub's scheduler skips many short cron runs: on Nov 18 only 2 of 16 fired. So each cron start
+# runs one job that loops on its own every 30 minutes until a fixed end time, and a skipped start
+# only loses its own half of the night.
 on:
   schedule:
-    - cron: "7,37 21-23 * 10-12,1-6 *"
-    - cron: "7,37 0-4 * 10-12,1-6 *"
+    - cron: "50 20 * 10-12,1-6 *"     # runs until 00:50 UTC
+    - cron: "50 0 * 10-12,1-6 *"      # runs until 04:50 UTC
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: update-nba
+  group: pretip
   cancel-in-progress: false
 
 jobs:
   pretip:
     runs-on: ubuntu-latest
+    timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -31,15 +35,24 @@ jobs:
           key: hoopr-${{ github.run_id }}
           restore-keys: hoopr-
       - run: pip install -r requirements.txt
-      - name: Pre-tip update
+      - name: Pre-tip updates every 30 minutes until the end time
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
-        run: python -m nbamodel.pretip
-      - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/lines/nba_pretip.csv 2>/dev/null || true
-          if git diff --staged --quiet; then echo "no changes"; exit 0; fi
-          git commit -m "Pre-tip update ($(date -u +%Y-%m-%dT%H:%MZ))"
-          for i in 1 2 3; do git pull --rebase origin main && git push && break; sleep 10; done
+          h=$(date -u +%-H)
+          # started in the evening: run to 00:50 UTC; started after midnight UTC (or late): run to 04:50
+          if [ "$h" -ge 20 ]; then stop=$(date -u -d "tomorrow 00:50" +%s); else stop=$(date -u -d "today 04:50" +%s); fi
+          while [ "$(date -u +%s)" -lt "$stop" ]; do
+            git pull -q --rebase origin main || true      # the board update may have changed the feed
+            python -m nbamodel.pretip || echo "pre-tip run failed"
+            git add docs/lines/nba_pretip.csv 2>/dev/null || true
+            if ! git diff --staged --quiet; then
+              git commit -q -m "Pre-tip update ($(date -u +%Y-%m-%dT%H:%MZ))"
+              for i in 1 2 3; do git pull -q --rebase origin main && git push -q && break; sleep 10; done
+            fi
+            m=$(date -u +%-M); s=$(date -u +%-S)
+            if [ "$m" -lt 7 ]; then wait=$(( (7 - m) * 60 - s )); elif [ "$m" -lt 37 ]; then wait=$(( (37 - m) * 60 - s )); else wait=$(( (67 - m) * 60 - s )); fi
+            sleep "$wait"
+          done
