@@ -78,8 +78,8 @@ def run(now=None):
         print("no games tipping in the next", WINDOW_HOURS, "hours")
         return 0
     inj = injuries()
-    if inj is None:
-        print("injury report not read; nothing logged")
+    if not inj:     # in season ESPN always lists someone; an empty report is a failed read
+        print("injury report not read or empty; nothing logged")
         return 0
     miss, names, _ = current_missing(None, season, inj)
     try:
