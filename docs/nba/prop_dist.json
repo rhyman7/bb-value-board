@@ -1,0 +1,13 @@
+{
+ "k": {
+  "points": 0.0887,
+  "rebounds": 0.0484,
+  "assists": 0.0374,
+  "threes": 0.064
+ },
+ "fit_on": "2021-23 player-games, projections vs actual",
+ "n": 54537,
+ "w": 0.3,
+ "min_edge": 0.03,
+ "w_note": "model weight in the chance; fit on 2023-24 past props by log loss (experiments/props_value.py)"
+}

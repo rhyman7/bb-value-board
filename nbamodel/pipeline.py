@@ -273,6 +273,18 @@ def run(do_backtest: bool = False):
             x["players"] = proj.get(x["id"])
         n_players = players.log(today, todays)
         pgrade = players.grade_log(season)
+        try:    # prop picks: only on the run that read prop lines; the morning run grades them
+            from . import proppicks
+            has_props = any(r.get("props") for e in todays.values() for sd in ("home", "away") for r in e.get(sd, []))
+            if has_props:
+                print(f"prop picks logged: {proppicks.log(today, proppicks.picks(today, todays))}")
+            tonight = []
+            if proppicks.LOG.exists():
+                lp = pd.read_csv(proppicks.LOG, dtype={"game_id": str})
+                tonight = lp[lp.date == today.isoformat()].sort_values("edge", ascending=False).to_dict("records")
+            proppicks.grade(season, today, tonight)
+        except Exception as e:
+            print("prop picks failed:", repr(e))
     except Exception as e:  # the board still goes out without them
         print("player projections failed:", repr(e))
 

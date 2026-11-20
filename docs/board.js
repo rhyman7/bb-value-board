@@ -307,6 +307,37 @@
       <h3 style="margin-top:20px">First half, live</h3>${liveHtml}`;
   }
 
+  // NBA only: tonight's prop picks and their record (nbamodel/proppicks.py)
+  const STAT = { points: "points", rebounds: "rebounds", assists: "assists", threes: "3-pointers" };
+  function drawPicks(pp) {
+    const box = $("#picks-body");
+    if (!box) return;
+    if (!pp) { box.innerHTML = `<p class="empty">Prop picks start with the next late-afternoon update.</p>`; return; }
+    const price = (p) => (p > 0 ? "+" : "−") + Math.abs(p);
+    const pct = (x) => (100 * x).toFixed(0) + "%";
+    const row = (r) => `<tr><td><b>${esc(r.name)}</b> <span class="muted">${esc(r.team)} vs ${esc(r.opp)}</span></td>
+      <td><b>${r.side === "over" ? "Over" : "Under"} ${f1(r.line)}</b> ${STAT[r.stat] || esc(r.stat)}</td>
+      <td>${price(r.price)} <span class="muted">${esc(r.book || "")}</span></td>
+      <td>${pct(r.chance)} <span class="muted">model ${pct(r.model_chance)}, market ${pct(r.market_chance)}</span></td>
+      <td><b>+${(100 * r.edge).toFixed(1)}%</b></td><td>${f1(r.projection)}</td></tr>`;
+    const t = pp.tonight || [];
+    const head = `<thead><tr><th>Player</th><th>Bet</th><th>Best price</th><th>Chance</th><th>Edge</th><th>Projection</th></tr></thead>`;
+    const SHOW = 15;
+    const tonight = t.length ? `<h3>${esc(dayLabel(pp.generated, true))}: ${t.length} pick${t.length === 1 ? "" : "s"}</h3>
+      <div class="tbl-wrap"><table>${head}<tbody id="picks-rows">${t.slice(0, SHOW).map(row).join("")}</tbody></table></div>
+      ${t.length > SHOW ? `<p><button type="button" id="picks-more">Show all ${t.length}</button></p>` : ""}`
+      : `<p class="empty">No picks for ${esc(dayLabel(pp.generated, true))} yet. They post on the late-afternoon update, once prop lines are read.</p>`;
+    const rc = pp.record, line = (x) => x && x.picks ? `${x.w}-${x.l}${x.p ? "-" + x.p : ""}, ${x.units >= 0 ? "+" : "−"}${Math.abs(x.units).toFixed(2)} units (${minus(x.roi.toFixed(1))}%)` : "none yet";
+    const record = rc ? `<div class="tbl-wrap"><table><thead><tr><th>Record (1 unit a pick)</th><th>W-L-P, units, return</th></tr></thead><tbody>
+        <tr><td>Season</td><td>${line(rc.season)}</td></tr>
+        <tr><td>Last night (${esc(rc.last_night_date)})</td><td>${line(rc.last_night)}</td></tr>
+        ${Object.entries(rc.by_stat || {}).map(([s, x]) => `<tr><td>${esc((STAT[s] || s).replace(/^./, (c) => c.toUpperCase()))}</td><td>${line(x)}</td></tr>`).join("")}</tbody></table></div>`
+      : `<p class="note">No graded picks yet.</p>`;
+    box.innerHTML = `<p class="note"><strong>Not proven.</strong> ${esc(pp.backtest)}</p>${tonight}<h3 style="margin-top:20px">Record</h3>${record}`;
+    const more = $("#picks-more");
+    if (more) more.addEventListener("click", () => { $("#picks-rows").innerHTML = t.map(row).join(""); more.remove(); });
+  }
+
   // fill the warning's numbers from the latest backtest so it never goes stale
   function drawCaveat(bt) {
     const set = (id, v) => { const el = document.getElementById(id); if (el && v != null) el.textContent = v; };
@@ -320,6 +351,7 @@
     const [feed, bt, op, ml] = await Promise.all([get(`../feed/${L}.json`), get(`../${L}/backtest.json`), get("../openers.json"), get("../moneyline.json")]);
     drawCaveat(bt);
     drawGames(feed);
+    if (L === "nba") get("prop_picks.json").then(drawPicks);
     if (L === "nba") { drawRecordNBA(bt); drawRatings(feed); } else drawRecordCBB(bt);
     const mlHtml = mlSection(ml);
     if (mlHtml) $("#model-body").insertAdjacentHTML("beforeend", mlHtml);
