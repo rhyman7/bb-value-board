@@ -447,6 +447,30 @@ def build(lg: str, day: str | None = None, dash_src: str | None = None, out_dir:
                            f"(1 = fewest, {len(dash['teams'])} = most). Prop lines appear once the late-afternoon "
                            "update reads them.", S["small"]))
 
+    # prop picks (NBA): nbamodel/proppicks.py writes docs/nba/prop_picks.json on the props update
+    if lg == "nba":
+        try:
+            pp = json.loads((ROOT / "docs" / "nba" / "prop_picks.json").read_text())
+        except Exception:
+            pp = None
+        picks = (pp or {}).get("tonight") if pp and pp.get("generated") == day else None
+        story += [Spacer(1, 10), Paragraph("Prop picks", S["h2"])]
+        if picks:
+            sname = {"threes": "3-pointers"}
+            story.append(ranked_table([[i, f"<b>{p['name']}</b> ({p['team']})", f"vs {p['opp']}",
+                                        f"<b>{p['side'].title()} {p['line']:g}</b> {sname.get(p['stat'], p['stat'])}",
+                                        f"{'+' if p['price'] > 0 else ''}{p['price']} {p.get('book') or ''}",
+                                        f"{100 * p['chance']:.0f}%", f"+{100 * p['edge']:.1f}%"]
+                                       for i, p in enumerate(picks[:20], 1)],
+                                      ["#", "Player", "Opp", "Bet", "Best price", "Chance", "Edge"],
+                                      [W * 0.05, W * 0.25, W * 0.09, W * 0.24, W * 0.19, W * 0.09, W * 0.09]))
+            more = f" Showing the top 20 of {len(picks)}." if len(picks) > 20 else ""
+            story.append(Paragraph("Chance = 30% model, 70% market (no vig); a pick needs a 3%+ edge at the best "
+                                   "US-regulated price. On past props this method broke even, so these are tracked, "
+                                   "not proven. Record on the NBA board." + more, S["small"]))
+        else:
+            story.append(Paragraph("Prop picks post on the late-afternoon update, once prop lines are read.", S["small"]))
+
     # per-game sections
     story.append(PageBreak())
     for i, (g, dg, plist, spots) in enumerate(sections):

@@ -26,7 +26,9 @@ def _norm(name):
 
 def today_props(game_teams, day_iso):
     """game_teams: {game_id: (home_full_name, away_full_name)} for today's games. Returns
-    {game_id: {normalized player name: {stat: {"line", "over", "under", "books"}}}}."""
+    {game_id: {normalized player name: {stat: {"line", "over", "under", "books", "best_over",
+    "best_over_book", "best_under", "best_under_book"}}}}. The best prices are the best a US-regulated
+    book offers at the consensus line (offshore books left out)."""
     events, _ = client.get(f"/sports/{client.SPORTS['nba']}/events")
     by_teams = {}
     for e in events:
@@ -58,15 +60,34 @@ def today_props(game_teams, day_iso):
                     sides.setdefault(who, {})[o["name"].lower()] = (float(o["point"]), int(o["price"]))
                 for who, s in sides.items():
                     if "over" in s and "under" in s and s["over"][0] == s["under"][0]:
-                        quotes.setdefault((_norm(who), stat), []).append((s["over"][0], s["over"][1], s["under"][1]))
+                        quotes.setdefault((_norm(who), stat), []).append((s["over"][0], s["over"][1], s["under"][1], bk["key"]))
         g = {}
         for (who, stat), qs in quotes.items():
             line = statistics.median(q[0] for q in qs)
-            at = [q for q in qs if q[0] == line] or qs
+            if not any(q[0] == line for q in qs):        # median between two lines: the more common one
+                line = statistics.mode(q[0] for q in qs)
+            at = [q for q in qs if q[0] == line]
             g.setdefault(who, {})[stat] = {"line": line, "over": median_price(q[1] for q in at),
-                                           "under": median_price(q[2] for q in at), "books": len(qs)}
+                                           "under": median_price(q[2] for q in at), "books": len(qs), **_best(at)}
         out[gid] = g
     return out
+
+
+OFFSHORE = {"betonlineag", "bovada", "mybookieag", "betus", "lowvig"}
+
+
+def _dec(p):
+    return 1 + (p / 100 if p > 0 else 100 / -p)
+
+
+def _best(at):
+    """Best over and under price at the consensus line among US-regulated books, with the book."""
+    legal = [q for q in at if q[3] not in OFFSHORE]
+    if not legal:
+        return {}
+    o = max(legal, key=lambda q: _dec(q[1]))
+    u = max(legal, key=lambda q: _dec(q[2]))
+    return {"best_over": o[1], "best_over_book": o[3], "best_under": u[2], "best_under_book": u[3]}
 
 
 def median_price(prices):
