@@ -4,13 +4,16 @@ name: NBA pre-tip updates
 # update the model's number for games tipping within 3.5 hours, and log it with the line (Odds API,
 # 1 credit, read on the hour or when the news moved the model: about 300 credits a month).
 # Approved by Ryan on 2026-11-18.
-# GitHub's scheduler skips many short cron runs: on Nov 18 only 2 of 16 fired. So each cron start
-# runs one job that loops on its own every 30 minutes until a fixed end time, and a skipped start
-# only loses its own half of the night.
+# GitHub's scheduler is unreliable for this: on Nov 18 only 2 of 16 short cron starts fired, and on
+# Nov 19 the evening start never came and the late one was an hour late. So the loop starts when the
+# late-afternoon board update finishes (workflow_run is reliable) and re-checks every 30 minutes until
+# 11:30 PM ET, kept under GitHub's 6-hour job limit. The late cron stays as a backup.
 on:
+  workflow_run:
+    workflows: ["Update NBA and college boards"]
+    types: [completed]
   schedule:
-    - cron: "50 20 * 10-12,1-6 *"     # runs until 00:50 UTC
-    - cron: "50 0 * 10-12,1-6 *"      # runs until 04:50 UTC
+    - cron: "50 0 * 10-12,1-6 *"
   workflow_dispatch:
 
 permissions:
@@ -22,8 +25,9 @@ concurrency:
 
 jobs:
   pretip:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
-    timeout-minutes: 300
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -42,8 +46,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           h=$(date -u +%-H)
-          # started in the evening: run to 00:50 UTC; started after midnight UTC (or late): run to 04:50
-          if [ "$h" -ge 20 ]; then stop=$(date -u -d "tomorrow 00:50" +%s); else stop=$(date -u -d "today 04:50" +%s); fi
+          # the 11 AM ET board update also triggers this: nothing tips for hours, so wait for the 5 PM one
+          if [ "$h" -ge 12 ] && [ "$h" -lt 20 ]; then echo "too early for pre-tip updates"; exit 0; fi
+          # run to 04:30 UTC (11:30 PM ET), at most 5 h 40 min (GitHub stops jobs at 6 h)
+          if [ "$h" -ge 12 ]; then stop=$(date -u -d "tomorrow 04:30" +%s); else stop=$(date -u -d "today 04:30" +%s); fi
+          cap=$(( $(date -u +%s) + 340 * 60 )); [ "$stop" -gt "$cap" ] && stop=$cap
           while [ "$(date -u +%s)" -lt "$stop" ]; do
             git pull -q --rebase origin main || true      # the board update may have changed the feed
             python -m nbamodel.pretip || echo "pre-tip run failed"
