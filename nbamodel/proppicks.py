@@ -69,11 +69,12 @@ def picks(day, todays):
     return sorted(rows, key=lambda x: -x["edge"])
 
 
-def log(day, rows):
+def log(day, rows, game_ids):
+    """Replace the picks for the games in this run (all still to tip); picks for other games stay."""
     new = pd.DataFrame(rows, columns=COLS)
     if LOG.exists():
         old = pd.read_csv(LOG, dtype={"game_id": str})
-        old = old[old.date != day.isoformat()]
+        old = old[~((old.date == day.isoformat()) & old.game_id.isin({str(g) for g in game_ids}))]
         new = pd.concat([old, new], ignore_index=True)
     LOG.parent.mkdir(parents=True, exist_ok=True)
     new.to_csv(LOG, index=False)
