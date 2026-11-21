@@ -7,3 +7,5 @@ fetched_at,game_id,minutes_to_tip,out_hash,out_home,out_away,model_margin,model_
 2026-11-21T02:07:01+00:00,401909312,52,e6f4d7f888,,Clint Capela,-1.81,0.0,-1.0,12,True
 2026-11-21T02:07:01+00:00,401909313,52,e6f4d7f888,Austin Reaves,Precious Achiuwa,12.8,-0.0,14.25,12,True
 2026-11-21T02:07:01+00:00,401909311,22,e6f4d7f888,Lauri Markkanen,,-7.61,-0.0,-4.75,12,True
+2026-11-21T02:37:01+00:00,401909312,22,e6f4d7f888,,Clint Capela,-1.81,0.0,,,False
+2026-11-21T02:37:01+00:00,401909313,22,e6f4d7f888,Austin Reaves,Precious Achiuwa,12.8,-0.0,,,False
