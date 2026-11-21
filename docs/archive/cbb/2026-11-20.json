@@ -637,15 +637,15 @@
    "away": "SLU",
    "home": "SMC",
    "neutral": false,
-   "margin": 2.2,
+   "margin": 2.3,
    "total": 170.0,
-   "win_prob": 0.586,
-   "projection": 2.2,
+   "win_prob": 0.587,
+   "projection": 2.3,
    "mkt_spread": 1.5,
-   "mkt_total": 161.5,
+   "mkt_total": 163.5,
    "mkt_ml_home": -125.0,
    "mkt_ml_away": 105.0,
-   "frozenAt": "2026-11-20T17:41-05:00"
+   "frozenAt": "2026-11-20T22:14-05:00"
   }
  }
 }
