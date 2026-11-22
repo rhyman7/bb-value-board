@@ -154,19 +154,6 @@
    "a_threes": 1.0
   },
   {
-   "name": "Tyler Jones",
-   "team": "UALB",
-   "opp": "WIU",
-   "p_points": 19.0,
-   "a_points": 13.0,
-   "p_rebounds": 3.5,
-   "a_rebounds": 4.0,
-   "p_assists": 3.3,
-   "a_assists": 2.0,
-   "p_threes": 0.9,
-   "a_threes": 0.0
-  },
-  {
    "name": "Jaden Alexander",
    "team": "CSUB",
    "opp": "IDHO",
@@ -177,6 +164,19 @@
    "p_assists": 1.2,
    "a_assists": 0.0,
    "p_threes": 2.4,
+   "a_threes": 0.0
+  },
+  {
+   "name": "Tyler Jones",
+   "team": "UALB",
+   "opp": "WIU",
+   "p_points": 19.0,
+   "a_points": 13.0,
+   "p_rebounds": 3.5,
+   "a_rebounds": 4.0,
+   "p_assists": 3.3,
+   "a_assists": 2.0,
+   "p_threes": 0.9,
    "a_threes": 0.0
   },
   {

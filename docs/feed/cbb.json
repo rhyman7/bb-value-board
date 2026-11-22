@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-21T21:42:25+00:00",
+ "generatedAt": "2026-11-22T02:13:44+00:00",
  "season": 2027,
  "gamesRated": 856,
  "marketWeight": 0.0,
@@ -44,7 +44,7 @@
      },
      {
       "label": "UPST team rating (-18.0 per 100)",
-      "pts": 12.12,
+      "pts": 12.13,
       "kind": "team"
      },
      {
@@ -100,7 +100,7 @@
     "margin": [
      {
       "label": "BUCK team rating (-16.4 per 100)",
-      "pts": -11.67,
+      "pts": -11.69,
       "kind": "team"
      },
      {
@@ -230,12 +230,12 @@
     "margin": [
      {
       "label": "BU team rating (-4.2 per 100)",
-      "pts": -2.74,
+      "pts": -2.75,
       "kind": "team"
      },
      {
       "label": "COLU team rating (+3.4 per 100)",
-      "pts": -2.18,
+      "pts": -2.17,
       "kind": "team"
      },
      {
@@ -418,12 +418,12 @@
     "margin": [
      {
       "label": "LSU team rating (+22.1 per 100)",
-      "pts": 16.41,
+      "pts": 16.4,
       "kind": "team"
      },
      {
-      "label": "QUC team rating (-5.5 per 100)",
-      "pts": 4.05,
+      "label": "QUC team rating (-5.4 per 100)",
+      "pts": 4.04,
       "kind": "team"
      },
      {
@@ -489,7 +489,7 @@
      },
      {
       "label": "DEN team rating (-8.3 per 100)",
-      "pts": 5.45,
+      "pts": 5.44,
       "kind": "team"
      },
      {
@@ -552,12 +552,12 @@
     "margin": [
      {
       "label": "MERC team rating (-14.4 per 100)",
-      "pts": -9.38,
+      "pts": -9.39,
       "kind": "team"
      },
      {
       "label": "WIU team rating (-22.7 per 100)",
-      "pts": 14.79,
+      "pts": 14.8,
       "kind": "team"
      },
      {
@@ -627,7 +627,7 @@
      },
      {
       "label": "LR team rating (-8.8 per 100)",
-      "pts": 6.5,
+      "pts": 6.51,
       "kind": "team"
      },
      {
@@ -878,7 +878,7 @@
      },
      {
       "label": "NIU team rating (-5.3 per 100)",
-      "pts": 3.52,
+      "pts": 3.53,
       "kind": "team"
      },
      {
@@ -1064,7 +1064,7 @@
     "margin": [
      {
       "label": "MORG team rating (-16.0 per 100)",
-      "pts": -11.97,
+      "pts": -11.98,
       "kind": "team"
      },
      {
@@ -1107,7 +1107,7 @@
    "margin": 14.1,
    "total": 148.2,
    "pace": 68.0,
-   "win_prob": 0.898,
+   "win_prob": 0.897,
    "projection": 14.1,
    "mkt_spread": 15.5,
    "mkt_total": 147.5,
@@ -1128,8 +1128,8 @@
       "kind": "team"
      },
      {
-      "label": "WCU team rating (-5.2 per 100)",
-      "pts": 3.45,
+      "label": "WCU team rating (-5.1 per 100)",
+      "pts": 3.38,
       "kind": "team"
      },
      {
@@ -1182,12 +1182,12 @@
     "margin": [
      {
       "label": "APSU team rating (-0.7 per 100)",
-      "pts": -0.47,
+      "pts": -0.48,
       "kind": "team"
      },
      {
       "label": "RGV team rating (-3.8 per 100)",
-      "pts": 2.56,
+      "pts": 2.57,
       "kind": "team"
      },
      {
@@ -1501,12 +1501,12 @@
     "margin": [
      {
       "label": "JAX team rating (-12.5 per 100)",
-      "pts": -8.37,
+      "pts": -8.36,
       "kind": "team"
      },
      {
       "label": "CARK team rating (-1.9 per 100)",
-      "pts": 1.24,
+      "pts": 1.25,
       "kind": "team"
      },
      {
@@ -1693,8 +1693,8 @@
    "build": {
     "margin": [
      {
-      "label": "ETSU team rating (+0.9 per 100)",
-      "pts": 0.63,
+      "label": "ETSU team rating (+1.0 per 100)",
+      "pts": 0.64,
       "kind": "team"
      },
      {
@@ -1821,8 +1821,8 @@
    "projection": -3.9,
    "mkt_spread": 4.5,
    "mkt_total": 134.5,
-   "mkt_ml_home": -198.0,
-   "mkt_ml_away": 164.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [],
    "missing": {
     "home": [],
@@ -1832,7 +1832,7 @@
     "margin": [
      {
       "label": "USD team rating (-0.8 per 100)",
-      "pts": -0.57,
+      "pts": -0.58,
       "kind": "team"
      },
      {
@@ -1877,15 +1877,15 @@
    "away": "WIN",
    "home": "WOF",
    "neutral": false,
-   "margin": 4.1,
+   "margin": 4.2,
    "total": 171.4,
    "pace": 74.1,
-   "win_prob": 0.654,
-   "projection": 4.1,
+   "win_prob": 0.656,
+   "projection": 4.2,
    "mkt_spread": 6.5,
    "mkt_total": 161.5,
-   "mkt_ml_home": -270.0,
-   "mkt_ml_away": 220.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [
     "WOF off an emotional win (letdown spot)"
    ],
@@ -1896,8 +1896,8 @@
    "build": {
     "margin": [
      {
-      "label": "WOF team rating (-10.2 per 100)",
-      "pts": -7.43,
+      "label": "WOF team rating (-10.1 per 100)",
+      "pts": -7.35,
       "kind": "team"
      },
      {
@@ -1944,8 +1944,8 @@
    "projection": -11.3,
    "mkt_spread": -10.5,
    "mkt_total": 146.5,
-   "mkt_ml_home": 340.0,
-   "mkt_ml_away": -440.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [
     "NE on a second straight road game in 4 days"
    ],
@@ -2009,8 +2009,8 @@
    "projection": 6.7,
    "mkt_spread": 5.5,
    "mkt_total": 173.5,
-   "mkt_ml_home": -238.0,
-   "mkt_ml_away": 195.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [],
    "missing": {
     "home": [],
@@ -2072,8 +2072,8 @@
    "projection": -1.0,
    "mkt_spread": -2.5,
    "mkt_total": 141.5,
-   "mkt_ml_home": 124.0,
-   "mkt_ml_away": -148.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [],
    "missing": {
     "home": [],
@@ -2083,7 +2083,7 @@
     "margin": [
      {
       "label": "NICH team rating (-9.5 per 100)",
-      "pts": -7.09,
+      "pts": -7.1,
       "kind": "team"
      },
      {
@@ -2135,8 +2135,8 @@
    "projection": -1.2,
    "mkt_spread": -1.5,
    "mkt_total": 153.5,
-   "mkt_ml_home": 100.0,
-   "mkt_ml_away": -120.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [],
    "missing": {
     "home": [],
@@ -2264,8 +2264,8 @@
    "projection": 8.1,
    "mkt_spread": 12.5,
    "mkt_total": 138.5,
-   "mkt_ml_home": -800.0,
-   "mkt_ml_away": 550.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [
     "ME off an emotional win (letdown spot)",
     "ME on a second straight road game in 4 days"
@@ -2278,7 +2278,7 @@
     "margin": [
      {
       "label": "MASS team rating (-5.4 per 100)",
-      "pts": -3.8,
+      "pts": -3.81,
       "kind": "team"
      },
      {
@@ -2330,8 +2330,8 @@
    "projection": -14.7,
    "mkt_spread": -11.5,
    "mkt_total": 149.5,
-   "mkt_ml_home": 600.0,
-   "mkt_ml_away": -900.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [
     "UNCW on a second straight road game in 4 days"
    ],
@@ -2395,8 +2395,8 @@
    "projection": 7.3,
    "mkt_spread": 4.5,
    "mkt_total": 133.5,
-   "mkt_ml_home": -192.0,
-   "mkt_ml_away": 160.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [
     "BRWN on a second straight road game in 4 days"
    ],
@@ -2455,8 +2455,8 @@
    "projection": 7.6,
    "mkt_spread": 8.5,
    "mkt_total": 162.5,
-   "mkt_ml_home": -425.0,
-   "mkt_ml_away": 330.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [],
    "missing": {
     "home": [],
@@ -2471,7 +2471,7 @@
      },
      {
       "label": "CHSO team rating (-9.4 per 100)",
-      "pts": 7.14,
+      "pts": 7.13,
       "kind": "team"
      },
      {
@@ -2513,8 +2513,8 @@
    "projection": 10.9,
    "mkt_spread": 7.5,
    "mkt_total": 146.5,
-   "mkt_ml_home": -355.0,
-   "mkt_ml_away": 280.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [],
    "missing": {
     "home": [],
@@ -2571,8 +2571,8 @@
    "projection": 14.0,
    "mkt_spread": 13.5,
    "mkt_total": 135.5,
-   "mkt_ml_home": -1200.0,
-   "mkt_ml_away": 750.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [],
    "missing": {
     "home": [],
@@ -2629,8 +2629,8 @@
    "projection": 8.1,
    "mkt_spread": 7.5,
    "mkt_total": 154.5,
-   "mkt_ml_home": -375.0,
-   "mkt_ml_away": 295.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [],
    "missing": {
     "home": [],
@@ -2644,7 +2644,7 @@
       "kind": "team"
      },
      {
-      "label": "NAU team rating (-10.2 per 100)",
+      "label": "NAU team rating (-10.3 per 100)",
       "pts": 7.08,
       "kind": "team"
      },
@@ -2687,8 +2687,8 @@
    "projection": 13.6,
    "mkt_spread": 11.5,
    "mkt_total": 144.5,
-   "mkt_ml_home": -900.0,
-   "mkt_ml_away": 600.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [
     "MORE on a second straight road game in 4 days"
    ],
@@ -2700,7 +2700,7 @@
     "margin": [
      {
       "label": "ELON team rating (-2.3 per 100)",
-      "pts": -1.52,
+      "pts": -1.53,
       "kind": "team"
      },
      {
@@ -2747,8 +2747,8 @@
    "projection": 9.9,
    "mkt_spread": 7.5,
    "mkt_total": 150.5,
-   "mkt_ml_home": -355.0,
-   "mkt_ml_away": 280.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [],
    "missing": {
     "home": [],
@@ -2801,12 +2801,12 @@
    "margin": -6.5,
    "total": 160.1,
    "pace": 75.5,
-   "win_prob": 0.268,
+   "win_prob": 0.269,
    "projection": -6.5,
    "mkt_spread": -3.5,
    "mkt_total": 160.5,
-   "mkt_ml_home": 145.0,
-   "mkt_ml_away": -175.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [],
    "missing": {
     "home": [],
@@ -2821,7 +2821,7 @@
      },
      {
       "label": "MICH team rating (+29.5 per 100)",
-      "pts": -21.89,
+      "pts": -21.88,
       "kind": "team"
      },
      {
@@ -2856,15 +2856,15 @@
    "away": "PRES",
    "home": "TNTC",
    "neutral": false,
-   "margin": 9.1,
+   "margin": 9.0,
    "total": 165.4,
    "pace": 72.9,
    "win_prob": 0.801,
-   "projection": 9.1,
+   "projection": 9.0,
    "mkt_spread": 7.5,
    "mkt_total": 163.5,
-   "mkt_ml_home": -345.0,
-   "mkt_ml_away": 275.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [],
    "missing": {
     "home": [],
@@ -2873,13 +2873,13 @@
    "build": {
     "margin": [
      {
-      "label": "TNTC team rating (-1.8 per 100)",
+      "label": "TNTC team rating (-1.9 per 100)",
       "pts": -1.33,
       "kind": "team"
      },
      {
       "label": "PRES team rating (-8.5 per 100)",
-      "pts": 6.1,
+      "pts": 6.09,
       "kind": "team"
      },
      {
@@ -2921,8 +2921,8 @@
    "projection": 5.9,
    "mkt_spread": 4.5,
    "mkt_total": 136.5,
-   "mkt_ml_home": -192.0,
-   "mkt_ml_away": 160.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [],
    "missing": {
     "home": [],
@@ -2932,12 +2932,12 @@
     "margin": [
      {
       "label": "VAL team rating (+4.8 per 100)",
-      "pts": 3.21,
+      "pts": 3.2,
       "kind": "team"
      },
      {
       "label": "TROY team rating (-4.3 per 100)",
-      "pts": 2.84,
+      "pts": 2.85,
       "kind": "team"
      },
      {
@@ -2979,8 +2979,8 @@
    "projection": -0.3,
    "mkt_spread": 3.5,
    "mkt_total": 141.5,
-   "mkt_ml_home": -155.0,
-   "mkt_ml_away": 130.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [
     "AMCC on a second straight road game in 4 days"
    ],
@@ -3039,8 +3039,8 @@
    "projection": 1.8,
    "mkt_spread": 1.5,
    "mkt_total": 154.5,
-   "mkt_ml_home": -120.0,
-   "mkt_ml_away": 100.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [
     "NOLA on a second straight road game in 4 days"
    ],
@@ -3054,12 +3054,12 @@
     "margin": [
      {
       "label": "TXSO team rating (-15.2 per 100)",
-      "pts": -11.56,
+      "pts": -11.57,
       "kind": "team"
      },
      {
       "label": "NOLA team rating (-13.2 per 100)",
-      "pts": 10.05,
+      "pts": 10.06,
       "kind": "team"
      },
      {
@@ -3246,10 +3246,10 @@
    "pace": 70.2,
    "win_prob": 0.382,
    "projection": -3.1,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 1.5,
+   "mkt_total": 147.5,
+   "mkt_ml_home": -118.0,
+   "mkt_ml_away": -102.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -3259,12 +3259,12 @@
     "margin": [
      {
       "label": "UIC team rating (+2.0 per 100)",
-      "pts": 1.36,
+      "pts": 1.35,
       "kind": "team"
      },
      {
       "label": "M-OH team rating (+5.7 per 100)",
-      "pts": -3.96,
+      "pts": -3.95,
       "kind": "team"
      },
      {
@@ -3302,12 +3302,12 @@
    "margin": -13.4,
    "total": 151.2,
    "pace": 72.3,
-   "win_prob": 0.113,
+   "win_prob": 0.114,
    "projection": -13.4,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": -11.5,
+   "mkt_total": 153.5,
+   "mkt_ml_home": 675.0,
+   "mkt_ml_away": -1050.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -3317,7 +3317,7 @@
     "margin": [
      {
       "label": "BTLR team rating (+10.9 per 100)",
-      "pts": 7.76,
+      "pts": 7.77,
       "kind": "team"
      },
      {
@@ -3367,8 +3367,8 @@
    "pace": 66.7,
    "win_prob": 0.994,
    "projection": 33.6,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": 33.5,
+   "mkt_total": 139.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [
@@ -3388,7 +3388,7 @@
      },
      {
       "label": "CHST team rating (-20.5 per 100)",
-      "pts": 13.45,
+      "pts": 13.46,
       "kind": "team"
      },
      {
@@ -3428,10 +3428,10 @@
    "pace": 64.7,
    "win_prob": 0.582,
    "projection": 2.1,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 1.5,
+   "mkt_total": 132.5,
+   "mkt_ml_home": -115.0,
+   "mkt_ml_away": -105.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -3486,10 +3486,10 @@
    "pace": 72.7,
    "win_prob": 0.79,
    "projection": 8.6,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 2.5,
+   "mkt_total": 143.5,
+   "mkt_ml_home": -155.0,
+   "mkt_ml_away": 130.0,
    "spots": [
     "LIU off an emotional win (letdown spot)"
    ],
@@ -3546,10 +3546,10 @@
    "pace": 67.4,
    "win_prob": 0.396,
    "projection": -2.8,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": -3.5,
+   "mkt_total": 135.5,
+   "mkt_ml_home": 130.0,
+   "mkt_ml_away": -155.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -3604,10 +3604,10 @@
    "pace": 68.7,
    "win_prob": 0.627,
    "projection": 3.4,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 3.5,
+   "mkt_total": 138.5,
+   "mkt_ml_home": -180.0,
+   "mkt_ml_away": 150.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -3662,10 +3662,10 @@
    "pace": 69.3,
    "win_prob": 0.626,
    "projection": 3.3,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 2.5,
+   "mkt_total": 143.5,
+   "mkt_ml_home": -155.0,
+   "mkt_ml_away": 130.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -3720,10 +3720,10 @@
    "pace": 71.8,
    "win_prob": 0.964,
    "projection": 21.3,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 21.5,
+   "mkt_total": 159.5,
+   "mkt_ml_home": -4500.0,
+   "mkt_ml_away": 1700.0,
    "spots": [
     "MEM off an emotional win (letdown spot)"
    ],
@@ -3780,10 +3780,10 @@
    "pace": 72.9,
    "win_prob": 0.28,
    "projection": -6.1,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": -4.5,
+   "mkt_total": 146.5,
+   "mkt_ml_home": 164.0,
+   "mkt_ml_away": -198.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -3793,12 +3793,12 @@
     "margin": [
      {
       "label": "WKU team rating (+6.9 per 100)",
-      "pts": 4.92,
+      "pts": 4.91,
       "kind": "team"
      },
      {
       "label": "GW team rating (+16.0 per 100)",
-      "pts": -11.43,
+      "pts": -11.42,
       "kind": "team"
      },
      {
@@ -3838,10 +3838,10 @@
    "pace": 73.3,
    "win_prob": 0.745,
    "projection": 7.0,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": -1.5,
+   "mkt_total": 155.5,
+   "mkt_ml_home": -110.0,
+   "mkt_ml_away": -110.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -3851,7 +3851,7 @@
     "margin": [
      {
       "label": "UTU team rating (-6.0 per 100)",
-      "pts": -4.31,
+      "pts": -4.32,
       "kind": "team"
      },
      {
@@ -3899,12 +3899,12 @@
    "margin": 0.0,
    "total": 168.3,
    "pace": 77.2,
-   "win_prob": 0.5,
+   "win_prob": 0.501,
    "projection": 0.0,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": -2.5,
+   "mkt_total": 166.5,
+   "mkt_ml_home": 124.0,
+   "mkt_ml_away": -148.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -3914,7 +3914,7 @@
     "margin": [
      {
       "label": "YSU team rating (-5.1 per 100)",
-      "pts": -3.87,
+      "pts": -3.86,
       "kind": "team"
      },
      {
@@ -3954,15 +3954,15 @@
    "away": "WYO",
    "home": "DUQ",
    "neutral": true,
-   "margin": -8.5,
+   "margin": -8.6,
    "total": 141.7,
    "pace": 66.8,
-   "win_prob": 0.213,
-   "projection": -8.5,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "win_prob": 0.211,
+   "projection": -8.6,
+   "mkt_spread": -4.5,
+   "mkt_total": 139.5,
+   "mkt_ml_home": 160.0,
+   "mkt_ml_away": -192.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -3972,12 +3972,12 @@
     "margin": [
      {
       "label": "DUQ team rating (+0.5 per 100)",
-      "pts": 0.34,
+      "pts": 0.33,
       "kind": "team"
      },
      {
-      "label": "WYO team rating (+13.2 per 100)",
-      "pts": -8.69,
+      "label": "WYO team rating (+13.3 per 100)",
+      "pts": -8.76,
       "kind": "team"
      },
      {
@@ -4017,8 +4017,8 @@
    "pace": 70.8,
    "win_prob": 0.988,
    "projection": 28.7,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": 30.5,
+   "mkt_total": 148.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
@@ -4030,7 +4030,7 @@
     "margin": [
      {
       "label": "CIN team rating (+27.4 per 100)",
-      "pts": 19.02,
+      "pts": 19.01,
       "kind": "team"
      },
      {
@@ -4075,10 +4075,10 @@
    "pace": 67.3,
    "win_prob": 0.557,
    "projection": 1.5,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 1.5,
+   "mkt_total": 137.5,
+   "mkt_ml_home": -142.0,
+   "mkt_ml_away": 120.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -4133,10 +4133,10 @@
    "pace": 66.9,
    "win_prob": 0.534,
    "projection": 0.9,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 7.5,
+   "mkt_total": 143.5,
+   "mkt_ml_home": -325.0,
+   "mkt_ml_away": 260.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -4153,7 +4153,7 @@
      },
      {
       "label": "UWF team rating (-2.2 per 100)",
-      "pts": 1.42,
+      "pts": 1.43,
       "kind": "team"
      },
      {
@@ -4198,15 +4198,15 @@
    "away": "TROY",
    "home": "NICH",
    "neutral": true,
-   "margin": -3.7,
+   "margin": -3.8,
    "total": 134.5,
    "pace": 67.5,
    "win_prob": 0.36,
-   "projection": -3.7,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "projection": -3.8,
+   "mkt_spread": -5.5,
+   "mkt_total": 134.5,
+   "mkt_ml_home": 185.0,
+   "mkt_ml_away": -225.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -4216,7 +4216,7 @@
     "margin": [
      {
       "label": "NICH team rating (-9.5 per 100)",
-      "pts": -6.28,
+      "pts": -6.29,
       "kind": "team"
      },
      {
@@ -4261,8 +4261,8 @@
    "pace": 71.0,
    "win_prob": 0.996,
    "projection": 35.1,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": 39.5,
+   "mkt_total": 148.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
@@ -4324,10 +4324,10 @@
    "pace": 75.3,
    "win_prob": 0.422,
    "projection": -2.1,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": -1.5,
+   "mkt_total": 158.5,
+   "mkt_ml_home": -105.0,
+   "mkt_ml_away": -115.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -4382,10 +4382,10 @@
    "pace": 64.9,
    "win_prob": 0.426,
    "projection": -1.9,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 1.5,
+   "mkt_total": 129.5,
+   "mkt_ml_home": -120.0,
+   "mkt_ml_away": 100.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -4400,7 +4400,7 @@
      },
      {
       "label": "MERC team rating (-14.4 per 100)",
-      "pts": 9.16,
+      "pts": 9.17,
       "kind": "team"
      },
      {
@@ -4440,10 +4440,10 @@
    "pace": 65.8,
    "win_prob": 0.625,
    "projection": 3.3,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 2.5,
+   "mkt_total": 142.5,
+   "mkt_ml_home": -155.0,
+   "mkt_ml_away": 130.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -4452,7 +4452,7 @@
    "build": {
     "margin": [
      {
-      "label": "TXST team rating (+10.2 per 100)",
+      "label": "TXST team rating (+10.1 per 100)",
       "pts": 6.56,
       "kind": "team"
      },
@@ -4498,10 +4498,10 @@
    "pace": 66.2,
    "win_prob": 0.464,
    "projection": -0.9,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 1.5,
+   "mkt_total": 142.5,
+   "mkt_ml_home": -130.0,
+   "mkt_ml_away": 110.0,
    "spots": [
     "LIB off an emotional win (letdown spot)"
    ],
@@ -4517,7 +4517,7 @@
       "kind": "team"
      },
      {
-      "label": "RICH team rating (+3.6 per 100)",
+      "label": "RICH team rating (+3.5 per 100)",
       "pts": -2.31,
       "kind": "team"
      },
@@ -4558,10 +4558,10 @@
    "pace": 71.3,
    "win_prob": 0.365,
    "projection": -3.6,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": -3.5,
+   "mkt_total": 138.5,
+   "mkt_ml_home": 130.0,
+   "mkt_ml_away": -155.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -4616,8 +4616,8 @@
    "pace": 68.1,
    "win_prob": 0.279,
    "projection": -6.2,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": -10.5,
+   "mkt_total": 142.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
@@ -4674,8 +4674,8 @@
    "pace": 64.8,
    "win_prob": 0.981,
    "projection": 25.7,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": 24.5,
+   "mkt_total": 135.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [
@@ -4741,10 +4741,10 @@
    "pace": 70.8,
    "win_prob": 0.766,
    "projection": 7.7,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 9.5,
+   "mkt_total": 156.5,
+   "mkt_ml_home": -410.0,
+   "mkt_ml_away": 320.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -4759,7 +4759,7 @@
      },
      {
       "label": "UNCA team rating (-12.3 per 100)",
-      "pts": 8.56,
+      "pts": 8.55,
       "kind": "team"
      },
      {
@@ -4799,10 +4799,10 @@
    "pace": 73.2,
    "win_prob": 0.636,
    "projection": 3.6,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 2.5,
+   "mkt_total": 161.5,
+   "mkt_ml_home": -130.0,
+   "mkt_ml_away": 110.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -4817,7 +4817,7 @@
      },
      {
       "label": "RICE team rating (-4.6 per 100)",
-      "pts": 3.28,
+      "pts": 3.29,
       "kind": "team"
      },
      {
@@ -4857,10 +4857,10 @@
    "pace": 75.9,
    "win_prob": 0.634,
    "projection": 3.6,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 4.5,
+   "mkt_total": 163.5,
+   "mkt_ml_home": -198.0,
+   "mkt_ml_away": 164.0,
    "spots": [
     "CSUF on a second straight road game in 4 days"
    ],
@@ -4917,10 +4917,10 @@
    "pace": 68.7,
    "win_prob": 0.586,
    "projection": 2.3,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": -1.5,
+   "mkt_total": 144.5,
+   "mkt_ml_home": 110.0,
+   "mkt_ml_away": -130.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -4975,10 +4975,10 @@
    "pace": 63.0,
    "win_prob": 0.868,
    "projection": 12.3,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 10.5,
+   "mkt_total": 130.5,
+   "mkt_ml_home": -800.0,
+   "mkt_ml_away": 550.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -5033,10 +5033,10 @@
    "pace": 76.8,
    "win_prob": 0.823,
    "projection": 10.0,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 7.5,
+   "mkt_total": 144.5,
+   "mkt_ml_home": -355.0,
+   "mkt_ml_away": 280.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -5046,7 +5046,7 @@
     "margin": [
      {
       "label": "VAL team rating (+4.8 per 100)",
-      "pts": 3.62,
+      "pts": 3.61,
       "kind": "team"
      },
      {
@@ -5096,10 +5096,10 @@
    "pace": 70.3,
    "win_prob": 0.893,
    "projection": 13.8,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 9.5,
+   "mkt_total": 146.5,
+   "mkt_ml_home": -485.0,
+   "mkt_ml_away": 370.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -5154,10 +5154,10 @@
    "pace": 69.5,
    "win_prob": 0.377,
    "projection": -3.3,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": -2.5,
+   "mkt_total": 149.5,
+   "mkt_ml_home": 114.0,
+   "mkt_ml_away": -135.0,
    "spots": [
     "UAB off an emotional win (letdown spot)"
    ],
@@ -5169,7 +5169,7 @@
     "margin": [
      {
       "label": "UAB team rating (+2.0 per 100)",
-      "pts": 1.37,
+      "pts": 1.36,
       "kind": "team"
      },
      {
@@ -5214,8 +5214,8 @@
    "pace": 67.3,
    "win_prob": 0.986,
    "projection": 27.6,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": 29.5,
+   "mkt_total": 146.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [
@@ -5286,8 +5286,8 @@
    "pace": 71.9,
    "win_prob": 0.711,
    "projection": 5.9,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": 8.5,
+   "mkt_total": 146.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
@@ -5342,10 +5342,10 @@
    "margin": 38.9,
    "total": 146.3,
    "pace": 70.3,
-   "win_prob": 0.997,
+   "win_prob": 0.998,
    "projection": 38.9,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": 33.5,
+   "mkt_total": 145.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [
@@ -5360,12 +5360,12 @@
     "margin": [
      {
       "label": "USC team rating (+30.2 per 100)",
-      "pts": 20.82,
+      "pts": 20.81,
       "kind": "team"
      },
      {
       "label": "UL team rating (-16.4 per 100)",
-      "pts": 11.29,
+      "pts": 11.32,
       "kind": "team"
      },
      {
@@ -5415,10 +5415,10 @@
    "pace": 70.7,
    "win_prob": 0.436,
    "projection": -1.7,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 1.5,
+   "mkt_total": 144.5,
+   "mkt_ml_home": -115.0,
+   "mkt_ml_away": -105.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -5433,7 +5433,7 @@
      },
      {
       "label": "SEA team rating (+1.0 per 100)",
-      "pts": -0.67,
+      "pts": -0.66,
       "kind": "team"
      },
      {
@@ -5473,10 +5473,10 @@
    "pace": 68.8,
    "win_prob": 0.603,
    "projection": 2.7,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 3.5,
+   "mkt_total": 148.5,
+   "mkt_ml_home": -175.0,
+   "mkt_ml_away": 145.0,
    "spots": [
     "SJSU off an emotional win (letdown spot)"
    ],
@@ -5531,7 +5531,7 @@
    "margin": -3.6,
    "total": 135.6,
    "pace": 63.8,
-   "win_prob": 0.366,
+   "win_prob": 0.365,
    "projection": -3.6,
    "mkt_spread": null,
    "mkt_total": null,
@@ -5616,7 +5616,7 @@
      },
      {
       "label": "UNI team rating (-0.1 per 100)",
-      "pts": 0.08,
+      "pts": 0.09,
       "kind": "team"
      },
      {
@@ -5676,7 +5676,7 @@
      },
      {
       "label": "LBSU team rating (-5.7 per 100)",
-      "pts": 4.17,
+      "pts": 4.18,
       "kind": "team"
      },
      {
@@ -5736,7 +5736,7 @@
     "margin": [
      {
       "label": "FGCU team rating (-3.7 per 100)",
-      "pts": -2.46,
+      "pts": -2.45,
       "kind": "team"
      },
      {
@@ -5776,11 +5776,11 @@
    "away": "AKR",
    "home": "WRST",
    "neutral": true,
-   "margin": 9.1,
+   "margin": 9.2,
    "total": 145.0,
    "pace": 69.1,
-   "win_prob": 0.802,
-   "projection": 9.1,
+   "win_prob": 0.805,
+   "projection": 9.2,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
@@ -5798,8 +5798,8 @@
       "kind": "team"
      },
      {
-      "label": "AKR team rating (+1.4 per 100)",
-      "pts": -0.93,
+      "label": "AKR team rating (+1.2 per 100)",
+      "pts": -0.79,
       "kind": "team"
      },
      {
@@ -6038,7 +6038,7 @@
      },
      {
       "label": "ARST team rating (-3.1 per 100)",
-      "pts": 2.36,
+      "pts": 2.37,
       "kind": "team"
      },
      {
@@ -6073,11 +6073,11 @@
    "away": "TULN",
    "home": "GAST",
    "neutral": true,
-   "margin": -1.0,
+   "margin": -0.9,
    "total": 158.0,
    "pace": 71.0,
-   "win_prob": 0.463,
-   "projection": -1.0,
+   "win_prob": 0.464,
+   "projection": -0.9,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
@@ -6091,12 +6091,12 @@
     "margin": [
      {
       "label": "GAST team rating (-4.9 per 100)",
-      "pts": -3.43,
+      "pts": -3.44,
       "kind": "team"
      },
      {
       "label": "TULN team rating (-3.7 per 100)",
-      "pts": 2.56,
+      "pts": 2.58,
       "kind": "team"
      },
      {
@@ -6310,11 +6310,11 @@
    "away": "UMES",
    "home": "YSU",
    "neutral": false,
-   "margin": 12.7,
+   "margin": 12.8,
    "total": 135.1,
    "pace": 68.5,
    "win_prob": 0.877,
-   "projection": 12.7,
+   "projection": 12.8,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
@@ -6576,7 +6576,7 @@
     "margin": [
      {
       "label": "UNF team rating (-18.3 per 100)",
-      "pts": -13.79,
+      "pts": -13.8,
       "kind": "team"
      },
      {
@@ -6739,11 +6739,11 @@
    "away": "MONM",
    "home": "UNC",
    "neutral": false,
-   "margin": 17.6,
+   "margin": 18.1,
    "total": 150.0,
    "pace": 72.5,
-   "win_prob": 0.937,
-   "projection": 17.6,
+   "win_prob": 0.942,
+   "projection": 18.1,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
@@ -6758,8 +6758,8 @@
    "build": {
     "margin": [
      {
-      "label": "UNC team rating (+17.2 per 100)",
-      "pts": 12.26,
+      "label": "UNC team rating (+17.9 per 100)",
+      "pts": 12.78,
       "kind": "team"
      },
      {
@@ -6824,7 +6824,7 @@
      },
      {
       "label": "DEN team rating (-8.3 per 100)",
-      "pts": 5.97,
+      "pts": 5.96,
       "kind": "team"
      },
      {
@@ -6949,7 +6949,7 @@
      },
      {
       "label": "VCU team rating (+17.3 per 100)",
-      "pts": -12.28,
+      "pts": -12.27,
       "kind": "team"
      },
      {
@@ -8568,7 +8568,7 @@
    ]
   },
   "RICH": {
-   "net": 3.6,
+   "net": 3.5,
    "stats": {
     "games": 5,
     "off": {
@@ -10062,7 +10062,7 @@
    ]
   },
   "UNC": {
-   "net": 17.2,
+   "net": 17.9,
    "stats": {
     "games": 5,
     "off": {
@@ -10149,7 +10149,7 @@
    ]
   },
   "WYO": {
-   "net": 13.2,
+   "net": 13.3,
    "stats": {
     "games": 4,
     "off": {
@@ -10608,7 +10608,7 @@
    ]
   },
   "AKR": {
-   "net": 1.4,
+   "net": 1.2,
    "stats": {
     "games": 3,
     "off": {
@@ -16140,7 +16140,7 @@
    ]
   },
   "TNTC": {
-   "net": -1.8,
+   "net": -1.9,
    "stats": {
     "games": 4,
     "off": {
@@ -17667,7 +17667,7 @@
    ]
   },
   "TXST": {
-   "net": 10.2,
+   "net": 10.1,
    "stats": {
     "games": 5,
     "off": {
@@ -19197,7 +19197,7 @@
    ]
   },
   "ETSU": {
-   "net": 0.9,
+   "net": 1.0,
    "stats": {
     "games": 4,
     "off": {
@@ -21852,7 +21852,7 @@
    ]
   },
   "NAU": {
-   "net": -10.2,
+   "net": -10.3,
    "stats": {
     "games": 4,
     "off": {
@@ -22797,7 +22797,7 @@
    ]
   },
   "WOF": {
-   "net": -10.2,
+   "net": -10.1,
    "stats": {
     "games": 4,
     "off": {
@@ -23283,7 +23283,7 @@
    ]
   },
   "WCU": {
-   "net": -5.2,
+   "net": -5.1,
    "stats": {
     "games": 4,
     "off": {
@@ -23448,7 +23448,7 @@
    ]
   },
   "QUC": {
-   "net": -5.5,
+   "net": -5.4,
    "stats": {
     "games": 5,
     "off": {
