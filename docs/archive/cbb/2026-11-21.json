@@ -1,0 +1,621 @@
+{
+ "date": "2026-11-21",
+ "games": {
+  "401925709": {
+   "id": "401925709",
+   "date": "2026-11-21",
+   "tip": "2026-11-21T17:00:00-05:00",
+   "away": "WIN",
+   "home": "WOF",
+   "neutral": false,
+   "margin": 4.1,
+   "total": 171.4,
+   "win_prob": 0.654,
+   "projection": 4.1,
+   "mkt_spread": 6.5,
+   "mkt_total": 161.5,
+   "mkt_ml_home": -270.0,
+   "mkt_ml_away": 220.0,
+   "frozenAt": "2026-11-21T16:42-05:00",
+   "final": {
+    "home": 91,
+    "away": 86
+   },
+   "su": "W",
+   "ats": "W",
+   "ou": "W",
+   "err": {
+    "model": 0.9,
+    "line": 1.5
+   }
+  },
+  "401919849": {
+   "id": "401919849",
+   "date": "2026-11-21",
+   "tip": "2026-11-21T17:00:00-05:00",
+   "away": "NE",
+   "home": "STO",
+   "neutral": false,
+   "margin": -11.3,
+   "total": 153.5,
+   "win_prob": 0.15,
+   "projection": -11.3,
+   "mkt_spread": -10.5,
+   "mkt_total": 146.5,
+   "mkt_ml_home": 340.0,
+   "mkt_ml_away": -440.0,
+   "frozenAt": "2026-11-21T16:42-05:00",
+   "final": {
+    "home": 95,
+    "away": 82
+   },
+   "su": "L",
+   "ats": "L",
+   "ou": "W",
+   "err": {
+    "model": 24.3,
+    "line": 23.5
+   }
+  },
+  "401911337": {
+   "id": "401911337",
+   "date": "2026-11-21",
+   "tip": "2026-11-21T17:00:00-05:00",
+   "away": "AF",
+   "home": "UTSA",
+   "neutral": false,
+   "margin": 6.7,
+   "total": 168.6,
+   "win_prob": 0.738,
+   "projection": 6.7,
+   "mkt_spread": 5.5,
+   "mkt_total": 173.5,
+   "mkt_ml_home": -238.0,
+   "mkt_ml_away": 195.0,
+   "frozenAt": "2026-11-21T16:42-05:00",
+   "final": {
+    "home": 90,
+    "away": 68
+   },
+   "su": "W",
+   "ats": "W",
+   "ou": "W",
+   "err": {
+    "model": 15.3,
+    "line": 16.5
+   }
+  },
+  "401925065": {
+   "id": "401925065",
+   "date": "2026-11-21",
+   "tip": "2026-11-21T17:00:00-05:00",
+   "away": "USM",
+   "home": "NICH",
+   "neutral": true,
+   "margin": -1.0,
+   "total": 150.2,
+   "win_prob": 0.461,
+   "projection": -1.0,
+   "mkt_spread": -2.5,
+   "mkt_total": 141.5,
+   "mkt_ml_home": 124.0,
+   "mkt_ml_away": -148.0,
+   "frozenAt": "2026-11-21T16:42-05:00",
+   "final": {
+    "home": 69,
+    "away": 80
+   },
+   "su": "W",
+   "ats": "L",
+   "ou": "W",
+   "err": {
+    "model": 10.0,
+    "line": 8.5
+   }
+  },
+  "401920570": {
+   "id": "401920570",
+   "date": "2026-11-21",
+   "tip": "2026-11-21T17:30:00-05:00",
+   "away": "SIU",
+   "home": "ECU",
+   "neutral": true,
+   "margin": -1.2,
+   "total": 152.6,
+   "win_prob": 0.455,
+   "projection": -1.2,
+   "mkt_spread": -1.5,
+   "mkt_total": 153.5,
+   "mkt_ml_home": 100.0,
+   "mkt_ml_away": -120.0,
+   "frozenAt": "2026-11-21T16:42-05:00",
+   "final": {
+    "home": 69,
+    "away": 85
+   },
+   "su": "W",
+   "ats": "L",
+   "ou": "L",
+   "err": {
+    "model": 14.8,
+    "line": 14.5
+   }
+  },
+  "401909517": {
+   "id": "401909517",
+   "date": "2026-11-21",
+   "tip": "2026-11-21T18:00:00-05:00",
+   "away": "COPP",
+   "home": "GTWN",
+   "neutral": false,
+   "margin": 26.0,
+   "total": 139.9,
+   "win_prob": 0.982,
+   "projection": 26.0,
+   "mkt_spread": 31.5,
+   "mkt_total": 143.5,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
+   "frozenAt": "2026-11-21T16:42-05:00",
+   "final": {
+    "home": 84,
+    "away": 60
+   },
+   "su": "W",
+   "ats": "W",
+   "ou": "L",
+   "err": {
+    "model": 2.0,
+    "line": 7.5
+   }
+  },
+  "401911023": {
+   "id": "401911023",
+   "date": "2026-11-21",
+   "tip": "2026-11-21T18:00:00-05:00",
+   "away": "ME",
+   "home": "MASS",
+   "neutral": false,
+   "margin": 8.1,
+   "total": 138.1,
+   "win_prob": 0.777,
+   "projection": 8.1,
+   "mkt_spread": 12.5,
+   "mkt_total": 138.5,
+   "mkt_ml_home": -800.0,
+   "mkt_ml_away": 550.0,
+   "frozenAt": "2026-11-21T16:42-05:00",
+   "final": {
+    "home": 76,
+    "away": 44
+   },
+   "su": "W",
+   "ats": "L",
+   "ou": "W",
+   "err": {
+    "model": 23.9,
+    "line": 19.5
+   }
+  },
+  "401925897": {
+   "id": "401925897",
+   "date": "2026-11-21",
+   "tip": "2026-11-21T18:00:00-05:00",
+   "away": "UNCW",
+   "home": "NORF",
+   "neutral": false,
+   "margin": -14.7,
+   "total": 161.9,
+   "win_prob": 0.094,
+   "projection": -14.7,
+   "mkt_spread": -11.5,
+   "mkt_total": 149.5,
+   "mkt_ml_home": 600.0,
+   "mkt_ml_away": -900.0,
+   "frozenAt": "2026-11-21T16:42-05:00",
+   "final": {
+    "home": 80,
+    "away": 89
+   },
+   "su": "W",
+   "ats": "L",
+   "ou": "W",
+   "err": {
+    "model": 5.7,
+    "line": 2.5
+   }
+  },
+  "401911310": {
+   "id": "401911310",
+   "date": "2026-11-21",
+   "tip": "2026-11-21T19:00:00-05:00",
+   "away": "BRWN",
+   "home": "UVM",
+   "neutral": false,
+   "margin": 7.3,
+   "total": 135.8,
+   "win_prob": 0.754,
+   "projection": 7.3,
+   "mkt_spread": 4.5,
+   "mkt_total": 133.5,
+   "mkt_ml_home": -192.0,
+   "mkt_ml_away": 160.0,
+   "frozenAt": "2026-11-21T16:42-05:00",
+   "final": {
+    "home": 84,
+    "away": 71
+   },
+   "su": "W",
+   "ats": "W",
+   "ou": "W",
+   "err": {
+    "model": 5.7,
+    "line": 8.5
+   }
+  },
+  "401911378": {
+   "id": "401911378",
+   "date": "2026-11-21",
+   "tip": "2026-11-21T19:00:00-05:00",
+   "away": "CHSO",
+   "home": "MER",
+   "neutral": false,
+   "margin": 7.6,
+   "total": 167.8,
+   "win_prob": 0.762,
+   "projection": 7.6,
+   "mkt_spread": 8.5,
+   "mkt_total": 162.5,
+   "mkt_ml_home": -425.0,
+   "mkt_ml_away": 330.0,
+   "frozenAt": "2026-11-21T16:42-05:00",
+   "final": {
+    "home": 69,
+    "away": 64
+   },
+   "su": "W",
+   "ats": "W",
+   "ou": "L",
+   "err": {
+    "model": 2.6,
+    "line": 3.5
+   }
+  },
+  "401911394": {
+   "id": "401911394",
+   "date": "2026-11-21",
+   "tip": "2026-11-21T19:00:00-05:00",
+   "away": "GWEB",
+   "home": "VMI",
+   "neutral": false,
+   "margin": 10.9,
+   "total": 141.6,
+   "win_prob": 0.842,
+   "projection": 10.9,
+   "mkt_spread": 7.5,
+   "mkt_total": 146.5,
+   "mkt_ml_home": -355.0,
+   "mkt_ml_away": 280.0,
+   "frozenAt": "2026-11-21T16:42-05:00",
+   "final": {
+    "home": 71,
+    "away": 68
+   },
+   "su": "W",
+   "ats": "L",
+   "ou": "W",
+   "err": {
+    "model": 7.9,
+    "line": 4.5
+   }
+  },
+  "401917539": {
+   "id": "401917539",
+   "date": "2026-11-21",
+   "tip": "2026-11-21T19:00:00-05:00",
+   "away": "CBU",
+   "home": "LMU",
+   "neutral": true,
+   "margin": 14.0,
+   "total": 142.4,
+   "win_prob": 0.896,
+   "projection": 14.0,
+   "mkt_spread": 13.5,
+   "mkt_total": 135.5,
+   "mkt_ml_home": -1200.0,
+   "mkt_ml_away": 750.0,
+   "frozenAt": "2026-11-21T16:42-05:00",
+   "final": {
+    "home": 73,
+    "away": 80
+   },
+   "su": "L",
+   "ats": "L",
+   "ou": "W",
+   "err": {
+    "model": 21.0,
+    "line": 20.5
+   }
+  },
+  "401920125": {
+   "id": "401920125",
+   "date": "2026-11-21",
+   "tip": "2026-11-21T19:00:00-05:00",
+   "away": "NAU",
+   "home": "CP",
+   "neutral": false,
+   "margin": 8.1,
+   "total": 160.5,
+   "win_prob": 0.775,
+   "projection": 8.1,
+   "mkt_spread": 7.5,
+   "mkt_total": 154.5,
+   "mkt_ml_home": -375.0,
+   "mkt_ml_away": 295.0,
+   "frozenAt": "2026-11-21T16:42-05:00",
+   "final": {
+    "home": 89,
+    "away": 88
+   },
+   "su": "W",
+   "ats": "L",
+   "ou": "W",
+   "err": {
+    "model": 7.1,
+    "line": 6.5
+   }
+  },
+  "401920964": {
+   "id": "401920964",
+   "date": "2026-11-21",
+   "tip": "2026-11-21T19:00:00-05:00",
+   "away": "MORE",
+   "home": "ELON",
+   "neutral": false,
+   "margin": 13.6,
+   "total": 147.4,
+   "win_prob": 0.89,
+   "projection": 13.6,
+   "mkt_spread": 11.5,
+   "mkt_total": 144.5,
+   "mkt_ml_home": -900.0,
+   "mkt_ml_away": 600.0,
+   "frozenAt": "2026-11-21T16:42-05:00",
+   "final": {
+    "home": 84,
+    "away": 61
+   },
+   "su": "W",
+   "ats": "W",
+   "ou": "W",
+   "err": {
+    "model": 9.4,
+    "line": 11.5
+   }
+  },
+  "401920975": {
+   "id": "401920975",
+   "date": "2026-11-21",
+   "tip": "2026-11-21T19:00:00-05:00",
+   "away": "RAD",
+   "home": "UTC",
+   "neutral": false,
+   "margin": 9.9,
+   "total": 157.2,
+   "win_prob": 0.822,
+   "projection": 9.9,
+   "mkt_spread": 7.5,
+   "mkt_total": 150.5,
+   "mkt_ml_home": -355.0,
+   "mkt_ml_away": 280.0,
+   "frozenAt": "2026-11-21T16:42-05:00",
+   "final": {
+    "home": 65,
+    "away": 73
+   },
+   "su": "L",
+   "ats": "L",
+   "ou": "L",
+   "err": {
+    "model": 17.9,
+    "line": 15.5
+   }
+  },
+  "401921776": {
+   "id": "401921776",
+   "date": "2026-11-21",
+   "tip": "2026-11-21T19:00:00-05:00",
+   "away": "MICH",
+   "home": "VILL",
+   "neutral": false,
+   "margin": -6.5,
+   "total": 160.1,
+   "win_prob": 0.268,
+   "projection": -6.5,
+   "mkt_spread": -3.5,
+   "mkt_total": 160.5,
+   "mkt_ml_home": 145.0,
+   "mkt_ml_away": -175.0,
+   "frozenAt": "2026-11-21T16:42-05:00",
+   "final": {
+    "home": 79,
+    "away": 73
+   },
+   "su": "L",
+   "ats": "L",
+   "ou": "W",
+   "err": {
+    "model": 12.5,
+    "line": 9.5
+   }
+  },
+  "401926217": {
+   "id": "401926217",
+   "date": "2026-11-21",
+   "tip": "2026-11-21T19:30:00-05:00",
+   "away": "PRES",
+   "home": "TNTC",
+   "neutral": false,
+   "margin": 9.1,
+   "total": 165.4,
+   "win_prob": 0.801,
+   "projection": 9.1,
+   "mkt_spread": 7.5,
+   "mkt_total": 163.5,
+   "mkt_ml_home": -345.0,
+   "mkt_ml_away": 275.0,
+   "frozenAt": "2026-11-21T16:42-05:00",
+   "final": {
+    "home": 97,
+    "away": 69
+   },
+   "su": "W",
+   "ats": "W",
+   "ou": "W",
+   "err": {
+    "model": 18.9,
+    "line": 20.5
+   }
+  },
+  "401928998": {
+   "id": "401928998",
+   "date": "2026-11-21",
+   "tip": "2026-11-21T20:00:00-05:00",
+   "away": "TROY",
+   "home": "VAL",
+   "neutral": true,
+   "margin": 5.9,
+   "total": 143.2,
+   "win_prob": 0.714,
+   "projection": 5.9,
+   "mkt_spread": 4.5,
+   "mkt_total": 136.5,
+   "mkt_ml_home": -192.0,
+   "mkt_ml_away": 160.0,
+   "frozenAt": "2026-11-21T16:42-05:00",
+   "final": {
+    "home": 72,
+    "away": 77
+   },
+   "su": "L",
+   "ats": "L",
+   "ou": "W",
+   "err": {
+    "model": 10.9,
+    "line": 9.5
+   }
+  },
+  "401925099": {
+   "id": "401925099",
+   "date": "2026-11-21",
+   "tip": "2026-11-21T20:00:00-05:00",
+   "away": "AMCC",
+   "home": "ORU",
+   "neutral": false,
+   "margin": -0.3,
+   "total": 136.5,
+   "win_prob": 0.488,
+   "projection": -0.3,
+   "mkt_spread": 3.5,
+   "mkt_total": 141.5,
+   "mkt_ml_home": -155.0,
+   "mkt_ml_away": 130.0,
+   "frozenAt": "2026-11-21T16:42-05:00",
+   "final": {
+    "home": 78,
+    "away": 74
+   },
+   "su": "L",
+   "ats": "L",
+   "ou": "L",
+   "err": {
+    "model": 4.3,
+    "line": 0.5
+   }
+  },
+  "401925049": {
+   "id": "401925049",
+   "date": "2026-11-21",
+   "tip": "2026-11-21T20:30:00-05:00",
+   "away": "NOLA",
+   "home": "TXSO",
+   "neutral": false,
+   "margin": 1.8,
+   "total": 163.0,
+   "win_prob": 0.568,
+   "projection": 1.8,
+   "mkt_spread": 1.5,
+   "mkt_total": 154.5,
+   "mkt_ml_home": -120.0,
+   "mkt_ml_away": 100.0,
+   "frozenAt": "2026-11-21T16:42-05:00",
+   "final": {
+    "home": 70,
+    "away": 75
+   },
+   "su": "L",
+   "ats": "L",
+   "ou": "L",
+   "err": {
+    "model": 6.8,
+    "line": 6.5
+   }
+  },
+  "401917537": {
+   "id": "401917537",
+   "date": "2026-11-21",
+   "tip": "2026-11-21T22:00:00-05:00",
+   "away": "BRAD",
+   "home": "PAC",
+   "neutral": false,
+   "margin": 13.6,
+   "total": 126.7,
+   "win_prob": 0.891,
+   "projection": 13.6,
+   "mkt_spread": 8.5,
+   "mkt_total": 130.5,
+   "mkt_ml_home": -395.0,
+   "mkt_ml_away": 310.0,
+   "frozenAt": "2026-11-21T21:13-05:00",
+   "final": {
+    "home": 63,
+    "away": 62
+   },
+   "su": "W",
+   "ats": "L",
+   "ou": "W",
+   "err": {
+    "model": 12.6,
+    "line": 7.5
+   }
+  },
+  "401909567": {
+   "id": "401909567",
+   "date": "2026-11-21",
+   "tip": "2026-11-21T23:00:00-05:00",
+   "away": "WSU",
+   "home": "DUKE",
+   "neutral": true,
+   "margin": 23.0,
+   "total": 152.5,
+   "win_prob": 0.972,
+   "projection": 23.0,
+   "mkt_spread": 25.5,
+   "mkt_total": 149.5,
+   "mkt_ml_home": -8000.0,
+   "mkt_ml_away": 2200.0,
+   "frozenAt": "2026-11-21T21:13-05:00",
+   "final": {
+    "home": 78,
+    "away": 74
+   },
+   "su": "W",
+   "ats": "W",
+   "ou": "W",
+   "err": {
+    "model": 19.0,
+    "line": 21.5
+   }
+  }
+ }
+}
