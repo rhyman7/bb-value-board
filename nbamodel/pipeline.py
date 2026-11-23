@@ -257,7 +257,12 @@ def run(do_backtest: bool = False):
         proj = players.tonight(pst, [(x["id"], int(r.home_id), int(r.away_id)) for x, r in
                                      zip(games, sched.sort_values("et").itertuples())], set(inj or {}), pid)
         todays = {k: v for k, v in proj.items() if any(x["id"] == k and x["date"] == today.isoformat() for x in games)}
-        # prop lines for today's games, once a day on the late-afternoon run (about 4 credits a game)
+        # games that have tipped are left alone: their logged projection, props and picks stay as they
+        # were before tip (a later run would read live in-game lines; fixed 2026-11-20)
+        tip = {str(r.game_id): r.et for r in sched.itertuples()}
+        now_et = datetime.now(ET)
+        todays = {k: v for k, v in todays.items() if k not in tip or tip[k] > now_et}
+        # prop lines for today's games still to tip, on the late-afternoon and late runs (about 6 credits a game)
         if os.environ.get("ODDS_API_KEY") and now.hour >= 16 and todays:
             try:
                 from oddsapi import props as oprops
@@ -277,7 +282,7 @@ def run(do_backtest: bool = False):
             from . import proppicks
             has_props = any(r.get("props") for e in todays.values() for sd in ("home", "away") for r in e.get(sd, []))
             if has_props:
-                print(f"prop picks logged: {proppicks.log(today, proppicks.picks(today, todays))}")
+                print(f"prop picks logged: {proppicks.log(today, proppicks.picks(today, todays), set(todays))}")
             tonight = []
             if proppicks.LOG.exists():
                 lp = pd.read_csv(proppicks.LOG, dtype={"game_id": str})
