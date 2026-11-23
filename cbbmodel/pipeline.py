@@ -20,7 +20,7 @@ import pandas as pd
 from nbamodel import archive, gamepage, lines as line_log, players
 from nbamodel.ratings import rating_projection
 
-from . import availability, backtest, data, lineup, players as cbb_players, ratings, roster, spots
+from . import availability, backtest, blend, data, lineup, players as cbb_players, ratings, roster, spots
 
 ET = ZoneInfo("America/New_York")
 ROOT = Path(__file__).resolve().parent.parent
@@ -90,6 +90,9 @@ def run():
     rated = rated.merge(spots.spots(g_done, rated), on="game_id", how="left")
     rated["far_road_diff"] = rated.far_road_diff.fillna(0.0)
     coef = backtest.fit(rated[rated.season < season])
+    # two more formulas averaged with the ratings model (blend.py), fitted on earlier seasons
+    hist, bstate = blend.history(rated, backtest.FIRST_RATED, season)
+    bmodels = blend.fit(hist[hist.season < season])
 
     sched = data.schedule(season, refresh=False)
     d1 = data.division_one(sched)
@@ -136,7 +139,8 @@ def run():
             "lineup_h": lin.get(hid), "lineup_a": lin.get(aid),
             "lineup_diff": lin[hid] - lin[aid] if hid in lin and aid in lin else np.nan,
         }])
-        row = backtest.predict(backtest.add_features(rating_projection(row)), coef).iloc[0]
+        row = backtest.predict(backtest.add_features(rating_projection(row)), coef)
+        row = blend.predict(blend.today(row.assign(home_id=hid, away_id=aid), bstate, season), bmodels).iloc[0]
         m = float(row.m_margin)
         fade = float(np.clip(1 - n_this / backtest.EARLY_GAMES, 0, 1))
         cm = {k: v for k, v in coef.items() if k != "r_early"}
@@ -144,6 +148,9 @@ def run():
         build = gamepage.build(row, {"margin": cm, "total": {"const": 0.0, "r_total": 1.0}},
                                x.home_abbreviation, x.away_abbreviation,
                                {"h": miss_detail.get(hid, []), "a": miss_detail.get(aid, [])}, False)
+        if abs(m - float(row.m_ratings)) >= 0.005:
+            build["margin"].append(gamepage._piece("Averaged with two other formulas (four factors, Elo, recent form)",
+                                                   m - float(row.m_ratings), "blend"))
         sp, tot, ml_h, ml_a = lines.get(str(x.game_id), (None, None, None, None))
         games.append({
             "id": str(x.game_id), "date": x.day.isoformat(), "tip": x.et.isoformat(), "away": x.away_abbreviation, "home": x.home_abbreviation,
