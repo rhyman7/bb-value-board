@@ -233,11 +233,11 @@
    "total": 158.2,
    "win_prob": 0.604,
    "projection": 2.8,
-   "mkt_spread": 4.5,
-   "mkt_total": 145.5,
-   "mkt_ml_home": -185.0,
-   "mkt_ml_away": 154.0,
-   "frozenAt": "2026-11-22T16:45-05:00"
+   "mkt_spread": -4.5,
+   "mkt_total": 146.5,
+   "mkt_ml_home": 154.0,
+   "mkt_ml_away": -185.0,
+   "frozenAt": "2026-11-22T21:53-05:00"
   }
  }
 }

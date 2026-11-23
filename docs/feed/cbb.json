@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-22T21:45:30+00:00",
+ "generatedAt": "2026-11-23T02:53:28+00:00",
  "season": 2027,
  "gamesRated": 907,
  "marketWeight": 0.0,
@@ -944,7 +944,9 @@
    "mkt_total": 143.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
-   "spots": [],
+   "spots": [
+    "UWF off an emotional win (letdown spot)"
+   ],
    "missing": {
     "home": [],
     "away": [
@@ -1154,7 +1156,7 @@
     "margin": [
      {
       "label": "TXST team rating (+10.9 per 100)",
-      "pts": 6.99,
+      "pts": 7.0,
       "kind": "team"
      },
      {
@@ -1455,9 +1457,7 @@
    "mkt_total": 142.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
-   "spots": [
-    "LIB off an emotional win (letdown spot)"
-   ],
+   "spots": [],
    "missing": {
     "home": [],
     "away": []
@@ -1471,7 +1471,7 @@
      },
      {
       "label": "RICH team rating (+3.9 per 100)",
-      "pts": -2.54,
+      "pts": -2.55,
       "kind": "team"
      },
      {
@@ -1513,8 +1513,8 @@
    "projection": 26.0,
    "mkt_spread": 22.5,
    "mkt_total": 137.5,
-   "mkt_ml_home": -6500.0,
-   "mkt_ml_away": 2000.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [
     "NJIT on a second straight road game in 4 days"
    ],
@@ -1580,8 +1580,8 @@
    "projection": 3.7,
    "mkt_spread": 4.5,
    "mkt_total": 163.5,
-   "mkt_ml_home": -205.0,
-   "mkt_ml_away": 170.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [
     "CSUF on a second straight road game in 4 days"
    ],
@@ -1640,8 +1640,8 @@
    "projection": 7.2,
    "mkt_spread": 10.5,
    "mkt_total": 155.5,
-   "mkt_ml_home": -535.0,
-   "mkt_ml_away": 400.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [],
    "missing": {
     "home": [],
@@ -1698,8 +1698,8 @@
    "projection": 3.7,
    "mkt_spread": 2.5,
    "mkt_total": 162.5,
-   "mkt_ml_home": -130.0,
-   "mkt_ml_away": 110.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [],
    "missing": {
     "home": [],
@@ -1756,8 +1756,8 @@
    "projection": 2.0,
    "mkt_spread": -2.5,
    "mkt_total": 144.5,
-   "mkt_ml_home": 110.0,
-   "mkt_ml_away": -130.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [],
    "missing": {
     "home": [],
@@ -1814,8 +1814,8 @@
    "projection": 12.5,
    "mkt_spread": 9.5,
    "mkt_total": 131.5,
-   "mkt_ml_home": -550.0,
-   "mkt_ml_away": 410.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [],
    "missing": {
     "home": [],
@@ -1872,8 +1872,8 @@
    "projection": 8.7,
    "mkt_spread": 8.5,
    "mkt_total": 143.5,
-   "mkt_ml_home": -395.0,
-   "mkt_ml_away": 310.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [],
    "missing": {
     "home": [],
@@ -2012,8 +2012,8 @@
    "projection": 10.1,
    "mkt_spread": 7.5,
    "mkt_total": 146.5,
-   "mkt_ml_home": -355.0,
-   "mkt_ml_away": 280.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [],
    "missing": {
     "home": [
@@ -2083,12 +2083,12 @@
    "margin": -3.2,
    "total": 152.7,
    "pace": 69.6,
-   "win_prob": 0.378,
+   "win_prob": 0.379,
    "projection": -3.2,
    "mkt_spread": -2.5,
    "mkt_total": 152.5,
-   "mkt_ml_home": 114.0,
-   "mkt_ml_away": -135.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [
     "UAB off an emotional win (letdown spot)"
    ],
@@ -2105,7 +2105,7 @@
      },
      {
       "label": "URI team rating (+6.9 per 100)",
-      "pts": -4.69,
+      "pts": -4.68,
       "kind": "team"
      },
      {
@@ -2218,8 +2218,8 @@
    "projection": 5.3,
    "mkt_spread": 6.5,
    "mkt_total": 144.5,
-   "mkt_ml_home": -305.0,
-   "mkt_ml_away": 245.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [],
    "missing": {
     "home": [],
@@ -2276,8 +2276,8 @@
    "projection": -2.1,
    "mkt_spread": 1.5,
    "mkt_total": 148.5,
-   "mkt_ml_home": -110.0,
-   "mkt_ml_away": -110.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "spots": [],
    "missing": {
     "home": [],
@@ -2332,10 +2332,10 @@
    "pace": 69.0,
    "win_prob": 0.604,
    "projection": 2.8,
-   "mkt_spread": 4.5,
-   "mkt_total": 145.5,
-   "mkt_ml_home": -185.0,
-   "mkt_ml_away": 154.0,
+   "mkt_spread": -4.5,
+   "mkt_total": 146.5,
+   "mkt_ml_home": 154.0,
+   "mkt_ml_away": -185.0,
    "spots": [
     "SJSU off an emotional win (letdown spot)"
    ],
@@ -2392,10 +2392,10 @@
    "pace": 66.3,
    "win_prob": 0.629,
    "projection": 3.4,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 5.5,
+   "mkt_total": 140.5,
+   "mkt_ml_home": -225.0,
+   "mkt_ml_away": 185.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -2450,10 +2450,10 @@
    "pace": 63.9,
    "win_prob": 0.339,
    "projection": -4.3,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": -5.5,
+   "mkt_total": 133.5,
+   "mkt_ml_home": 185.0,
+   "mkt_ml_away": -225.0,
    "spots": [
     "SBU off an emotional win (letdown spot)"
    ],
@@ -2515,10 +2515,10 @@
    "pace": 72.9,
    "win_prob": 0.619,
    "projection": 3.1,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 2.5,
+   "mkt_total": 146.5,
+   "mkt_ml_home": -148.0,
+   "mkt_ml_away": 124.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -2573,10 +2573,10 @@
    "pace": 75.0,
    "win_prob": 0.823,
    "projection": 10.0,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 9.5,
+   "mkt_total": 160.5,
+   "mkt_ml_home": -485.0,
+   "mkt_ml_away": 370.0,
    "spots": [
     "LBSU is 2+ time zones from home"
    ],
@@ -2638,8 +2638,8 @@
    "pace": 67.1,
    "win_prob": 0.321,
    "projection": -4.9,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": -6.5,
+   "mkt_total": 145.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [
@@ -2698,10 +2698,10 @@
    "pace": 69.1,
    "win_prob": 0.795,
    "projection": 8.8,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 1.5,
+   "mkt_total": 147.5,
+   "mkt_ml_home": -122.0,
+   "mkt_ml_away": 102.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -2756,8 +2756,8 @@
    "pace": 71.6,
    "win_prob": 0.693,
    "projection": 5.3,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": 6.5,
+   "mkt_total": 153.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [
@@ -2822,9 +2822,9 @@
    "win_prob": 0.231,
    "projection": -7.8,
    "mkt_spread": -5.5,
-   "mkt_total": 150.5,
-   "mkt_ml_home": 200.0,
-   "mkt_ml_away": -245.0,
+   "mkt_total": 149.5,
+   "mkt_ml_home": 210.0,
+   "mkt_ml_away": -258.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -2879,10 +2879,10 @@
    "pace": 70.4,
    "win_prob": 0.609,
    "projection": 2.9,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 2.5,
+   "mkt_total": 149.5,
+   "mkt_ml_home": -130.0,
+   "mkt_ml_away": 110.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -2995,10 +2995,10 @@
    "pace": 76.5,
    "win_prob": 0.264,
    "projection": -6.7,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": -7.5,
+   "mkt_total": 159.5,
+   "mkt_ml_home": 245.0,
+   "mkt_ml_away": -305.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -3053,10 +3053,10 @@
    "pace": 71.3,
    "win_prob": 0.45,
    "projection": -1.3,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 1.5,
+   "mkt_total": 147.5,
+   "mkt_ml_home": -125.0,
+   "mkt_ml_away": 105.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -3116,10 +3116,10 @@
    "pace": 68.4,
    "win_prob": 0.614,
    "projection": 3.0,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 2.5,
+   "mkt_total": 142.5,
+   "mkt_ml_home": -155.0,
+   "mkt_ml_away": 130.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -3174,10 +3174,10 @@
    "pace": 69.5,
    "win_prob": 0.175,
    "projection": -10.1,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": -6.5,
+   "mkt_total": 137.5,
+   "mkt_ml_home": 250.0,
+   "mkt_ml_away": -310.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -3232,10 +3232,10 @@
    "pace": 71.6,
    "win_prob": 0.866,
    "projection": 12.1,
-   "mkt_spread": 10.5,
+   "mkt_spread": 11.5,
    "mkt_total": 165.5,
-   "mkt_ml_home": -550.0,
-   "mkt_ml_away": 410.0,
+   "mkt_ml_home": -750.0,
+   "mkt_ml_away": 525.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -3290,8 +3290,8 @@
    "pace": 68.4,
    "win_prob": 0.874,
    "projection": 12.6,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": 14.5,
+   "mkt_total": 133.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
@@ -3348,8 +3348,8 @@
    "pace": 77.4,
    "win_prob": 0.197,
    "projection": -9.1,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": -9.5,
+   "mkt_total": 163.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [
@@ -3408,8 +3408,8 @@
    "pace": 66.4,
    "win_prob": 0.844,
    "projection": 11.0,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": 9.5,
+   "mkt_total": 132.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
@@ -3471,10 +3471,10 @@
    "pace": 77.5,
    "win_prob": 0.496,
    "projection": -0.1,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 3.5,
+   "mkt_total": 166.5,
+   "mkt_ml_home": -155.0,
+   "mkt_ml_away": 130.0,
    "spots": [
     "GASO on a second straight road game, new time zone"
    ],
@@ -3531,8 +3531,8 @@
    "pace": 72.8,
    "win_prob": 0.348,
    "projection": -4.1,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": -2.5,
+   "mkt_total": 150.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
@@ -3601,10 +3601,10 @@
    "pace": 73.3,
    "win_prob": 0.607,
    "projection": 2.8,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 5.5,
+   "mkt_total": 151.5,
+   "mkt_ml_home": -225.0,
+   "mkt_ml_away": 185.0,
    "spots": [],
    "missing": {
     "home": [],
@@ -3659,8 +3659,8 @@
    "pace": 69.6,
    "win_prob": 0.952,
    "projection": 19.5,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": 21.5,
+   "mkt_total": 145.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [
@@ -3719,8 +3719,8 @@
    "pace": 72.3,
    "win_prob": 0.938,
    "projection": 17.7,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": 20.5,
+   "mkt_total": 153.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [
@@ -3780,8 +3780,8 @@
    "pace": 72.7,
    "win_prob": 0.995,
    "projection": 33.9,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": 36.5,
+   "mkt_total": 157.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [
@@ -3845,8 +3845,8 @@
    "pace": 78.7,
    "win_prob": 0.999,
    "projection": 47.6,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": 45.5,
+   "mkt_total": 180.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [
@@ -3917,10 +3917,10 @@
    "pace": 72.1,
    "win_prob": 0.408,
    "projection": -2.4,
-   "mkt_spread": null,
-   "mkt_total": 153.5,
-   "mkt_ml_home": -115.0,
-   "mkt_ml_away": -105.0,
+   "mkt_spread": 1.5,
+   "mkt_total": 155.5,
+   "mkt_ml_home": -122.0,
+   "mkt_ml_away": 102.0,
    "spots": [],
    "missing": {
     "home": [
@@ -3982,10 +3982,10 @@
    "pace": 69.3,
    "win_prob": 0.777,
    "projection": 8.1,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 11.5,
+   "mkt_total": 152.5,
+   "mkt_ml_home": -700.0,
+   "mkt_ml_away": 500.0,
    "spots": [
     "UNCG is 2+ time zones from home"
    ],
@@ -4052,8 +4052,8 @@
    "pace": 68.5,
    "win_prob": 0.946,
    "projection": 18.6,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": 19.5,
+   "mkt_total": 146.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [
@@ -4123,10 +4123,10 @@
    "pace": 74.1,
    "win_prob": 0.709,
    "projection": 5.8,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
+   "mkt_spread": 7.5,
+   "mkt_total": 160.5,
+   "mkt_ml_home": -325.0,
+   "mkt_ml_away": 260.0,
    "spots": [
     "EWU off an emotional win (letdown spot)"
    ],
@@ -4319,7 +4319,7 @@
      },
      {
       "label": "WRST team rating (+14.2 per 100)",
-      "pts": -9.47,
+      "pts": -9.48,
       "kind": "team"
      },
      {
@@ -4893,8 +4893,8 @@
    "pace": 76.4,
    "win_prob": 0.311,
    "projection": -5.2,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": -7.5,
+   "mkt_total": 156.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
@@ -4958,8 +4958,8 @@
    "pace": 68.6,
    "win_prob": 0.27,
    "projection": -6.5,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": -5.5,
+   "mkt_total": 147.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
@@ -5202,8 +5202,8 @@
    "pace": 69.3,
    "win_prob": 0.607,
    "projection": 2.8,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": 7.5,
+   "mkt_total": 144.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
@@ -5332,8 +5332,8 @@
    "pace": 76.3,
    "win_prob": 0.794,
    "projection": 8.8,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": 4.5,
+   "mkt_total": 163.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
@@ -5845,7 +5845,7 @@
      },
      {
       "label": "RMU team rating (-10.6 per 100)",
-      "pts": 7.3,
+      "pts": 7.29,
       "kind": "team"
      },
      {
@@ -6251,7 +6251,6 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [
-    "VILL off an emotional win (letdown spot)",
     "VILL has a key game next (lookahead spot)",
     "COPP on a second straight road game in 4 days"
    ],
@@ -6326,7 +6325,7 @@
      },
      {
       "label": "RID team rating (-23.1 per 100)",
-      "pts": 15.51,
+      "pts": 15.52,
       "kind": "team"
      },
      {
@@ -6644,8 +6643,8 @@
       "kind": "team"
      },
      {
-      "label": "BING team rating (-15.1 per 100)",
-      "pts": 9.65,
+      "label": "BING team rating (-15.2 per 100)",
+      "pts": 9.66,
       "kind": "team"
      },
      {
@@ -6695,7 +6694,6 @@
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [
-    "JMU off an emotional win (letdown spot)",
     "CHSO on a second straight road game in 4 days"
    ],
    "missing": {
@@ -7548,8 +7546,8 @@
    "pace": 70.9,
    "win_prob": 0.161,
    "projection": -10.7,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": -5.5,
+   "mkt_total": 153.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
@@ -7679,7 +7677,7 @@
     "margin": [
      {
       "label": "UNA team rating (-11.1 per 100)",
-      "pts": -7.69,
+      "pts": -7.68,
       "kind": "team"
      },
      {
@@ -7786,11 +7784,11 @@
    "away": "DREX",
    "home": "PENN",
    "neutral": false,
-   "margin": 6.4,
+   "margin": 6.5,
    "total": 147.6,
    "pace": 71.2,
    "win_prob": 0.73,
-   "projection": 6.4,
+   "projection": 6.5,
    "mkt_spread": null,
    "mkt_total": null,
    "mkt_ml_home": null,
@@ -8531,8 +8529,8 @@
    "pace": 77.9,
    "win_prob": 0.457,
    "projection": -1.1,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": 1.5,
+   "mkt_total": 177.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
@@ -8589,8 +8587,8 @@
    "pace": 72.5,
    "win_prob": 0.873,
    "projection": 12.5,
-   "mkt_spread": null,
-   "mkt_total": null,
+   "mkt_spread": 8.5,
+   "mkt_total": 158.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
    "spots": [],
@@ -8741,8 +8739,8 @@
      "site": "vs",
      "score": "73-47",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -32.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-15",
@@ -8906,8 +8904,8 @@
      "site": "vs",
      "score": "101-62",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -28.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-16",
@@ -9002,8 +9000,8 @@
      "site": "vs",
      "score": "86-76",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -5.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-11",
@@ -9080,8 +9078,8 @@
      "site": "at",
      "score": "73-66",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 3.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -9167,8 +9165,8 @@
      "site": "vs",
      "score": "62-45",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -33.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-16",
@@ -9254,8 +9252,8 @@
      "site": "vs",
      "score": "97-51",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -24.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-15",
@@ -9341,8 +9339,8 @@
      "site": "vs",
      "score": "82-69",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -16.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-09",
@@ -9410,8 +9408,8 @@
      "site": "at",
      "score": "88-80",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-11",
@@ -9557,8 +9555,8 @@
      "site": "vs",
      "score": "91-74",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -18.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -9644,8 +9642,8 @@
      "site": "vs",
      "score": "71-64",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -12.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -9731,8 +9729,8 @@
      "site": "vs",
      "score": "114-52",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -45.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -9740,8 +9738,8 @@
      "site": "at",
      "score": "99-78",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 9.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -9827,8 +9825,8 @@
      "site": "vs",
      "score": "86-67",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -30.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -9914,8 +9912,8 @@
      "site": "at",
      "score": "69-62",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -3.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -9923,8 +9921,8 @@
      "site": "at",
      "score": "83-72",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 2.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -10070,8 +10068,8 @@
      "site": "vs (N)",
      "score": "74-78",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 24.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-18",
@@ -10079,8 +10077,8 @@
      "site": "vs (N)",
      "score": "79-63",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-10",
@@ -10157,8 +10155,8 @@
      "site": "vs",
      "score": "85-60",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-18",
@@ -10166,8 +10164,8 @@
      "site": "at",
      "score": "79-75",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -10244,8 +10242,8 @@
      "site": "vs",
      "score": "83-39",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -29.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -10331,8 +10329,8 @@
      "site": "at",
      "score": "71-75",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 31.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-07",
@@ -10400,8 +10398,8 @@
      "site": "vs (N)",
      "score": "82-71",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-16",
@@ -10496,8 +10494,8 @@
      "site": "vs (N)",
      "score": "73-78",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -3.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-18",
@@ -10505,8 +10503,8 @@
      "site": "vs (N)",
      "score": "86-71",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -9.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -10514,8 +10512,8 @@
      "site": "vs (N)",
      "score": "70-76",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -10592,8 +10590,8 @@
      "site": "vs (N)",
      "score": "68-82",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-16",
@@ -10679,8 +10677,8 @@
      "site": "vs",
      "score": "75-71",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -31.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-16",
@@ -10766,8 +10764,8 @@
      "site": "vs (N)",
      "score": "70-85",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-16",
@@ -10853,8 +10851,8 @@
      "site": "vs (N)",
      "score": "76-81",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -9.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -10940,8 +10938,8 @@
      "site": "at",
      "score": "82-67",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -3.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-16",
@@ -11027,8 +11025,8 @@
      "site": "vs",
      "score": "92-97",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -11114,8 +11112,8 @@
      "site": "vs",
      "score": "78-65",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -16.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-17",
@@ -11123,8 +11121,8 @@
      "site": "vs",
      "score": "65-61",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -6.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -11210,8 +11208,8 @@
      "site": "at",
      "score": "84-69",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-16",
@@ -11375,8 +11373,8 @@
      "site": "vs",
      "score": "74-77",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -15.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -11540,8 +11538,8 @@
      "site": "vs (N)",
      "score": "82-68",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-16",
@@ -11618,8 +11616,8 @@
      "site": "vs (N)",
      "score": "69-59",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -2.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-20",
@@ -11627,8 +11625,8 @@
      "site": "vs (N)",
      "score": "76-85",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 3.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-17",
@@ -11636,8 +11634,8 @@
      "site": "at",
      "score": "85-78",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -11714,8 +11712,8 @@
      "site": "at",
      "score": "78-95",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-15",
@@ -11801,8 +11799,8 @@
      "site": "vs",
      "score": "82-74",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -16.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-17",
@@ -11810,8 +11808,8 @@
      "site": "vs",
      "score": "96-50",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -41.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -11897,8 +11895,8 @@
      "site": "vs",
      "score": "87-63",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -22.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -11906,8 +11904,8 @@
      "site": "vs",
      "score": "85-71",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -25.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -11993,8 +11991,8 @@
      "site": "vs",
      "score": "91-64",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -35.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-18",
@@ -12002,8 +12000,8 @@
      "site": "vs",
      "score": "102-41",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -40.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-15",
@@ -12089,8 +12087,8 @@
      "site": "vs",
      "score": "66-73",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -3.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -12176,8 +12174,8 @@
      "site": "at",
      "score": "84-63",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -5.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-18",
@@ -12185,8 +12183,8 @@
      "site": "at",
      "score": "82-91",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 18.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-11",
@@ -12263,8 +12261,8 @@
      "site": "vs (N)",
      "score": "78-73",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 3.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-18",
@@ -12272,8 +12270,8 @@
      "site": "vs (N)",
      "score": "110-100",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -2.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -12281,8 +12279,8 @@
      "site": "vs (N)",
      "score": "78-86",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 14.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-11",
@@ -12368,8 +12366,8 @@
      "site": "at",
      "score": "82-94",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 4.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -12437,8 +12435,8 @@
      "site": "at",
      "score": "97-92",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 7.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-15",
@@ -12515,8 +12513,8 @@
      "site": "vs",
      "score": "104-55",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -33.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-15",
@@ -12602,8 +12600,8 @@
      "site": "vs",
      "score": "84-77",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -16.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-17",
@@ -12611,8 +12609,8 @@
      "site": "vs",
      "score": "89-64",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -12.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -12698,8 +12696,8 @@
      "site": "vs (N)",
      "score": "68-71",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-15",
@@ -12794,8 +12792,8 @@
      "site": "vs",
      "score": "79-73",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 3.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -12803,8 +12801,8 @@
      "site": "at",
      "score": "61-81",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -12890,8 +12888,8 @@
      "site": "vs",
      "score": "83-69",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -36.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-15",
@@ -12968,8 +12966,8 @@
      "site": "vs",
      "score": "82-88",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 7.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -12977,8 +12975,8 @@
      "site": "vs",
      "score": "93-79",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -20.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -13064,8 +13062,8 @@
      "site": "vs (N)",
      "score": "85-72",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -8.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-18",
@@ -13073,8 +13071,8 @@
      "site": "vs (N)",
      "score": "76-86",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-17",
@@ -13082,8 +13080,8 @@
      "site": "vs (N)",
      "score": "86-78",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -14.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -13169,8 +13167,8 @@
      "site": "vs",
      "score": "88-72",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -18.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -13256,8 +13254,8 @@
      "site": "vs",
      "score": "81-79",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -12.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -13334,8 +13332,8 @@
      "site": "vs",
      "score": "86-41",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -36.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -13421,8 +13419,8 @@
      "site": "vs",
      "score": "95-49",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -21.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -13430,8 +13428,8 @@
      "site": "vs",
      "score": "95-78",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -22.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -13517,8 +13515,8 @@
      "site": "at",
      "score": "83-77",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-11",
@@ -13595,8 +13593,8 @@
      "site": "at",
      "score": "83-73",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 2.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -13682,8 +13680,8 @@
      "site": "at",
      "score": "82-104",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 21.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-17",
@@ -13691,8 +13689,8 @@
      "site": "at",
      "score": "63-88",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 13.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -13838,8 +13836,8 @@
      "site": "vs",
      "score": "68-86",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -5.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-17",
@@ -13847,8 +13845,8 @@
      "site": "at",
      "score": "73-77",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 2.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-12",
@@ -13925,8 +13923,8 @@
      "site": "at",
      "score": "49-53",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -15.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -13994,8 +13992,8 @@
      "site": "at",
      "score": "62-73",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 3.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-17",
@@ -14003,8 +14001,8 @@
      "site": "vs",
      "score": "98-71",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -10.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -14090,8 +14088,8 @@
      "site": "vs (N)",
      "score": "81-76",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 9.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -14099,8 +14097,8 @@
      "site": "vs",
      "score": "94-82",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -4.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -14186,8 +14184,8 @@
      "site": "vs (N)",
      "score": "85-70",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-16",
@@ -14282,8 +14280,8 @@
      "site": "at",
      "score": "60-84",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 31.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-18",
@@ -14291,8 +14289,8 @@
      "site": "at",
      "score": "61-88",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 15.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -14378,8 +14376,8 @@
      "site": "vs",
      "score": "101-103",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -14456,8 +14454,8 @@
      "site": "vs (N)",
      "score": "85-76",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -3.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-15",
@@ -14543,8 +14541,8 @@
      "site": "at",
      "score": "73-79",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -3.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-15",
@@ -14630,8 +14628,8 @@
      "site": "at",
      "score": "63-79",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 2.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-15",
@@ -14717,8 +14715,8 @@
      "site": "vs (N)",
      "score": "71-82",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-11",
@@ -14795,8 +14793,8 @@
      "site": "vs",
      "score": "69-83",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -12.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-15",
@@ -14873,8 +14871,8 @@
      "site": "vs",
      "score": "85-79",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -3.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -14960,8 +14958,8 @@
      "site": "vs",
      "score": "87-78",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -20.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -15047,8 +15045,8 @@
      "site": "vs (N)",
      "score": "87-70",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -11.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-16",
@@ -15143,8 +15141,8 @@
      "site": "vs (N)",
      "score": "61-72",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 6.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-16",
@@ -15299,8 +15297,8 @@
      "site": "at",
      "score": "67-74",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 2.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -15386,8 +15384,8 @@
      "site": "vs",
      "score": "109-91",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -25.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -15473,8 +15471,8 @@
      "site": "vs (N)",
      "score": "74-68",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -5.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -15551,8 +15549,8 @@
      "site": "vs",
      "score": "78-69",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -11.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -15638,8 +15636,8 @@
      "site": "vs (N)",
      "score": "87-69",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -4.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -15647,8 +15645,8 @@
      "site": "at",
      "score": "80-61",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -11.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -15734,8 +15732,8 @@
      "site": "vs (N)",
      "score": "89-70",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -2.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-18",
@@ -15743,8 +15741,8 @@
      "site": "vs (N)",
      "score": "100-110",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 2.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-17",
@@ -15752,8 +15750,8 @@
      "site": "vs (N)",
      "score": "73-85",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 16.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -15830,8 +15828,8 @@
      "site": "at",
      "score": "74-69",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -3.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-15",
@@ -15917,8 +15915,8 @@
      "site": "vs (N)",
      "score": "46-63",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-17",
@@ -15926,8 +15924,8 @@
      "site": "vs",
      "score": "67-71",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -12.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-10",
@@ -16004,8 +16002,8 @@
      "site": "vs (N)",
      "score": "70-89",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 2.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-18",
@@ -16013,8 +16011,8 @@
      "site": "vs (N)",
      "score": "71-86",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 9.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-17",
@@ -16022,8 +16020,8 @@
      "site": "vs (N)",
      "score": "77-102",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 15.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -16100,8 +16098,8 @@
      "site": "vs",
      "score": "76-41",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -27.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-10",
@@ -16178,8 +16176,8 @@
      "site": "vs",
      "score": "88-65",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -24.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-15",
@@ -16265,8 +16263,8 @@
      "site": "vs",
      "score": "96-51",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -28.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-15",
@@ -16352,8 +16350,8 @@
      "site": "vs",
      "score": "98-54",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -28.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-12",
@@ -16439,8 +16437,8 @@
      "site": "vs",
      "score": "104-82",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -21.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -16448,8 +16446,8 @@
      "site": "vs",
      "score": "81-61",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -16535,8 +16533,8 @@
      "site": "vs (N)",
      "score": "70-87",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 11.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-16",
@@ -16631,8 +16629,8 @@
      "site": "vs",
      "score": "75-79",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -16718,8 +16716,8 @@
      "site": "vs",
      "score": "92-68",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -35.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-15",
@@ -16805,8 +16803,8 @@
      "site": "vs",
      "score": "91-54",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -29.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -16892,8 +16890,8 @@
      "site": "vs",
      "score": "106-54",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -36.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -16901,8 +16899,8 @@
      "site": "vs",
      "score": "95-48",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -41.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -16988,8 +16986,8 @@
      "site": "vs (N)",
      "score": "69-85",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-20",
@@ -16997,8 +16995,8 @@
      "site": "vs (N)",
      "score": "79-90",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 3.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -17084,8 +17082,8 @@
      "site": "at",
      "score": "83-65",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 3.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-15",
@@ -17258,8 +17256,8 @@
      "site": "vs",
      "score": "84-71",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -4.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-18",
@@ -17267,8 +17265,8 @@
      "site": "at",
      "score": "74-76",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 7.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-08",
@@ -17345,8 +17343,8 @@
      "site": "at",
      "score": "69-62",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -3.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-16",
@@ -17423,8 +17421,8 @@
      "site": "vs",
      "score": "91-77",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -15.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -17501,8 +17499,8 @@
      "site": "at",
      "score": "80-70",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 15.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-18",
@@ -17510,8 +17508,8 @@
      "site": "at",
      "score": "78-87",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 20.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -17666,8 +17664,8 @@
      "site": "vs",
      "score": "52-70",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -3.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -17762,8 +17760,8 @@
      "site": "at",
      "score": "81-91",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -2.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-20",
@@ -17771,8 +17769,8 @@
      "site": "vs (N)",
      "score": "65-60",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -6.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-15",
@@ -17858,8 +17856,8 @@
      "site": "vs",
      "score": "78-51",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -25.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -17867,8 +17865,8 @@
      "site": "vs",
      "score": "61-46",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 2.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -17945,8 +17943,8 @@
      "site": "vs (N)",
      "score": "63-46",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -17954,8 +17952,8 @@
      "site": "vs",
      "score": "88-63",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -13.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -18041,8 +18039,8 @@
      "site": "at",
      "score": "62-101",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 28.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-16",
@@ -18137,8 +18135,8 @@
      "site": "at",
      "score": "83-79",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 10.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -18233,8 +18231,8 @@
      "site": "vs",
      "score": "92-86",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -6.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-15",
@@ -18320,8 +18318,8 @@
      "site": "at",
      "score": "68-90",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 5.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-15",
@@ -18407,8 +18405,8 @@
      "site": "vs (N)",
      "score": "83-92",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 3.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-18",
@@ -18416,8 +18414,8 @@
      "site": "vs (N)",
      "score": "86-82",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -7.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-17",
@@ -18425,8 +18423,8 @@
      "site": "vs (N)",
      "score": "102-77",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -15.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-10",
@@ -18503,8 +18501,8 @@
      "site": "at",
      "score": "69-82",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 16.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -18581,8 +18579,8 @@
      "site": "vs",
      "score": "86-71",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 5.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-15",
@@ -18668,8 +18666,8 @@
      "site": "at",
      "score": "68-92",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 35.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -18737,8 +18735,8 @@
      "site": "at",
      "score": "54-98",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 28.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -18806,8 +18804,8 @@
      "site": "at",
      "score": "71-101",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 28.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-10",
@@ -18944,8 +18942,8 @@
      "site": "vs (N)",
      "score": "86-76",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -4.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -19013,8 +19011,8 @@
      "site": "vs (N)",
      "score": "69-80",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-17",
@@ -19022,8 +19020,8 @@
      "site": "at",
      "score": "41-76",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 27.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -19100,8 +19098,8 @@
      "site": "at",
      "score": "104-74",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-07",
@@ -19160,8 +19158,8 @@
      "site": "vs",
      "score": "79-65",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -7.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -19238,8 +19236,8 @@
      "site": "vs (N)",
      "score": "90-76",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -3.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -19247,8 +19245,8 @@
      "site": "vs (N)",
      "score": "81-76",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-12",
@@ -19334,8 +19332,8 @@
      "site": "vs",
      "score": "81-74",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -2.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -19412,8 +19410,8 @@
      "site": "at",
      "score": "93-87",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -6.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-18",
@@ -19421,8 +19419,8 @@
      "site": "at",
      "score": "72-119",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 29.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -19586,8 +19584,8 @@
      "site": "vs",
      "score": "67-73",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 7.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -19595,8 +19593,8 @@
      "site": "vs",
      "score": "65-99",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -19673,8 +19671,8 @@
      "site": "vs",
      "score": "69-66",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 4.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -19682,8 +19680,8 @@
      "site": "at",
      "score": "48-95",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 41.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -19769,8 +19767,8 @@
      "site": "vs",
      "score": "62-61",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -4.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-16",
@@ -19874,8 +19872,8 @@
      "site": "vs (N)",
      "score": "87-81",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 3.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-19",
@@ -19883,8 +19881,8 @@
      "site": "vs (N)",
      "score": "74-69",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 5.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -19970,8 +19968,8 @@
      "site": "vs",
      "score": "81-74",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -13.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -20057,8 +20055,8 @@
      "site": "vs",
      "score": "60-52",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -23.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -20135,8 +20133,8 @@
      "site": "vs",
      "score": "76-59",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -17.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -20213,8 +20211,8 @@
      "site": "vs",
      "score": "77-83",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -20309,8 +20307,8 @@
      "site": "vs (N)",
      "score": "64-67",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -4.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-17",
@@ -20318,8 +20316,8 @@
      "site": "at",
      "score": "61-65",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 6.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-07",
@@ -20378,8 +20376,8 @@
      "site": "vs",
      "score": "80-88",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-11",
@@ -20447,8 +20445,8 @@
      "site": "vs (N)",
      "score": "80-73",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -13.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-15",
@@ -20603,8 +20601,8 @@
      "site": "vs",
      "score": "77-56",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -10.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -20690,8 +20688,8 @@
      "site": "vs (N)",
      "score": "73-80",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 13.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -20699,8 +20697,8 @@
      "site": "vs",
      "score": "54-83",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 8.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -20786,8 +20784,8 @@
      "site": "vs",
      "score": "78-74",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -3.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -20795,8 +20793,8 @@
      "site": "at",
      "score": "72-76",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 23.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-11",
@@ -20864,8 +20862,8 @@
      "site": "vs",
      "score": "97-69",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -7.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-18",
@@ -20873,8 +20871,8 @@
      "site": "at",
      "score": "98-77",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -3.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-12",
@@ -20951,8 +20949,8 @@
      "site": "vs",
      "score": "76-74",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -7.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -21038,8 +21036,8 @@
      "site": "vs",
      "score": "85-74",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -12.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-15",
@@ -21212,8 +21210,8 @@
      "site": "vs",
      "score": "84-61",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -11.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-18",
@@ -21221,8 +21219,8 @@
      "site": "at",
      "score": "72-80",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 15.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -21308,8 +21306,8 @@
      "site": "vs (N)",
      "score": "77-72",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -4.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-11",
@@ -21386,8 +21384,8 @@
      "site": "at",
      "score": "77-65",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -11.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-18",
@@ -21395,8 +21393,8 @@
      "site": "vs",
      "score": "69-74",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 3.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-15",
@@ -21473,8 +21471,8 @@
      "site": "vs (N)",
      "score": "90-79",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -3.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -21620,8 +21618,8 @@
      "site": "at",
      "score": "71-67",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 12.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-09",
@@ -21698,8 +21696,8 @@
      "site": "vs",
      "score": "66-51",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -4.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-11",
@@ -21776,8 +21774,8 @@
      "site": "at",
      "score": "51-96",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 28.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-16",
@@ -21854,8 +21852,8 @@
      "site": "at",
      "score": "69-85",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -5.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-17",
@@ -21863,8 +21861,8 @@
      "site": "at",
      "score": "78-95",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 22.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -21959,8 +21957,8 @@
      "site": "at",
      "score": "59-96",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 11.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-16",
@@ -22046,8 +22044,8 @@
      "site": "vs",
      "score": "86-54",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -14.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -22133,8 +22131,8 @@
      "site": "at",
      "score": "74-81",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 13.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -22211,8 +22209,8 @@
      "site": "at",
      "score": "66-78",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 4.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -22316,8 +22314,8 @@
      "site": "at",
      "score": "78-71",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -4.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -22403,8 +22401,8 @@
      "site": "at",
      "score": "83-69",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 12.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -22412,8 +22410,8 @@
      "site": "at",
      "score": "79-81",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 12.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -22490,8 +22488,8 @@
      "site": "at",
      "score": "76-86",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 5.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -22568,8 +22566,8 @@
      "site": "at",
      "score": "70-86",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-15",
@@ -22637,8 +22635,8 @@
      "site": "vs",
      "score": "70-68",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -7.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-18",
@@ -22646,8 +22644,8 @@
      "site": "vs",
      "score": "99-62",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -10.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-06",
@@ -22715,8 +22713,8 @@
      "site": "at",
      "score": "69-83",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 36.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-12",
@@ -22802,8 +22800,8 @@
      "site": "at",
      "score": "41-102",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 40.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-16",
@@ -22898,8 +22896,8 @@
      "site": "vs",
      "score": "69-84",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-15",
@@ -22976,8 +22974,8 @@
      "site": "vs",
      "score": "84-51",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -18.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-15",
@@ -23063,8 +23061,8 @@
      "site": "vs",
      "score": "77-98",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 3.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -23150,8 +23148,8 @@
      "site": "at",
      "score": "99-65",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -23237,8 +23235,8 @@
      "site": "vs (N)",
      "score": "68-65",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -6.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-20",
@@ -23246,8 +23244,8 @@
      "site": "at",
      "score": "56-63",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -4.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-15",
@@ -23420,8 +23418,8 @@
      "site": "at",
      "score": "54-91",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 29.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -23507,8 +23505,8 @@
      "site": "at",
      "score": "47-73",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 32.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -23594,8 +23592,8 @@
      "site": "vs",
      "score": "96-59",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -11.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -23603,8 +23601,8 @@
      "site": "at",
      "score": "91-109",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 25.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-10",
@@ -23672,8 +23670,8 @@
      "site": "at",
      "score": "79-76",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 8.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -23681,8 +23679,8 @@
      "site": "at",
      "score": "59-76",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 17.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -23768,8 +23766,8 @@
      "site": "vs",
      "score": "82-70",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -8.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-11",
@@ -23837,8 +23835,8 @@
      "site": "vs",
      "score": "75-64",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 4.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -23924,8 +23922,8 @@
      "site": "at",
      "score": "64-75",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 3.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-17",
@@ -23933,8 +23931,8 @@
      "site": "at",
      "score": "76-81",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 15.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-12",
@@ -24011,8 +24009,8 @@
      "site": "vs",
      "score": "119-72",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -29.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-15",
@@ -24098,8 +24096,8 @@
      "site": "vs",
      "score": "71-80",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-18",
@@ -24107,8 +24105,8 @@
      "site": "at",
      "score": "65-60",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 3.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-15",
@@ -24194,8 +24192,8 @@
      "site": "vs",
      "score": "115-114",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 8.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-16",
@@ -24299,8 +24297,8 @@
      "site": "at",
      "score": "76-83",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 7.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-11",
@@ -24377,8 +24375,8 @@
      "site": "vs",
      "score": "71-68",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -8.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-18",
@@ -24386,8 +24384,8 @@
      "site": "at",
      "score": "76-82",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 7.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-11",
@@ -24464,8 +24462,8 @@
      "site": "at",
      "score": "47-50",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-18",
@@ -24473,8 +24471,8 @@
      "site": "at",
      "score": "90-70",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-15",
@@ -24560,8 +24558,8 @@
      "site": "at",
      "score": "78-98",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 17.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-16",
@@ -24647,8 +24645,8 @@
      "site": "at",
      "score": "68-80",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 10.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-17",
@@ -24656,8 +24654,8 @@
      "site": "at",
      "score": "75-68",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 12.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-15",
@@ -24725,8 +24723,8 @@
      "site": "at",
      "score": "68-70",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 7.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -24803,8 +24801,8 @@
      "site": "vs",
      "score": "79-65",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -26.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-15",
@@ -24890,8 +24888,8 @@
      "site": "vs (N)",
      "score": "80-69",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-19",
@@ -24899,8 +24897,8 @@
      "site": "at",
      "score": "103-100",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -24908,8 +24906,8 @@
      "site": "vs",
      "score": "72-83",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -2.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -24986,8 +24984,8 @@
      "site": "vs",
      "score": "100-69",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -28.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-10",
@@ -25064,8 +25062,8 @@
      "site": "at",
      "score": "86-79",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 3.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -25073,8 +25071,8 @@
      "site": "vs",
      "score": "78-85",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -25160,8 +25158,8 @@
      "site": "at",
      "score": "67-79",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 37.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -25256,8 +25254,8 @@
      "site": "at",
      "score": "65-85",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 26.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -25343,8 +25341,8 @@
      "site": "vs",
      "score": "81-75",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 2.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -25421,8 +25419,8 @@
      "site": "vs (N)",
      "score": "76-73",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 2.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-10",
@@ -25499,8 +25497,8 @@
      "site": "vs (N)",
      "score": "65-68",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 6.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-20",
@@ -25508,8 +25506,8 @@
      "site": "vs (N)",
      "score": "60-65",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 6.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-16",
@@ -25595,8 +25593,8 @@
      "site": "at",
      "score": "61-93",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 6.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -25673,8 +25671,8 @@
      "site": "at",
      "score": "68-71",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 8.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-18",
@@ -25682,8 +25680,8 @@
      "site": "vs",
      "score": "72-78",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 2.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -25760,8 +25758,8 @@
      "site": "at",
      "score": "64-69",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 9.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-18",
@@ -25769,8 +25767,8 @@
      "site": "vs",
      "score": "77-79",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -25847,8 +25845,8 @@
      "site": "vs",
      "score": "50-47",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-15",
@@ -25934,8 +25932,8 @@
      "site": "at",
      "score": "86-91",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 6.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-18",
@@ -25943,8 +25941,8 @@
      "site": "vs",
      "score": "79-90",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 4.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -26030,8 +26028,8 @@
      "site": "vs",
      "score": "77-73",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -2.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-15",
@@ -26108,8 +26106,8 @@
      "site": "vs (N)",
      "score": "85-69",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-20",
@@ -26117,8 +26115,8 @@
      "site": "vs (N)",
      "score": "73-76",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -2.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-17",
@@ -26126,8 +26124,8 @@
      "site": "vs (N)",
      "score": "78-87",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-12",
@@ -26195,8 +26193,8 @@
      "site": "at",
      "score": "55-101",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 15.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -26291,8 +26289,8 @@
      "site": "vs",
      "score": "74-67",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -2.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -26300,8 +26298,8 @@
      "site": "vs",
      "score": "68-63",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -26378,8 +26376,8 @@
      "site": "at",
      "score": "74-64",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -7.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -26447,8 +26445,8 @@
      "site": "vs",
      "score": "87-93",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 6.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -26456,8 +26454,8 @@
      "site": "vs",
      "score": "53-49",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 15.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -26612,8 +26610,8 @@
      "site": "at",
      "score": "70-91",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 40.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-18",
@@ -26621,8 +26619,8 @@
      "site": "at",
      "score": "62-99",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 10.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -26699,8 +26697,8 @@
      "site": "vs",
      "score": "85-66",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -6.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-18",
@@ -26708,8 +26706,8 @@
      "site": "at",
      "score": "78-72",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -2.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-09",
@@ -26777,8 +26775,8 @@
      "site": "vs",
      "score": "65-73",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -7.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-18",
@@ -26786,8 +26784,8 @@
      "site": "at",
      "score": "90-79",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -4.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -26864,8 +26862,8 @@
      "site": "at",
      "score": "74-81",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 16.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -26942,8 +26940,8 @@
      "site": "at",
      "score": "46-67",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-17",
@@ -26951,8 +26949,8 @@
      "site": "vs",
      "score": "68-73",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -27029,8 +27027,8 @@
      "site": "vs (N)",
      "score": "67-64",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 4.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-18",
@@ -27038,8 +27036,8 @@
      "site": "vs",
      "score": "71-62",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -6.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -27116,8 +27114,8 @@
      "site": "at",
      "score": "70-52",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 3.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-15",
@@ -27203,8 +27201,8 @@
      "site": "at",
      "score": "51-78",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 25.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-15",
@@ -27290,8 +27288,8 @@
      "site": "at",
      "score": "77-82",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-15",
@@ -27377,8 +27375,8 @@
      "site": "vs",
      "score": "79-86",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -3.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-10",
@@ -27446,8 +27444,8 @@
      "site": "at",
      "score": "74-78",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 3.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-17",
@@ -27455,8 +27453,8 @@
      "site": "at",
      "score": "74-81",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 2.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -27533,8 +27531,8 @@
      "site": "vs",
      "score": "70-98",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-13",
@@ -27620,8 +27618,8 @@
      "site": "at",
      "score": "73-68",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -27785,8 +27783,8 @@
      "site": "at",
      "score": "78-73",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 6.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-15",
@@ -27863,8 +27861,8 @@
      "site": "at",
      "score": "63-87",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 22.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-17",
@@ -27872,8 +27870,8 @@
      "site": "at",
      "score": "69-87",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -5.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-10",
@@ -27950,8 +27948,8 @@
      "site": "at",
      "score": "61-103",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 42.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -28037,8 +28035,8 @@
      "site": "vs",
      "score": "91-81",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 2.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-20",
@@ -28046,8 +28044,8 @@
      "site": "vs",
      "score": "63-56",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 4.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-15",
@@ -28133,8 +28131,8 @@
      "site": "at",
      "score": "67-86",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 30.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-12",
@@ -28211,8 +28209,8 @@
      "site": "vs (N)",
      "score": "59-69",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 2.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-20",
@@ -28220,8 +28218,8 @@
      "site": "vs (N)",
      "score": "76-86",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 4.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-11",
@@ -28298,8 +28296,8 @@
      "site": "at",
      "score": "83-54",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -8.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-15",
@@ -28385,8 +28383,8 @@
      "site": "vs",
      "score": "78-66",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -4.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -28472,8 +28470,8 @@
      "site": "vs",
      "score": "91-86",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -6.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-18",
@@ -28481,8 +28479,8 @@
      "site": "at",
      "score": "79-77",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -28559,8 +28557,8 @@
      "site": "vs (N)",
      "score": "71-68",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-17",
@@ -28568,8 +28566,8 @@
      "site": "vs (N)",
      "score": "87-78",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -28637,8 +28635,8 @@
      "site": "vs (N)",
      "score": "72-77",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 4.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-17",
@@ -28646,8 +28644,8 @@
      "site": "vs",
      "score": "84-74",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -2.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -28811,8 +28809,8 @@
      "site": "at",
      "score": "39-83",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 29.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-12",
@@ -28898,8 +28896,8 @@
      "site": "vs",
      "score": "69-64",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -9.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-18",
@@ -28907,8 +28905,8 @@
      "site": "at",
      "score": "84-88",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-12",
@@ -28994,8 +28992,8 @@
      "site": "at",
      "score": "75-106",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 25.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -29090,8 +29088,8 @@
      "site": "at",
      "score": "52-60",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 23.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-15",
@@ -29150,7 +29148,7 @@
    ]
   },
   "BING": {
-   "net": -15.1,
+   "net": -15.2,
    "stats": {
     "games": 6,
     "off": {
@@ -29195,8 +29193,8 @@
      "site": "vs",
      "score": "67-46",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-18",
@@ -29204,8 +29202,8 @@
      "site": "at",
      "score": "65-80",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 3.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -29291,8 +29289,8 @@
      "site": "vs",
      "score": "83-78",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -29378,8 +29376,8 @@
      "site": "vs",
      "score": "87-69",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 5.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -29456,8 +29454,8 @@
      "site": "vs",
      "score": "85-69",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 5.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-15",
@@ -29534,8 +29532,8 @@
      "site": "vs (N)",
      "score": "69-87",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 4.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-18",
@@ -29543,8 +29541,8 @@
      "site": "at",
      "score": "77-74",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 15.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-13",
@@ -29621,8 +29619,8 @@
      "site": "vs",
      "score": "99-87",
      "result": "W",
-     "line": null,
-     "ats": null
+     "line": 4.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-14",
@@ -29708,8 +29706,8 @@
      "site": "at",
      "score": "56-77",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 10.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-06",
@@ -29777,8 +29775,8 @@
      "site": "vs",
      "score": "63-84",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 5.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-18",
@@ -29786,8 +29784,8 @@
      "site": "at",
      "score": "70-82",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 8.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-14",
@@ -29864,8 +29862,8 @@
      "site": "at",
      "score": "61-62",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 4.5,
+     "ats": "W"
     },
     {
      "date": "2026-11-12",
@@ -29960,8 +29958,8 @@
      "site": "vs",
      "score": "67-82",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": 3.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-19",
@@ -29969,8 +29967,8 @@
      "site": "vs",
      "score": "72-78",
      "result": "L",
-     "line": null,
-     "ats": null
+     "line": -1.5,
+     "ats": "L"
     },
     {
      "date": "2026-11-16",

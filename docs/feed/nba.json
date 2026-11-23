@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-22T21:42:25+00:00",
+ "generatedAt": "2026-11-23T02:42:46+00:00",
  "season": 2027,
  "injuryReport": true,
  "playerGrades": {
@@ -612,48 +612,6 @@
        "rebounds": 9.0,
        "assists": 7.5,
        "threes": 0.9
-      },
-      "props": {
-       "assists": {
-        "line": 2.5,
-        "over": -165,
-        "under": 125,
-        "books": 4,
-        "best_over": -166,
-        "best_over_book": "fanduel",
-        "best_under": 124,
-        "best_under_book": "fanduel"
-       },
-       "points": {
-        "line": 20.5,
-        "over": -112,
-        "under": -117,
-        "books": 5,
-        "best_over": -108,
-        "best_over_book": "fanduel",
-        "best_under": -113,
-        "best_under_book": "williamhill_us"
-       },
-       "rebounds": {
-        "line": 10.5,
-        "over": -114,
-        "under": -117,
-        "books": 5,
-        "best_over": -106,
-        "best_over_book": "fanduel",
-        "best_under": -115,
-        "best_under_book": "draftkings"
-       },
-       "threes": {
-        "line": 0.5,
-        "over": -105,
-        "under": -126,
-        "books": 2,
-        "best_over": 100,
-        "best_over_book": "fanduel",
-        "best_under": -120,
-        "best_under_book": "draftkings"
-       }
       }
      },
      {
@@ -672,48 +630,6 @@
        "rebounds": 8.1,
        "assists": 2.4,
        "threes": 1.9
-      },
-      "props": {
-       "points": {
-        "line": 9.5,
-        "over": -109,
-        "under": -122,
-        "books": 5,
-        "best_over": -104,
-        "best_over_book": "fanduel",
-        "best_under": -120,
-        "best_under_book": "draftkings"
-       },
-       "threes": {
-        "line": 0.5,
-        "over": -167,
-        "under": 127,
-        "books": 3,
-        "best_over": -160,
-        "best_over_book": "draftkings",
-        "best_under": 130,
-        "best_under_book": "fanduel"
-       },
-       "assists": {
-        "line": 1.5,
-        "over": 145,
-        "under": -200,
-        "books": 1,
-        "best_over": 145,
-        "best_over_book": "betmgm",
-        "best_under": -200,
-        "best_under_book": "betmgm"
-       },
-       "rebounds": {
-        "line": 9.5,
-        "over": -130,
-        "under": -105,
-        "books": 1,
-        "best_over": -130,
-        "best_over_book": "betmgm",
-        "best_under": -105,
-        "best_under_book": "betmgm"
-       }
       }
      },
      {
@@ -732,38 +648,6 @@
        "rebounds": 7.6,
        "assists": 5.8,
        "threes": 0.2
-      },
-      "props": {
-       "assists": {
-        "line": 7.5,
-        "over": -152,
-        "under": 115,
-        "books": 5,
-        "best_over": -144,
-        "best_over_book": "fanduel",
-        "best_under": 125,
-        "best_under_book": "betmgm"
-       },
-       "points": {
-        "line": 7.5,
-        "over": -125,
-        "under": -105,
-        "books": 5,
-        "best_over": -120,
-        "best_over_book": "williamhill_us",
-        "best_under": 105,
-        "best_under_book": "betmgm"
-       },
-       "rebounds": {
-        "line": 13.5,
-        "over": -123,
-        "under": -107,
-        "books": 5,
-        "best_over": -122,
-        "best_over_book": "williamhill_us",
-        "best_under": 100,
-        "best_under_book": "fanduel"
-       }
       }
      },
      {
@@ -782,48 +666,6 @@
        "rebounds": 3.6,
        "assists": 3.0,
        "threes": 3.4
-      },
-      "props": {
-       "assists": {
-        "line": 2.5,
-        "over": 168,
-        "under": -230,
-        "books": 4,
-        "best_over": 168,
-        "best_over_book": "fanduel",
-        "best_under": -195,
-        "best_under_book": "draftkings"
-       },
-       "points": {
-        "line": 17.5,
-        "over": -114,
-        "under": -114,
-        "books": 5,
-        "best_over": -114,
-        "best_over_book": "fanduel",
-        "best_under": -104,
-        "best_under_book": "williamhill_us"
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": 104,
-        "under": -135,
-        "books": 5,
-        "best_over": 105,
-        "best_over_book": "draftkings",
-        "best_under": -132,
-        "best_under_book": "williamhill_us"
-       },
-       "threes": {
-        "line": 2.5,
-        "over": -104,
-        "under": -129,
-        "books": 4,
-        "best_over": 108,
-        "best_over_book": "fanduel",
-        "best_under": -110,
-        "best_under_book": "draftkings"
-       }
       }
      },
      {
@@ -842,38 +684,6 @@
        "rebounds": 3.5,
        "assists": 2.4,
        "threes": 2.9
-      },
-      "props": {
-       "points": {
-        "line": 7.5,
-        "over": -109,
-        "under": -121,
-        "books": 3,
-        "best_over": -105,
-        "best_over_book": "draftkings",
-        "best_under": -117,
-        "best_under_book": "williamhill_us"
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": 105,
-        "under": -129,
-        "books": 2,
-        "best_over": 130,
-        "best_over_book": "draftkings",
-        "best_under": -105,
-        "best_under_book": "betmgm"
-       },
-       "threes": {
-        "line": 0.5,
-        "over": -154,
-        "under": 120,
-        "books": 2,
-        "best_over": -154,
-        "best_over_book": "draftkings",
-        "best_under": 120,
-        "best_under_book": "draftkings"
-       }
       }
      },
      {
@@ -892,38 +702,6 @@
        "rebounds": 3.0,
        "assists": 1.4,
        "threes": 1.6
-      },
-      "props": {
-       "points": {
-        "line": 9.5,
-        "over": -125,
-        "under": -106,
-        "books": 2,
-        "best_over": -115,
-        "best_over_book": "draftkings",
-        "best_under": 102,
-        "best_under_book": "fanduel"
-       },
-       "rebounds": {
-        "line": 5.5,
-        "over": -105,
-        "under": -127,
-        "books": 3,
-        "best_over": 110,
-        "best_over_book": "draftkings",
-        "best_under": -112,
-        "best_under_book": "fanduel"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -137,
-        "under": 105,
-        "books": 2,
-        "best_over": -120,
-        "best_over_book": "draftkings",
-        "best_under": 120,
-        "best_under_book": "fanduel"
-       }
       }
      },
      {
@@ -942,48 +720,6 @@
        "rebounds": 2.5,
        "assists": 4.1,
        "threes": 0.8
-      },
-      "props": {
-       "assists": {
-        "line": 4.5,
-        "over": 146,
-        "under": -200,
-        "books": 4,
-        "best_over": 148,
-        "best_over_book": "fanduel",
-        "best_under": -200,
-        "best_under_book": "fanduel"
-       },
-       "points": {
-        "line": 13.5,
-        "over": -110,
-        "under": -120,
-        "books": 4,
-        "best_over": 100,
-        "best_over_book": "draftkings",
-        "best_under": -118,
-        "best_under_book": "fanduel"
-       },
-       "rebounds": {
-        "line": 5.5,
-        "over": 105,
-        "under": -135,
-        "books": 4,
-        "best_over": 130,
-        "best_over_book": "draftkings",
-        "best_under": -125,
-        "best_under_book": "fanduel"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 170,
-        "under": -225,
-        "books": 3,
-        "best_over": 195,
-        "best_over_book": "draftkings",
-        "best_under": -198,
-        "best_under_book": "fanduel"
-       }
       }
      },
      {
@@ -1058,48 +794,6 @@
        "rebounds": 5.1,
        "assists": 7.9,
        "threes": 2.0
-      },
-      "props": {
-       "assists": {
-        "line": 12.5,
-        "over": -119,
-        "under": -111,
-        "books": 4,
-        "best_over": -118,
-        "best_over_book": "fanduel",
-        "best_under": -108,
-        "best_under_book": "williamhill_us"
-       },
-       "points": {
-        "line": 11.5,
-        "over": -126,
-        "under": -105,
-        "books": 4,
-        "best_over": -125,
-        "best_over_book": "fanduel",
-        "best_under": -105,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": 116,
-        "under": -152,
-        "books": 4,
-        "best_over": 120,
-        "best_over_book": "draftkings",
-        "best_under": -150,
-        "best_under_book": "williamhill_us"
-       },
-       "threes": {
-        "line": 0.5,
-        "over": -151,
-        "under": 116,
-        "books": 2,
-        "best_over": -148,
-        "best_over_book": "fanduel",
-        "best_under": 120,
-        "best_under_book": "draftkings"
-       }
       }
      },
      {
@@ -1118,48 +812,6 @@
        "rebounds": 3.7,
        "assists": 4.5,
        "threes": 2.2
-      },
-      "props": {
-       "points": {
-        "line": 13.5,
-        "over": 101,
-        "under": -132,
-        "books": 5,
-        "best_over": 105,
-        "best_over_book": "draftkings",
-        "best_under": -130,
-        "best_under_book": "williamhill_us"
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": -185,
-        "under": 140,
-        "books": 5,
-        "best_over": -110,
-        "best_over_book": "betmgm",
-        "best_under": 144,
-        "best_under_book": "williamhill_us"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -230,
-        "under": 172,
-        "books": 3,
-        "best_over": -220,
-        "best_over_book": "draftkings",
-        "best_under": 174,
-        "best_under_book": "fanduel"
-       },
-       "assists": {
-        "line": 5.5,
-        "over": 125,
-        "under": -165,
-        "books": 1,
-        "best_over": 125,
-        "best_over_book": "betmgm",
-        "best_under": -165,
-        "best_under_book": "betmgm"
-       }
       }
      },
      {
@@ -1178,48 +830,6 @@
        "rebounds": 2.7,
        "assists": 2.7,
        "threes": 1.6
-      },
-      "props": {
-       "assists": {
-        "line": 1.5,
-        "over": 115,
-        "under": -152,
-        "books": 2,
-        "best_over": 120,
-        "best_over_book": "fanduel",
-        "best_under": -160,
-        "best_under_book": "fanduel"
-       },
-       "points": {
-        "line": 6.5,
-        "over": -103,
-        "under": -128,
-        "books": 5,
-        "best_over": 105,
-        "best_over_book": "draftkings",
-        "best_under": -128,
-        "best_under_book": "fanduel"
-       },
-       "threes": {
-        "line": 0.5,
-        "over": -153,
-        "under": 118,
-        "books": 3,
-        "best_over": -145,
-        "best_over_book": "draftkings",
-        "best_under": 122,
-        "best_under_book": "fanduel"
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -102,
-        "under": -117,
-        "books": 2,
-        "best_over": 125,
-        "best_over_book": "betmgm",
-        "best_under": 110,
-        "best_under_book": "draftkings"
-       }
       }
      },
      {
@@ -1227,7 +837,7 @@
       "name": "Ausar Thompson",
       "team": "DET",
       "opp": "ATL",
-      "minutes": 29.3,
+      "minutes": 29.2,
       "points": 11.3,
       "rebounds": 7.6,
       "assists": 4.8,
@@ -1238,38 +848,6 @@
        "rebounds": 8.4,
        "assists": 5.4,
        "threes": 0.0
-      },
-      "props": {
-       "assists": {
-        "line": 4.5,
-        "over": 138,
-        "under": -180,
-        "books": 5,
-        "best_over": 140,
-        "best_over_book": "draftkings",
-        "best_under": -105,
-        "best_under_book": "betmgm"
-       },
-       "points": {
-        "line": 13.5,
-        "over": -130,
-        "under": -102,
-        "books": 5,
-        "best_over": -125,
-        "best_over_book": "fanduel",
-        "best_under": 114,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 10.5,
-        "over": -143,
-        "under": 109,
-        "books": 4,
-        "best_over": -130,
-        "best_over_book": "draftkings",
-        "best_under": 119,
-        "best_under_book": "williamhill_us"
-       }
       }
      },
      {
@@ -1277,7 +855,7 @@
       "name": "Paul Reed",
       "team": "DET",
       "opp": "ATL",
-      "minutes": 25.7,
+      "minutes": 25.6,
       "points": 12.9,
       "rebounds": 7.9,
       "assists": 2.4,
@@ -1306,38 +884,6 @@
        "rebounds": 5.7,
        "assists": 0.7,
        "threes": 1.3
-      },
-      "props": {
-       "points": {
-        "line": 12.5,
-        "over": -112,
-        "under": -118,
-        "books": 5,
-        "best_over": -105,
-        "best_over_book": "draftkings",
-        "best_under": -117,
-        "best_under_book": "williamhill_us"
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": 128,
-        "under": -168,
-        "books": 4,
-        "best_over": 130,
-        "best_over_book": "fanduel",
-        "best_under": -166,
-        "best_under_book": "draftkings"
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 145,
-        "under": -191,
-        "books": 2,
-        "best_over": 150,
-        "best_over_book": "draftkings",
-        "best_under": -188,
-        "best_under_book": "fanduel"
-       }
       }
      },
      {
@@ -1374,28 +920,6 @@
        "rebounds": 1.6,
        "assists": 1.0,
        "threes": 1.4
-      },
-      "props": {
-       "points": {
-        "line": 19.5,
-        "over": -114,
-        "under": -116,
-        "books": 4,
-        "best_over": -105,
-        "best_over_book": "draftkings",
-        "best_under": -108,
-        "best_under_book": "fanduel"
-       },
-       "threes": {
-        "line": 3.5,
-        "over": 160,
-        "under": -213,
-        "books": 3,
-        "best_over": 162,
-        "best_over_book": "fanduel",
-        "best_under": -210,
-        "best_under_book": "draftkings"
-       }
       }
      },
      {
@@ -1443,8 +967,8 @@
    "tip": "2026-11-22T18:00:00-05:00",
    "away": "OKC",
    "home": "MIA",
-   "margin": -2.8,
-   "total": 237.0,
+   "margin": -2.5,
+   "total": 231.7,
    "ratings_margin": -3.5,
    "pace": 105.4,
    "market_ratings_margin": null,
@@ -1452,9 +976,9 @@
    "mkt_total": 231.5,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
-   "projection": 1.8,
+   "projection": 1.9,
    "projection_total": 231.5,
-   "win_prob": 0.401,
+   "win_prob": 0.412,
    "rest": {
     "away": 1,
     "home": 3
@@ -1482,13 +1006,28 @@
       "kind": "schedule"
      },
      {
+      "label": "MIA without Giannis Antetokounmpo",
+      "pts": -3.64,
+      "kind": "missing"
+     },
+     {
       "label": "OKC without Alex Caruso",
       "pts": 0.26,
       "kind": "missing"
      },
      {
-      "label": "Lineup strength from player impact ratings (MIA +8.4, OKC +9.7 per 48)",
-      "pts": -0.4,
+      "label": "OKC without Shai Gilgeous-Alexander",
+      "pts": 3.77,
+      "kind": "missing"
+     },
+     {
+      "label": "OKC without Aday Mara",
+      "pts": 0.57,
+      "kind": "missing"
+     },
+     {
+      "label": "Lineup strength from player impact ratings (MIA +6.5, OKC +9.1 per 48)",
+      "pts": -0.8,
       "kind": "players"
      }
     ],
@@ -1505,26 +1044,35 @@
      },
      {
       "label": "Players out, both teams",
-      "pts": -0.22,
+      "pts": -5.48,
       "kind": "missing"
      }
     ]
    },
    "imp": {
-    "home": 8.378,
-    "away": 9.667
+    "home": 6.497,
+    "away": 9.081
    },
    "missing": {
-    "away": 1.2,
-    "home": 0.0,
-    "away_names": [],
-    "home_names": []
+    "away": 16.7,
+    "home": 13.0,
+    "away_names": [
+     "Shai Gilgeous-Alexander",
+     "Aday Mara"
+    ],
+    "home_names": [
+     "Giannis Antetokounmpo"
+    ]
    },
    "players": {
     "out": {
-     "home": [],
+     "home": [
+      "Giannis Antetokounmpo"
+     ],
      "away": [
+      "Shai Gilgeous-Alexander",
       "Jaylin Williams",
+      "Aday Mara",
       "Alex Caruso"
      ]
     },
@@ -1534,119 +1082,17 @@
       "name": "Davion Mitchell",
       "team": "MIA",
       "opp": "OKC",
-      "minutes": 33.7,
-      "points": 14.2,
-      "rebounds": 2.8,
-      "assists": 8.2,
-      "threes": 2.2,
+      "minutes": 35.7,
+      "points": 15.0,
+      "rebounds": 2.9,
+      "assists": 8.6,
+      "threes": 2.3,
       "avg": {
        "minutes": 35.5,
        "points": 17.2,
        "rebounds": 2.4,
        "assists": 9.0,
        "threes": 2.5
-      },
-      "props": {
-       "assists": {
-        "line": 8.5,
-        "over": -102,
-        "under": -128,
-        "books": 7,
-        "best_over": 108,
-        "best_over_book": "fanduel",
-        "best_under": -118,
-        "best_under_book": "betrivers"
-       },
-       "points": {
-        "line": 14.5,
-        "over": -110,
-        "under": -120,
-        "books": 7,
-        "best_over": -104,
-        "best_over_book": "betrivers",
-        "best_under": -115,
-        "best_under_book": "fanduel"
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": -151,
-        "under": 114,
-        "books": 5,
-        "best_over": -135,
-        "best_over_book": "betmgm",
-        "best_under": 120,
-        "best_under_book": "fanduel"
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 126,
-        "under": -165,
-        "books": 6,
-        "best_over": 128,
-        "best_over_book": "fanduel",
-        "best_under": -164,
-        "best_under_book": "williamhill_us"
-       }
-      }
-     },
-     {
-      "id": 3032977,
-      "name": "Giannis Antetokounmpo",
-      "team": "MIA",
-      "opp": "OKC",
-      "minutes": 30.2,
-      "points": 27.3,
-      "rebounds": 10.9,
-      "assists": 5.4,
-      "threes": 0.6,
-      "avg": {
-       "minutes": 32.2,
-       "points": 28.2,
-       "rebounds": 12.6,
-       "assists": 5.5,
-       "threes": 0.5
-      },
-      "props": {
-       "assists": {
-        "line": 5.5,
-        "over": -153,
-        "under": 117,
-        "books": 6,
-        "best_over": -146,
-        "best_over_book": "draftkings",
-        "best_under": 120,
-        "best_under_book": "fanduel"
-       },
-       "points": {
-        "line": 26.5,
-        "over": -120,
-        "under": -110,
-        "books": 6,
-        "best_over": -111,
-        "best_over_book": "draftkings",
-        "best_under": -102,
-        "best_under_book": "fanduel"
-       },
-       "rebounds": {
-        "line": 12.5,
-        "over": -105,
-        "under": -125,
-        "books": 6,
-        "best_over": 102,
-        "best_over_book": "betrivers",
-        "best_under": -120,
-        "best_under_book": "williamhill_us"
-       },
-       "threes": {
-        "line": 0.5,
-        "over": -113,
-        "under": -118,
-        "books": 4,
-        "best_over": -105,
-        "best_over_book": "betmgm",
-        "best_under": -115,
-        "best_under_book": "draftkings"
-       }
       }
      },
      {
@@ -1654,59 +1100,17 @@
       "name": "Bam Adebayo",
       "team": "MIA",
       "opp": "OKC",
-      "minutes": 29.4,
-      "points": 17.6,
-      "rebounds": 7.8,
-      "assists": 3.0,
-      "threes": 1.2,
+      "minutes": 31.1,
+      "points": 18.6,
+      "rebounds": 8.2,
+      "assists": 3.1,
+      "threes": 1.3,
       "avg": {
        "minutes": 32.3,
        "points": 18.9,
        "rebounds": 7.7,
        "assists": 3.1,
        "threes": 0.8
-      },
-      "props": {
-       "assists": {
-        "line": 3.5,
-        "over": 100,
-        "under": -134,
-        "books": 6,
-        "best_over": 108,
-        "best_over_book": "fanduel",
-        "best_under": -131,
-        "best_under_book": "draftkings"
-       },
-       "points": {
-        "line": 19.5,
-        "over": -113,
-        "under": -118,
-        "books": 6,
-        "best_over": -105,
-        "best_over_book": "betmgm",
-        "best_under": -106,
-        "best_under_book": "fanduel"
-       },
-       "rebounds": {
-        "line": 8.5,
-        "over": -130,
-        "under": 102,
-        "books": 7,
-        "best_over": -125,
-        "best_over_book": "fanatics",
-        "best_under": 108,
-        "best_under_book": "williamhill_us"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 152,
-        "under": -202,
-        "books": 6,
-        "best_over": 160,
-        "best_over_book": "williamhill_us",
-        "best_under": -165,
-        "best_under_book": "betmgm"
-       }
       }
      },
      {
@@ -1714,59 +1118,17 @@
       "name": "Andrew Wiggins",
       "team": "MIA",
       "opp": "OKC",
-      "minutes": 25.8,
-      "points": 11.0,
-      "rebounds": 3.4,
-      "assists": 1.9,
-      "threes": 1.6,
+      "minutes": 27.3,
+      "points": 11.6,
+      "rebounds": 3.6,
+      "assists": 2.0,
+      "threes": 1.7,
       "avg": {
        "minutes": 26.5,
        "points": 9.5,
        "rebounds": 2.9,
        "assists": 1.6,
        "threes": 1.3
-      },
-      "props": {
-       "assists": {
-        "line": 1.5,
-        "over": 126,
-        "under": -162,
-        "books": 1,
-        "best_over": 126,
-        "best_over_book": "fanduel",
-        "best_under": -162,
-        "best_under_book": "fanduel"
-       },
-       "points": {
-        "line": 9.5,
-        "over": -105,
-        "under": -127,
-        "books": 6,
-        "best_over": 104,
-        "best_over_book": "fanduel",
-        "best_under": -115,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": 120,
-        "under": -159,
-        "books": 6,
-        "best_over": 130,
-        "best_over_book": "fanduel",
-        "best_under": -148,
-        "best_under_book": "draftkings"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 108,
-        "under": -144,
-        "books": 6,
-        "best_over": 123,
-        "best_over_book": "betrivers",
-        "best_under": -140,
-        "best_under_book": "draftkings"
-       }
       }
      },
      {
@@ -1774,59 +1136,17 @@
       "name": "Pelle Larsson",
       "team": "MIA",
       "opp": "OKC",
-      "minutes": 24.3,
-      "points": 9.9,
-      "rebounds": 3.1,
-      "assists": 3.1,
-      "threes": 1.1,
+      "minutes": 25.7,
+      "points": 10.4,
+      "rebounds": 3.3,
+      "assists": 3.2,
+      "threes": 1.2,
       "avg": {
        "minutes": 28.3,
        "points": 10.8,
        "rebounds": 3.3,
        "assists": 3.4,
        "threes": 1.3
-      },
-      "props": {
-       "assists": {
-        "line": 3.5,
-        "over": 113,
-        "under": -147,
-        "books": 6,
-        "best_over": 114,
-        "best_over_book": "fanduel",
-        "best_under": -127,
-        "best_under_book": "betrivers"
-       },
-       "points": {
-        "line": 10.5,
-        "over": -111,
-        "under": -120,
-        "books": 6,
-        "best_over": -103,
-        "best_over_book": "draftkings",
-        "best_under": -113,
-        "best_under_book": "fanduel"
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -111,
-        "under": -121,
-        "books": 6,
-        "best_over": -102,
-        "best_over_book": "fanduel",
-        "best_under": -111,
-        "best_under_book": "draftkings"
-       },
-       "threes": {
-        "line": 0.5,
-        "over": -225,
-        "under": 160,
-        "books": 5,
-        "best_over": -212,
-        "best_over_book": "draftkings",
-        "best_under": 176,
-        "best_under_book": "fanduel"
-       }
       }
      },
      {
@@ -1834,59 +1154,17 @@
       "name": "Klay Thompson",
       "team": "MIA",
       "opp": "OKC",
-      "minutes": 23.2,
-      "points": 13.4,
-      "rebounds": 1.8,
-      "assists": 1.8,
-      "threes": 3.7,
+      "minutes": 24.5,
+      "points": 14.2,
+      "rebounds": 1.9,
+      "assists": 1.9,
+      "threes": 3.9,
       "avg": {
        "minutes": 24.1,
        "points": 15.3,
        "rebounds": 1.4,
        "assists": 2.0,
        "threes": 4.1
-      },
-      "props": {
-       "assists": {
-        "line": 1.5,
-        "over": -150,
-        "under": 117,
-        "books": 5,
-        "best_over": -137,
-        "best_over_book": "betrivers",
-        "best_under": 125,
-        "best_under_book": "betmgm"
-       },
-       "points": {
-        "line": 14.5,
-        "over": -113,
-        "under": -115,
-        "books": 6,
-        "best_over": -110,
-        "best_over_book": "betrivers",
-        "best_under": -110,
-        "best_under_book": "betmgm"
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": 140,
-        "under": -184,
-        "books": 3,
-        "best_over": 142,
-        "best_over_book": "fanduel",
-        "best_under": -168,
-        "best_under_book": "draftkings"
-       },
-       "threes": {
-        "line": 3.5,
-        "over": -130,
-        "under": 100,
-        "books": 6,
-        "best_over": -128,
-        "best_over_book": "fanduel",
-        "best_under": 105,
-        "best_under_book": "betmgm"
-       }
       }
      },
      {
@@ -1894,11 +1172,11 @@
       "name": "Ryan Conwell",
       "team": "MIA",
       "opp": "OKC",
-      "minutes": 21.6,
-      "points": 8.9,
-      "rebounds": 2.6,
-      "assists": 1.8,
-      "threes": 1.8,
+      "minutes": 23.0,
+      "points": 9.5,
+      "rebounds": 2.8,
+      "assists": 1.9,
+      "threes": 1.9,
       "avg": {
        "minutes": 17.5,
        "points": 7.2,
@@ -1912,59 +1190,35 @@
       "name": "Bobby Portis",
       "team": "MIA",
       "opp": "OKC",
-      "minutes": 18.4,
-      "points": 8.6,
-      "rebounds": 4.8,
-      "assists": 1.3,
-      "threes": 1.5,
+      "minutes": 19.5,
+      "points": 9.1,
+      "rebounds": 5.1,
+      "assists": 1.4,
+      "threes": 1.6,
       "avg": {
        "minutes": 19.8,
        "points": 7.5,
        "rebounds": 5.3,
        "assists": 1.5,
        "threes": 1.3
-      },
-      "props": {
-       "assists": {
-        "line": 1.5,
-        "over": 132,
-        "under": -170,
-        "books": 1,
-        "best_over": 132,
-        "best_over_book": "fanduel",
-        "best_under": -170,
-        "best_under_book": "fanduel"
-       },
-       "points": {
-        "line": 8.5,
-        "over": -105,
-        "under": -125,
-        "books": 5,
-        "best_over": 104,
-        "best_over_book": "fanduel",
-        "best_under": -113,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": -125,
-        "under": -107,
-        "books": 4,
-        "best_over": -113,
-        "best_over_book": "fanduel",
-        "best_under": -105,
-        "best_under_book": "draftkings"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 133,
-        "under": -176,
-        "books": 5,
-        "best_over": 144,
-        "best_over_book": "fanduel",
-        "best_under": -150,
-        "best_under_book": "betmgm"
-       }
+      }
+     },
+     {
+      "id": 4431772,
+      "name": "Myron Gardner",
+      "team": "MIA",
+      "opp": "OKC",
+      "minutes": 13.6,
+      "points": 4.7,
+      "rebounds": 3.3,
+      "assists": 1.4,
+      "threes": 0.9,
+      "avg": {
+       "minutes": 9.9,
+       "points": 3.0,
+       "rebounds": 2.3,
+       "assists": 1.1,
+       "threes": 0.6
       }
      },
      {
@@ -1972,10 +1226,10 @@
       "name": "Tim Hardaway Jr.",
       "team": "MIA",
       "opp": "OKC",
-      "minutes": 12.7,
-      "points": 5.2,
-      "rebounds": 1.2,
-      "assists": 0.6,
+      "minutes": 13.4,
+      "points": 5.5,
+      "rebounds": 1.3,
+      "assists": 0.7,
       "threes": 1.2,
       "avg": {
        "minutes": 15.2,
@@ -1986,33 +1240,15 @@
       }
      },
      {
-      "id": 4431772,
-      "name": "Myron Gardner",
-      "team": "MIA",
-      "opp": "OKC",
-      "minutes": 12.6,
-      "points": 4.4,
-      "rebounds": 3.1,
-      "assists": 1.3,
-      "threes": 0.8,
-      "avg": {
-       "minutes": 9.9,
-       "points": 3.0,
-       "rebounds": 2.3,
-       "assists": 1.1,
-       "threes": 0.6
-      }
-     },
-     {
       "id": 3899664,
       "name": "Simone Fontecchio",
       "team": "MIA",
       "opp": "OKC",
-      "minutes": 12.2,
-      "points": 5.4,
-      "rebounds": 2.2,
-      "assists": 0.9,
-      "threes": 1.2,
+      "minutes": 13.0,
+      "points": 5.7,
+      "rebounds": 2.3,
+      "assists": 1.0,
+      "threes": 1.3,
       "avg": {
        "minutes": 8.7,
        "points": 3.2,
@@ -2026,9 +1262,9 @@
       "name": "Nikola Jovic",
       "team": "MIA",
       "opp": "OKC",
-      "minutes": 12.2,
-      "points": 4.1,
-      "rebounds": 2.2,
+      "minutes": 12.9,
+      "points": 4.3,
+      "rebounds": 2.3,
       "assists": 1.5,
       "threes": 0.6,
       "avg": {
@@ -2042,107 +1278,21 @@
     ],
     "away": [
      {
-      "id": 4278073,
-      "name": "Shai Gilgeous-Alexander",
-      "team": "OKC",
-      "opp": "MIA",
-      "minutes": 34.0,
-      "points": 33.4,
-      "rebounds": 4.4,
-      "assists": 5.8,
-      "threes": 2.3,
-      "avg": {
-       "minutes": 33.5,
-       "points": 31.7,
-       "rebounds": 4.1,
-       "assists": 4.5,
-       "threes": 2.4
-      },
-      "props": {
-       "assists": {
-        "line": 6.5,
-        "over": 170,
-        "under": -230,
-        "books": 1
-       },
-       "points": {
-        "line": 37.5,
-        "over": 210,
-        "under": -290,
-        "books": 1
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": 130,
-        "under": -170,
-        "books": 1
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 175,
-        "under": -240,
-        "books": 1
-       }
-      }
-     },
-     {
       "id": 4900671,
       "name": "Ajay Mitchell",
       "team": "OKC",
       "opp": "MIA",
-      "minutes": 29.1,
-      "points": 17.3,
-      "rebounds": 3.9,
-      "assists": 4.2,
-      "threes": 1.1,
+      "minutes": 33.9,
+      "points": 20.0,
+      "rebounds": 4.5,
+      "assists": 4.8,
+      "threes": 1.3,
       "avg": {
        "minutes": 28.0,
        "points": 17.0,
        "rebounds": 3.6,
        "assists": 3.6,
        "threes": 0.8
-      },
-      "props": {
-       "assists": {
-        "line": 4.5,
-        "over": -156,
-        "under": 119,
-        "books": 3,
-        "best_over": -156,
-        "best_over_book": "fanduel",
-        "best_under": 122,
-        "best_under_book": "fanduel"
-       },
-       "points": {
-        "line": 23.5,
-        "over": -111,
-        "under": -118,
-        "books": 4,
-        "best_over": -108,
-        "best_over_book": "draftkings",
-        "best_under": -115,
-        "best_under_book": "fanduel"
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": 104,
-        "under": -134,
-        "books": 3,
-        "best_over": 104,
-        "best_over_book": "fanduel",
-        "best_under": -132,
-        "best_under_book": "fanduel"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 142,
-        "under": -184,
-        "books": 5,
-        "best_over": 155,
-        "best_over_book": "fanatics",
-        "best_under": -170,
-        "best_under_book": "williamhill_us"
-       }
       }
      },
      {
@@ -2150,59 +1300,17 @@
       "name": "Jared McCain",
       "team": "OKC",
       "opp": "MIA",
-      "minutes": 28.9,
-      "points": 15.0,
-      "rebounds": 3.6,
-      "assists": 2.2,
-      "threes": 2.6,
+      "minutes": 33.8,
+      "points": 17.5,
+      "rebounds": 4.2,
+      "assists": 2.6,
+      "threes": 3.1,
       "avg": {
        "minutes": 27.4,
        "points": 13.9,
        "rebounds": 3.4,
        "assists": 1.7,
        "threes": 2.4
-      },
-      "props": {
-       "assists": {
-        "line": 2.5,
-        "over": 104,
-        "under": -132,
-        "books": 2,
-        "best_over": -113,
-        "best_over_book": "fanduel",
-        "best_under": -113,
-        "best_under_book": "fanduel"
-       },
-       "points": {
-        "line": 19.5,
-        "over": -122,
-        "under": -108,
-        "books": 4,
-        "best_over": -118,
-        "best_over_book": "fanduel",
-        "best_under": -103,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -129,
-        "under": -104,
-        "books": 3,
-        "best_over": -129,
-        "best_over_book": "williamhill_us",
-        "best_under": 104,
-        "best_under_book": "fanduel"
-       },
-       "threes": {
-        "line": 3.5,
-        "over": 110,
-        "under": -143,
-        "books": 4,
-        "best_over": 112,
-        "best_over_book": "fanduel",
-        "best_under": -142,
-        "best_under_book": "fanduel"
-       }
       }
      },
      {
@@ -2210,10 +1318,10 @@
       "name": "Isaiah Hartenstein",
       "team": "OKC",
       "opp": "MIA",
-      "minutes": 26.0,
-      "points": 9.7,
-      "rebounds": 10.5,
-      "assists": 4.2,
+      "minutes": 30.2,
+      "points": 11.3,
+      "rebounds": 12.0,
+      "assists": 4.8,
       "threes": 0.1,
       "avg": {
        "minutes": 25.2,
@@ -2221,88 +1329,6 @@
        "rebounds": 10.8,
        "assists": 3.9,
        "threes": 0.0
-      },
-      "props": {
-       "assists": {
-        "line": 4.5,
-        "over": -125,
-        "under": -104,
-        "books": 3,
-        "best_over": -125,
-        "best_over_book": "fanduel",
-        "best_under": -102,
-        "best_under_book": "fanduel"
-       },
-       "points": {
-        "line": 9.5,
-        "over": -132,
-        "under": 102,
-        "books": 4,
-        "best_over": -130,
-        "best_over_book": "fanduel",
-        "best_under": 103,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 10.5,
-        "over": -129,
-        "under": -102,
-        "books": 3,
-        "best_over": -127,
-        "best_over_book": "williamhill_us",
-        "best_under": 104,
-        "best_under_book": "fanduel"
-       }
-      }
-     },
-     {
-      "id": 5174983,
-      "name": "Aday Mara",
-      "team": "OKC",
-      "opp": "MIA",
-      "minutes": 25.2,
-      "points": 11.8,
-      "rebounds": 7.4,
-      "assists": 2.4,
-      "threes": 0.3,
-      "avg": {
-       "minutes": 22.4,
-       "points": 10.0,
-       "rebounds": 7.1,
-       "assists": 1.9,
-       "threes": 0.1
-      },
-      "props": {
-       "assists": {
-        "line": 2.5,
-        "over": 115,
-        "under": -149,
-        "books": 2,
-        "best_over": 110,
-        "best_over_book": "fanduel",
-        "best_under": -140,
-        "best_under_book": "fanduel"
-       },
-       "points": {
-        "line": 12.5,
-        "over": -113,
-        "under": -113,
-        "books": 4,
-        "best_over": -105,
-        "best_over_book": "draftkings",
-        "best_under": -112,
-        "best_under_book": "williamhill_us"
-       },
-       "rebounds": {
-        "line": 9.5,
-        "over": 112,
-        "under": -142,
-        "books": 3,
-        "best_over": 112,
-        "best_over_book": "fanduel",
-        "best_under": -142,
-        "best_under_book": "fanduel"
-       }
       }
      },
      {
@@ -2310,45 +1336,17 @@
       "name": "Kenrich Williams",
       "team": "OKC",
       "opp": "MIA",
-      "minutes": 23.8,
-      "points": 9.6,
-      "rebounds": 4.6,
-      "assists": 2.2,
-      "threes": 1.5,
+      "minutes": 27.8,
+      "points": 11.3,
+      "rebounds": 5.4,
+      "assists": 2.5,
+      "threes": 1.8,
       "avg": {
        "minutes": 20.9,
        "points": 7.2,
        "rebounds": 3.6,
        "assists": 1.6,
        "threes": 1.2
-      },
-      "props": {
-       "points": {
-        "line": 10.5,
-        "over": -123,
-        "under": -106,
-        "books": 4,
-        "best_over": -117,
-        "best_over_book": "draftkings",
-        "best_under": 100,
-        "best_under_book": "fanduel"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -120,
-        "under": -110,
-        "books": 2,
-        "best_over": -118,
-        "best_over_book": "williamhill_us",
-        "best_under": -108,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 5.5,
-        "over": -114,
-        "under": -114,
-        "books": 1
-       }
       }
      },
      {
@@ -2356,51 +1354,17 @@
       "name": "Bennett Stirtz",
       "team": "OKC",
       "opp": "MIA",
-      "minutes": 20.5,
-      "points": 9.1,
-      "rebounds": 1.7,
-      "assists": 1.6,
-      "threes": 1.9,
+      "minutes": 23.7,
+      "points": 10.5,
+      "rebounds": 1.9,
+      "assists": 1.9,
+      "threes": 2.2,
       "avg": {
        "minutes": 18.4,
        "points": 7.8,
        "rebounds": 1.1,
        "assists": 1.2,
        "threes": 1.7
-      },
-      "props": {
-       "points": {
-        "line": 12.5,
-        "over": 106,
-        "under": -136,
-        "books": 3,
-        "best_over": 104,
-        "best_over_book": "fanduel",
-        "best_under": -132,
-        "best_under_book": "fanduel"
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 143,
-        "under": -193,
-        "books": 3,
-        "best_over": 143,
-        "best_over_book": "williamhill_us",
-        "best_under": -190,
-        "best_under_book": "draftkings"
-       },
-       "assists": {
-        "line": 2.5,
-        "over": -147,
-        "under": 113,
-        "books": 1
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": 103,
-        "under": -133,
-        "books": 1
-       }
       }
      },
      {
@@ -2408,11 +1372,11 @@
       "name": "Josh Dix",
       "team": "OKC",
       "opp": "MIA",
-      "minutes": 15.7,
-      "points": 3.9,
-      "rebounds": 1.9,
-      "assists": 1.1,
-      "threes": 0.5,
+      "minutes": 18.5,
+      "points": 4.8,
+      "rebounds": 2.3,
+      "assists": 1.3,
+      "threes": 0.6,
       "avg": {
        "minutes": 17.1,
        "points": 2.3,
@@ -2426,11 +1390,11 @@
       "name": "Micah Peavy",
       "team": "OKC",
       "opp": "MIA",
-      "minutes": 14.8,
-      "points": 4.0,
-      "rebounds": 2.3,
-      "assists": 0.8,
-      "threes": 0.5,
+      "minutes": 17.0,
+      "points": 4.6,
+      "rebounds": 2.7,
+      "assists": 0.9,
+      "threes": 0.6,
       "avg": {
        "minutes": 15.7,
        "points": 3.3,
@@ -2444,11 +1408,11 @@
       "name": "Nique Clifford",
       "team": "OKC",
       "opp": "MIA",
-      "minutes": 14.5,
-      "points": 4.7,
-      "rebounds": 2.1,
-      "assists": 1.3,
-      "threes": 0.6,
+      "minutes": 16.9,
+      "points": 5.6,
+      "rebounds": 2.4,
+      "assists": 1.5,
+      "threes": 0.7,
       "avg": {
        "minutes": 10.7,
        "points": 3.0,
@@ -2466,18 +1430,18 @@
    "tip": "2026-11-22T19:00:00-05:00",
    "away": "DAL",
    "home": "UTAH",
-   "margin": -3.8,
-   "total": 234.6,
+   "margin": -3.7,
+   "total": 233.9,
    "ratings_margin": -1.5,
    "pace": 104.9,
    "market_ratings_margin": null,
    "mkt_spread": -2.5,
    "mkt_total": 225.5,
-   "mkt_ml_home": 114.0,
-   "mkt_ml_away": -135.0,
-   "projection": -2.7,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
+   "projection": -2.6,
    "projection_total": 225.5,
-   "win_prob": 0.366,
+   "win_prob": 0.371,
    "rest": {
     "away": 0,
     "home": 1
@@ -2520,8 +1484,18 @@
       "kind": "missing"
      },
      {
-      "label": "Lineup strength from player impact ratings (UTAH -1.7, DAL +6.9 per 48)",
-      "pts": -2.66,
+      "label": "UTAH without Jaxson Hayes",
+      "pts": -0.7,
+      "kind": "missing"
+     },
+     {
+      "label": "DAL without P.J. Washington",
+      "pts": 0.45,
+      "kind": "missing"
+     },
+     {
+      "label": "Lineup strength from player impact ratings (UTAH -0.9, DAL +6.4 per 48)",
+      "pts": -2.25,
       "kind": "players"
      }
     ],
@@ -2543,29 +1517,35 @@
      },
      {
       "label": "Players out, both teams",
-      "pts": -1.09,
+      "pts": -1.85,
       "kind": "missing"
      }
     ]
    },
    "imp": {
-    "home": -1.71,
-    "away": 6.921
+    "home": -0.918,
+    "away": 6.375
    },
    "missing": {
-    "away": 0.0,
-    "home": 5.9,
-    "away_names": [],
+    "away": 1.6,
+    "home": 8.4,
+    "away_names": [
+     "P.J. Washington"
+    ],
     "home_names": [
-     "Lauri Markkanen"
+     "Lauri Markkanen",
+     "Jaxson Hayes"
     ]
    },
    "players": {
     "out": {
      "home": [
-      "Lauri Markkanen"
+      "Lauri Markkanen",
+      "Jaxson Hayes"
      ],
-     "away": []
+     "away": [
+      "P.J. Washington"
+     ]
     },
     "home": [
      {
@@ -2573,59 +1553,17 @@
       "name": "Keyonte George",
       "team": "UTAH",
       "opp": "DAL",
-      "minutes": 33.1,
-      "points": 22.3,
-      "rebounds": 3.9,
-      "assists": 7.0,
-      "threes": 2.2,
+      "minutes": 34.1,
+      "points": 23.0,
+      "rebounds": 4.0,
+      "assists": 7.1,
+      "threes": 2.3,
       "avg": {
        "minutes": 33.5,
        "points": 21.1,
        "rebounds": 3.9,
        "assists": 7.1,
        "threes": 2.1
-      },
-      "props": {
-       "assists": {
-        "line": 7.5,
-        "over": -103,
-        "under": -128,
-        "books": 7,
-        "best_over": 104,
-        "best_over_book": "fanduel",
-        "best_under": -125,
-        "best_under_book": "williamhill_us"
-       },
-       "points": {
-        "line": 23.5,
-        "over": -112,
-        "under": -115,
-        "books": 8,
-        "best_over": 100,
-        "best_over_book": "circasports",
-        "best_under": -110,
-        "best_under_book": "betmgm"
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -127,
-        "under": -104,
-        "books": 7,
-        "best_over": -120,
-        "best_over_book": "draftkings",
-        "best_under": 105,
-        "best_under_book": "betmgm"
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 105,
-        "under": -136,
-        "books": 7,
-        "best_over": 110,
-        "best_over_book": "betrivers",
-        "best_under": -129,
-        "best_under_book": "draftkings"
-       }
       }
      },
      {
@@ -2633,10 +1571,10 @@
       "name": "Darryn Peterson",
       "team": "UTAH",
       "opp": "DAL",
-      "minutes": 28.8,
-      "points": 15.8,
-      "rebounds": 4.3,
-      "assists": 3.8,
+      "minutes": 29.6,
+      "points": 16.2,
+      "rebounds": 4.4,
+      "assists": 3.9,
       "threes": 1.9,
       "avg": {
        "minutes": 30.6,
@@ -2644,48 +1582,6 @@
        "rebounds": 4.5,
        "assists": 3.9,
        "threes": 2.1
-      },
-      "props": {
-       "assists": {
-        "line": 4.5,
-        "over": 102,
-        "under": -132,
-        "books": 8,
-        "best_over": 114,
-        "best_over_book": "betrivers",
-        "best_under": -125,
-        "best_under_book": "circasports"
-       },
-       "points": {
-        "line": 18.5,
-        "over": -111,
-        "under": -116,
-        "books": 8,
-        "best_over": -105,
-        "best_over_book": "circasports",
-        "best_under": -111,
-        "best_under_book": "betmgm"
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": -127,
-        "under": -102,
-        "books": 7,
-        "best_over": -122,
-        "best_over_book": "draftkings",
-        "best_under": 105,
-        "best_under_book": "betrivers"
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 125,
-        "under": -160,
-        "books": 8,
-        "best_over": 128,
-        "best_over_book": "fanduel",
-        "best_under": -145,
-        "best_under_book": "betmgm"
-       }
       }
      },
      {
@@ -2693,109 +1589,17 @@
       "name": "Ace Bailey",
       "team": "UTAH",
       "opp": "DAL",
-      "minutes": 27.0,
-      "points": 12.7,
-      "rebounds": 5.1,
-      "assists": 2.0,
-      "threes": 1.5,
+      "minutes": 27.8,
+      "points": 13.0,
+      "rebounds": 5.2,
+      "assists": 2.1,
+      "threes": 1.6,
       "avg": {
        "minutes": 30.1,
        "points": 12.9,
        "rebounds": 6.3,
        "assists": 2.1,
        "threes": 1.5
-      },
-      "props": {
-       "points": {
-        "line": 14.5,
-        "over": -104,
-        "under": -126,
-        "books": 8,
-        "best_over": 100,
-        "best_over_book": "circasports",
-        "best_under": -118,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 5.5,
-        "over": 112,
-        "under": -145,
-        "books": 8,
-        "best_over": 116,
-        "best_over_book": "draftkings",
-        "best_under": -135,
-        "best_under_book": "betmgm"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -163,
-        "under": 123,
-        "books": 7,
-        "best_over": -156,
-        "best_over_book": "fanduel",
-        "best_under": 135,
-        "best_under_book": "betmgm"
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -185,
-        "under": 138,
-        "books": 6,
-        "best_over": -162,
-        "best_over_book": "betrivers",
-        "best_under": 145,
-        "best_under_book": "betmgm"
-       }
-      }
-     },
-     {
-      "id": 4397077,
-      "name": "Jaxson Hayes",
-      "team": "UTAH",
-      "opp": "DAL",
-      "minutes": 23.7,
-      "points": 9.5,
-      "rebounds": 5.8,
-      "assists": 1.4,
-      "threes": 0.1,
-      "avg": {
-       "minutes": 24.4,
-       "points": 9.3,
-       "rebounds": 6.6,
-       "assists": 1.5,
-       "threes": 0.0
-      },
-      "props": {
-       "points": {
-        "line": 9.5,
-        "over": -125,
-        "under": -104,
-        "books": 7,
-        "best_over": -120,
-        "best_over_book": "fanduel",
-        "best_under": 100,
-        "best_under_book": "betmgm"
-       },
-       "rebounds": {
-        "line": 6.5,
-        "over": -112,
-        "under": -118,
-        "books": 7,
-        "best_over": -106,
-        "best_over_book": "fanduel",
-        "best_under": -112,
-        "best_under_book": "draftkings"
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -110,
-        "under": -120,
-        "books": 2,
-        "best_over": -107,
-        "best_over_book": "betrivers",
-        "best_under": -127,
-        "best_under_book": "betrivers"
-       }
       }
      },
      {
@@ -2803,10 +1607,10 @@
       "name": "Svi Mykhailiuk",
       "team": "UTAH",
       "opp": "DAL",
-      "minutes": 22.1,
-      "points": 7.6,
-      "rebounds": 2.5,
-      "assists": 1.9,
+      "minutes": 22.8,
+      "points": 7.8,
+      "rebounds": 2.6,
+      "assists": 2.0,
       "threes": 1.6,
       "avg": {
        "minutes": 18.5,
@@ -2821,9 +1625,9 @@
       "name": "Josh Green",
       "team": "UTAH",
       "opp": "DAL",
-      "minutes": 21.8,
-      "points": 5.8,
-      "rebounds": 2.2,
+      "minutes": 22.5,
+      "points": 5.9,
+      "rebounds": 2.3,
       "assists": 1.2,
       "threes": 1.2,
       "avg": {
@@ -2832,34 +1636,6 @@
        "rebounds": 1.7,
        "assists": 0.9,
        "threes": 0.9
-      },
-      "props": {
-       "points": {
-        "line": 5.5,
-        "over": -114,
-        "under": -113,
-        "books": 7,
-        "best_over": -104,
-        "best_over_book": "fanduel",
-        "best_under": -105,
-        "best_under_book": "betmgm"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 185,
-        "under": -245,
-        "books": 6,
-        "best_over": 186,
-        "best_over_book": "fanduel",
-        "best_under": -245,
-        "best_under_book": "fanduel"
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": 100,
-        "under": -130,
-        "books": 1
-       }
       }
      },
      {
@@ -2867,9 +1643,9 @@
       "name": "Mo Bamba",
       "team": "UTAH",
       "opp": "DAL",
-      "minutes": 21.1,
-      "points": 8.9,
-      "rebounds": 6.3,
+      "minutes": 21.7,
+      "points": 9.2,
+      "rebounds": 6.5,
       "assists": 1.3,
       "threes": 0.6,
       "avg": {
@@ -2885,55 +1661,17 @@
       "name": "Brice Sensabaugh",
       "team": "UTAH",
       "opp": "DAL",
-      "minutes": 20.9,
-      "points": 12.7,
-      "rebounds": 3.4,
-      "assists": 1.8,
-      "threes": 1.9,
+      "minutes": 21.6,
+      "points": 13.1,
+      "rebounds": 3.5,
+      "assists": 1.9,
+      "threes": 2.0,
       "avg": {
        "minutes": 18.3,
        "points": 10.8,
        "rebounds": 3.6,
        "assists": 1.6,
        "threes": 1.9
-      },
-      "props": {
-       "points": {
-        "line": 12.5,
-        "over": -118,
-        "under": -111,
-        "books": 7,
-        "best_over": -113,
-        "best_over_book": "draftkings",
-        "best_under": -105,
-        "best_under_book": "betmgm"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -158,
-        "under": 120,
-        "books": 7,
-        "best_over": -150,
-        "best_over_book": "betmgm",
-        "best_under": 128,
-        "best_under_book": "betrivers"
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -121,
-        "under": -108,
-        "books": 2,
-        "best_over": -124,
-        "best_over_book": "williamhill_us",
-        "best_under": -107,
-        "best_under_book": "williamhill_us"
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -135,
-        "under": 104,
-        "books": 1
-       }
       }
      },
      {
@@ -2941,10 +1679,10 @@
       "name": "Josh Okogie",
       "team": "UTAH",
       "opp": "DAL",
-      "minutes": 18.6,
-      "points": 4.6,
-      "rebounds": 2.8,
-      "assists": 1.1,
+      "minutes": 19.1,
+      "points": 4.8,
+      "rebounds": 2.9,
+      "assists": 1.2,
       "threes": 0.8,
       "avg": {
        "minutes": 19.1,
@@ -2959,10 +1697,10 @@
       "name": "Isaiah Collier",
       "team": "UTAH",
       "opp": "DAL",
-      "minutes": 13.2,
-      "points": 5.6,
-      "rebounds": 1.9,
-      "assists": 3.7,
+      "minutes": 13.6,
+      "points": 5.8,
+      "rebounds": 2.0,
+      "assists": 3.8,
       "threes": 0.3,
       "avg": {
        "minutes": 15.6,
@@ -2977,9 +1715,9 @@
       "name": "Tony Bradley",
       "team": "UTAH",
       "opp": "DAL",
-      "minutes": 9.9,
-      "points": 3.0,
-      "rebounds": 2.6,
+      "minutes": 10.2,
+      "points": 3.1,
+      "rebounds": 2.7,
       "assists": 0.5,
       "threes": 0.1,
       "avg": {
@@ -2997,59 +1735,17 @@
       "name": "Cooper Flagg",
       "team": "DAL",
       "opp": "UTAH",
-      "minutes": 32.1,
-      "points": 22.5,
-      "rebounds": 6.4,
-      "assists": 5.3,
-      "threes": 1.2,
+      "minutes": 33.5,
+      "points": 23.4,
+      "rebounds": 6.6,
+      "assists": 5.5,
+      "threes": 1.3,
       "avg": {
        "minutes": 33.6,
        "points": 24.1,
        "rebounds": 6.5,
        "assists": 6.5,
        "threes": 1.5
-      },
-      "props": {
-       "assists": {
-        "line": 5.5,
-        "over": -130,
-        "under": -101,
-        "books": 8,
-        "best_over": -125,
-        "best_over_book": "fanduel",
-        "best_under": 109,
-        "best_under_book": "draftkings"
-       },
-       "points": {
-        "line": 25.5,
-        "over": -111,
-        "under": -116,
-        "books": 8,
-        "best_over": -106,
-        "best_over_book": "fanduel",
-        "best_under": -102,
-        "best_under_book": "williamhill_us"
-       },
-       "rebounds": {
-        "line": 6.5,
-        "over": -136,
-        "under": 105,
-        "books": 7,
-        "best_over": -130,
-        "best_over_book": "betrivers",
-        "best_under": 106,
-        "best_under_book": "fanduel"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -105,
-        "under": -126,
-        "books": 8,
-        "best_over": 100,
-        "best_over_book": "fanduel",
-        "best_under": -124,
-        "best_under_book": "draftkings"
-       }
       }
      },
      {
@@ -3057,77 +1753,17 @@
       "name": "Kyrie Irving",
       "team": "DAL",
       "opp": "UTAH",
-      "minutes": 30.8,
-      "points": 22.1,
-      "rebounds": 4.1,
-      "assists": 4.1,
-      "threes": 2.9,
+      "minutes": 32.0,
+      "points": 23.0,
+      "rebounds": 4.3,
+      "assists": 4.3,
+      "threes": 3.0,
       "avg": {
        "minutes": 31.0,
        "points": 22.5,
        "rebounds": 3.8,
        "assists": 4.4,
        "threes": 3.3
-      },
-      "props": {
-       "assists": {
-        "line": 4.5,
-        "over": -109,
-        "under": -120,
-        "books": 8,
-        "best_over": -102,
-        "best_over_book": "fanduel",
-        "best_under": -114,
-        "best_under_book": "williamhill_us"
-       },
-       "points": {
-        "line": 23.5,
-        "over": -115,
-        "under": -115,
-        "books": 8,
-        "best_over": 100,
-        "best_over_book": "circasports",
-        "best_under": -110,
-        "best_under_book": "betmgm"
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -161,
-        "under": 122,
-        "books": 7,
-        "best_over": -160,
-        "best_over_book": "betmgm",
-        "best_under": 128,
-        "best_under_book": "fanduel"
-       },
-       "threes": {
-        "line": 3.5,
-        "over": 126,
-        "under": -167,
-        "books": 9,
-        "best_over": 145,
-        "best_over_book": "circasports",
-        "best_under": -164,
-        "best_under_book": "draftkings"
-       }
-      }
-     },
-     {
-      "id": 4278078,
-      "name": "P.J. Washington",
-      "team": "DAL",
-      "opp": "UTAH",
-      "minutes": 24.5,
-      "points": 11.6,
-      "rebounds": 5.5,
-      "assists": 1.2,
-      "threes": 1.5,
-      "avg": {
-       "minutes": 30.9,
-       "points": 14.0,
-       "rebounds": 6.7,
-       "assists": 1.3,
-       "threes": 2.3
       }
      },
      {
@@ -3135,9 +1771,9 @@
       "name": "Zaccharie Risacher",
       "team": "DAL",
       "opp": "UTAH",
-      "minutes": 23.1,
-      "points": 9.3,
-      "rebounds": 4.4,
+      "minutes": 24.0,
+      "points": 9.7,
+      "rebounds": 4.5,
       "assists": 1.2,
       "threes": 1.2,
       "avg": {
@@ -3146,34 +1782,6 @@
        "rebounds": 4.8,
        "assists": 1.2,
        "threes": 1.1
-      },
-      "props": {
-       "points": {
-        "line": 8.5,
-        "over": -125,
-        "under": -103,
-        "books": 7,
-        "best_over": -109,
-        "best_over_book": "betrivers",
-        "best_under": 103,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": -108,
-        "under": -120,
-        "books": 7,
-        "best_over": 100,
-        "best_over_book": "fanduel",
-        "best_under": -116,
-        "best_under_book": "draftkings"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 182,
-        "under": -244,
-        "books": 1
-       }
       }
      },
      {
@@ -3181,9 +1789,9 @@
       "name": "Daniel Gafford",
       "team": "DAL",
       "opp": "UTAH",
-      "minutes": 22.8,
-      "points": 9.7,
-      "rebounds": 6.3,
+      "minutes": 23.7,
+      "points": 10.1,
+      "rebounds": 6.6,
       "assists": 1.6,
       "threes": 0.1,
       "avg": {
@@ -3192,28 +1800,6 @@
        "rebounds": 5.4,
        "assists": 1.9,
        "threes": 0.1
-      },
-      "props": {
-       "points": {
-        "line": 8.5,
-        "over": -115,
-        "under": -112,
-        "books": 8,
-        "best_over": -104,
-        "best_over_book": "draftkings",
-        "best_under": -110,
-        "best_under_book": "betmgm"
-       },
-       "rebounds": {
-        "line": 6.5,
-        "over": 100,
-        "under": -130,
-        "books": 8,
-        "best_over": 112,
-        "best_over_book": "draftkings",
-        "best_under": -120,
-        "best_under_book": "betmgm"
-       }
       }
      },
      {
@@ -3221,10 +1807,10 @@
       "name": "Caleb Martin",
       "team": "DAL",
       "opp": "UTAH",
-      "minutes": 21.5,
-      "points": 5.9,
-      "rebounds": 3.5,
-      "assists": 2.1,
+      "minutes": 22.4,
+      "points": 6.2,
+      "rebounds": 3.6,
+      "assists": 2.2,
       "threes": 0.8,
       "avg": {
        "minutes": 21.4,
@@ -3232,38 +1818,6 @@
        "rebounds": 3.3,
        "assists": 2.3,
        "threes": 1.1
-      },
-      "props": {
-       "rebounds": {
-        "line": 3.5,
-        "over": -128,
-        "under": -103,
-        "books": 6,
-        "best_over": -122,
-        "best_over_book": "draftkings",
-        "best_under": 100,
-        "best_under_book": "fanduel"
-       },
-       "points": {
-        "line": 5.5,
-        "over": -125,
-        "under": -104,
-        "books": 5,
-        "best_over": -120,
-        "best_over_book": "betrivers",
-        "best_under": 100,
-        "best_under_book": "betmgm"
-       },
-       "assists": {
-        "line": 2.5,
-        "over": 110,
-        "under": -147,
-        "books": 4,
-        "best_over": 115,
-        "best_over_book": "betmgm",
-        "best_under": -141,
-        "best_under_book": "draftkings"
-       }
       }
      },
      {
@@ -3271,55 +1825,17 @@
       "name": "Naji Marshall",
       "team": "DAL",
       "opp": "UTAH",
-      "minutes": 21.2,
-      "points": 10.6,
-      "rebounds": 3.0,
-      "assists": 2.8,
-      "threes": 0.7,
+      "minutes": 22.0,
+      "points": 11.0,
+      "rebounds": 3.2,
+      "assists": 2.9,
+      "threes": 0.8,
       "avg": {
        "minutes": 24.2,
        "points": 11.0,
        "rebounds": 2.9,
        "assists": 3.8,
        "threes": 1.0
-      },
-      "props": {
-       "assists": {
-        "line": 3.5,
-        "over": -102,
-        "under": -128,
-        "books": 7,
-        "best_over": 105,
-        "best_over_book": "betrivers",
-        "best_under": -120,
-        "best_under_book": "betmgm"
-       },
-       "points": {
-        "line": 12.5,
-        "over": -102,
-        "under": -127,
-        "books": 8,
-        "best_over": 100,
-        "best_over_book": "fanduel",
-        "best_under": -123,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -134,
-        "under": 104,
-        "books": 7,
-        "best_over": -130,
-        "best_over_book": "betrivers",
-        "best_under": 110,
-        "best_under_book": "betmgm"
-       },
-       "threes": {
-        "line": 0.5,
-        "over": -189,
-        "under": 143,
-        "books": 1
-       }
       }
      },
      {
@@ -3327,11 +1843,11 @@
       "name": "Walter Clayton Jr.",
       "team": "DAL",
       "opp": "UTAH",
-      "minutes": 20.7,
-      "points": 8.4,
-      "rebounds": 2.7,
-      "assists": 3.7,
-      "threes": 1.2,
+      "minutes": 21.6,
+      "points": 8.7,
+      "rebounds": 2.8,
+      "assists": 3.8,
+      "threes": 1.3,
       "avg": {
        "minutes": 18.4,
        "points": 7.7,
@@ -3345,11 +1861,11 @@
       "name": "Morez Johnson Jr.",
       "team": "DAL",
       "opp": "UTAH",
-      "minutes": 17.1,
-      "points": 6.6,
-      "rebounds": 4.3,
+      "minutes": 17.8,
+      "points": 6.9,
+      "rebounds": 4.5,
       "assists": 1.4,
-      "threes": 0.3,
+      "threes": 0.4,
       "avg": {
        "minutes": 17.1,
        "points": 6.3,
@@ -3363,9 +1879,9 @@
       "name": "Max Christie",
       "team": "DAL",
       "opp": "UTAH",
-      "minutes": 16.6,
-      "points": 6.3,
-      "rebounds": 2.2,
+      "minutes": 17.1,
+      "points": 6.6,
+      "rebounds": 2.3,
       "assists": 1.1,
       "threes": 1.2,
       "avg": {
@@ -3381,10 +1897,10 @@
       "name": "Santi Aldama",
       "team": "DAL",
       "opp": "UTAH",
-      "minutes": 11.6,
-      "points": 5.6,
-      "rebounds": 2.6,
-      "assists": 0.9,
+      "minutes": 12.0,
+      "points": 5.8,
+      "rebounds": 2.7,
+      "assists": 1.0,
       "threes": 0.7,
       "avg": {
        "minutes": 12.6,
@@ -3399,10 +1915,10 @@
       "name": "Marcus Sasser",
       "team": "DAL",
       "opp": "UTAH",
-      "minutes": 11.2,
-      "points": 4.3,
+      "minutes": 11.6,
+      "points": 4.4,
       "rebounds": 1.0,
-      "assists": 1.4,
+      "assists": 1.5,
       "threes": 0.8,
       "avg": {
        "minutes": 14.9,
@@ -3428,8 +1944,8 @@
    "market_ratings_margin": null,
    "mkt_spread": -10.5,
    "mkt_total": 236.5,
-   "mkt_ml_home": 340.0,
-   "mkt_ml_away": -437.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": -10.5,
    "projection_total": 236.5,
    "win_prob": 0.177,
@@ -3533,48 +2049,6 @@
        "rebounds": 4.7,
        "assists": 1.9,
        "threes": 2.0
-      },
-      "props": {
-       "points": {
-        "line": 17.5,
-        "over": -110,
-        "under": -120,
-        "books": 8,
-        "best_over": 100,
-        "best_over_book": "circasports",
-        "best_under": -113,
-        "best_under_book": "fanduel"
-       },
-       "rebounds": {
-        "line": 5.5,
-        "over": -114,
-        "under": -114,
-        "books": 7,
-        "best_over": -112,
-        "best_over_book": "draftkings",
-        "best_under": -110,
-        "best_under_book": "williamhill_us"
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 119,
-        "under": -153,
-        "books": 8,
-        "best_over": 129,
-        "best_over_book": "draftkings",
-        "best_under": -140,
-        "best_under_book": "betmgm"
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -139,
-        "under": 106,
-        "books": 5,
-        "best_over": -130,
-        "best_over_book": "betrivers",
-        "best_under": 115,
-        "best_under_book": "betmgm"
-       }
       }
      },
      {
@@ -3596,43 +2070,23 @@
       },
       "props": {
        "assists": {
-        "line": 8.5,
-        "over": 106,
-        "under": -141,
-        "books": 8,
-        "best_over": 110,
-        "best_over_book": "betrivers",
-        "best_under": -140,
-        "best_under_book": "draftkings"
+        "line": 19.5,
+        "over": 178,
+        "under": -245,
+        "books": 1,
+        "best_over": 178,
+        "best_over_book": "fanduel",
+        "best_under": -245,
+        "best_under_book": "fanduel"
        },
        "points": {
-        "line": 12.5,
-        "over": -110,
-        "under": -120,
-        "books": 8,
-        "best_over": -104,
+        "line": 23.5,
+        "over": 265,
+        "under": -390,
+        "books": 1,
+        "best_over": 265,
         "best_over_book": "fanduel",
-        "best_under": -115,
-        "best_under_book": "betmgm"
-       },
-       "rebounds": {
-        "line": 6.5,
-        "over": 106,
-        "under": -141,
-        "books": 8,
-        "best_over": 110,
-        "best_over_book": "fanduel",
-        "best_under": -135,
-        "best_under_book": "draftkings"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 141,
-        "under": -185,
-        "books": 7,
-        "best_over": 145,
-        "best_over_book": "betmgm",
-        "best_under": -170,
+        "best_under": -390,
         "best_under_book": "fanduel"
        }
       }
@@ -3653,44 +2107,6 @@
        "rebounds": 2.7,
        "assists": 1.8,
        "threes": 0.9
-      },
-      "props": {
-       "points": {
-        "line": 9.5,
-        "over": -123,
-        "under": -103,
-        "books": 7,
-        "best_over": -113,
-        "best_over_book": "betrivers",
-        "best_under": -103,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": 120,
-        "under": -159,
-        "books": 7,
-        "best_over": 130,
-        "best_over_book": "betrivers",
-        "best_under": -150,
-        "best_under_book": "fanduel"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 130,
-        "under": -172,
-        "books": 7,
-        "best_over": 144,
-        "best_over_book": "draftkings",
-        "best_under": -160,
-        "best_under_book": "betmgm"
-       },
-       "assists": {
-        "line": 2.5,
-        "over": 141,
-        "under": -185,
-        "books": 1
-       }
       }
      },
      {
@@ -3709,48 +2125,6 @@
        "rebounds": 7.9,
        "assists": 2.2,
        "threes": 1.8
-      },
-      "props": {
-       "points": {
-        "line": 13.5,
-        "over": -110,
-        "under": -118,
-        "books": 7,
-        "best_over": 100,
-        "best_over_book": "betmgm",
-        "best_under": -103,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 8.5,
-        "over": -101,
-        "under": -131,
-        "books": 8,
-        "best_over": 102,
-        "best_over_book": "williamhill_us",
-        "best_under": -123,
-        "best_under_book": "draftkings"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -156,
-        "under": 120,
-        "books": 7,
-        "best_over": -150,
-        "best_over_book": "betrivers",
-        "best_under": 122,
-        "best_under_book": "fanduel"
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -148,
-        "under": 112,
-        "books": 2,
-        "best_over": -143,
-        "best_over_book": "betrivers",
-        "best_under": 106,
-        "best_under_book": "betrivers"
-       }
       }
      },
      {
@@ -3769,38 +2143,6 @@
        "rebounds": 2.1,
        "assists": 3.7,
        "threes": 0.3
-      },
-      "props": {
-       "assists": {
-        "line": 4.5,
-        "over": -115,
-        "under": -116,
-        "books": 7,
-        "best_over": -106,
-        "best_over_book": "fanduel",
-        "best_under": -110,
-        "best_under_book": "betmgm"
-       },
-       "points": {
-        "line": 13.5,
-        "over": -110,
-        "under": -116,
-        "books": 7,
-        "best_over": -109,
-        "best_over_book": "draftkings",
-        "best_under": -113,
-        "best_under_book": "williamhill_us"
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": -117,
-        "under": -112,
-        "books": 5,
-        "best_over": -115,
-        "best_over_book": "draftkings",
-        "best_under": -103,
-        "best_under_book": "betrivers"
-       }
       }
      },
      {
@@ -3819,38 +2161,6 @@
        "rebounds": 2.9,
        "assists": 1.9,
        "threes": 0.9
-      },
-      "props": {
-       "points": {
-        "line": 8.5,
-        "over": -103,
-        "under": -127,
-        "books": 7,
-        "best_over": 102,
-        "best_over_book": "draftkings",
-        "best_under": -120,
-        "best_under_book": "betmgm"
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -105,
-        "under": -125,
-        "books": 6,
-        "best_over": 107,
-        "best_over_book": "betrivers",
-        "best_under": -125,
-        "best_under_book": "draftkings"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 154,
-        "under": -204,
-        "books": 6,
-        "best_over": 160,
-        "best_over_book": "betrivers",
-        "best_under": -175,
-        "best_under_book": "betmgm"
-       }
       }
      },
      {
@@ -3872,40 +2182,14 @@
       },
       "props": {
        "points": {
-        "line": 11.5,
-        "over": 102,
-        "under": -133,
-        "books": 7,
-        "best_over": 104,
+        "line": 31.5,
+        "over": 178,
+        "under": -245,
+        "books": 1,
+        "best_over": 178,
         "best_over_book": "fanduel",
-        "best_under": -123,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": -152,
-        "under": 115,
-        "books": 6,
-        "best_over": -148,
-        "best_over_book": "draftkings",
-        "best_under": 120,
+        "best_under": -245,
         "best_under_book": "fanduel"
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 132,
-        "under": -172,
-        "books": 6,
-        "best_over": 138,
-        "best_over_book": "betrivers",
-        "best_under": -159,
-        "best_under_book": "williamhill_us"
-       },
-       "assists": {
-        "line": 3.5,
-        "over": -137,
-        "under": 106,
-        "books": 1
        }
       }
      },
@@ -4019,45 +2303,25 @@
        "threes": 1.3
       },
       "props": {
-       "assists": {
-        "line": 9.5,
-        "over": -132,
-        "under": 101,
-        "books": 9,
-        "best_over": -125,
-        "best_over_book": "betmgm",
-        "best_under": 110,
-        "best_under_book": "fanatics"
-       },
-       "points": {
-        "line": 25.5,
-        "over": -127,
-        "under": -102,
-        "books": 8,
-        "best_over": -112,
-        "best_over_book": "betrivers",
-        "best_under": 100,
-        "best_under_book": "fanduel"
-       },
        "rebounds": {
-        "line": 11.5,
-        "over": -120,
-        "under": -110,
-        "books": 9,
-        "best_over": -113,
-        "best_over_book": "draftkings",
-        "best_under": 102,
+        "line": 18.5,
+        "over": 174,
+        "under": -240,
+        "books": 1,
+        "best_over": 174,
+        "best_over_book": "fanduel",
+        "best_under": -240,
         "best_under_book": "fanduel"
        },
        "threes": {
         "line": 1.5,
-        "over": -108,
-        "under": -122,
-        "books": 8,
-        "best_over": 102,
-        "best_over_book": "betrivers",
-        "best_under": -111,
-        "best_under_book": "betmgm"
+        "over": 550,
+        "under": -1100,
+        "books": 1,
+        "best_over": 550,
+        "best_over_book": "fanduel",
+        "best_under": -1100,
+        "best_under_book": "fanduel"
        }
       }
      },
@@ -4079,45 +2343,15 @@
        "threes": 3.1
       },
       "props": {
-       "assists": {
-        "line": 6.5,
-        "over": 116,
-        "under": -149,
-        "books": 8,
-        "best_over": 120,
-        "best_over_book": "betmgm",
-        "best_under": -148,
-        "best_under_book": "fanduel"
-       },
-       "points": {
-        "line": 23.5,
-        "over": -104,
-        "under": -126,
-        "books": 8,
-        "best_over": 100,
-        "best_over_book": "fanduel",
-        "best_under": -112,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": 105,
-        "under": -138,
-        "books": 7,
-        "best_over": 108,
-        "best_over_book": "draftkings",
-        "best_under": -132,
-        "best_under_book": "betrivers"
-       },
        "threes": {
-        "line": 2.5,
-        "over": -130,
-        "under": 100,
-        "books": 8,
-        "best_over": -127,
-        "best_over_book": "betrivers",
-        "best_under": 111,
-        "best_under_book": "williamhill_us"
+        "line": 5.5,
+        "over": 320,
+        "under": -490,
+        "books": 1,
+        "best_over": 320,
+        "best_over_book": "fanduel",
+        "best_under": -490,
+        "best_under_book": "fanduel"
        }
       }
      },
@@ -4137,48 +2371,6 @@
        "rebounds": 4.4,
        "assists": 2.4,
        "threes": 1.6
-      },
-      "props": {
-       "points": {
-        "line": 13.5,
-        "over": -107,
-        "under": -122,
-        "books": 7,
-        "best_over": -101,
-        "best_over_book": "draftkings",
-        "best_under": -118,
-        "best_under_book": "betrivers"
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": -112,
-        "under": -117,
-        "books": 7,
-        "best_over": 100,
-        "best_over_book": "betmgm",
-        "best_under": -113,
-        "best_under_book": "fanduel"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 107,
-        "under": -139,
-        "books": 7,
-        "best_over": 115,
-        "best_over_book": "betrivers",
-        "best_under": -132,
-        "best_under_book": "fanduel"
-       },
-       "assists": {
-        "line": 2.5,
-        "over": 118,
-        "under": -156,
-        "books": 5,
-        "best_over": 135,
-        "best_over_book": "betrivers",
-        "best_under": -145,
-        "best_under_book": "betmgm"
-       }
       }
      },
      {
@@ -4197,48 +2389,6 @@
        "rebounds": 4.8,
        "assists": 1.9,
        "threes": 1.1
-      },
-      "props": {
-       "points": {
-        "line": 13.5,
-        "over": -113,
-        "under": -116,
-        "books": 8,
-        "best_over": -105,
-        "best_over_book": "circasports",
-        "best_under": -106,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 5.5,
-        "over": 116,
-        "under": -152,
-        "books": 7,
-        "best_over": 120,
-        "best_over_book": "fanduel",
-        "best_under": -150,
-        "best_under_book": "williamhill_us"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 120,
-        "under": -161,
-        "books": 8,
-        "best_over": 134,
-        "best_over_book": "fanduel",
-        "best_under": -155,
-        "best_under_book": "betmgm"
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -179,
-        "under": 136,
-        "books": 5,
-        "best_over": -174,
-        "best_over_book": "draftkings",
-        "best_under": 140,
-        "best_under_book": "betrivers"
-       }
       }
      },
      {
@@ -4257,44 +2407,6 @@
        "rebounds": 3.6,
        "assists": 2.1,
        "threes": 1.7
-      },
-      "props": {
-       "points": {
-        "line": 13.5,
-        "over": -105,
-        "under": -122,
-        "books": 8,
-        "best_over": -104,
-        "best_over_book": "fanduel",
-        "best_under": -116,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -120,
-        "under": -110,
-        "books": 7,
-        "best_over": -115,
-        "best_over_book": "fanduel",
-        "best_under": -106,
-        "best_under_book": "williamhill_us"
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 135,
-        "under": -184,
-        "books": 7,
-        "best_over": 145,
-        "best_over_book": "betrivers",
-        "best_under": -176,
-        "best_under_book": "draftkings"
-       },
-       "assists": {
-        "line": 3.5,
-        "over": 109,
-        "under": -141,
-        "books": 1
-       }
       }
      },
      {
@@ -4313,44 +2425,6 @@
        "rebounds": 2.0,
        "assists": 2.6,
        "threes": 0.2
-      },
-      "props": {
-       "points": {
-        "line": 11.5,
-        "over": -114,
-        "under": -116,
-        "books": 7,
-        "best_over": 100,
-        "best_over_book": "circasports",
-        "best_under": -103,
-        "best_under_book": "draftkings"
-       },
-       "assists": {
-        "line": 2.5,
-        "over": -118,
-        "under": -111,
-        "books": 4,
-        "best_over": -104,
-        "best_over_book": "betrivers",
-        "best_under": -111,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": 141,
-        "under": -185,
-        "books": 1
-       },
-       "threes": {
-        "line": 0.5,
-        "over": 140,
-        "under": -185,
-        "books": 3,
-        "best_over": 138,
-        "best_over_book": "draftkings",
-        "best_under": -183,
-        "best_under_book": "draftkings"
-       }
       }
      },
      {
@@ -4369,24 +2443,6 @@
        "rebounds": 2.1,
        "assists": 0.9,
        "threes": 0.9
-      },
-      "props": {
-       "points": {
-        "line": 4.5,
-        "over": 104,
-        "under": -137,
-        "books": 2,
-        "best_over": 106,
-        "best_over_book": "williamhill_us",
-        "best_under": -141,
-        "best_under_book": "williamhill_us"
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": 109,
-        "under": -141,
-        "books": 1
-       }
       }
      },
      {
@@ -4477,8 +2533,8 @@
    "market_ratings_margin": null,
    "mkt_spread": -4.5,
    "mkt_total": 220.5,
-   "mkt_ml_home": 165.0,
-   "mkt_ml_away": -197.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": -4.8,
    "projection_total": 220.5,
    "win_prob": 0.268,
@@ -4554,48 +2610,6 @@
        "rebounds": 6.8,
        "assists": 2.5,
        "threes": 0.9
-      },
-      "props": {
-       "assists": {
-        "line": 2.5,
-        "over": 100,
-        "under": -130,
-        "books": 6,
-        "best_over": 112,
-        "best_over_book": "betrivers",
-        "best_under": -125,
-        "best_under_book": "betmgm"
-       },
-       "points": {
-        "line": 17.5,
-        "over": -124,
-        "under": -106,
-        "books": 8,
-        "best_over": -111,
-        "best_over_book": "betmgm",
-        "best_under": 100,
-        "best_under_book": "fanduel"
-       },
-       "rebounds": {
-        "line": 6.5,
-        "over": 101,
-        "under": -132,
-        "books": 7,
-        "best_over": 105,
-        "best_over_book": "betmgm",
-        "best_under": -120,
-        "best_under_book": "draftkings"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 120,
-        "under": -158,
-        "books": 7,
-        "best_over": 125,
-        "best_over_book": "betrivers",
-        "best_under": -150,
-        "best_under_book": "betmgm"
-       }
       }
      },
      {
@@ -4614,48 +2628,6 @@
        "rebounds": 4.4,
        "assists": 4.5,
        "threes": 2.4
-      },
-      "props": {
-       "assists": {
-        "line": 4.5,
-        "over": 120,
-        "under": -160,
-        "books": 8,
-        "best_over": 124,
-        "best_over_book": "williamhill_us",
-        "best_under": -157,
-        "best_under_book": "draftkings"
-       },
-       "points": {
-        "line": 16.5,
-        "over": -101,
-        "under": -129,
-        "books": 8,
-        "best_over": 102,
-        "best_over_book": "fanduel",
-        "best_under": -125,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": 108,
-        "under": -139,
-        "books": 7,
-        "best_over": 110,
-        "best_over_book": "fanduel",
-        "best_under": -129,
-        "best_under_book": "betrivers"
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 143,
-        "under": -190,
-        "books": 7,
-        "best_over": 144,
-        "best_over_book": "draftkings",
-        "best_under": -175,
-        "best_under_book": "betmgm"
-       }
       }
      },
      {
@@ -4674,48 +2646,6 @@
        "rebounds": 2.7,
        "assists": 8.6,
        "threes": 2.1
-      },
-      "props": {
-       "assists": {
-        "line": 8.5,
-        "over": 105,
-        "under": -137,
-        "books": 8,
-        "best_over": 110,
-        "best_over_book": "circasports",
-        "best_under": -130,
-        "best_under_book": "williamhill_us"
-       },
-       "points": {
-        "line": 16.5,
-        "over": -125,
-        "under": -104,
-        "books": 8,
-        "best_over": -122,
-        "best_over_book": "draftkings",
-        "best_under": 100,
-        "best_under_book": "fanduel"
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": -111,
-        "under": -118,
-        "books": 6,
-        "best_over": -106,
-        "best_over_book": "fanduel",
-        "best_under": -113,
-        "best_under_book": "betrivers"
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 146,
-        "under": -191,
-        "books": 8,
-        "best_over": 164,
-        "best_over_book": "fanduel",
-        "best_under": -176,
-        "best_under_book": "draftkings"
-       }
       }
      },
      {
@@ -4734,38 +2664,6 @@
        "rebounds": 10.1,
        "assists": 2.1,
        "threes": 0.7
-      },
-      "props": {
-       "points": {
-        "line": 23.5,
-        "over": -111,
-        "under": -116,
-        "books": 8,
-        "best_over": -106,
-        "best_over_book": "fanduel",
-        "best_under": -111,
-        "best_under_book": "betmgm"
-       },
-       "rebounds": {
-        "line": 10.5,
-        "over": 100,
-        "under": -132,
-        "books": 8,
-        "best_over": 105,
-        "best_over_book": "betmgm",
-        "best_under": -128,
-        "best_under_book": "fanduel"
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -184,
-        "under": 138,
-        "books": 5,
-        "best_over": -184,
-        "best_over_book": "draftkings",
-        "best_under": 139,
-        "best_under_book": "draftkings"
-       }
       }
      },
      {
@@ -4784,38 +2682,6 @@
        "rebounds": 6.7,
        "assists": 1.6,
        "threes": 1.2
-      },
-      "props": {
-       "points": {
-        "line": 10.5,
-        "over": -110,
-        "under": -118,
-        "books": 8,
-        "best_over": -105,
-        "best_over_book": "betmgm",
-        "best_under": -110,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 6.5,
-        "over": 107,
-        "under": -144,
-        "books": 7,
-        "best_over": 115,
-        "best_over_book": "betmgm",
-        "best_under": -127,
-        "best_under_book": "draftkings"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 156,
-        "under": -211,
-        "books": 8,
-        "best_over": 170,
-        "best_over_book": "betrivers",
-        "best_under": -200,
-        "best_under_book": "betmgm"
-       }
       }
      },
      {
@@ -4834,28 +2700,6 @@
        "rebounds": 4.4,
        "assists": 0.7,
        "threes": 0.4
-      },
-      "props": {
-       "points": {
-        "line": 6.5,
-        "over": -120,
-        "under": -109,
-        "books": 7,
-        "best_over": -113,
-        "best_over_book": "fanduel",
-        "best_under": 100,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -117,
-        "under": -112,
-        "books": 7,
-        "best_over": -113,
-        "best_over_book": "fanduel",
-        "best_under": -104,
-        "best_under_book": "draftkings"
-       }
       }
      },
      {
@@ -4948,48 +2792,6 @@
        "rebounds": 6.8,
        "assists": 8.4,
        "threes": 1.3
-      },
-      "props": {
-       "assists": {
-        "line": 7.5,
-        "over": 108,
-        "under": -140,
-        "books": 8,
-        "best_over": 115,
-        "best_over_book": "betrivers",
-        "best_under": -130,
-        "best_under_book": "fanduel"
-       },
-       "points": {
-        "line": 25.5,
-        "over": -110,
-        "under": -119,
-        "books": 8,
-        "best_over": 100,
-        "best_over_book": "circasports",
-        "best_under": -113,
-        "best_under_book": "fanduel"
-       },
-       "rebounds": {
-        "line": 6.5,
-        "over": -118,
-        "under": -109,
-        "books": 7,
-        "best_over": -112,
-        "best_over_book": "betrivers",
-        "best_under": -105,
-        "best_under_book": "betmgm"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 108,
-        "under": -141,
-        "books": 8,
-        "best_over": 110,
-        "best_over_book": "circasports",
-        "best_under": -136,
-        "best_under_book": "fanduel"
-       }
       }
      },
      {
@@ -5008,48 +2810,6 @@
        "rebounds": 5.1,
        "assists": 5.7,
        "threes": 2.1
-      },
-      "props": {
-       "assists": {
-        "line": 5.5,
-        "over": 120,
-        "under": -159,
-        "books": 7,
-        "best_over": 120,
-        "best_over_book": "fanduel",
-        "best_under": -154,
-        "best_under_book": "fanduel"
-       },
-       "points": {
-        "line": 15.5,
-        "over": -114,
-        "under": -114,
-        "books": 8,
-        "best_over": -113,
-        "best_over_book": "fanduel",
-        "best_under": -106,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": -122,
-        "under": -108,
-        "books": 7,
-        "best_over": -120,
-        "best_over_book": "betmgm",
-        "best_under": -104,
-        "best_under_book": "fanduel"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -115,
-        "under": -115,
-        "books": 7,
-        "best_over": -108,
-        "best_over_book": "fanduel",
-        "best_under": 102,
-        "best_under_book": "betrivers"
-       }
       }
      },
      {
@@ -5068,48 +2828,6 @@
        "rebounds": 4.1,
        "assists": 2.7,
        "threes": 4.3
-      },
-      "props": {
-       "assists": {
-        "line": 3.5,
-        "over": 132,
-        "under": -176,
-        "books": 7,
-        "best_over": 134,
-        "best_over_book": "fanduel",
-        "best_under": -172,
-        "best_under_book": "fanduel"
-       },
-       "points": {
-        "line": 19.5,
-        "over": -108,
-        "under": -120,
-        "books": 8,
-        "best_over": 100,
-        "best_over_book": "circasports",
-        "best_under": -116,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": -104,
-        "under": -128,
-        "books": 7,
-        "best_over": 115,
-        "best_over_book": "betrivers",
-        "best_under": -120,
-        "best_under_book": "fanduel"
-       },
-       "threes": {
-        "line": 3.5,
-        "over": 100,
-        "under": -130,
-        "books": 8,
-        "best_over": 112,
-        "best_over_book": "betrivers",
-        "best_under": -125,
-        "best_under_book": "betmgm"
-       }
       }
      },
      {
@@ -5146,48 +2864,6 @@
        "rebounds": 5.3,
        "assists": 4.3,
        "threes": 1.6
-      },
-      "props": {
-       "assists": {
-        "line": 3.5,
-        "over": -163,
-        "under": 125,
-        "books": 8,
-        "best_over": -160,
-        "best_over_book": "circasports",
-        "best_under": 130,
-        "best_under_book": "circasports"
-       },
-       "points": {
-        "line": 11.5,
-        "over": -124,
-        "under": -105,
-        "books": 8,
-        "best_over": -115,
-        "best_over_book": "betmgm",
-        "best_under": 100,
-        "best_under_book": "circasports"
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": 115,
-        "under": -152,
-        "books": 7,
-        "best_over": 124,
-        "best_over_book": "fanduel",
-        "best_under": -140,
-        "best_under_book": "betmgm"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": -133,
-        "under": 103,
-        "books": 7,
-        "best_over": -127,
-        "best_over_book": "betrivers",
-        "best_under": 110,
-        "best_under_book": "betmgm"
-       }
       }
      },
      {
@@ -5206,38 +2882,6 @@
        "rebounds": 3.7,
        "assists": 1.7,
        "threes": 3.2
-      },
-      "props": {
-       "points": {
-        "line": 10.5,
-        "over": -116,
-        "under": -110,
-        "books": 7,
-        "best_over": -115,
-        "best_over_book": "draftkings",
-        "best_under": -108,
-        "best_under_book": "fanduel"
-       },
-       "rebounds": {
-        "line": 3.5,
-        "over": -138,
-        "under": 105,
-        "books": 7,
-        "best_over": -127,
-        "best_over_book": "betrivers",
-        "best_under": 112,
-        "best_under_book": "williamhill_us"
-       },
-       "threes": {
-        "line": 2.5,
-        "over": 128,
-        "under": -170,
-        "books": 7,
-        "best_over": 143,
-        "best_over_book": "draftkings",
-        "best_under": -155,
-        "best_under_book": "betmgm"
-       }
       }
      },
      {
@@ -5358,14 +3002,14 @@
    "away": "IND",
    "home": "NY",
    "margin": 9.2,
-   "total": 222.6,
+   "total": 222.5,
    "ratings_margin": 11.6,
    "pace": 100.0,
    "market_ratings_margin": null,
    "mkt_spread": 7.5,
    "mkt_total": 213.5,
-   "mkt_ml_home": -296.0,
-   "mkt_ml_away": 240.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": 7.7,
    "projection_total": 213.5,
    "win_prob": 0.788,
@@ -5411,13 +3055,18 @@
       "kind": "missing"
      },
      {
+      "label": "NY without Miles McBride",
+      "pts": -0.16,
+      "kind": "missing"
+     },
+     {
       "label": "IND without T.J. McConnell",
       "pts": 0.66,
       "kind": "missing"
      },
      {
-      "label": "Lineup strength from player impact ratings (NY +10.4, IND +2.1 per 48)",
-      "pts": 2.55,
+      "label": "Lineup strength from player impact ratings (NY +10.9, IND +2.1 per 48)",
+      "pts": 2.7,
       "kind": "players"
      }
     ],
@@ -5439,18 +3088,18 @@
      },
      {
       "label": "Players out, both teams",
-      "pts": -1.03,
+      "pts": -1.13,
       "kind": "missing"
      }
     ]
    },
    "imp": {
-    "home": 10.403,
+    "home": 10.901,
     "away": 2.12
    },
    "missing": {
     "away": 2.4,
-    "home": 3.2,
+    "home": 3.8,
     "away_names": [
      "T.J. McConnell"
     ],
@@ -5462,7 +3111,8 @@
     "out": {
      "home": [
       "OG Anunoby",
-      "Jordan Clarkson"
+      "Jordan Clarkson",
+      "Miles McBride"
      ],
      "away": [
       "T.J. McConnell"
@@ -5474,11 +3124,11 @@
       "name": "Jalen Brunson",
       "team": "NY",
       "opp": "IND",
-      "minutes": 35.4,
-      "points": 27.7,
-      "rebounds": 3.5,
-      "assists": 6.5,
-      "threes": 3.1,
+      "minutes": 36.4,
+      "points": 28.5,
+      "rebounds": 3.6,
+      "assists": 6.7,
+      "threes": 3.2,
       "avg": {
        "minutes": 34.4,
        "points": 26.8,
@@ -5488,44 +3138,44 @@
       },
       "props": {
        "assists": {
-        "line": 6.5,
-        "over": -105,
-        "under": -123,
-        "books": 7,
-        "best_over": 102,
-        "best_over_book": "betrivers",
-        "best_under": -117,
-        "best_under_book": "williamhill_us"
+        "line": 5.5,
+        "over": -154,
+        "under": 120,
+        "books": 5,
+        "best_over": -144,
+        "best_over_book": "fanduel",
+        "best_under": 125,
+        "best_under_book": "betmgm"
        },
        "points": {
-        "line": 28.5,
-        "over": -110,
-        "under": -117,
-        "books": 7,
-        "best_over": 102,
-        "best_over_book": "fanduel",
+        "line": 26.5,
+        "over": -109,
+        "under": -120,
+        "books": 4,
+        "best_over": -105,
+        "best_over_book": "draftkings",
         "best_under": -114,
-        "best_under_book": "draftkings"
+        "best_under_book": "fanduel"
        },
        "rebounds": {
         "line": 3.5,
-        "over": 129,
-        "under": -169,
-        "books": 7,
-        "best_over": 142,
-        "best_over_book": "fanduel",
-        "best_under": -160,
+        "over": -217,
+        "under": 162,
+        "books": 4,
+        "best_over": -166,
+        "best_over_book": "draftkings",
+        "best_under": 165,
         "best_under_book": "betmgm"
        },
        "threes": {
-        "line": 2.5,
-        "over": -136,
-        "under": 104,
-        "books": 7,
-        "best_over": -130,
-        "best_over_book": "fanduel",
-        "best_under": 110,
-        "best_under_book": "betmgm"
+        "line": 0.5,
+        "over": -190,
+        "under": 140,
+        "books": 3,
+        "best_over": -166,
+        "best_over_book": "draftkings",
+        "best_under": 168,
+        "best_under_book": "fanduel"
        }
       }
      },
@@ -5534,10 +3184,10 @@
       "name": "Karl-Anthony Towns",
       "team": "NY",
       "opp": "IND",
-      "minutes": 31.2,
-      "points": 20.9,
-      "rebounds": 12.8,
-      "assists": 3.6,
+      "minutes": 32.3,
+      "points": 21.6,
+      "rebounds": 13.2,
+      "assists": 3.7,
       "threes": 1.9,
       "avg": {
        "minutes": 32.7,
@@ -5548,44 +3198,44 @@
       },
       "props": {
        "assists": {
-        "line": 3.5,
-        "over": 115,
-        "under": -149,
-        "books": 7,
-        "best_over": 135,
-        "best_over_book": "betrivers",
-        "best_under": -147,
-        "best_under_book": "draftkings"
-       },
-       "points": {
-        "line": 20.5,
-        "over": -111,
-        "under": -117,
-        "books": 7,
-        "best_over": -109,
-        "best_over_book": "draftkings",
-        "best_under": -117,
+        "line": 4.5,
+        "over": 180,
+        "under": -239,
+        "books": 4,
+        "best_over": 182,
+        "best_over_book": "fanduel",
+        "best_under": -218,
         "best_under_book": "williamhill_us"
        },
+       "points": {
+        "line": 25.5,
+        "over": -104,
+        "under": -129,
+        "books": 5,
+        "best_over": 100,
+        "best_over_book": "draftkings",
+        "best_under": -110,
+        "best_under_book": "betmgm"
+       },
        "rebounds": {
-        "line": 12.5,
-        "over": -137,
-        "under": 104,
-        "books": 7,
-        "best_over": -121,
-        "best_over_book": "betrivers",
-        "best_under": 110,
-        "best_under_book": "fanduel"
+        "line": 13.5,
+        "over": 104,
+        "under": -137,
+        "books": 5,
+        "best_over": 105,
+        "best_over_book": "betmgm",
+        "best_under": -125,
+        "best_under_book": "draftkings"
        },
        "threes": {
-        "line": 1.5,
-        "over": -130,
-        "under": -102,
-        "books": 7,
-        "best_over": -124,
-        "best_over_book": "betrivers",
-        "best_under": 100,
-        "best_under_book": "betmgm"
+        "line": 3.5,
+        "over": 100,
+        "under": -130,
+        "books": 3,
+        "best_over": 105,
+        "best_over_book": "betmgm",
+        "best_under": -122,
+        "best_under_book": "fanduel"
        }
       }
      },
@@ -5594,10 +3244,10 @@
       "name": "Josh Hart",
       "team": "NY",
       "opp": "IND",
-      "minutes": 31.1,
-      "points": 9.9,
-      "rebounds": 7.1,
-      "assists": 4.3,
+      "minutes": 32.0,
+      "points": 10.2,
+      "rebounds": 7.3,
+      "assists": 4.5,
       "threes": 1.6,
       "avg": {
        "minutes": 30.1,
@@ -5608,44 +3258,44 @@
       },
       "props": {
        "assists": {
-        "line": 3.5,
-        "over": -140,
-        "under": 105,
-        "books": 7,
+        "line": 8.5,
+        "over": -150,
+        "under": 113,
+        "books": 4,
         "best_over": -125,
-        "best_over_book": "fanduel",
-        "best_under": 109,
-        "best_under_book": "draftkings"
+        "best_over_book": "draftkings",
+        "best_under": 114,
+        "best_under_book": "fanduel"
        },
        "points": {
-        "line": 9.5,
-        "over": -128,
-        "under": -103,
-        "books": 7,
-        "best_over": -111,
+        "line": 7.5,
+        "over": 100,
+        "under": -130,
+        "books": 3,
+        "best_over": 102,
         "best_over_book": "fanduel",
-        "best_under": 104,
-        "best_under_book": "betrivers"
+        "best_under": -120,
+        "best_under_book": "draftkings"
        },
        "rebounds": {
-        "line": 8.5,
-        "over": -106,
-        "under": -123,
-        "books": 7,
-        "best_over": 114,
-        "best_over_book": "fanduel",
-        "best_under": -108,
-        "best_under_book": "draftkings"
+        "line": 12.5,
+        "over": 108,
+        "under": -143,
+        "books": 3,
+        "best_over": 130,
+        "best_over_book": "draftkings",
+        "best_under": -138,
+        "best_under_book": "fanduel"
        },
        "threes": {
-        "line": 1.5,
-        "over": 132,
-        "under": -180,
-        "books": 7,
+        "line": 0.5,
+        "over": 145,
+        "under": -191,
+        "books": 2,
         "best_over": 150,
-        "best_over_book": "fanduel",
-        "best_under": -175,
-        "best_under_book": "draftkings"
+        "best_over_book": "draftkings",
+        "best_under": -188,
+        "best_under_book": "fanduel"
        }
       }
      },
@@ -5654,9 +3304,9 @@
       "name": "Landry Shamet",
       "team": "NY",
       "opp": "IND",
-      "minutes": 29.7,
-      "points": 12.5,
-      "rebounds": 2.2,
+      "minutes": 30.5,
+      "points": 12.9,
+      "rebounds": 2.3,
       "assists": 2.1,
       "threes": 2.8,
       "avg": {
@@ -5667,31 +3317,45 @@
        "threes": 2.4
       },
       "props": {
-       "points": {
-        "line": 11.5,
-        "over": -114,
-        "under": -117,
-        "books": 6,
-        "best_over": 100,
+       "assists": {
+        "line": 1.5,
+        "over": 128,
+        "under": -169,
+        "books": 2,
+        "best_over": 126,
         "best_over_book": "fanduel",
-        "best_under": -110,
-        "best_under_book": "draftkings"
+        "best_under": -168,
+        "best_under_book": "fanduel"
        },
-       "threes": {
-        "line": 2.5,
-        "over": -105,
-        "under": -125,
-        "books": 6,
-        "best_over": 108,
-        "best_over_book": "fanduel",
-        "best_under": -123,
-        "best_under_book": "draftkings"
+       "points": {
+        "line": 18.5,
+        "over": -109,
+        "under": -121,
+        "books": 5,
+        "best_over": 100,
+        "best_over_book": "williamhill_us",
+        "best_under": 100,
+        "best_under_book": "betmgm"
        },
        "rebounds": {
         "line": 2.5,
-        "over": -103,
-        "under": -125,
-        "books": 1
+        "over": -144,
+        "under": 108,
+        "books": 3,
+        "best_over": -115,
+        "best_over_book": "draftkings",
+        "best_under": 108,
+        "best_under_book": "fanduel"
+       },
+       "threes": {
+        "line": 2.5,
+        "over": -194,
+        "under": 147,
+        "books": 4,
+        "best_over": -180,
+        "best_over_book": "draftkings",
+        "best_under": 154,
+        "best_under_book": "fanduel"
        }
       }
      },
@@ -5700,11 +3364,11 @@
       "name": "Mikal Bridges",
       "team": "NY",
       "opp": "IND",
-      "minutes": 27.8,
-      "points": 10.5,
-      "rebounds": 3.6,
-      "assists": 2.8,
-      "threes": 1.4,
+      "minutes": 28.6,
+      "points": 10.8,
+      "rebounds": 3.7,
+      "assists": 2.9,
+      "threes": 1.5,
       "avg": {
        "minutes": 26.1,
        "points": 7.8,
@@ -5714,44 +3378,44 @@
       },
       "props": {
        "assists": {
-        "line": 2.5,
-        "over": -101,
-        "under": -126,
-        "books": 6,
-        "best_over": 112,
+        "line": 1.5,
+        "over": 104,
+        "under": -136,
+        "books": 2,
+        "best_over": 104,
         "best_over_book": "fanduel",
-        "best_under": -125,
-        "best_under_book": "betmgm"
+        "best_under": -138,
+        "best_under_book": "fanduel"
        },
        "points": {
-        "line": 11.5,
-        "over": -124,
-        "under": -108,
-        "books": 7,
-        "best_over": -106,
+        "line": 2.5,
+        "over": 109,
+        "under": -144,
+        "books": 2,
+        "best_over": 108,
         "best_over_book": "fanduel",
-        "best_under": 100,
-        "best_under_book": "betmgm"
+        "best_under": -144,
+        "best_under_book": "fanduel"
        },
        "rebounds": {
-        "line": 3.5,
-        "over": 103,
-        "under": -139,
-        "books": 7,
-        "best_over": 118,
+        "line": 2.5,
+        "over": -122,
+        "under": -108,
+        "books": 3,
+        "best_over": -122,
         "best_over_book": "fanduel",
-        "best_under": -119,
+        "best_under": 105,
         "best_under_book": "draftkings"
        },
        "threes": {
-        "line": 1.5,
-        "over": 110,
-        "under": -145,
-        "books": 7,
-        "best_over": 115,
-        "best_over_book": "betrivers",
-        "best_under": -136,
-        "best_under_book": "williamhill_us"
+        "line": 0.5,
+        "over": 187,
+        "under": -250,
+        "books": 2,
+        "best_over": 198,
+        "best_over_book": "fanduel",
+        "best_under": -230,
+        "best_under_book": "draftkings"
        }
       }
      },
@@ -5760,11 +3424,11 @@
       "name": "Andre Drummond",
       "team": "NY",
       "opp": "IND",
-      "minutes": 16.2,
-      "points": 5.0,
-      "rebounds": 7.6,
-      "assists": 1.1,
-      "threes": 0.3,
+      "minutes": 16.7,
+      "points": 5.2,
+      "rebounds": 7.8,
+      "assists": 1.2,
+      "threes": 0.4,
       "avg": {
        "minutes": 13.6,
        "points": 3.9,
@@ -5774,32 +3438,14 @@
       }
      },
      {
-      "id": 4431823,
-      "name": "Miles McBride",
-      "team": "NY",
-      "opp": "IND",
-      "minutes": 16.1,
-      "points": 6.9,
-      "rebounds": 1.4,
-      "assists": 1.3,
-      "threes": 1.7,
-      "avg": {
-       "minutes": 17.2,
-       "points": 6.8,
-       "rebounds": 1.2,
-       "assists": 1.0,
-       "threes": 1.8
-      }
-     },
-     {
       "id": 4433225,
       "name": "Tyler Kolek",
       "team": "NY",
       "opp": "IND",
-      "minutes": 14.3,
-      "points": 4.8,
+      "minutes": 14.7,
+      "points": 5.0,
       "rebounds": 2.1,
-      "assists": 3.9,
+      "assists": 4.0,
       "threes": 0.8,
       "avg": {
        "minutes": 13.4,
@@ -5807,6 +3453,48 @@
        "rebounds": 2.1,
        "assists": 4.4,
        "threes": 0.5
+      },
+      "props": {
+       "assists": {
+        "line": 1.5,
+        "over": -119,
+        "under": -111,
+        "books": 2,
+        "best_over": -118,
+        "best_over_book": "fanduel",
+        "best_under": -112,
+        "best_under_book": "fanduel"
+       },
+       "points": {
+        "line": 10.5,
+        "over": -115,
+        "under": -115,
+        "books": 3,
+        "best_over": -112,
+        "best_over_book": "fanduel",
+        "best_under": -110,
+        "best_under_book": "draftkings"
+       },
+       "threes": {
+        "line": 1.5,
+        "over": 205,
+        "under": -290,
+        "books": 1,
+        "best_over": 205,
+        "best_over_book": "fanduel",
+        "best_under": -290,
+        "best_under_book": "fanduel"
+       },
+       "rebounds": {
+        "line": 2.5,
+        "over": -154,
+        "under": 120,
+        "books": 1,
+        "best_over": -154,
+        "best_over_book": "draftkings",
+        "best_under": 120,
+        "best_under_book": "draftkings"
+       }
       }
      },
      {
@@ -5814,8 +3502,8 @@
       "name": "Mohamed Diawara",
       "team": "NY",
       "opp": "IND",
-      "minutes": 12.3,
-      "points": 4.2,
+      "minutes": 12.7,
+      "points": 4.3,
       "rebounds": 2.0,
       "assists": 1.3,
       "threes": 0.8,
@@ -5832,9 +3520,9 @@
       "name": "James Wiseman",
       "team": "NY",
       "opp": "IND",
-      "minutes": 12.1,
-      "points": 3.9,
-      "rebounds": 3.0,
+      "minutes": 12.4,
+      "points": 4.0,
+      "rebounds": 3.1,
       "assists": 0.8,
       "threes": 0.3,
       "avg": {
@@ -5850,10 +3538,10 @@
       "name": "Jose Alvarado",
       "team": "NY",
       "opp": "IND",
-      "minutes": 11.5,
-      "points": 3.7,
+      "minutes": 11.8,
+      "points": 3.9,
       "rebounds": 1.4,
-      "assists": 1.9,
+      "assists": 2.0,
       "threes": 0.8,
       "avg": {
        "minutes": 9.9,
@@ -5868,11 +3556,11 @@
       "name": "Dalton Knecht",
       "team": "NY",
       "opp": "IND",
-      "minutes": 8.3,
-      "points": 3.2,
+      "minutes": 8.5,
+      "points": 3.3,
       "rebounds": 1.3,
-      "assists": 0.3,
-      "threes": 0.6,
+      "assists": 0.4,
+      "threes": 0.7,
       "avg": {
        "minutes": 8.0,
        "points": 3.2,
@@ -5902,44 +3590,44 @@
       },
       "props": {
        "assists": {
-        "line": 3.5,
-        "over": 142,
-        "under": -186,
-        "books": 6,
-        "best_over": 146,
+        "line": 0.5,
+        "over": -177,
+        "under": 134,
+        "books": 3,
+        "best_over": -180,
         "best_over_book": "fanduel",
-        "best_under": -175,
-        "best_under_book": "betmgm"
+        "best_under": 134,
+        "best_under_book": "fanduel"
        },
        "points": {
-        "line": 20.5,
-        "over": -105,
-        "under": -122,
-        "books": 7,
-        "best_over": -104,
+        "line": 25.5,
+        "over": -110,
+        "under": -121,
+        "books": 5,
+        "best_over": -102,
         "best_over_book": "fanduel",
-        "best_under": -121,
-        "best_under_book": "draftkings"
+        "best_under": -105,
+        "best_under_book": "betmgm"
        },
        "rebounds": {
-        "line": 6.5,
-        "over": 116,
-        "under": -154,
-        "books": 8,
-        "best_over": 118,
-        "best_over_book": "betrivers",
-        "best_under": -153,
-        "best_under_book": "draftkings"
+        "line": 8.5,
+        "over": 129,
+        "under": -173,
+        "books": 5,
+        "best_over": 135,
+        "best_over_book": "draftkings",
+        "best_under": 102,
+        "best_under_book": "fanduel"
        },
        "threes": {
-        "line": 1.5,
-        "over": -103,
-        "under": -125,
-        "books": 7,
-        "best_over": 100,
+        "line": 3.5,
+        "over": 110,
+        "under": -144,
+        "books": 3,
+        "best_over": 120,
         "best_over_book": "betmgm",
-        "best_under": -124,
-        "best_under_book": "williamhill_us"
+        "best_under": -140,
+        "best_under_book": "draftkings"
        }
       }
      },
@@ -5962,44 +3650,44 @@
       },
       "props": {
        "assists": {
-        "line": 6.5,
-        "over": -145,
-        "under": 112,
-        "books": 7,
-        "best_over": -139,
-        "best_over_book": "betrivers",
-        "best_under": 114,
+        "line": 9.5,
+        "over": -118,
+        "under": -112,
+        "books": 3,
+        "best_over": -105,
+        "best_over_book": "draftkings",
+        "best_under": -112,
         "best_under_book": "fanduel"
        },
        "points": {
-        "line": 14.5,
-        "over": 100,
-        "under": -132,
-        "books": 7,
-        "best_over": 106,
+        "line": 20.5,
+        "over": 105,
+        "under": -135,
+        "books": 3,
+        "best_over": 108,
         "best_over_book": "fanduel",
-        "best_under": -126,
+        "best_under": -130,
         "best_under_book": "draftkings"
        },
        "rebounds": {
-        "line": 2.5,
-        "over": -104,
-        "under": -126,
-        "books": 6,
-        "best_over": 100,
-        "best_over_book": "fanduel",
-        "best_under": -125,
-        "best_under_book": "draftkings"
+        "line": 3.5,
+        "over": -159,
+        "under": 119,
+        "books": 4,
+        "best_over": -145,
+        "best_over_book": "draftkings",
+        "best_under": 120,
+        "best_under_book": "betmgm"
        },
        "threes": {
-        "line": 1.5,
-        "over": -136,
-        "under": 104,
-        "books": 7,
-        "best_over": -115,
+        "line": 2.5,
+        "over": -102,
+        "under": -130,
+        "books": 3,
+        "best_over": 110,
         "best_over_book": "betmgm",
-        "best_under": 112,
-        "best_under_book": "fanduel"
+        "best_under": -125,
+        "best_under_book": "draftkings"
        }
       }
      },
@@ -6022,44 +3710,34 @@
       },
       "props": {
        "points": {
-        "line": 12.5,
-        "over": -105,
-        "under": -125,
-        "books": 7,
-        "best_over": 100,
+        "line": 6.5,
+        "over": 101,
+        "under": -133,
+        "books": 4,
+        "best_over": 104,
         "best_over_book": "fanduel",
-        "best_under": -121,
+        "best_under": -120,
         "best_under_book": "draftkings"
        },
        "rebounds": {
         "line": 3.5,
-        "over": -131,
-        "under": -101,
-        "books": 7,
-        "best_over": -120,
-        "best_over_book": "betmgm",
-        "best_under": 104,
-        "best_under_book": "fanduel"
+        "over": 142,
+        "under": -185,
+        "books": 4,
+        "best_over": 168,
+        "best_over_book": "fanduel",
+        "best_under": -145,
+        "best_under_book": "draftkings"
        },
        "threes": {
-        "line": 1.5,
-        "over": -140,
-        "under": 108,
-        "books": 7,
-        "best_over": -137,
-        "best_over_book": "williamhill_us",
-        "best_under": 115,
-        "best_under_book": "betmgm"
-       },
-       "assists": {
-        "line": 2.5,
-        "over": 136,
-        "under": -187,
-        "books": 2,
-        "best_over": 130,
-        "best_over_book": "fanatics",
-        "best_under": -190,
-        "best_under_book": "fanatics"
+        "line": 0.5,
+        "over": -115,
+        "under": -115,
+        "books": 3,
+        "best_over": -115,
+        "best_over_book": "draftkings",
+        "best_under": -112,
+        "best_under_book": "fanduel"
        }
       }
      },
@@ -6083,33 +3761,33 @@
       "props": {
        "points": {
         "line": 12.5,
-        "over": -115,
-        "under": -114,
-        "books": 7,
-        "best_over": -108,
-        "best_over_book": "fanduel",
+        "over": -105,
+        "under": -125,
+        "books": 5,
+        "best_over": 100,
+        "best_over_book": "fanatics",
         "best_under": -110,
-        "best_under_book": "draftkings"
+        "best_under_book": "betmgm"
        },
        "rebounds": {
-        "line": 4.5,
-        "over": 108,
-        "under": -140,
-        "books": 7,
-        "best_over": 125,
-        "best_over_book": "betrivers",
-        "best_under": -131,
+        "line": 3.5,
+        "over": -188,
+        "under": 145,
+        "books": 3,
+        "best_over": -188,
+        "best_over_book": "fanduel",
+        "best_under": 145,
         "best_under_book": "draftkings"
        },
        "threes": {
-        "line": 1.5,
-        "over": 113,
-        "under": -147,
-        "books": 7,
-        "best_over": 123,
-        "best_over_book": "betrivers",
-        "best_under": -140,
-        "best_under_book": "betmgm"
+        "line": 0.5,
+        "over": 154,
+        "under": -200,
+        "books": 3,
+        "best_over": 155,
+        "best_over_book": "betmgm",
+        "best_under": -200,
+        "best_under_book": "fanduel"
        }
       }
      },
@@ -6132,34 +3810,24 @@
       },
       "props": {
        "points": {
-        "line": 11.5,
-        "over": -113,
-        "under": -114,
-        "books": 7,
-        "best_over": -105,
-        "best_over_book": "betmgm",
-        "best_under": -109,
+        "line": 9.5,
+        "over": -135,
+        "under": 102,
+        "books": 3,
+        "best_over": -135,
+        "best_over_book": "draftkings",
+        "best_under": 105,
         "best_under_book": "draftkings"
        },
        "rebounds": {
-        "line": 8.5,
-        "over": -106,
-        "under": -123,
-        "books": 7,
-        "best_over": 100,
-        "best_over_book": "fanduel",
-        "best_under": -115,
-        "best_under_book": "betmgm"
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -160,
-        "under": 120,
+        "line": 9.5,
+        "over": -134,
+        "under": 103,
         "books": 2,
-        "best_over": -165,
-        "best_over_book": "betrivers",
+        "best_over": -115,
+        "best_over_book": "draftkings",
         "best_under": 120,
-        "best_under_book": "betrivers"
+        "best_under_book": "fanduel"
        }
       }
      },
@@ -6179,6 +3847,28 @@
        "rebounds": 3.6,
        "assists": 3.0,
        "threes": 1.1
+      },
+      "props": {
+       "points": {
+        "line": 3.5,
+        "over": -104,
+        "under": -128,
+        "books": 3,
+        "best_over": 100,
+        "best_over_book": "draftkings",
+        "best_under": -128,
+        "best_under_book": "fanduel"
+       },
+       "threes": {
+        "line": 0.5,
+        "over": 175,
+        "under": -230,
+        "books": 1,
+        "best_over": 175,
+        "best_over_book": "draftkings",
+        "best_under": -230,
+        "best_under_book": "draftkings"
+       }
       }
      },
      {
@@ -6200,34 +3890,34 @@
       },
       "props": {
        "points": {
-        "line": 11.5,
-        "over": -107,
-        "under": -121,
-        "books": 7,
-        "best_over": -102,
-        "best_over_book": "fanduel",
-        "best_under": -118,
-        "best_under_book": "betrivers"
+        "line": 10.5,
+        "over": -106,
+        "under": -125,
+        "books": 4,
+        "best_over": -105,
+        "best_over_book": "williamhill_us",
+        "best_under": -125,
+        "best_under_book": "fanduel"
        },
        "rebounds": {
-        "line": 4.5,
-        "over": 116,
-        "under": -153,
-        "books": 7,
-        "best_over": 125,
+        "line": 2.5,
+        "over": -140,
+        "under": 110,
+        "books": 4,
+        "best_over": -120,
         "best_over_book": "betmgm",
-        "best_under": -145,
-        "best_under_book": "draftkings"
+        "best_under": 132,
+        "best_under_book": "fanduel"
        },
        "threes": {
-        "line": 1.5,
-        "over": 106,
-        "under": -141,
-        "books": 7,
-        "best_over": 115,
-        "best_over_book": "fanatics",
-        "best_under": -134,
-        "best_under_book": "williamhill_us"
+        "line": 0.5,
+        "over": -130,
+        "under": -102,
+        "books": 3,
+        "best_over": 110,
+        "best_over_book": "betmgm",
+        "best_under": 105,
+        "best_under_book": "draftkings"
        }
       }
      },
@@ -6355,8 +4045,8 @@
    "market_ratings_margin": null,
    "mkt_spread": -7.5,
    "mkt_total": 210.5,
-   "mkt_ml_home": 261.0,
-   "mkt_ml_away": -324.0,
+   "mkt_ml_home": null,
+   "mkt_ml_away": null,
    "projection": -7.4,
    "projection_total": 210.5,
    "win_prob": 0.278,
@@ -6488,42 +4178,42 @@
       "props": {
        "assists": {
         "line": 3.5,
-        "over": -150,
-        "under": 114,
-        "books": 7,
-        "best_over": -146,
-        "best_over_book": "fanduel",
-        "best_under": 116,
-        "best_under_book": "draftkings"
+        "over": -110,
+        "under": -120,
+        "books": 4,
+        "best_over": 105,
+        "best_over_book": "draftkings",
+        "best_under": -120,
+        "best_under_book": "fanduel"
        },
        "points": {
-        "line": 19.5,
-        "over": -121,
-        "under": -107,
-        "books": 9,
-        "best_over": -120,
-        "best_over_book": "betmgm",
-        "best_under": -105,
-        "best_under_book": "williamhill_us"
+        "line": 13.5,
+        "over": -135,
+        "under": 102,
+        "books": 4,
+        "best_over": -105,
+        "best_over_book": "draftkings",
+        "best_under": 102,
+        "best_under_book": "fanduel"
        },
        "rebounds": {
-        "line": 6.5,
-        "over": -130,
-        "under": 100,
-        "books": 8,
-        "best_over": -125,
-        "best_over_book": "fanduel",
-        "best_under": 109,
-        "best_under_book": "draftkings"
+        "line": 5.5,
+        "over": -155,
+        "under": 120,
+        "books": 3,
+        "best_over": -140,
+        "best_over_book": "draftkings",
+        "best_under": 130,
+        "best_under_book": "fanduel"
        },
        "threes": {
-        "line": 1.5,
-        "over": -186,
-        "under": 140,
-        "books": 8,
-        "best_over": -175,
-        "best_over_book": "fanatics",
-        "best_under": 144,
+        "line": 0.5,
+        "over": -129,
+        "under": -101,
+        "books": 2,
+        "best_over": -115,
+        "best_over_book": "draftkings",
+        "best_under": 112,
         "best_under_book": "fanduel"
        }
       }
@@ -6547,43 +4237,43 @@
       },
       "props": {
        "assists": {
-        "line": 4.5,
-        "over": 128,
-        "under": -165,
-        "books": 8,
-        "best_over": 135,
-        "best_over_book": "betrivers",
-        "best_under": -160,
-        "best_under_book": "betmgm"
+        "line": 2.5,
+        "over": -160,
+        "under": 120,
+        "books": 3,
+        "best_over": -160,
+        "best_over_book": "fanduel",
+        "best_under": 130,
+        "best_under_book": "draftkings"
        },
        "points": {
         "line": 15.5,
-        "over": -111,
-        "under": -115,
-        "books": 8,
-        "best_over": -104,
-        "best_over_book": "draftkings",
-        "best_under": -110,
-        "best_under_book": "betmgm"
+        "over": -110,
+        "under": -120,
+        "books": 5,
+        "best_over": -106,
+        "best_over_book": "fanduel",
+        "best_under": -115,
+        "best_under_book": "fanatics"
        },
        "rebounds": {
-        "line": 4.5,
-        "over": -105,
-        "under": -124,
-        "books": 7,
-        "best_over": 105,
-        "best_over_book": "betrivers",
-        "best_under": -115,
-        "best_under_book": "betmgm"
+        "line": 6.5,
+        "over": 123,
+        "under": -164,
+        "books": 4,
+        "best_over": 126,
+        "best_over_book": "fanduel",
+        "best_under": -145,
+        "best_under_book": "draftkings"
        },
        "threes": {
-        "line": 2.5,
-        "over": 114,
-        "under": -150,
-        "books": 7,
-        "best_over": 133,
-        "best_over_book": "betrivers",
-        "best_under": -135,
+        "line": 3.5,
+        "over": 163,
+        "under": -220,
+        "books": 3,
+        "best_over": 165,
+        "best_over_book": "draftkings",
+        "best_under": -215,
         "best_under_book": "draftkings"
        }
       }
@@ -6606,34 +4296,14 @@
        "threes": 1.1
       },
       "props": {
-       "points": {
-        "line": 7.5,
-        "over": -113,
-        "under": -116,
-        "books": 7,
-        "best_over": -102,
-        "best_over_book": "fanduel",
-        "best_under": -110,
-        "best_under_book": "betmgm"
-       },
        "threes": {
-        "line": 1.5,
-        "over": 153,
-        "under": -208,
-        "books": 7,
-        "best_over": 165,
-        "best_over_book": "betrivers",
-        "best_under": -190,
-        "best_under_book": "betmgm"
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": -110,
-        "under": -119,
-        "books": 5,
-        "best_over": 100,
-        "best_over_book": "betmgm",
-        "best_under": -111,
+        "line": 0.5,
+        "over": 150,
+        "under": -195,
+        "books": 1,
+        "best_over": 150,
+        "best_over_book": "draftkings",
+        "best_under": -195,
         "best_under_book": "draftkings"
        }
       }
@@ -6657,44 +4327,44 @@
       },
       "props": {
        "assists": {
-        "line": 2.5,
-        "over": -140,
-        "under": 108,
-        "books": 6,
-        "best_over": -125,
-        "best_over_book": "betrivers",
-        "best_under": 110,
+        "line": 0.5,
+        "over": -250,
+        "under": 182,
+        "books": 1,
+        "best_over": -250,
+        "best_over_book": "fanduel",
+        "best_under": 182,
         "best_under_book": "fanduel"
        },
        "points": {
-        "line": 10.5,
-        "over": -112,
-        "under": -115,
-        "books": 7,
-        "best_over": -105,
+        "line": 6.5,
+        "over": -133,
+        "under": 100,
+        "books": 4,
+        "best_over": -125,
         "best_over_book": "draftkings",
-        "best_under": -107,
-        "best_under_book": "betrivers"
+        "best_under": 102,
+        "best_under_book": "fanduel"
        },
        "rebounds": {
-        "line": 3.5,
+        "line": 1.5,
         "over": 109,
-        "under": -141,
-        "books": 7,
-        "best_over": 126,
+        "under": -144,
+        "books": 2,
+        "best_over": 108,
         "best_over_book": "fanduel",
-        "best_under": -125,
-        "best_under_book": "betmgm"
+        "best_under": -144,
+        "best_under_book": "fanduel"
        },
        "threes": {
-        "line": 1.5,
-        "over": -137,
-        "under": 104,
-        "books": 7,
-        "best_over": -118,
-        "best_over_book": "betrivers",
-        "best_under": 110,
-        "best_under_book": "draftkings"
+        "line": 0.5,
+        "over": -147,
+        "under": 113,
+        "books": 2,
+        "best_over": -140,
+        "best_over_book": "draftkings",
+        "best_under": 116,
+        "best_under_book": "fanduel"
        }
       }
      },
@@ -6717,44 +4387,44 @@
       },
       "props": {
        "assists": {
-        "line": 5.5,
-        "over": -111,
-        "under": -117,
-        "books": 7,
-        "best_over": -104,
+        "line": 4.5,
+        "over": -105,
+        "under": -125,
+        "books": 4,
+        "best_over": 100,
         "best_over_book": "fanduel",
-        "best_under": -110,
-        "best_under_book": "betmgm"
+        "best_under": -105,
+        "best_under_book": "draftkings"
        },
        "points": {
-        "line": 4.5,
-        "over": -124,
-        "under": -105,
-        "books": 8,
-        "best_over": -115,
-        "best_over_book": "fanduel",
-        "best_under": 105,
-        "best_under_book": "betrivers"
+        "line": 11.5,
+        "over": -108,
+        "under": -122,
+        "books": 3,
+        "best_over": 114,
+        "best_over_book": "draftkings",
+        "best_under": -122,
+        "best_under_book": "fanduel"
        },
        "rebounds": {
-        "line": 4.5,
-        "over": -106,
-        "under": -125,
-        "books": 7,
-        "best_over": -102,
+        "line": 5.5,
+        "over": 123,
+        "under": -163,
+        "books": 4,
+        "best_over": 130,
         "best_over_book": "fanduel",
-        "best_under": -119,
+        "best_under": -145,
         "best_under_book": "draftkings"
        },
        "threes": {
-        "line": 0.5,
-        "over": -141,
-        "under": 108,
-        "books": 4,
-        "best_over": -141,
+        "line": 3.5,
+        "over": 169,
+        "under": -222,
+        "books": 2,
+        "best_over": 190,
         "best_over_book": "draftkings",
-        "best_under": 107,
-        "best_under_book": "draftkings"
+        "best_under": -200,
+        "best_under_book": "fanduel"
        }
       }
      },
@@ -6776,45 +4446,25 @@
        "threes": 0.5
       },
       "props": {
-       "assists": {
-        "line": 2.5,
-        "over": 144,
-        "under": -189,
-        "books": 6,
-        "best_over": 145,
-        "best_over_book": "betmgm",
-        "best_under": -180,
+       "points": {
+        "line": 6.5,
+        "over": -120,
+        "under": -110,
+        "books": 3,
+        "best_over": -105,
+        "best_over_book": "draftkings",
+        "best_under": -108,
         "best_under_book": "fanduel"
        },
-       "points": {
-        "line": 7.5,
-        "over": -128,
-        "under": 100,
-        "books": 7,
-        "best_over": -118,
-        "best_over_book": "draftkings",
-        "best_under": 107,
-        "best_under_book": "betrivers"
-       },
        "rebounds": {
-        "line": 3.5,
-        "over": -144,
-        "under": 110,
-        "books": 7,
-        "best_over": -130,
-        "best_over_book": "betmgm",
-        "best_under": 116,
-        "best_under_book": "draftkings"
-       },
-       "threes": {
-        "line": 0.5,
-        "over": -148,
-        "under": 108,
+        "line": 4.5,
+        "over": -130,
+        "under": 100,
         "books": 1,
-        "best_over": -148,
-        "best_over_book": "betrivers",
-        "best_under": 108,
-        "best_under_book": "betrivers"
+        "best_over": -130,
+        "best_over_book": "draftkings",
+        "best_under": 100,
+        "best_under_book": "draftkings"
        }
       }
      },
@@ -6837,23 +4487,23 @@
       },
       "props": {
        "points": {
-        "line": 7.5,
-        "over": -127,
-        "under": -103,
-        "books": 7,
-        "best_over": -113,
+        "line": 10.5,
+        "over": -144,
+        "under": 109,
+        "books": 4,
+        "best_over": -144,
         "best_over_book": "fanduel",
-        "best_under": 102,
-        "best_under_book": "betrivers"
+        "best_under": 108,
+        "best_under_book": "fanduel"
        },
        "rebounds": {
-        "line": 6.5,
-        "over": 110,
-        "under": -144,
-        "books": 7,
-        "best_over": 115,
-        "best_over_book": "betmgm",
-        "best_under": -139,
+        "line": 8.5,
+        "over": -124,
+        "under": -107,
+        "books": 4,
+        "best_over": -120,
+        "best_over_book": "fanduel",
+        "best_under": 120,
         "best_under_book": "draftkings"
        }
       }
@@ -6892,6 +4542,28 @@
        "rebounds": 3.6,
        "assists": 1.8,
        "threes": 0.8
+      },
+      "props": {
+       "points": {
+        "line": 4.5,
+        "over": -165,
+        "under": 125,
+        "books": 3,
+        "best_over": -166,
+        "best_over_book": "fanduel",
+        "best_under": 124,
+        "best_under_book": "fanduel"
+       },
+       "threes": {
+        "line": 1.5,
+        "over": 130,
+        "under": -166,
+        "books": 1,
+        "best_over": 130,
+        "best_over_book": "draftkings",
+        "best_under": -166,
+        "best_under_book": "draftkings"
+       }
       }
      },
      {
@@ -6969,43 +4641,43 @@
       },
       "props": {
        "assists": {
-        "line": 6.5,
-        "over": -121,
-        "under": -108,
-        "books": 7,
-        "best_over": -115,
+        "line": 3.5,
+        "over": -154,
+        "under": 116,
+        "books": 4,
+        "best_over": -154,
         "best_over_book": "fanduel",
-        "best_under": 100,
-        "best_under_book": "betrivers"
+        "best_under": 130,
+        "best_under_book": "williamhill_us"
        },
        "points": {
-        "line": 27.5,
-        "over": -104,
-        "under": -126,
-        "books": 7,
-        "best_over": 100,
+        "line": 37.5,
+        "over": -120,
+        "under": -110,
+        "books": 4,
+        "best_over": -120,
         "best_over_book": "fanduel",
-        "best_under": -117,
-        "best_under_book": "betrivers"
+        "best_under": -107,
+        "best_under_book": "williamhill_us"
        },
        "rebounds": {
-        "line": 7.5,
-        "over": 110,
-        "under": -145,
-        "books": 7,
-        "best_over": 120,
-        "best_over_book": "fanduel",
-        "best_under": -142,
-        "best_under_book": "draftkings"
+        "line": 11.5,
+        "over": -170,
+        "under": 130,
+        "books": 4,
+        "best_over": -154,
+        "best_over_book": "draftkings",
+        "best_under": 130,
+        "best_under_book": "fanduel"
        },
        "threes": {
-        "line": 3.5,
-        "over": 132,
-        "under": -173,
-        "books": 7,
-        "best_over": 148,
+        "line": 5.5,
+        "over": -120,
+        "under": -113,
+        "books": 3,
+        "best_over": -114,
         "best_over_book": "fanduel",
-        "best_under": -162,
+        "best_under": 100,
         "best_under_book": "draftkings"
        }
       }
@@ -7030,43 +4702,43 @@
       "props": {
        "assists": {
         "line": 4.5,
-        "over": 110,
-        "under": -148,
-        "books": 7,
-        "best_over": 116,
+        "over": 139,
+        "under": -185,
+        "books": 4,
+        "best_over": 138,
         "best_over_book": "fanduel",
-        "best_under": -144,
-        "best_under_book": "draftkings"
+        "best_under": -186,
+        "best_under_book": "fanduel"
        },
        "points": {
-        "line": 15.5,
-        "over": -121,
-        "under": -107,
-        "books": 7,
-        "best_over": -118,
-        "best_over_book": "betrivers",
-        "best_under": -103,
-        "best_under_book": "draftkings"
+        "line": 12.5,
+        "over": -130,
+        "under": -101,
+        "books": 4,
+        "best_over": -120,
+        "best_over_book": "draftkings",
+        "best_under": 100,
+        "best_under_book": "williamhill_us"
        },
        "rebounds": {
-        "line": 3.5,
-        "over": 125,
-        "under": -166,
-        "books": 7,
-        "best_over": 130,
+        "line": 1.5,
+        "over": -102,
+        "under": -129,
+        "books": 2,
+        "best_over": -104,
         "best_over_book": "fanduel",
-        "best_under": -155,
-        "best_under_book": "betmgm"
+        "best_under": -128,
+        "best_under_book": "fanduel"
        },
        "threes": {
         "line": 2.5,
-        "over": -106,
-        "under": -122,
-        "books": 7,
-        "best_over": 102,
-        "best_over_book": "betrivers",
-        "best_under": -115,
-        "best_under_book": "betmgm"
+        "over": 164,
+        "under": -220,
+        "books": 2,
+        "best_over": 168,
+        "best_over_book": "fanduel",
+        "best_under": -210,
+        "best_under_book": "draftkings"
        }
       }
      },
@@ -7089,44 +4761,44 @@
       },
       "props": {
        "assists": {
-        "line": 5.5,
-        "over": 120,
-        "under": -157,
-        "books": 7,
-        "best_over": 121,
-        "best_over_book": "draftkings",
-        "best_under": -148,
-        "best_under_book": "fanduel"
-       },
-       "points": {
-        "line": 14.5,
-        "over": -116,
-        "under": -111,
-        "books": 7,
-        "best_over": -106,
-        "best_over_book": "betrivers",
-        "best_under": -107,
+        "line": 4.5,
+        "over": 101,
+        "under": -132,
+        "books": 4,
+        "best_over": 102,
+        "best_over_book": "fanduel",
+        "best_under": -127,
         "best_under_book": "williamhill_us"
        },
-       "rebounds": {
-        "line": 3.5,
-        "over": 107,
-        "under": -140,
-        "books": 7,
-        "best_over": 112,
+       "points": {
+        "line": 8.5,
+        "over": -110,
+        "under": -120,
+        "books": 4,
+        "best_over": -110,
         "best_over_book": "fanduel",
         "best_under": -120,
-        "best_under_book": "betmgm"
+        "best_under_book": "fanduel"
+       },
+       "rebounds": {
+        "line": 4.5,
+        "over": 104,
+        "under": -135,
+        "books": 4,
+        "best_over": 105,
+        "best_over_book": "draftkings",
+        "best_under": -132,
+        "best_under_book": "williamhill_us"
        },
        "threes": {
-        "line": 2.5,
-        "over": 116,
-        "under": -148,
-        "books": 7,
-        "best_over": 130,
-        "best_over_book": "betmgm",
-        "best_under": -140,
-        "best_under_book": "draftkings"
+        "line": 0.5,
+        "over": -198,
+        "under": 150,
+        "books": 2,
+        "best_over": -188,
+        "best_over_book": "draftkings",
+        "best_under": 154,
+        "best_under_book": "fanduel"
        }
       }
      },
@@ -7149,34 +4821,24 @@
       },
       "props": {
        "points": {
-        "line": 10.5,
-        "over": -105,
-        "under": -127,
-        "books": 7,
-        "best_over": 102,
-        "best_over_book": "draftkings",
-        "best_under": -111,
-        "best_under_book": "betmgm"
+        "line": 4.5,
+        "over": -120,
+        "under": -110,
+        "books": 4,
+        "best_over": -117,
+        "best_over_book": "williamhill_us",
+        "best_under": -108,
+        "best_under_book": "fanduel"
        },
        "rebounds": {
-        "line": 7.5,
-        "over": -139,
-        "under": 105,
-        "books": 7,
-        "best_over": -132,
-        "best_over_book": "fanduel",
-        "best_under": 110,
-        "best_under_book": "betmgm"
-       },
-       "assists": {
-        "line": 1.5,
-        "over": -147,
-        "under": 112,
-        "books": 2,
-        "best_over": -159,
-        "best_over_book": "betrivers",
-        "best_under": 118,
-        "best_under_book": "betrivers"
+        "line": 10.5,
+        "over": 110,
+        "under": -140,
+        "books": 1,
+        "best_over": 110,
+        "best_over_book": "draftkings",
+        "best_under": -140,
+        "best_under_book": "draftkings"
        }
       }
      },
@@ -7199,34 +4861,34 @@
       },
       "props": {
        "points": {
-        "line": 8.5,
-        "over": -109,
-        "under": -118,
-        "books": 7,
-        "best_over": -104,
-        "best_over_book": "betrivers",
-        "best_under": -113,
-        "best_under_book": "fanduel"
+        "line": 4.5,
+        "over": 102,
+        "under": -135,
+        "books": 3,
+        "best_over": 102,
+        "best_over_book": "fanduel",
+        "best_under": 105,
+        "best_under_book": "draftkings"
        },
        "rebounds": {
-        "line": 3.5,
-        "over": -111,
-        "under": -117,
-        "books": 7,
-        "best_over": -110,
-        "best_over_book": "draftkings",
-        "best_under": -110,
-        "best_under_book": "betmgm"
+        "line": 2.5,
+        "over": -125,
+        "under": -105,
+        "books": 3,
+        "best_over": -125,
+        "best_over_book": "fanduel",
+        "best_under": 105,
+        "best_under_book": "draftkings"
        },
        "threes": {
-        "line": 2.5,
-        "over": 120,
-        "under": -160,
-        "books": 7,
-        "best_over": 123,
-        "best_over_book": "draftkings",
-        "best_under": -140,
-        "best_under_book": "fanduel"
+        "line": 1.5,
+        "over": 153,
+        "under": -209,
+        "books": 3,
+        "best_over": 174,
+        "best_over_book": "fanduel",
+        "best_under": -175,
+        "best_under_book": "draftkings"
        }
       }
      },
@@ -7246,48 +4908,6 @@
        "rebounds": 3.6,
        "assists": 1.4,
        "threes": 1.2
-      },
-      "props": {
-       "assists": {
-        "line": 2.5,
-        "over": 142,
-        "under": -190,
-        "books": 6,
-        "best_over": 143,
-        "best_over_book": "draftkings",
-        "best_under": -170,
-        "best_under_book": "fanduel"
-       },
-       "points": {
-        "line": 7.5,
-        "over": -108,
-        "under": -122,
-        "books": 7,
-        "best_over": -104,
-        "best_over_book": "fanduel",
-        "best_under": -120,
-        "best_under_book": "draftkings"
-       },
-       "rebounds": {
-        "line": 4.5,
-        "over": 120,
-        "under": -157,
-        "books": 7,
-        "best_over": 126,
-        "best_over_book": "fanduel",
-        "best_under": -152,
-        "best_under_book": "betrivers"
-       },
-       "threes": {
-        "line": 1.5,
-        "over": 100,
-        "under": -136,
-        "books": 6,
-        "best_over": 108,
-        "best_over_book": "fanduel",
-        "best_under": -127,
-        "best_under_book": "draftkings"
-       }
       }
      },
      {
@@ -7306,48 +4926,6 @@
        "rebounds": 2.6,
        "assists": 0.6,
        "threes": 0.5
-      },
-      "props": {
-       "assists": {
-        "line": 0.5,
-        "over": 115,
-        "under": -155,
-        "books": 1,
-        "best_over": 115,
-        "best_over_book": "betmgm",
-        "best_under": -155,
-        "best_under_book": "betmgm"
-       },
-       "points": {
-        "line": 4.5,
-        "over": -105,
-        "under": -130,
-        "books": 1,
-        "best_over": -105,
-        "best_over_book": "betmgm",
-        "best_under": -130,
-        "best_under_book": "betmgm"
-       },
-       "rebounds": {
-        "line": 2.5,
-        "over": 120,
-        "under": -160,
-        "books": 1,
-        "best_over": 120,
-        "best_over_book": "betmgm",
-        "best_under": -160,
-        "best_under_book": "betmgm"
-       },
-       "threes": {
-        "line": 0.5,
-        "over": -155,
-        "under": 115,
-        "books": 1,
-        "best_over": -155,
-        "best_over_book": "betmgm",
-        "best_under": 115,
-        "best_under_book": "betmgm"
-       }
       }
      },
      {
@@ -7366,6 +4944,28 @@
        "rebounds": 3.0,
        "assists": 1.6,
        "threes": 0.9
+      },
+      "props": {
+       "points": {
+        "line": 7.5,
+        "over": -135,
+        "under": 105,
+        "books": 1,
+        "best_over": -135,
+        "best_over_book": "draftkings",
+        "best_under": 105,
+        "best_under_book": "draftkings"
+       },
+       "rebounds": {
+        "line": 4.5,
+        "over": -154,
+        "under": 120,
+        "books": 1,
+        "best_over": -154,
+        "best_over_book": "draftkings",
+        "best_under": 120,
+        "best_under_book": "draftkings"
+       }
       }
      },
      {
@@ -7472,12 +5072,12 @@
    "ratings_margin": -0.6,
    "pace": 103.3,
    "market_ratings_margin": null,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
-   "projection": -2.5,
-   "projection_total": 233.9,
+   "mkt_spread": 3.5,
+   "mkt_total": 229.5,
+   "mkt_ml_home": -155.0,
+   "mkt_ml_away": 130.0,
+   "projection": 2.8,
+   "projection_total": 229.5,
    "win_prob": 0.411,
    "rest": {
     "away": 1,
@@ -7933,18 +5533,18 @@
    "tip": "2026-11-23T19:00:00-05:00",
    "away": "MEM",
    "home": "CHA",
-   "margin": -3.7,
-   "total": 226.5,
+   "margin": -3.6,
+   "total": 225.4,
    "ratings_margin": -0.8,
    "pace": 100.6,
    "market_ratings_margin": null,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
-   "projection": -3.7,
-   "projection_total": 226.5,
-   "win_prob": 0.37,
+   "mkt_spread": -3.5,
+   "mkt_total": 217.5,
+   "mkt_ml_home": 136.0,
+   "mkt_ml_away": -162.0,
+   "projection": -3.5,
+   "projection_total": 217.5,
+   "win_prob": 0.373,
    "rest": {
     "away": 1,
     "home": 2
@@ -7982,13 +5582,23 @@
       "kind": "missing"
      },
      {
+      "label": "CHA without Grayson Allen",
+      "pts": -0.81,
+      "kind": "missing"
+     },
+     {
+      "label": "MEM without Cameron Boozer",
+      "pts": 0.93,
+      "kind": "missing"
+     },
+     {
       "label": "MEM without GG Jackson",
       "pts": 0.33,
       "kind": "missing"
      },
      {
-      "label": "Lineup strength from player impact ratings (CHA -2.1, MEM +9.1 per 48)",
-      "pts": -3.45,
+      "label": "Lineup strength from player impact ratings (CHA -4.1, MEM +7.3 per 48)",
+      "pts": -3.51,
       "kind": "players"
      }
     ],
@@ -8005,29 +5615,34 @@
      },
      {
       "label": "Players out, both teams",
-      "pts": -0.39,
+      "pts": -1.53,
       "kind": "missing"
      }
     ]
    },
    "imp": {
-    "home": -2.067,
-    "away": 9.142
+    "home": -4.088,
+    "away": 7.298
    },
    "missing": {
-    "away": 1.2,
-    "home": 0.9,
+    "away": 4.5,
+    "home": 3.8,
     "away_names": [
+     "Cameron Boozer",
      "GG Jackson"
     ],
-    "home_names": []
+    "home_names": [
+     "Grayson Allen"
+    ]
    },
    "players": {
     "out": {
      "home": [
-      "Dennis Schroder"
+      "Dennis Schroder",
+      "Grayson Allen"
      ],
      "away": [
+      "Cameron Boozer",
       "GG Jackson"
      ]
     },
@@ -8037,11 +5652,11 @@
       "name": "Naz Reid",
       "team": "CHA",
       "opp": "MEM",
-      "minutes": 32.1,
-      "points": 17.5,
-      "rebounds": 7.8,
-      "assists": 2.6,
-      "threes": 2.4,
+      "minutes": 33.2,
+      "points": 18.1,
+      "rebounds": 8.0,
+      "assists": 2.7,
+      "threes": 2.5,
       "avg": {
        "minutes": 31.1,
        "points": 17.3,
@@ -8055,10 +5670,10 @@
       "name": "Moussa Diabate",
       "team": "CHA",
       "opp": "MEM",
-      "minutes": 28.8,
-      "points": 9.3,
-      "rebounds": 9.4,
-      "assists": 2.1,
+      "minutes": 29.7,
+      "points": 9.6,
+      "rebounds": 9.7,
+      "assists": 2.2,
       "threes": 0.1,
       "avg": {
        "minutes": 29.6,
@@ -8073,11 +5688,11 @@
       "name": "Brandon Miller",
       "team": "CHA",
       "opp": "MEM",
-      "minutes": 28.7,
-      "points": 19.0,
-      "rebounds": 4.4,
-      "assists": 2.8,
-      "threes": 2.6,
+      "minutes": 29.6,
+      "points": 19.5,
+      "rebounds": 4.5,
+      "assists": 2.9,
+      "threes": 2.7,
       "avg": {
        "minutes": 30.7,
        "points": 19.8,
@@ -8091,11 +5706,11 @@
       "name": "Sion James",
       "team": "CHA",
       "opp": "MEM",
-      "minutes": 28.1,
-      "points": 6.6,
-      "rebounds": 4.0,
-      "assists": 2.8,
-      "threes": 1.1,
+      "minutes": 29.0,
+      "points": 6.8,
+      "rebounds": 4.1,
+      "assists": 2.9,
+      "threes": 1.2,
       "avg": {
        "minutes": 27.4,
        "points": 5.8,
@@ -8105,33 +5720,15 @@
       }
      },
      {
-      "id": 3135045,
-      "name": "Grayson Allen",
-      "team": "CHA",
-      "opp": "MEM",
-      "minutes": 23.8,
-      "points": 13.4,
-      "rebounds": 2.6,
-      "assists": 3.1,
-      "threes": 2.6,
-      "avg": {
-       "minutes": 27.2,
-       "points": 14.9,
-       "rebounds": 3.1,
-       "assists": 3.3,
-       "threes": 3.4
-      }
-     },
-     {
       "id": 4395651,
       "name": "Coby White",
       "team": "CHA",
       "opp": "MEM",
-      "minutes": 21.4,
-      "points": 14.1,
-      "rebounds": 2.6,
-      "assists": 3.6,
-      "threes": 1.5,
+      "minutes": 22.1,
+      "points": 14.5,
+      "rebounds": 2.7,
+      "assists": 3.7,
+      "threes": 1.6,
       "avg": {
        "minutes": 20.2,
        "points": 12.5,
@@ -8145,11 +5742,11 @@
       "name": "Royce O'Neale",
       "team": "CHA",
       "opp": "MEM",
-      "minutes": 21.3,
-      "points": 6.8,
-      "rebounds": 3.2,
+      "minutes": 22.0,
+      "points": 7.1,
+      "rebounds": 3.3,
       "assists": 1.4,
-      "threes": 1.7,
+      "threes": 1.8,
       "avg": {
        "minutes": 20.5,
        "points": 5.9,
@@ -8159,31 +5756,13 @@
       }
      },
      {
-      "id": 4066218,
-      "name": "Grant Williams",
-      "team": "CHA",
-      "opp": "MEM",
-      "minutes": 19.3,
-      "points": 7.9,
-      "rebounds": 3.2,
-      "assists": 1.3,
-      "threes": 1.5,
-      "avg": {
-       "minutes": 22.0,
-       "points": 11.3,
-       "rebounds": 2.7,
-       "assists": 0.7,
-       "threes": 2.3
-      }
-     },
-     {
       "id": 4576060,
       "name": "Ryan Kalkbrenner",
       "team": "CHA",
       "opp": "MEM",
-      "minutes": 17.6,
-      "points": 5.4,
-      "rebounds": 4.5,
+      "minutes": 18.1,
+      "points": 5.6,
+      "rebounds": 4.6,
       "assists": 1.0,
       "threes": 0.1,
       "avg": {
@@ -8199,9 +5778,9 @@
       "name": "Christian Anderson",
       "team": "CHA",
       "opp": "MEM",
-      "minutes": 16.0,
-      "points": 6.1,
-      "rebounds": 1.8,
+      "minutes": 16.5,
+      "points": 6.3,
+      "rebounds": 1.9,
       "assists": 2.1,
       "threes": 1.0,
       "avg": {
@@ -8217,8 +5796,8 @@
       "name": "Tidjane Salaun",
       "team": "CHA",
       "opp": "MEM",
-      "minutes": 12.5,
-      "points": 4.7,
+      "minutes": 12.8,
+      "points": 4.8,
       "rebounds": 2.8,
       "assists": 0.4,
       "threes": 0.8,
@@ -8235,9 +5814,9 @@
       "name": "Hannes Steinbach",
       "team": "CHA",
       "opp": "MEM",
-      "minutes": 12.2,
-      "points": 3.9,
-      "rebounds": 3.0,
+      "minutes": 12.6,
+      "points": 4.1,
+      "rebounds": 3.1,
       "assists": 0.8,
       "threes": 0.3,
       "avg": {
@@ -8253,8 +5832,8 @@
       "name": "Liam McNeeley",
       "team": "CHA",
       "opp": "MEM",
-      "minutes": 9.1,
-      "points": 3.1,
+      "minutes": 9.4,
+      "points": 3.2,
       "rebounds": 1.5,
       "assists": 0.6,
       "threes": 0.5,
@@ -8273,11 +5852,11 @@
       "name": "Ty Jerome",
       "team": "MEM",
       "opp": "CHA",
-      "minutes": 28.2,
-      "points": 22.8,
-      "rebounds": 3.2,
-      "assists": 5.5,
-      "threes": 2.7,
+      "minutes": 29.3,
+      "points": 23.7,
+      "rebounds": 3.4,
+      "assists": 5.7,
+      "threes": 2.8,
       "avg": {
        "minutes": 30.3,
        "points": 24.8,
@@ -8291,11 +5870,11 @@
       "name": "Cedric Coward",
       "team": "MEM",
       "opp": "CHA",
-      "minutes": 27.8,
-      "points": 14.8,
-      "rebounds": 6.7,
-      "assists": 3.3,
-      "threes": 2.2,
+      "minutes": 29.0,
+      "points": 15.4,
+      "rebounds": 6.9,
+      "assists": 3.4,
+      "threes": 2.3,
       "avg": {
        "minutes": 28.8,
        "points": 15.3,
@@ -8305,33 +5884,15 @@
       }
      },
      {
-      "id": 5041935,
-      "name": "Cameron Boozer",
-      "team": "MEM",
-      "opp": "CHA",
-      "minutes": 25.4,
-      "points": 13.7,
-      "rebounds": 7.0,
-      "assists": 4.5,
-      "threes": 1.6,
-      "avg": {
-       "minutes": 30.8,
-       "points": 16.6,
-       "rebounds": 9.2,
-       "assists": 5.3,
-       "threes": 1.8
-      }
-     },
-     {
       "id": 4433083,
       "name": "Cam Spencer",
       "team": "MEM",
       "opp": "CHA",
-      "minutes": 25.3,
-      "points": 11.9,
-      "rebounds": 2.9,
-      "assists": 6.1,
-      "threes": 2.2,
+      "minutes": 26.4,
+      "points": 12.5,
+      "rebounds": 3.1,
+      "assists": 6.4,
+      "threes": 2.3,
       "avg": {
        "minutes": 22.9,
        "points": 11.1,
@@ -8345,11 +5906,11 @@
       "name": "Jaylen Wells",
       "team": "MEM",
       "opp": "CHA",
-      "minutes": 25.0,
-      "points": 11.2,
-      "rebounds": 2.9,
-      "assists": 1.4,
-      "threes": 1.9,
+      "minutes": 26.0,
+      "points": 11.6,
+      "rebounds": 3.0,
+      "assists": 1.5,
+      "threes": 2.0,
       "avg": {
        "minutes": 26.7,
        "points": 11.2,
@@ -8363,11 +5924,11 @@
       "name": "Zach Edey",
       "team": "MEM",
       "opp": "CHA",
-      "minutes": 20.9,
-      "points": 9.6,
-      "rebounds": 6.7,
-      "assists": 1.0,
-      "threes": 0.2,
+      "minutes": 21.7,
+      "points": 9.9,
+      "rebounds": 6.9,
+      "assists": 1.1,
+      "threes": 0.3,
       "avg": {
        "minutes": 21.0,
        "points": 9.1,
@@ -8381,11 +5942,11 @@
       "name": "Javon Small",
       "team": "MEM",
       "opp": "CHA",
-      "minutes": 20.2,
-      "points": 9.2,
-      "rebounds": 2.8,
-      "assists": 4.4,
-      "threes": 1.4,
+      "minutes": 21.1,
+      "points": 9.6,
+      "rebounds": 3.0,
+      "assists": 4.5,
+      "threes": 1.5,
       "avg": {
        "minutes": 22.2,
        "points": 9.6,
@@ -8399,10 +5960,10 @@
       "name": "Taylor Hendricks",
       "team": "MEM",
       "opp": "CHA",
-      "minutes": 19.0,
-      "points": 8.3,
-      "rebounds": 3.7,
-      "assists": 1.1,
+      "minutes": 19.8,
+      "points": 8.7,
+      "rebounds": 3.8,
+      "assists": 1.2,
       "threes": 1.1,
       "avg": {
        "minutes": 15.0,
@@ -8417,9 +5978,9 @@
       "name": "Isaiah Stewart",
       "team": "MEM",
       "opp": "CHA",
-      "minutes": 18.5,
-      "points": 9.0,
-      "rebounds": 3.5,
+      "minutes": 19.2,
+      "points": 9.4,
+      "rebounds": 3.6,
       "assists": 1.0,
       "threes": 0.7,
       "avg": {
@@ -8435,11 +5996,11 @@
       "name": "Jerami Grant",
       "team": "MEM",
       "opp": "CHA",
-      "minutes": 17.1,
-      "points": 9.4,
-      "rebounds": 1.6,
-      "assists": 1.4,
-      "threes": 1.4,
+      "minutes": 17.8,
+      "points": 9.7,
+      "rebounds": 1.7,
+      "assists": 1.5,
+      "threes": 1.5,
       "avg": {
        "minutes": 22.1,
        "points": 10.6,
@@ -8453,9 +6014,9 @@
       "name": "Olivier-Maxence Prosper",
       "team": "MEM",
       "opp": "CHA",
-      "minutes": 15.9,
-      "points": 8.2,
-      "rebounds": 2.7,
+      "minutes": 16.6,
+      "points": 8.6,
+      "rebounds": 2.9,
       "assists": 0.8,
       "threes": 0.9,
       "avg": {
@@ -8471,10 +6032,10 @@
       "name": "Jahmai Mashack",
       "team": "MEM",
       "opp": "CHA",
-      "minutes": 14.2,
-      "points": 3.3,
-      "rebounds": 1.5,
-      "assists": 1.6,
+      "minutes": 14.8,
+      "points": 3.5,
+      "rebounds": 1.6,
+      "assists": 1.7,
       "threes": 0.4,
       "avg": {
        "minutes": 10.4,
@@ -8489,8 +6050,8 @@
       "name": "Kris Murray",
       "team": "MEM",
       "opp": "CHA",
-      "minutes": 10.0,
-      "points": 2.0,
+      "minutes": 10.3,
+      "points": 2.1,
       "rebounds": 1.3,
       "assists": 0.6,
       "threes": 0.3,
@@ -8507,10 +6068,10 @@
       "name": "Quinten Post",
       "team": "MEM",
       "opp": "CHA",
-      "minutes": 9.2,
-      "points": 3.7,
-      "rebounds": 1.8,
-      "assists": 0.5,
+      "minutes": 9.5,
+      "points": 3.8,
+      "rebounds": 1.9,
+      "assists": 0.6,
       "threes": 0.7,
       "avg": {
        "minutes": 11.6,
@@ -8534,12 +6095,12 @@
    "ratings_margin": 13.8,
    "pace": 102.1,
    "market_ratings_margin": null,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
-   "projection": 13.8,
-   "projection_total": 225.9,
+   "mkt_spread": 12.5,
+   "mkt_total": 224.5,
+   "mkt_ml_home": -670.0,
+   "mkt_ml_away": 487.0,
+   "projection": 12.7,
+   "projection_total": 224.5,
    "win_prob": 0.878,
    "rest": {
     "away": 2,
@@ -8997,12 +6558,12 @@
    "ratings_margin": 9.2,
    "pace": 100.3,
    "market_ratings_margin": null,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
-   "projection": 7.7,
-   "projection_total": 227.4,
+   "mkt_spread": 10.5,
+   "mkt_total": 223.5,
+   "mkt_ml_home": -537.0,
+   "mkt_ml_away": 406.0,
+   "projection": 10.2,
+   "projection_total": 223.5,
    "win_prob": 0.751,
    "rest": {
     "away": 1,
@@ -9524,8 +7085,8 @@
    "tip": "2026-11-23T19:30:00-05:00",
    "away": "OKC",
    "home": "IND",
-   "margin": -9.4,
-   "total": 227.0,
+   "margin": -4.9,
+   "total": 224.2,
    "ratings_margin": -10.1,
    "pace": 103.3,
    "market_ratings_margin": null,
@@ -9533,9 +7094,9 @@
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
-   "projection": -9.4,
-   "projection_total": 227.0,
-   "win_prob": 0.208,
+   "projection": -4.9,
+   "projection_total": 224.2,
+   "win_prob": 0.333,
    "rest": {
     "away": 0,
     "home": 0
@@ -9578,8 +7139,18 @@
       "kind": "missing"
      },
      {
-      "label": "Lineup strength from player impact ratings (IND +2.1, OKC +9.7 per 48)",
-      "pts": -2.32,
+      "label": "OKC without Shai Gilgeous-Alexander",
+      "pts": 3.77,
+      "kind": "missing"
+     },
+     {
+      "label": "OKC without Aday Mara",
+      "pts": 0.57,
+      "kind": "missing"
+     },
+     {
+      "label": "Lineup strength from player impact ratings (IND +2.1, OKC +9.1 per 48)",
+      "pts": -2.14,
       "kind": "players"
      }
     ],
@@ -9611,19 +7182,22 @@
      },
      {
       "label": "Players out, both teams",
-      "pts": -0.65,
+      "pts": -3.52,
       "kind": "missing"
      }
     ]
    },
    "imp": {
     "home": 2.12,
-    "away": 9.667
+    "away": 9.081
    },
    "missing": {
-    "away": 1.2,
+    "away": 16.7,
     "home": 2.4,
-    "away_names": [],
+    "away_names": [
+     "Shai Gilgeous-Alexander",
+     "Aday Mara"
+    ],
     "home_names": [
      "T.J. McConnell"
     ]
@@ -9634,7 +7208,9 @@
       "T.J. McConnell"
      ],
      "away": [
+      "Shai Gilgeous-Alexander",
       "Jaylin Williams",
+      "Aday Mara",
       "Alex Caruso"
      ]
     },
@@ -9876,33 +7452,15 @@
     ],
     "away": [
      {
-      "id": 4278073,
-      "name": "Shai Gilgeous-Alexander",
-      "team": "OKC",
-      "opp": "IND",
-      "minutes": 34.0,
-      "points": 32.7,
-      "rebounds": 4.4,
-      "assists": 5.5,
-      "threes": 2.3,
-      "avg": {
-       "minutes": 33.5,
-       "points": 31.7,
-       "rebounds": 4.1,
-       "assists": 4.5,
-       "threes": 2.4
-      }
-     },
-     {
       "id": 4900671,
       "name": "Ajay Mitchell",
       "team": "OKC",
       "opp": "IND",
-      "minutes": 29.1,
-      "points": 16.9,
-      "rebounds": 3.9,
-      "assists": 4.0,
-      "threes": 1.1,
+      "minutes": 33.9,
+      "points": 19.6,
+      "rebounds": 4.5,
+      "assists": 4.6,
+      "threes": 1.3,
       "avg": {
        "minutes": 28.0,
        "points": 17.0,
@@ -9916,11 +7474,11 @@
       "name": "Jared McCain",
       "team": "OKC",
       "opp": "IND",
-      "minutes": 28.9,
-      "points": 14.7,
-      "rebounds": 3.6,
-      "assists": 2.1,
-      "threes": 2.6,
+      "minutes": 33.8,
+      "points": 17.2,
+      "rebounds": 4.2,
+      "assists": 2.4,
+      "threes": 3.0,
       "avg": {
        "minutes": 27.4,
        "points": 13.9,
@@ -9934,10 +7492,10 @@
       "name": "Isaiah Hartenstein",
       "team": "OKC",
       "opp": "IND",
-      "minutes": 26.0,
-      "points": 9.5,
-      "rebounds": 10.6,
-      "assists": 4.0,
+      "minutes": 30.2,
+      "points": 11.0,
+      "rebounds": 12.2,
+      "assists": 4.6,
       "threes": 0.1,
       "avg": {
        "minutes": 25.2,
@@ -9948,33 +7506,15 @@
       }
      },
      {
-      "id": 5174983,
-      "name": "Aday Mara",
-      "team": "OKC",
-      "opp": "IND",
-      "minutes": 25.2,
-      "points": 11.6,
-      "rebounds": 7.5,
-      "assists": 2.2,
-      "threes": 0.3,
-      "avg": {
-       "minutes": 22.4,
-       "points": 10.0,
-       "rebounds": 7.1,
-       "assists": 1.9,
-       "threes": 0.1
-      }
-     },
-     {
       "id": 3133626,
       "name": "Kenrich Williams",
       "team": "OKC",
       "opp": "IND",
-      "minutes": 23.8,
-      "points": 9.4,
-      "rebounds": 4.7,
-      "assists": 2.0,
-      "threes": 1.5,
+      "minutes": 27.8,
+      "points": 11.1,
+      "rebounds": 5.4,
+      "assists": 2.4,
+      "threes": 1.7,
       "avg": {
        "minutes": 20.9,
        "points": 7.2,
@@ -9988,11 +7528,11 @@
       "name": "Bennett Stirtz",
       "team": "OKC",
       "opp": "IND",
-      "minutes": 20.5,
-      "points": 8.9,
-      "rebounds": 1.7,
-      "assists": 1.6,
-      "threes": 1.8,
+      "minutes": 23.7,
+      "points": 10.3,
+      "rebounds": 2.0,
+      "assists": 1.8,
+      "threes": 2.1,
       "avg": {
        "minutes": 18.4,
        "points": 7.8,
@@ -10006,11 +7546,11 @@
       "name": "Josh Dix",
       "team": "OKC",
       "opp": "IND",
-      "minutes": 15.7,
-      "points": 3.8,
-      "rebounds": 1.9,
-      "assists": 1.0,
-      "threes": 0.5,
+      "minutes": 18.5,
+      "points": 4.7,
+      "rebounds": 2.3,
+      "assists": 1.2,
+      "threes": 0.6,
       "avg": {
        "minutes": 17.1,
        "points": 2.3,
@@ -10024,11 +7564,11 @@
       "name": "Micah Peavy",
       "team": "OKC",
       "opp": "IND",
-      "minutes": 14.8,
-      "points": 3.9,
-      "rebounds": 2.4,
-      "assists": 0.7,
-      "threes": 0.5,
+      "minutes": 17.0,
+      "points": 4.5,
+      "rebounds": 2.7,
+      "assists": 0.8,
+      "threes": 0.6,
       "avg": {
        "minutes": 15.7,
        "points": 3.3,
@@ -10042,11 +7582,11 @@
       "name": "Nique Clifford",
       "team": "OKC",
       "opp": "IND",
-      "minutes": 14.5,
-      "points": 4.6,
-      "rebounds": 2.1,
-      "assists": 1.3,
-      "threes": 0.5,
+      "minutes": 16.9,
+      "points": 5.4,
+      "rebounds": 2.5,
+      "assists": 1.5,
+      "threes": 0.6,
       "avg": {
        "minutes": 10.7,
        "points": 3.0,
@@ -10069,12 +7609,12 @@
    "ratings_margin": -4.9,
    "pace": 102.5,
    "market_ratings_margin": null,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
-   "projection": -6.9,
-   "projection_total": 233.6,
+   "mkt_spread": -3.5,
+   "mkt_total": 234.5,
+   "mkt_ml_home": 126.0,
+   "mkt_ml_away": -150.0,
+   "projection": -3.9,
+   "projection_total": 234.5,
    "win_prob": 0.272,
    "rest": {
     "away": 2,
@@ -10563,12 +8103,12 @@
    "ratings_margin": -5.0,
    "pace": 106.0,
    "market_ratings_margin": null,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
-   "projection": -8.9,
-   "projection_total": 241.9,
+   "mkt_spread": -9.5,
+   "mkt_total": 241.5,
+   "mkt_ml_home": 300.0,
+   "mkt_ml_away": -378.0,
+   "projection": -9.4,
+   "projection_total": 241.5,
    "win_prob": 0.218,
    "rest": {
     "away": 2,
@@ -11151,12 +8691,12 @@
    "ratings_margin": 8.4,
    "pace": 98.6,
    "market_ratings_margin": null,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
-   "projection": 10.2,
-   "projection_total": 228.3,
+   "mkt_spread": 12.5,
+   "mkt_total": 224.5,
+   "mkt_ml_home": -700.0,
+   "mkt_ml_away": 501.0,
+   "projection": 12.2,
+   "projection_total": 224.5,
    "win_prob": 0.81,
    "rest": {
     "away": 1,
@@ -11636,12 +9176,12 @@
    "ratings_margin": -14.0,
    "pace": 101.7,
    "market_ratings_margin": null,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
-   "projection": -14.5,
-   "projection_total": 228.0,
+   "mkt_spread": -10.5,
+   "mkt_total": 224.5,
+   "mkt_ml_home": 360.0,
+   "mkt_ml_away": -467.0,
+   "projection": -11.0,
+   "projection_total": 224.5,
    "win_prob": 0.112,
    "rest": {
     "away": 1,
@@ -12138,18 +9678,18 @@
    "tip": "2026-11-23T22:00:00-05:00",
    "away": "UTAH",
    "home": "LAL",
-   "margin": 12.3,
-   "total": 235.3,
+   "margin": 12.7,
+   "total": 234.8,
    "ratings_margin": 9.2,
    "pace": 103.3,
    "market_ratings_margin": null,
-   "mkt_spread": null,
-   "mkt_total": null,
-   "mkt_ml_home": null,
-   "mkt_ml_away": null,
-   "projection": 12.3,
-   "projection_total": 235.3,
-   "win_prob": 0.853,
+   "mkt_spread": 13.5,
+   "mkt_total": 230.5,
+   "mkt_ml_home": -800.0,
+   "mkt_ml_away": 558.0,
+   "projection": 13.4,
+   "projection_total": 230.5,
+   "win_prob": 0.861,
    "rest": {
     "away": 0,
     "home": 2
@@ -12192,8 +9732,13 @@
       "kind": "missing"
      },
      {
-      "label": "Lineup strength from player impact ratings (LAL +11.1, UTAH -1.7 per 48)",
-      "pts": 3.95,
+      "label": "UTAH without Jaxson Hayes",
+      "pts": 0.7,
+      "kind": "missing"
+     },
+     {
+      "label": "Lineup strength from player impact ratings (LAL +11.1, UTAH -0.9 per 48)",
+      "pts": 3.7,
       "kind": "players"
      }
     ],
@@ -12215,20 +9760,21 @@
      },
      {
       "label": "Players out, both teams",
-      "pts": -2.4,
+      "pts": -2.87,
       "kind": "missing"
      }
     ]
    },
    "imp": {
     "home": 11.097,
-    "away": -1.71
+    "away": -0.918
    },
    "missing": {
-    "away": 5.9,
+    "away": 8.4,
     "home": 7.1,
     "away_names": [
-     "Lauri Markkanen"
+     "Lauri Markkanen",
+     "Jaxson Hayes"
     ],
     "home_names": [
      "Austin Reaves"
@@ -12240,7 +9786,8 @@
       "Austin Reaves"
      ],
      "away": [
-      "Lauri Markkanen"
+      "Lauri Markkanen",
+      "Jaxson Hayes"
      ]
     },
     "home": [
@@ -12431,11 +9978,11 @@
       "name": "Keyonte George",
       "team": "UTAH",
       "opp": "LAL",
-      "minutes": 33.1,
-      "points": 22.5,
-      "rebounds": 3.8,
-      "assists": 7.0,
-      "threes": 2.4,
+      "minutes": 34.1,
+      "points": 23.1,
+      "rebounds": 3.9,
+      "assists": 7.1,
+      "threes": 2.5,
       "avg": {
        "minutes": 33.5,
        "points": 21.1,
@@ -12449,10 +9996,10 @@
       "name": "Darryn Peterson",
       "team": "UTAH",
       "opp": "LAL",
-      "minutes": 28.8,
-      "points": 15.9,
-      "rebounds": 4.2,
-      "assists": 3.8,
+      "minutes": 29.6,
+      "points": 16.4,
+      "rebounds": 4.3,
+      "assists": 3.9,
       "threes": 2.1,
       "avg": {
        "minutes": 30.6,
@@ -12467,10 +10014,10 @@
       "name": "Ace Bailey",
       "team": "UTAH",
       "opp": "LAL",
-      "minutes": 27.0,
-      "points": 12.7,
-      "rebounds": 4.9,
-      "assists": 2.0,
+      "minutes": 27.8,
+      "points": 13.1,
+      "rebounds": 5.1,
+      "assists": 2.1,
       "threes": 1.7,
       "avg": {
        "minutes": 30.1,
@@ -12481,33 +10028,15 @@
       }
      },
      {
-      "id": 4397077,
-      "name": "Jaxson Hayes",
-      "team": "UTAH",
-      "opp": "LAL",
-      "minutes": 23.7,
-      "points": 9.6,
-      "rebounds": 5.7,
-      "assists": 1.4,
-      "threes": 0.1,
-      "avg": {
-       "minutes": 24.4,
-       "points": 9.3,
-       "rebounds": 6.6,
-       "assists": 1.5,
-       "threes": 0.0
-      }
-     },
-     {
       "id": 3133602,
       "name": "Svi Mykhailiuk",
       "team": "UTAH",
       "opp": "LAL",
-      "minutes": 22.1,
-      "points": 7.6,
+      "minutes": 22.8,
+      "points": 7.9,
       "rebounds": 2.5,
       "assists": 2.0,
-      "threes": 1.7,
+      "threes": 1.8,
       "avg": {
        "minutes": 18.5,
        "points": 4.9,
@@ -12521,8 +10050,8 @@
       "name": "Josh Green",
       "team": "UTAH",
       "opp": "LAL",
-      "minutes": 21.8,
-      "points": 5.8,
+      "minutes": 22.5,
+      "points": 6.0,
       "rebounds": 2.2,
       "assists": 1.2,
       "threes": 1.3,
@@ -12539,9 +10068,9 @@
       "name": "Mo Bamba",
       "team": "UTAH",
       "opp": "LAL",
-      "minutes": 21.1,
-      "points": 9.0,
-      "rebounds": 6.2,
+      "minutes": 21.7,
+      "points": 9.3,
+      "rebounds": 6.3,
       "assists": 1.3,
       "threes": 0.7,
       "avg": {
@@ -12557,11 +10086,11 @@
       "name": "Brice Sensabaugh",
       "team": "UTAH",
       "opp": "LAL",
-      "minutes": 20.9,
-      "points": 12.8,
-      "rebounds": 3.3,
-      "assists": 1.8,
-      "threes": 2.1,
+      "minutes": 21.6,
+      "points": 13.2,
+      "rebounds": 3.4,
+      "assists": 1.9,
+      "threes": 2.2,
       "avg": {
        "minutes": 18.3,
        "points": 10.8,
@@ -12575,11 +10104,11 @@
       "name": "Josh Okogie",
       "team": "UTAH",
       "opp": "LAL",
-      "minutes": 18.6,
-      "points": 4.7,
-      "rebounds": 2.7,
-      "assists": 1.1,
-      "threes": 0.8,
+      "minutes": 19.1,
+      "points": 4.8,
+      "rebounds": 2.8,
+      "assists": 1.2,
+      "threes": 0.9,
       "avg": {
        "minutes": 19.1,
        "points": 4.6,
@@ -12593,11 +10122,11 @@
       "name": "Isaiah Collier",
       "team": "UTAH",
       "opp": "LAL",
-      "minutes": 13.2,
-      "points": 5.6,
+      "minutes": 13.6,
+      "points": 5.8,
       "rebounds": 1.9,
-      "assists": 3.7,
-      "threes": 0.3,
+      "assists": 3.8,
+      "threes": 0.4,
       "avg": {
        "minutes": 15.6,
        "points": 6.4,
@@ -12611,9 +10140,9 @@
       "name": "Tony Bradley",
       "team": "UTAH",
       "opp": "LAL",
-      "minutes": 9.9,
-      "points": 3.0,
-      "rebounds": 2.5,
+      "minutes": 10.2,
+      "points": 3.2,
+      "rebounds": 2.6,
       "assists": 0.5,
       "threes": 0.1,
       "avg": {
@@ -12957,7 +10486,7 @@
       "team": "DET",
       "opp": "ORL",
       "minutes": 32.9,
-      "points": 15.8,
+      "points": 15.7,
       "rebounds": 3.9,
       "assists": 5.6,
       "threes": 2.1,
@@ -12992,7 +10521,7 @@
       "name": "Ausar Thompson",
       "team": "DET",
       "opp": "ORL",
-      "minutes": 29.3,
+      "minutes": 29.2,
       "points": 11.2,
       "rebounds": 7.2,
       "assists": 4.8,
@@ -13010,7 +10539,7 @@
       "name": "Paul Reed",
       "team": "DET",
       "opp": "ORL",
-      "minutes": 25.7,
+      "minutes": 25.6,
       "points": 12.8,
       "rebounds": 7.4,
       "assists": 2.4,
@@ -13636,8 +11165,8 @@
    "tip": "2026-11-24T22:00:00-05:00",
    "away": "DAL",
    "home": "DEN",
-   "margin": 6.6,
-   "total": 236.2,
+   "margin": 7.2,
+   "total": 235.9,
    "ratings_margin": 6.9,
    "pace": 102.7,
    "market_ratings_margin": null,
@@ -13645,9 +11174,9 @@
    "mkt_total": null,
    "mkt_ml_home": null,
    "mkt_ml_away": null,
-   "projection": 6.6,
-   "projection_total": 236.2,
-   "win_prob": 0.72,
+   "projection": 7.2,
+   "projection_total": 235.9,
+   "win_prob": 0.737,
    "rest": {
     "away": 1,
     "home": 1
@@ -13670,8 +11199,13 @@
       "kind": "site"
      },
      {
-      "label": "Lineup strength from player impact ratings (DEN +11.9, DAL +6.9 per 48)",
-      "pts": 1.54,
+      "label": "DAL without P.J. Washington",
+      "pts": 0.45,
+      "kind": "missing"
+     },
+     {
+      "label": "Lineup strength from player impact ratings (DEN +11.9, DAL +6.4 per 48)",
+      "pts": 1.71,
       "kind": "players"
      }
     ],
@@ -13685,23 +11219,32 @@
       "label": "Ratings: 102.7 possessions at each side's efficiency",
       "pts": 233.64,
       "kind": "team"
+     },
+     {
+      "label": "Players out, both teams",
+      "pts": -0.29,
+      "kind": "missing"
      }
     ]
    },
    "imp": {
     "home": 11.928,
-    "away": 6.921
+    "away": 6.375
    },
    "missing": {
-    "away": 0.0,
+    "away": 1.6,
     "home": 0.0,
-    "away_names": [],
+    "away_names": [
+     "P.J. Washington"
+    ],
     "home_names": []
    },
    "players": {
     "out": {
      "home": [],
-     "away": []
+     "away": [
+      "P.J. Washington"
+     ]
     },
     "home": [
      {
@@ -13909,11 +11452,11 @@
       "name": "Cooper Flagg",
       "team": "DAL",
       "opp": "DEN",
-      "minutes": 32.1,
-      "points": 22.2,
-      "rebounds": 6.3,
-      "assists": 5.8,
-      "threes": 1.3,
+      "minutes": 33.5,
+      "points": 23.1,
+      "rebounds": 6.5,
+      "assists": 6.0,
+      "threes": 1.4,
       "avg": {
        "minutes": 33.6,
        "points": 24.1,
@@ -13927,11 +11470,11 @@
       "name": "Kyrie Irving",
       "team": "DAL",
       "opp": "DEN",
-      "minutes": 30.8,
-      "points": 21.8,
-      "rebounds": 4.0,
-      "assists": 4.5,
-      "threes": 3.1,
+      "minutes": 32.0,
+      "points": 22.7,
+      "rebounds": 4.2,
+      "assists": 4.7,
+      "threes": 3.2,
       "avg": {
        "minutes": 31.0,
        "points": 22.5,
@@ -13941,31 +11484,13 @@
       }
      },
      {
-      "id": 4278078,
-      "name": "P.J. Washington",
-      "team": "DAL",
-      "opp": "DEN",
-      "minutes": 24.5,
-      "points": 11.5,
-      "rebounds": 5.5,
-      "assists": 1.3,
-      "threes": 1.5,
-      "avg": {
-       "minutes": 30.9,
-       "points": 14.0,
-       "rebounds": 6.7,
-       "assists": 1.3,
-       "threes": 2.3
-      }
-     },
-     {
       "id": 5211175,
       "name": "Zaccharie Risacher",
       "team": "DAL",
       "opp": "DEN",
-      "minutes": 23.1,
-      "points": 9.2,
-      "rebounds": 4.3,
+      "minutes": 24.0,
+      "points": 9.6,
+      "rebounds": 4.4,
       "assists": 1.3,
       "threes": 1.3,
       "avg": {
@@ -13981,11 +11506,11 @@
       "name": "Daniel Gafford",
       "team": "DAL",
       "opp": "DEN",
-      "minutes": 22.8,
-      "points": 9.6,
-      "rebounds": 6.3,
-      "assists": 1.7,
-      "threes": 0.1,
+      "minutes": 23.7,
+      "points": 10.0,
+      "rebounds": 6.5,
+      "assists": 1.8,
+      "threes": 0.2,
       "avg": {
        "minutes": 21.9,
        "points": 8.6,
@@ -13999,11 +11524,11 @@
       "name": "Caleb Martin",
       "team": "DAL",
       "opp": "DEN",
-      "minutes": 21.5,
-      "points": 5.8,
-      "rebounds": 3.4,
-      "assists": 2.3,
-      "threes": 0.8,
+      "minutes": 22.4,
+      "points": 6.1,
+      "rebounds": 3.6,
+      "assists": 2.4,
+      "threes": 0.9,
       "avg": {
        "minutes": 21.4,
        "points": 5.6,
@@ -14017,10 +11542,10 @@
       "name": "Naji Marshall",
       "team": "DAL",
       "opp": "DEN",
-      "minutes": 21.2,
-      "points": 10.4,
-      "rebounds": 3.0,
-      "assists": 3.1,
+      "minutes": 22.0,
+      "points": 10.9,
+      "rebounds": 3.1,
+      "assists": 3.2,
       "threes": 0.8,
       "avg": {
        "minutes": 24.2,
@@ -14035,10 +11560,10 @@
       "name": "Walter Clayton Jr.",
       "team": "DAL",
       "opp": "DEN",
-      "minutes": 20.7,
-      "points": 8.3,
-      "rebounds": 2.7,
-      "assists": 4.1,
+      "minutes": 21.6,
+      "points": 8.6,
+      "rebounds": 2.8,
+      "assists": 4.2,
       "threes": 1.3,
       "avg": {
        "minutes": 18.4,
@@ -14053,10 +11578,10 @@
       "name": "Morez Johnson Jr.",
       "team": "DAL",
       "opp": "DEN",
-      "minutes": 17.1,
-      "points": 6.5,
-      "rebounds": 4.2,
-      "assists": 1.5,
+      "minutes": 17.8,
+      "points": 6.8,
+      "rebounds": 4.4,
+      "assists": 1.6,
       "threes": 0.4,
       "avg": {
        "minutes": 17.1,
@@ -14071,11 +11596,11 @@
       "name": "Max Christie",
       "team": "DAL",
       "opp": "DEN",
-      "minutes": 16.6,
-      "points": 6.2,
+      "minutes": 17.1,
+      "points": 6.5,
       "rebounds": 2.2,
       "assists": 1.2,
-      "threes": 1.2,
+      "threes": 1.3,
       "avg": {
        "minutes": 18.2,
        "points": 5.8,
@@ -14089,10 +11614,10 @@
       "name": "Santi Aldama",
       "team": "DAL",
       "opp": "DEN",
-      "minutes": 11.6,
-      "points": 5.5,
-      "rebounds": 2.6,
-      "assists": 1.0,
+      "minutes": 12.0,
+      "points": 5.7,
+      "rebounds": 2.7,
+      "assists": 1.1,
       "threes": 0.7,
       "avg": {
        "minutes": 12.6,
@@ -14107,11 +11632,11 @@
       "name": "Marcus Sasser",
       "team": "DAL",
       "opp": "DEN",
-      "minutes": 11.2,
-      "points": 4.2,
+      "minutes": 11.6,
+      "points": 4.4,
       "rebounds": 1.0,
       "assists": 1.6,
-      "threes": 0.8,
+      "threes": 0.9,
       "avg": {
        "minutes": 14.9,
        "points": 5.1,

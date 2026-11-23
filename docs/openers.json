@@ -1,12 +1,326 @@
 {
- "generatedAt": "2026-11-17",
+ "generatedAt": "2026-11-23",
  "season": 2027,
  "nba": {
-  "games": 0,
-  "note": "no lines logged yet"
+  "games": 32,
+  "side": {
+   "games": 32,
+   "mae": {
+    "model_at_open": 9.34,
+    "open": 8.94,
+    "close": 8.72
+   },
+   "by_gap": {
+    "0+": {
+     "record_at_open": {
+      "w": 14,
+      "l": 18,
+      "p": 0,
+      "pct": 43.8,
+      "roi": -16.5,
+      "se": 8.8
+     },
+     "line_moved_toward_model_pct": 78.9,
+     "avg_move_toward_model": 0.53
+    },
+    "2+": {
+     "record_at_open": {
+      "w": 9,
+      "l": 9,
+      "p": 0,
+      "pct": 50.0,
+      "roi": -4.5,
+      "se": 11.8
+     },
+     "line_moved_toward_model_pct": 90.9,
+     "avg_move_toward_model": 0.83
+    },
+    "3+": {
+     "record_at_open": {
+      "w": 6,
+      "l": 8,
+      "p": 0,
+      "pct": 42.9,
+      "roi": -18.2,
+      "se": 13.4
+     },
+     "line_moved_toward_model_pct": 87.5,
+     "avg_move_toward_model": 0.57
+    },
+    "4+": {
+     "record_at_open": {
+      "w": 3,
+      "l": 3,
+      "p": 0,
+      "pct": 50.0,
+      "roi": -4.5,
+      "se": 20.4
+     },
+     "line_moved_toward_model_pct": 100.0,
+     "avg_move_toward_model": 0.83
+    },
+    "6+": {
+     "record_at_open": {
+      "w": 0,
+      "l": 1,
+      "p": 0,
+      "pct": 0.0,
+      "roi": -100.0,
+      "se": 50.0
+     },
+     "line_moved_toward_model_pct": 100.0,
+     "avg_move_toward_model": 1.0
+    }
+   }
+  },
+  "total": {
+   "games": 32,
+   "mae": {
+    "model_at_open": 18.35,
+    "open": 16.16,
+    "close": 15.91
+   },
+   "by_gap": {
+    "0+": {
+     "record_at_open": {
+      "w": 14,
+      "l": 18,
+      "p": 0,
+      "pct": 43.8,
+      "roi": -16.5,
+      "se": 8.8
+     },
+     "line_moved_toward_model_pct": 50.0,
+     "avg_move_toward_model": 0.09
+    },
+    "3+": {
+     "record_at_open": {
+      "w": 7,
+      "l": 16,
+      "p": 0,
+      "pct": 30.4,
+      "roi": -41.9,
+      "se": 10.4
+     },
+     "line_moved_toward_model_pct": 55.6,
+     "avg_move_toward_model": 0.26
+    },
+    "5+": {
+     "record_at_open": {
+      "w": 6,
+      "l": 11,
+      "p": 0,
+      "pct": 35.3,
+      "roi": -32.6,
+      "se": 12.1
+     },
+     "line_moved_toward_model_pct": 58.3,
+     "avg_move_toward_model": 0.41
+    },
+    "7+": {
+     "record_at_open": {
+      "w": 3,
+      "l": 7,
+      "p": 0,
+      "pct": 30.0,
+      "roi": -42.7,
+      "se": 15.8
+     },
+     "line_moved_toward_model_pct": 71.4,
+     "avg_move_toward_model": 0.8
+    }
+   }
+  },
+  "moneyline": {
+   "games": 32,
+   "by_edge": {
+    "0%+": {
+     "bets": 32,
+     "won": 15,
+     "roi_pct": -33.4,
+     "roi_se": 13.5
+    },
+    "2%+": {
+     "bets": 25,
+     "won": 11,
+     "roi_pct": -35.9,
+     "roi_se": 15.7
+    },
+    "4%+": {
+     "bets": 20,
+     "won": 9,
+     "roi_pct": -38.4,
+     "roi_se": 15.7
+    },
+    "6%+": {
+     "bets": 17,
+     "won": 7,
+     "roi_pct": -42.0,
+     "roi_se": 17.4
+    }
+   }
+  },
+  "note": "only 32 finished games with a logged line; too early to read (wait for 300+)"
  },
  "cbb": {
-  "games": 0,
-  "note": "no lines logged yet"
+  "games": 187,
+  "side": {
+   "games": 187,
+   "mae": {
+    "model_at_open": 10.99,
+    "open": 10.38,
+    "close": 10.27
+   },
+   "by_gap": {
+    "0+": {
+     "record_at_open": {
+      "w": 86,
+      "l": 101,
+      "p": 0,
+      "pct": 46.0,
+      "roi": -12.2,
+      "se": 3.7
+     },
+     "line_moved_toward_model_pct": 65.2,
+     "avg_move_toward_model": 0.36
+    },
+    "2+": {
+     "record_at_open": {
+      "w": 45,
+      "l": 55,
+      "p": 0,
+      "pct": 45.0,
+      "roi": -14.1,
+      "se": 5.0
+     },
+     "line_moved_toward_model_pct": 63.3,
+     "avg_move_toward_model": 0.39
+    },
+    "3+": {
+     "record_at_open": {
+      "w": 22,
+      "l": 37,
+      "p": 0,
+      "pct": 37.3,
+      "roi": -28.8,
+      "se": 6.5
+     },
+     "line_moved_toward_model_pct": 55.6,
+     "avg_move_toward_model": 0.36
+    },
+    "4+": {
+     "record_at_open": {
+      "w": 16,
+      "l": 24,
+      "p": 0,
+      "pct": 40.0,
+      "roi": -23.6,
+      "se": 7.9
+     },
+     "line_moved_toward_model_pct": 57.1,
+     "avg_move_toward_model": 0.42
+    },
+    "6+": {
+     "record_at_open": {
+      "w": 8,
+      "l": 8,
+      "p": 0,
+      "pct": 50.0,
+      "roi": -4.5,
+      "se": 12.5
+     },
+     "line_moved_toward_model_pct": 66.7,
+     "avg_move_toward_model": 0.75
+    }
+   }
+  },
+  "total": {
+   "games": 187,
+   "mae": {
+    "model_at_open": 12.81,
+    "open": 12.36,
+    "close": 12.25
+   },
+   "by_gap": {
+    "0+": {
+     "record_at_open": {
+      "w": 91,
+      "l": 96,
+      "p": 0,
+      "pct": 48.7,
+      "roi": -7.1,
+      "se": 3.7
+     },
+     "line_moved_toward_model_pct": 45.4,
+     "avg_move_toward_model": -0.16
+    },
+    "3+": {
+     "record_at_open": {
+      "w": 47,
+      "l": 44,
+      "p": 0,
+      "pct": 51.6,
+      "roi": -1.4,
+      "se": 5.2
+     },
+     "line_moved_toward_model_pct": 48.9,
+     "avg_move_toward_model": 0.04
+    },
+    "5+": {
+     "record_at_open": {
+      "w": 26,
+      "l": 31,
+      "p": 0,
+      "pct": 45.6,
+      "roi": -12.9,
+      "se": 6.6
+     },
+     "line_moved_toward_model_pct": 40.6,
+     "avg_move_toward_model": -0.14
+    },
+    "7+": {
+     "record_at_open": {
+      "w": 20,
+      "l": 13,
+      "p": 0,
+      "pct": 60.6,
+      "roi": 15.7,
+      "se": 8.7
+     },
+     "line_moved_toward_model_pct": 44.4,
+     "avg_move_toward_model": -0.12
+    }
+   }
+  },
+  "moneyline": {
+   "games": 164,
+   "by_edge": {
+    "0%+": {
+     "bets": 164,
+     "won": 90,
+     "roi_pct": -15.1,
+     "roi_se": 7.4
+    },
+    "2%+": {
+     "bets": 123,
+     "won": 65,
+     "roi_pct": -17.5,
+     "roi_se": 7.7
+    },
+    "4%+": {
+     "bets": 89,
+     "won": 44,
+     "roi_pct": -17.6,
+     "roi_se": 9.6
+    },
+    "6%+": {
+     "bets": 64,
+     "won": 32,
+     "roi_pct": -15.0,
+     "roi_se": 11.6
+    }
+   }
+  },
+  "note": "only 187 finished games with a logged line; too early to read (wait for 300+)"
  }
 }
