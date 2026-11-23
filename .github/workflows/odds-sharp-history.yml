@@ -1,0 +1,38 @@
+name: Odds API Pinnacle spreads pull
+
+# One-off pull of Pinnacle's past NBA spreads for the sharp-price test, capped at 3,000 credits
+# (Ryan, 2026-11-23). Starts on a single push to the sharp-pull branch; the bot's own commit back
+# doesn't trigger another run. Resumable.
+on:
+  push:
+    branches: [sharp-pull]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: odds-sharp-history
+  cancel-in-progress: false
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m oddsapi.sharp_history
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          MAX_CREDITS: "3000"
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/odds
+          if git diff --staged --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "Pinnacle past NBA spreads from the Odds API"
+          git push origin HEAD:${{ github.ref_name }}

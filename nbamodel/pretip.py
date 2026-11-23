@@ -5,9 +5,9 @@ Every 30 minutes in the hours before tip-off (GitHub Actions, .github/workflows/
 1. Re-read ESPN's injury report and redo the two model inputs that depend on it, missing players
    and impact-rated lineup strength, for tonight's games that haven't tipped. Everything else in
    the model's number comes from the last full update (docs/feed/nba.json).
-2. Read the consensus spread from the Odds API (1 credit for every game at once), but only on the
-   hourly run or when the news moved the model for one of tonight's games, which keeps it near 300
-   credits a month.
+2. Read the spreads from the Odds API every run: one call naming Pinnacle and nine US books, 1 credit
+   for every game at once, about 400 credits a month. The median of those books is the consensus
+   line, and sharp.py flags any US book whose line beats Pinnacle's fair price (docs/nba/sharp.json).
 3. Append a row per game to docs/lines/nba_pretip.csv: time, minutes to tip, who is out, the model's
    updated margin, the line, and whether the news moved the model.
 
@@ -113,12 +113,20 @@ def run(now=None):
                      "out_home": "; ".join(names.get(hid, [])), "out_away": "; ".join(names.get(aid, [])),
                      "model_margin": round(m, 2), "model_moved": round(moved, 2),
                      "line": None, "books": None, "line_read": False})
-    # the line: on the hourly run, or when the news moved the model for a game tonight
+    # the line, every run: one call with Pinnacle and nine US books (1 credit), which also checks
+    # the US books against Pinnacle's fair price (sharp.py)
     hit = any(abs(r["model_moved"]) >= 0.1 for r in rows)
     lines = {}
-    if os.environ.get("ODDS_API_KEY") and (hit or now.minute < 30):
+    if os.environ.get("ODDS_API_KEY"):
         try:
-            lines = odds_spreads()
+            from . import sharp
+            js = sharp.fetch()
+            lines = sharp.consensus(js)
+            games = {r["_teams"]: (r["game_id"], r["minutes_to_tip"]) for r in rows}
+            stamp = now.astimezone(timezone.utc).isoformat(timespec="seconds")
+            fl = sharp.flags(js, games, stamp)
+            print(f"sharp-price flags: {sharp.log(fl)}")
+            sharp.update_tonight(fl, stamp)
         except Exception as e:
             print("odds failed:", repr(e))
     for r in rows:
@@ -160,6 +168,11 @@ def grade(season=None):
            "record_at_news_line": _record(ev.model_margin, ev.line, ev.margin),
            "record_at_close_same_side": _record(ev.model_margin, ev.close, ev.margin)}
     OUT.write_text(json.dumps(out, indent=1))
+    try:
+        from . import sharp
+        sharp.grade(season, lg)
+    except Exception as e:
+        print("sharp grade failed:", repr(e))
     return out
 
 

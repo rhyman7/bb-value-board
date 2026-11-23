@@ -1,0 +1,127 @@
+{
+ "games": 2195,
+ "sd": 12.5,
+ "ev 0%+": {
+  "n": 145,
+  "win": 0.5586,
+  "roi": 0.0936,
+  "roi_se": 0.0793,
+  "avg_clv_pts": 0.553,
+  "beat_close_pct": 53.8,
+  "by_season": {
+   "2025": {
+    "n": 87,
+    "win": 0.5747,
+    "roi": 0.1355,
+    "roi_se": 0.1016
+   },
+   "2026": {
+    "n": 58,
+    "win": 0.5345,
+    "roi": 0.0308,
+    "roi_se": 0.1275
+   }
+  },
+  "off_pinnacle_line": 75.9
+ },
+ "ev 1%+": {
+  "n": 61,
+  "win": 0.459,
+  "roi": -0.1004,
+  "roi_se": 0.123,
+  "avg_clv_pts": 0.873,
+  "beat_close_pct": 57.4,
+  "by_season": {
+   "2025": {
+    "n": 37,
+    "win": 0.4054,
+    "roi": -0.1884,
+    "roi_se": 0.1571
+   },
+   "2026": {
+    "n": 24,
+    "win": 0.5417,
+    "roi": 0.0352,
+    "roi_se": 0.1987
+   }
+  },
+  "off_pinnacle_line": 91.8
+ },
+ "ev 2%+": {
+  "n": 39,
+  "win": 0.5385,
+  "roi": 0.0249,
+  "roi_se": 0.154,
+  "avg_clv_pts": 1.096,
+  "beat_close_pct": 59.0,
+  "by_season": {
+   "2025": {
+    "n": 21,
+    "win": 0.4762,
+    "roi": -0.0923,
+    "roi_se": 0.213
+   },
+   "2026": {
+    "n": 18,
+    "win": 0.6111,
+    "roi": 0.1617,
+    "roi_se": 0.2249
+   }
+  },
+  "off_pinnacle_line": 100.0
+ },
+ "ev 3%+": {
+  "n": 32,
+  "win": 0.5938,
+  "roi": 0.1296,
+  "roi_se": 0.1679,
+  "avg_clv_pts": 1.242,
+  "beat_close_pct": 59.4,
+  "by_season": {
+   "2025": {
+    "n": 17,
+    "win": 0.5882,
+    "roi": 0.1213,
+    "roi_se": 0.2348
+   },
+   "2026": {
+    "n": 15,
+    "win": 0.6,
+    "roi": 0.1389,
+    "roi_se": 0.2487
+   }
+  },
+  "off_pinnacle_line": 100.0
+ },
+ "ev 5%+": {
+  "n": 20,
+  "win": 0.45,
+  "roi": -0.1459,
+  "roi_se": 0.2167,
+  "avg_clv_pts": 1.637,
+  "beat_close_pct": 65.0,
+  "by_season": {
+   "2025": {
+    "n": 11,
+    "win": 0.4545,
+    "roi": -0.1409,
+    "roi_se": 0.2976
+   },
+   "2026": {
+    "n": 9,
+    "win": 0.4444,
+    "roi": -0.1521,
+    "roi_se": 0.3352
+   }
+  },
+  "off_pinnacle_line": 100.0
+ },
+ "books": {
+  "williamhill_us": 12,
+  "betrivers": 9,
+  "fanduel": 7,
+  "betmgm": 6,
+  "draftkings": 4,
+  "fanatics": 1
+ }
+}

@@ -338,6 +338,33 @@
     if (more) more.addEventListener("click", () => { $("#picks-rows").innerHTML = t.map(row).join(""); more.remove(); });
   }
 
+  // NBA only: US-book spreads that beat Pinnacle's fair price (nbamodel/sharp.py)
+  function drawSharp(sp) {
+    const box = $("#sharp-body");
+    if (!box) return;
+    if (!sp) { box.innerHTML = `<p class="empty">Starts with the next pre-tip update.</p>`; return; }
+    const price = (p) => (p > 0 ? "+" : "−") + Math.abs(p);
+    const pts = (x) => (x > 0 ? "+" : x < 0 ? "−" : "") + Math.abs(x);
+    const etDay = (iso) => new Date(iso).toLocaleDateString("en-US", { timeZone: "America/New_York" });
+    const fresh = sp.read_at && etDay(sp.read_at) === etDay(new Date().toISOString());
+    const t = fresh ? (sp.tonight || []) : [];
+    const when = sp.read_at ? new Date(sp.read_at).toLocaleTimeString("en-US", { timeZone: "America/New_York", hour: "numeric", minute: "2-digit" }) + " ET" : "";
+    const row = (r) => `<tr><td><b>${esc(r.team)} ${pts(r.spread)}</b> <span class="muted">${esc(r.away)} at ${esc(r.home)}</span></td>
+      <td>${price(r.price)} <span class="muted">${esc(r.book)}</span></td>
+      <td>${(100 * r.fair).toFixed(0)}%</td><td><b>+${(100 * r.ev).toFixed(1)}%</b></td>
+      <td><span class="muted">${esc(r.home)} ${pts(r.pin_spread)}, ${price(r.pin_home_price)}/${price(r.pin_away_price)}</span></td></tr>`;
+    const tonight = t.length ? `<h3>As of ${esc(when)}: ${t.length} spread${t.length === 1 ? "" : "s"}</h3>
+      <div class="tbl-wrap"><table><thead><tr><th>Bet</th><th>Price</th><th>Fair chance</th><th>Value</th><th>Pinnacle</th></tr></thead><tbody>${t.map(row).join("")}</tbody></table></div>`
+      : `<p class="empty">${fresh ? `None as of ${esc(when)}.` : "None yet today. The check runs every 30 minutes from the late-afternoon update until tip."}</p>`;
+    const rc = sp.record;
+    const record = rc && rc.bets ? `<div class="tbl-wrap"><table><thead><tr><th>Record (first flag of each game, 1 unit)</th><th></th></tr></thead><tbody>
+        <tr><td>W-L-P</td><td>${rc.w}-${rc.l}${rc.p ? "-" + rc.p : ""}</td></tr>
+        <tr><td>Units, return</td><td>${rc.units >= 0 ? "+" : "−"}${Math.abs(rc.units).toFixed(2)} (${minus(rc.roi.toFixed(1))}%)</td></tr>
+        ${rc.avg_clv_pts != null ? `<tr><td>Versus the last line before tip</td><td>${pts(rc.avg_clv_pts)} pts on average, better ${rc.beat_close_pct}% of the time</td></tr>` : ""}</tbody></table></div>`
+      : `<p class="note">No graded spreads yet.</p>`;
+    box.innerHTML = `<p class="note"><strong>Not proven.</strong> ${esc(sp.backtest || "")}</p>${tonight}<h3 style="margin-top:20px">Record</h3>${record}`;
+  }
+
   // fill the warning's numbers from the latest backtest so it never goes stale
   function drawCaveat(bt) {
     const set = (id, v) => { const el = document.getElementById(id); if (el && v != null) el.textContent = v; };
@@ -351,7 +378,7 @@
     const [feed, bt, op, ml] = await Promise.all([get(`../feed/${L}.json`), get(`../${L}/backtest.json`), get("../openers.json"), get("../moneyline.json")]);
     drawCaveat(bt);
     drawGames(feed);
-    if (L === "nba") get("prop_picks.json").then(drawPicks);
+    if (L === "nba") { get("prop_picks.json").then(drawPicks); get("sharp.json").then(drawSharp); }
     if (L === "nba") { drawRecordNBA(bt); drawRatings(feed); } else drawRecordCBB(bt);
     const mlHtml = mlSection(ml);
     if (mlHtml) $("#model-body").insertAdjacentHTML("beforeend", mlHtml);
