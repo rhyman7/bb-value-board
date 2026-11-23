@@ -2,7 +2,8 @@ name: NBA pre-tip updates
 
 # Every 30 minutes from about 4 PM to 11 PM New York time on NBA nights: re-read the injury report,
 # update the model's number for games tipping within 3.5 hours, and log it with the line (Odds API,
-# 1 credit, read on the hour or when the news moved the model: about 300 credits a month).
+# 1 credit every run, Pinnacle plus nine US books: about 400 credits a month). The same read flags
+# US-book spreads that beat Pinnacle's fair price (nbamodel/sharp.py).
 # Approved by Ryan on 2026-11-18.
 # GitHub's scheduler is unreliable for this: on Nov 18 only 2 of 16 short cron starts fired, and on
 # Nov 19 the evening start never came and the late one was an hour late. So the loop starts when the
@@ -54,7 +55,7 @@ jobs:
           while [ "$(date -u +%s)" -lt "$stop" ]; do
             git pull -q --rebase origin main || true      # the board update may have changed the feed
             python -m nbamodel.pretip || echo "pre-tip run failed"
-            git add docs/lines/nba_pretip.csv 2>/dev/null || true
+            for f in docs/lines/nba_pretip.csv docs/lines/nba_sharp.csv docs/nba/sharp.json; do git add "$f" 2>/dev/null || true; done
             if ! git diff --staged --quiet; then
               git commit -q -m "Pre-tip update ($(date -u +%Y-%m-%dT%H:%MZ))"
               for i in 1 2 3; do git pull -q --rebase origin main && git push -q && break; sleep 10; done
