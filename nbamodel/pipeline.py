@@ -278,6 +278,11 @@ def run(do_backtest: bool = False):
             x["players"] = proj.get(x["id"])
         n_players = players.log(today, todays)
         pgrade = players.grade_log(season)
+        try:    # King of the Court: each player's chance to lead tonight's slate in PRA
+            from . import kotc
+            kotc.update(today, games, datetime.now(ET), players.NBA.box(season, refresh=False))
+        except Exception as e:
+            print("king of the court failed:", repr(e))
         try:    # prop picks: only on the run that read prop lines; the morning run grades them
             from . import proppicks
             has_props = any(r.get("props") for e in todays.values() for sd in ("home", "away") for r in e.get(sd, []))

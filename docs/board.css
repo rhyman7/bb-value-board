@@ -125,6 +125,7 @@ th:first-child, td:first-child { text-align: left; }
 td.l, th.l { text-align: left; }
 td.dim { color: var(--ink-3); }
 td.team { font-weight: 700; }
+tr.hl td { background: var(--raised); }
 .two { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 28px 40px; align-items: start; }
 .two > div { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; min-width: 0; }
 

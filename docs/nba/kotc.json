@@ -1,0 +1,201 @@
+{
+ "date": "2026-11-24",
+ "generated": "2026-11-24T18:34:17+00:00",
+ "first_tip": "2026-11-24T19:00:00-05:00",
+ "games": [
+  {
+   "id": "401909314",
+   "away": "DET",
+   "home": "ORL",
+   "tip": "2026-11-24T19:00:00-05:00",
+   "out": {
+    "away": [
+     "Duncan Robinson"
+    ],
+    "home": []
+   }
+  },
+  {
+   "id": "401909315",
+   "away": "BOS",
+   "home": "WSH",
+   "tip": "2026-11-24T20:00:00-05:00",
+   "out": {
+    "away": [
+     "Mitchell Robinson"
+    ],
+    "home": []
+   }
+  },
+  {
+   "id": "401909316",
+   "away": "DAL",
+   "home": "DEN",
+   "tip": "2026-11-24T22:00:00-05:00",
+   "out": {
+    "away": [],
+    "home": []
+   }
+  }
+ ],
+ "median_winning_pra": 57.0,
+ "tie_rate": 0.052,
+ "players": [
+  {
+   "game_id": "401909316",
+   "athlete_id": 3112335,
+   "name": "Nikola Jokic",
+   "team": "DEN",
+   "opp": "DAL",
+   "tip": "2026-11-24T22:00:00-05:00",
+   "proj": 48.7,
+   "pts": 26.7,
+   "reb": 11.7,
+   "ast": 10.3,
+   "avg": 45.2,
+   "out_team": [],
+   "chance": 0.3865
+  },
+  {
+   "game_id": "401909315",
+   "athlete_id": 4065648,
+   "name": "Jayson Tatum",
+   "team": "BOS",
+   "opp": "WSH",
+   "tip": "2026-11-24T20:00:00-05:00",
+   "proj": 40.4,
+   "pts": 25.6,
+   "reb": 8.0,
+   "ast": 6.8,
+   "avg": 40.0,
+   "out_team": [
+    "Mitchell Robinson"
+   ],
+   "chance": 0.1521
+  },
+  {
+   "game_id": "401909314",
+   "athlete_id": 4432166,
+   "name": "Cade Cunningham",
+   "team": "DET",
+   "opp": "ORL",
+   "tip": "2026-11-24T19:00:00-05:00",
+   "proj": 37.8,
+   "pts": 23.8,
+   "reb": 5.0,
+   "ast": 9.0,
+   "avg": 37.6,
+   "out_team": [
+    "Duncan Robinson"
+   ],
+   "chance": 0.1047
+  },
+  {
+   "game_id": "401909316",
+   "athlete_id": 3936299,
+   "name": "Jamal Murray",
+   "team": "DEN",
+   "opp": "DAL",
+   "tip": "2026-11-24T22:00:00-05:00",
+   "proj": 38.0,
+   "pts": 26.4,
+   "reb": 4.9,
+   "ast": 6.7,
+   "avg": 37.1,
+   "out_team": [],
+   "chance": 0.1031
+  },
+  {
+   "game_id": "401909314",
+   "athlete_id": 4566434,
+   "name": "Franz Wagner",
+   "team": "ORL",
+   "opp": "DET",
+   "tip": "2026-11-24T19:00:00-05:00",
+   "proj": 35.4,
+   "pts": 22.9,
+   "reb": 6.3,
+   "ast": 6.2,
+   "avg": 39.6,
+   "out_team": [],
+   "chance": 0.0669
+  },
+  {
+   "game_id": "401909315",
+   "athlete_id": 6583,
+   "name": "Anthony Davis",
+   "team": "WSH",
+   "opp": "BOS",
+   "tip": "2026-11-24T20:00:00-05:00",
+   "proj": 34.1,
+   "pts": 22.0,
+   "reb": 9.8,
+   "ast": 2.3,
+   "avg": 37.1,
+   "out_team": [],
+   "chance": 0.0525
+  },
+  {
+   "game_id": "401909316",
+   "athlete_id": 5041939,
+   "name": "Cooper Flagg",
+   "team": "DAL",
+   "opp": "DEN",
+   "tip": "2026-11-24T22:00:00-05:00",
+   "proj": 33.9,
+   "pts": 22.2,
+   "reb": 6.0,
+   "ast": 5.7,
+   "avg": 37.0,
+   "out_team": [],
+   "chance": 0.0492
+  },
+  {
+   "game_id": "401909316",
+   "athlete_id": 6442,
+   "name": "Kyrie Irving",
+   "team": "DAL",
+   "opp": "DEN",
+   "tip": "2026-11-24T22:00:00-05:00",
+   "proj": 29.1,
+   "pts": 20.8,
+   "reb": 3.7,
+   "ast": 4.6,
+   "avg": 30.2,
+   "out_team": [],
+   "chance": 0.0172
+  },
+  {
+   "game_id": "401909315",
+   "athlete_id": 4277905,
+   "name": "Trae Young",
+   "team": "WSH",
+   "opp": "BOS",
+   "tip": "2026-11-24T20:00:00-05:00",
+   "proj": 26.8,
+   "pts": 16.0,
+   "reb": 2.7,
+   "ast": 8.1,
+   "avg": 28.7,
+   "out_team": [],
+   "chance": 0.0091
+  },
+  {
+   "game_id": "401909315",
+   "athlete_id": 5174563,
+   "name": "Kyshawn George",
+   "team": "WSH",
+   "opp": "BOS",
+   "tip": "2026-11-24T20:00:00-05:00",
+   "proj": 26.2,
+   "pts": 16.7,
+   "reb": 4.9,
+   "ast": 4.6,
+   "avg": 26.5,
+   "out_team": [],
+   "chance": 0.0083
+  }
+ ],
+ "record": null,
+ "backtest": "Set on 475 past nights (2024-26): the top pick was given 26% on average and won 28%. A plain highest-projection pick won 29%, so this is a probability guide, not an edge."
+}
