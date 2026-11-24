@@ -18,3 +18,8 @@ fetched_at,game_id,minutes_to_tip,out_hash,out_home,out_away,model_margin,model_
 2026-11-22T02:07:01+00:00,401910028,52,4bbfe2d5e9,,Derrick White; Jayson Tatum; Mitchell Robinson,-12.71,0.0,-12.5,12,True
 2026-11-22T02:37:01+00:00,401910028,22,4bbfe2d5e9,,Derrick White; Jayson Tatum; Mitchell Robinson,-12.71,0.0,,,False
 2026-11-23T01:09:17+00:00,401910035,20,3ea959ed45,Stephen Curry; Brandon Williams,Paul George; Mitchell Robinson,-6.69,0.01,-8.0,12,True
+2026-11-24T00:47:55+00:00,401910044,132,7bdfa22790,Austin Reaves,Lauri Markkanen; Jaxson Hayes,13.01,0.01,13.5,10,True
+2026-11-24T00:47:55+00:00,401910045,132,7bdfa22790,,Dylan Harper,-14.4,-0.0,-12.5,10,True
+2026-11-24T00:47:55+00:00,401910043,42,7bdfa22790,,,10.3,0.0,13.5,10,True
+2026-11-24T00:47:55+00:00,401910041,12,7bdfa22790,Norman Powell; Caleb Wilson,Evan Mobley,-8.81,-0.01,-8.5,10,True
+2026-11-24T00:47:55+00:00,401910042,12,7bdfa22790,Dejounte Murray,,-6.7,0.0,-3.5,10,True
