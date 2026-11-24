@@ -1,3 +1,4 @@
 data/cache/
 __pycache__/
 .pytest_cache/
+data/kotc_walk.parquet

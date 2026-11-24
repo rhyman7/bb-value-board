@@ -307,6 +307,37 @@
       <h3 style="margin-top:20px">First half, live</h3>${liveHtml}`;
   }
 
+  // NBA only: King of the Court, each player's chance to lead tonight's slate in PRA (nbamodel/kotc.py)
+  function drawKotc(k) {
+    const box = $("#kotc-body");
+    if (!box) return;
+    if (!k) { box.innerHTML = `<p class="empty">Starts with the next board update.</p>`; return; }
+    const et = (iso) => new Date(iso).toLocaleTimeString("en-US", { timeZone: "America/New_York", hour: "numeric", minute: "2-digit" }) + " ET";
+    const pct = (x) => (100 * x < 1 ? "<1" : (100 * x).toFixed(0)) + "%";
+    const t = k.players || [];
+    let tonight;
+    if (!t.length) tonight = `<p class="empty">No games ${k.date ? "on " + esc(dayLabel(k.date, true)) : "today"}.</p>`;
+    else {
+      const locked = k.first_tip && new Date(k.first_tip) <= new Date();
+      const games = (k.games || []).map((g) => `${esc(g.away)} at ${esc(g.home)}, ${et(g.tip)}`).join(" · ");
+      const outs = (k.games || []).flatMap((g) => [...(g.out.away || []), ...(g.out.home || [])]);
+      const row = (r, i) => `<tr${i === 0 ? ' class="hl"' : ""}><td><b>${esc(r.name)}</b> <span class="muted">${esc(r.team)} vs ${esc(r.opp)}, ${et(r.tip)}</span></td>
+        <td><b>${pct(r.chance)}</b></td><td>${f1(r.proj)} <span class="muted">${f1(r.pts)}/${f1(r.reb)}/${f1(r.ast)}</span></td><td>${f1(r.avg)}</td></tr>`;
+      tonight = `<h3>${esc(dayLabel(k.date, true))}: ${(k.games || []).length} game${(k.games || []).length === 1 ? "" : "s"}</h3>
+        <p class="note">${games}. ${locked ? "Locked at the first tip." : `Place it before the first tip, ${et(k.first_tip)}; DraftKings sets the actual cutoff.`}
+        The winning number is usually about <b>${Math.round(k.median_winning_pra)}</b> PRA.${outs.length ? " Listed out: " + outs.map(esc).join(", ") + "." : ""}</p>
+        <div class="tbl-wrap"><table><thead><tr><th>Player</th><th>Chance to lead</th><th>Projected PRA <span class="muted">pts/reb/ast</span></th><th>Season avg PRA</th></tr></thead>
+        <tbody>${t.map(row).join("")}</tbody></table></div>`;
+    }
+    const rc = k.record;
+    const rec = rc && rc.nights ? `<p class="note">Top pick won ${rc.top_pick_won} of ${rc.nights} night${rc.nights === 1 ? "" : "s"} (the chances said ${rc.expected}). The night's leader was in our top ten ${rc.leader_in_top10} time${rc.leader_in_top10 === 1 ? "" : "s"}.</p>
+      <div class="tbl-wrap"><table><thead><tr><th>Night</th><th>Our pick</th><th>Leader</th></tr></thead><tbody>
+      ${rc.recent.map((x) => `<tr><td>${esc(dayLabel(x.date))}</td><td>${esc(x.pick)} <span class="muted">${pct(x.pick_chance)}, ${x.pick_pra == null ? "did not play" : x.pick_pra + " PRA"}</span></td>
+        <td>${x.won ? "<b>" : ""}${esc(x.leader)}${x.won ? "</b>" : ""} <span class="muted">${x.leader_pra} PRA</span></td></tr>`).join("")}</tbody></table></div>`
+      : `<p class="note">No graded nights yet.</p>`;
+    box.innerHTML = `<p class="note"><strong>Not proven.</strong> ${esc(k.backtest || "")}</p>${tonight}<h3 style="margin-top:20px">Record</h3>${rec}`;
+  }
+
   // NBA only: tonight's prop picks and their record (nbamodel/proppicks.py)
   const STAT = { points: "points", rebounds: "rebounds", assists: "assists", threes: "3-pointers" };
   function drawPicks(pp) {
@@ -378,7 +409,7 @@
     const [feed, bt, op, ml] = await Promise.all([get(`../feed/${L}.json`), get(`../${L}/backtest.json`), get("../openers.json"), get("../moneyline.json")]);
     drawCaveat(bt);
     drawGames(feed);
-    if (L === "nba") { get("prop_picks.json").then(drawPicks); get("sharp.json").then(drawSharp); }
+    if (L === "nba") { get("kotc.json").then(drawKotc); get("prop_picks.json").then(drawPicks); get("sharp.json").then(drawSharp); }
     if (L === "nba") { drawRecordNBA(bt); drawRatings(feed); } else drawRecordCBB(bt);
     const mlHtml = mlSection(ml);
     if (mlHtml) $("#model-body").insertAdjacentHTML("beforeend", mlHtml);
