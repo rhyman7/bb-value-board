@@ -23,7 +23,7 @@ import pandas as pd
 from nbamodel import model as nba_model
 from nbamodel.ratings import rating_projection
 
-from . import availability, data, lineup, ratings, roster, spots
+from . import availability, blend, data, lineup, ratings, roster, spots
 
 SETTINGS = ratings.Settings(half_life=240.0, ridge_eff=3.0, carry=0.85, roster_k=0.3)
 FEATURES = ["r_margin", "r_early", "rest_diff", "b2b_h", "b2b_a", "far_road_diff", "miss_diff", "lineup_diff"]
@@ -76,6 +76,7 @@ def grade(x):
         "games": int(len(x)),
         "model_mae": round(float((x.margin - x.m_margin).abs().mean()), 2),
         "ratings_only_mae": round(float((x.margin - x.r_margin).abs().mean()), 2),
+        "ratings_model_mae": round(float((x.margin - x.m_ratings).abs().mean()), 2) if "m_ratings" in x else None,
         "line_mae": round(float((x.margin - x.close_spread).abs().mean()), 2),
         "market_weight": round(w, 3), "market_weight_se": round(se, 3) if se else None,
         "ats_every_game": record(x),
@@ -108,6 +109,13 @@ def run(last_season, verbose=True, extra=None):
         coefs[s] = coef
         out.append(predict(rated[rated.season == s], coef))
     bt = pd.concat(out, ignore_index=True)
+    # the board's number: the ratings model averaged with two other formulas (blend.py), each
+    # season's fitted on earlier seasons only
+    hist, _ = blend.history(bt, FIRST_RATED, last_season)
+    parts = [blend.predict(hist[hist.season == s], blend.fit(hist[(hist.season < s) & (hist.season < last_season)]))
+             if s > FIRST_RATED + 2 else hist[hist.season == s].assign(m_ratings=lambda d: d.m_margin)
+             for s in sorted(hist.season.unique())]
+    bt = pd.concat(parts, ignore_index=True)
     held = bt[bt.season.isin(GRADE)]
     cur = bt[bt.season == last_season]
     summary = {

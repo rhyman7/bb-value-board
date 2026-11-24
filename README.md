@@ -72,6 +72,11 @@ closing lines only arrive after the season.
   produced last season. Losing your best players pulls the prior down; landing transfers pushes it up.
 - **Early-season stretch**: the ratings run compressed in November, so the game model gets a fading
   second copy of them, plus back-to-backs (early-season tournaments) and rest.
+- **Averaged with two other formulas** (`cbbmodel/blend.py`, Nov 23, 2026): a regression and
+  gradient-boosted trees over the same inputs plus each team's four factors, recent point margin and
+  Elo. The board's number is the average of the three. It misses the margin by about 0.02 points
+  less a game (tuning 2019 and 2020-23 both better, `docs/cbb/formula_test.json`), with no change
+  in the record against the spread.
 
 Graded against ESPN's spread, which hoopR keeps in its play-by-play files for 2015-2023 and this
 season (none for 2023-24 to 2025-26). Settings were chosen on 2016-2018; 2019-2023 is the holdout

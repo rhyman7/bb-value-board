@@ -13,11 +13,10 @@ import json
 from datetime import date
 from pathlib import Path
 
-import numpy as np
-import pandas as pd
 
 from cbbmodel import backtest as cbt, data as cdata
 from experiments import formulas as F
+from nbamodel.formulas import FF, elo, prior_form, team_games
 
 OUT = Path(__file__).resolve().parent.parent / "docs" / "cbb" / "formula_test.json"
 
@@ -28,7 +27,7 @@ def build():
     bt = cbt.run(last, verbose=False)["games"]
     g = bt.copy()
     g["game_id"] = g.game_id.astype(str)
-    f = F.prior_form(F.team_games(range(cbt.FIRST_RATED - 1, last + 1), src=cdata, types=(2, 3)))
+    f = prior_form(team_games(range(cbt.FIRST_RATED - 1, last + 1), src=cdata, types=(2, 3)))
     for side, idc in (("h", "home_id"), ("a", "away_id")):
         p = f.drop(columns=["season", "date"]).rename(columns={"team_id": idc})
         p.columns = [c if c in ("game_id", idc) else f"{c}_{side}" for c in p.columns]
@@ -38,7 +37,7 @@ def build():
         g[f"{k}_off_diff"] = g[f"p_{k}_o_h"] - g[f"p_{k}_d_a"] - (g[f"p_{k}_o_a"] - g[f"p_{k}_d_h"])
         g[f"{k}_net"] = (g[f"p_{k}_o_h"] - g[f"p_{k}_d_h"]) - (g[f"p_{k}_o_a"] - g[f"p_{k}_d_a"])
     g["form_diff"] = g.p_mov_h - g.p_mov_a
-    g["elo_diff"] = g.game_id.map(F.elo(g))
+    g["elo_diff"] = g.game_id.map(elo(g))
     g["home"] = (~g.neutral.astype(bool)).astype(float)
     return g[g.season < last]
 
@@ -48,10 +47,10 @@ def main():
     F.TUNE, F.CHECK = (2019, 2019), (2020, 2023)
     base = ["home", "rest_diff", "b2b_h", "b2b_a", "far_road_diff", "miss_diff", "lineup_diff"]
     g["current"] = g.m_margin
-    g["four_factors"] = F.walk(g, F.FF + base)
+    g["four_factors"] = F.walk(g, FF + base)
     g["elo"] = F.walk(g, ["elo_diff"] + base)
     g["form"] = F.walk(g, ["form_diff"] + base)
-    allc = ["r_margin", "r_early"] + base + F.FF + ["elo_diff", "form_diff"]
+    allc = ["r_margin", "r_early"] + base + FF + ["elo_diff", "form_diff"]
     g["all_linear"] = F.walk(g, allc)
     g["boosted"] = F.walk(g, allc, kind="gbm")
     g["ensemble"] = g[["current", "all_linear", "boosted"]].mean(axis=1, skipna=False)
