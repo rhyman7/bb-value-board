@@ -2,21 +2,21 @@
  "generated": "2026-11-24",
  "runs": 15,
  "games_logged": 15,
- "news_events": 1,
+ "news_events": 2,
  "line_moved_toward_model_pct": null,
  "avg_move_toward_model": 0.0,
  "record_at_news_line": {
   "w": 0,
-  "l": 1,
+  "l": 2,
   "p": 0,
   "pct": 0.0,
-  "se": 50.0
+  "se": 35.4
  },
  "record_at_close_same_side": {
   "w": 0,
-  "l": 1,
+  "l": 2,
   "p": 0,
   "pct": 0.0,
-  "se": 50.0
+  "se": 35.4
  }
 }

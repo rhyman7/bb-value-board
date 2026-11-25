@@ -1,87 +1,87 @@
 {
- "nights": 6,
- "lastNight": "2026-11-22",
+ "nights": 7,
+ "lastNight": "2026-11-23",
  "last_night": {
-  "player_games": 676,
+  "player_games": 599,
   "minutes": {
-   "model_mae": 5.34,
-   "season_avg_mae": 5.41,
-   "model_closer_pct": 51.6
+   "model_mae": 5.12,
+   "season_avg_mae": 5.15,
+   "model_closer_pct": 50.6
   },
   "points": {
-   "model_mae": 4.14,
-   "season_avg_mae": 4.3,
-   "model_closer_pct": 53.7
+   "model_mae": 4.1,
+   "season_avg_mae": 4.18,
+   "model_closer_pct": 50.6
   },
   "rebounds": {
-   "model_mae": 1.78,
-   "season_avg_mae": 1.87,
-   "model_closer_pct": 51.2
+   "model_mae": 1.71,
+   "season_avg_mae": 1.81,
+   "model_closer_pct": 51.6
   },
   "assists": {
-   "model_mae": 1.08,
-   "season_avg_mae": 1.13,
-   "model_closer_pct": 47.9
+   "model_mae": 1.03,
+   "season_avg_mae": 1.06,
+   "model_closer_pct": 45.4
   },
   "threes": {
-   "model_mae": 0.77,
-   "season_avg_mae": 0.75,
-   "model_closer_pct": 37.0
+   "model_mae": 0.72,
+   "season_avg_mae": 0.72,
+   "model_closer_pct": 39.1
   }
  },
  "last_7_days": {
-  "player_games": 4898,
+  "player_games": 5668,
   "minutes": {
-   "model_mae": 5.24,
-   "season_avg_mae": 5.31,
-   "model_closer_pct": 49.9
+   "model_mae": 5.22,
+   "season_avg_mae": 5.28,
+   "model_closer_pct": 50.0
   },
   "points": {
-   "model_mae": 4.27,
-   "season_avg_mae": 4.41,
+   "model_mae": 4.26,
+   "season_avg_mae": 4.39,
    "model_closer_pct": 51.8
   },
   "rebounds": {
-   "model_mae": 1.79,
-   "season_avg_mae": 1.89,
-   "model_closer_pct": 51.4
+   "model_mae": 1.77,
+   "season_avg_mae": 1.88,
+   "model_closer_pct": 51.6
   },
   "assists": {
-   "model_mae": 1.06,
-   "season_avg_mae": 1.1,
-   "model_closer_pct": 46.5
+   "model_mae": 1.05,
+   "season_avg_mae": 1.09,
+   "model_closer_pct": 46.3
   },
   "threes": {
-   "model_mae": 0.77,
-   "season_avg_mae": 0.76,
+   "model_mae": 0.76,
+   "season_avg_mae": 0.75,
    "model_closer_pct": 37.9
   }
  },
  "season": {
-  "player_games": 4898,
+  "player_games": 5668,
   "minutes": {
-   "model_mae": 5.24,
-   "season_avg_mae": 5.31,
-   "model_closer_pct": 49.9
+   "model_mae": 5.22,
+   "season_avg_mae": 5.28,
+   "model_closer_pct": 50.0
   },
   "points": {
-   "model_mae": 4.27,
-   "season_avg_mae": 4.41,
+   "model_mae": 4.26,
+   "season_avg_mae": 4.39,
    "model_closer_pct": 51.8
   },
   "rebounds": {
-   "model_mae": 1.79,
-   "season_avg_mae": 1.89,
-   "model_closer_pct": 51.4
+   "model_mae": 1.77,
+   "season_avg_mae": 1.88,
+   "model_closer_pct": 51.6
   },
   "assists": {
-   "model_mae": 1.06,
-   "season_avg_mae": 1.1,
-   "model_closer_pct": 46.5
+   "model_mae": 1.05,
+   "season_avg_mae": 1.09,
+   "model_closer_pct": 46.3
   },
   "threes": {
-   "model_mae": 0.77,
-   "season_avg_mae": 0.76,
+   "model_mae": 0.76,
+   "season_avg_mae": 0.75,
    "model_closer_pct": 37.9
   }
  },
@@ -89,160 +89,160 @@
  "props_last_night": {},
  "last_night_top": [
   {
-   "name": "Tyler Jones",
-   "team": "UALB",
-   "opp": "MERC",
+   "name": "Krystian Lewis",
+   "team": "TULN",
+   "opp": "GAST",
    "p_points": 20.6,
-   "a_points": 26.0,
-   "p_rebounds": 4.2,
+   "a_points": 16.0,
+   "p_rebounds": 4.8,
+   "a_rebounds": 3.0,
+   "p_assists": 3.0,
+   "a_assists": 0.0,
+   "p_threes": 1.9,
+   "a_threes": 1.0
+  },
+  {
+   "name": "Trey Beamer",
+   "team": "FIU",
+   "opp": "LBSU",
+   "p_points": 19.7,
+   "a_points": 16.0,
+   "p_rebounds": 3.6,
    "a_rebounds": 2.0,
-   "p_assists": 3.2,
+   "p_assists": 2.3,
    "a_assists": 3.0,
    "p_threes": 1.4,
-   "a_threes": 1.0
-  },
-  {
-   "name": "Cooper Noard",
-   "team": "SAM",
-   "opp": "UNCA",
-   "p_points": 20.3,
-   "a_points": 13.0,
-   "p_rebounds": 3.8,
-   "a_rebounds": 6.0,
-   "p_assists": 2.1,
-   "a_assists": 0.0,
-   "p_threes": 3.1,
    "a_threes": 2.0
   },
   {
-   "name": "Jalen Langsy",
-   "team": "USA",
-   "opp": "UWF",
-   "p_points": 20.0,
-   "a_points": 20.0,
-   "p_rebounds": 3.3,
-   "a_rebounds": 2.0,
-   "p_assists": 3.1,
-   "a_assists": 1.0,
-   "p_threes": 2.3,
-   "a_threes": 4.0
-  },
-  {
-   "name": "Christian Gibson",
-   "team": "UTU",
-   "opp": "SDAK",
-   "p_points": 19.8,
-   "a_points": 7.0,
+   "name": "Joey Chammaa",
+   "team": "SJSU",
+   "opp": "UCSD",
+   "p_points": 19.1,
+   "a_points": 19.0,
    "p_rebounds": 4.4,
-   "a_rebounds": 1.0,
-   "p_assists": 1.8,
-   "a_assists": 3.0,
-   "p_threes": 2.9,
-   "a_threes": 0.0
-  },
-  {
-   "name": "Larry Johnson",
-   "team": "MCN",
-   "opp": "TXST",
-   "p_points": 19.7,
-   "a_points": 29.0,
-   "p_rebounds": 5.3,
-   "a_rebounds": 2.0,
-   "p_assists": 1.7,
-   "a_assists": 3.0,
-   "p_threes": 1.2,
-   "a_threes": 1.0
-  },
-  {
-   "name": "Madden Collins",
-   "team": "AMER",
-   "opp": "TOW",
-   "p_points": 18.7,
-   "a_points": 21.0,
-   "p_rebounds": 4.9,
-   "a_rebounds": 6.0,
-   "p_assists": 2.2,
-   "a_assists": 7.0,
-   "p_threes": 1.1,
-   "a_threes": 0.0
-  },
-  {
-   "name": "Rodney Rice",
-   "team": "USC",
-   "opp": "UL",
-   "p_points": 18.6,
-   "a_points": 18.0,
-   "p_rebounds": 4.0,
    "a_rebounds": 3.0,
-   "p_assists": 4.8,
+   "p_assists": 4.0,
    "a_assists": 6.0,
    "p_threes": 2.3,
-   "a_threes": 2.0
+   "a_threes": 3.0
   },
   {
-   "name": "Yaroslav Nikonov",
-   "team": "PRST",
-   "opp": "CSUF",
-   "p_points": 18.5,
-   "a_points": 10.0,
-   "p_rebounds": 4.0,
+   "name": "Dallas Gardner",
+   "team": "GASO",
+   "opp": "NKU",
+   "p_points": 19.1,
+   "a_points": 16.0,
+   "p_rebounds": 7.7,
    "a_rebounds": 4.0,
-   "p_assists": 3.8,
-   "a_assists": 5.0,
-   "p_threes": 1.7,
+   "p_assists": 3.2,
+   "a_assists": 1.0,
+   "p_threes": 0.8,
    "a_threes": 0.0
   },
   {
-   "name": "DJ Shine",
-   "team": "UWF",
-   "opp": "USA",
-   "p_points": 18.4,
-   "a_points": 26.0,
-   "p_rebounds": 4.8,
-   "a_rebounds": 2.0,
+   "name": "Jack Smiley",
+   "team": "BEL",
+   "opp": "YALE",
+   "p_points": 19.0,
+   "a_points": 15.0,
+   "p_rebounds": 4.1,
+   "a_rebounds": 4.0,
+   "p_assists": 4.5,
+   "a_assists": 5.0,
+   "p_threes": 2.8,
+   "a_threes": 3.0
+  },
+  {
+   "name": "Keyshuan Tillery",
+   "team": "CLT",
+   "opp": "FGCU",
+   "p_points": 19.0,
+   "a_points": 7.0,
+   "p_rebounds": 3.8,
+   "a_rebounds": 3.0,
    "p_assists": 3.8,
-   "a_assists": 2.0,
-   "p_threes": 2.7,
-   "a_threes": 8.0
+   "a_assists": 3.0,
+   "p_threes": 2.3,
+   "a_threes": 1.0
   },
   {
-   "name": "Pryce Sandfort",
-   "team": "NEB",
-   "opp": "BTLR",
-   "p_points": 18.3,
-   "a_points": 14.0,
-   "p_rebounds": 4.6,
-   "a_rebounds": 6.0,
-   "p_assists": 2.3,
-   "a_assists": 2.0,
-   "p_threes": 3.2,
-   "a_threes": 2.0
+   "name": "Jalen Haynes",
+   "team": "SIU",
+   "opp": "MTSU",
+   "p_points": 18.7,
+   "a_points": 21.0,
+   "p_rebounds": 3.4,
+   "a_rebounds": 1.0,
+   "p_assists": 3.5,
+   "a_assists": 7.0,
+   "p_threes": 1.3,
+   "a_threes": 0.0
   },
   {
-   "name": "Matas Vokietaitis",
-   "team": "TEX",
-   "opp": "USI",
+   "name": "Andrej Stojakovic",
+   "team": "ILL",
+   "opp": "WIN",
+   "p_points": 18.2,
+   "a_points": 29.0,
+   "p_rebounds": 4.9,
+   "a_rebounds": 3.0,
+   "p_assists": 1.8,
+   "a_assists": 3.0,
+   "p_threes": 0.9,
+   "a_threes": 1.0
+  },
+  {
+   "name": "Terrence Brown",
+   "team": "UNC",
+   "opp": "MONM",
    "p_points": 17.9,
    "a_points": 20.0,
-   "p_rebounds": 7.8,
-   "a_rebounds": 10.0,
-   "p_assists": 0.8,
-   "a_assists": 0.0,
-   "p_threes": 0.1,
+   "p_rebounds": 3.0,
+   "a_rebounds": 4.0,
+   "p_assists": 2.7,
+   "a_assists": 3.0,
+   "p_threes": 0.9,
    "a_threes": 0.0
   },
   {
-   "name": "Jake Lemelman",
-   "team": "MERC",
-   "opp": "UALB",
-   "p_points": 17.4,
-   "a_points": 29.0,
-   "p_rebounds": 2.7,
-   "a_rebounds": 6.0,
-   "p_assists": 3.8,
+   "name": "Willie Foster",
+   "team": "NKU",
+   "opp": "GASO",
+   "p_points": 17.6,
+   "a_points": 14.0,
+   "p_rebounds": 4.1,
+   "a_rebounds": 3.0,
+   "p_assists": 1.9,
+   "a_assists": 3.0,
+   "p_threes": 1.5,
+   "a_threes": 2.0
+  },
+  {
+   "name": "Keshawn Fisher",
+   "team": "WIN",
+   "opp": "ILL",
+   "p_points": 17.5,
+   "a_points": 22.0,
+   "p_rebounds": 4.9,
+   "a_rebounds": 1.0,
+   "p_assists": 2.6,
    "a_assists": 4.0,
-   "p_threes": 2.1,
-   "a_threes": 5.0
+   "p_threes": 1.9,
+   "a_threes": 3.0
+  },
+  {
+   "name": "Tijan Saine Jr.",
+   "team": "FIU",
+   "opp": "LBSU",
+   "p_points": 17.5,
+   "a_points": 16.0,
+   "p_rebounds": 3.2,
+   "a_rebounds": 4.0,
+   "p_assists": 3.3,
+   "a_assists": 5.0,
+   "p_threes": 1.8,
+   "a_threes": 0.0
   }
  ]
 }
