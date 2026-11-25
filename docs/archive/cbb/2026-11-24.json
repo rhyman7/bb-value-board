@@ -1219,11 +1219,11 @@
    "total": 143.2,
    "win_prob": 0.5,
    "projection": 0.0,
-   "mkt_spread": 3.5,
+   "mkt_spread": 4.5,
    "mkt_total": 140.5,
-   "mkt_ml_home": -185.0,
-   "mkt_ml_away": 154.0,
-   "frozenAt": "2026-11-24T19:41-05:00"
+   "mkt_ml_home": -180.0,
+   "mkt_ml_away": 150.0,
+   "frozenAt": "2026-11-24T23:57-05:00"
   },
   "401921711": {
    "id": "401921711",
