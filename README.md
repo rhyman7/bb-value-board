@@ -175,3 +175,13 @@ a section per game with good and tough spots (defense vs the player's position a
 season average), team stats and, for the NBA, a projected box score. It reads `docs/feed/` and the dashboards'
 `data/data.json`, and writes `docs/reports/<league>/<date>.pdf` plus `latest.pdf`. The **Matchup report PDFs**
 workflow runs it after every board update. These are projections, not picks.
+
+## One site: the dark look and the shared bar (Nov 26, 2026)
+
+The boards wear the Weekly Gridiron Board's dark look: every colour is a token at the top of
+`docs/board.css` (graphite page `#131416`, panels `#1b1d21`, text `#f2f1ee`, good `#4ade80`, bad
+`#f87171`), always, no longer following the device's light or dark setting; the hardwood stays. A
+`@media print` block puts the light colours back, so the matchup report PDFs are unchanged.
+Headings are condensed Archivo. With the shared bar on (`html.wgb-shell-on`) the board's name and
+its link to the other board (`li.xboard`) are hidden, since the bar's basketball row has both; the
+board's own row of section links stays.
