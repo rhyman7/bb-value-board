@@ -167,9 +167,9 @@
    "projection": 6.6,
    "mkt_spread": 3.5,
    "mkt_total": 152.5,
-   "mkt_ml_home": -180.0,
-   "mkt_ml_away": 150.0,
-   "frozenAt": "2026-11-25T19:15-05:00"
+   "mkt_ml_home": -166.0,
+   "mkt_ml_away": 140.0,
+   "frozenAt": "2026-11-25T23:13-05:00"
   },
   "401929005": {
    "id": "401929005",
@@ -186,7 +186,7 @@
    "mkt_total": 139.5,
    "mkt_ml_home": -2100.0,
    "mkt_ml_away": 1100.0,
-   "frozenAt": "2026-11-25T19:15-05:00"
+   "frozenAt": "2026-11-25T23:13-05:00"
   }
  }
 }
