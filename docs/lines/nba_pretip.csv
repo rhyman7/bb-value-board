@@ -50,3 +50,6 @@ fetched_at,game_id,minutes_to_tip,out_hash,out_home,out_away,model_margin,model_
 2026-11-26T00:37:01+00:00,401909323,52,8e10696c38,,,7.2,0.0,9.5,10,True
 2026-11-26T00:37:01+00:00,401909321,22,8e10696c38,Jerami Grant; Cameron Boozer; GG Jackson,,2.71,-0.0,7.5,10,True
 2026-11-26T00:37:01+00:00,401909322,22,8e10696c38,,,-0.7,-0.0,1.5,10,True
+2026-11-26T01:07:01+00:00,401909324,112,8e10696c38,Stephen Curry; Brandon Williams,Zach LaVine,7.92,-0.0,8.5,10,True
+2026-11-26T01:07:01+00:00,401909325,112,8e10696c38,,Dylan Harper,-1.1,-0.0,-3.5,10,True
+2026-11-26T01:07:01+00:00,401909323,22,8e10696c38,,,7.2,0.0,9.5,10,True
