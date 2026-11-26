@@ -57,3 +57,5 @@ fetched_at,game_id,minutes_to_tip,out_hash,out_home,out_away,model_margin,model_
 2026-11-26T01:37:01+00:00,401909325,82,f6c0b1737d,,Dylan Harper,-1.1,-0.0,-3.5,10,True
 2026-11-26T02:07:01+00:00,401909324,52,bee447b790,Stephen Curry; Brandon Williams,Zach LaVine,7.92,-0.64,8.5,10,True
 2026-11-26T02:07:01+00:00,401909325,52,bee447b790,,Dylan Harper,-1.1,-0.0,-3.5,10,True
+2026-11-26T02:37:00+00:00,401909324,22,9fefb07691,Stephen Curry; Brandon Williams,Zach LaVine,7.92,-0.0,8.5,10,True
+2026-11-26T02:37:00+00:00,401909325,22,9fefb07691,,De'Aaron Fox; Dylan Harper,-0.08,1.02,-3.5,10,True
