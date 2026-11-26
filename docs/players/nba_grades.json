@@ -1,128 +1,128 @@
 {
- "nights": 7,
- "lastNight": "2026-11-23",
+ "nights": 8,
+ "lastNight": "2026-11-24",
  "last_night": {
-  "player_games": 101,
+  "player_games": 64,
   "minutes": {
-   "model_mae": 4.5,
-   "season_avg_mae": 4.85,
-   "model_closer_pct": 56.4
+   "model_mae": 4.16,
+   "season_avg_mae": 4.48,
+   "model_closer_pct": 54.7
   },
   "points": {
-   "model_mae": 4.36,
-   "season_avg_mae": 4.65,
-   "model_closer_pct": 55.4
+   "model_mae": 4.6,
+   "season_avg_mae": 4.39,
+   "model_closer_pct": 40.6
   },
   "rebounds": {
-   "model_mae": 1.71,
-   "season_avg_mae": 1.81,
-   "model_closer_pct": 48.5
+   "model_mae": 1.7,
+   "season_avg_mae": 1.8,
+   "model_closer_pct": 57.8
   },
   "assists": {
-   "model_mae": 1.51,
-   "season_avg_mae": 1.53,
-   "model_closer_pct": 48.5
+   "model_mae": 1.41,
+   "season_avg_mae": 1.4,
+   "model_closer_pct": 35.9
   },
   "threes": {
-   "model_mae": 0.89,
-   "season_avg_mae": 0.92,
-   "model_closer_pct": 40.6
+   "model_mae": 0.94,
+   "season_avg_mae": 0.9,
+   "model_closer_pct": 34.4
   }
  },
  "last_7_days": {
-  "player_games": 960,
+  "player_games": 931,
   "minutes": {
-   "model_mae": 4.6,
-   "season_avg_mae": 4.86,
-   "model_closer_pct": 52.2
+   "model_mae": 4.5,
+   "season_avg_mae": 4.8,
+   "model_closer_pct": 52.7
   },
   "points": {
-   "model_mae": 4.59,
-   "season_avg_mae": 4.7,
-   "model_closer_pct": 52.0
+   "model_mae": 4.58,
+   "season_avg_mae": 4.68,
+   "model_closer_pct": 51.6
   },
   "rebounds": {
-   "model_mae": 1.89,
-   "season_avg_mae": 1.93,
-   "model_closer_pct": 49.6
+   "model_mae": 1.84,
+   "season_avg_mae": 1.89,
+   "model_closer_pct": 49.4
   },
   "assists": {
    "model_mae": 1.36,
    "season_avg_mae": 1.38,
-   "model_closer_pct": 46.5
+   "model_closer_pct": 46.2
   },
   "threes": {
-   "model_mae": 0.97,
-   "season_avg_mae": 0.98,
-   "model_closer_pct": 39.2
+   "model_mae": 0.96,
+   "season_avg_mae": 0.97,
+   "model_closer_pct": 38.3
   }
  },
  "season": {
-  "player_games": 960,
+  "player_games": 1024,
   "minutes": {
-   "model_mae": 4.6,
-   "season_avg_mae": 4.86,
-   "model_closer_pct": 52.2
+   "model_mae": 4.57,
+   "season_avg_mae": 4.83,
+   "model_closer_pct": 52.3
   },
   "points": {
    "model_mae": 4.59,
-   "season_avg_mae": 4.7,
-   "model_closer_pct": 52.0
+   "season_avg_mae": 4.68,
+   "model_closer_pct": 51.3
   },
   "rebounds": {
-   "model_mae": 1.89,
-   "season_avg_mae": 1.93,
-   "model_closer_pct": 49.6
+   "model_mae": 1.88,
+   "season_avg_mae": 1.92,
+   "model_closer_pct": 50.1
   },
   "assists": {
    "model_mae": 1.36,
    "season_avg_mae": 1.38,
-   "model_closer_pct": 46.5
+   "model_closer_pct": 45.8
   },
   "threes": {
    "model_mae": 0.97,
    "season_avg_mae": 0.98,
-   "model_closer_pct": 39.2
+   "model_closer_pct": 38.9
   }
  },
  "props": {
   "points": {
    "0+": {
-    "picks": 514,
-    "w": 274,
-    "l": 240,
+    "picks": 540,
+    "w": 288,
+    "l": 252,
     "pct": 53.3,
-    "roi": -0.6
+    "roi": -0.5
    },
    "1.5+": {
-    "picks": 164,
-    "w": 96,
-    "l": 68,
-    "pct": 58.5,
-    "roi": 8.4
+    "picks": 173,
+    "w": 102,
+    "l": 71,
+    "pct": 59.0,
+    "roi": 9.4
    },
    "3+": {
-    "picks": 22,
+    "picks": 23,
     "w": 12,
-    "l": 10,
-    "pct": 54.5,
-    "roi": 1.3
+    "l": 11,
+    "pct": 52.2,
+    "roi": -3.1
    }
   },
   "rebounds": {
    "0+": {
-    "picks": 464,
-    "w": 254,
-    "l": 210,
-    "pct": 54.7,
-    "roi": -3.0
+    "picks": 489,
+    "w": 269,
+    "l": 220,
+    "pct": 55.0,
+    "roi": -2.4
    },
    "1+": {
-    "picks": 46,
+    "picks": 48,
     "w": 26,
-    "l": 20,
-    "pct": 56.5,
-    "roi": -0.6
+    "l": 22,
+    "pct": 54.2,
+    "roi": -4.4
    },
    "2+": {
     "picks": 4,
@@ -134,11 +134,11 @@
   },
   "assists": {
    "0+": {
-    "picks": 406,
-    "w": 237,
-    "l": 169,
-    "pct": 58.4,
-    "roi": 3.5
+    "picks": 427,
+    "w": 251,
+    "l": 176,
+    "pct": 58.8,
+    "roi": 4.4
    },
    "1+": {
     "picks": 29,
@@ -157,18 +157,18 @@
   },
   "threes": {
    "0+": {
-    "picks": 393,
-    "w": 216,
-    "l": 177,
-    "pct": 55.0,
-    "roi": -8.0
+    "picks": 415,
+    "w": 231,
+    "l": 184,
+    "pct": 55.7,
+    "roi": -7.0
    },
    "0.5+": {
-    "picks": 102,
-    "w": 56,
-    "l": 46,
-    "pct": 54.9,
-    "roi": -12.0
+    "picks": 109,
+    "w": 60,
+    "l": 49,
+    "pct": 55.0,
+    "roi": -11.9
    },
    "1+": {
     "picks": 1,
@@ -182,43 +182,20 @@
  "props_last_night": {
   "points": {
    "0+": {
-    "picks": 68,
-    "w": 36,
-    "l": 32,
-    "pct": 52.9,
-    "roi": -1.0
+    "picks": 26,
+    "w": 14,
+    "l": 12,
+    "pct": 53.8,
+    "roi": 1.4
    },
    "1.5+": {
-    "picks": 27,
-    "w": 16,
-    "l": 11,
-    "pct": 59.3,
-    "roi": 9.2
+    "picks": 9,
+    "w": 6,
+    "l": 3,
+    "pct": 66.7,
+    "roi": 26.7
    },
    "3+": {
-    "picks": 7,
-    "w": 4,
-    "l": 3,
-    "pct": 57.1,
-    "roi": 6.8
-   }
-  },
-  "rebounds": {
-   "0+": {
-    "picks": 65,
-    "w": 36,
-    "l": 29,
-    "pct": 55.4,
-    "roi": -0.1
-   },
-   "1+": {
-    "picks": 7,
-    "w": 5,
-    "l": 2,
-    "pct": 71.4,
-    "roi": 25.1
-   },
-   "2+": {
     "picks": 1,
     "w": 0,
     "l": 1,
@@ -226,20 +203,43 @@
     "roi": -100.0
    }
   },
-  "assists": {
+  "rebounds": {
    "0+": {
-    "picks": 49,
-    "w": 22,
-    "l": 27,
-    "pct": 44.9,
-    "roi": -20.5
+    "picks": 25,
+    "w": 16,
+    "l": 9,
+    "pct": 64.0,
+    "roi": 16.4
    },
    "1+": {
     "picks": 2,
-    "w": 2,
+    "w": 1,
+    "l": 1,
+    "pct": 50.0,
+    "roi": -8.3
+   },
+   "2+": {
+    "picks": 0,
+    "w": 0,
     "l": 0,
-    "pct": 100.0,
-    "roi": 61.0
+    "pct": null,
+    "roi": null
+   }
+  },
+  "assists": {
+   "0+": {
+    "picks": 21,
+    "w": 14,
+    "l": 7,
+    "pct": 66.7,
+    "roi": 21.5
+   },
+   "1+": {
+    "picks": 0,
+    "w": 0,
+    "l": 0,
+    "pct": null,
+    "roi": null
    },
    "2+": {
     "picks": 0,
@@ -251,18 +251,18 @@
   },
   "threes": {
    "0+": {
-    "picks": 51,
-    "w": 25,
-    "l": 26,
-    "pct": 49.0,
-    "roi": -13.9
+    "picks": 22,
+    "w": 15,
+    "l": 7,
+    "pct": 68.2,
+    "roi": 10.4
    },
    "0.5+": {
-    "picks": 16,
-    "w": 6,
-    "l": 10,
-    "pct": 37.5,
-    "roi": -39.5
+    "picks": 7,
+    "w": 4,
+    "l": 3,
+    "pct": 57.1,
+    "roi": -11.2
    },
    "1+": {
     "picks": 0,
@@ -275,160 +275,160 @@
  },
  "last_night_top": [
   {
-   "name": "Luka Doncic",
-   "team": "LAL",
-   "opp": "UTAH",
-   "p_points": 35.6,
-   "a_points": 28.0,
-   "p_rebounds": 7.0,
-   "a_rebounds": 4.0,
-   "p_assists": 7.5,
-   "a_assists": 8.0,
-   "p_threes": 4.2,
-   "a_threes": 3.0
-  },
-  {
-   "name": "Devin Booker",
-   "team": "PHX",
-   "opp": "NO",
-   "p_points": 26.2,
-   "a_points": 22.0,
-   "p_rebounds": 3.3,
-   "a_rebounds": 5.0,
-   "p_assists": 5.9,
-   "a_assists": 8.0,
-   "p_threes": 1.9,
-   "a_threes": 2.0
-  },
-  {
-   "name": "Donovan Mitchell",
-   "team": "CLE",
-   "opp": "CHI",
-   "p_points": 25.7,
-   "a_points": 28.0,
-   "p_rebounds": 4.4,
-   "a_rebounds": 3.0,
-   "p_assists": 5.4,
+   "name": "Nikola Jokic",
+   "team": "DEN",
+   "opp": "DAL",
+   "p_points": 26.7,
+   "a_points": 18.0,
+   "p_rebounds": 11.7,
+   "a_rebounds": 11.0,
+   "p_assists": 10.2,
    "a_assists": 5.0,
-   "p_threes": 2.7,
+   "p_threes": 1.5,
    "a_threes": 1.0
   },
   {
-   "name": "Darius Acuff Jr.",
-   "team": "SAC",
-   "opp": "SA",
-   "p_points": 23.5,
-   "a_points": 12.0,
-   "p_rebounds": 3.6,
-   "a_rebounds": 1.0,
-   "p_assists": 6.9,
-   "a_assists": 4.0,
-   "p_threes": 2.8,
-   "a_threes": 0.0
-  },
-  {
-   "name": "James Harden",
-   "team": "CLE",
-   "opp": "CHI",
-   "p_points": 21.7,
-   "a_points": 21.0,
+   "name": "Jamal Murray",
+   "team": "DEN",
+   "opp": "DAL",
+   "p_points": 26.4,
+   "a_points": 20.0,
    "p_rebounds": 4.9,
-   "a_rebounds": 6.0,
-   "p_assists": 7.3,
-   "a_assists": 5.0,
-   "p_threes": 2.9,
-   "a_threes": 3.0
-  },
-  {
-   "name": "Kevin Durant",
-   "team": "HOU",
-   "opp": "LAC",
-   "p_points": 21.7,
-   "a_points": 32.0,
-   "p_rebounds": 4.9,
-   "a_rebounds": 9.0,
-   "p_assists": 4.0,
-   "a_assists": 4.0,
-   "p_threes": 1.7,
-   "a_threes": 4.0
-  },
-  {
-   "name": "Keyonte George",
-   "team": "UTAH",
-   "opp": "LAL",
-   "p_points": 21.3,
-   "a_points": 14.0,
-   "p_rebounds": 3.7,
-   "a_rebounds": 4.0,
+   "a_rebounds": 2.0,
    "p_assists": 6.7,
-   "a_assists": 2.0,
-   "p_threes": 2.3,
+   "a_assists": 3.0,
+   "p_threes": 3.3,
    "a_threes": 2.0
   },
   {
-   "name": "Alperen Sengun",
-   "team": "HOU",
-   "opp": "LAC",
-   "p_points": 20.3,
+   "name": "Jayson Tatum",
+   "team": "BOS",
+   "opp": "WSH",
+   "p_points": 25.6,
+   "a_points": 41.0,
+   "p_rebounds": 8.0,
+   "a_rebounds": 6.0,
+   "p_assists": 6.8,
+   "a_assists": 8.0,
+   "p_threes": 2.6,
+   "a_threes": 6.0
+  },
+  {
+   "name": "Franz Wagner",
+   "team": "ORL",
+   "opp": "DET",
+   "p_points": 22.9,
    "a_points": 20.0,
-   "p_rebounds": 8.3,
-   "a_rebounds": 8.0,
-   "p_assists": 6.5,
-   "a_assists": 7.0,
+   "p_rebounds": 6.3,
+   "a_rebounds": 9.0,
+   "p_assists": 6.2,
+   "a_assists": 6.0,
+   "p_threes": 1.3,
+   "a_threes": 0.0
+  },
+  {
+   "name": "Cooper Flagg",
+   "team": "DAL",
+   "opp": "DEN",
+   "p_points": 22.2,
+   "a_points": 24.0,
+   "p_rebounds": 6.0,
+   "a_rebounds": 6.0,
+   "p_assists": 5.7,
+   "a_assists": 12.0,
+   "p_threes": 1.4,
+   "a_threes": 1.0
+  },
+  {
+   "name": "Anthony Davis",
+   "team": "WSH",
+   "opp": "BOS",
+   "p_points": 21.9,
+   "a_points": 33.0,
+   "p_rebounds": 9.8,
+   "a_rebounds": 13.0,
+   "p_assists": 2.3,
+   "a_assists": 1.0,
    "p_threes": 0.8,
    "a_threes": 1.0
   },
   {
-   "name": "Darius Garland",
-   "team": "LAC",
-   "opp": "HOU",
-   "p_points": 19.9,
-   "a_points": 26.0,
-   "p_rebounds": 2.2,
+   "name": "Kyrie Irving",
+   "team": "DAL",
+   "opp": "DEN",
+   "p_points": 20.8,
+   "a_points": 11.0,
+   "p_rebounds": 3.7,
+   "a_rebounds": 5.0,
+   "p_assists": 4.6,
+   "a_assists": 6.0,
+   "p_threes": 3.1,
+   "a_threes": 1.0
+  },
+  {
+   "name": "Desmond Bane",
+   "team": "ORL",
+   "opp": "DET",
+   "p_points": 18.3,
+   "a_points": 21.0,
+   "p_rebounds": 4.0,
    "a_rebounds": 1.0,
-   "p_assists": 6.4,
-   "a_assists": 8.0,
+   "p_assists": 3.2,
+   "a_assists": 5.0,
+   "p_threes": 2.9,
+   "a_threes": 4.0
+  },
+  {
+   "name": "Paul George",
+   "team": "BOS",
+   "opp": "WSH",
+   "p_points": 16.9,
+   "a_points": 28.0,
+   "p_rebounds": 5.0,
+   "a_rebounds": 4.0,
+   "p_assists": 3.6,
+   "a_assists": 9.0,
+   "p_threes": 2.5,
+   "a_threes": 6.0
+  },
+  {
+   "name": "Kyshawn George",
+   "team": "WSH",
+   "opp": "BOS",
+   "p_points": 16.7,
+   "a_points": 24.0,
+   "p_rebounds": 4.9,
+   "a_rebounds": 9.0,
+   "p_assists": 4.6,
+   "a_assists": 3.0,
    "p_threes": 2.5,
    "a_threes": 4.0
   },
   {
-   "name": "Zion Williamson",
-   "team": "NO",
-   "opp": "PHX",
-   "p_points": 19.6,
-   "a_points": 25.0,
-   "p_rebounds": 5.1,
+   "name": "Anthony Black",
+   "team": "ORL",
+   "opp": "DET",
+   "p_points": 16.1,
+   "a_points": 5.0,
+   "p_rebounds": 4.8,
    "a_rebounds": 4.0,
-   "p_assists": 2.8,
-   "a_assists": 0.0,
-   "p_threes": 0.3,
+   "p_assists": 4.7,
+   "a_assists": 2.0,
+   "p_threes": 1.8,
    "a_threes": 0.0
   },
   {
-   "name": "Stephon Castle",
-   "team": "SA",
-   "opp": "SAC",
-   "p_points": 19.4,
-   "a_points": 28.0,
-   "p_rebounds": 5.8,
-   "a_rebounds": 8.0,
-   "p_assists": 7.5,
-   "a_assists": 11.0,
+   "name": "Trae Young",
+   "team": "WSH",
+   "opp": "BOS",
+   "p_points": 16.0,
+   "a_points": 17.0,
+   "p_rebounds": 2.7,
+   "a_rebounds": 0.0,
+   "p_assists": 8.1,
+   "a_assists": 12.0,
    "p_threes": 2.0,
-   "a_threes": 4.0
-  },
-  {
-   "name": "Zach LaVine",
-   "team": "SAC",
-   "opp": "SA",
-   "p_points": 18.8,
-   "a_points": 18.0,
-   "p_rebounds": 3.2,
-   "a_rebounds": 6.0,
-   "p_assists": 2.5,
-   "a_assists": 2.0,
-   "p_threes": 2.4,
-   "a_threes": 2.0
+   "a_threes": 1.0
   }
  ]
 }

@@ -1,201 +1,330 @@
 {
- "date": "2026-11-24",
- "generated": "2026-11-24T18:34:17+00:00",
- "first_tip": "2026-11-24T19:00:00-05:00",
+ "date": "2026-11-25",
+ "generated": "2026-11-26T00:12:26+00:00",
+ "first_tip": "2026-11-25T17:00:00-05:00",
  "games": [
   {
-   "id": "401909314",
-   "away": "DET",
-   "home": "ORL",
-   "tip": "2026-11-24T19:00:00-05:00",
+   "id": "401909317",
+   "away": "MIA",
+   "home": "PHI",
+   "tip": "2026-11-25T17:00:00-05:00",
+   "out": {
+    "away": [],
+    "home": [
+     "Jaylen Brown",
+     "Joel Embiid"
+    ]
+   }
+  },
+  {
+   "id": "401909318",
+   "away": "CHI",
+   "home": "CHA",
+   "tip": "2026-11-25T19:00:00-05:00",
    "out": {
     "away": [
-     "Duncan Robinson"
+     "Jalen Smith",
+     "Caleb Wilson",
+     "Norman Powell"
+    ],
+    "home": [
+     "Dennis Schroder",
+     "Ryan Kalkbrenner",
+     "Grayson Allen"
+    ]
+   }
+  },
+  {
+   "id": "401909320",
+   "away": "MIN",
+   "home": "OKC",
+   "tip": "2026-11-25T19:30:00-05:00",
+   "out": {
+    "away": [
+     "Jaylen Clark"
+    ],
+    "home": [
+     "Jaylin Williams",
+     "Aday Mara"
+    ]
+   }
+  },
+  {
+   "id": "401909319",
+   "away": "CLE",
+   "home": "NY",
+   "tip": "2026-11-25T19:30:00-05:00",
+   "out": {
+    "away": [
+     "Evan Mobley"
+    ],
+    "home": [
+     "OG Anunoby",
+     "Jordan Clarkson",
+     "Miles McBride"
+    ]
+   }
+  },
+  {
+   "id": "401909322",
+   "away": "BKN",
+   "home": "MIL",
+   "tip": "2026-11-25T20:00:00-05:00",
+   "out": {
+    "away": [
+     "Nolan Traore"
     ],
     "home": []
    }
   },
   {
-   "id": "401909315",
-   "away": "BOS",
-   "home": "WSH",
-   "tip": "2026-11-24T20:00:00-05:00",
+   "id": "401909321",
+   "away": "LAC",
+   "home": "MEM",
+   "tip": "2026-11-25T20:00:00-05:00",
    "out": {
-    "away": [
-     "Mitchell Robinson"
-    ],
-    "home": []
+    "away": [],
+    "home": [
+     "Cameron Boozer",
+     "Jerami Grant",
+     "GG Jackson"
+    ]
    }
   },
   {
-   "id": "401909316",
-   "away": "DAL",
-   "home": "DEN",
-   "tip": "2026-11-24T22:00:00-05:00",
+   "id": "401909323",
+   "away": "PHX",
+   "home": "HOU",
+   "tip": "2026-11-25T20:30:00-05:00",
    "out": {
     "away": [],
     "home": []
    }
+  },
+  {
+   "id": "401909325",
+   "away": "SA",
+   "home": "POR",
+   "tip": "2026-11-25T22:00:00-05:00",
+   "out": {
+    "away": [
+     "Dylan Harper"
+    ],
+    "home": [
+     "Vit Krejci",
+     "Chris Youngblood"
+    ]
+   }
+  },
+  {
+   "id": "401909324",
+   "away": "SAC",
+   "home": "GS",
+   "tip": "2026-11-25T22:00:00-05:00",
+   "out": {
+    "away": [
+     "Zach LaVine"
+    ],
+    "home": [
+     "Brandon Williams",
+     "Stephen Curry"
+    ]
+   }
   }
  ],
- "median_winning_pra": 57.0,
- "tie_rate": 0.052,
+ "median_winning_pra": 58.0,
+ "tie_rate": 0.076,
  "players": [
   {
-   "game_id": "401909316",
-   "athlete_id": 3112335,
-   "name": "Nikola Jokic",
-   "team": "DEN",
-   "opp": "DAL",
-   "tip": "2026-11-24T22:00:00-05:00",
-   "proj": 48.7,
-   "pts": 26.7,
-   "reb": 11.7,
-   "ast": 10.3,
-   "avg": 45.2,
-   "out_team": [],
-   "chance": 0.3865
-  },
-  {
-   "game_id": "401909315",
-   "athlete_id": 4065648,
-   "name": "Jayson Tatum",
-   "team": "BOS",
-   "opp": "WSH",
-   "tip": "2026-11-24T20:00:00-05:00",
-   "proj": 40.4,
-   "pts": 25.6,
-   "reb": 8.0,
-   "ast": 6.8,
-   "avg": 40.0,
+   "game_id": "401909320",
+   "athlete_id": 4278073,
+   "name": "Shai Gilgeous-Alexander",
+   "team": "OKC",
+   "opp": "MIN",
+   "tip": "2026-11-25T19:30:00-05:00",
+   "proj": 41.6,
+   "pts": 31.8,
+   "reb": 4.3,
+   "ast": 5.5,
+   "avg": 40.8,
    "out_team": [
-    "Mitchell Robinson"
+    "Jaylin Williams",
+    "Aday Mara"
    ],
-   "chance": 0.1521
+   "chance": 0.1296
   },
   {
-   "game_id": "401909314",
-   "athlete_id": 4432166,
-   "name": "Cade Cunningham",
-   "team": "DET",
-   "opp": "ORL",
-   "tip": "2026-11-24T19:00:00-05:00",
-   "proj": 37.8,
-   "pts": 23.8,
-   "reb": 5.0,
-   "ast": 9.0,
-   "avg": 37.6,
+   "game_id": "401909317",
+   "athlete_id": 3032977,
+   "name": "Giannis Antetokounmpo",
+   "team": "MIA",
+   "opp": "PHI",
+   "tip": "2026-11-25T17:00:00-05:00",
+   "proj": 40.5,
+   "pts": 25.3,
+   "reb": 10.2,
+   "ast": 5.0,
+   "avg": 46.3,
+   "out_team": [],
+   "chance": 0.1051
+  },
+  {
+   "game_id": "401909319",
+   "athlete_id": 3136195,
+   "name": "Karl-Anthony Towns",
+   "team": "NY",
+   "opp": "CLE",
+   "tip": "2026-11-25T19:30:00-05:00",
+   "proj": 39.9,
+   "pts": 22.7,
+   "reb": 13.2,
+   "ast": 4.0,
+   "avg": 39.7,
    "out_team": [
-    "Duncan Robinson"
+    "OG Anunoby",
+    "Jordan Clarkson",
+    "Miles McBride"
    ],
-   "chance": 0.1047
+   "chance": 0.0961
   },
   {
-   "game_id": "401909316",
-   "athlete_id": 3936299,
-   "name": "Jamal Murray",
-   "team": "DEN",
-   "opp": "DAL",
-   "tip": "2026-11-24T22:00:00-05:00",
-   "proj": 38.0,
-   "pts": 26.4,
-   "reb": 4.9,
-   "ast": 6.7,
-   "avg": 37.1,
-   "out_team": [],
-   "chance": 0.1031
+   "game_id": "401909325",
+   "athlete_id": 5104157,
+   "name": "Victor Wembanyama",
+   "team": "SA",
+   "opp": "POR",
+   "tip": "2026-11-25T22:00:00-05:00",
+   "proj": 38.6,
+   "pts": 25.4,
+   "reb": 10.4,
+   "ast": 2.8,
+   "avg": 45.4,
+   "out_team": [
+    "Dylan Harper"
+   ],
+   "chance": 0.0794
   },
   {
-   "game_id": "401909314",
-   "athlete_id": 4566434,
-   "name": "Franz Wagner",
-   "team": "ORL",
-   "opp": "DET",
-   "tip": "2026-11-24T19:00:00-05:00",
-   "proj": 35.4,
-   "pts": 22.9,
-   "reb": 6.3,
-   "ast": 6.2,
-   "avg": 39.6,
-   "out_team": [],
-   "chance": 0.0669
-  },
-  {
-   "game_id": "401909315",
-   "athlete_id": 6583,
-   "name": "Anthony Davis",
-   "team": "WSH",
-   "opp": "BOS",
-   "tip": "2026-11-24T20:00:00-05:00",
-   "proj": 34.1,
-   "pts": 22.0,
-   "reb": 9.8,
-   "ast": 2.3,
-   "avg": 37.1,
-   "out_team": [],
-   "chance": 0.0525
-  },
-  {
-   "game_id": "401909316",
-   "athlete_id": 5041939,
-   "name": "Cooper Flagg",
-   "team": "DAL",
-   "opp": "DEN",
-   "tip": "2026-11-24T22:00:00-05:00",
-   "proj": 33.9,
-   "pts": 22.2,
-   "reb": 6.0,
-   "ast": 5.7,
-   "avg": 37.0,
-   "out_team": [],
-   "chance": 0.0492
-  },
-  {
-   "game_id": "401909316",
-   "athlete_id": 6442,
-   "name": "Kyrie Irving",
-   "team": "DAL",
-   "opp": "DEN",
-   "tip": "2026-11-24T22:00:00-05:00",
-   "proj": 29.1,
-   "pts": 20.8,
+   "game_id": "401909317",
+   "athlete_id": 4431678,
+   "name": "Tyrese Maxey",
+   "team": "PHI",
+   "opp": "MIA",
+   "tip": "2026-11-25T17:00:00-05:00",
+   "proj": 37.5,
+   "pts": 27.5,
    "reb": 3.7,
-   "ast": 4.6,
-   "avg": 30.2,
-   "out_team": [],
-   "chance": 0.0172
+   "ast": 6.3,
+   "avg": 34.5,
+   "out_team": [
+    "Jaylen Brown",
+    "Joel Embiid"
+   ],
+   "chance": 0.0639
   },
   {
-   "game_id": "401909315",
-   "athlete_id": 4277905,
-   "name": "Trae Young",
-   "team": "WSH",
-   "opp": "BOS",
-   "tip": "2026-11-24T20:00:00-05:00",
-   "proj": 26.8,
-   "pts": 16.0,
-   "reb": 2.7,
-   "ast": 8.1,
-   "avg": 28.7,
-   "out_team": [],
-   "chance": 0.0091
+   "game_id": "401909319",
+   "athlete_id": 3934672,
+   "name": "Jalen Brunson",
+   "team": "NY",
+   "opp": "CLE",
+   "tip": "2026-11-25T19:30:00-05:00",
+   "proj": 37.2,
+   "pts": 27.2,
+   "reb": 3.3,
+   "ast": 6.7,
+   "avg": 35.5,
+   "out_team": [
+    "OG Anunoby",
+    "Jordan Clarkson",
+    "Miles McBride"
+   ],
+   "chance": 0.0595
   },
   {
-   "game_id": "401909315",
-   "athlete_id": 5174563,
-   "name": "Kyshawn George",
-   "team": "WSH",
-   "opp": "BOS",
-   "tip": "2026-11-24T20:00:00-05:00",
-   "proj": 26.2,
-   "pts": 16.7,
-   "reb": 4.9,
-   "ast": 4.6,
-   "avg": 26.5,
+   "game_id": "401909324",
+   "athlete_id": 5142620,
+   "name": "Darius Acuff Jr.",
+   "team": "SAC",
+   "opp": "GS",
+   "tip": "2026-11-25T22:00:00-05:00",
+   "proj": 34.8,
+   "pts": 24.0,
+   "reb": 3.6,
+   "ast": 7.2,
+   "avg": 35.2,
+   "out_team": [
+    "Zach LaVine"
+   ],
+   "chance": 0.037
+  },
+  {
+   "game_id": "401909323",
+   "athlete_id": 3136193,
+   "name": "Devin Booker",
+   "team": "PHX",
+   "opp": "HOU",
+   "tip": "2026-11-25T20:30:00-05:00",
+   "proj": 34.5,
+   "pts": 25.5,
+   "reb": 3.2,
+   "ast": 5.8,
+   "avg": 32.7,
    "out_team": [],
-   "chance": 0.0083
+   "chance": 0.0344
+  },
+  {
+   "game_id": "401909323",
+   "athlete_id": 4871144,
+   "name": "Alperen Sengun",
+   "team": "HOU",
+   "opp": "PHX",
+   "tip": "2026-11-25T20:30:00-05:00",
+   "proj": 34.3,
+   "pts": 19.8,
+   "reb": 8.3,
+   "ast": 6.2,
+   "avg": 38.1,
+   "out_team": [],
+   "chance": 0.034
+  },
+  {
+   "game_id": "401909321",
+   "athlete_id": 4065733,
+   "name": "Ty Jerome",
+   "team": "MEM",
+   "opp": "LAC",
+   "tip": "2026-11-25T20:00:00-05:00",
+   "proj": 34.4,
+   "pts": 25.0,
+   "reb": 3.6,
+   "ast": 5.8,
+   "avg": 33.8,
+   "out_team": [
+    "Cameron Boozer",
+    "Jerami Grant",
+    "GG Jackson"
+   ],
+   "chance": 0.033
   }
  ],
- "record": null,
+ "record": {
+  "nights": 1,
+  "top_pick_won": 0.0,
+  "expected": 0.39,
+  "leader_in_top10": 1,
+  "recent": [
+   {
+    "date": "2026-11-24",
+    "pick": "Nikola Jokic",
+    "pick_chance": 0.3865,
+    "pick_pra": 34,
+    "leader": "Jayson Tatum",
+    "leader_pra": 55,
+    "won": 0.0,
+    "leader_rank": 2
+   }
+  ]
+ },
  "backtest": "Set on 475 past nights (2024-26): the top pick was given 26% on average and won 28%. A plain highest-projection pick won 29%, so this is a probability guide, not an edge."
 }
