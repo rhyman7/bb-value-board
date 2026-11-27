@@ -1,57 +1,57 @@
 {
- "generatedAt": "2026-11-26T04:08:37+00:00",
+ "generatedAt": "2026-11-27T00:31:37+00:00",
  "seasonStart": "2026-10-01",
  "season": {
   "games": 52,
-  "graded": 45,
+  "graded": 52,
   "su": {
-   "w": 27,
-   "l": 18,
+   "w": 32,
+   "l": 20,
    "p": 0,
-   "pct": 60.0
+   "pct": 61.5
   },
   "ats": {
-   "w": 21,
-   "l": 24,
-   "p": 0,
-   "pct": 46.7
-  },
-  "ou": {
-   "w": 18,
+   "w": 25,
    "l": 27,
    "p": 0,
-   "pct": 40.0
+   "pct": 48.1
   },
-  "model_mae": 9.53,
-  "line_mae": 8.79,
-  "with_line": 45
+  "ou": {
+   "w": 22,
+   "l": 30,
+   "p": 0,
+   "pct": 42.3
+  },
+  "model_mae": 9.52,
+  "line_mae": 8.87,
+  "with_line": 52
  },
  "nights": [
   {
    "date": "2026-11-25",
    "games": 7,
-   "graded": 0,
+   "graded": 7,
    "su": {
-    "w": 0,
-    "l": 0,
+    "w": 5,
+    "l": 2,
     "p": 0,
-    "pct": null
+    "pct": 71.4
    },
    "ats": {
-    "w": 0,
-    "l": 0,
+    "w": 4,
+    "l": 3,
     "p": 0,
-    "pct": null
+    "pct": 57.1
    },
    "ou": {
-    "w": 0,
-    "l": 0,
+    "w": 4,
+    "l": 3,
     "p": 0,
-    "pct": null
+    "pct": 57.1
    },
-   "model_mae": null,
-   "line_mae": null,
-   "with_line": 0
+   "model_mae": 9.4,
+   "line_mae": 9.36,
+   "with_line": 7
   },
   {
    "date": "2026-11-24",
