@@ -1,7 +1,25 @@
 {
  "generated": "2026-11-28",
- "read_at": "2026-11-26T02:37:00+00:00",
- "tonight": [],
+ "read_at": "2026-11-28T00:04:24+00:00",
+ "tonight": [
+  {
+   "fetched_at": "2026-11-28T00:04:24+00:00",
+   "game_id": "401909328",
+   "home": "Indiana Pacers",
+   "away": "Philadelphia 76ers",
+   "minutes_to_tip": 25,
+   "side": "home",
+   "team": "Indiana Pacers",
+   "spread": 4.5,
+   "price": -108,
+   "book": "Bally Bet",
+   "pin_spread": 3.0,
+   "pin_home_price": -104,
+   "pin_away_price": -108,
+   "fair": 0.543,
+   "ev": 0.046
+  }
+ ],
  "record": null,
  "backtest": "Past lines, 2024-26: 145 bets, 55.9%, +9.4% \u00b1 7.9%; beat the closing line 54% of the time."
 }

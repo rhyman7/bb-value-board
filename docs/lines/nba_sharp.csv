@@ -1,0 +1,6 @@
+fetched_at,game_id,home,away,minutes_to_tip,side,team,spread,price,book,pin_spread,pin_home_price,pin_away_price,fair,ev
+2026-11-28T00:04:24+00:00,401909328,Indiana Pacers,Philadelphia 76ers,25,home,Indiana Pacers,4.0,-105,Caesars,3.0,-104,-108,0.527,0.03
+2026-11-28T00:04:24+00:00,401909328,Indiana Pacers,Philadelphia 76ers,25,home,Indiana Pacers,4.5,-113,DraftKings,3.0,-104,-108,0.543,0.024
+2026-11-28T00:04:24+00:00,401909328,Indiana Pacers,Philadelphia 76ers,25,home,Indiana Pacers,4.5,-108,Bally Bet,3.0,-104,-108,0.543,0.046
+2026-11-28T00:04:24+00:00,401909328,Indiana Pacers,Philadelphia 76ers,25,home,Indiana Pacers,4.5,-108,BetRivers,3.0,-104,-108,0.543,0.046
+2026-11-28T00:04:24+00:00,401909328,Indiana Pacers,Philadelphia 76ers,25,home,Indiana Pacers,3.5,100,Hard Rock,3.0,-104,-108,0.511,0.023
