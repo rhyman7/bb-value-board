@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-11-27T04:13:03+00:00",
+ "generatedAt": "2026-11-28T00:00:28+00:00",
  "seasonStart": "2026-10-01",
  "season": {
-  "games": 52,
+  "games": 63,
   "graded": 52,
   "su": {
    "w": 32,
@@ -27,6 +27,32 @@
   "with_line": 52
  },
  "nights": [
+  {
+   "date": "2026-11-27",
+   "games": 11,
+   "graded": 0,
+   "su": {
+    "w": 0,
+    "l": 0,
+    "p": 0,
+    "pct": null
+   },
+   "ats": {
+    "w": 0,
+    "l": 0,
+    "p": 0,
+    "pct": null
+   },
+   "ou": {
+    "w": 0,
+    "l": 0,
+    "p": 0,
+    "pct": null
+   },
+   "model_mae": null,
+   "line_mae": null,
+   "with_line": 0
+  },
   {
    "date": "2026-11-25",
    "games": 7,

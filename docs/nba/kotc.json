@@ -1,7 +1,338 @@
 {
- "date": "2026-11-26",
- "players": [],
- "games": [],
+ "date": "2026-11-27",
+ "generated": "2026-11-28T00:00:28+00:00",
+ "first_tip": "2026-11-27T19:00:00-05:00",
+ "games": [
+  {
+   "id": "401909326",
+   "away": "MIA",
+   "home": "NY",
+   "tip": "2026-11-27T19:00:00-05:00",
+   "out": {
+    "away": [],
+    "home": [
+     "OG Anunoby",
+     "Andre Drummond",
+     "Miles McBride",
+     "Jordan Clarkson"
+    ]
+   }
+  },
+  {
+   "id": "401909328",
+   "away": "PHI",
+   "home": "IND",
+   "tip": "2026-11-27T19:30:00-05:00",
+   "out": {
+    "away": [
+     "Jaylen Brown",
+     "Dean Wade"
+    ],
+    "home": [
+     "T.J. McConnell"
+    ]
+   }
+  },
+  {
+   "id": "401909327",
+   "away": "MIL",
+   "home": "DET",
+   "tip": "2026-11-27T19:30:00-05:00",
+   "out": {
+    "away": [
+     "Kasparas Jakucionis"
+    ],
+    "home": [
+     "Duncan Robinson",
+     "Cade Cunningham"
+    ]
+   }
+  },
+  {
+   "id": "401909329",
+   "away": "BKN",
+   "home": "TOR",
+   "tip": "2026-11-27T19:30:00-05:00",
+   "out": {
+    "away": [
+     "Moritz Wagner",
+     "Nolan Traore"
+    ],
+    "home": [
+     "RJ Barrett"
+    ]
+   }
+  },
+  {
+   "id": "401909330",
+   "away": "ATL",
+   "home": "BOS",
+   "tip": "2026-11-27T20:00:00-05:00",
+   "out": {
+    "away": [
+     "CJ McCollum",
+     "Jock Landale"
+    ],
+    "home": [
+     "Mitchell Robinson"
+    ]
+   }
+  },
+  {
+   "id": "401909331",
+   "away": "MEM",
+   "home": "MIN",
+   "tip": "2026-11-27T20:30:00-05:00",
+   "out": {
+    "away": [
+     "Cameron Boozer",
+     "Jerami Grant",
+     "GG Jackson"
+    ],
+    "home": [
+     "LaMelo Ball",
+     "Jaylen Clark"
+    ]
+   }
+  },
+  {
+   "id": "401909332",
+   "away": "DAL",
+   "home": "PHX",
+   "tip": "2026-11-27T21:00:00-05:00",
+   "out": {
+    "away": [],
+    "home": []
+   }
+  },
+  {
+   "id": "401909336",
+   "away": "GS",
+   "home": "POR",
+   "tip": "2026-11-27T21:30:00-05:00",
+   "out": {
+    "away": [
+     "Stephen Curry"
+    ],
+    "home": [
+     "Damian Lillard",
+     "Chris Youngblood"
+    ]
+   }
+  },
+  {
+   "id": "401909335",
+   "away": "NO",
+   "home": "LAC",
+   "tip": "2026-11-27T21:30:00-05:00",
+   "out": {
+    "away": [
+     "Trendon Watford",
+     "Bennedict Mathurin",
+     "Dejounte Murray"
+    ],
+    "home": []
+   }
+  },
+  {
+   "id": "401909334",
+   "away": "DEN",
+   "home": "UTAH",
+   "tip": "2026-11-27T21:30:00-05:00",
+   "out": {
+    "away": [],
+    "home": []
+   }
+  },
+  {
+   "id": "401909333",
+   "away": "LAL",
+   "home": "SA",
+   "tip": "2026-11-27T21:30:00-05:00",
+   "out": {
+    "away": [],
+    "home": [
+     "Dylan Harper"
+    ]
+   }
+  }
+ ],
+ "median_winning_pra": 63.0,
+ "tie_rate": 0.068,
+ "players": [
+  {
+   "game_id": "401909333",
+   "athlete_id": 3945274,
+   "name": "Luka Doncic",
+   "team": "LAL",
+   "opp": "SA",
+   "tip": "2026-11-27T21:30:00-05:00",
+   "proj": 46.7,
+   "pts": 32.6,
+   "reb": 6.6,
+   "ast": 7.5,
+   "avg": 50.9,
+   "out_team": [],
+   "chance": 0.1571
+  },
+  {
+   "game_id": "401909334",
+   "athlete_id": 3112335,
+   "name": "Nikola Jokic",
+   "team": "DEN",
+   "opp": "UTAH",
+   "tip": "2026-11-27T21:30:00-05:00",
+   "proj": 45.8,
+   "pts": 25.7,
+   "reb": 11.2,
+   "ast": 8.9,
+   "avg": 44.4,
+   "out_team": [],
+   "chance": 0.1413
+  },
+  {
+   "game_id": "401909333",
+   "athlete_id": 5104157,
+   "name": "Victor Wembanyama",
+   "team": "SA",
+   "opp": "LAL",
+   "tip": "2026-11-27T21:30:00-05:00",
+   "proj": 44.5,
+   "pts": 29.3,
+   "reb": 11.8,
+   "ast": 3.4,
+   "avg": 46.4,
+   "out_team": [
+    "Dylan Harper"
+   ],
+   "chance": 0.1155
+  },
+  {
+   "game_id": "401909326",
+   "athlete_id": 3032977,
+   "name": "Giannis Antetokounmpo",
+   "team": "MIA",
+   "opp": "NY",
+   "tip": "2026-11-27T19:00:00-05:00",
+   "proj": 43.7,
+   "pts": 27.4,
+   "reb": 10.9,
+   "ast": 5.4,
+   "avg": 46.5,
+   "out_team": [],
+   "chance": 0.1024
+  },
+  {
+   "game_id": "401909326",
+   "athlete_id": 3136195,
+   "name": "Karl-Anthony Towns",
+   "team": "NY",
+   "opp": "MIA",
+   "tip": "2026-11-27T19:00:00-05:00",
+   "proj": 40.6,
+   "pts": 23.0,
+   "reb": 13.4,
+   "ast": 4.2,
+   "avg": 39.0,
+   "out_team": [
+    "OG Anunoby",
+    "Andre Drummond",
+    "Miles McBride",
+    "Jordan Clarkson"
+   ],
+   "chance": 0.0614
+  },
+  {
+   "game_id": "401909330",
+   "athlete_id": 4065648,
+   "name": "Jayson Tatum",
+   "team": "BOS",
+   "opp": "ATL",
+   "tip": "2026-11-27T20:00:00-05:00",
+   "proj": 40.5,
+   "pts": 26.0,
+   "reb": 7.8,
+   "ast": 6.7,
+   "avg": 40.9,
+   "out_team": [
+    "Mitchell Robinson"
+   ],
+   "chance": 0.0603
+  },
+  {
+   "game_id": "401909336",
+   "athlete_id": 4683021,
+   "name": "Deni Avdija",
+   "team": "POR",
+   "opp": "GS",
+   "tip": "2026-11-27T21:30:00-05:00",
+   "proj": 39.1,
+   "pts": 25.5,
+   "reb": 6.7,
+   "ast": 6.9,
+   "avg": 37.6,
+   "out_team": [
+    "Damian Lillard",
+    "Chris Youngblood"
+   ],
+   "chance": 0.0476
+  },
+  {
+   "game_id": "401909326",
+   "athlete_id": 3934672,
+   "name": "Jalen Brunson",
+   "team": "NY",
+   "opp": "MIA",
+   "tip": "2026-11-27T19:00:00-05:00",
+   "proj": 38.1,
+   "pts": 27.9,
+   "reb": 3.4,
+   "ast": 6.8,
+   "avg": 35.1,
+   "out_team": [
+    "OG Anunoby",
+    "Andre Drummond",
+    "Miles McBride",
+    "Jordan Clarkson"
+   ],
+   "chance": 0.0377
+  },
+  {
+   "game_id": "401909328",
+   "athlete_id": 4431678,
+   "name": "Tyrese Maxey",
+   "team": "PHI",
+   "opp": "IND",
+   "tip": "2026-11-27T19:30:00-05:00",
+   "proj": 37.1,
+   "pts": 27.2,
+   "reb": 3.8,
+   "ast": 6.1,
+   "avg": 34.9,
+   "out_team": [
+    "Jaylen Brown",
+    "Dean Wade"
+   ],
+   "chance": 0.0304
+  },
+  {
+   "game_id": "401909329",
+   "athlete_id": 4433134,
+   "name": "Scottie Barnes",
+   "team": "TOR",
+   "opp": "BKN",
+   "tip": "2026-11-27T19:30:00-05:00",
+   "proj": 36.2,
+   "pts": 23.2,
+   "reb": 7.2,
+   "ast": 5.8,
+   "avg": 36.8,
+   "out_team": [
+    "RJ Barrett"
+   ],
+   "chance": 0.0251
+  }
+ ],
  "record": {
   "nights": 2,
   "top_pick_won": 0.0,
