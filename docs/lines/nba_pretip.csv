@@ -97,3 +97,7 @@ fetched_at,game_id,minutes_to_tip,out_hash,out_home,out_away,model_margin,model_
 2026-11-28T01:37:00+00:00,401909335,52,f93af62ef6,,Dejounte Murray,5.31,-0.19,2.5,10,True
 2026-11-28T01:37:00+00:00,401909336,52,f93af62ef6,Damian Lillard,Stephen Curry,6.81,-0.0,8.5,10,True
 2026-11-28T01:37:00+00:00,401909332,22,f93af62ef6,,Kyrie Irving,7.18,0.0,4.0,10,True
+2026-11-28T02:07:01+00:00,401909333,22,3c5b9463cb,,,5.87,1.86,6.5,10,True
+2026-11-28T02:07:01+00:00,401909334,22,3c5b9463cb,Mo Bamba,,-9.75,-1.35,-9.5,10,True
+2026-11-28T02:07:01+00:00,401909335,22,3c5b9463cb,,Dejounte Murray,5.31,-0.0,2.5,10,True
+2026-11-28T02:07:01+00:00,401909336,22,3c5b9463cb,Damian Lillard,Stephen Curry,6.81,-0.0,8.5,10,True
