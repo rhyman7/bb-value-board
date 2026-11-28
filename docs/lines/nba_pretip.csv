@@ -86,3 +86,9 @@ fetched_at,game_id,minutes_to_tip,out_hash,out_home,out_away,model_margin,model_
 2026-11-28T00:37:01+00:00,401909332,82,4d38b3f559,,,3.3,0.0,4.0,10,True
 2026-11-28T00:37:01+00:00,401909331,52,4d38b3f559,LaMelo Ball,Jerami Grant; Isaiah Stewart; Cameron Boozer; GG Jackson,7.37,0.85,2.5,10,True
 2026-11-28T00:37:01+00:00,401909330,22,4d38b3f559,Mitchell Robinson,CJ McCollum; Jock Landale,8.1,0.0,9.0,10,True
+2026-11-28T01:07:00+00:00,401909333,82,351d5ef27b,Dylan Harper,,4.01,0.0,6.5,10,True
+2026-11-28T01:07:00+00:00,401909334,82,351d5ef27b,,,-8.4,-0.0,-9.5,10,True
+2026-11-28T01:07:00+00:00,401909335,82,351d5ef27b,,Dejounte Murray,5.5,0.0,2.5,10,True
+2026-11-28T01:07:00+00:00,401909336,82,351d5ef27b,Damian Lillard,Stephen Curry,6.81,-0.0,8.5,10,True
+2026-11-28T01:07:00+00:00,401909332,52,351d5ef27b,,Kyrie Irving,7.18,3.88,4.0,10,True
+2026-11-28T01:07:00+00:00,401909331,22,351d5ef27b,LaMelo Ball,Jerami Grant; Isaiah Stewart; Cameron Boozer; GG Jackson,7.37,-0.0,2.5,10,True
