@@ -69,3 +69,13 @@ fetched_at,game_id,minutes_to_tip,out_hash,out_home,out_away,model_margin,model_
 2026-11-28T00:04:24+00:00,401909327,25,f3a1ba44a4,Duncan Robinson; Cade Cunningham,,13.6,0.0,10.0,10,True
 2026-11-28T00:04:24+00:00,401909328,25,f3a1ba44a4,T.J. McConnell,Jaylen Brown,-1.28,0.02,-4.5,10,True
 2026-11-28T00:04:24+00:00,401909329,25,f3a1ba44a4,RJ Barrett,Moritz Wagner,5.92,0.02,9.5,10,True
+2026-11-28T00:07:00+00:00,401909333,142,f3a1ba44a4,Dylan Harper,,4.01,0.0,6.5,10,True
+2026-11-28T00:07:00+00:00,401909334,142,f3a1ba44a4,,,-8.4,-0.0,-9.5,10,True
+2026-11-28T00:07:00+00:00,401909335,142,f3a1ba44a4,,Dejounte Murray,5.5,0.0,2.5,10,True
+2026-11-28T00:07:00+00:00,401909336,142,f3a1ba44a4,Damian Lillard,Stephen Curry,6.81,-0.0,8.5,10,True
+2026-11-28T00:07:00+00:00,401909332,112,f3a1ba44a4,,,3.3,0.0,3.5,10,True
+2026-11-28T00:07:00+00:00,401909331,82,f3a1ba44a4,LaMelo Ball,Jerami Grant; Cameron Boozer; GG Jackson,6.52,0.0,3.0,10,True
+2026-11-28T00:07:00+00:00,401909330,52,f3a1ba44a4,Mitchell Robinson,CJ McCollum; Jock Landale,8.1,0.0,9.0,10,True
+2026-11-28T00:07:00+00:00,401909327,22,f3a1ba44a4,Duncan Robinson; Cade Cunningham,,13.6,0.0,10.0,10,True
+2026-11-28T00:07:00+00:00,401909328,22,f3a1ba44a4,T.J. McConnell,Jaylen Brown,-1.28,-0.0,-4.5,10,True
+2026-11-28T00:07:00+00:00,401909329,22,f3a1ba44a4,RJ Barrett,Moritz Wagner,5.92,-0.0,9.5,10,True
